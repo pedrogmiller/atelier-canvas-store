@@ -1,0 +1,233 @@
+{% extends "base.html" %}
+
+{% block title %}{{ product.seo_title }} | ATELIER & CANVAS{% endblock %}
+
+{% block content %}
+<!-- Breadcrumb -->
+<div class="max-w-7xl mx-auto px-6 py-4 text-xs text-[#7A756D] flex items-center gap-2">
+  <a href="/" class="hover:text-[#1C1C1E] transition">Home</a>
+  <span>/</span>
+  <a href="/#collection" class="hover:text-[#1C1C1E] transition">Gallery</a>
+  <span>/</span>
+  <span class="text-[#1C1C1E] font-medium">{{ product.title }}</span>
+</div>
+
+<!-- Product Detail Stage -->
+<section class="max-w-7xl mx-auto px-6 py-6 pb-20">
+  <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+    
+    <!-- Left Column: Visual Gallery Mockup Viewer -->
+    <div class="lg:col-span-7 space-y-4 sticky top-28">
+      
+      <!-- Main Featured Preview Viewport -->
+      <div class="relative rounded-2xl overflow-hidden bg-white border border-[#E8E3DA] shadow-md aspect-[4/3] flex items-center justify-center">
+        <img id="main-view-image" src="{{ product.images.hero }}" alt="{{ product.title }}" class="w-full h-full object-cover transition-opacity duration-300">
+        
+        <div id="view-mode-pill" class="absolute bottom-4 left-4 bg-black/70 backdrop-blur-md text-white text-[11px] font-semibold px-3 py-1.5 rounded-full flex items-center gap-1.5">
+          <i data-lucide="home" class="w-3.5 h-3.5 text-[#C66B4D]"></i>
+          <span id="view-mode-text">Living Room Staged View</span>
+        </div>
+      </div>
+
+      <!-- Thumbnail Carousel Switcher -->
+      <div class="grid grid-cols-5 gap-3">
+        <button class="thumb-btn active rounded-lg overflow-hidden border-2 border-[#1C1C1E] aspect-square relative bg-white transition shadow-sm" data-src="{{ product.images.hero }}" data-label="Living Room Staged View">
+          <img src="{{ product.images.hero }}" class="w-full h-full object-cover">
+        </button>
+
+        <button class="thumb-btn rounded-lg overflow-hidden border border-[#E8E3DA] hover:border-[#1C1C1E] aspect-square relative bg-white transition shadow-sm" data-src="{{ product.images.bedroom }}" data-label="Master Bedroom Staged View">
+          <img src="{{ product.images.bedroom }}" class="w-full h-full object-cover">
+        </button>
+
+        <button class="thumb-btn rounded-lg overflow-hidden border border-[#E8E3DA] hover:border-[#1C1C1E] aspect-square relative bg-white transition shadow-sm" data-src="{{ product.images.studio }}" data-label="Nordic Studio Staged View">
+          <img src="{{ product.images.studio }}" class="w-full h-full object-cover">
+        </button>
+
+        <button class="thumb-btn rounded-lg overflow-hidden border border-[#E8E3DA] hover:border-[#1C1C1E] aspect-square relative bg-white transition shadow-sm" data-src="{{ product.images.framed_product }}" data-label="Framed Studio Close-up">
+          <img src="{{ product.images.framed_product }}" class="w-full h-full object-cover">
+        </button>
+
+        <button class="thumb-btn rounded-lg overflow-hidden border border-[#E8E3DA] hover:border-[#1C1C1E] aspect-square relative bg-white transition shadow-sm" data-src="{{ product.images.master_art }}" data-label="Original High-Res Print Artwork">
+          <img src="{{ product.images.master_art }}" class="w-full h-full object-cover">
+        </button>
+      </div>
+
+      <!-- Guarantee Badges -->
+      <div class="p-4 rounded-xl bg-white border border-[#E8E3DA] grid grid-cols-3 gap-4 text-center mt-6">
+        <div>
+          <i data-lucide="truck" class="w-5 h-5 text-[#C66B4D] mx-auto mb-1"></i>
+          <span class="text-[11px] font-bold block text-[#1C1C1E]">48–72h Delivery</span>
+          <span class="text-[10px] text-[#7A756D]">Printed locally</span>
+        </div>
+        <div>
+          <i data-lucide="shield-check" class="w-5 h-5 text-[#C66B4D] mx-auto mb-1"></i>
+          <span class="text-[11px] font-bold block text-[#1C1C1E]">Museum Grade</span>
+          <span class="text-[10px] text-[#7A756D]">250 gsm archival</span>
+        </div>
+        <div>
+          <i data-lucide="award" class="w-5 h-5 text-[#C66B4D] mx-auto mb-1"></i>
+          <span class="text-[11px] font-bold block text-[#1C1C1E]">100% Satisfaction</span>
+          <span class="text-[10px] text-[#7A756D]">Free replacements</span>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Right Column: Interactive Configurator & Express Checkout -->
+    <div class="lg:col-span-5 space-y-6 bg-white p-8 rounded-2xl border border-[#E8E3DA] shadow-sm">
+      
+      <!-- Title & Price Header -->
+      <div class="border-b border-[#F0EBE3] pb-6 space-y-2">
+        <div class="flex items-center gap-2">
+          <span class="text-[10px] font-bold tracking-widest uppercase bg-[#FAF8F5] text-[#C66B4D] border border-[#E8E3DA] px-2.5 py-0.5 rounded-full">
+            {{ product.aesthetic_name }}
+          </span>
+          <span class="text-[10px] text-[#7A756D] font-mono">Gelato SKU: <span id="current-sku-display">framed-poster_flat_wood_natural_24x36-in</span></span>
+        </div>
+        
+        <h1 class="font-['Cormorant_Garamond'] text-3xl sm:text-4xl font-bold text-[#1C1C1E] leading-tight">
+          {{ product.title }}
+        </h1>
+
+        <div class="flex items-baseline gap-4 pt-2">
+          <span id="dynamic-price" class="text-3xl font-bold text-[#1C1C1E] font-['Plus_Jakarta_Sans']">
+            ${{ product.hero_price }}
+          </span>
+          <span class="text-xs text-[#7A756D] line-through">$180.00</span>
+          <span class="text-xs font-semibold text-[#3B7A57] bg-[#E8F3ED] px-2 py-0.5 rounded">
+            In Stock & Ready to Print
+          </span>
+        </div>
+      </div>
+
+      <!-- 1. Frame Style Selector -->
+      <div class="space-y-3">
+        <label class="text-xs font-bold uppercase tracking-wider text-[#1C1C1E] flex items-center justify-between">
+          <span>1. Select Frame Style</span>
+          <span id="selected-frame-label" class="text-[#C66B4D] font-semibold lowercase">Natural Oak</span>
+        </label>
+        
+        <div class="grid grid-cols-2 sm:grid-cols-3 gap-2.5" id="frame-picker">
+          <button type="button" class="frame-opt-btn active p-3 rounded-lg border-2 border-[#1C1C1E] bg-[#FAF8F5] text-left transition flex flex-col justify-between h-20" data-frame="natural_oak" data-label="Solid Natural Oak Wood Frame">
+            <div class="w-4 h-4 rounded-full bg-[#C69B70] border border-black/20 mb-1"></div>
+            <div>
+              <span class="text-xs font-bold block leading-none">Natural Oak</span>
+              <span class="text-[10px] text-[#7A756D]">Solid Wood</span>
+            </div>
+          </button>
+
+          <button type="button" class="frame-opt-btn p-3 rounded-lg border border-[#E8E3DA] bg-[#FAF8F5] hover:border-[#1C1C1E] text-left transition flex flex-col justify-between h-20" data-frame="black_wood" data-label="Matte Black Solid Wood Frame">
+            <div class="w-4 h-4 rounded-full bg-[#1C1C1E] border border-black/20 mb-1"></div>
+            <div>
+              <span class="text-xs font-bold block leading-none">Matte Black</span>
+              <span class="text-[10px] text-[#7A756D]">Solid Wood</span>
+            </div>
+          </button>
+
+          <button type="button" class="frame-opt-btn p-3 rounded-lg border border-[#E8E3DA] bg-[#FAF8F5] hover:border-[#1C1C1E] text-left transition flex flex-col justify-between h-20" data-frame="white_wood" data-label="Nordic White Wood Frame">
+            <div class="w-4 h-4 rounded-full bg-white border border-gray-300 mb-1"></div>
+            <div>
+              <span class="text-xs font-bold block leading-none">Nordic White</span>
+              <span class="text-[10px] text-[#7A756D]">Solid Wood</span>
+            </div>
+          </button>
+
+          <button type="button" class="frame-opt-btn p-3 rounded-lg border border-[#E8E3DA] bg-[#FAF8F5] hover:border-[#1C1C1E] text-left transition flex flex-col justify-between h-20" data-frame="canvas_wrap" data-label="Gallery Stretched Fine Art Canvas">
+            <div class="w-4 h-4 rounded-full bg-[#E5DEC9] border border-black/20 mb-1"></div>
+            <div>
+              <span class="text-xs font-bold block leading-none">Canvas Wrap</span>
+              <span class="text-[10px] text-[#7A756D]">Stretched Slim</span>
+            </div>
+          </button>
+
+          <button type="button" class="frame-opt-btn p-3 rounded-lg border border-[#E8E3DA] bg-[#FAF8F5] hover:border-[#1C1C1E] text-left transition flex flex-col justify-between h-20 col-span-2 sm:col-span-1" data-frame="unframed_poster" data-label="Museum-Grade Matte Fine Art Print (Unframed)">
+            <div class="w-4 h-4 rounded-full bg-[#F4F0E8] border border-dashed border-gray-400 mb-1"></div>
+            <div>
+              <span class="text-xs font-bold block leading-none">Unframed</span>
+              <span class="text-[10px] text-[#7A756D]">Matte Print</span>
+            </div>
+          </button>
+        </div>
+      </div>
+
+      <!-- 2. Size Selector -->
+      <div class="space-y-3">
+        <label class="text-xs font-bold uppercase tracking-wider text-[#1C1C1E] flex items-center justify-between">
+          <span>2. Select Size</span>
+          <span class="text-xs text-[#7A756D]">Standard Gallery Aspect Ratios</span>
+        </label>
+        
+        <select id="size-selector" class="w-full bg-[#FAF8F5] border border-[#D8D2C6] rounded-lg p-3 text-sm font-semibold focus:outline-none focus:border-[#1C1C1E]">
+          <option value="12x18_in">12x18 in (30x45 cm) — Small Accent Size</option>
+          <option value="18x24_in">18x24 in (45x60 cm) — Medium Classic Size</option>
+          <option value="24x36_in" selected>24x36 in (60x90 cm) — Statement Hero Size (Most Popular)</option>
+          <option value="30x40_in">30x40 in (75x100 cm) — Oversized Luxury Statement</option>
+        </select>
+      </div>
+
+      <!-- Action Buttons -->
+      <div class="space-y-3 pt-2">
+        <button id="direct-stripe-checkout-btn" class="w-full bg-[#1C1C1E] hover:bg-[#C66B4D] text-white py-4 rounded-lg font-bold tracking-wide transition shadow-lg flex items-center justify-center gap-2">
+          <i data-lucide="zap" class="w-5 h-5 text-yellow-300"></i>
+          <span>Order Now with Express Checkout</span>
+        </button>
+
+        <button id="add-to-bag-btn" class="w-full border-2 border-[#1C1C1E] hover:bg-[#FAF8F5] text-[#1C1C1E] py-3.5 rounded-lg font-semibold tracking-wide transition flex items-center justify-center gap-2">
+          <i data-lucide="shopping-bag" class="w-4 h-4"></i>
+          <span>Add to Bag</span>
+        </button>
+      </div>
+
+      <!-- Story & Narrative -->
+      <div class="pt-4 border-t border-[#F0EBE3] space-y-3">
+        <h4 class="text-xs font-bold uppercase tracking-wider text-[#1C1C1E]">Curator's Note</h4>
+        <p class="text-sm text-[#68635B] leading-relaxed">
+          {{ product.story_and_concept }}
+        </p>
+      </div>
+
+      <!-- Accordion Specifications -->
+      <div class="border-t border-[#F0EBE3] divide-y divide-[#F0EBE3] text-sm">
+        <details class="py-3 group cursor-pointer">
+          <summary class="flex items-center justify-between font-semibold text-[#1C1C1E] list-none">
+            <span>Museum Quality & Materials</span>
+            <i data-lucide="chevron-down" class="w-4 h-4 group-open:rotate-180 transition"></i>
+          </summary>
+          <div class="pt-3 text-xs text-[#7A756D] space-y-1.5 leading-relaxed">
+            <p>• <strong>Paper:</strong> {{ product.specifications.paper }}</p>
+            <p>• <strong>Wood:</strong> {{ product.specifications.framing }}</p>
+            <p>• <strong>Pigment:</strong> {{ product.specifications.printing }}</p>
+          </div>
+        </details>
+
+        <details class="py-3 group cursor-pointer">
+          <summary class="flex items-center justify-between font-semibold text-[#1C1C1E] list-none">
+            <span>72-Hour Local Global Fulfillment</span>
+            <i data-lucide="chevron-down" class="w-4 h-4 group-open:rotate-180 transition"></i>
+          </summary>
+          <div class="pt-3 text-xs text-[#7A756D] leading-relaxed">
+            Orders are automatically routed to your closest regional Gelato print hub across 32 countries (US, UK, Germany, France, Australia, Canada, etc.) for zero custom delays, fast 3-day local delivery, and lowest carbon footprint.
+          </div>
+        </details>
+
+        <details class="py-3 group cursor-pointer">
+          <summary class="flex items-center justify-between font-semibold text-[#1C1C1E] list-none">
+            <span>Interior Styling Guide</span>
+            <i data-lucide="chevron-down" class="w-4 h-4 group-open:rotate-180 transition"></i>
+          </summary>
+          <div class="pt-3 text-xs text-[#7A756D] leading-relaxed">
+            {{ product.styling_tips }}
+          </div>
+        </details>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- Inject product data for client JS -->
+<script>
+  window.PRODUCT_DATA = {{ product | tojson }};
+</script>
+{% endblock %}

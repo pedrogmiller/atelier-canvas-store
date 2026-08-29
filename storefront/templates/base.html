@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{% block title %}ATELIER & CANVAS | Fine Art Prints & Gallery Frames{% endblock %}</title>
+  
+  <!-- Tailwind CSS & Fonts -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body class="bg-[#FAF8F5] text-[#242426] font-['Plus_Jakarta_Sans'] flex flex-col min-h-screen">
+
+  <!-- Top Announcement Bar -->
+  <div class="bg-[#1C1C1E] text-[#E8E6E1] text-xs py-2 px-4 text-center tracking-wider uppercase font-medium">
+    ✨ Free Express Worldwide Shipping on Orders Over $100 • Handcrafted in 32 Regional Hubs
+  </div>
+
+  <!-- Main Navigation -->
+  <header class="sticky top-0 z-40 bg-[#FAF8F5]/90 backdrop-blur-md border-b border-[#E8E3DA]">
+    <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+      
+      <!-- Brand Logo -->
+      <a href="/" class="flex items-center gap-3">
+        <div class="w-8 h-8 rounded-full border border-[#1C1C1E] flex items-center justify-center font-serif text-lg font-bold">A</div>
+        <div>
+          <span class="font-['Cormorant_Garamond'] text-2xl font-bold tracking-widest uppercase block leading-none">ATELIER & CANVAS</span>
+          <span class="text-[10px] tracking-[0.2em] text-[#7A756D] uppercase block mt-0.5">Contemporary Fine Art & Framed Decor</span>
+        </div>
+      </a>
+
+      <!-- Navigation Links -->
+      <nav class="hidden md:flex items-center gap-8 text-sm font-medium tracking-wide">
+        <a href="/" class="hover:text-[#C66B4D] transition">Curated Collections</a>
+        <a href="/#aesthetic-filters" class="hover:text-[#C66B4D] transition">Aesthetics</a>
+        <a href="/#quality" class="hover:text-[#C66B4D] transition">Museum Quality</a>
+        <a href="/#sustainability" class="hover:text-[#C66B4D] transition">72h Local Fulfillment</a>
+      </nav>
+
+      <!-- Actions / Cart -->
+      <div class="flex items-center gap-5">
+        <a href="/" class="text-sm font-medium text-[#7A756D] hover:text-[#1C1C1E] transition hidden sm:inline-block">USD ($)</a>
+        <button id="open-cart-btn" class="relative p-2 text-[#1C1C1E] hover:text-[#C66B4D] transition">
+          <i data-lucide="shopping-bag" class="w-6 h-6"></i>
+          <span id="cart-count-badge" class="absolute -top-1 -right-1 bg-[#C66B4D] text-white text-[10px] w-5 h-5 rounded-full flex items-center justify-center font-bold">0</span>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- Page Content -->
+  <main class="flex-grow">
+    {% block content %}{% endblock %}
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-[#1C1C1E] text-[#E8E6E1] pt-16 pb-12 mt-20 border-t border-black">
+    <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-12">
+      <div class="space-y-4 md:col-span-2">
+        <span class="font-['Cormorant_Garamond'] text-2xl font-bold tracking-widest uppercase block text-[#FAF8F5]">ATELIER & CANVAS</span>
+        <p class="text-sm text-[#A09A90] max-w-md leading-relaxed">
+          Curated statement art and museum-grade framed canvases designed to anchor living spaces with timeless serenity. Handcrafted with sustainably sourced FSC-certified timber and 12-color archival pigment printing.
+        </p>
+        <div class="flex items-center gap-6 text-xs text-[#7A756D] pt-2">
+          <span class="flex items-center gap-1.5"><i data-lucide="shield-check" class="w-4 h-4 text-[#C66B4D]"></i> 100-Year Fade Guarantee</span>
+          <span class="flex items-center gap-1.5"><i data-lucide="truck" class="w-4 h-4 text-[#C66B4D]"></i> Local 72h Global Hubs</span>
+        </div>
+      </div>
+
+      <div>
+        <h4 class="text-xs font-semibold tracking-widest uppercase text-[#FAF8F5] mb-4">Aesthetics</h4>
+        <ul class="space-y-2 text-sm text-[#A09A90]">
+          <li><a href="/#aesthetic-filters" class="hover:text-white transition">Japandi & Wabi-Sabi</a></li>
+          <li><a href="/#aesthetic-filters" class="hover:text-white transition">Mid-Century Bauhaus</a></li>
+          <li><a href="/#aesthetic-filters" class="hover:text-white transition">Antique Botanical</a></li>
+          <li><a href="/#aesthetic-filters" class="hover:text-white transition">Mediterranean Terracotta</a></li>
+          <li><a href="/#aesthetic-filters" class="hover:text-white transition">Dark Academia</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="text-xs font-semibold tracking-widest uppercase text-[#FAF8F5] mb-4">Customer Care</h4>
+        <ul class="space-y-2 text-sm text-[#A09A90]">
+          <li><a href="#" class="hover:text-white transition">Framing & Sizing Guide</a></li>
+          <li><a href="#" class="hover:text-white transition">Track My Order</a></li>
+          <li><a href="#" class="hover:text-white transition">Returns & Exchanges</a></li>
+          <li><a href="#" class="hover:text-white transition">Contact Curators</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="max-w-7xl mx-auto px-6 pt-12 mt-12 border-t border-[#2C2C2E] flex flex-col sm:flex-row items-center justify-between text-xs text-[#7A756D] gap-4">
+      <div>© 2026 Atelier & Canvas. Powered by Autonomous Multi-Agent E-Commerce Engine.</div>
+      <div class="flex items-center gap-6">
+        <span>Stripe Encrypted Checkout</span>
+        <span>Gelato Global Fulfillment</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Slide-out Cart Drawer -->
+  <div id="cart-drawer" class="fixed inset-0 z-50 overflow-hidden hidden" aria-labelledby="slide-over-title" role="dialog" aria-modal="true">
+    <div class="absolute inset-0 bg-black/50 backdrop-blur-sm transition-opacity" id="cart-backdrop"></div>
+    <div class="pointer-events-none fixed inset-y-0 right-0 flex max-w-full pl-10">
+      <div class="pointer-events-auto w-screen max-w-md bg-[#FAF8F5] shadow-2xl flex flex-col">
+        <div class="p-6 border-b border-[#E8E3DA] flex items-center justify-between">
+          <div>
+            <h2 class="font-['Cormorant_Garamond'] text-2xl font-bold tracking-wide">Your Shopping Bag</h2>
+            <span id="bundle-discount-pill" class="text-[10px] uppercase font-bold tracking-wider text-[#3B7A57] bg-[#E8F3ED] px-2 py-0.5 rounded-full inline-block mt-1">
+              ✨ Buy 2 Get 15% Off • Buy 3+ Get 20% Off
+            </span>
+          </div>
+          <button id="close-cart-btn" class="p-2 text-[#7A756D] hover:text-[#1C1C1E] transition">
+            <i data-lucide="x" class="w-5 h-5"></i>
+          </button>
+        </div>
+
+        <!-- Dynamic Bundle Savings Progress Bar -->
+        <div class="bg-[#FAF4EC] px-6 py-3 border-b border-[#E8E3DA] text-xs">
+          <div class="flex items-center justify-between font-semibold text-[#705844] mb-1.5">
+            <span id="bundle-progress-msg">Add 1 more print to unlock 15% bundle savings!</span>
+            <span id="bundle-tier-tag" class="font-bold text-[#C66B4D]">Tier 1</span>
+          </div>
+          <div class="w-full bg-[#E5DCcf] h-2 rounded-full overflow-hidden">
+            <div id="bundle-progress-bar" class="bg-[#C66B4D] h-full transition-all duration-500 rounded-full" style="width: 33%"></div>
+          </div>
+        </div>
+
+        <div id="cart-items-container" class="flex-grow overflow-y-auto p-6 space-y-4">
+          <!-- Dynamic Cart Items injected here -->
+          <div class="text-center text-[#7A756D] py-16">Your bag is currently empty.</div>
+        </div>
+
+        <div class="p-6 border-t border-[#E8E3DA] bg-white space-y-4">
+          <div class="space-y-1.5 text-sm">
+            <div class="flex items-center justify-between text-[#7A756D]">
+              <span>Cart Subtotal</span>
+              <span id="cart-raw-subtotal">$0.00</span>
+            </div>
+            <div id="cart-discount-row" class="flex items-center justify-between text-[#3B7A57] font-semibold hidden">
+              <span id="cart-discount-label">Gallery Bundle Discount</span>
+              <span id="cart-discount-val">-$0.00</span>
+            </div>
+            <div class="flex items-center justify-between text-base font-bold text-[#1C1C1E] pt-2 border-t border-[#F0EBE3]">
+              <span>Final Total</span>
+              <span id="cart-subtotal-price">$0.00</span>
+            </div>
+          </div>
+          <p class="text-xs text-[#7A756D]">Free worldwide express delivery & local 72h printing included.</p>
+          <button id="cart-checkout-btn" class="w-full bg-[#1C1C1E] hover:bg-[#C66B4D] text-white py-4 rounded-md font-semibold tracking-wide transition flex items-center justify-center gap-2">
+            <span>Proceed to Secure Checkout</span>
+            <i data-lucide="arrow-right" class="w-4 h-4"></i>
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <script src="/static/app.js"></script>
+  <script>lucide.createIcons();</script>
+</body>
+</html>

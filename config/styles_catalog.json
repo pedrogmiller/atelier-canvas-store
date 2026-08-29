@@ -1,0 +1,47 @@
+[
+  {
+    "id": "japandi-minimalism",
+    "name": "Japandi & Wabi-Sabi Minimalism",
+    "description": "Fusion of Scandinavian functionality and Japanese rustic minimalism. Neutral warm earthy tones, organic textures, balanced negative space.",
+    "color_palette": ["Terracotta", "Warm Ochre", "Charcoal Slate", "Muted Sage", "Raw Linen", "Sandstone"],
+    "subjects": ["Abstract Zen brushwork", "Organic textured stone arches", "Botanical branch shadows", "Layered geometric plaster"],
+    "target_room": "Living Room, Serene Master Bedroom, Modern Home Office",
+    "vibe": "Calm, grounding, luxurious minimalism"
+  },
+  {
+    "id": "bauhaus-geometric",
+    "name": "Mid-Century Bauhaus & Modernism",
+    "description": "Bold constructivist forms, primary color accents balanced with muted cream, architectural rhythm, and clean typography influence.",
+    "color_palette": ["Deep Cobalt", "Burnt Vermilion", "Mustard Yellow", "Matte Black", "Warm Parchment"],
+    "subjects": ["Intersecting geometric quadrants", "Abstract architectural elevations", "Curved constructivist arches", "Kinetic balance forms"],
+    "target_room": "Design Studio, Modern Dining Room, Loft Living Area",
+    "vibe": "Intellectual, bold, architectural"
+  },
+  {
+    "id": "vintage-botanical",
+    "name": "Antique Botanical & Herbarium",
+    "description": "Detailed archival scientific illustration aesthetic, aged parchment patina, delicate foliage, and vintage French/English herbarium plates.",
+    "color_palette": ["Forest Moss", "Eucalyptus Green", "Antique Sepia", "Old Ivory", "Dried Rose"],
+    "subjects": ["Ginkgo biloba leaf cross-sections", "Medicinal alpine flora", "Wild fern triptych", "Heirloom citrus branches"],
+    "target_room": "Dining Room, Kitchen Nook, Reading Study",
+    "vibe": "Timeless, refined, organic elegance"
+  },
+  {
+    "id": "mediterranean-coastal",
+    "name": "Mediterranean Terracotta & Coastal Ease",
+    "description": "Sun-drenched European coastlines, textured stucco walls, olive branch silhouettes, and warm seaside architectural vistas.",
+    "color_palette": ["Amalfi Ultramarine", "Terracotta Clay", "Olive Green", "Sunlit Limewash", "Warm Sand"],
+    "subjects": ["Limestone archways overlooking sea", "Terracotta pottery with olive twigs", "Abstract coastal cliff lines", "Sun-bleached linen balconies"],
+    "target_room": "Sunroom, Bright Living Room, Open Kitchen",
+    "vibe": "Sun-drenched, breezy, Mediterranean warmth"
+  },
+  {
+    "id": "dark-academia-moody",
+    "name": "Dark Academia & Textured Renaissance",
+    "description": "Moody, dramatic chiaroscuro lighting, deep oil-textured landscapes, celestial star maps, and vintage Dutch still-life undertones.",
+    "color_palette": ["Deep Obsidian", "Burnished Gold", "Burgundy Wine", "Espresso Umber", "Smoky Indigo"],
+    "subjects": ["Atmospheric misty mountain pines", "Celestial astrolabe and star constellations", "Textured vintage oil study", "Moody architectural ruin"],
+    "target_room": "Library, Private Study, Moody Bedroom Lounge",
+    "vibe": "Mysterious, scholarly, opulent"
+  }
+]

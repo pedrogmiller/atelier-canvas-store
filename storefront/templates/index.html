@@ -1,0 +1,181 @@
+{% extends "base.html" %}
+
+{% block title %}ATELIER & CANVAS | Curated Contemporary Fine Art & Framed Decor{% endblock %}
+
+{% block content %}
+<!-- Hero Section -->
+<section class="relative bg-[#F3ECE2] border-b border-[#E8E3DA] py-20 px-6 overflow-hidden">
+  <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+    
+    <!-- Hero Copy -->
+    <div class="lg:col-span-7 space-y-6">
+      <div class="inline-flex items-center gap-2 bg-[#E5DCcf] px-3.5 py-1 rounded-full text-xs font-semibold tracking-wider uppercase text-[#705844]">
+        <i data-lucide="sparkles" class="w-3.5 h-3.5"></i> Curated Gallery Collection 2026
+      </div>
+      <h1 class="font-['Cormorant_Garamond'] text-5xl sm:text-6xl lg:text-7xl font-bold tracking-tight text-[#1C1C1E] leading-[1.05]">
+        Timeless Fine Art.<br>
+        <span class="italic font-normal font-serif text-[#C66B4D]">Framed for Serene Spaces.</span>
+      </h1>
+      <p class="text-[#68635B] text-lg max-w-xl leading-relaxed">
+        Museum-grade archival prints and handcrafted solid oak frames. Printed locally in 32 global hubs and delivered directly to your door in 72 hours.
+      </p>
+      <div class="flex flex-wrap items-center gap-4 pt-2">
+        <a href="#collection" class="bg-[#1C1C1E] hover:bg-[#C66B4D] text-white px-8 py-4 rounded-md font-medium tracking-wide transition shadow-lg inline-flex items-center gap-2">
+          <span>Explore The Gallery</span>
+          <i data-lucide="arrow-right" class="w-4 h-4"></i>
+        </a>
+        <a href="#quality" class="border border-[#1C1C1E] hover:bg-white text-[#1C1C1E] px-7 py-4 rounded-md font-medium tracking-wide transition inline-flex items-center gap-2">
+          <span>Our Craft & Materials</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- Hero Visual Preview -->
+    <div class="lg:col-span-5 relative">
+      <div class="relative rounded-2xl overflow-hidden shadow-2xl border-4 border-white aspect-[4/5] bg-white group">
+        {% if products and products|length > 0 %}
+          <img src="{{ products[0].images.hero }}" alt="{{ products[0].title }}" class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
+          <div class="absolute bottom-0 inset-x-0 p-6 bg-gradient-to-t from-black/80 via-black/40 to-transparent text-white">
+            <span class="text-xs uppercase tracking-widest text-[#E8E6E1] block mb-1">Featured Statement Piece</span>
+            <h3 class="font-['Cormorant_Garamond'] text-2xl font-bold">{{ products[0].title }}</h3>
+            <div class="flex items-center justify-between mt-2">
+              <span class="text-sm font-semibold">From ${{ products[0].starting_price }}</span>
+              <a href="/product/{{ products[0].id }}" class="text-xs uppercase font-bold tracking-wider underline hover:text-[#C66B4D]">View Piece &rarr;</a>
+            </div>
+          </div>
+        {% else %}
+          <div class="w-full h-full flex flex-col items-center justify-center p-8 text-center text-[#7A756D]">
+            <i data-lucide="image" class="w-12 h-12 mb-3 text-[#C66B4D]"></i>
+            <p class="font-semibold">Ready to curate your first collection.</p>
+            <p class="text-xs mt-1">Run the autonomous agent pipeline to generate art.</p>
+          </div>
+        {% endif %}
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- Trust Badges -->
+<section id="quality" class="border-b border-[#E8E3DA] bg-white py-8 px-6">
+  <div class="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-6 text-center sm:text-left">
+    <div class="flex flex-col sm:flex-row items-center gap-4">
+      <div class="w-12 h-12 rounded-full bg-[#FAF8F5] border border-[#E8E3DA] flex items-center justify-center text-[#C66B4D] shrink-0">
+        <i data-lucide="feather" class="w-5 h-5"></i>
+      </div>
+      <div>
+        <h4 class="text-sm font-bold text-[#1C1C1E]">Archival Matte Paper</h4>
+        <p class="text-xs text-[#7A756D]">250 gsm museum-grade paper</p>
+      </div>
+    </div>
+
+    <div class="flex flex-col sm:flex-row items-center gap-4">
+      <div class="w-12 h-12 rounded-full bg-[#FAF8F5] border border-[#E8E3DA] flex items-center justify-center text-[#C66B4D] shrink-0">
+        <i data-lucide="trees" class="w-5 h-5"></i>
+      </div>
+      <div>
+        <h4 class="text-sm font-bold text-[#1C1C1E]">FSC Solid Oak Frames</h4>
+        <p class="text-xs text-[#7A756D]">Sustainably harvested timber</p>
+      </div>
+    </div>
+
+    <div class="flex flex-col sm:flex-row items-center gap-4">
+      <div class="w-12 h-12 rounded-full bg-[#FAF8F5] border border-[#E8E3DA] flex items-center justify-center text-[#C66B4D] shrink-0">
+        <i data-lucide="clock" class="w-5 h-5"></i>
+      </div>
+      <div>
+        <h4 class="text-sm font-bold text-[#1C1C1E]">72-Hour Local Printing</h4>
+        <p class="text-xs text-[#7A756D]">Produced in 32 global hubs</p>
+      </div>
+    </div>
+
+    <div class="flex flex-col sm:flex-row items-center gap-4">
+      <div class="w-12 h-12 rounded-full bg-[#FAF8F5] border border-[#E8E3DA] flex items-center justify-center text-[#C66B4D] shrink-0">
+        <i data-lucide="sparkle" class="w-5 h-5"></i>
+      </div>
+      <div>
+        <h4 class="text-sm font-bold text-[#1C1C1E]">100-Year Guarantee</h4>
+        <p class="text-xs text-[#7A756D]">Fade-resistant Giclée inks</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Product Catalog & Aesthetic Filter -->
+<section id="collection" class="py-20 px-6 max-w-7xl mx-auto">
+  <div class="text-center max-w-2xl mx-auto mb-12 space-y-3">
+    <span class="text-xs uppercase tracking-[0.25em] text-[#C66B4D] font-bold">Curated Catalog</span>
+    <h2 class="font-['Cormorant_Garamond'] text-4xl sm:text-5xl font-bold text-[#1C1C1E]">Fine Art Print Collections</h2>
+    <p class="text-[#7A756D] text-sm leading-relaxed">
+      Choose from handcrafted natural oak, matte black, white wooden frames, or stretched canvas wraps.
+    </p>
+  </div>
+
+  <!-- Category Filter Pills -->
+  <div id="aesthetic-filters" class="flex items-center justify-center flex-wrap gap-2 mb-12">
+    <button class="filter-btn active px-5 py-2 rounded-full text-xs font-semibold tracking-wider uppercase border border-[#1C1C1E] bg-[#1C1C1E] text-white transition" data-filter="all">All Styles</button>
+    <button class="filter-btn px-5 py-2 rounded-full text-xs font-semibold tracking-wider uppercase border border-[#E8E3DA] bg-white text-[#7A756D] hover:border-[#1C1C1E] hover:text-[#1C1C1E] transition" data-filter="japandi">Japandi</button>
+    <button class="filter-btn px-5 py-2 rounded-full text-xs font-semibold tracking-wider uppercase border border-[#E8E3DA] bg-white text-[#7A756D] hover:border-[#1C1C1E] hover:text-[#1C1C1E] transition" data-filter="bauhaus">Bauhaus</button>
+    <button class="filter-btn px-5 py-2 rounded-full text-xs font-semibold tracking-wider uppercase border border-[#E8E3DA] bg-white text-[#7A756D] hover:border-[#1C1C1E] hover:text-[#1C1C1E] transition" data-filter="botanical">Botanical</button>
+    <button class="filter-btn px-5 py-2 rounded-full text-xs font-semibold tracking-wider uppercase border border-[#E8E3DA] bg-white text-[#7A756D] hover:border-[#1C1C1E] hover:text-[#1C1C1E] transition" data-filter="mediterranean">Mediterranean</button>
+    <button class="filter-btn px-5 py-2 rounded-full text-xs font-semibold tracking-wider uppercase border border-[#E8E3DA] bg-white text-[#7A756D] hover:border-[#1C1C1E] hover:text-[#1C1C1E] transition" data-filter="dark-academia">Dark Academia</button>
+  </div>
+
+  <!-- Product Grid -->
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+    {% for product in products %}
+    <div class="product-card group bg-white rounded-xl border border-[#E8E3DA] overflow-hidden shadow-sm hover:shadow-xl transition duration-300 flex flex-col" data-aesthetic="{{ product.aesthetic_id }}">
+      
+      <!-- Card Image -->
+      <a href="/product/{{ product.id }}" class="relative aspect-[4/3] overflow-hidden block bg-[#FAF8F5]">
+        <img src="{{ product.images.hero }}" alt="{{ product.title }}" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+        <div class="absolute top-3 left-3 bg-white/90 backdrop-blur-md px-2.5 py-1 rounded text-[10px] font-bold uppercase tracking-wider text-[#1C1C1E]">
+          {{ product.aesthetic_name }}
+        </div>
+        <div class="absolute bottom-3 right-3 bg-[#1C1C1E]/80 backdrop-blur-md text-white text-[11px] font-semibold px-2.5 py-1 rounded">
+          From ${{ product.starting_price }}
+        </div>
+      </a>
+
+      <!-- Card Details -->
+      <div class="p-6 flex flex-col flex-grow justify-between space-y-4">
+        <div>
+          <a href="/product/{{ product.id }}">
+            <h3 class="font-['Cormorant_Garamond'] text-2xl font-bold text-[#1C1C1E] hover:text-[#C66B4D] transition leading-tight mb-2">
+              {{ product.title }}
+            </h3>
+          </a>
+          <p class="text-xs text-[#7A756D] line-clamp-2 leading-relaxed">
+            {{ product.short_summary }}
+          </p>
+        </div>
+
+        <div class="pt-4 border-t border-[#F0EBE3] flex items-center justify-between">
+          <div class="text-xs text-[#7A756D]">
+            <span>Sizes: 12x18" to 30x40"</span>
+          </div>
+          <a href="/product/{{ product.id }}" class="text-xs font-bold uppercase tracking-wider text-[#1C1C1E] group-hover:text-[#C66B4D] flex items-center gap-1">
+            <span>Configure</span>
+            <i data-lucide="chevron-right" class="w-4 h-4"></i>
+          </a>
+        </div>
+      </div>
+
+    </div>
+    {% endfor %}
+  </div>
+
+  {% if not products %}
+  <div class="text-center py-20 bg-white rounded-xl border border-dashed border-[#D1C9BD] p-12">
+    <i data-lucide="palette" class="w-12 h-12 text-[#C66B4D] mx-auto mb-4"></i>
+    <h3 class="font-['Cormorant_Garamond'] text-2xl font-bold text-[#1C1C1E]">No Products in Catalog Yet</h3>
+    <p class="text-sm text-[#7A756D] max-w-md mx-auto mt-2">
+      Run the autonomous agent pipeline to generate print-ready art, calculate Gelato margins, and populate your storefront.
+    </p>
+    <code class="block mt-4 text-xs bg-[#FAF8F5] p-3 rounded font-mono text-[#1C1C1E] inline-block">
+      python main.py --generate --theme japandi-minimalism
+    </code>
+  </div>
+  {% endif %}
+</section>
+{% endblock %}

@@ -1,0 +1,18 @@
+# Core AI & Agents
+google-genai>=0.1.1
+pydantic>=2.0.0
+python-dotenv>=1.0.0
+
+# Image Processing & Mockup Generation
+Pillow>=10.0.0
+
+# Storefront Web Server & API
+fastapi>=0.110.0
+uvicorn>=0.28.0
+jinja2>=3.1.3
+python-multipart>=0.0.9
+requests>=2.31.0
+stripe>=8.0.0
+
+# CLI & Formatting
+rich>=13.7.0

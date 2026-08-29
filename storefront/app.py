@@ -1,0 +1,242 @@
+import json
+import logging
+import uuid
+from pathlib import Path
+from typing import Dict, Any, List
+from fastapi import FastAPI, Request, HTTPException, BackgroundTasks, Header
+from fastapi.responses import HTMLResponse, JSONResponse, RedirectResponse
+from fastapi.staticfiles import StaticFiles
+from fastapi.templating import Jinja2Templates
+from pydantic import BaseModel
+import stripe
+
+from config.settings import settings
+from suppliers.pricing_models import (
+    GelatoOrderPayload, GelatoOrderLineItem, CustomerShippingAddress
+)
+from suppliers.gelato_client import gelato_client
+
+logger = logging.getLogger("StorefrontApp")
+
+# Setup FastAPI App
+app = FastAPI(title=settings.app_name)
+
+# Mount Static & Templates
+app.mount("/static", StaticFiles(directory=str(settings.storefront_dir / "static")), name="static")
+templates = Jinja2Templates(directory=str(settings.storefront_dir / "templates"))
+
+# Setup Stripe
+stripe.api_key = settings.stripe_secret_key
+is_stripe_live = bool(settings.stripe_secret_key and not settings.stripe_secret_key.startswith("sk_test_mock"))
+
+def get_catalog() -> List[Dict[str, Any]]:
+    """Loads current live product catalog from catalog.json."""
+    if settings.catalog_file.exists():
+        try:
+            with open(settings.catalog_file, "r", encoding="utf-8") as f:
+                return json.load(f)
+        except Exception as e:
+            logger.error(f"Failed to read catalog.json: {e}")
+    return []
+
+# --- Storefront Routes ---
+
+@app.get("/", response_class=HTMLResponse)
+async def home(request: Request):
+    """Gallery homepage with hero and product grid."""
+    products = get_catalog()
+    return templates.TemplateResponse("index.html", {"request": request, "products": products})
+
+@app.get("/product/{product_id}", response_class=HTMLResponse)
+async def product_detail(request: Request, product_id: str):
+    """Product configurator page with interactive frame/size selector."""
+    products = get_catalog()
+    product = next((p for p in products if p["id"] == product_id), None)
+    if not product:
+        raise HTTPException(status_code=404, detail="Product collection not found.")
+    return templates.TemplateResponse("product.html", {"request": request, "product": product})
+
+@app.get("/api/catalog")
+async def api_catalog():
+    """Returns active product catalog in JSON format."""
+    return JSONResponse(content=get_catalog())
+
+# --- Stripe & Checkout Layer ---
+
+class CheckoutItem(BaseModel):
+    product_id: str
+    product_title: str
+    variant_id: str
+    size_label: str
+    frame_label: str
+    gelato_sku: str
+    price: float
+    image_url: str
+    quantity: int = 1
+
+class CheckoutRequest(BaseModel):
+    items: List[CheckoutItem]
+
+@app.post("/api/checkout")
+async def create_checkout_session(payload: CheckoutRequest):
+    """Creates a Stripe Checkout Session with dynamic Gallery Bundle savings."""
+    if not payload.items:
+        raise HTTPException(status_code=400, detail="Cart is empty.")
+
+    order_ref = f"order_{uuid.uuid4().hex[:8]}"
+
+    # Calculate bundle discount
+    total_qty = sum(item.quantity for item in payload.items)
+    discount_multiplier = 1.0
+    discount_label = ""
+    if total_qty >= 3:
+        discount_multiplier = 0.80  # 20% off
+        discount_label = " (Gallery Bundle - 20% Off)"
+    elif total_qty >= 2:
+        discount_multiplier = 0.85  # 15% off
+        discount_label = " (Pair Bundle - 15% Off)"
+
+    if is_stripe_live:
+        try:
+            line_items = []
+            for item in payload.items:
+                discounted_unit_price = round(item.price * discount_multiplier, 2)
+                line_items.append({
+                    "price_data": {
+                        "currency": "usd",
+                        "product_data": {
+                            "name": f"{item.product_title} - {item.frame_label} ({item.size_label}){discount_label}",
+                            "images": [f"{settings.store_url}{item.image_url}" if item.image_url.startswith("/") else item.image_url],
+                            "metadata": {
+                                "gelato_sku": item.gelato_sku,
+                                "product_id": item.product_id,
+                                "variant_id": item.variant_id
+                            }
+                        },
+                        "unit_amount": int(discounted_unit_price * 100), # Cents
+                    },
+                    "quantity": item.quantity,
+                })
+
+            session = stripe.checkout.Session.create(
+                payment_method_types=["card"],
+                line_items=line_items,
+                mode="payment",
+                shipping_address_collection={"allowed_countries": ["US", "CA", "GB", "DE", "FR", "AU", "IT", "ES", "NL", "SE"]},
+                success_url=f"{settings.store_url}/success?order_ref={order_ref}&session_id={{CHECKOUT_SESSION_ID}}",
+                cancel_url=f"{settings.store_url}/#collection",
+                client_reference_id=order_ref,
+                metadata={"order_ref": order_ref, "bundle_discount": discount_label}
+            )
+            return {
+                "checkout_url": session.url,
+                "order_ref": order_ref,
+                "bundle_discount_applied": discount_label or "Standard"
+            }
+        except Exception as e:
+            logger.error(f"Stripe error: {e}")
+            raise HTTPException(status_code=500, detail=str(e))
+
+    else:
+        # Seamless Mock / Test Mode Checkout
+        return {
+            "checkout_url": f"/success?order_ref={order_ref}&mock_mode=true",
+            "order_ref": order_ref,
+            "mode": "test_simulator",
+            "bundle_discount_applied": discount_label or "Standard"
+        }
+
+
+@app.get("/success", response_class=HTMLResponse)
+async def success_page(request: Request, order_ref: str = "order_sample", session_id: str = ""):
+    """Displays order confirmation and triggers automated Gelato fulfillment in background."""
+    # Simulate automated fulfillment routing for demo/test orders
+    mock_address = CustomerShippingAddress(
+        first_name="Valued",
+        last_name="Collector",
+        address_line_1="742 Evergreen Terrace",
+        city="Austin",
+        state_province="TX",
+        postal_code="78701",
+        country_code="US",
+        email="customer@example.com"
+    )
+    
+    # Auto-dispatch to Gelato client
+    order_payload = GelatoOrderPayload(
+        order_reference_id=order_ref,
+        customer_reference_id="cust_guest",
+        items=[
+            GelatoOrderLineItem(
+                item_reference_id="item_1",
+                product_uid="framed-poster_flat_wood_natural_24x36-in_200-gsm",
+                files=[{"type": "default", "url": f"{settings.store_url}/static/products/sample/master_art.jpg"}]
+            )
+        ],
+        shipping_address=mock_address
+    )
+    gelato_client.create_fulfillment_order(order_payload)
+
+    return templates.TemplateResponse(
+        "success.html",
+        {"request": request, "order_ref": order_ref}
+    )
+
+# --- Stripe Webhook Listener (Automated 100% Fulfillment) ---
+
+@app.post("/api/webhooks/stripe")
+async def stripe_webhook(request: Request, background_tasks: BackgroundTasks):
+    """Receives payment confirmation from Stripe and automatically orders from Gelato."""
+    payload_body = await request.body()
+    sig_header = request.headers.get("stripe-signature")
+
+    try:
+        event = stripe.Webhook.construct_event(
+            payload_body, sig_header, settings.stripe_webhook_secret
+        )
+    except Exception as e:
+        logger.error(f"Invalid webhook signature: {e}")
+        return JSONResponse(content={"error": str(e)}, status_code=400)
+
+    if event["type"] == "checkout.session.completed":
+        session = event["data"]["object"]
+        order_ref = session.get("client_reference_id", f"order_{uuid.uuid4().hex[:8]}")
+        shipping = session.get("shipping_details", {})
+        customer_email = session.get("customer_details", {}).get("email", "")
+
+        # Extract address
+        address = CustomerShippingAddress(
+            first_name=shipping.get("name", "Collector").split()[0],
+            last_name=" ".join(shipping.get("name", "Collector").split()[1:]) or "Customer",
+            address_line_1=shipping.get("address", {}).get("line1", "123 Gallery Way"),
+            address_line_2=shipping.get("address", {}).get("line2", ""),
+            city=shipping.get("address", {}).get("city", "New York"),
+            state_province=shipping.get("address", {}).get("state", "NY"),
+            postal_code=shipping.get("address", {}).get("postal_code", "10001"),
+            country_code=shipping.get("address", {}).get("country", "US"),
+            email=customer_email
+        )
+
+        # Dispatch fulfillment
+        line_items = session.get("line_items", {}).get("data", [])
+        order_items = []
+        for item in line_items:
+            sku = item.get("price", {}).get("product", {}).get("metadata", {}).get("gelato_sku", "framed-poster_flat_wood_natural_24x36-in_200-gsm")
+            order_items.append(GelatoOrderLineItem(
+                item_reference_id=f"item_{uuid.uuid4().hex[:6]}",
+                product_uid=sku,
+                files=[{"type": "default", "url": f"{settings.store_url}/static/products/sample/master_art.jpg"}],
+                quantity=item.get("quantity", 1)
+            ))
+
+        order_payload = GelatoOrderPayload(
+            order_reference_id=order_ref,
+            customer_reference_id=customer_email or "cust_direct",
+            items=order_items,
+            shipping_address=address
+        )
+
+        background_tasks.add_task(gelato_client.create_fulfillment_order, order_payload)
+        logger.info(f"Successfully queued automated Gelato fulfillment for order: {order_ref}")
+
+    return {"status": "success"}
