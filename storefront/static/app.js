@@ -133,46 +133,61 @@ function initProductConfigurator() {
     }
   }
 
-  // Direct 1-Click Express Checkout
-  if (directCheckoutBtn) {
-    directCheckoutBtn.addEventListener('click', async () => {
-      const variant = getSelectedVariant();
-      directCheckoutBtn.innerHTML = `<i data-lucide="loader-2" class="w-5 h-5 animate-spin"></i><span>Connecting to Stripe...</span>`;
-      initLucideIcons();
+  const appleGooglePayBtn = document.getElementById('apple-google-pay-btn');
 
-      try {
-        const response = await fetch('/api/checkout', {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({
-            items: [{
-              product_id: product.id,
-              product_title: product.title,
-              variant_id: variant.variant_id,
-              size_label: variant.size_label,
-              frame_label: variant.frame_label,
-              gelato_sku: variant.gelato_sku,
-              price: variant.retail_price,
-              image_url: product.images.hero,
-              quantity: 1
-            }]
-          })
-        });
+  async function triggerCheckout(btnElement, loadingText) {
+    const variant = getSelectedVariant();
+    const originalHtml = btnElement.innerHTML;
+    btnElement.innerHTML = `<i data-lucide="loader-2" class="w-5 h-5 animate-spin"></i><span>${loadingText}</span>`;
+    initLucideIcons();
 
-        const data = await response.json();
-        if (data.checkout_url) {
-          window.location.href = data.checkout_url;
-        } else {
-          alert('Error initializing checkout. Please try again.');
-          directCheckoutBtn.innerHTML = `<span>Order Now with Express Checkout</span>`;
-        }
-      } catch (err) {
-        console.error('Checkout error:', err);
-        alert('Network error. Redirecting to local test order...');
-        window.location.href = `/success?order_ref=order_${Date.now()}`;
+    try {
+      const response = await fetch('/api/checkout', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          items: [{
+            product_id: product.id,
+            product_title: product.title,
+            variant_id: variant.variant_id,
+            size_label: variant.size_label,
+            frame_label: variant.frame_label,
+            gelato_sku: variant.gelato_sku,
+            price: variant.retail_price,
+            image_url: product.images.hero,
+            quantity: 1
+          }]
+        })
+      });
+
+      const data = await response.json();
+      if (data.checkout_url) {
+        window.location.href = data.checkout_url;
+      } else {
+        alert('Error initializing checkout. Please try again.');
+        btnElement.innerHTML = originalHtml;
       }
+    } catch (err) {
+      console.error('Checkout error:', err);
+      alert('Network error. Redirecting to local test order...');
+      window.location.href = `/success?order_ref=order_${Date.now()}`;
+    }
+  }
+
+  // Apple Pay / Google Pay Direct 1-Click Buy
+  if (appleGooglePayBtn) {
+    appleGooglePayBtn.addEventListener('click', () => {
+      triggerCheckout(appleGooglePayBtn, 'Opening Apple Pay / Google Pay...');
     });
   }
+
+  // Direct Card Express Checkout
+  if (directCheckoutBtn) {
+    directCheckoutBtn.addEventListener('click', () => {
+      triggerCheckout(directCheckoutBtn, 'Connecting to Stripe...');
+    });
+  }
+
 
   // Add to Bag Button
   if (addToBagBtn) {

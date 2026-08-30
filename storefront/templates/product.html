@@ -165,24 +165,46 @@
         </select>
       </div>
 
-      <!-- Action Buttons (Frictionless 2-Click Checkout) -->
-      <div class="space-y-3 pt-2">
-        <button id="direct-stripe-checkout-btn" class="w-full bg-[#1C1C1E] hover:bg-[#B8834E] text-white py-4 rounded-lg font-bold tracking-wide transition shadow-lg flex items-center justify-center gap-2 cursor-pointer">
-          <i data-lucide="zap" class="w-5 h-5 text-yellow-300"></i>
-          <span>Instant Express Checkout (Apple Pay • Cards)</span>
+      <!-- Action Buttons (Frictionless 1-Click Apple Pay / Google Pay / Card) -->
+      <div class="space-y-2.5 pt-2">
+        <!-- 1. Apple Pay / Google Pay 1-Click Instant Buy Button -->
+        <button id="apple-google-pay-btn" class="w-full bg-black hover:bg-neutral-900 text-white py-4 rounded-lg font-medium tracking-wide transition shadow-lg flex items-center justify-center gap-3 cursor-pointer border border-white/20">
+          <span class="flex items-center text-lg font-bold tracking-tight">
+            <svg class="w-5 h-5 fill-current mr-0.5 inline" viewBox="0 0 170 170"><path d="M150.37 130.25c-2.45 5.66-5.35 10.87-8.71 15.66-4.58 6.53-8.33 11.05-11.22 13.56-4.48 4.12-9.28 6.23-14.42 6.35-3.69 0-8.14-1.05-13.32-3.18-5.19-2.12-9.97-3.17-14.34-3.17-4.58 0-9.49 1.05-14.75 3.17-5.26 2.13-9.5 3.24-12.74 3.35-4.35.13-9.16-1.9-14.42-6.08-3.69-3.04-7.67-7.81-11.96-14.34-5.77-8.91-10.27-18.89-13.5-29.93-3.23-11.04-4.85-21.78-4.85-32.22 0-14.43 3.69-26.65 11.07-36.66s16.73-15.11 28.05-15.34c5.19 0 10.66 1.33 16.42 3.99 5.76 2.66 9.77 4.05 12.03 4.17 1.81-.12 6.01-1.63 12.6-4.52 6.6-2.9 12.02-4.14 16.28-3.73 12.07.97 21.6 5.37 28.6 13.2-10.74 6.52-16.01 15.48-15.8 26.88.22 8.92 3.68 16.32 10.38 22.21 6.7 5.89 14.58 9.38 23.63 10.47-2.22 6.74-4.94 13.37-8.15 19.89zM119.22 31.84c0-7.39 2.66-14.37 7.97-20.95 5.31-6.57 11.83-10.69 19.57-12.35.45 1.15.68 2.37.68 3.66 0 7.39-2.73 14.37-8.18 20.95-5.46 6.58-12.03 10.75-19.72 12.51-.23-1.27-.32-2.54-.32-3.82z"/></svg>
+            Pay
+          </span>
+          <span class="text-neutral-500 font-light">|</span>
+          <span class="flex items-center text-sm font-semibold tracking-normal text-white">
+            <span class="font-bold mr-1">G</span>Pay
+          </span>
+          <span class="text-xs uppercase font-bold tracking-widest text-[#E8E6E1] bg-neutral-800 px-2 py-0.5 rounded ml-1">1-Click Buy</span>
         </button>
 
+        <div class="relative flex py-1 items-center">
+          <div class="flex-grow border-t border-[#E8E3DA]"></div>
+          <span class="flex-shrink mx-3 text-[10px] text-[#7A756D] uppercase tracking-widest font-semibold">Or Pay with Card</span>
+          <div class="flex-grow border-t border-[#E8E3DA]"></div>
+        </div>
+
+        <!-- 2. Pay with Card -->
+        <button id="direct-stripe-checkout-btn" class="w-full bg-[#1C1C1E] hover:bg-[#B8834E] text-white py-3.5 rounded-lg font-bold tracking-wide transition shadow-sm flex items-center justify-center gap-2 cursor-pointer">
+          <i data-lucide="credit-card" class="w-4 h-4"></i>
+          <span>Pay with Debit or Credit Card</span>
+        </button>
+
+        <!-- 3. Add to Bag -->
         <button id="add-to-bag-btn" class="w-full border-2 border-[#1C1C1E] hover:bg-[#FAF8F5] text-[#1C1C1E] py-3.5 rounded-lg font-semibold tracking-wide transition flex items-center justify-center gap-2 cursor-pointer">
           <i data-lucide="shopping-bag" class="w-4 h-4"></i>
           <span>Add to Bag (Save 15%–20% on Sets)</span>
         </button>
 
         <div class="flex items-center justify-center gap-4 text-[11px] text-[#7A756D] pt-1">
-          <span class="flex items-center gap-1"><i data-lucide="lock" class="w-3.5 h-3.5 text-[#40684A]"></i> Stripe 256-Bit SSL Encrypted</span>
+          <span class="flex items-center gap-1"><i data-lucide="shield-check" class="w-3.5 h-3.5 text-[#40684A]"></i> Stripe Encrypted Checkout</span>
           <span>•</span>
-          <span>Apple Pay & Google Pay Ready</span>
+          <span>72h Global Delivery</span>
         </div>
       </div>
+
 
 
       <!-- Story & Narrative -->
