@@ -6,6 +6,7 @@ from agents.mockup_agent import MockupAgent
 from agents.listing_seo_agent import ListingSEOAgent
 from agents.social_creative_agent import SocialCreativeAgent
 from agents.storefront_sync_agent import StorefrontSyncAgent
+from agents.brand_identity_agent import BrandIdentityAgent, brand_identity_agent
 
 __all__ = [
     "TrendScoutAgent",
@@ -15,5 +16,8 @@ __all__ = [
     "MockupAgent",
     "ListingSEOAgent",
     "SocialCreativeAgent",
-    "StorefrontSyncAgent"
+    "StorefrontSyncAgent",
+    "BrandIdentityAgent",
+    "brand_identity_agent"
 ]
+
