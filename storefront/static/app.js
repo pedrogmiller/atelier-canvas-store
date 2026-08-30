@@ -74,7 +74,7 @@ function initProductConfigurator() {
     });
   });
 
-  // Frame Style Picker
+  // Frame Style Picker (Updates Frame, Price, and SKU without jarring photo jumps)
   frameBtns.forEach(btn => {
     btn.addEventListener('click', () => {
       frameBtns.forEach(b => b.classList.remove('active'));
@@ -82,21 +82,11 @@ function initProductConfigurator() {
       currentFrame = btn.getAttribute('data-frame');
       const label = btn.getAttribute('data-label');
       if (frameLabelSpan) frameLabelSpan.textContent = label;
-      
-      // Auto-switch thumbnail to match frame if applicable
-      if (currentFrame === 'natural_oak' && product.images.living_room) {
-        switchThumbnail(product.images.living_room, 'Living Room (Natural Oak)');
-      } else if (currentFrame === 'black_wood' && product.images.bedroom) {
-        switchThumbnail(product.images.bedroom, 'Master Bedroom (Matte Black)');
-      } else if (currentFrame === 'white_wood' && product.images.studio) {
-        switchThumbnail(product.images.studio, 'Nordic Studio (White Wood)');
-      } else if (product.images.framed_product) {
-        switchThumbnail(product.images.framed_product, 'Framed Detail View');
-      }
 
       updatePricingAndSku();
     });
   });
+
 
   // Size Picker Change
   if (sizeSelector) {
