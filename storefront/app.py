@@ -39,13 +39,23 @@ def get_catalog() -> List[Dict[str, Any]]:
             logger.error(f"Failed to read catalog.json: {e}")
     return []
 
+def render_template(template_name: str, request: Request, context: Dict[str, Any] = None):
+    """Bulletproof template renderer compatible with all Starlette and FastAPI versions."""
+    ctx = {"request": request}
+    if context:
+        ctx.update(context)
+    try:
+        return templates.TemplateResponse(request=request, name=template_name, context=ctx)
+    except (TypeError, AttributeError):
+        return templates.TemplateResponse(template_name, ctx)
+
 # --- Storefront Routes ---
 
 @app.get("/", response_class=HTMLResponse)
 async def home(request: Request):
     """Gallery homepage with hero and product grid."""
     products = get_catalog()
-    return templates.TemplateResponse("index.html", {"request": request, "products": products})
+    return render_template("index.html", request, {"products": products})
 
 @app.get("/product/{product_id}", response_class=HTMLResponse)
 async def product_detail(request: Request, product_id: str):
@@ -54,12 +64,13 @@ async def product_detail(request: Request, product_id: str):
     product = next((p for p in products if p["id"] == product_id), None)
     if not product:
         raise HTTPException(status_code=404, detail="Product collection not found.")
-    return templates.TemplateResponse("product.html", {"request": request, "product": product})
+    return render_template("product.html", request, {"product": product})
 
 @app.get("/api/catalog")
 async def api_catalog():
     """Returns active product catalog in JSON format."""
     return JSONResponse(content=get_catalog())
+
 
 # --- Stripe & Checkout Layer ---
 
@@ -177,12 +188,14 @@ async def success_page(request: Request, order_ref: str = "order_sample", sessio
     )
     gelato_client.create_fulfillment_order(order_payload)
 
-    return templates.TemplateResponse(
+    return render_template(
         "success.html",
-        {"request": request, "order_ref": order_ref}
+        request,
+        {"order_ref": order_ref}
     )
 
 # --- Stripe Webhook Listener (Automated 100% Fulfillment) ---
+
 
 @app.post("/api/webhooks/stripe")
 async def stripe_webhook(request: Request, background_tasks: BackgroundTasks):
