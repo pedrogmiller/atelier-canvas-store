@@ -165,18 +165,25 @@
         </select>
       </div>
 
-      <!-- Action Buttons -->
+      <!-- Action Buttons (Frictionless 2-Click Checkout) -->
       <div class="space-y-3 pt-2">
-        <button id="direct-stripe-checkout-btn" class="w-full bg-[#1C1C1E] hover:bg-[#C66B4D] text-white py-4 rounded-lg font-bold tracking-wide transition shadow-lg flex items-center justify-center gap-2">
+        <button id="direct-stripe-checkout-btn" class="w-full bg-[#1C1C1E] hover:bg-[#B8834E] text-white py-4 rounded-lg font-bold tracking-wide transition shadow-lg flex items-center justify-center gap-2 cursor-pointer">
           <i data-lucide="zap" class="w-5 h-5 text-yellow-300"></i>
-          <span>Order Now with Express Checkout</span>
+          <span>Instant Express Checkout (Apple Pay • Cards)</span>
         </button>
 
-        <button id="add-to-bag-btn" class="w-full border-2 border-[#1C1C1E] hover:bg-[#FAF8F5] text-[#1C1C1E] py-3.5 rounded-lg font-semibold tracking-wide transition flex items-center justify-center gap-2">
+        <button id="add-to-bag-btn" class="w-full border-2 border-[#1C1C1E] hover:bg-[#FAF8F5] text-[#1C1C1E] py-3.5 rounded-lg font-semibold tracking-wide transition flex items-center justify-center gap-2 cursor-pointer">
           <i data-lucide="shopping-bag" class="w-4 h-4"></i>
-          <span>Add to Bag</span>
+          <span>Add to Bag (Save 15%–20% on Sets)</span>
         </button>
+
+        <div class="flex items-center justify-center gap-4 text-[11px] text-[#7A756D] pt-1">
+          <span class="flex items-center gap-1"><i data-lucide="lock" class="w-3.5 h-3.5 text-[#40684A]"></i> Stripe 256-Bit SSL Encrypted</span>
+          <span>•</span>
+          <span>Apple Pay & Google Pay Ready</span>
+        </div>
       </div>
+
 
       <!-- Story & Narrative -->
       <div class="pt-4 border-t border-[#F0EBE3] space-y-3">
