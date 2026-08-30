@@ -81,18 +81,27 @@ def start_server():
         reload=True
     )
 
+def run_batch_expansion(target: int = 28):
+    """Scales the store to 28+ audited collections, master Etsy CSV, and 30-day marketing playbook."""
+    from pipeline.batch_expander import BatchCatalogExpander
+    expander = BatchCatalogExpander()
+    expander.run_expansion(target_count=target)
+
 def main():
     parser = argparse.ArgumentParser(description="Autonomous Wall Art Multi-Agent E-Commerce Engine & Storefront")
     parser.add_argument("--generate", action="store_true", help="Generate a new fine art collection with agents")
     parser.add_argument("--generate-all", action="store_true", help="Generate collections for all 5 core aesthetics")
-    parser.add_argument("--theme", type=str, default=None, help="Specific aesthetic theme ID (e.g. japandi-minimalism, bauhaus-geometric)")
+    parser.add_argument("--expand", action="store_true", help="Expand store to 28+ audited art collections, master Etsy CSV, and 30-day marketing playbook")
+    parser.add_argument("--theme", type=str, default=None, help="Specific aesthetic theme ID")
     parser.add_argument("--prompt", type=str, default=None, help="Custom prompt or interior brief instructions")
     parser.add_argument("--serve", action="store_true", help="Launch the live D2C web storefront server")
     parser.add_argument("--catalog", action="store_true", help="Display all live products and profit margins")
 
     args = parser.parse_args()
 
-    if args.generate:
+    if args.expand:
+        run_batch_expansion()
+    elif args.generate:
         run_generate(theme=args.theme, custom_prompt=args.prompt)
     elif args.generate_all:
         run_generate_all()
@@ -105,12 +114,13 @@ def main():
         console.print(Panel.fit(
             "[bold gold1]ATELIER & CANVAS - Autonomous Wall Art Multi-Agent Engine[/bold gold1]\n\n"
             "Commands:\n"
+            "  [cyan]python main.py --expand[/cyan]             Scale to 28+ audited collections + Master Etsy CSV + 30-Day Marketing Playbook\n"
             "  [cyan]python main.py --generate[/cyan]           Run agents to curate, frame, and publish a piece\n"
-            "  [cyan]python main.py --generate-all[/cyan]       Populate store with all 5 aesthetic collections\n"
             "  [cyan]python main.py --serve[/cyan]              Launch live D2C web storefront with Stripe & Gelato\n"
             "  [cyan]python main.py --catalog[/cyan]            View live inventory, pricing, and profit breakdown\n",
             border_style="gold1"
         ))
+
 
 if __name__ == "__main__":
     main()

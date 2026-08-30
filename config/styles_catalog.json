@@ -20,7 +20,7 @@
   {
     "id": "vintage-botanical",
     "name": "Antique Botanical & Herbarium",
-    "description": "Detailed archival scientific illustration aesthetic, aged parchment patina, delicate foliage, and vintage French/English herbarium plates.",
+    "description": "Detailed archival scientific illustration aesthetic, aged parchment patina, delicate foliage, and vintage French herbarium plates.",
     "color_palette": ["Forest Moss", "Eucalyptus Green", "Antique Sepia", "Old Ivory", "Dried Rose"],
     "subjects": ["Ginkgo biloba leaf cross-sections", "Medicinal alpine flora", "Wild fern triptych", "Heirloom citrus branches"],
     "target_room": "Dining Room, Kitchen Nook, Reading Study",
@@ -43,5 +43,158 @@
     "subjects": ["Atmospheric misty mountain pines", "Celestial astrolabe and star constellations", "Textured vintage oil study", "Moody architectural ruin"],
     "target_room": "Library, Private Study, Moody Bedroom Lounge",
     "vibe": "Mysterious, scholarly, opulent"
+  },
+  {
+    "id": "french-riviera-travel",
+    "name": "Vintage French Riviera & Mid-Century Travel",
+    "description": "Retro Mediterranean resort aesthetic, geometric sea reflections, vintage typography, and glamorous Côte d'Azur elegance.",
+    "color_palette": ["Amalfi Ultramarine", "Sunlit Limewash", "Warm Ochre", "Terracotta Clay", "Charcoal Slate"],
+    "subjects": ["Cap d'Antibes pine terrace", "Vintage sailing regatta silhouette", "Monaco coastal serpentine road", "Sunbathers under parasols"],
+    "target_room": "Living Room, Summer Sunroom, Dining Nook",
+    "vibe": "Nostalgic, sophisticated, sun-drenched"
+  },
+  {
+    "id": "japanese-woodblock-ukiyo",
+    "name": "Japanese Ukiyo-e & Modern Mokuhanga",
+    "description": "Traditional Japanese woodblock printmaking modernized with serene negative space, gentle ink gradients, and tranquil nature.",
+    "color_palette": ["Deep Cobalt", "Eucalyptus Green", "Dried Rose", "Raw Linen", "Matte Black"],
+    "subjects": ["Mount Fuji misty pine ridge", "Tranquil koi pond water ripple", "Bamboo grove winter silhouette", "Crescent moon over cedar pagoda"],
+    "target_room": "Minimalist Bedroom, Spa Bathroom, Meditation Corner",
+    "vibe": "Harmonious, contemplative, organic"
+  },
+  {
+    "id": "architectural-blueprints",
+    "name": "Modern Architectural & Geometry Schematics",
+    "description": "Clean technical elevations, isometric architectural forms, structural gridlines, and precision drafting aesthetics.",
+    "color_palette": ["Charcoal Slate", "Raw Linen", "Deep Cobalt", "Warm Ochre", "Sandstone"],
+    "subjects": ["Mid-century modern cantilever pavilion", "Spiral staircase elevation study", "Brutalist concrete arch geometry", "Geometric dome geodesic section"],
+    "target_room": "Executive Home Office, Modern Loft, Architecture Studio",
+    "vibe": "Structured, intellectual, crisp"
+  },
+  {
+    "id": "scandinavian-flora-abstract",
+    "name": "Nordic Abstract Flora & Foliage",
+    "description": "Organic abstracted plant forms, minimalist papercut silhouettes, and soothing neutral Scandinavian palette.",
+    "color_palette": ["Muted Sage", "Warm Ochre", "Raw Linen", "Charcoal Slate", "Sandstone"],
+    "subjects": ["Monstera leaf negative space abstraction", "Wild Nordic thistle silhouette", "Botanical stem balance duo", "Layered papercut eucalyptus"],
+    "target_room": "Entryway, Nursery, Scandinavian Living Area",
+    "vibe": "Fresh, joyful, airy minimalism"
+  },
+  {
+    "id": "palm-springs-desert-modern",
+    "name": "Palm Springs & Desert Modernism",
+    "description": "Mid-century desert architecture, warm pastel terracotta skies, saguaro silhouettes, and breeze block shadow play.",
+    "color_palette": ["Warm Ochre", "Terracotta", "Muted Sage", "Sunlit Limewash", "Warm Parchment"],
+    "subjects": ["Breeze block architectural shadow wall", "Desert agave against terracotta plaster", "Mid-century butterfly roofline", "Geometric pool terrace horizon"],
+    "target_room": "Living Room, Patio Lounge, Creative Workspace",
+    "vibe": "Sunlit, retro-chic, desert calm"
+  },
+  {
+    "id": "celestial-vintage-astronomy",
+    "name": "Antique Celestial & Astrolabe Charts",
+    "description": "Historical astronomical engravings, lunar phase diagrams, antique zodiac constellations, and aged celestial cartography.",
+    "color_palette": ["Deep Obsidian", "Burnished Gold", "Old Ivory", "Charcoal Slate", "Antique Sepia"],
+    "subjects": ["Detailed lunar topography map", "Orrery planetary orbit schematic", "Vintage northern hemisphere star chart", "Equinoctial celestial sphere"],
+    "target_room": "Home Library, Bedroom Headboard, Study",
+    "vibe": "Wonder, historical depth, celestial wonder"
+  },
+  {
+    "id": "neutral-textured-plaster",
+    "name": "Minimalist Textured Plaster & Clay",
+    "description": "Subtle tactile relief, monochromatic sand textures, layered impasto plaster strokes, and sculptural calm.",
+    "color_palette": ["Raw Linen", "Sandstone", "Old Ivory", "Charcoal Slate", "Warm Ochre"],
+    "subjects": ["Minimalist layered plaster wave", "Sculptural clay curve relief", "Monochromatic sand dune ripples", "Textured limestone quad"],
+    "target_room": "Neutral Living Room, Primary Suite, Spa Bathroom",
+    "vibe": "Tactile luxury, tranquil, understated"
+  },
+  {
+    "id": "moroccan-riad-arches",
+    "name": "Moroccan Riad Architecture & Zellige",
+    "description": "Intricate keyhole arches, sun-washed zellige geometry, courtyard fountain shadows, and rich terracotta clay.",
+    "color_palette": ["Terracotta Clay", "Amalfi Ultramarine", "Warm Ochre", "Forest Moss", "Sunlit Limewash"],
+    "subjects": ["Keyhole archway with mosaic shadow", "Courtyard palm frond reflection", "Handmade zellige geometric study", "Sun-bleached Marrakech arcade"],
+    "target_room": "Dining Room, Sunroom, Bohemian Modern Living Room",
+    "vibe": "Exotic, warm, artisanal"
+  },
+  {
+    "id": "alpine-vintage-ski",
+    "name": "Vintage Alpine & Mountain Solitude",
+    "description": "Retro European alpine posters, snow-capped peaks, pine tree gradients, and Swiss graphic design heritage.",
+    "color_palette": ["Deep Cobalt", "Forest Moss", "Burnt Vermilion", "Old Ivory", "Charcoal Slate"],
+    "subjects": ["Matterhorn peak morning glow", "Vintage cable car over snowy ridge", "Pine forest mountain pass", "Retro downhill skier silhouette"],
+    "target_room": "Chalet Lounge, Mudroom, Cabin Bedroom",
+    "vibe": "Invigorating, adventurous, cozy"
+  },
+  {
+    "id": "art-deco-luxury-gilt",
+    "name": "Art Deco Gatsby & Gilded Geometry",
+    "description": "Symmetrical fan motifs, stepped chevron arches, gilded accents against midnight tones, and 1920s metropolitan glamour.",
+    "color_palette": ["Deep Obsidian", "Burnished Gold", "Charcoal Slate", "Burgundy Wine", "Old Ivory"],
+    "subjects": ["Stepped chevron sunburst arch", "Gilded geometric fan pattern", "Metropolitan skyscraper spire elevation", "Art deco lotus fountain motif"],
+    "target_room": "Cocktail Bar Corner, Formal Dining Room, Glamour Bedroom",
+    "vibe": "Opulent, glamorous, timeless luxury"
+  },
+  {
+    "id": "abstract-watercolor-landscape",
+    "name": "Abstract Ethereal Watercolor Horizons",
+    "description": "Flowing fluid ink washes, mist-covered mountain valleys, gold leaf vein highlights, and meditative landscapes.",
+    "color_palette": ["Amalfi Ultramarine", "Muted Sage", "Terracotta", "Burnished Gold", "Raw Linen"],
+    "subjects": ["Misty horizon lake wash", "Flowing gold vein mountain ridge", "Sunset cloudbank gradient study", "Abstract rolling fog foothills"],
+    "target_room": "Master Bedroom, Serene Living Room, Yoga Studio",
+    "vibe": "Dreamy, fluid, transcendent calm"
+  },
+  {
+    "id": "vintage-herbarium-ferns",
+    "name": "French Herbarium & Pressed Botanicals",
+    "description": "Delicate archival pressed ferns, botanical calligraphic labels, dried floral studies, and antique museum specimen paper.",
+    "color_palette": ["Forest Moss", "Antique Sepia", "Old Ivory", "Eucalyptus Green", "Raw Linen"],
+    "subjects": ["Pressed woodland fern specimen plate", "Eucalyptus cinerea leaf branch", "Medicinal chamomile botanical study", "Wild meadow clover herbarium"],
+    "target_room": "Kitchen, Hallway Gallery Grid, Guest Bedroom",
+    "vibe": "Botanical, vintage scientific, peaceful"
+  },
+  {
+    "id": "mid-century-line-art",
+    "name": "Continuous Minimalist Line Art",
+    "description": "Single continuous fluid brushstrokes, expressive abstract human forms, balanced organic silhouettes, and warm paper tones.",
+    "color_palette": ["Matte Black", "Warm Ochre", "Terracotta", "Raw Linen", "Sandstone"],
+    "subjects": ["Serene face profile continuous line", "Two embracing forms abstract contour", "Botanical vase continuous brushstroke", "Seated figure minimalist line study"],
+    "target_room": "Walk-in Closet, Bedroom Gallery, Powder Room",
+    "vibe": "Intimate, expressive, sophisticated"
+  },
+  {
+    "id": "abstract-expressionist-strokes",
+    "name": "Textured Abstract Expressionist Impasto",
+    "description": "Dynamic broad brushwork, energetic pigment layers, balanced palette knife texture, and contemporary gallery authority.",
+    "color_palette": ["Charcoal Slate", "Warm Ochre", "Terracotta", "Muted Sage", "Raw Linen"],
+    "subjects": ["Palette knife horizontal pigment block", "Textured dynamic color field", "Layered charcoal and ochre impasto", "Balanced gestural brush mark study"],
+    "target_room": "Great Room, Executive Boardroom, Modern Open Concept",
+    "vibe": "Commanding, artistic, museum-grade"
+  },
+  {
+    "id": "zen-ink-wash-sumi",
+    "name": "Zen Sumi-e & Enso Brush Studies",
+    "description": "Masterful black ink wash techniques, meditative Enso circle brushstrokes, bamboo misty silhouettes, and tranquil emptiness.",
+    "color_palette": ["Matte Black", "Charcoal Slate", "Old Ivory", "Raw Linen", "Dried Rose"],
+    "subjects": ["Zen Enso imperfect brush circle", "Misty mountain single pine brushstroke", "Flowing bamboo reed wash", "Meditative stone balance ink study"],
+    "target_room": "Home Office, Meditation Room, Minimalist Living Room",
+    "vibe": "Zen, mindful, spiritually grounding"
+  },
+  {
+    "id": "retro-futuristic-cityscape",
+    "name": "Retro-Futuristic & Cyber Architecture",
+    "description": "Atmospheric architectural skylines, warm sunset neon horizons, clean isometric buildings, and sci-fi aesthetic elegance.",
+    "color_palette": ["Deep Cobalt", "Burnt Vermilion", "Deep Obsidian", "Warm Ochre", "Sunlit Limewash"],
+    "subjects": ["Futuristic metropolis transit arch", "Solar terrace overlooking skyline", "Isometric sky garden elevation", "Retro-future monorail pass"],
+    "target_room": "Game Lounge, Creative Studio, Tech Office",
+    "vibe": "Visionary, futuristic, striking"
+  },
+  {
+    "id": "coastal-italian-lemon-groves",
+    "name": "Amalfi Lemon Groves & Terracotta",
+    "description": "Sunlit Sorrento lemon branches, hand-painted ceramic tiles, sea-breeze coastline vistas, and joyful Italian warmth.",
+    "color_palette": ["Mustard Yellow", "Forest Moss", "Amalfi Ultramarine", "Terracotta Clay", "Sunlit Limewash"],
+    "subjects": ["Heirloom Amalfi lemon branch with leaves", "Blue and white ceramic tile motif", "Terracotta terrace overlooking Capri", "Mediterranean olive oil jug with lemons"],
+    "target_room": "Dining Room, Kitchen Backsplash Area, Sunroom",
+    "vibe": "Joyful, vibrant, sunlit Italian warmth"
   }
 ]
