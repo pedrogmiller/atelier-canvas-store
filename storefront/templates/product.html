@@ -1,72 +1,72 @@
 {% extends "base.html" %}
 
-{% block title %}{{ product.seo_title }} | ATELIER & CANVAS{% endblock %}
+{% block title %}{{ product.seo_title }} | OAK PRINT STUDIO{% endblock %}
 
 {% block content %}
 <!-- Breadcrumb -->
-<div class="max-w-7xl mx-auto px-6 py-4 text-xs text-[#7A756D] flex items-center gap-2">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 py-3 sm:py-4 text-xs text-[#7A756D] flex items-center gap-2 overflow-x-auto whitespace-nowrap">
   <a href="/" class="hover:text-[#1C1C1E] transition">Home</a>
   <span>/</span>
   <a href="/#collection" class="hover:text-[#1C1C1E] transition">Gallery</a>
   <span>/</span>
-  <span class="text-[#1C1C1E] font-medium">{{ product.title }}</span>
+  <span class="text-[#1C1C1E] font-medium truncate">{{ product.title }}</span>
 </div>
 
 <!-- Product Detail Stage -->
-<section class="max-w-7xl mx-auto px-6 py-6 pb-20">
-  <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+<section class="max-w-7xl mx-auto px-4 sm:px-6 py-2 sm:py-6 pb-20">
+  <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-start">
     
     <!-- Left Column: Visual Gallery Mockup Viewer -->
-    <div class="lg:col-span-7 space-y-4 sticky top-28">
+    <div class="lg:col-span-7 space-y-4 relative lg:sticky lg:top-24">
       
       <!-- Main Featured Preview Viewport -->
       <div class="relative rounded-2xl overflow-hidden bg-white border border-[#E8E3DA] shadow-md aspect-[4/3] flex items-center justify-center">
         <img id="main-view-image" src="{{ product.images.hero }}" alt="{{ product.title }}" class="w-full h-full object-cover transition-opacity duration-300">
         
-        <div id="view-mode-pill" class="absolute bottom-4 left-4 bg-black/70 backdrop-blur-md text-white text-[11px] font-semibold px-3 py-1.5 rounded-full flex items-center gap-1.5">
-          <i data-lucide="home" class="w-3.5 h-3.5 text-[#C66B4D]"></i>
+        <div id="view-mode-pill" class="absolute bottom-3 left-3 sm:bottom-4 sm:left-4 bg-black/75 backdrop-blur-md text-white text-[10px] sm:text-[11px] font-semibold px-2.5 sm:px-3 py-1 sm:py-1.5 rounded-full flex items-center gap-1.5">
+          <i data-lucide="home" class="w-3.5 h-3.5 text-[#B8834E]"></i>
           <span id="view-mode-text">Living Room Staged View</span>
         </div>
       </div>
 
       <!-- Thumbnail Carousel Switcher -->
-      <div class="grid grid-cols-5 gap-3">
-        <button class="thumb-btn active rounded-lg overflow-hidden border-2 border-[#1C1C1E] aspect-square relative bg-white transition shadow-sm" data-src="{{ product.images.hero }}" data-label="Living Room Staged View">
+      <div class="grid grid-cols-5 gap-2 sm:gap-3">
+        <button class="thumb-btn active rounded-lg overflow-hidden border-2 border-[#1C1C1E] aspect-square relative bg-white transition shadow-sm cursor-pointer" data-src="{{ product.images.hero }}" data-label="Living Room Staged View">
           <img src="{{ product.images.hero }}" class="w-full h-full object-cover">
         </button>
 
-        <button class="thumb-btn rounded-lg overflow-hidden border border-[#E8E3DA] hover:border-[#1C1C1E] aspect-square relative bg-white transition shadow-sm" data-src="{{ product.images.bedroom }}" data-label="Master Bedroom Staged View">
+        <button class="thumb-btn rounded-lg overflow-hidden border border-[#E8E3DA] hover:border-[#1C1C1E] aspect-square relative bg-white transition shadow-sm cursor-pointer" data-src="{{ product.images.bedroom }}" data-label="Master Bedroom Staged View">
           <img src="{{ product.images.bedroom }}" class="w-full h-full object-cover">
         </button>
 
-        <button class="thumb-btn rounded-lg overflow-hidden border border-[#E8E3DA] hover:border-[#1C1C1E] aspect-square relative bg-white transition shadow-sm" data-src="{{ product.images.studio }}" data-label="Nordic Studio Staged View">
+        <button class="thumb-btn rounded-lg overflow-hidden border border-[#E8E3DA] hover:border-[#1C1C1E] aspect-square relative bg-white transition shadow-sm cursor-pointer" data-src="{{ product.images.studio }}" data-label="Nordic Studio Staged View">
           <img src="{{ product.images.studio }}" class="w-full h-full object-cover">
         </button>
 
-        <button class="thumb-btn rounded-lg overflow-hidden border border-[#E8E3DA] hover:border-[#1C1C1E] aspect-square relative bg-white transition shadow-sm" data-src="{{ product.images.framed_product }}" data-label="Framed Studio Close-up">
+        <button class="thumb-btn rounded-lg overflow-hidden border border-[#E8E3DA] hover:border-[#1C1C1E] aspect-square relative bg-white transition shadow-sm cursor-pointer" data-src="{{ product.images.framed_product }}" data-label="Framed Studio Close-up">
           <img src="{{ product.images.framed_product }}" class="w-full h-full object-cover">
         </button>
 
-        <button class="thumb-btn rounded-lg overflow-hidden border border-[#E8E3DA] hover:border-[#1C1C1E] aspect-square relative bg-white transition shadow-sm" data-src="{{ product.images.master_art }}" data-label="Original High-Res Print Artwork">
+        <button class="thumb-btn rounded-lg overflow-hidden border border-[#E8E3DA] hover:border-[#1C1C1E] aspect-square relative bg-white transition shadow-sm cursor-pointer" data-src="{{ product.images.master_art }}" data-label="Original High-Res Print Artwork">
           <img src="{{ product.images.master_art }}" class="w-full h-full object-cover">
         </button>
       </div>
 
-      <!-- Guarantee Badges -->
-      <div class="p-4 rounded-xl bg-white border border-[#E8E3DA] grid grid-cols-3 gap-4 text-center mt-6">
+      <!-- Guarantee Badges (Desktop View) -->
+      <div class="hidden lg:grid p-4 rounded-xl bg-white border border-[#E8E3DA] grid-cols-3 gap-4 text-center mt-6">
         <div>
-          <i data-lucide="truck" class="w-5 h-5 text-[#C66B4D] mx-auto mb-1"></i>
+          <i data-lucide="truck" class="w-5 h-5 text-[#B8834E] mx-auto mb-1"></i>
           <span class="text-[11px] font-bold block text-[#1C1C1E]">48–72h Delivery</span>
-          <span class="text-[10px] text-[#7A756D]">Printed locally</span>
+          <span class="text-[10px] text-[#7A756D]">Printed in 32 hubs</span>
         </div>
         <div>
-          <i data-lucide="shield-check" class="w-5 h-5 text-[#C66B4D] mx-auto mb-1"></i>
+          <i data-lucide="shield-check" class="w-5 h-5 text-[#B8834E] mx-auto mb-1"></i>
           <span class="text-[11px] font-bold block text-[#1C1C1E]">Museum Grade</span>
           <span class="text-[10px] text-[#7A756D]">250 gsm archival</span>
         </div>
         <div>
-          <i data-lucide="award" class="w-5 h-5 text-[#C66B4D] mx-auto mb-1"></i>
-          <span class="text-[11px] font-bold block text-[#1C1C1E]">100% Satisfaction</span>
+          <i data-lucide="award" class="w-5 h-5 text-[#B8834E] mx-auto mb-1"></i>
+          <span class="text-[11px] font-bold block text-[#1C1C1E]">100% Guarantee</span>
           <span class="text-[10px] text-[#7A756D]">Free replacements</span>
         </div>
       </div>
@@ -74,27 +74,27 @@
     </div>
 
     <!-- Right Column: Interactive Configurator & Express Checkout -->
-    <div class="lg:col-span-5 space-y-6 bg-white p-8 rounded-2xl border border-[#E8E3DA] shadow-sm">
+    <div class="lg:col-span-5 space-y-6 bg-white p-5 sm:p-8 rounded-2xl border border-[#E8E3DA] shadow-sm">
       
       <!-- Title & Price Header -->
-      <div class="border-b border-[#F0EBE3] pb-6 space-y-2">
+      <div class="border-b border-[#F0EBE3] pb-5 space-y-2">
         <div class="flex items-center gap-2">
-          <span class="text-[10px] font-bold tracking-widest uppercase bg-[#FAF8F5] text-[#C66B4D] border border-[#E8E3DA] px-2.5 py-0.5 rounded-full">
+          <span class="text-[10px] font-bold tracking-widest uppercase bg-[#FAF8F5] text-[#B8834E] border border-[#E8E3DA] px-2.5 py-0.5 rounded-full">
             {{ product.aesthetic_name }}
           </span>
           <span class="text-[10px] text-[#7A756D] font-mono">Gelato SKU: <span id="current-sku-display">framed-poster_flat_wood_natural_24x36-in</span></span>
         </div>
         
-        <h1 class="font-['Cormorant_Garamond'] text-3xl sm:text-4xl font-bold text-[#1C1C1E] leading-tight">
+        <h1 class="font-['Cormorant_Garamond'] text-2xl sm:text-3xl lg:text-4xl font-bold text-[#1C1C1E] leading-tight">
           {{ product.title }}
         </h1>
 
-        <div class="flex items-baseline gap-4 pt-2">
-          <span id="dynamic-price" class="text-3xl font-bold text-[#1C1C1E] font-['Plus_Jakarta_Sans']">
+        <div class="flex items-baseline gap-3 pt-1">
+          <span id="dynamic-price" class="text-2xl sm:text-3xl font-bold text-[#1C1C1E] font-['Plus_Jakarta_Sans']">
             ${{ product.hero_price }}
           </span>
           <span class="text-xs text-[#7A756D] line-through">$180.00</span>
-          <span class="text-xs font-semibold text-[#3B7A57] bg-[#E8F3ED] px-2 py-0.5 rounded">
+          <span class="text-[11px] font-semibold text-[#3B7A57] bg-[#E8F3ED] px-2 py-0.5 rounded">
             In Stock & Ready to Print
           </span>
         </div>
@@ -104,11 +104,11 @@
       <div class="space-y-3">
         <label class="text-xs font-bold uppercase tracking-wider text-[#1C1C1E] flex items-center justify-between">
           <span>1. Select Frame Style</span>
-          <span id="selected-frame-label" class="text-[#C66B4D] font-semibold lowercase">Natural Oak</span>
+          <span id="selected-frame-label" class="text-[#B8834E] font-semibold lowercase">Natural Oak</span>
         </label>
         
-        <div class="grid grid-cols-2 sm:grid-cols-3 gap-2.5" id="frame-picker">
-          <button type="button" class="frame-opt-btn active p-3 rounded-lg border-2 border-[#1C1C1E] bg-[#FAF8F5] text-left transition flex flex-col justify-between h-20" data-frame="natural_oak" data-label="Solid Natural Oak Wood Frame">
+        <div class="grid grid-cols-2 sm:grid-cols-3 gap-2" id="frame-picker">
+          <button type="button" class="frame-opt-btn active p-2.5 sm:p-3 rounded-lg border-2 border-[#1C1C1E] bg-[#FAF8F5] text-left transition flex flex-col justify-between h-18 sm:h-20 cursor-pointer" data-frame="natural_oak" data-label="Solid Natural Oak Wood Frame">
             <div class="w-4 h-4 rounded-full bg-[#C69B70] border border-black/20 mb-1"></div>
             <div>
               <span class="text-xs font-bold block leading-none">Natural Oak</span>
@@ -116,7 +116,7 @@
             </div>
           </button>
 
-          <button type="button" class="frame-opt-btn p-3 rounded-lg border border-[#E8E3DA] bg-[#FAF8F5] hover:border-[#1C1C1E] text-left transition flex flex-col justify-between h-20" data-frame="black_wood" data-label="Matte Black Solid Wood Frame">
+          <button type="button" class="frame-opt-btn p-2.5 sm:p-3 rounded-lg border border-[#E8E3DA] bg-[#FAF8F5] hover:border-[#1C1C1E] text-left transition flex flex-col justify-between h-18 sm:h-20 cursor-pointer" data-frame="black_wood" data-label="Matte Black Solid Wood Frame">
             <div class="w-4 h-4 rounded-full bg-[#1C1C1E] border border-black/20 mb-1"></div>
             <div>
               <span class="text-xs font-bold block leading-none">Matte Black</span>
@@ -124,7 +124,7 @@
             </div>
           </button>
 
-          <button type="button" class="frame-opt-btn p-3 rounded-lg border border-[#E8E3DA] bg-[#FAF8F5] hover:border-[#1C1C1E] text-left transition flex flex-col justify-between h-20" data-frame="white_wood" data-label="Nordic White Wood Frame">
+          <button type="button" class="frame-opt-btn p-2.5 sm:p-3 rounded-lg border border-[#E8E3DA] bg-[#FAF8F5] hover:border-[#1C1C1E] text-left transition flex flex-col justify-between h-18 sm:h-20 cursor-pointer" data-frame="white_wood" data-label="Nordic White Wood Frame">
             <div class="w-4 h-4 rounded-full bg-white border border-gray-300 mb-1"></div>
             <div>
               <span class="text-xs font-bold block leading-none">Nordic White</span>
@@ -132,7 +132,7 @@
             </div>
           </button>
 
-          <button type="button" class="frame-opt-btn p-3 rounded-lg border border-[#E8E3DA] bg-[#FAF8F5] hover:border-[#1C1C1E] text-left transition flex flex-col justify-between h-20" data-frame="canvas_wrap" data-label="Gallery Stretched Fine Art Canvas">
+          <button type="button" class="frame-opt-btn p-2.5 sm:p-3 rounded-lg border border-[#E8E3DA] bg-[#FAF8F5] hover:border-[#1C1C1E] text-left transition flex flex-col justify-between h-18 sm:h-20 cursor-pointer" data-frame="canvas_wrap" data-label="Gallery Stretched Fine Art Canvas">
             <div class="w-4 h-4 rounded-full bg-[#E5DEC9] border border-black/20 mb-1"></div>
             <div>
               <span class="text-xs font-bold block leading-none">Canvas Wrap</span>
@@ -140,7 +140,7 @@
             </div>
           </button>
 
-          <button type="button" class="frame-opt-btn p-3 rounded-lg border border-[#E8E3DA] bg-[#FAF8F5] hover:border-[#1C1C1E] text-left transition flex flex-col justify-between h-20 col-span-2 sm:col-span-1" data-frame="unframed_poster" data-label="Museum-Grade Matte Fine Art Print (Unframed)">
+          <button type="button" class="frame-opt-btn p-2.5 sm:p-3 rounded-lg border border-[#E8E3DA] bg-[#FAF8F5] hover:border-[#1C1C1E] text-left transition flex flex-col justify-between h-18 sm:h-20 col-span-2 sm:col-span-1 cursor-pointer" data-frame="unframed_poster" data-label="Museum-Grade Matte Fine Art Print (Unframed)">
             <div class="w-4 h-4 rounded-full bg-[#F4F0E8] border border-dashed border-gray-400 mb-1"></div>
             <div>
               <span class="text-xs font-bold block leading-none">Unframed</span>
@@ -151,13 +151,13 @@
       </div>
 
       <!-- 2. Size Selector -->
-      <div class="space-y-3">
+      <div class="space-y-2">
         <label class="text-xs font-bold uppercase tracking-wider text-[#1C1C1E] flex items-center justify-between">
           <span>2. Select Size</span>
-          <span class="text-xs text-[#7A756D]">Standard Gallery Aspect Ratios</span>
+          <span class="text-xs text-[#7A756D]">3:4 Aspect Ratio</span>
         </label>
         
-        <select id="size-selector" class="w-full bg-[#FAF8F5] border border-[#D8D2C6] rounded-lg p-3 text-sm font-semibold focus:outline-none focus:border-[#1C1C1E]">
+        <select id="size-selector" class="w-full bg-[#FAF8F5] border border-[#D8D2C6] rounded-lg p-3 text-xs sm:text-sm font-semibold focus:outline-none focus:border-[#1C1C1E] cursor-pointer">
           <option value="12x18_in">12x18 in (30x45 cm) — Small Accent Size</option>
           <option value="18x24_in">18x24 in (45x60 cm) — Medium Classic Size</option>
           <option value="24x36_in" selected>24x36 in (60x90 cm) — Statement Hero Size (Most Popular)</option>
@@ -166,9 +166,9 @@
       </div>
 
       <!-- Action Buttons (Frictionless 1-Click Apple Pay / Google Pay / Card) -->
-      <div class="space-y-2.5 pt-2">
+      <div class="space-y-3 pt-2">
         <!-- 1. Apple Pay / Google Pay 1-Click Instant Buy Button -->
-        <button id="apple-google-pay-btn" class="w-full bg-black hover:bg-neutral-900 text-white py-4 rounded-lg font-medium tracking-wide transition shadow-lg flex items-center justify-center gap-3 cursor-pointer border border-white/20">
+        <button id="apple-google-pay-btn" class="w-full bg-black hover:bg-neutral-900 active:scale-[0.98] text-white py-4 rounded-lg font-medium tracking-wide transition shadow-lg flex items-center justify-center gap-3 cursor-pointer border border-white/20">
           <span class="flex items-center text-lg font-bold tracking-tight">
             <svg class="w-5 h-5 fill-current mr-0.5 inline" viewBox="0 0 170 170"><path d="M150.37 130.25c-2.45 5.66-5.35 10.87-8.71 15.66-4.58 6.53-8.33 11.05-11.22 13.56-4.48 4.12-9.28 6.23-14.42 6.35-3.69 0-8.14-1.05-13.32-3.18-5.19-2.12-9.97-3.17-14.34-3.17-4.58 0-9.49 1.05-14.75 3.17-5.26 2.13-9.5 3.24-12.74 3.35-4.35.13-9.16-1.9-14.42-6.08-3.69-3.04-7.67-7.81-11.96-14.34-5.77-8.91-10.27-18.89-13.5-29.93-3.23-11.04-4.85-21.78-4.85-32.22 0-14.43 3.69-26.65 11.07-36.66s16.73-15.11 28.05-15.34c5.19 0 10.66 1.33 16.42 3.99 5.76 2.66 9.77 4.05 12.03 4.17 1.81-.12 6.01-1.63 12.6-4.52 6.6-2.9 12.02-4.14 16.28-3.73 12.07.97 21.6 5.37 28.6 13.2-10.74 6.52-16.01 15.48-15.8 26.88.22 8.92 3.68 16.32 10.38 22.21 6.7 5.89 14.58 9.38 23.63 10.47-2.22 6.74-4.94 13.37-8.15 19.89zM119.22 31.84c0-7.39 2.66-14.37 7.97-20.95 5.31-6.57 11.83-10.69 19.57-12.35.45 1.15.68 2.37.68 3.66 0 7.39-2.73 14.37-8.18 20.95-5.46 6.58-12.03 10.75-19.72 12.51-.23-1.27-.32-2.54-.32-3.82z"/></svg>
             Pay
@@ -180,6 +180,7 @@
           <span class="text-xs uppercase font-bold tracking-widest text-[#E8E6E1] bg-neutral-800 px-2 py-0.5 rounded ml-1">1-Click Buy</span>
         </button>
 
+        <!-- Divider -->
         <div class="relative flex py-1 items-center">
           <div class="flex-grow border-t border-[#E8E3DA]"></div>
           <span class="flex-shrink mx-3 text-[10px] text-[#7A756D] uppercase tracking-widest font-semibold">Or Pay with Card</span>
@@ -187,13 +188,13 @@
         </div>
 
         <!-- 2. Pay with Card -->
-        <button id="direct-stripe-checkout-btn" class="w-full bg-[#1C1C1E] hover:bg-[#B8834E] text-white py-3.5 rounded-lg font-bold tracking-wide transition shadow-sm flex items-center justify-center gap-2 cursor-pointer">
+        <button id="direct-stripe-checkout-btn" class="w-full bg-[#1C1C1E] hover:bg-[#B8834E] active:scale-[0.98] text-white py-3.5 rounded-lg font-bold tracking-wide transition shadow-sm flex items-center justify-center gap-2 cursor-pointer">
           <i data-lucide="credit-card" class="w-4 h-4"></i>
           <span>Pay with Debit or Credit Card</span>
         </button>
 
         <!-- 3. Add to Bag -->
-        <button id="add-to-bag-btn" class="w-full border-2 border-[#1C1C1E] hover:bg-[#FAF8F5] text-[#1C1C1E] py-3.5 rounded-lg font-semibold tracking-wide transition flex items-center justify-center gap-2 cursor-pointer">
+        <button id="add-to-bag-btn" class="w-full border-2 border-[#1C1C1E] hover:bg-[#FAF8F5] active:scale-[0.98] text-[#1C1C1E] py-3.5 rounded-lg font-semibold tracking-wide transition flex items-center justify-center gap-2 cursor-pointer">
           <i data-lucide="shopping-bag" class="w-4 h-4"></i>
           <span>Add to Bag (Save 15%–20% on Sets)</span>
         </button>
@@ -205,24 +206,41 @@
         </div>
       </div>
 
-
+      <!-- Mobile Guarantee Badges -->
+      <div class="grid lg:hidden p-3.5 rounded-xl bg-[#FAF8F5] border border-[#E8E3DA] grid-cols-3 gap-2 text-center">
+        <div>
+          <i data-lucide="truck" class="w-4 h-4 text-[#B8834E] mx-auto mb-1"></i>
+          <span class="text-[10px] font-bold block text-[#1C1C1E]">48–72h Delivery</span>
+          <span class="text-[9px] text-[#7A756D]">Printed in 32 hubs</span>
+        </div>
+        <div>
+          <i data-lucide="shield-check" class="w-4 h-4 text-[#B8834E] mx-auto mb-1"></i>
+          <span class="text-[10px] font-bold block text-[#1C1C1E]">Museum Grade</span>
+          <span class="text-[9px] text-[#7A756D]">250 gsm archival</span>
+        </div>
+        <div>
+          <i data-lucide="award" class="w-4 h-4 text-[#B8834E] mx-auto mb-1"></i>
+          <span class="text-[10px] font-bold block text-[#1C1C1E]">100% Guarantee</span>
+          <span class="text-[9px] text-[#7A756D]">Free replacements</span>
+        </div>
+      </div>
 
       <!-- Story & Narrative -->
-      <div class="pt-4 border-t border-[#F0EBE3] space-y-3">
+      <div class="pt-4 border-t border-[#F0EBE3] space-y-2">
         <h4 class="text-xs font-bold uppercase tracking-wider text-[#1C1C1E]">Curator's Note</h4>
-        <p class="text-sm text-[#68635B] leading-relaxed">
+        <p class="text-xs sm:text-sm text-[#68635B] leading-relaxed">
           {{ product.story_and_concept }}
         </p>
       </div>
 
       <!-- Accordion Specifications -->
-      <div class="border-t border-[#F0EBE3] divide-y divide-[#F0EBE3] text-sm">
+      <div class="border-t border-[#F0EBE3] divide-y divide-[#F0EBE3] text-xs sm:text-sm">
         <details class="py-3 group cursor-pointer">
           <summary class="flex items-center justify-between font-semibold text-[#1C1C1E] list-none">
             <span>Museum Quality & Materials</span>
             <i data-lucide="chevron-down" class="w-4 h-4 group-open:rotate-180 transition"></i>
           </summary>
-          <div class="pt-3 text-xs text-[#7A756D] space-y-1.5 leading-relaxed">
+          <div class="pt-2 text-xs text-[#7A756D] space-y-1.5 leading-relaxed">
             <p>• <strong>Paper:</strong> {{ product.specifications.paper }}</p>
             <p>• <strong>Wood:</strong> {{ product.specifications.framing }}</p>
             <p>• <strong>Pigment:</strong> {{ product.specifications.printing }}</p>
@@ -234,7 +252,7 @@
             <span>72-Hour Local Global Fulfillment</span>
             <i data-lucide="chevron-down" class="w-4 h-4 group-open:rotate-180 transition"></i>
           </summary>
-          <div class="pt-3 text-xs text-[#7A756D] leading-relaxed">
+          <div class="pt-2 text-xs text-[#7A756D] leading-relaxed">
             Orders are automatically routed to your closest regional Gelato print hub across 32 countries (US, UK, Germany, France, Australia, Canada, etc.) for zero custom delays, fast 3-day local delivery, and lowest carbon footprint.
           </div>
         </details>
@@ -244,7 +262,7 @@
             <span>Interior Styling Guide</span>
             <i data-lucide="chevron-down" class="w-4 h-4 group-open:rotate-180 transition"></i>
           </summary>
-          <div class="pt-3 text-xs text-[#7A756D] leading-relaxed">
+          <div class="pt-2 text-xs text-[#7A756D] leading-relaxed">
             {{ product.styling_tips }}
           </div>
         </details>

@@ -17,24 +17,24 @@
 <body class="bg-[#FAF8F5] text-[#242426] font-['Plus_Jakarta_Sans'] flex flex-col min-h-screen">
 
   <!-- Top Announcement Bar -->
-  <div class="bg-[#1C1C1E] text-[#E8E6E1] text-xs py-2 px-4 text-center tracking-wider uppercase font-medium">
-    ✨ Free Express Worldwide Shipping on Orders Over $100 • Handcrafted in 32 Regional Hubs
+  <div class="bg-[#1C1C1E] text-[#E8E6E1] text-[10px] sm:text-xs py-1.5 px-4 text-center tracking-wider uppercase font-medium">
+    ✨ Free Express Worldwide Shipping on Orders Over $100 • 32 Global Print Hubs
   </div>
 
   <!-- Main Navigation -->
-  <header class="sticky top-0 z-40 bg-[#FAF8F5]/90 backdrop-blur-md border-b border-[#E8E3DA]">
-    <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+  <header class="sticky top-0 z-40 bg-[#FAF8F5]/95 backdrop-blur-md border-b border-[#E8E3DA]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 h-16 sm:h-20 flex items-center justify-between">
       
       <!-- Brand Logo -->
-      <a href="/" class="flex items-center gap-3">
-        <div class="w-10 h-10 rounded-full bg-[#1C1C1E] text-[#FAF8F5] flex items-center justify-center font-serif text-lg font-bold tracking-tighter">OPS</div>
+      <a href="/" class="flex items-center gap-2.5 sm:gap-3">
+        <div class="w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-[#1C1C1E] text-[#FAF8F5] flex items-center justify-center font-serif text-sm sm:text-lg font-bold tracking-tighter shrink-0">OPS</div>
         <div>
-          <span class="font-['Cormorant_Garamond'] text-2xl font-bold tracking-[0.16em] uppercase block leading-none text-[#1C1C1E]">OAK PRINT STUDIO</span>
-          <span class="text-[10px] tracking-[0.20em] text-[#7A756D] uppercase block mt-1 font-medium">Museum Art & Solid Wood Framing</span>
+          <span class="font-['Cormorant_Garamond'] text-lg sm:text-2xl font-bold tracking-[0.12em] sm:tracking-[0.16em] uppercase block leading-none text-[#1C1C1E]">OAK PRINT STUDIO</span>
+          <span class="text-[9px] sm:text-[10px] tracking-[0.18em] sm:tracking-[0.20em] text-[#7A756D] uppercase block mt-0.5 font-medium">Museum Art & Solid Wood</span>
         </div>
       </a>
 
-      <!-- Navigation Links -->
+      <!-- Navigation Links (Desktop) -->
       <nav class="hidden md:flex items-center gap-8 text-sm font-medium tracking-wide">
         <a href="/" class="hover:text-[#B8834E] transition">Gallery Catalog</a>
         <a href="/#aesthetic-filters" class="hover:text-[#B8834E] transition">Aesthetic Moods</a>
@@ -43,16 +43,17 @@
       </nav>
 
       <!-- Actions / Cart -->
-      <div class="flex items-center gap-5">
-        <a href="/" class="text-sm font-medium text-[#7A756D] hover:text-[#1C1C1E] transition hidden sm:inline-block">USD ($)</a>
+      <div class="flex items-center gap-3 sm:gap-5">
+        <a href="/" class="text-xs sm:text-sm font-medium text-[#7A756D] hover:text-[#1C1C1E] transition hidden sm:inline-block">USD ($)</a>
         <button id="open-cart-btn" class="relative p-2 text-[#1C1C1E] hover:text-[#B8834E] transition">
-          <i data-lucide="shopping-bag" class="w-6 h-6"></i>
-          <span id="cart-count-badge" class="absolute -top-1 -right-1 bg-[#B8834E] text-white text-[10px] w-5 h-5 rounded-full flex items-center justify-center font-bold">0</span>
+          <i data-lucide="shopping-bag" class="w-5 h-5 sm:w-6 sm:h-6"></i>
+          <span id="cart-count-badge" class="absolute -top-1 -right-1 bg-[#B8834E] text-white text-[9px] sm:text-[10px] w-4 h-4 sm:w-5 sm:h-5 rounded-full flex items-center justify-center font-bold">0</span>
         </button>
       </div>
 
     </div>
   </header>
+
 
   <!-- Page Content -->
   <main class="flex-grow">
