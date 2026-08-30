@@ -34,26 +34,30 @@
 
     <!-- Hero Visual Preview -->
     <div class="lg:col-span-5 relative">
-      <div class="relative rounded-2xl overflow-hidden shadow-2xl border-4 border-white aspect-[4/5] bg-white group">
-        {% if products and products|length > 0 %}
+      {% if products and products|length > 0 %}
+        <a href="/product/{{ products[0].id }}" class="block relative rounded-2xl overflow-hidden shadow-2xl border-4 border-white aspect-[4/5] bg-white group cursor-pointer" title="View {{ products[0].title }}">
           <img src="{{ products[0].images.hero }}" alt="{{ products[0].title }}" class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
           <div class="absolute bottom-0 inset-x-0 p-6 bg-gradient-to-t from-black/80 via-black/40 to-transparent text-white">
             <span class="text-xs uppercase tracking-widest text-[#E8E6E1] block mb-1">Featured Statement Piece</span>
-            <h3 class="font-['Cormorant_Garamond'] text-2xl font-bold">{{ products[0].title }}</h3>
+            <h3 class="font-['Cormorant_Garamond'] text-2xl font-bold group-hover:text-[#F3ECE2] transition">{{ products[0].title }}</h3>
             <div class="flex items-center justify-between mt-2">
               <span class="text-sm font-semibold">From ${{ products[0].starting_price }}</span>
-              <a href="/product/{{ products[0].id }}" class="text-xs uppercase font-bold tracking-wider underline hover:text-[#C66B4D]">View Piece &rarr;</a>
+              <span class="text-xs uppercase font-bold tracking-wider underline group-hover:text-[#B8834E] transition inline-flex items-center gap-1">
+                <span>View Piece</span>
+                <i data-lucide="arrow-right" class="w-3.5 h-3.5 inline"></i>
+              </span>
             </div>
           </div>
-        {% else %}
-          <div class="w-full h-full flex flex-col items-center justify-center p-8 text-center text-[#7A756D]">
-            <i data-lucide="image" class="w-12 h-12 mb-3 text-[#C66B4D]"></i>
-            <p class="font-semibold">Ready to curate your first collection.</p>
-            <p class="text-xs mt-1">Run the autonomous agent pipeline to generate art.</p>
-          </div>
-        {% endif %}
-      </div>
+        </a>
+      {% else %}
+        <div class="w-full h-full flex flex-col items-center justify-center p-8 text-center text-[#7A756D]">
+          <i data-lucide="image" class="w-12 h-12 mb-3 text-[#B8834E]"></i>
+          <p class="font-semibold">Ready to curate your first collection.</p>
+          <p class="text-xs mt-1">Run the autonomous agent pipeline to generate art.</p>
+        </div>
+      {% endif %}
     </div>
+
 
   </div>
 </section>
