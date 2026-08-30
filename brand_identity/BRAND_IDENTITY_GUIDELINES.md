@@ -1,14 +1,14 @@
-# 🏛️ Oak Prints | Master Brand Identity & Style Guide
-**Positioning**: Museum Art in Handcrafted Wood
-**Primary Domain Strategy**: `oakprints.com` (Alternates: `oakstudioart.com, oakframed.com`)
+# 🏛️ Oak Print Studio | Master Brand Identity & Style Guide
+**Positioning**: Museum Art & Solid Wood Framing
+**Primary Domain Strategy**: `oakprintstudio.com` (Alternates: `www.oakprintstudio.com`)
 
 ---
 
 ## 💎 Brand Archetype & Story
-Oak Prints crafts museum-grade contemporary wall art encased in sustainably harvested solid oak and pine wood frames. Printed on 250 gsm archival paper with 72h local delivery across 32 countries.
+Oak Print Studio crafts museum-grade contemporary wall art encased in sustainably harvested solid oak and pine wood frames. Printed on 250 gsm archival paper with 72h local delivery across 32 countries.
 
 ### Simplicity & Trust Factor
-'Oak Prints' is pure, punchy, and instantly establishes real solid wood craftsmanship and archival fine art printing.
+'Oak Print Studio' conveys bespoke architectural craftsmanship, European gallery curation, and archival permanence.
 
 
 ---
@@ -31,13 +31,13 @@ Oak Prints crafts museum-grade contemporary wall art encased in sustainably harv
 ---
 
 ## 📱 Social Media Setup Kit
-* **Gmail Account**: `oakprints.art@gmail.com`
-* **Pinterest Handle**: `@oakprints`
-* **TikTok Handle**: `@oakprints`
-* **Instagram Handle**: `@oakprints.art`
+* **Gmail Account**: `oakprintstudio.art@gmail.com`
+* **Pinterest Handle**: `@oakprintstudio`
+* **TikTok Handle**: `@oakprintstudio`
+* **Instagram Handle**: `@oakprintstudio.art`
 
 ### Master Social Bio Template (Paste into Pinterest/TikTok/IG):
-> 🏛️ **Oak Prints** | Museum Art in Handcrafted Wood  
+> 🏛️ **Oak Print Studio** | Museum Art & Solid Wood Framing  
 > 🖼️ Museum-grade archival paper & handcrafted solid oak frames.  
 > 🚚 72-Hour local delivery across 32 countries.  
-> 🔗 **oakprints.com**
+> 🔗 **oakprintstudio.com**
