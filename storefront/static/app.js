@@ -55,26 +55,60 @@ function initProductConfigurator() {
 
   let currentFrame = 'natural_oak';
   let currentSize = sizeSelector ? sizeSelector.value : '24x36_in';
+  let currentViewMode = 'living_room'; // 'living_room', 'bedroom', 'studio', 'framed', 'master_art'
+
+  function getLivingRoomSrc(frameKey) {
+    if (product.images.living_room_frames && product.images.living_room_frames[frameKey]) {
+      return product.images.living_room_frames[frameKey];
+    }
+    return product.images.hero || product.images.living_room;
+  }
+
+  function getFramedDetailSrc(frameKey) {
+    if (product.images.framed_detail_frames && product.images.framed_detail_frames[frameKey]) {
+      return product.images.framed_detail_frames[frameKey];
+    }
+    return product.images.framed_product;
+  }
+
+  function updateMainImageSrc(newSrc, label) {
+    if (mainImg && newSrc) {
+      mainImg.style.opacity = '0.4';
+      setTimeout(() => {
+        mainImg.src = newSrc;
+        mainImg.style.opacity = '1';
+      }, 120);
+    }
+    if (viewPillText && label) viewPillText.textContent = label;
+  }
 
   // Thumbnail Switcher
   thumbBtns.forEach(btn => {
     btn.addEventListener('click', () => {
-      thumbBtns.forEach(b => b.classList.remove('active'));
+      thumbBtns.forEach(b => {
+        b.classList.remove('active');
+        b.classList.remove('border-2', 'border-[#1C1C1E]');
+        b.classList.add('border', 'border-[#E8E3DA]');
+      });
       btn.classList.add('active');
-      const src = btn.getAttribute('data-src');
+      btn.classList.remove('border', 'border-[#E8E3DA]');
+      btn.classList.add('border-2', 'border-[#1C1C1E]');
+
+      currentViewMode = btn.getAttribute('data-view') || 'living_room';
       const label = btn.getAttribute('data-label');
-      if (mainImg && src) {
-        mainImg.style.opacity = '0.4';
-        setTimeout(() => {
-          mainImg.src = src;
-          mainImg.style.opacity = '1';
-        }, 150);
+      let src = btn.getAttribute('data-src');
+
+      if (currentViewMode === 'living_room') {
+        src = getLivingRoomSrc(currentFrame);
+      } else if (currentViewMode === 'framed') {
+        src = getFramedDetailSrc(currentFrame);
       }
-      if (viewPillText && label) viewPillText.textContent = label;
+
+      updateMainImageSrc(src, label);
     });
   });
 
-  // Frame Style Picker (Updates Frame, Price, and SKU without jarring photo jumps)
+  // Frame Style Picker (Dynamically updates the frame color on the living room and framed detail shots)
   frameBtns.forEach(btn => {
     btn.addEventListener('click', () => {
       frameBtns.forEach(b => b.classList.remove('active'));
@@ -83,9 +117,29 @@ function initProductConfigurator() {
       const label = btn.getAttribute('data-label');
       if (frameLabelSpan) frameLabelSpan.textContent = label;
 
+      // Update thumbnail preview images
+      const thumbLr = document.getElementById('thumb-living-room');
+      if (thumbLr) {
+        const lrImg = thumbLr.querySelector('img');
+        if (lrImg) lrImg.src = getLivingRoomSrc(currentFrame);
+      }
+      const thumbFd = document.getElementById('thumb-framed-product');
+      if (thumbFd) {
+        const fdImg = thumbFd.querySelector('img');
+        if (fdImg) fdImg.src = getFramedDetailSrc(currentFrame);
+      }
+
+      // If user is currently looking at Living Room or Framed Detail, change the frame color live!
+      if (currentViewMode === 'living_room') {
+        updateMainImageSrc(getLivingRoomSrc(currentFrame), `Living Room (${label})`);
+      } else if (currentViewMode === 'framed') {
+        updateMainImageSrc(getFramedDetailSrc(currentFrame), `Framed Detail (${label})`);
+      }
+
       updatePricingAndSku();
     });
   });
+
 
 
   // Size Picker Change

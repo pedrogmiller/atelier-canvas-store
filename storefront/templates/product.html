@@ -31,26 +31,27 @@
 
       <!-- Thumbnail Carousel Switcher -->
       <div class="grid grid-cols-5 gap-2 sm:gap-3">
-        <button class="thumb-btn active rounded-lg overflow-hidden border-2 border-[#1C1C1E] aspect-square relative bg-white transition shadow-sm cursor-pointer" data-src="{{ product.images.hero }}" data-label="Living Room Staged View">
+        <button id="thumb-living-room" class="thumb-btn active rounded-lg overflow-hidden border-2 border-[#1C1C1E] aspect-square relative bg-white transition shadow-sm cursor-pointer" data-view="living_room" data-src="{{ product.images.hero }}" data-label="Living Room Staged View">
           <img src="{{ product.images.hero }}" class="w-full h-full object-cover">
         </button>
 
-        <button class="thumb-btn rounded-lg overflow-hidden border border-[#E8E3DA] hover:border-[#1C1C1E] aspect-square relative bg-white transition shadow-sm cursor-pointer" data-src="{{ product.images.bedroom }}" data-label="Master Bedroom Staged View">
+        <button id="thumb-bedroom" class="thumb-btn rounded-lg overflow-hidden border border-[#E8E3DA] hover:border-[#1C1C1E] aspect-square relative bg-white transition shadow-sm cursor-pointer" data-view="bedroom" data-src="{{ product.images.bedroom }}" data-label="Master Bedroom Staged View">
           <img src="{{ product.images.bedroom }}" class="w-full h-full object-cover">
         </button>
 
-        <button class="thumb-btn rounded-lg overflow-hidden border border-[#E8E3DA] hover:border-[#1C1C1E] aspect-square relative bg-white transition shadow-sm cursor-pointer" data-src="{{ product.images.studio }}" data-label="Nordic Studio Staged View">
+        <button id="thumb-studio" class="thumb-btn rounded-lg overflow-hidden border border-[#E8E3DA] hover:border-[#1C1C1E] aspect-square relative bg-white transition shadow-sm cursor-pointer" data-view="studio" data-src="{{ product.images.studio }}" data-label="Nordic Studio Staged View">
           <img src="{{ product.images.studio }}" class="w-full h-full object-cover">
         </button>
 
-        <button class="thumb-btn rounded-lg overflow-hidden border border-[#E8E3DA] hover:border-[#1C1C1E] aspect-square relative bg-white transition shadow-sm cursor-pointer" data-src="{{ product.images.framed_product }}" data-label="Framed Studio Close-up">
+        <button id="thumb-framed-product" class="thumb-btn rounded-lg overflow-hidden border border-[#E8E3DA] hover:border-[#1C1C1E] aspect-square relative bg-white transition shadow-sm cursor-pointer" data-view="framed" data-src="{{ product.images.framed_product }}" data-label="Framed Studio Close-up">
           <img src="{{ product.images.framed_product }}" class="w-full h-full object-cover">
         </button>
 
-        <button class="thumb-btn rounded-lg overflow-hidden border border-[#E8E3DA] hover:border-[#1C1C1E] aspect-square relative bg-white transition shadow-sm cursor-pointer" data-src="{{ product.images.master_art }}" data-label="Original High-Res Print Artwork">
+        <button id="thumb-master-art" class="thumb-btn rounded-lg overflow-hidden border border-[#E8E3DA] hover:border-[#1C1C1E] aspect-square relative bg-white transition shadow-sm cursor-pointer" data-view="master_art" data-src="{{ product.images.master_art }}" data-label="Original High-Res Print Artwork">
           <img src="{{ product.images.master_art }}" class="w-full h-full object-cover">
         </button>
       </div>
+
 
       <!-- Guarantee Badges (Desktop View) -->
       <div class="hidden lg:grid p-4 rounded-xl bg-white border border-[#E8E3DA] grid-cols-3 gap-4 text-center mt-6">

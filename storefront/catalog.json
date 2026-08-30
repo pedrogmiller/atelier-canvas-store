@@ -45,7 +45,21 @@
       "living_room": "/static/products/amalfi-lemon-groves-terracotta-heirloom-amalfi-lemon-branch-with-leaves-no-5-3927d3/living_room_oak.jpg",
       "bedroom": "/static/products/amalfi-lemon-groves-terracotta-heirloom-amalfi-lemon-branch-with-leaves-no-5-3927d3/bedroom_black.jpg",
       "studio": "/static/products/amalfi-lemon-groves-terracotta-heirloom-amalfi-lemon-branch-with-leaves-no-5-3927d3/studio_white.jpg",
-      "master_art": "/static/products/amalfi-lemon-groves-terracotta-heirloom-amalfi-lemon-branch-with-leaves-no-5-3927d3/master_art.jpg"
+      "master_art": "/static/products/amalfi-lemon-groves-terracotta-heirloom-amalfi-lemon-branch-with-leaves-no-5-3927d3/master_art.jpg",
+      "living_room_frames": {
+        "natural_oak": "/static/products/amalfi-lemon-groves-terracotta-heirloom-amalfi-lemon-branch-with-leaves-no-5-3927d3/living_room_natural_oak.jpg",
+        "black_wood": "/static/products/amalfi-lemon-groves-terracotta-heirloom-amalfi-lemon-branch-with-leaves-no-5-3927d3/living_room_black_wood.jpg",
+        "white_wood": "/static/products/amalfi-lemon-groves-terracotta-heirloom-amalfi-lemon-branch-with-leaves-no-5-3927d3/living_room_white_wood.jpg",
+        "canvas_wrap": "/static/products/amalfi-lemon-groves-terracotta-heirloom-amalfi-lemon-branch-with-leaves-no-5-3927d3/living_room_canvas_wrap.jpg",
+        "unframed_poster": "/static/products/amalfi-lemon-groves-terracotta-heirloom-amalfi-lemon-branch-with-leaves-no-5-3927d3/living_room_unframed_poster.jpg"
+      },
+      "framed_detail_frames": {
+        "natural_oak": "/static/products/amalfi-lemon-groves-terracotta-heirloom-amalfi-lemon-branch-with-leaves-no-5-3927d3/framed_natural_oak.jpg",
+        "black_wood": "/static/products/amalfi-lemon-groves-terracotta-heirloom-amalfi-lemon-branch-with-leaves-no-5-3927d3/framed_black_wood.jpg",
+        "white_wood": "/static/products/amalfi-lemon-groves-terracotta-heirloom-amalfi-lemon-branch-with-leaves-no-5-3927d3/framed_white_wood.jpg",
+        "canvas_wrap": "/static/products/amalfi-lemon-groves-terracotta-heirloom-amalfi-lemon-branch-with-leaves-no-5-3927d3/framed_canvas_wrap.jpg",
+        "unframed_poster": "/static/products/amalfi-lemon-groves-terracotta-heirloom-amalfi-lemon-branch-with-leaves-no-5-3927d3/framed_unframed_poster.jpg"
+      }
     },
     "variants": [
       {
@@ -334,7 +348,21 @@
       "living_room": "/static/products/retro-futuristic-cyber-architecture-isometric-sky-garden-elevation-no-3-25250b/living_room_oak.jpg",
       "bedroom": "/static/products/retro-futuristic-cyber-architecture-isometric-sky-garden-elevation-no-3-25250b/bedroom_black.jpg",
       "studio": "/static/products/retro-futuristic-cyber-architecture-isometric-sky-garden-elevation-no-3-25250b/studio_white.jpg",
-      "master_art": "/static/products/retro-futuristic-cyber-architecture-isometric-sky-garden-elevation-no-3-25250b/master_art.jpg"
+      "master_art": "/static/products/retro-futuristic-cyber-architecture-isometric-sky-garden-elevation-no-3-25250b/master_art.jpg",
+      "living_room_frames": {
+        "natural_oak": "/static/products/retro-futuristic-cyber-architecture-isometric-sky-garden-elevation-no-3-25250b/living_room_natural_oak.jpg",
+        "black_wood": "/static/products/retro-futuristic-cyber-architecture-isometric-sky-garden-elevation-no-3-25250b/living_room_black_wood.jpg",
+        "white_wood": "/static/products/retro-futuristic-cyber-architecture-isometric-sky-garden-elevation-no-3-25250b/living_room_white_wood.jpg",
+        "canvas_wrap": "/static/products/retro-futuristic-cyber-architecture-isometric-sky-garden-elevation-no-3-25250b/living_room_canvas_wrap.jpg",
+        "unframed_poster": "/static/products/retro-futuristic-cyber-architecture-isometric-sky-garden-elevation-no-3-25250b/living_room_unframed_poster.jpg"
+      },
+      "framed_detail_frames": {
+        "natural_oak": "/static/products/retro-futuristic-cyber-architecture-isometric-sky-garden-elevation-no-3-25250b/framed_natural_oak.jpg",
+        "black_wood": "/static/products/retro-futuristic-cyber-architecture-isometric-sky-garden-elevation-no-3-25250b/framed_black_wood.jpg",
+        "white_wood": "/static/products/retro-futuristic-cyber-architecture-isometric-sky-garden-elevation-no-3-25250b/framed_white_wood.jpg",
+        "canvas_wrap": "/static/products/retro-futuristic-cyber-architecture-isometric-sky-garden-elevation-no-3-25250b/framed_canvas_wrap.jpg",
+        "unframed_poster": "/static/products/retro-futuristic-cyber-architecture-isometric-sky-garden-elevation-no-3-25250b/framed_unframed_poster.jpg"
+      }
     },
     "variants": [
       {
@@ -623,7 +651,21 @@
       "living_room": "/static/products/zen-sumi-e-enso-brush-studies-flowing-bamboo-reed-wash-no-3-2db163/living_room_oak.jpg",
       "bedroom": "/static/products/zen-sumi-e-enso-brush-studies-flowing-bamboo-reed-wash-no-3-2db163/bedroom_black.jpg",
       "studio": "/static/products/zen-sumi-e-enso-brush-studies-flowing-bamboo-reed-wash-no-3-2db163/studio_white.jpg",
-      "master_art": "/static/products/zen-sumi-e-enso-brush-studies-flowing-bamboo-reed-wash-no-3-2db163/master_art.jpg"
+      "master_art": "/static/products/zen-sumi-e-enso-brush-studies-flowing-bamboo-reed-wash-no-3-2db163/master_art.jpg",
+      "living_room_frames": {
+        "natural_oak": "/static/products/zen-sumi-e-enso-brush-studies-flowing-bamboo-reed-wash-no-3-2db163/living_room_natural_oak.jpg",
+        "black_wood": "/static/products/zen-sumi-e-enso-brush-studies-flowing-bamboo-reed-wash-no-3-2db163/living_room_black_wood.jpg",
+        "white_wood": "/static/products/zen-sumi-e-enso-brush-studies-flowing-bamboo-reed-wash-no-3-2db163/living_room_white_wood.jpg",
+        "canvas_wrap": "/static/products/zen-sumi-e-enso-brush-studies-flowing-bamboo-reed-wash-no-3-2db163/living_room_canvas_wrap.jpg",
+        "unframed_poster": "/static/products/zen-sumi-e-enso-brush-studies-flowing-bamboo-reed-wash-no-3-2db163/living_room_unframed_poster.jpg"
+      },
+      "framed_detail_frames": {
+        "natural_oak": "/static/products/zen-sumi-e-enso-brush-studies-flowing-bamboo-reed-wash-no-3-2db163/framed_natural_oak.jpg",
+        "black_wood": "/static/products/zen-sumi-e-enso-brush-studies-flowing-bamboo-reed-wash-no-3-2db163/framed_black_wood.jpg",
+        "white_wood": "/static/products/zen-sumi-e-enso-brush-studies-flowing-bamboo-reed-wash-no-3-2db163/framed_white_wood.jpg",
+        "canvas_wrap": "/static/products/zen-sumi-e-enso-brush-studies-flowing-bamboo-reed-wash-no-3-2db163/framed_canvas_wrap.jpg",
+        "unframed_poster": "/static/products/zen-sumi-e-enso-brush-studies-flowing-bamboo-reed-wash-no-3-2db163/framed_unframed_poster.jpg"
+      }
     },
     "variants": [
       {
@@ -912,7 +954,21 @@
       "living_room": "/static/products/textured-abstract-expressionist-impasto-layered-charcoal-and-ochre-impasto-no-10-a484ae/living_room_oak.jpg",
       "bedroom": "/static/products/textured-abstract-expressionist-impasto-layered-charcoal-and-ochre-impasto-no-10-a484ae/bedroom_black.jpg",
       "studio": "/static/products/textured-abstract-expressionist-impasto-layered-charcoal-and-ochre-impasto-no-10-a484ae/studio_white.jpg",
-      "master_art": "/static/products/textured-abstract-expressionist-impasto-layered-charcoal-and-ochre-impasto-no-10-a484ae/master_art.jpg"
+      "master_art": "/static/products/textured-abstract-expressionist-impasto-layered-charcoal-and-ochre-impasto-no-10-a484ae/master_art.jpg",
+      "living_room_frames": {
+        "natural_oak": "/static/products/textured-abstract-expressionist-impasto-layered-charcoal-and-ochre-impasto-no-10-a484ae/living_room_natural_oak.jpg",
+        "black_wood": "/static/products/textured-abstract-expressionist-impasto-layered-charcoal-and-ochre-impasto-no-10-a484ae/living_room_black_wood.jpg",
+        "white_wood": "/static/products/textured-abstract-expressionist-impasto-layered-charcoal-and-ochre-impasto-no-10-a484ae/living_room_white_wood.jpg",
+        "canvas_wrap": "/static/products/textured-abstract-expressionist-impasto-layered-charcoal-and-ochre-impasto-no-10-a484ae/living_room_canvas_wrap.jpg",
+        "unframed_poster": "/static/products/textured-abstract-expressionist-impasto-layered-charcoal-and-ochre-impasto-no-10-a484ae/living_room_unframed_poster.jpg"
+      },
+      "framed_detail_frames": {
+        "natural_oak": "/static/products/textured-abstract-expressionist-impasto-layered-charcoal-and-ochre-impasto-no-10-a484ae/framed_natural_oak.jpg",
+        "black_wood": "/static/products/textured-abstract-expressionist-impasto-layered-charcoal-and-ochre-impasto-no-10-a484ae/framed_black_wood.jpg",
+        "white_wood": "/static/products/textured-abstract-expressionist-impasto-layered-charcoal-and-ochre-impasto-no-10-a484ae/framed_white_wood.jpg",
+        "canvas_wrap": "/static/products/textured-abstract-expressionist-impasto-layered-charcoal-and-ochre-impasto-no-10-a484ae/framed_canvas_wrap.jpg",
+        "unframed_poster": "/static/products/textured-abstract-expressionist-impasto-layered-charcoal-and-ochre-impasto-no-10-a484ae/framed_unframed_poster.jpg"
+      }
     },
     "variants": [
       {
@@ -1201,7 +1257,21 @@
       "living_room": "/static/products/continuous-minimalist-line-art-seated-figure-minimalist-line-study-no-11-3e0676/living_room_oak.jpg",
       "bedroom": "/static/products/continuous-minimalist-line-art-seated-figure-minimalist-line-study-no-11-3e0676/bedroom_black.jpg",
       "studio": "/static/products/continuous-minimalist-line-art-seated-figure-minimalist-line-study-no-11-3e0676/studio_white.jpg",
-      "master_art": "/static/products/continuous-minimalist-line-art-seated-figure-minimalist-line-study-no-11-3e0676/master_art.jpg"
+      "master_art": "/static/products/continuous-minimalist-line-art-seated-figure-minimalist-line-study-no-11-3e0676/master_art.jpg",
+      "living_room_frames": {
+        "natural_oak": "/static/products/continuous-minimalist-line-art-seated-figure-minimalist-line-study-no-11-3e0676/living_room_natural_oak.jpg",
+        "black_wood": "/static/products/continuous-minimalist-line-art-seated-figure-minimalist-line-study-no-11-3e0676/living_room_black_wood.jpg",
+        "white_wood": "/static/products/continuous-minimalist-line-art-seated-figure-minimalist-line-study-no-11-3e0676/living_room_white_wood.jpg",
+        "canvas_wrap": "/static/products/continuous-minimalist-line-art-seated-figure-minimalist-line-study-no-11-3e0676/living_room_canvas_wrap.jpg",
+        "unframed_poster": "/static/products/continuous-minimalist-line-art-seated-figure-minimalist-line-study-no-11-3e0676/living_room_unframed_poster.jpg"
+      },
+      "framed_detail_frames": {
+        "natural_oak": "/static/products/continuous-minimalist-line-art-seated-figure-minimalist-line-study-no-11-3e0676/framed_natural_oak.jpg",
+        "black_wood": "/static/products/continuous-minimalist-line-art-seated-figure-minimalist-line-study-no-11-3e0676/framed_black_wood.jpg",
+        "white_wood": "/static/products/continuous-minimalist-line-art-seated-figure-minimalist-line-study-no-11-3e0676/framed_white_wood.jpg",
+        "canvas_wrap": "/static/products/continuous-minimalist-line-art-seated-figure-minimalist-line-study-no-11-3e0676/framed_canvas_wrap.jpg",
+        "unframed_poster": "/static/products/continuous-minimalist-line-art-seated-figure-minimalist-line-study-no-11-3e0676/framed_unframed_poster.jpg"
+      }
     },
     "variants": [
       {
@@ -1490,7 +1560,21 @@
       "living_room": "/static/products/french-herbarium-pressed-botanicals-eucalyptus-cinerea-leaf-branch-no-2-7445cc/living_room_oak.jpg",
       "bedroom": "/static/products/french-herbarium-pressed-botanicals-eucalyptus-cinerea-leaf-branch-no-2-7445cc/bedroom_black.jpg",
       "studio": "/static/products/french-herbarium-pressed-botanicals-eucalyptus-cinerea-leaf-branch-no-2-7445cc/studio_white.jpg",
-      "master_art": "/static/products/french-herbarium-pressed-botanicals-eucalyptus-cinerea-leaf-branch-no-2-7445cc/master_art.jpg"
+      "master_art": "/static/products/french-herbarium-pressed-botanicals-eucalyptus-cinerea-leaf-branch-no-2-7445cc/master_art.jpg",
+      "living_room_frames": {
+        "natural_oak": "/static/products/french-herbarium-pressed-botanicals-eucalyptus-cinerea-leaf-branch-no-2-7445cc/living_room_natural_oak.jpg",
+        "black_wood": "/static/products/french-herbarium-pressed-botanicals-eucalyptus-cinerea-leaf-branch-no-2-7445cc/living_room_black_wood.jpg",
+        "white_wood": "/static/products/french-herbarium-pressed-botanicals-eucalyptus-cinerea-leaf-branch-no-2-7445cc/living_room_white_wood.jpg",
+        "canvas_wrap": "/static/products/french-herbarium-pressed-botanicals-eucalyptus-cinerea-leaf-branch-no-2-7445cc/living_room_canvas_wrap.jpg",
+        "unframed_poster": "/static/products/french-herbarium-pressed-botanicals-eucalyptus-cinerea-leaf-branch-no-2-7445cc/living_room_unframed_poster.jpg"
+      },
+      "framed_detail_frames": {
+        "natural_oak": "/static/products/french-herbarium-pressed-botanicals-eucalyptus-cinerea-leaf-branch-no-2-7445cc/framed_natural_oak.jpg",
+        "black_wood": "/static/products/french-herbarium-pressed-botanicals-eucalyptus-cinerea-leaf-branch-no-2-7445cc/framed_black_wood.jpg",
+        "white_wood": "/static/products/french-herbarium-pressed-botanicals-eucalyptus-cinerea-leaf-branch-no-2-7445cc/framed_white_wood.jpg",
+        "canvas_wrap": "/static/products/french-herbarium-pressed-botanicals-eucalyptus-cinerea-leaf-branch-no-2-7445cc/framed_canvas_wrap.jpg",
+        "unframed_poster": "/static/products/french-herbarium-pressed-botanicals-eucalyptus-cinerea-leaf-branch-no-2-7445cc/framed_unframed_poster.jpg"
+      }
     },
     "variants": [
       {
@@ -1779,7 +1863,21 @@
       "living_room": "/static/products/abstract-ethereal-watercolor-horizons-sunset-cloudbank-gradient-study-no-10-026229/living_room_oak.jpg",
       "bedroom": "/static/products/abstract-ethereal-watercolor-horizons-sunset-cloudbank-gradient-study-no-10-026229/bedroom_black.jpg",
       "studio": "/static/products/abstract-ethereal-watercolor-horizons-sunset-cloudbank-gradient-study-no-10-026229/studio_white.jpg",
-      "master_art": "/static/products/abstract-ethereal-watercolor-horizons-sunset-cloudbank-gradient-study-no-10-026229/master_art.jpg"
+      "master_art": "/static/products/abstract-ethereal-watercolor-horizons-sunset-cloudbank-gradient-study-no-10-026229/master_art.jpg",
+      "living_room_frames": {
+        "natural_oak": "/static/products/abstract-ethereal-watercolor-horizons-sunset-cloudbank-gradient-study-no-10-026229/living_room_natural_oak.jpg",
+        "black_wood": "/static/products/abstract-ethereal-watercolor-horizons-sunset-cloudbank-gradient-study-no-10-026229/living_room_black_wood.jpg",
+        "white_wood": "/static/products/abstract-ethereal-watercolor-horizons-sunset-cloudbank-gradient-study-no-10-026229/living_room_white_wood.jpg",
+        "canvas_wrap": "/static/products/abstract-ethereal-watercolor-horizons-sunset-cloudbank-gradient-study-no-10-026229/living_room_canvas_wrap.jpg",
+        "unframed_poster": "/static/products/abstract-ethereal-watercolor-horizons-sunset-cloudbank-gradient-study-no-10-026229/living_room_unframed_poster.jpg"
+      },
+      "framed_detail_frames": {
+        "natural_oak": "/static/products/abstract-ethereal-watercolor-horizons-sunset-cloudbank-gradient-study-no-10-026229/framed_natural_oak.jpg",
+        "black_wood": "/static/products/abstract-ethereal-watercolor-horizons-sunset-cloudbank-gradient-study-no-10-026229/framed_black_wood.jpg",
+        "white_wood": "/static/products/abstract-ethereal-watercolor-horizons-sunset-cloudbank-gradient-study-no-10-026229/framed_white_wood.jpg",
+        "canvas_wrap": "/static/products/abstract-ethereal-watercolor-horizons-sunset-cloudbank-gradient-study-no-10-026229/framed_canvas_wrap.jpg",
+        "unframed_poster": "/static/products/abstract-ethereal-watercolor-horizons-sunset-cloudbank-gradient-study-no-10-026229/framed_unframed_poster.jpg"
+      }
     },
     "variants": [
       {
@@ -2068,7 +2166,21 @@
       "living_room": "/static/products/art-deco-gatsby-gilded-geometry-metropolitan-skyscraper-spire-elevation-no-5-e34fe3/living_room_oak.jpg",
       "bedroom": "/static/products/art-deco-gatsby-gilded-geometry-metropolitan-skyscraper-spire-elevation-no-5-e34fe3/bedroom_black.jpg",
       "studio": "/static/products/art-deco-gatsby-gilded-geometry-metropolitan-skyscraper-spire-elevation-no-5-e34fe3/studio_white.jpg",
-      "master_art": "/static/products/art-deco-gatsby-gilded-geometry-metropolitan-skyscraper-spire-elevation-no-5-e34fe3/master_art.jpg"
+      "master_art": "/static/products/art-deco-gatsby-gilded-geometry-metropolitan-skyscraper-spire-elevation-no-5-e34fe3/master_art.jpg",
+      "living_room_frames": {
+        "natural_oak": "/static/products/art-deco-gatsby-gilded-geometry-metropolitan-skyscraper-spire-elevation-no-5-e34fe3/living_room_natural_oak.jpg",
+        "black_wood": "/static/products/art-deco-gatsby-gilded-geometry-metropolitan-skyscraper-spire-elevation-no-5-e34fe3/living_room_black_wood.jpg",
+        "white_wood": "/static/products/art-deco-gatsby-gilded-geometry-metropolitan-skyscraper-spire-elevation-no-5-e34fe3/living_room_white_wood.jpg",
+        "canvas_wrap": "/static/products/art-deco-gatsby-gilded-geometry-metropolitan-skyscraper-spire-elevation-no-5-e34fe3/living_room_canvas_wrap.jpg",
+        "unframed_poster": "/static/products/art-deco-gatsby-gilded-geometry-metropolitan-skyscraper-spire-elevation-no-5-e34fe3/living_room_unframed_poster.jpg"
+      },
+      "framed_detail_frames": {
+        "natural_oak": "/static/products/art-deco-gatsby-gilded-geometry-metropolitan-skyscraper-spire-elevation-no-5-e34fe3/framed_natural_oak.jpg",
+        "black_wood": "/static/products/art-deco-gatsby-gilded-geometry-metropolitan-skyscraper-spire-elevation-no-5-e34fe3/framed_black_wood.jpg",
+        "white_wood": "/static/products/art-deco-gatsby-gilded-geometry-metropolitan-skyscraper-spire-elevation-no-5-e34fe3/framed_white_wood.jpg",
+        "canvas_wrap": "/static/products/art-deco-gatsby-gilded-geometry-metropolitan-skyscraper-spire-elevation-no-5-e34fe3/framed_canvas_wrap.jpg",
+        "unframed_poster": "/static/products/art-deco-gatsby-gilded-geometry-metropolitan-skyscraper-spire-elevation-no-5-e34fe3/framed_unframed_poster.jpg"
+      }
     },
     "variants": [
       {
@@ -2357,7 +2469,21 @@
       "living_room": "/static/products/vintage-alpine-mountain-solitude-vintage-cable-car-over-snowy-ridge-no-7-62884c/living_room_oak.jpg",
       "bedroom": "/static/products/vintage-alpine-mountain-solitude-vintage-cable-car-over-snowy-ridge-no-7-62884c/bedroom_black.jpg",
       "studio": "/static/products/vintage-alpine-mountain-solitude-vintage-cable-car-over-snowy-ridge-no-7-62884c/studio_white.jpg",
-      "master_art": "/static/products/vintage-alpine-mountain-solitude-vintage-cable-car-over-snowy-ridge-no-7-62884c/master_art.jpg"
+      "master_art": "/static/products/vintage-alpine-mountain-solitude-vintage-cable-car-over-snowy-ridge-no-7-62884c/master_art.jpg",
+      "living_room_frames": {
+        "natural_oak": "/static/products/vintage-alpine-mountain-solitude-vintage-cable-car-over-snowy-ridge-no-7-62884c/living_room_natural_oak.jpg",
+        "black_wood": "/static/products/vintage-alpine-mountain-solitude-vintage-cable-car-over-snowy-ridge-no-7-62884c/living_room_black_wood.jpg",
+        "white_wood": "/static/products/vintage-alpine-mountain-solitude-vintage-cable-car-over-snowy-ridge-no-7-62884c/living_room_white_wood.jpg",
+        "canvas_wrap": "/static/products/vintage-alpine-mountain-solitude-vintage-cable-car-over-snowy-ridge-no-7-62884c/living_room_canvas_wrap.jpg",
+        "unframed_poster": "/static/products/vintage-alpine-mountain-solitude-vintage-cable-car-over-snowy-ridge-no-7-62884c/living_room_unframed_poster.jpg"
+      },
+      "framed_detail_frames": {
+        "natural_oak": "/static/products/vintage-alpine-mountain-solitude-vintage-cable-car-over-snowy-ridge-no-7-62884c/framed_natural_oak.jpg",
+        "black_wood": "/static/products/vintage-alpine-mountain-solitude-vintage-cable-car-over-snowy-ridge-no-7-62884c/framed_black_wood.jpg",
+        "white_wood": "/static/products/vintage-alpine-mountain-solitude-vintage-cable-car-over-snowy-ridge-no-7-62884c/framed_white_wood.jpg",
+        "canvas_wrap": "/static/products/vintage-alpine-mountain-solitude-vintage-cable-car-over-snowy-ridge-no-7-62884c/framed_canvas_wrap.jpg",
+        "unframed_poster": "/static/products/vintage-alpine-mountain-solitude-vintage-cable-car-over-snowy-ridge-no-7-62884c/framed_unframed_poster.jpg"
+      }
     },
     "variants": [
       {
@@ -2646,7 +2772,21 @@
       "living_room": "/static/products/moroccan-riad-architecture-zellige-sun-bleached-marrakech-arcade-no-10-fb94f0/living_room_oak.jpg",
       "bedroom": "/static/products/moroccan-riad-architecture-zellige-sun-bleached-marrakech-arcade-no-10-fb94f0/bedroom_black.jpg",
       "studio": "/static/products/moroccan-riad-architecture-zellige-sun-bleached-marrakech-arcade-no-10-fb94f0/studio_white.jpg",
-      "master_art": "/static/products/moroccan-riad-architecture-zellige-sun-bleached-marrakech-arcade-no-10-fb94f0/master_art.jpg"
+      "master_art": "/static/products/moroccan-riad-architecture-zellige-sun-bleached-marrakech-arcade-no-10-fb94f0/master_art.jpg",
+      "living_room_frames": {
+        "natural_oak": "/static/products/moroccan-riad-architecture-zellige-sun-bleached-marrakech-arcade-no-10-fb94f0/living_room_natural_oak.jpg",
+        "black_wood": "/static/products/moroccan-riad-architecture-zellige-sun-bleached-marrakech-arcade-no-10-fb94f0/living_room_black_wood.jpg",
+        "white_wood": "/static/products/moroccan-riad-architecture-zellige-sun-bleached-marrakech-arcade-no-10-fb94f0/living_room_white_wood.jpg",
+        "canvas_wrap": "/static/products/moroccan-riad-architecture-zellige-sun-bleached-marrakech-arcade-no-10-fb94f0/living_room_canvas_wrap.jpg",
+        "unframed_poster": "/static/products/moroccan-riad-architecture-zellige-sun-bleached-marrakech-arcade-no-10-fb94f0/living_room_unframed_poster.jpg"
+      },
+      "framed_detail_frames": {
+        "natural_oak": "/static/products/moroccan-riad-architecture-zellige-sun-bleached-marrakech-arcade-no-10-fb94f0/framed_natural_oak.jpg",
+        "black_wood": "/static/products/moroccan-riad-architecture-zellige-sun-bleached-marrakech-arcade-no-10-fb94f0/framed_black_wood.jpg",
+        "white_wood": "/static/products/moroccan-riad-architecture-zellige-sun-bleached-marrakech-arcade-no-10-fb94f0/framed_white_wood.jpg",
+        "canvas_wrap": "/static/products/moroccan-riad-architecture-zellige-sun-bleached-marrakech-arcade-no-10-fb94f0/framed_canvas_wrap.jpg",
+        "unframed_poster": "/static/products/moroccan-riad-architecture-zellige-sun-bleached-marrakech-arcade-no-10-fb94f0/framed_unframed_poster.jpg"
+      }
     },
     "variants": [
       {
@@ -2935,7 +3075,21 @@
       "living_room": "/static/products/minimalist-textured-plaster-clay-minimalist-layered-plaster-wave-no-3-e88b5b/living_room_oak.jpg",
       "bedroom": "/static/products/minimalist-textured-plaster-clay-minimalist-layered-plaster-wave-no-3-e88b5b/bedroom_black.jpg",
       "studio": "/static/products/minimalist-textured-plaster-clay-minimalist-layered-plaster-wave-no-3-e88b5b/studio_white.jpg",
-      "master_art": "/static/products/minimalist-textured-plaster-clay-minimalist-layered-plaster-wave-no-3-e88b5b/master_art.jpg"
+      "master_art": "/static/products/minimalist-textured-plaster-clay-minimalist-layered-plaster-wave-no-3-e88b5b/master_art.jpg",
+      "living_room_frames": {
+        "natural_oak": "/static/products/minimalist-textured-plaster-clay-minimalist-layered-plaster-wave-no-3-e88b5b/living_room_natural_oak.jpg",
+        "black_wood": "/static/products/minimalist-textured-plaster-clay-minimalist-layered-plaster-wave-no-3-e88b5b/living_room_black_wood.jpg",
+        "white_wood": "/static/products/minimalist-textured-plaster-clay-minimalist-layered-plaster-wave-no-3-e88b5b/living_room_white_wood.jpg",
+        "canvas_wrap": "/static/products/minimalist-textured-plaster-clay-minimalist-layered-plaster-wave-no-3-e88b5b/living_room_canvas_wrap.jpg",
+        "unframed_poster": "/static/products/minimalist-textured-plaster-clay-minimalist-layered-plaster-wave-no-3-e88b5b/living_room_unframed_poster.jpg"
+      },
+      "framed_detail_frames": {
+        "natural_oak": "/static/products/minimalist-textured-plaster-clay-minimalist-layered-plaster-wave-no-3-e88b5b/framed_natural_oak.jpg",
+        "black_wood": "/static/products/minimalist-textured-plaster-clay-minimalist-layered-plaster-wave-no-3-e88b5b/framed_black_wood.jpg",
+        "white_wood": "/static/products/minimalist-textured-plaster-clay-minimalist-layered-plaster-wave-no-3-e88b5b/framed_white_wood.jpg",
+        "canvas_wrap": "/static/products/minimalist-textured-plaster-clay-minimalist-layered-plaster-wave-no-3-e88b5b/framed_canvas_wrap.jpg",
+        "unframed_poster": "/static/products/minimalist-textured-plaster-clay-minimalist-layered-plaster-wave-no-3-e88b5b/framed_unframed_poster.jpg"
+      }
     },
     "variants": [
       {
@@ -3224,7 +3378,21 @@
       "living_room": "/static/products/antique-celestial-astrolabe-charts-vintage-northern-hemisphere-star-chart-no-11-e9048b/living_room_oak.jpg",
       "bedroom": "/static/products/antique-celestial-astrolabe-charts-vintage-northern-hemisphere-star-chart-no-11-e9048b/bedroom_black.jpg",
       "studio": "/static/products/antique-celestial-astrolabe-charts-vintage-northern-hemisphere-star-chart-no-11-e9048b/studio_white.jpg",
-      "master_art": "/static/products/antique-celestial-astrolabe-charts-vintage-northern-hemisphere-star-chart-no-11-e9048b/master_art.jpg"
+      "master_art": "/static/products/antique-celestial-astrolabe-charts-vintage-northern-hemisphere-star-chart-no-11-e9048b/master_art.jpg",
+      "living_room_frames": {
+        "natural_oak": "/static/products/antique-celestial-astrolabe-charts-vintage-northern-hemisphere-star-chart-no-11-e9048b/living_room_natural_oak.jpg",
+        "black_wood": "/static/products/antique-celestial-astrolabe-charts-vintage-northern-hemisphere-star-chart-no-11-e9048b/living_room_black_wood.jpg",
+        "white_wood": "/static/products/antique-celestial-astrolabe-charts-vintage-northern-hemisphere-star-chart-no-11-e9048b/living_room_white_wood.jpg",
+        "canvas_wrap": "/static/products/antique-celestial-astrolabe-charts-vintage-northern-hemisphere-star-chart-no-11-e9048b/living_room_canvas_wrap.jpg",
+        "unframed_poster": "/static/products/antique-celestial-astrolabe-charts-vintage-northern-hemisphere-star-chart-no-11-e9048b/living_room_unframed_poster.jpg"
+      },
+      "framed_detail_frames": {
+        "natural_oak": "/static/products/antique-celestial-astrolabe-charts-vintage-northern-hemisphere-star-chart-no-11-e9048b/framed_natural_oak.jpg",
+        "black_wood": "/static/products/antique-celestial-astrolabe-charts-vintage-northern-hemisphere-star-chart-no-11-e9048b/framed_black_wood.jpg",
+        "white_wood": "/static/products/antique-celestial-astrolabe-charts-vintage-northern-hemisphere-star-chart-no-11-e9048b/framed_white_wood.jpg",
+        "canvas_wrap": "/static/products/antique-celestial-astrolabe-charts-vintage-northern-hemisphere-star-chart-no-11-e9048b/framed_canvas_wrap.jpg",
+        "unframed_poster": "/static/products/antique-celestial-astrolabe-charts-vintage-northern-hemisphere-star-chart-no-11-e9048b/framed_unframed_poster.jpg"
+      }
     },
     "variants": [
       {
@@ -3513,7 +3681,21 @@
       "living_room": "/static/products/palm-springs-desert-modernism-desert-agave-against-terracotta-plaster-no-4-e60884/living_room_oak.jpg",
       "bedroom": "/static/products/palm-springs-desert-modernism-desert-agave-against-terracotta-plaster-no-4-e60884/bedroom_black.jpg",
       "studio": "/static/products/palm-springs-desert-modernism-desert-agave-against-terracotta-plaster-no-4-e60884/studio_white.jpg",
-      "master_art": "/static/products/palm-springs-desert-modernism-desert-agave-against-terracotta-plaster-no-4-e60884/master_art.jpg"
+      "master_art": "/static/products/palm-springs-desert-modernism-desert-agave-against-terracotta-plaster-no-4-e60884/master_art.jpg",
+      "living_room_frames": {
+        "natural_oak": "/static/products/palm-springs-desert-modernism-desert-agave-against-terracotta-plaster-no-4-e60884/living_room_natural_oak.jpg",
+        "black_wood": "/static/products/palm-springs-desert-modernism-desert-agave-against-terracotta-plaster-no-4-e60884/living_room_black_wood.jpg",
+        "white_wood": "/static/products/palm-springs-desert-modernism-desert-agave-against-terracotta-plaster-no-4-e60884/living_room_white_wood.jpg",
+        "canvas_wrap": "/static/products/palm-springs-desert-modernism-desert-agave-against-terracotta-plaster-no-4-e60884/living_room_canvas_wrap.jpg",
+        "unframed_poster": "/static/products/palm-springs-desert-modernism-desert-agave-against-terracotta-plaster-no-4-e60884/living_room_unframed_poster.jpg"
+      },
+      "framed_detail_frames": {
+        "natural_oak": "/static/products/palm-springs-desert-modernism-desert-agave-against-terracotta-plaster-no-4-e60884/framed_natural_oak.jpg",
+        "black_wood": "/static/products/palm-springs-desert-modernism-desert-agave-against-terracotta-plaster-no-4-e60884/framed_black_wood.jpg",
+        "white_wood": "/static/products/palm-springs-desert-modernism-desert-agave-against-terracotta-plaster-no-4-e60884/framed_white_wood.jpg",
+        "canvas_wrap": "/static/products/palm-springs-desert-modernism-desert-agave-against-terracotta-plaster-no-4-e60884/framed_canvas_wrap.jpg",
+        "unframed_poster": "/static/products/palm-springs-desert-modernism-desert-agave-against-terracotta-plaster-no-4-e60884/framed_unframed_poster.jpg"
+      }
     },
     "variants": [
       {
@@ -3802,7 +3984,21 @@
       "living_room": "/static/products/nordic-abstract-flora-foliage-monstera-leaf-negative-space-abstraction-no-6-de3428/living_room_oak.jpg",
       "bedroom": "/static/products/nordic-abstract-flora-foliage-monstera-leaf-negative-space-abstraction-no-6-de3428/bedroom_black.jpg",
       "studio": "/static/products/nordic-abstract-flora-foliage-monstera-leaf-negative-space-abstraction-no-6-de3428/studio_white.jpg",
-      "master_art": "/static/products/nordic-abstract-flora-foliage-monstera-leaf-negative-space-abstraction-no-6-de3428/master_art.jpg"
+      "master_art": "/static/products/nordic-abstract-flora-foliage-monstera-leaf-negative-space-abstraction-no-6-de3428/master_art.jpg",
+      "living_room_frames": {
+        "natural_oak": "/static/products/nordic-abstract-flora-foliage-monstera-leaf-negative-space-abstraction-no-6-de3428/living_room_natural_oak.jpg",
+        "black_wood": "/static/products/nordic-abstract-flora-foliage-monstera-leaf-negative-space-abstraction-no-6-de3428/living_room_black_wood.jpg",
+        "white_wood": "/static/products/nordic-abstract-flora-foliage-monstera-leaf-negative-space-abstraction-no-6-de3428/living_room_white_wood.jpg",
+        "canvas_wrap": "/static/products/nordic-abstract-flora-foliage-monstera-leaf-negative-space-abstraction-no-6-de3428/living_room_canvas_wrap.jpg",
+        "unframed_poster": "/static/products/nordic-abstract-flora-foliage-monstera-leaf-negative-space-abstraction-no-6-de3428/living_room_unframed_poster.jpg"
+      },
+      "framed_detail_frames": {
+        "natural_oak": "/static/products/nordic-abstract-flora-foliage-monstera-leaf-negative-space-abstraction-no-6-de3428/framed_natural_oak.jpg",
+        "black_wood": "/static/products/nordic-abstract-flora-foliage-monstera-leaf-negative-space-abstraction-no-6-de3428/framed_black_wood.jpg",
+        "white_wood": "/static/products/nordic-abstract-flora-foliage-monstera-leaf-negative-space-abstraction-no-6-de3428/framed_white_wood.jpg",
+        "canvas_wrap": "/static/products/nordic-abstract-flora-foliage-monstera-leaf-negative-space-abstraction-no-6-de3428/framed_canvas_wrap.jpg",
+        "unframed_poster": "/static/products/nordic-abstract-flora-foliage-monstera-leaf-negative-space-abstraction-no-6-de3428/framed_unframed_poster.jpg"
+      }
     },
     "variants": [
       {
@@ -4091,7 +4287,21 @@
       "living_room": "/static/products/modern-architectural-geometry-schematics-spiral-staircase-elevation-study-no-10-0f470c/living_room_oak.jpg",
       "bedroom": "/static/products/modern-architectural-geometry-schematics-spiral-staircase-elevation-study-no-10-0f470c/bedroom_black.jpg",
       "studio": "/static/products/modern-architectural-geometry-schematics-spiral-staircase-elevation-study-no-10-0f470c/studio_white.jpg",
-      "master_art": "/static/products/modern-architectural-geometry-schematics-spiral-staircase-elevation-study-no-10-0f470c/master_art.jpg"
+      "master_art": "/static/products/modern-architectural-geometry-schematics-spiral-staircase-elevation-study-no-10-0f470c/master_art.jpg",
+      "living_room_frames": {
+        "natural_oak": "/static/products/modern-architectural-geometry-schematics-spiral-staircase-elevation-study-no-10-0f470c/living_room_natural_oak.jpg",
+        "black_wood": "/static/products/modern-architectural-geometry-schematics-spiral-staircase-elevation-study-no-10-0f470c/living_room_black_wood.jpg",
+        "white_wood": "/static/products/modern-architectural-geometry-schematics-spiral-staircase-elevation-study-no-10-0f470c/living_room_white_wood.jpg",
+        "canvas_wrap": "/static/products/modern-architectural-geometry-schematics-spiral-staircase-elevation-study-no-10-0f470c/living_room_canvas_wrap.jpg",
+        "unframed_poster": "/static/products/modern-architectural-geometry-schematics-spiral-staircase-elevation-study-no-10-0f470c/living_room_unframed_poster.jpg"
+      },
+      "framed_detail_frames": {
+        "natural_oak": "/static/products/modern-architectural-geometry-schematics-spiral-staircase-elevation-study-no-10-0f470c/framed_natural_oak.jpg",
+        "black_wood": "/static/products/modern-architectural-geometry-schematics-spiral-staircase-elevation-study-no-10-0f470c/framed_black_wood.jpg",
+        "white_wood": "/static/products/modern-architectural-geometry-schematics-spiral-staircase-elevation-study-no-10-0f470c/framed_white_wood.jpg",
+        "canvas_wrap": "/static/products/modern-architectural-geometry-schematics-spiral-staircase-elevation-study-no-10-0f470c/framed_canvas_wrap.jpg",
+        "unframed_poster": "/static/products/modern-architectural-geometry-schematics-spiral-staircase-elevation-study-no-10-0f470c/framed_unframed_poster.jpg"
+      }
     },
     "variants": [
       {
@@ -4380,7 +4590,21 @@
       "living_room": "/static/products/japanese-ukiyo-e-modern-mokuhanga-tranquil-koi-pond-water-ripple-no-8-677344/living_room_oak.jpg",
       "bedroom": "/static/products/japanese-ukiyo-e-modern-mokuhanga-tranquil-koi-pond-water-ripple-no-8-677344/bedroom_black.jpg",
       "studio": "/static/products/japanese-ukiyo-e-modern-mokuhanga-tranquil-koi-pond-water-ripple-no-8-677344/studio_white.jpg",
-      "master_art": "/static/products/japanese-ukiyo-e-modern-mokuhanga-tranquil-koi-pond-water-ripple-no-8-677344/master_art.jpg"
+      "master_art": "/static/products/japanese-ukiyo-e-modern-mokuhanga-tranquil-koi-pond-water-ripple-no-8-677344/master_art.jpg",
+      "living_room_frames": {
+        "natural_oak": "/static/products/japanese-ukiyo-e-modern-mokuhanga-tranquil-koi-pond-water-ripple-no-8-677344/living_room_natural_oak.jpg",
+        "black_wood": "/static/products/japanese-ukiyo-e-modern-mokuhanga-tranquil-koi-pond-water-ripple-no-8-677344/living_room_black_wood.jpg",
+        "white_wood": "/static/products/japanese-ukiyo-e-modern-mokuhanga-tranquil-koi-pond-water-ripple-no-8-677344/living_room_white_wood.jpg",
+        "canvas_wrap": "/static/products/japanese-ukiyo-e-modern-mokuhanga-tranquil-koi-pond-water-ripple-no-8-677344/living_room_canvas_wrap.jpg",
+        "unframed_poster": "/static/products/japanese-ukiyo-e-modern-mokuhanga-tranquil-koi-pond-water-ripple-no-8-677344/living_room_unframed_poster.jpg"
+      },
+      "framed_detail_frames": {
+        "natural_oak": "/static/products/japanese-ukiyo-e-modern-mokuhanga-tranquil-koi-pond-water-ripple-no-8-677344/framed_natural_oak.jpg",
+        "black_wood": "/static/products/japanese-ukiyo-e-modern-mokuhanga-tranquil-koi-pond-water-ripple-no-8-677344/framed_black_wood.jpg",
+        "white_wood": "/static/products/japanese-ukiyo-e-modern-mokuhanga-tranquil-koi-pond-water-ripple-no-8-677344/framed_white_wood.jpg",
+        "canvas_wrap": "/static/products/japanese-ukiyo-e-modern-mokuhanga-tranquil-koi-pond-water-ripple-no-8-677344/framed_canvas_wrap.jpg",
+        "unframed_poster": "/static/products/japanese-ukiyo-e-modern-mokuhanga-tranquil-koi-pond-water-ripple-no-8-677344/framed_unframed_poster.jpg"
+      }
     },
     "variants": [
       {
@@ -4669,7 +4893,21 @@
       "living_room": "/static/products/vintage-french-riviera-mid-century-travel-monaco-coastal-serpentine-road-no-12-58f5ff/living_room_oak.jpg",
       "bedroom": "/static/products/vintage-french-riviera-mid-century-travel-monaco-coastal-serpentine-road-no-12-58f5ff/bedroom_black.jpg",
       "studio": "/static/products/vintage-french-riviera-mid-century-travel-monaco-coastal-serpentine-road-no-12-58f5ff/studio_white.jpg",
-      "master_art": "/static/products/vintage-french-riviera-mid-century-travel-monaco-coastal-serpentine-road-no-12-58f5ff/master_art.jpg"
+      "master_art": "/static/products/vintage-french-riviera-mid-century-travel-monaco-coastal-serpentine-road-no-12-58f5ff/master_art.jpg",
+      "living_room_frames": {
+        "natural_oak": "/static/products/vintage-french-riviera-mid-century-travel-monaco-coastal-serpentine-road-no-12-58f5ff/living_room_natural_oak.jpg",
+        "black_wood": "/static/products/vintage-french-riviera-mid-century-travel-monaco-coastal-serpentine-road-no-12-58f5ff/living_room_black_wood.jpg",
+        "white_wood": "/static/products/vintage-french-riviera-mid-century-travel-monaco-coastal-serpentine-road-no-12-58f5ff/living_room_white_wood.jpg",
+        "canvas_wrap": "/static/products/vintage-french-riviera-mid-century-travel-monaco-coastal-serpentine-road-no-12-58f5ff/living_room_canvas_wrap.jpg",
+        "unframed_poster": "/static/products/vintage-french-riviera-mid-century-travel-monaco-coastal-serpentine-road-no-12-58f5ff/living_room_unframed_poster.jpg"
+      },
+      "framed_detail_frames": {
+        "natural_oak": "/static/products/vintage-french-riviera-mid-century-travel-monaco-coastal-serpentine-road-no-12-58f5ff/framed_natural_oak.jpg",
+        "black_wood": "/static/products/vintage-french-riviera-mid-century-travel-monaco-coastal-serpentine-road-no-12-58f5ff/framed_black_wood.jpg",
+        "white_wood": "/static/products/vintage-french-riviera-mid-century-travel-monaco-coastal-serpentine-road-no-12-58f5ff/framed_white_wood.jpg",
+        "canvas_wrap": "/static/products/vintage-french-riviera-mid-century-travel-monaco-coastal-serpentine-road-no-12-58f5ff/framed_canvas_wrap.jpg",
+        "unframed_poster": "/static/products/vintage-french-riviera-mid-century-travel-monaco-coastal-serpentine-road-no-12-58f5ff/framed_unframed_poster.jpg"
+      }
     },
     "variants": [
       {
@@ -4958,7 +5196,21 @@
       "living_room": "/static/products/dark-academia-textured-renaissance-textured-vintage-oil-study-no-2-7fc8fb/living_room_oak.jpg",
       "bedroom": "/static/products/dark-academia-textured-renaissance-textured-vintage-oil-study-no-2-7fc8fb/bedroom_black.jpg",
       "studio": "/static/products/dark-academia-textured-renaissance-textured-vintage-oil-study-no-2-7fc8fb/studio_white.jpg",
-      "master_art": "/static/products/dark-academia-textured-renaissance-textured-vintage-oil-study-no-2-7fc8fb/master_art.jpg"
+      "master_art": "/static/products/dark-academia-textured-renaissance-textured-vintage-oil-study-no-2-7fc8fb/master_art.jpg",
+      "living_room_frames": {
+        "natural_oak": "/static/products/dark-academia-textured-renaissance-textured-vintage-oil-study-no-2-7fc8fb/living_room_natural_oak.jpg",
+        "black_wood": "/static/products/dark-academia-textured-renaissance-textured-vintage-oil-study-no-2-7fc8fb/living_room_black_wood.jpg",
+        "white_wood": "/static/products/dark-academia-textured-renaissance-textured-vintage-oil-study-no-2-7fc8fb/living_room_white_wood.jpg",
+        "canvas_wrap": "/static/products/dark-academia-textured-renaissance-textured-vintage-oil-study-no-2-7fc8fb/living_room_canvas_wrap.jpg",
+        "unframed_poster": "/static/products/dark-academia-textured-renaissance-textured-vintage-oil-study-no-2-7fc8fb/living_room_unframed_poster.jpg"
+      },
+      "framed_detail_frames": {
+        "natural_oak": "/static/products/dark-academia-textured-renaissance-textured-vintage-oil-study-no-2-7fc8fb/framed_natural_oak.jpg",
+        "black_wood": "/static/products/dark-academia-textured-renaissance-textured-vintage-oil-study-no-2-7fc8fb/framed_black_wood.jpg",
+        "white_wood": "/static/products/dark-academia-textured-renaissance-textured-vintage-oil-study-no-2-7fc8fb/framed_white_wood.jpg",
+        "canvas_wrap": "/static/products/dark-academia-textured-renaissance-textured-vintage-oil-study-no-2-7fc8fb/framed_canvas_wrap.jpg",
+        "unframed_poster": "/static/products/dark-academia-textured-renaissance-textured-vintage-oil-study-no-2-7fc8fb/framed_unframed_poster.jpg"
+      }
     },
     "variants": [
       {
@@ -5247,7 +5499,21 @@
       "living_room": "/static/products/mediterranean-terracotta-coastal-ease-sun-bleached-linen-balconies-no-1-02a5c3/living_room_oak.jpg",
       "bedroom": "/static/products/mediterranean-terracotta-coastal-ease-sun-bleached-linen-balconies-no-1-02a5c3/bedroom_black.jpg",
       "studio": "/static/products/mediterranean-terracotta-coastal-ease-sun-bleached-linen-balconies-no-1-02a5c3/studio_white.jpg",
-      "master_art": "/static/products/mediterranean-terracotta-coastal-ease-sun-bleached-linen-balconies-no-1-02a5c3/master_art.jpg"
+      "master_art": "/static/products/mediterranean-terracotta-coastal-ease-sun-bleached-linen-balconies-no-1-02a5c3/master_art.jpg",
+      "living_room_frames": {
+        "natural_oak": "/static/products/mediterranean-terracotta-coastal-ease-sun-bleached-linen-balconies-no-1-02a5c3/living_room_natural_oak.jpg",
+        "black_wood": "/static/products/mediterranean-terracotta-coastal-ease-sun-bleached-linen-balconies-no-1-02a5c3/living_room_black_wood.jpg",
+        "white_wood": "/static/products/mediterranean-terracotta-coastal-ease-sun-bleached-linen-balconies-no-1-02a5c3/living_room_white_wood.jpg",
+        "canvas_wrap": "/static/products/mediterranean-terracotta-coastal-ease-sun-bleached-linen-balconies-no-1-02a5c3/living_room_canvas_wrap.jpg",
+        "unframed_poster": "/static/products/mediterranean-terracotta-coastal-ease-sun-bleached-linen-balconies-no-1-02a5c3/living_room_unframed_poster.jpg"
+      },
+      "framed_detail_frames": {
+        "natural_oak": "/static/products/mediterranean-terracotta-coastal-ease-sun-bleached-linen-balconies-no-1-02a5c3/framed_natural_oak.jpg",
+        "black_wood": "/static/products/mediterranean-terracotta-coastal-ease-sun-bleached-linen-balconies-no-1-02a5c3/framed_black_wood.jpg",
+        "white_wood": "/static/products/mediterranean-terracotta-coastal-ease-sun-bleached-linen-balconies-no-1-02a5c3/framed_white_wood.jpg",
+        "canvas_wrap": "/static/products/mediterranean-terracotta-coastal-ease-sun-bleached-linen-balconies-no-1-02a5c3/framed_canvas_wrap.jpg",
+        "unframed_poster": "/static/products/mediterranean-terracotta-coastal-ease-sun-bleached-linen-balconies-no-1-02a5c3/framed_unframed_poster.jpg"
+      }
     },
     "variants": [
       {
@@ -5536,7 +5802,21 @@
       "living_room": "/static/products/antique-botanical-herbarium-medicinal-alpine-flora-no-6-dd223a/living_room_oak.jpg",
       "bedroom": "/static/products/antique-botanical-herbarium-medicinal-alpine-flora-no-6-dd223a/bedroom_black.jpg",
       "studio": "/static/products/antique-botanical-herbarium-medicinal-alpine-flora-no-6-dd223a/studio_white.jpg",
-      "master_art": "/static/products/antique-botanical-herbarium-medicinal-alpine-flora-no-6-dd223a/master_art.jpg"
+      "master_art": "/static/products/antique-botanical-herbarium-medicinal-alpine-flora-no-6-dd223a/master_art.jpg",
+      "living_room_frames": {
+        "natural_oak": "/static/products/antique-botanical-herbarium-medicinal-alpine-flora-no-6-dd223a/living_room_natural_oak.jpg",
+        "black_wood": "/static/products/antique-botanical-herbarium-medicinal-alpine-flora-no-6-dd223a/living_room_black_wood.jpg",
+        "white_wood": "/static/products/antique-botanical-herbarium-medicinal-alpine-flora-no-6-dd223a/living_room_white_wood.jpg",
+        "canvas_wrap": "/static/products/antique-botanical-herbarium-medicinal-alpine-flora-no-6-dd223a/living_room_canvas_wrap.jpg",
+        "unframed_poster": "/static/products/antique-botanical-herbarium-medicinal-alpine-flora-no-6-dd223a/living_room_unframed_poster.jpg"
+      },
+      "framed_detail_frames": {
+        "natural_oak": "/static/products/antique-botanical-herbarium-medicinal-alpine-flora-no-6-dd223a/framed_natural_oak.jpg",
+        "black_wood": "/static/products/antique-botanical-herbarium-medicinal-alpine-flora-no-6-dd223a/framed_black_wood.jpg",
+        "white_wood": "/static/products/antique-botanical-herbarium-medicinal-alpine-flora-no-6-dd223a/framed_white_wood.jpg",
+        "canvas_wrap": "/static/products/antique-botanical-herbarium-medicinal-alpine-flora-no-6-dd223a/framed_canvas_wrap.jpg",
+        "unframed_poster": "/static/products/antique-botanical-herbarium-medicinal-alpine-flora-no-6-dd223a/framed_unframed_poster.jpg"
+      }
     },
     "variants": [
       {
@@ -5825,7 +6105,21 @@
       "living_room": "/static/products/mid-century-bauhaus-modernism-abstract-architectural-elevations-no-9-3e4184/living_room_oak.jpg",
       "bedroom": "/static/products/mid-century-bauhaus-modernism-abstract-architectural-elevations-no-9-3e4184/bedroom_black.jpg",
       "studio": "/static/products/mid-century-bauhaus-modernism-abstract-architectural-elevations-no-9-3e4184/studio_white.jpg",
-      "master_art": "/static/products/mid-century-bauhaus-modernism-abstract-architectural-elevations-no-9-3e4184/master_art.jpg"
+      "master_art": "/static/products/mid-century-bauhaus-modernism-abstract-architectural-elevations-no-9-3e4184/master_art.jpg",
+      "living_room_frames": {
+        "natural_oak": "/static/products/mid-century-bauhaus-modernism-abstract-architectural-elevations-no-9-3e4184/living_room_natural_oak.jpg",
+        "black_wood": "/static/products/mid-century-bauhaus-modernism-abstract-architectural-elevations-no-9-3e4184/living_room_black_wood.jpg",
+        "white_wood": "/static/products/mid-century-bauhaus-modernism-abstract-architectural-elevations-no-9-3e4184/living_room_white_wood.jpg",
+        "canvas_wrap": "/static/products/mid-century-bauhaus-modernism-abstract-architectural-elevations-no-9-3e4184/living_room_canvas_wrap.jpg",
+        "unframed_poster": "/static/products/mid-century-bauhaus-modernism-abstract-architectural-elevations-no-9-3e4184/living_room_unframed_poster.jpg"
+      },
+      "framed_detail_frames": {
+        "natural_oak": "/static/products/mid-century-bauhaus-modernism-abstract-architectural-elevations-no-9-3e4184/framed_natural_oak.jpg",
+        "black_wood": "/static/products/mid-century-bauhaus-modernism-abstract-architectural-elevations-no-9-3e4184/framed_black_wood.jpg",
+        "white_wood": "/static/products/mid-century-bauhaus-modernism-abstract-architectural-elevations-no-9-3e4184/framed_white_wood.jpg",
+        "canvas_wrap": "/static/products/mid-century-bauhaus-modernism-abstract-architectural-elevations-no-9-3e4184/framed_canvas_wrap.jpg",
+        "unframed_poster": "/static/products/mid-century-bauhaus-modernism-abstract-architectural-elevations-no-9-3e4184/framed_unframed_poster.jpg"
+      }
     },
     "variants": [
       {
@@ -6115,7 +6409,21 @@
       "living_room": "/static/products/japandi-wabi-sabi-minimalism-organic-textured-stone-arches-no-6-fe817f/living_room_oak.jpg",
       "bedroom": "/static/products/japandi-wabi-sabi-minimalism-organic-textured-stone-arches-no-6-fe817f/bedroom_black.jpg",
       "studio": "/static/products/japandi-wabi-sabi-minimalism-organic-textured-stone-arches-no-6-fe817f/studio_white.jpg",
-      "master_art": "/static/products/japandi-wabi-sabi-minimalism-organic-textured-stone-arches-no-6-fe817f/master_art.jpg"
+      "master_art": "/static/products/japandi-wabi-sabi-minimalism-organic-textured-stone-arches-no-6-fe817f/master_art.jpg",
+      "living_room_frames": {
+        "natural_oak": "/static/products/japandi-wabi-sabi-minimalism-organic-textured-stone-arches-no-6-fe817f/living_room_natural_oak.jpg",
+        "black_wood": "/static/products/japandi-wabi-sabi-minimalism-organic-textured-stone-arches-no-6-fe817f/living_room_black_wood.jpg",
+        "white_wood": "/static/products/japandi-wabi-sabi-minimalism-organic-textured-stone-arches-no-6-fe817f/living_room_white_wood.jpg",
+        "canvas_wrap": "/static/products/japandi-wabi-sabi-minimalism-organic-textured-stone-arches-no-6-fe817f/living_room_canvas_wrap.jpg",
+        "unframed_poster": "/static/products/japandi-wabi-sabi-minimalism-organic-textured-stone-arches-no-6-fe817f/living_room_unframed_poster.jpg"
+      },
+      "framed_detail_frames": {
+        "natural_oak": "/static/products/japandi-wabi-sabi-minimalism-organic-textured-stone-arches-no-6-fe817f/framed_natural_oak.jpg",
+        "black_wood": "/static/products/japandi-wabi-sabi-minimalism-organic-textured-stone-arches-no-6-fe817f/framed_black_wood.jpg",
+        "white_wood": "/static/products/japandi-wabi-sabi-minimalism-organic-textured-stone-arches-no-6-fe817f/framed_white_wood.jpg",
+        "canvas_wrap": "/static/products/japandi-wabi-sabi-minimalism-organic-textured-stone-arches-no-6-fe817f/framed_canvas_wrap.jpg",
+        "unframed_poster": "/static/products/japandi-wabi-sabi-minimalism-organic-textured-stone-arches-no-6-fe817f/framed_unframed_poster.jpg"
+      }
     },
     "variants": [
       {
@@ -6404,7 +6712,21 @@
       "living_room": "/static/products/amalfi-lemon-groves-terracotta-terracotta-terrace-overlooking-capri-no-1-4435d2/living_room_oak.jpg",
       "bedroom": "/static/products/amalfi-lemon-groves-terracotta-terracotta-terrace-overlooking-capri-no-1-4435d2/bedroom_black.jpg",
       "studio": "/static/products/amalfi-lemon-groves-terracotta-terracotta-terrace-overlooking-capri-no-1-4435d2/studio_white.jpg",
-      "master_art": "/static/products/amalfi-lemon-groves-terracotta-terracotta-terrace-overlooking-capri-no-1-4435d2/master_art.jpg"
+      "master_art": "/static/products/amalfi-lemon-groves-terracotta-terracotta-terrace-overlooking-capri-no-1-4435d2/master_art.jpg",
+      "living_room_frames": {
+        "natural_oak": "/static/products/amalfi-lemon-groves-terracotta-terracotta-terrace-overlooking-capri-no-1-4435d2/living_room_natural_oak.jpg",
+        "black_wood": "/static/products/amalfi-lemon-groves-terracotta-terracotta-terrace-overlooking-capri-no-1-4435d2/living_room_black_wood.jpg",
+        "white_wood": "/static/products/amalfi-lemon-groves-terracotta-terracotta-terrace-overlooking-capri-no-1-4435d2/living_room_white_wood.jpg",
+        "canvas_wrap": "/static/products/amalfi-lemon-groves-terracotta-terracotta-terrace-overlooking-capri-no-1-4435d2/living_room_canvas_wrap.jpg",
+        "unframed_poster": "/static/products/amalfi-lemon-groves-terracotta-terracotta-terrace-overlooking-capri-no-1-4435d2/living_room_unframed_poster.jpg"
+      },
+      "framed_detail_frames": {
+        "natural_oak": "/static/products/amalfi-lemon-groves-terracotta-terracotta-terrace-overlooking-capri-no-1-4435d2/framed_natural_oak.jpg",
+        "black_wood": "/static/products/amalfi-lemon-groves-terracotta-terracotta-terrace-overlooking-capri-no-1-4435d2/framed_black_wood.jpg",
+        "white_wood": "/static/products/amalfi-lemon-groves-terracotta-terracotta-terrace-overlooking-capri-no-1-4435d2/framed_white_wood.jpg",
+        "canvas_wrap": "/static/products/amalfi-lemon-groves-terracotta-terracotta-terrace-overlooking-capri-no-1-4435d2/framed_canvas_wrap.jpg",
+        "unframed_poster": "/static/products/amalfi-lemon-groves-terracotta-terracotta-terrace-overlooking-capri-no-1-4435d2/framed_unframed_poster.jpg"
+      }
     },
     "variants": [
       {
@@ -6693,7 +7015,21 @@
       "living_room": "/static/products/retro-futuristic-cyber-architecture-futuristic-metropolis-transit-arch-no-5-2717ab/living_room_oak.jpg",
       "bedroom": "/static/products/retro-futuristic-cyber-architecture-futuristic-metropolis-transit-arch-no-5-2717ab/bedroom_black.jpg",
       "studio": "/static/products/retro-futuristic-cyber-architecture-futuristic-metropolis-transit-arch-no-5-2717ab/studio_white.jpg",
-      "master_art": "/static/products/retro-futuristic-cyber-architecture-futuristic-metropolis-transit-arch-no-5-2717ab/master_art.jpg"
+      "master_art": "/static/products/retro-futuristic-cyber-architecture-futuristic-metropolis-transit-arch-no-5-2717ab/master_art.jpg",
+      "living_room_frames": {
+        "natural_oak": "/static/products/retro-futuristic-cyber-architecture-futuristic-metropolis-transit-arch-no-5-2717ab/living_room_natural_oak.jpg",
+        "black_wood": "/static/products/retro-futuristic-cyber-architecture-futuristic-metropolis-transit-arch-no-5-2717ab/living_room_black_wood.jpg",
+        "white_wood": "/static/products/retro-futuristic-cyber-architecture-futuristic-metropolis-transit-arch-no-5-2717ab/living_room_white_wood.jpg",
+        "canvas_wrap": "/static/products/retro-futuristic-cyber-architecture-futuristic-metropolis-transit-arch-no-5-2717ab/living_room_canvas_wrap.jpg",
+        "unframed_poster": "/static/products/retro-futuristic-cyber-architecture-futuristic-metropolis-transit-arch-no-5-2717ab/living_room_unframed_poster.jpg"
+      },
+      "framed_detail_frames": {
+        "natural_oak": "/static/products/retro-futuristic-cyber-architecture-futuristic-metropolis-transit-arch-no-5-2717ab/framed_natural_oak.jpg",
+        "black_wood": "/static/products/retro-futuristic-cyber-architecture-futuristic-metropolis-transit-arch-no-5-2717ab/framed_black_wood.jpg",
+        "white_wood": "/static/products/retro-futuristic-cyber-architecture-futuristic-metropolis-transit-arch-no-5-2717ab/framed_white_wood.jpg",
+        "canvas_wrap": "/static/products/retro-futuristic-cyber-architecture-futuristic-metropolis-transit-arch-no-5-2717ab/framed_canvas_wrap.jpg",
+        "unframed_poster": "/static/products/retro-futuristic-cyber-architecture-futuristic-metropolis-transit-arch-no-5-2717ab/framed_unframed_poster.jpg"
+      }
     },
     "variants": [
       {
@@ -6982,7 +7318,21 @@
       "living_room": "/static/products/zen-sumi-e-enso-brush-studies-misty-mountain-single-pine-brushstroke-no-2-d92373/living_room_oak.jpg",
       "bedroom": "/static/products/zen-sumi-e-enso-brush-studies-misty-mountain-single-pine-brushstroke-no-2-d92373/bedroom_black.jpg",
       "studio": "/static/products/zen-sumi-e-enso-brush-studies-misty-mountain-single-pine-brushstroke-no-2-d92373/studio_white.jpg",
-      "master_art": "/static/products/zen-sumi-e-enso-brush-studies-misty-mountain-single-pine-brushstroke-no-2-d92373/master_art.jpg"
+      "master_art": "/static/products/zen-sumi-e-enso-brush-studies-misty-mountain-single-pine-brushstroke-no-2-d92373/master_art.jpg",
+      "living_room_frames": {
+        "natural_oak": "/static/products/zen-sumi-e-enso-brush-studies-misty-mountain-single-pine-brushstroke-no-2-d92373/living_room_natural_oak.jpg",
+        "black_wood": "/static/products/zen-sumi-e-enso-brush-studies-misty-mountain-single-pine-brushstroke-no-2-d92373/living_room_black_wood.jpg",
+        "white_wood": "/static/products/zen-sumi-e-enso-brush-studies-misty-mountain-single-pine-brushstroke-no-2-d92373/living_room_white_wood.jpg",
+        "canvas_wrap": "/static/products/zen-sumi-e-enso-brush-studies-misty-mountain-single-pine-brushstroke-no-2-d92373/living_room_canvas_wrap.jpg",
+        "unframed_poster": "/static/products/zen-sumi-e-enso-brush-studies-misty-mountain-single-pine-brushstroke-no-2-d92373/living_room_unframed_poster.jpg"
+      },
+      "framed_detail_frames": {
+        "natural_oak": "/static/products/zen-sumi-e-enso-brush-studies-misty-mountain-single-pine-brushstroke-no-2-d92373/framed_natural_oak.jpg",
+        "black_wood": "/static/products/zen-sumi-e-enso-brush-studies-misty-mountain-single-pine-brushstroke-no-2-d92373/framed_black_wood.jpg",
+        "white_wood": "/static/products/zen-sumi-e-enso-brush-studies-misty-mountain-single-pine-brushstroke-no-2-d92373/framed_white_wood.jpg",
+        "canvas_wrap": "/static/products/zen-sumi-e-enso-brush-studies-misty-mountain-single-pine-brushstroke-no-2-d92373/framed_canvas_wrap.jpg",
+        "unframed_poster": "/static/products/zen-sumi-e-enso-brush-studies-misty-mountain-single-pine-brushstroke-no-2-d92373/framed_unframed_poster.jpg"
+      }
     },
     "variants": [
       {
@@ -7271,7 +7621,21 @@
       "living_room": "/static/products/textured-abstract-expressionist-impasto-balanced-gestural-brush-mark-study-no-2-5f0cb1/living_room_oak.jpg",
       "bedroom": "/static/products/textured-abstract-expressionist-impasto-balanced-gestural-brush-mark-study-no-2-5f0cb1/bedroom_black.jpg",
       "studio": "/static/products/textured-abstract-expressionist-impasto-balanced-gestural-brush-mark-study-no-2-5f0cb1/studio_white.jpg",
-      "master_art": "/static/products/textured-abstract-expressionist-impasto-balanced-gestural-brush-mark-study-no-2-5f0cb1/master_art.jpg"
+      "master_art": "/static/products/textured-abstract-expressionist-impasto-balanced-gestural-brush-mark-study-no-2-5f0cb1/master_art.jpg",
+      "living_room_frames": {
+        "natural_oak": "/static/products/textured-abstract-expressionist-impasto-balanced-gestural-brush-mark-study-no-2-5f0cb1/living_room_natural_oak.jpg",
+        "black_wood": "/static/products/textured-abstract-expressionist-impasto-balanced-gestural-brush-mark-study-no-2-5f0cb1/living_room_black_wood.jpg",
+        "white_wood": "/static/products/textured-abstract-expressionist-impasto-balanced-gestural-brush-mark-study-no-2-5f0cb1/living_room_white_wood.jpg",
+        "canvas_wrap": "/static/products/textured-abstract-expressionist-impasto-balanced-gestural-brush-mark-study-no-2-5f0cb1/living_room_canvas_wrap.jpg",
+        "unframed_poster": "/static/products/textured-abstract-expressionist-impasto-balanced-gestural-brush-mark-study-no-2-5f0cb1/living_room_unframed_poster.jpg"
+      },
+      "framed_detail_frames": {
+        "natural_oak": "/static/products/textured-abstract-expressionist-impasto-balanced-gestural-brush-mark-study-no-2-5f0cb1/framed_natural_oak.jpg",
+        "black_wood": "/static/products/textured-abstract-expressionist-impasto-balanced-gestural-brush-mark-study-no-2-5f0cb1/framed_black_wood.jpg",
+        "white_wood": "/static/products/textured-abstract-expressionist-impasto-balanced-gestural-brush-mark-study-no-2-5f0cb1/framed_white_wood.jpg",
+        "canvas_wrap": "/static/products/textured-abstract-expressionist-impasto-balanced-gestural-brush-mark-study-no-2-5f0cb1/framed_canvas_wrap.jpg",
+        "unframed_poster": "/static/products/textured-abstract-expressionist-impasto-balanced-gestural-brush-mark-study-no-2-5f0cb1/framed_unframed_poster.jpg"
+      }
     },
     "variants": [
       {
@@ -7560,7 +7924,21 @@
       "living_room": "/static/products/continuous-minimalist-line-art-botanical-vase-continuous-brushstroke-no-8-e965c5/living_room_oak.jpg",
       "bedroom": "/static/products/continuous-minimalist-line-art-botanical-vase-continuous-brushstroke-no-8-e965c5/bedroom_black.jpg",
       "studio": "/static/products/continuous-minimalist-line-art-botanical-vase-continuous-brushstroke-no-8-e965c5/studio_white.jpg",
-      "master_art": "/static/products/continuous-minimalist-line-art-botanical-vase-continuous-brushstroke-no-8-e965c5/master_art.jpg"
+      "master_art": "/static/products/continuous-minimalist-line-art-botanical-vase-continuous-brushstroke-no-8-e965c5/master_art.jpg",
+      "living_room_frames": {
+        "natural_oak": "/static/products/continuous-minimalist-line-art-botanical-vase-continuous-brushstroke-no-8-e965c5/living_room_natural_oak.jpg",
+        "black_wood": "/static/products/continuous-minimalist-line-art-botanical-vase-continuous-brushstroke-no-8-e965c5/living_room_black_wood.jpg",
+        "white_wood": "/static/products/continuous-minimalist-line-art-botanical-vase-continuous-brushstroke-no-8-e965c5/living_room_white_wood.jpg",
+        "canvas_wrap": "/static/products/continuous-minimalist-line-art-botanical-vase-continuous-brushstroke-no-8-e965c5/living_room_canvas_wrap.jpg",
+        "unframed_poster": "/static/products/continuous-minimalist-line-art-botanical-vase-continuous-brushstroke-no-8-e965c5/living_room_unframed_poster.jpg"
+      },
+      "framed_detail_frames": {
+        "natural_oak": "/static/products/continuous-minimalist-line-art-botanical-vase-continuous-brushstroke-no-8-e965c5/framed_natural_oak.jpg",
+        "black_wood": "/static/products/continuous-minimalist-line-art-botanical-vase-continuous-brushstroke-no-8-e965c5/framed_black_wood.jpg",
+        "white_wood": "/static/products/continuous-minimalist-line-art-botanical-vase-continuous-brushstroke-no-8-e965c5/framed_white_wood.jpg",
+        "canvas_wrap": "/static/products/continuous-minimalist-line-art-botanical-vase-continuous-brushstroke-no-8-e965c5/framed_canvas_wrap.jpg",
+        "unframed_poster": "/static/products/continuous-minimalist-line-art-botanical-vase-continuous-brushstroke-no-8-e965c5/framed_unframed_poster.jpg"
+      }
     },
     "variants": [
       {
@@ -7849,7 +8227,21 @@
       "living_room": "/static/products/french-herbarium-pressed-botanicals-pressed-woodland-fern-specimen-plate-no-6-47a47a/living_room_oak.jpg",
       "bedroom": "/static/products/french-herbarium-pressed-botanicals-pressed-woodland-fern-specimen-plate-no-6-47a47a/bedroom_black.jpg",
       "studio": "/static/products/french-herbarium-pressed-botanicals-pressed-woodland-fern-specimen-plate-no-6-47a47a/studio_white.jpg",
-      "master_art": "/static/products/french-herbarium-pressed-botanicals-pressed-woodland-fern-specimen-plate-no-6-47a47a/master_art.jpg"
+      "master_art": "/static/products/french-herbarium-pressed-botanicals-pressed-woodland-fern-specimen-plate-no-6-47a47a/master_art.jpg",
+      "living_room_frames": {
+        "natural_oak": "/static/products/french-herbarium-pressed-botanicals-pressed-woodland-fern-specimen-plate-no-6-47a47a/living_room_natural_oak.jpg",
+        "black_wood": "/static/products/french-herbarium-pressed-botanicals-pressed-woodland-fern-specimen-plate-no-6-47a47a/living_room_black_wood.jpg",
+        "white_wood": "/static/products/french-herbarium-pressed-botanicals-pressed-woodland-fern-specimen-plate-no-6-47a47a/living_room_white_wood.jpg",
+        "canvas_wrap": "/static/products/french-herbarium-pressed-botanicals-pressed-woodland-fern-specimen-plate-no-6-47a47a/living_room_canvas_wrap.jpg",
+        "unframed_poster": "/static/products/french-herbarium-pressed-botanicals-pressed-woodland-fern-specimen-plate-no-6-47a47a/living_room_unframed_poster.jpg"
+      },
+      "framed_detail_frames": {
+        "natural_oak": "/static/products/french-herbarium-pressed-botanicals-pressed-woodland-fern-specimen-plate-no-6-47a47a/framed_natural_oak.jpg",
+        "black_wood": "/static/products/french-herbarium-pressed-botanicals-pressed-woodland-fern-specimen-plate-no-6-47a47a/framed_black_wood.jpg",
+        "white_wood": "/static/products/french-herbarium-pressed-botanicals-pressed-woodland-fern-specimen-plate-no-6-47a47a/framed_white_wood.jpg",
+        "canvas_wrap": "/static/products/french-herbarium-pressed-botanicals-pressed-woodland-fern-specimen-plate-no-6-47a47a/framed_canvas_wrap.jpg",
+        "unframed_poster": "/static/products/french-herbarium-pressed-botanicals-pressed-woodland-fern-specimen-plate-no-6-47a47a/framed_unframed_poster.jpg"
+      }
     },
     "variants": [
       {
@@ -8138,7 +8530,21 @@
       "living_room": "/static/products/abstract-ethereal-watercolor-horizons-abstract-rolling-fog-foothills-no-8-c60fd3/living_room_oak.jpg",
       "bedroom": "/static/products/abstract-ethereal-watercolor-horizons-abstract-rolling-fog-foothills-no-8-c60fd3/bedroom_black.jpg",
       "studio": "/static/products/abstract-ethereal-watercolor-horizons-abstract-rolling-fog-foothills-no-8-c60fd3/studio_white.jpg",
-      "master_art": "/static/products/abstract-ethereal-watercolor-horizons-abstract-rolling-fog-foothills-no-8-c60fd3/master_art.jpg"
+      "master_art": "/static/products/abstract-ethereal-watercolor-horizons-abstract-rolling-fog-foothills-no-8-c60fd3/master_art.jpg",
+      "living_room_frames": {
+        "natural_oak": "/static/products/abstract-ethereal-watercolor-horizons-abstract-rolling-fog-foothills-no-8-c60fd3/living_room_natural_oak.jpg",
+        "black_wood": "/static/products/abstract-ethereal-watercolor-horizons-abstract-rolling-fog-foothills-no-8-c60fd3/living_room_black_wood.jpg",
+        "white_wood": "/static/products/abstract-ethereal-watercolor-horizons-abstract-rolling-fog-foothills-no-8-c60fd3/living_room_white_wood.jpg",
+        "canvas_wrap": "/static/products/abstract-ethereal-watercolor-horizons-abstract-rolling-fog-foothills-no-8-c60fd3/living_room_canvas_wrap.jpg",
+        "unframed_poster": "/static/products/abstract-ethereal-watercolor-horizons-abstract-rolling-fog-foothills-no-8-c60fd3/living_room_unframed_poster.jpg"
+      },
+      "framed_detail_frames": {
+        "natural_oak": "/static/products/abstract-ethereal-watercolor-horizons-abstract-rolling-fog-foothills-no-8-c60fd3/framed_natural_oak.jpg",
+        "black_wood": "/static/products/abstract-ethereal-watercolor-horizons-abstract-rolling-fog-foothills-no-8-c60fd3/framed_black_wood.jpg",
+        "white_wood": "/static/products/abstract-ethereal-watercolor-horizons-abstract-rolling-fog-foothills-no-8-c60fd3/framed_white_wood.jpg",
+        "canvas_wrap": "/static/products/abstract-ethereal-watercolor-horizons-abstract-rolling-fog-foothills-no-8-c60fd3/framed_canvas_wrap.jpg",
+        "unframed_poster": "/static/products/abstract-ethereal-watercolor-horizons-abstract-rolling-fog-foothills-no-8-c60fd3/framed_unframed_poster.jpg"
+      }
     },
     "variants": [
       {
@@ -8427,7 +8833,21 @@
       "living_room": "/static/products/art-deco-gatsby-gilded-geometry-art-deco-lotus-fountain-motif-no-8-ab47b9/living_room_oak.jpg",
       "bedroom": "/static/products/art-deco-gatsby-gilded-geometry-art-deco-lotus-fountain-motif-no-8-ab47b9/bedroom_black.jpg",
       "studio": "/static/products/art-deco-gatsby-gilded-geometry-art-deco-lotus-fountain-motif-no-8-ab47b9/studio_white.jpg",
-      "master_art": "/static/products/art-deco-gatsby-gilded-geometry-art-deco-lotus-fountain-motif-no-8-ab47b9/master_art.jpg"
+      "master_art": "/static/products/art-deco-gatsby-gilded-geometry-art-deco-lotus-fountain-motif-no-8-ab47b9/master_art.jpg",
+      "living_room_frames": {
+        "natural_oak": "/static/products/art-deco-gatsby-gilded-geometry-art-deco-lotus-fountain-motif-no-8-ab47b9/living_room_natural_oak.jpg",
+        "black_wood": "/static/products/art-deco-gatsby-gilded-geometry-art-deco-lotus-fountain-motif-no-8-ab47b9/living_room_black_wood.jpg",
+        "white_wood": "/static/products/art-deco-gatsby-gilded-geometry-art-deco-lotus-fountain-motif-no-8-ab47b9/living_room_white_wood.jpg",
+        "canvas_wrap": "/static/products/art-deco-gatsby-gilded-geometry-art-deco-lotus-fountain-motif-no-8-ab47b9/living_room_canvas_wrap.jpg",
+        "unframed_poster": "/static/products/art-deco-gatsby-gilded-geometry-art-deco-lotus-fountain-motif-no-8-ab47b9/living_room_unframed_poster.jpg"
+      },
+      "framed_detail_frames": {
+        "natural_oak": "/static/products/art-deco-gatsby-gilded-geometry-art-deco-lotus-fountain-motif-no-8-ab47b9/framed_natural_oak.jpg",
+        "black_wood": "/static/products/art-deco-gatsby-gilded-geometry-art-deco-lotus-fountain-motif-no-8-ab47b9/framed_black_wood.jpg",
+        "white_wood": "/static/products/art-deco-gatsby-gilded-geometry-art-deco-lotus-fountain-motif-no-8-ab47b9/framed_white_wood.jpg",
+        "canvas_wrap": "/static/products/art-deco-gatsby-gilded-geometry-art-deco-lotus-fountain-motif-no-8-ab47b9/framed_canvas_wrap.jpg",
+        "unframed_poster": "/static/products/art-deco-gatsby-gilded-geometry-art-deco-lotus-fountain-motif-no-8-ab47b9/framed_unframed_poster.jpg"
+      }
     },
     "variants": [
       {
@@ -8716,7 +9136,21 @@
       "living_room": "/static/products/vintage-alpine-mountain-solitude-matterhorn-peak-morning-glow-no-8-3558e3/living_room_oak.jpg",
       "bedroom": "/static/products/vintage-alpine-mountain-solitude-matterhorn-peak-morning-glow-no-8-3558e3/bedroom_black.jpg",
       "studio": "/static/products/vintage-alpine-mountain-solitude-matterhorn-peak-morning-glow-no-8-3558e3/studio_white.jpg",
-      "master_art": "/static/products/vintage-alpine-mountain-solitude-matterhorn-peak-morning-glow-no-8-3558e3/master_art.jpg"
+      "master_art": "/static/products/vintage-alpine-mountain-solitude-matterhorn-peak-morning-glow-no-8-3558e3/master_art.jpg",
+      "living_room_frames": {
+        "natural_oak": "/static/products/vintage-alpine-mountain-solitude-matterhorn-peak-morning-glow-no-8-3558e3/living_room_natural_oak.jpg",
+        "black_wood": "/static/products/vintage-alpine-mountain-solitude-matterhorn-peak-morning-glow-no-8-3558e3/living_room_black_wood.jpg",
+        "white_wood": "/static/products/vintage-alpine-mountain-solitude-matterhorn-peak-morning-glow-no-8-3558e3/living_room_white_wood.jpg",
+        "canvas_wrap": "/static/products/vintage-alpine-mountain-solitude-matterhorn-peak-morning-glow-no-8-3558e3/living_room_canvas_wrap.jpg",
+        "unframed_poster": "/static/products/vintage-alpine-mountain-solitude-matterhorn-peak-morning-glow-no-8-3558e3/living_room_unframed_poster.jpg"
+      },
+      "framed_detail_frames": {
+        "natural_oak": "/static/products/vintage-alpine-mountain-solitude-matterhorn-peak-morning-glow-no-8-3558e3/framed_natural_oak.jpg",
+        "black_wood": "/static/products/vintage-alpine-mountain-solitude-matterhorn-peak-morning-glow-no-8-3558e3/framed_black_wood.jpg",
+        "white_wood": "/static/products/vintage-alpine-mountain-solitude-matterhorn-peak-morning-glow-no-8-3558e3/framed_white_wood.jpg",
+        "canvas_wrap": "/static/products/vintage-alpine-mountain-solitude-matterhorn-peak-morning-glow-no-8-3558e3/framed_canvas_wrap.jpg",
+        "unframed_poster": "/static/products/vintage-alpine-mountain-solitude-matterhorn-peak-morning-glow-no-8-3558e3/framed_unframed_poster.jpg"
+      }
     },
     "variants": [
       {
@@ -9005,7 +9439,21 @@
       "living_room": "/static/products/moroccan-riad-architecture-zellige-keyhole-archway-with-mosaic-shadow-no-7-07b9ac/living_room_oak.jpg",
       "bedroom": "/static/products/moroccan-riad-architecture-zellige-keyhole-archway-with-mosaic-shadow-no-7-07b9ac/bedroom_black.jpg",
       "studio": "/static/products/moroccan-riad-architecture-zellige-keyhole-archway-with-mosaic-shadow-no-7-07b9ac/studio_white.jpg",
-      "master_art": "/static/products/moroccan-riad-architecture-zellige-keyhole-archway-with-mosaic-shadow-no-7-07b9ac/master_art.jpg"
+      "master_art": "/static/products/moroccan-riad-architecture-zellige-keyhole-archway-with-mosaic-shadow-no-7-07b9ac/master_art.jpg",
+      "living_room_frames": {
+        "natural_oak": "/static/products/moroccan-riad-architecture-zellige-keyhole-archway-with-mosaic-shadow-no-7-07b9ac/living_room_natural_oak.jpg",
+        "black_wood": "/static/products/moroccan-riad-architecture-zellige-keyhole-archway-with-mosaic-shadow-no-7-07b9ac/living_room_black_wood.jpg",
+        "white_wood": "/static/products/moroccan-riad-architecture-zellige-keyhole-archway-with-mosaic-shadow-no-7-07b9ac/living_room_white_wood.jpg",
+        "canvas_wrap": "/static/products/moroccan-riad-architecture-zellige-keyhole-archway-with-mosaic-shadow-no-7-07b9ac/living_room_canvas_wrap.jpg",
+        "unframed_poster": "/static/products/moroccan-riad-architecture-zellige-keyhole-archway-with-mosaic-shadow-no-7-07b9ac/living_room_unframed_poster.jpg"
+      },
+      "framed_detail_frames": {
+        "natural_oak": "/static/products/moroccan-riad-architecture-zellige-keyhole-archway-with-mosaic-shadow-no-7-07b9ac/framed_natural_oak.jpg",
+        "black_wood": "/static/products/moroccan-riad-architecture-zellige-keyhole-archway-with-mosaic-shadow-no-7-07b9ac/framed_black_wood.jpg",
+        "white_wood": "/static/products/moroccan-riad-architecture-zellige-keyhole-archway-with-mosaic-shadow-no-7-07b9ac/framed_white_wood.jpg",
+        "canvas_wrap": "/static/products/moroccan-riad-architecture-zellige-keyhole-archway-with-mosaic-shadow-no-7-07b9ac/framed_canvas_wrap.jpg",
+        "unframed_poster": "/static/products/moroccan-riad-architecture-zellige-keyhole-archway-with-mosaic-shadow-no-7-07b9ac/framed_unframed_poster.jpg"
+      }
     },
     "variants": [
       {
@@ -9294,7 +9742,21 @@
       "living_room": "/static/products/minimalist-textured-plaster-clay-monochromatic-sand-dune-ripples-no-3-8a4eb4/living_room_oak.jpg",
       "bedroom": "/static/products/minimalist-textured-plaster-clay-monochromatic-sand-dune-ripples-no-3-8a4eb4/bedroom_black.jpg",
       "studio": "/static/products/minimalist-textured-plaster-clay-monochromatic-sand-dune-ripples-no-3-8a4eb4/studio_white.jpg",
-      "master_art": "/static/products/minimalist-textured-plaster-clay-monochromatic-sand-dune-ripples-no-3-8a4eb4/master_art.jpg"
+      "master_art": "/static/products/minimalist-textured-plaster-clay-monochromatic-sand-dune-ripples-no-3-8a4eb4/master_art.jpg",
+      "living_room_frames": {
+        "natural_oak": "/static/products/minimalist-textured-plaster-clay-monochromatic-sand-dune-ripples-no-3-8a4eb4/living_room_natural_oak.jpg",
+        "black_wood": "/static/products/minimalist-textured-plaster-clay-monochromatic-sand-dune-ripples-no-3-8a4eb4/living_room_black_wood.jpg",
+        "white_wood": "/static/products/minimalist-textured-plaster-clay-monochromatic-sand-dune-ripples-no-3-8a4eb4/living_room_white_wood.jpg",
+        "canvas_wrap": "/static/products/minimalist-textured-plaster-clay-monochromatic-sand-dune-ripples-no-3-8a4eb4/living_room_canvas_wrap.jpg",
+        "unframed_poster": "/static/products/minimalist-textured-plaster-clay-monochromatic-sand-dune-ripples-no-3-8a4eb4/living_room_unframed_poster.jpg"
+      },
+      "framed_detail_frames": {
+        "natural_oak": "/static/products/minimalist-textured-plaster-clay-monochromatic-sand-dune-ripples-no-3-8a4eb4/framed_natural_oak.jpg",
+        "black_wood": "/static/products/minimalist-textured-plaster-clay-monochromatic-sand-dune-ripples-no-3-8a4eb4/framed_black_wood.jpg",
+        "white_wood": "/static/products/minimalist-textured-plaster-clay-monochromatic-sand-dune-ripples-no-3-8a4eb4/framed_white_wood.jpg",
+        "canvas_wrap": "/static/products/minimalist-textured-plaster-clay-monochromatic-sand-dune-ripples-no-3-8a4eb4/framed_canvas_wrap.jpg",
+        "unframed_poster": "/static/products/minimalist-textured-plaster-clay-monochromatic-sand-dune-ripples-no-3-8a4eb4/framed_unframed_poster.jpg"
+      }
     },
     "variants": [
       {
@@ -9583,7 +10045,21 @@
       "living_room": "/static/products/antique-celestial-astrolabe-charts-orrery-planetary-orbit-schematic-no-4-400443/living_room_oak.jpg",
       "bedroom": "/static/products/antique-celestial-astrolabe-charts-orrery-planetary-orbit-schematic-no-4-400443/bedroom_black.jpg",
       "studio": "/static/products/antique-celestial-astrolabe-charts-orrery-planetary-orbit-schematic-no-4-400443/studio_white.jpg",
-      "master_art": "/static/products/antique-celestial-astrolabe-charts-orrery-planetary-orbit-schematic-no-4-400443/master_art.jpg"
+      "master_art": "/static/products/antique-celestial-astrolabe-charts-orrery-planetary-orbit-schematic-no-4-400443/master_art.jpg",
+      "living_room_frames": {
+        "natural_oak": "/static/products/antique-celestial-astrolabe-charts-orrery-planetary-orbit-schematic-no-4-400443/living_room_natural_oak.jpg",
+        "black_wood": "/static/products/antique-celestial-astrolabe-charts-orrery-planetary-orbit-schematic-no-4-400443/living_room_black_wood.jpg",
+        "white_wood": "/static/products/antique-celestial-astrolabe-charts-orrery-planetary-orbit-schematic-no-4-400443/living_room_white_wood.jpg",
+        "canvas_wrap": "/static/products/antique-celestial-astrolabe-charts-orrery-planetary-orbit-schematic-no-4-400443/living_room_canvas_wrap.jpg",
+        "unframed_poster": "/static/products/antique-celestial-astrolabe-charts-orrery-planetary-orbit-schematic-no-4-400443/living_room_unframed_poster.jpg"
+      },
+      "framed_detail_frames": {
+        "natural_oak": "/static/products/antique-celestial-astrolabe-charts-orrery-planetary-orbit-schematic-no-4-400443/framed_natural_oak.jpg",
+        "black_wood": "/static/products/antique-celestial-astrolabe-charts-orrery-planetary-orbit-schematic-no-4-400443/framed_black_wood.jpg",
+        "white_wood": "/static/products/antique-celestial-astrolabe-charts-orrery-planetary-orbit-schematic-no-4-400443/framed_white_wood.jpg",
+        "canvas_wrap": "/static/products/antique-celestial-astrolabe-charts-orrery-planetary-orbit-schematic-no-4-400443/framed_canvas_wrap.jpg",
+        "unframed_poster": "/static/products/antique-celestial-astrolabe-charts-orrery-planetary-orbit-schematic-no-4-400443/framed_unframed_poster.jpg"
+      }
     },
     "variants": [
       {
@@ -9872,7 +10348,21 @@
       "living_room": "/static/products/palm-springs-desert-modernism-geometric-pool-terrace-horizon-no-11-83a03d/living_room_oak.jpg",
       "bedroom": "/static/products/palm-springs-desert-modernism-geometric-pool-terrace-horizon-no-11-83a03d/bedroom_black.jpg",
       "studio": "/static/products/palm-springs-desert-modernism-geometric-pool-terrace-horizon-no-11-83a03d/studio_white.jpg",
-      "master_art": "/static/products/palm-springs-desert-modernism-geometric-pool-terrace-horizon-no-11-83a03d/master_art.jpg"
+      "master_art": "/static/products/palm-springs-desert-modernism-geometric-pool-terrace-horizon-no-11-83a03d/master_art.jpg",
+      "living_room_frames": {
+        "natural_oak": "/static/products/palm-springs-desert-modernism-geometric-pool-terrace-horizon-no-11-83a03d/living_room_natural_oak.jpg",
+        "black_wood": "/static/products/palm-springs-desert-modernism-geometric-pool-terrace-horizon-no-11-83a03d/living_room_black_wood.jpg",
+        "white_wood": "/static/products/palm-springs-desert-modernism-geometric-pool-terrace-horizon-no-11-83a03d/living_room_white_wood.jpg",
+        "canvas_wrap": "/static/products/palm-springs-desert-modernism-geometric-pool-terrace-horizon-no-11-83a03d/living_room_canvas_wrap.jpg",
+        "unframed_poster": "/static/products/palm-springs-desert-modernism-geometric-pool-terrace-horizon-no-11-83a03d/living_room_unframed_poster.jpg"
+      },
+      "framed_detail_frames": {
+        "natural_oak": "/static/products/palm-springs-desert-modernism-geometric-pool-terrace-horizon-no-11-83a03d/framed_natural_oak.jpg",
+        "black_wood": "/static/products/palm-springs-desert-modernism-geometric-pool-terrace-horizon-no-11-83a03d/framed_black_wood.jpg",
+        "white_wood": "/static/products/palm-springs-desert-modernism-geometric-pool-terrace-horizon-no-11-83a03d/framed_white_wood.jpg",
+        "canvas_wrap": "/static/products/palm-springs-desert-modernism-geometric-pool-terrace-horizon-no-11-83a03d/framed_canvas_wrap.jpg",
+        "unframed_poster": "/static/products/palm-springs-desert-modernism-geometric-pool-terrace-horizon-no-11-83a03d/framed_unframed_poster.jpg"
+      }
     },
     "variants": [
       {
@@ -10161,7 +10651,21 @@
       "living_room": "/static/products/nordic-abstract-flora-foliage-wild-nordic-thistle-silhouette-no-11-129e11/living_room_oak.jpg",
       "bedroom": "/static/products/nordic-abstract-flora-foliage-wild-nordic-thistle-silhouette-no-11-129e11/bedroom_black.jpg",
       "studio": "/static/products/nordic-abstract-flora-foliage-wild-nordic-thistle-silhouette-no-11-129e11/studio_white.jpg",
-      "master_art": "/static/products/nordic-abstract-flora-foliage-wild-nordic-thistle-silhouette-no-11-129e11/master_art.jpg"
+      "master_art": "/static/products/nordic-abstract-flora-foliage-wild-nordic-thistle-silhouette-no-11-129e11/master_art.jpg",
+      "living_room_frames": {
+        "natural_oak": "/static/products/nordic-abstract-flora-foliage-wild-nordic-thistle-silhouette-no-11-129e11/living_room_natural_oak.jpg",
+        "black_wood": "/static/products/nordic-abstract-flora-foliage-wild-nordic-thistle-silhouette-no-11-129e11/living_room_black_wood.jpg",
+        "white_wood": "/static/products/nordic-abstract-flora-foliage-wild-nordic-thistle-silhouette-no-11-129e11/living_room_white_wood.jpg",
+        "canvas_wrap": "/static/products/nordic-abstract-flora-foliage-wild-nordic-thistle-silhouette-no-11-129e11/living_room_canvas_wrap.jpg",
+        "unframed_poster": "/static/products/nordic-abstract-flora-foliage-wild-nordic-thistle-silhouette-no-11-129e11/living_room_unframed_poster.jpg"
+      },
+      "framed_detail_frames": {
+        "natural_oak": "/static/products/nordic-abstract-flora-foliage-wild-nordic-thistle-silhouette-no-11-129e11/framed_natural_oak.jpg",
+        "black_wood": "/static/products/nordic-abstract-flora-foliage-wild-nordic-thistle-silhouette-no-11-129e11/framed_black_wood.jpg",
+        "white_wood": "/static/products/nordic-abstract-flora-foliage-wild-nordic-thistle-silhouette-no-11-129e11/framed_white_wood.jpg",
+        "canvas_wrap": "/static/products/nordic-abstract-flora-foliage-wild-nordic-thistle-silhouette-no-11-129e11/framed_canvas_wrap.jpg",
+        "unframed_poster": "/static/products/nordic-abstract-flora-foliage-wild-nordic-thistle-silhouette-no-11-129e11/framed_unframed_poster.jpg"
+      }
     },
     "variants": [
       {
@@ -10450,7 +10954,21 @@
       "living_room": "/static/products/modern-architectural-geometry-schematics-brutalist-concrete-arch-geometry-no-11-3f96f9/living_room_oak.jpg",
       "bedroom": "/static/products/modern-architectural-geometry-schematics-brutalist-concrete-arch-geometry-no-11-3f96f9/bedroom_black.jpg",
       "studio": "/static/products/modern-architectural-geometry-schematics-brutalist-concrete-arch-geometry-no-11-3f96f9/studio_white.jpg",
-      "master_art": "/static/products/modern-architectural-geometry-schematics-brutalist-concrete-arch-geometry-no-11-3f96f9/master_art.jpg"
+      "master_art": "/static/products/modern-architectural-geometry-schematics-brutalist-concrete-arch-geometry-no-11-3f96f9/master_art.jpg",
+      "living_room_frames": {
+        "natural_oak": "/static/products/modern-architectural-geometry-schematics-brutalist-concrete-arch-geometry-no-11-3f96f9/living_room_natural_oak.jpg",
+        "black_wood": "/static/products/modern-architectural-geometry-schematics-brutalist-concrete-arch-geometry-no-11-3f96f9/living_room_black_wood.jpg",
+        "white_wood": "/static/products/modern-architectural-geometry-schematics-brutalist-concrete-arch-geometry-no-11-3f96f9/living_room_white_wood.jpg",
+        "canvas_wrap": "/static/products/modern-architectural-geometry-schematics-brutalist-concrete-arch-geometry-no-11-3f96f9/living_room_canvas_wrap.jpg",
+        "unframed_poster": "/static/products/modern-architectural-geometry-schematics-brutalist-concrete-arch-geometry-no-11-3f96f9/living_room_unframed_poster.jpg"
+      },
+      "framed_detail_frames": {
+        "natural_oak": "/static/products/modern-architectural-geometry-schematics-brutalist-concrete-arch-geometry-no-11-3f96f9/framed_natural_oak.jpg",
+        "black_wood": "/static/products/modern-architectural-geometry-schematics-brutalist-concrete-arch-geometry-no-11-3f96f9/framed_black_wood.jpg",
+        "white_wood": "/static/products/modern-architectural-geometry-schematics-brutalist-concrete-arch-geometry-no-11-3f96f9/framed_white_wood.jpg",
+        "canvas_wrap": "/static/products/modern-architectural-geometry-schematics-brutalist-concrete-arch-geometry-no-11-3f96f9/framed_canvas_wrap.jpg",
+        "unframed_poster": "/static/products/modern-architectural-geometry-schematics-brutalist-concrete-arch-geometry-no-11-3f96f9/framed_unframed_poster.jpg"
+      }
     },
     "variants": [
       {
@@ -10739,7 +11257,21 @@
       "living_room": "/static/products/japanese-ukiyo-e-modern-mokuhanga-tranquil-koi-pond-water-ripple-no-6-8c0923/living_room_oak.jpg",
       "bedroom": "/static/products/japanese-ukiyo-e-modern-mokuhanga-tranquil-koi-pond-water-ripple-no-6-8c0923/bedroom_black.jpg",
       "studio": "/static/products/japanese-ukiyo-e-modern-mokuhanga-tranquil-koi-pond-water-ripple-no-6-8c0923/studio_white.jpg",
-      "master_art": "/static/products/japanese-ukiyo-e-modern-mokuhanga-tranquil-koi-pond-water-ripple-no-6-8c0923/master_art.jpg"
+      "master_art": "/static/products/japanese-ukiyo-e-modern-mokuhanga-tranquil-koi-pond-water-ripple-no-6-8c0923/master_art.jpg",
+      "living_room_frames": {
+        "natural_oak": "/static/products/japanese-ukiyo-e-modern-mokuhanga-tranquil-koi-pond-water-ripple-no-6-8c0923/living_room_natural_oak.jpg",
+        "black_wood": "/static/products/japanese-ukiyo-e-modern-mokuhanga-tranquil-koi-pond-water-ripple-no-6-8c0923/living_room_black_wood.jpg",
+        "white_wood": "/static/products/japanese-ukiyo-e-modern-mokuhanga-tranquil-koi-pond-water-ripple-no-6-8c0923/living_room_white_wood.jpg",
+        "canvas_wrap": "/static/products/japanese-ukiyo-e-modern-mokuhanga-tranquil-koi-pond-water-ripple-no-6-8c0923/living_room_canvas_wrap.jpg",
+        "unframed_poster": "/static/products/japanese-ukiyo-e-modern-mokuhanga-tranquil-koi-pond-water-ripple-no-6-8c0923/living_room_unframed_poster.jpg"
+      },
+      "framed_detail_frames": {
+        "natural_oak": "/static/products/japanese-ukiyo-e-modern-mokuhanga-tranquil-koi-pond-water-ripple-no-6-8c0923/framed_natural_oak.jpg",
+        "black_wood": "/static/products/japanese-ukiyo-e-modern-mokuhanga-tranquil-koi-pond-water-ripple-no-6-8c0923/framed_black_wood.jpg",
+        "white_wood": "/static/products/japanese-ukiyo-e-modern-mokuhanga-tranquil-koi-pond-water-ripple-no-6-8c0923/framed_white_wood.jpg",
+        "canvas_wrap": "/static/products/japanese-ukiyo-e-modern-mokuhanga-tranquil-koi-pond-water-ripple-no-6-8c0923/framed_canvas_wrap.jpg",
+        "unframed_poster": "/static/products/japanese-ukiyo-e-modern-mokuhanga-tranquil-koi-pond-water-ripple-no-6-8c0923/framed_unframed_poster.jpg"
+      }
     },
     "variants": [
       {
@@ -11028,7 +11560,21 @@
       "living_room": "/static/products/vintage-french-riviera-mid-century-travel-sunbathers-under-parasols-no-7-8e7251/living_room_oak.jpg",
       "bedroom": "/static/products/vintage-french-riviera-mid-century-travel-sunbathers-under-parasols-no-7-8e7251/bedroom_black.jpg",
       "studio": "/static/products/vintage-french-riviera-mid-century-travel-sunbathers-under-parasols-no-7-8e7251/studio_white.jpg",
-      "master_art": "/static/products/vintage-french-riviera-mid-century-travel-sunbathers-under-parasols-no-7-8e7251/master_art.jpg"
+      "master_art": "/static/products/vintage-french-riviera-mid-century-travel-sunbathers-under-parasols-no-7-8e7251/master_art.jpg",
+      "living_room_frames": {
+        "natural_oak": "/static/products/vintage-french-riviera-mid-century-travel-sunbathers-under-parasols-no-7-8e7251/living_room_natural_oak.jpg",
+        "black_wood": "/static/products/vintage-french-riviera-mid-century-travel-sunbathers-under-parasols-no-7-8e7251/living_room_black_wood.jpg",
+        "white_wood": "/static/products/vintage-french-riviera-mid-century-travel-sunbathers-under-parasols-no-7-8e7251/living_room_white_wood.jpg",
+        "canvas_wrap": "/static/products/vintage-french-riviera-mid-century-travel-sunbathers-under-parasols-no-7-8e7251/living_room_canvas_wrap.jpg",
+        "unframed_poster": "/static/products/vintage-french-riviera-mid-century-travel-sunbathers-under-parasols-no-7-8e7251/living_room_unframed_poster.jpg"
+      },
+      "framed_detail_frames": {
+        "natural_oak": "/static/products/vintage-french-riviera-mid-century-travel-sunbathers-under-parasols-no-7-8e7251/framed_natural_oak.jpg",
+        "black_wood": "/static/products/vintage-french-riviera-mid-century-travel-sunbathers-under-parasols-no-7-8e7251/framed_black_wood.jpg",
+        "white_wood": "/static/products/vintage-french-riviera-mid-century-travel-sunbathers-under-parasols-no-7-8e7251/framed_white_wood.jpg",
+        "canvas_wrap": "/static/products/vintage-french-riviera-mid-century-travel-sunbathers-under-parasols-no-7-8e7251/framed_canvas_wrap.jpg",
+        "unframed_poster": "/static/products/vintage-french-riviera-mid-century-travel-sunbathers-under-parasols-no-7-8e7251/framed_unframed_poster.jpg"
+      }
     },
     "variants": [
       {
@@ -11317,7 +11863,21 @@
       "living_room": "/static/products/dark-academia-textured-renaissance-moody-architectural-ruin-no-10-ad6301/living_room_oak.jpg",
       "bedroom": "/static/products/dark-academia-textured-renaissance-moody-architectural-ruin-no-10-ad6301/bedroom_black.jpg",
       "studio": "/static/products/dark-academia-textured-renaissance-moody-architectural-ruin-no-10-ad6301/studio_white.jpg",
-      "master_art": "/static/products/dark-academia-textured-renaissance-moody-architectural-ruin-no-10-ad6301/master_art.jpg"
+      "master_art": "/static/products/dark-academia-textured-renaissance-moody-architectural-ruin-no-10-ad6301/master_art.jpg",
+      "living_room_frames": {
+        "natural_oak": "/static/products/dark-academia-textured-renaissance-moody-architectural-ruin-no-10-ad6301/living_room_natural_oak.jpg",
+        "black_wood": "/static/products/dark-academia-textured-renaissance-moody-architectural-ruin-no-10-ad6301/living_room_black_wood.jpg",
+        "white_wood": "/static/products/dark-academia-textured-renaissance-moody-architectural-ruin-no-10-ad6301/living_room_white_wood.jpg",
+        "canvas_wrap": "/static/products/dark-academia-textured-renaissance-moody-architectural-ruin-no-10-ad6301/living_room_canvas_wrap.jpg",
+        "unframed_poster": "/static/products/dark-academia-textured-renaissance-moody-architectural-ruin-no-10-ad6301/living_room_unframed_poster.jpg"
+      },
+      "framed_detail_frames": {
+        "natural_oak": "/static/products/dark-academia-textured-renaissance-moody-architectural-ruin-no-10-ad6301/framed_natural_oak.jpg",
+        "black_wood": "/static/products/dark-academia-textured-renaissance-moody-architectural-ruin-no-10-ad6301/framed_black_wood.jpg",
+        "white_wood": "/static/products/dark-academia-textured-renaissance-moody-architectural-ruin-no-10-ad6301/framed_white_wood.jpg",
+        "canvas_wrap": "/static/products/dark-academia-textured-renaissance-moody-architectural-ruin-no-10-ad6301/framed_canvas_wrap.jpg",
+        "unframed_poster": "/static/products/dark-academia-textured-renaissance-moody-architectural-ruin-no-10-ad6301/framed_unframed_poster.jpg"
+      }
     },
     "variants": [
       {
@@ -11606,7 +12166,21 @@
       "living_room": "/static/products/mediterranean-terracotta-coastal-ease-abstract-coastal-cliff-lines-no-10-90745a/living_room_oak.jpg",
       "bedroom": "/static/products/mediterranean-terracotta-coastal-ease-abstract-coastal-cliff-lines-no-10-90745a/bedroom_black.jpg",
       "studio": "/static/products/mediterranean-terracotta-coastal-ease-abstract-coastal-cliff-lines-no-10-90745a/studio_white.jpg",
-      "master_art": "/static/products/mediterranean-terracotta-coastal-ease-abstract-coastal-cliff-lines-no-10-90745a/master_art.jpg"
+      "master_art": "/static/products/mediterranean-terracotta-coastal-ease-abstract-coastal-cliff-lines-no-10-90745a/master_art.jpg",
+      "living_room_frames": {
+        "natural_oak": "/static/products/mediterranean-terracotta-coastal-ease-abstract-coastal-cliff-lines-no-10-90745a/living_room_natural_oak.jpg",
+        "black_wood": "/static/products/mediterranean-terracotta-coastal-ease-abstract-coastal-cliff-lines-no-10-90745a/living_room_black_wood.jpg",
+        "white_wood": "/static/products/mediterranean-terracotta-coastal-ease-abstract-coastal-cliff-lines-no-10-90745a/living_room_white_wood.jpg",
+        "canvas_wrap": "/static/products/mediterranean-terracotta-coastal-ease-abstract-coastal-cliff-lines-no-10-90745a/living_room_canvas_wrap.jpg",
+        "unframed_poster": "/static/products/mediterranean-terracotta-coastal-ease-abstract-coastal-cliff-lines-no-10-90745a/living_room_unframed_poster.jpg"
+      },
+      "framed_detail_frames": {
+        "natural_oak": "/static/products/mediterranean-terracotta-coastal-ease-abstract-coastal-cliff-lines-no-10-90745a/framed_natural_oak.jpg",
+        "black_wood": "/static/products/mediterranean-terracotta-coastal-ease-abstract-coastal-cliff-lines-no-10-90745a/framed_black_wood.jpg",
+        "white_wood": "/static/products/mediterranean-terracotta-coastal-ease-abstract-coastal-cliff-lines-no-10-90745a/framed_white_wood.jpg",
+        "canvas_wrap": "/static/products/mediterranean-terracotta-coastal-ease-abstract-coastal-cliff-lines-no-10-90745a/framed_canvas_wrap.jpg",
+        "unframed_poster": "/static/products/mediterranean-terracotta-coastal-ease-abstract-coastal-cliff-lines-no-10-90745a/framed_unframed_poster.jpg"
+      }
     },
     "variants": [
       {
@@ -11895,7 +12469,21 @@
       "living_room": "/static/products/antique-botanical-herbarium-heirloom-citrus-branches-no-7-49a561/living_room_oak.jpg",
       "bedroom": "/static/products/antique-botanical-herbarium-heirloom-citrus-branches-no-7-49a561/bedroom_black.jpg",
       "studio": "/static/products/antique-botanical-herbarium-heirloom-citrus-branches-no-7-49a561/studio_white.jpg",
-      "master_art": "/static/products/antique-botanical-herbarium-heirloom-citrus-branches-no-7-49a561/master_art.jpg"
+      "master_art": "/static/products/antique-botanical-herbarium-heirloom-citrus-branches-no-7-49a561/master_art.jpg",
+      "living_room_frames": {
+        "natural_oak": "/static/products/antique-botanical-herbarium-heirloom-citrus-branches-no-7-49a561/living_room_natural_oak.jpg",
+        "black_wood": "/static/products/antique-botanical-herbarium-heirloom-citrus-branches-no-7-49a561/living_room_black_wood.jpg",
+        "white_wood": "/static/products/antique-botanical-herbarium-heirloom-citrus-branches-no-7-49a561/living_room_white_wood.jpg",
+        "canvas_wrap": "/static/products/antique-botanical-herbarium-heirloom-citrus-branches-no-7-49a561/living_room_canvas_wrap.jpg",
+        "unframed_poster": "/static/products/antique-botanical-herbarium-heirloom-citrus-branches-no-7-49a561/living_room_unframed_poster.jpg"
+      },
+      "framed_detail_frames": {
+        "natural_oak": "/static/products/antique-botanical-herbarium-heirloom-citrus-branches-no-7-49a561/framed_natural_oak.jpg",
+        "black_wood": "/static/products/antique-botanical-herbarium-heirloom-citrus-branches-no-7-49a561/framed_black_wood.jpg",
+        "white_wood": "/static/products/antique-botanical-herbarium-heirloom-citrus-branches-no-7-49a561/framed_white_wood.jpg",
+        "canvas_wrap": "/static/products/antique-botanical-herbarium-heirloom-citrus-branches-no-7-49a561/framed_canvas_wrap.jpg",
+        "unframed_poster": "/static/products/antique-botanical-herbarium-heirloom-citrus-branches-no-7-49a561/framed_unframed_poster.jpg"
+      }
     },
     "variants": [
       {
@@ -12184,7 +12772,21 @@
       "living_room": "/static/products/mid-century-bauhaus-modernism-intersecting-geometric-quadrants-no-7-76b7e9/living_room_oak.jpg",
       "bedroom": "/static/products/mid-century-bauhaus-modernism-intersecting-geometric-quadrants-no-7-76b7e9/bedroom_black.jpg",
       "studio": "/static/products/mid-century-bauhaus-modernism-intersecting-geometric-quadrants-no-7-76b7e9/studio_white.jpg",
-      "master_art": "/static/products/mid-century-bauhaus-modernism-intersecting-geometric-quadrants-no-7-76b7e9/master_art.jpg"
+      "master_art": "/static/products/mid-century-bauhaus-modernism-intersecting-geometric-quadrants-no-7-76b7e9/master_art.jpg",
+      "living_room_frames": {
+        "natural_oak": "/static/products/mid-century-bauhaus-modernism-intersecting-geometric-quadrants-no-7-76b7e9/living_room_natural_oak.jpg",
+        "black_wood": "/static/products/mid-century-bauhaus-modernism-intersecting-geometric-quadrants-no-7-76b7e9/living_room_black_wood.jpg",
+        "white_wood": "/static/products/mid-century-bauhaus-modernism-intersecting-geometric-quadrants-no-7-76b7e9/living_room_white_wood.jpg",
+        "canvas_wrap": "/static/products/mid-century-bauhaus-modernism-intersecting-geometric-quadrants-no-7-76b7e9/living_room_canvas_wrap.jpg",
+        "unframed_poster": "/static/products/mid-century-bauhaus-modernism-intersecting-geometric-quadrants-no-7-76b7e9/living_room_unframed_poster.jpg"
+      },
+      "framed_detail_frames": {
+        "natural_oak": "/static/products/mid-century-bauhaus-modernism-intersecting-geometric-quadrants-no-7-76b7e9/framed_natural_oak.jpg",
+        "black_wood": "/static/products/mid-century-bauhaus-modernism-intersecting-geometric-quadrants-no-7-76b7e9/framed_black_wood.jpg",
+        "white_wood": "/static/products/mid-century-bauhaus-modernism-intersecting-geometric-quadrants-no-7-76b7e9/framed_white_wood.jpg",
+        "canvas_wrap": "/static/products/mid-century-bauhaus-modernism-intersecting-geometric-quadrants-no-7-76b7e9/framed_canvas_wrap.jpg",
+        "unframed_poster": "/static/products/mid-century-bauhaus-modernism-intersecting-geometric-quadrants-no-7-76b7e9/framed_unframed_poster.jpg"
+      }
     },
     "variants": [
       {
@@ -12474,7 +13076,21 @@
       "living_room": "/static/products/japandi-wabi-sabi-minimalism-abstract-zen-brushwork-no-10-cdb0a2/living_room_oak.jpg",
       "bedroom": "/static/products/japandi-wabi-sabi-minimalism-abstract-zen-brushwork-no-10-cdb0a2/bedroom_black.jpg",
       "studio": "/static/products/japandi-wabi-sabi-minimalism-abstract-zen-brushwork-no-10-cdb0a2/studio_white.jpg",
-      "master_art": "/static/products/japandi-wabi-sabi-minimalism-abstract-zen-brushwork-no-10-cdb0a2/master_art.jpg"
+      "master_art": "/static/products/japandi-wabi-sabi-minimalism-abstract-zen-brushwork-no-10-cdb0a2/master_art.jpg",
+      "living_room_frames": {
+        "natural_oak": "/static/products/japandi-wabi-sabi-minimalism-abstract-zen-brushwork-no-10-cdb0a2/living_room_natural_oak.jpg",
+        "black_wood": "/static/products/japandi-wabi-sabi-minimalism-abstract-zen-brushwork-no-10-cdb0a2/living_room_black_wood.jpg",
+        "white_wood": "/static/products/japandi-wabi-sabi-minimalism-abstract-zen-brushwork-no-10-cdb0a2/living_room_white_wood.jpg",
+        "canvas_wrap": "/static/products/japandi-wabi-sabi-minimalism-abstract-zen-brushwork-no-10-cdb0a2/living_room_canvas_wrap.jpg",
+        "unframed_poster": "/static/products/japandi-wabi-sabi-minimalism-abstract-zen-brushwork-no-10-cdb0a2/living_room_unframed_poster.jpg"
+      },
+      "framed_detail_frames": {
+        "natural_oak": "/static/products/japandi-wabi-sabi-minimalism-abstract-zen-brushwork-no-10-cdb0a2/framed_natural_oak.jpg",
+        "black_wood": "/static/products/japandi-wabi-sabi-minimalism-abstract-zen-brushwork-no-10-cdb0a2/framed_black_wood.jpg",
+        "white_wood": "/static/products/japandi-wabi-sabi-minimalism-abstract-zen-brushwork-no-10-cdb0a2/framed_white_wood.jpg",
+        "canvas_wrap": "/static/products/japandi-wabi-sabi-minimalism-abstract-zen-brushwork-no-10-cdb0a2/framed_canvas_wrap.jpg",
+        "unframed_poster": "/static/products/japandi-wabi-sabi-minimalism-abstract-zen-brushwork-no-10-cdb0a2/framed_unframed_poster.jpg"
+      }
     },
     "variants": [
       {
@@ -12764,7 +13380,21 @@
       "living_room": "/static/products/japandi-wabi-sabi-minimalism-abstract-zen-brushwork-no-11-abb6b8/living_room_oak.jpg",
       "bedroom": "/static/products/japandi-wabi-sabi-minimalism-abstract-zen-brushwork-no-11-abb6b8/bedroom_black.jpg",
       "studio": "/static/products/japandi-wabi-sabi-minimalism-abstract-zen-brushwork-no-11-abb6b8/studio_white.jpg",
-      "master_art": "/static/products/japandi-wabi-sabi-minimalism-abstract-zen-brushwork-no-11-abb6b8/master_art.jpg"
+      "master_art": "/static/products/japandi-wabi-sabi-minimalism-abstract-zen-brushwork-no-11-abb6b8/master_art.jpg",
+      "living_room_frames": {
+        "natural_oak": "/static/products/japandi-wabi-sabi-minimalism-abstract-zen-brushwork-no-11-abb6b8/living_room_natural_oak.jpg",
+        "black_wood": "/static/products/japandi-wabi-sabi-minimalism-abstract-zen-brushwork-no-11-abb6b8/living_room_black_wood.jpg",
+        "white_wood": "/static/products/japandi-wabi-sabi-minimalism-abstract-zen-brushwork-no-11-abb6b8/living_room_white_wood.jpg",
+        "canvas_wrap": "/static/products/japandi-wabi-sabi-minimalism-abstract-zen-brushwork-no-11-abb6b8/living_room_canvas_wrap.jpg",
+        "unframed_poster": "/static/products/japandi-wabi-sabi-minimalism-abstract-zen-brushwork-no-11-abb6b8/living_room_unframed_poster.jpg"
+      },
+      "framed_detail_frames": {
+        "natural_oak": "/static/products/japandi-wabi-sabi-minimalism-abstract-zen-brushwork-no-11-abb6b8/framed_natural_oak.jpg",
+        "black_wood": "/static/products/japandi-wabi-sabi-minimalism-abstract-zen-brushwork-no-11-abb6b8/framed_black_wood.jpg",
+        "white_wood": "/static/products/japandi-wabi-sabi-minimalism-abstract-zen-brushwork-no-11-abb6b8/framed_white_wood.jpg",
+        "canvas_wrap": "/static/products/japandi-wabi-sabi-minimalism-abstract-zen-brushwork-no-11-abb6b8/framed_canvas_wrap.jpg",
+        "unframed_poster": "/static/products/japandi-wabi-sabi-minimalism-abstract-zen-brushwork-no-11-abb6b8/framed_unframed_poster.jpg"
+      }
     },
     "variants": [
       {
@@ -13053,7 +13683,21 @@
       "living_room": "/static/products/mid-century-bauhaus-modernism-curved-constructivist-arches-no-11-ecad09/living_room_oak.jpg",
       "bedroom": "/static/products/mid-century-bauhaus-modernism-curved-constructivist-arches-no-11-ecad09/bedroom_black.jpg",
       "studio": "/static/products/mid-century-bauhaus-modernism-curved-constructivist-arches-no-11-ecad09/studio_white.jpg",
-      "master_art": "/static/products/mid-century-bauhaus-modernism-curved-constructivist-arches-no-11-ecad09/master_art.jpg"
+      "master_art": "/static/products/mid-century-bauhaus-modernism-curved-constructivist-arches-no-11-ecad09/master_art.jpg",
+      "living_room_frames": {
+        "natural_oak": "/static/products/mid-century-bauhaus-modernism-curved-constructivist-arches-no-11-ecad09/living_room_natural_oak.jpg",
+        "black_wood": "/static/products/mid-century-bauhaus-modernism-curved-constructivist-arches-no-11-ecad09/living_room_black_wood.jpg",
+        "white_wood": "/static/products/mid-century-bauhaus-modernism-curved-constructivist-arches-no-11-ecad09/living_room_white_wood.jpg",
+        "canvas_wrap": "/static/products/mid-century-bauhaus-modernism-curved-constructivist-arches-no-11-ecad09/living_room_canvas_wrap.jpg",
+        "unframed_poster": "/static/products/mid-century-bauhaus-modernism-curved-constructivist-arches-no-11-ecad09/living_room_unframed_poster.jpg"
+      },
+      "framed_detail_frames": {
+        "natural_oak": "/static/products/mid-century-bauhaus-modernism-curved-constructivist-arches-no-11-ecad09/framed_natural_oak.jpg",
+        "black_wood": "/static/products/mid-century-bauhaus-modernism-curved-constructivist-arches-no-11-ecad09/framed_black_wood.jpg",
+        "white_wood": "/static/products/mid-century-bauhaus-modernism-curved-constructivist-arches-no-11-ecad09/framed_white_wood.jpg",
+        "canvas_wrap": "/static/products/mid-century-bauhaus-modernism-curved-constructivist-arches-no-11-ecad09/framed_canvas_wrap.jpg",
+        "unframed_poster": "/static/products/mid-century-bauhaus-modernism-curved-constructivist-arches-no-11-ecad09/framed_unframed_poster.jpg"
+      }
     },
     "variants": [
       {
@@ -13343,7 +13987,21 @@
       "living_room": "/static/products/japandi-wabi-sabi-minimalism-botanical-branch-shadows-no-5-5e152e/living_room_oak.jpg",
       "bedroom": "/static/products/japandi-wabi-sabi-minimalism-botanical-branch-shadows-no-5-5e152e/bedroom_black.jpg",
       "studio": "/static/products/japandi-wabi-sabi-minimalism-botanical-branch-shadows-no-5-5e152e/studio_white.jpg",
-      "master_art": "/static/products/japandi-wabi-sabi-minimalism-botanical-branch-shadows-no-5-5e152e/master_art.jpg"
+      "master_art": "/static/products/japandi-wabi-sabi-minimalism-botanical-branch-shadows-no-5-5e152e/master_art.jpg",
+      "living_room_frames": {
+        "natural_oak": "/static/products/japandi-wabi-sabi-minimalism-botanical-branch-shadows-no-5-5e152e/living_room_natural_oak.jpg",
+        "black_wood": "/static/products/japandi-wabi-sabi-minimalism-botanical-branch-shadows-no-5-5e152e/living_room_black_wood.jpg",
+        "white_wood": "/static/products/japandi-wabi-sabi-minimalism-botanical-branch-shadows-no-5-5e152e/living_room_white_wood.jpg",
+        "canvas_wrap": "/static/products/japandi-wabi-sabi-minimalism-botanical-branch-shadows-no-5-5e152e/living_room_canvas_wrap.jpg",
+        "unframed_poster": "/static/products/japandi-wabi-sabi-minimalism-botanical-branch-shadows-no-5-5e152e/living_room_unframed_poster.jpg"
+      },
+      "framed_detail_frames": {
+        "natural_oak": "/static/products/japandi-wabi-sabi-minimalism-botanical-branch-shadows-no-5-5e152e/framed_natural_oak.jpg",
+        "black_wood": "/static/products/japandi-wabi-sabi-minimalism-botanical-branch-shadows-no-5-5e152e/framed_black_wood.jpg",
+        "white_wood": "/static/products/japandi-wabi-sabi-minimalism-botanical-branch-shadows-no-5-5e152e/framed_white_wood.jpg",
+        "canvas_wrap": "/static/products/japandi-wabi-sabi-minimalism-botanical-branch-shadows-no-5-5e152e/framed_canvas_wrap.jpg",
+        "unframed_poster": "/static/products/japandi-wabi-sabi-minimalism-botanical-branch-shadows-no-5-5e152e/framed_unframed_poster.jpg"
+      }
     },
     "variants": [
       {
@@ -13632,7 +14290,21 @@
       "living_room": "/static/products/dark-academia-textured-renaissance-atmospheric-misty-mountain-pines-no-5-f7522e/living_room_oak.jpg",
       "bedroom": "/static/products/dark-academia-textured-renaissance-atmospheric-misty-mountain-pines-no-5-f7522e/bedroom_black.jpg",
       "studio": "/static/products/dark-academia-textured-renaissance-atmospheric-misty-mountain-pines-no-5-f7522e/studio_white.jpg",
-      "master_art": "/static/products/dark-academia-textured-renaissance-atmospheric-misty-mountain-pines-no-5-f7522e/master_art.jpg"
+      "master_art": "/static/products/dark-academia-textured-renaissance-atmospheric-misty-mountain-pines-no-5-f7522e/master_art.jpg",
+      "living_room_frames": {
+        "natural_oak": "/static/products/dark-academia-textured-renaissance-atmospheric-misty-mountain-pines-no-5-f7522e/living_room_natural_oak.jpg",
+        "black_wood": "/static/products/dark-academia-textured-renaissance-atmospheric-misty-mountain-pines-no-5-f7522e/living_room_black_wood.jpg",
+        "white_wood": "/static/products/dark-academia-textured-renaissance-atmospheric-misty-mountain-pines-no-5-f7522e/living_room_white_wood.jpg",
+        "canvas_wrap": "/static/products/dark-academia-textured-renaissance-atmospheric-misty-mountain-pines-no-5-f7522e/living_room_canvas_wrap.jpg",
+        "unframed_poster": "/static/products/dark-academia-textured-renaissance-atmospheric-misty-mountain-pines-no-5-f7522e/living_room_unframed_poster.jpg"
+      },
+      "framed_detail_frames": {
+        "natural_oak": "/static/products/dark-academia-textured-renaissance-atmospheric-misty-mountain-pines-no-5-f7522e/framed_natural_oak.jpg",
+        "black_wood": "/static/products/dark-academia-textured-renaissance-atmospheric-misty-mountain-pines-no-5-f7522e/framed_black_wood.jpg",
+        "white_wood": "/static/products/dark-academia-textured-renaissance-atmospheric-misty-mountain-pines-no-5-f7522e/framed_white_wood.jpg",
+        "canvas_wrap": "/static/products/dark-academia-textured-renaissance-atmospheric-misty-mountain-pines-no-5-f7522e/framed_canvas_wrap.jpg",
+        "unframed_poster": "/static/products/dark-academia-textured-renaissance-atmospheric-misty-mountain-pines-no-5-f7522e/framed_unframed_poster.jpg"
+      }
     },
     "variants": [
       {
@@ -13921,7 +14593,21 @@
       "living_room": "/static/products/mediterranean-terracotta-coastal-ease-terracotta-pottery-with-olive-twigs-no-7-1dfa6d/living_room_oak.jpg",
       "bedroom": "/static/products/mediterranean-terracotta-coastal-ease-terracotta-pottery-with-olive-twigs-no-7-1dfa6d/bedroom_black.jpg",
       "studio": "/static/products/mediterranean-terracotta-coastal-ease-terracotta-pottery-with-olive-twigs-no-7-1dfa6d/studio_white.jpg",
-      "master_art": "/static/products/mediterranean-terracotta-coastal-ease-terracotta-pottery-with-olive-twigs-no-7-1dfa6d/master_art.jpg"
+      "master_art": "/static/products/mediterranean-terracotta-coastal-ease-terracotta-pottery-with-olive-twigs-no-7-1dfa6d/master_art.jpg",
+      "living_room_frames": {
+        "natural_oak": "/static/products/mediterranean-terracotta-coastal-ease-terracotta-pottery-with-olive-twigs-no-7-1dfa6d/living_room_natural_oak.jpg",
+        "black_wood": "/static/products/mediterranean-terracotta-coastal-ease-terracotta-pottery-with-olive-twigs-no-7-1dfa6d/living_room_black_wood.jpg",
+        "white_wood": "/static/products/mediterranean-terracotta-coastal-ease-terracotta-pottery-with-olive-twigs-no-7-1dfa6d/living_room_white_wood.jpg",
+        "canvas_wrap": "/static/products/mediterranean-terracotta-coastal-ease-terracotta-pottery-with-olive-twigs-no-7-1dfa6d/living_room_canvas_wrap.jpg",
+        "unframed_poster": "/static/products/mediterranean-terracotta-coastal-ease-terracotta-pottery-with-olive-twigs-no-7-1dfa6d/living_room_unframed_poster.jpg"
+      },
+      "framed_detail_frames": {
+        "natural_oak": "/static/products/mediterranean-terracotta-coastal-ease-terracotta-pottery-with-olive-twigs-no-7-1dfa6d/framed_natural_oak.jpg",
+        "black_wood": "/static/products/mediterranean-terracotta-coastal-ease-terracotta-pottery-with-olive-twigs-no-7-1dfa6d/framed_black_wood.jpg",
+        "white_wood": "/static/products/mediterranean-terracotta-coastal-ease-terracotta-pottery-with-olive-twigs-no-7-1dfa6d/framed_white_wood.jpg",
+        "canvas_wrap": "/static/products/mediterranean-terracotta-coastal-ease-terracotta-pottery-with-olive-twigs-no-7-1dfa6d/framed_canvas_wrap.jpg",
+        "unframed_poster": "/static/products/mediterranean-terracotta-coastal-ease-terracotta-pottery-with-olive-twigs-no-7-1dfa6d/framed_unframed_poster.jpg"
+      }
     },
     "variants": [
       {
@@ -14210,7 +14896,21 @@
       "living_room": "/static/products/antique-botanical-herbarium-heirloom-citrus-branches-no-1-52e6a9/living_room_oak.jpg",
       "bedroom": "/static/products/antique-botanical-herbarium-heirloom-citrus-branches-no-1-52e6a9/bedroom_black.jpg",
       "studio": "/static/products/antique-botanical-herbarium-heirloom-citrus-branches-no-1-52e6a9/studio_white.jpg",
-      "master_art": "/static/products/antique-botanical-herbarium-heirloom-citrus-branches-no-1-52e6a9/master_art.jpg"
+      "master_art": "/static/products/antique-botanical-herbarium-heirloom-citrus-branches-no-1-52e6a9/master_art.jpg",
+      "living_room_frames": {
+        "natural_oak": "/static/products/antique-botanical-herbarium-heirloom-citrus-branches-no-1-52e6a9/living_room_natural_oak.jpg",
+        "black_wood": "/static/products/antique-botanical-herbarium-heirloom-citrus-branches-no-1-52e6a9/living_room_black_wood.jpg",
+        "white_wood": "/static/products/antique-botanical-herbarium-heirloom-citrus-branches-no-1-52e6a9/living_room_white_wood.jpg",
+        "canvas_wrap": "/static/products/antique-botanical-herbarium-heirloom-citrus-branches-no-1-52e6a9/living_room_canvas_wrap.jpg",
+        "unframed_poster": "/static/products/antique-botanical-herbarium-heirloom-citrus-branches-no-1-52e6a9/living_room_unframed_poster.jpg"
+      },
+      "framed_detail_frames": {
+        "natural_oak": "/static/products/antique-botanical-herbarium-heirloom-citrus-branches-no-1-52e6a9/framed_natural_oak.jpg",
+        "black_wood": "/static/products/antique-botanical-herbarium-heirloom-citrus-branches-no-1-52e6a9/framed_black_wood.jpg",
+        "white_wood": "/static/products/antique-botanical-herbarium-heirloom-citrus-branches-no-1-52e6a9/framed_white_wood.jpg",
+        "canvas_wrap": "/static/products/antique-botanical-herbarium-heirloom-citrus-branches-no-1-52e6a9/framed_canvas_wrap.jpg",
+        "unframed_poster": "/static/products/antique-botanical-herbarium-heirloom-citrus-branches-no-1-52e6a9/framed_unframed_poster.jpg"
+      }
     },
     "variants": [
       {
@@ -14499,7 +15199,21 @@
       "living_room": "/static/products/mid-century-bauhaus-modernism-intersecting-geometric-quadrants-no-2-e67409/living_room_oak.jpg",
       "bedroom": "/static/products/mid-century-bauhaus-modernism-intersecting-geometric-quadrants-no-2-e67409/bedroom_black.jpg",
       "studio": "/static/products/mid-century-bauhaus-modernism-intersecting-geometric-quadrants-no-2-e67409/studio_white.jpg",
-      "master_art": "/static/products/mid-century-bauhaus-modernism-intersecting-geometric-quadrants-no-2-e67409/master_art.jpg"
+      "master_art": "/static/products/mid-century-bauhaus-modernism-intersecting-geometric-quadrants-no-2-e67409/master_art.jpg",
+      "living_room_frames": {
+        "natural_oak": "/static/products/mid-century-bauhaus-modernism-intersecting-geometric-quadrants-no-2-e67409/living_room_natural_oak.jpg",
+        "black_wood": "/static/products/mid-century-bauhaus-modernism-intersecting-geometric-quadrants-no-2-e67409/living_room_black_wood.jpg",
+        "white_wood": "/static/products/mid-century-bauhaus-modernism-intersecting-geometric-quadrants-no-2-e67409/living_room_white_wood.jpg",
+        "canvas_wrap": "/static/products/mid-century-bauhaus-modernism-intersecting-geometric-quadrants-no-2-e67409/living_room_canvas_wrap.jpg",
+        "unframed_poster": "/static/products/mid-century-bauhaus-modernism-intersecting-geometric-quadrants-no-2-e67409/living_room_unframed_poster.jpg"
+      },
+      "framed_detail_frames": {
+        "natural_oak": "/static/products/mid-century-bauhaus-modernism-intersecting-geometric-quadrants-no-2-e67409/framed_natural_oak.jpg",
+        "black_wood": "/static/products/mid-century-bauhaus-modernism-intersecting-geometric-quadrants-no-2-e67409/framed_black_wood.jpg",
+        "white_wood": "/static/products/mid-century-bauhaus-modernism-intersecting-geometric-quadrants-no-2-e67409/framed_white_wood.jpg",
+        "canvas_wrap": "/static/products/mid-century-bauhaus-modernism-intersecting-geometric-quadrants-no-2-e67409/framed_canvas_wrap.jpg",
+        "unframed_poster": "/static/products/mid-century-bauhaus-modernism-intersecting-geometric-quadrants-no-2-e67409/framed_unframed_poster.jpg"
+      }
     },
     "variants": [
       {
@@ -14789,7 +15503,21 @@
       "living_room": "/static/products/japandi-wabi-sabi-minimalism-organic-textured-stone-arches-no-5-704d77/living_room_oak.jpg",
       "bedroom": "/static/products/japandi-wabi-sabi-minimalism-organic-textured-stone-arches-no-5-704d77/bedroom_black.jpg",
       "studio": "/static/products/japandi-wabi-sabi-minimalism-organic-textured-stone-arches-no-5-704d77/studio_white.jpg",
-      "master_art": "/static/products/japandi-wabi-sabi-minimalism-organic-textured-stone-arches-no-5-704d77/master_art.jpg"
+      "master_art": "/static/products/japandi-wabi-sabi-minimalism-organic-textured-stone-arches-no-5-704d77/master_art.jpg",
+      "living_room_frames": {
+        "natural_oak": "/static/products/japandi-wabi-sabi-minimalism-organic-textured-stone-arches-no-5-704d77/living_room_natural_oak.jpg",
+        "black_wood": "/static/products/japandi-wabi-sabi-minimalism-organic-textured-stone-arches-no-5-704d77/living_room_black_wood.jpg",
+        "white_wood": "/static/products/japandi-wabi-sabi-minimalism-organic-textured-stone-arches-no-5-704d77/living_room_white_wood.jpg",
+        "canvas_wrap": "/static/products/japandi-wabi-sabi-minimalism-organic-textured-stone-arches-no-5-704d77/living_room_canvas_wrap.jpg",
+        "unframed_poster": "/static/products/japandi-wabi-sabi-minimalism-organic-textured-stone-arches-no-5-704d77/living_room_unframed_poster.jpg"
+      },
+      "framed_detail_frames": {
+        "natural_oak": "/static/products/japandi-wabi-sabi-minimalism-organic-textured-stone-arches-no-5-704d77/framed_natural_oak.jpg",
+        "black_wood": "/static/products/japandi-wabi-sabi-minimalism-organic-textured-stone-arches-no-5-704d77/framed_black_wood.jpg",
+        "white_wood": "/static/products/japandi-wabi-sabi-minimalism-organic-textured-stone-arches-no-5-704d77/framed_white_wood.jpg",
+        "canvas_wrap": "/static/products/japandi-wabi-sabi-minimalism-organic-textured-stone-arches-no-5-704d77/framed_canvas_wrap.jpg",
+        "unframed_poster": "/static/products/japandi-wabi-sabi-minimalism-organic-textured-stone-arches-no-5-704d77/framed_unframed_poster.jpg"
+      }
     },
     "variants": [
       {
