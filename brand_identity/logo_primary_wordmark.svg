@@ -1,10 +1,10 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 120" width="100%" height="100%">
   <style>
-    .brand-title { font-family: 'Cormorant Garamond', 'Georgia', serif; font-size: 42px; font-weight: 600; letter-spacing: 0.18em; fill: #1C1C1E; text-anchor: middle; }
-    .brand-sub { font-family: 'Inter', 'Helvetica Neue', sans-serif; font-size: 11px; font-weight: 500; letter-spacing: 0.32em; fill: #C66B4D; text-anchor: middle; }
-    .brand-line { stroke: #E8E3DA; stroke-width: 1; }
+    .brand-title { font-family: 'Cormorant Garamond', 'Georgia', serif; font-size: 42px; font-weight: 600; letter-spacing: 0.18em; fill: #1D1B18; text-anchor: middle; }
+    .brand-sub { font-family: 'Inter', 'Helvetica Neue', sans-serif; font-size: 11px; font-weight: 500; letter-spacing: 0.32em; fill: #B8834E; text-anchor: middle; }
+    .brand-line { stroke: #E3DCCF; stroke-width: 1; }
   </style>
-  <text x="300" y="55" class="brand-title">ATELIER & CANVAS</text>
+  <text x="300" y="55" class="brand-title">OAK PRINTS</text>
   <line x1="180" y1="75" x2="420" y2="75" class="brand-line" />
-  <text x="300" y="96" class="brand-sub">CURATED FINE ART & ARCHIVAL FRAMES</text>
+  <text x="300" y="96" class="brand-sub">MUSEUM ART IN HANDCRAFTED WOOD</text>
 </svg>

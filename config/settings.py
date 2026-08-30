@@ -9,7 +9,8 @@ load_dotenv(BASE_DIR / ".env")
 
 class Settings(BaseModel):
     # App & Environment
-    app_name: str = "Atelier & Canvas - Autonomous Art Store"
+    app_name: str = "OAK PRINTS"
+    environment: str = "production"
     base_dir: Path = BASE_DIR
     output_dir: Path = BASE_DIR / "output"
     storefront_dir: Path = BASE_DIR / "storefront"

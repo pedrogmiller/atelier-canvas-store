@@ -9,7 +9,8 @@ def test_storefront():
     home = client.get("/")
     print("1. Homepage GET:", home.status_code)
     assert home.status_code == 200
-    assert "ATELIER & CANVAS" in home.text
+    assert "OAK PRINTS" in home.text
+
 
     # 2. Test Catalog API
     cat = client.get("/api/catalog")
