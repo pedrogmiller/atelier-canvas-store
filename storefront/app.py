@@ -88,9 +88,20 @@ async def robots():
     robots_content = seo_indexer_agent.generate_robots_txt()
     return Response(content=robots_content, media_type="text/plain")
 
+recent_pings: List[Dict[str, str]] = []
+
 @app.get("/api/health")
-async def health_check():
-    """Diagnostic health check to verify Gelato and Stripe integration status."""
+async def health_check(request: Request):
+    """Diagnostic health check to verify Gelato, Stripe, and keep-alive monitor status."""
+    from datetime import datetime, timezone
+    ua = request.headers.get("user-agent", "unknown")
+    recent_pings.append({
+        "timestamp": datetime.now(timezone.utc).strftime("%H:%M:%S UTC"),
+        "user_agent": ua[:70]
+    })
+    if len(recent_pings) > 10:
+        recent_pings.pop(0)
+
     is_gelato_active = bool(gelato_client.api_key and not gelato_client.is_mock_mode)
     return JSONResponse(content={
         "status": "healthy",
@@ -98,7 +109,8 @@ async def health_check():
         "domain": "oakprintstudio.com",
         "gelato_connected": is_gelato_active,
         "gelato_mode": "LIVE" if is_gelato_active else "MOCK_FALLBACK",
-        "stripe_mode": "LIVE" if is_stripe_live else "TEST_MODE"
+        "stripe_mode": "LIVE" if is_stripe_live else "TEST_MODE",
+        "recent_pings": recent_pings
     })
 
 
