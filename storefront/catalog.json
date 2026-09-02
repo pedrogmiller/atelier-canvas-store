@@ -258,10 +258,25 @@
     ],
     "images": {
       "hero": "/static/products/sora-wabi-sabi-plaster-relief-arch-i/living_room_oak.jpg",
-      "print_only": "/static/products/sora-wabi-sabi-plaster-relief-arch-i/print_only.jpg",
-      "framed_oak": "/static/products/sora-wabi-sabi-plaster-relief-arch-i/framed_oak.jpg",
-      "detail": "/static/products/sora-wabi-sabi-plaster-relief-arch-i/detail.jpg",
-      "lifestyle": "/static/products/sora-wabi-sabi-plaster-relief-arch-i/living_room_oak.jpg"
+      "living_room": "/static/products/sora-wabi-sabi-plaster-relief-arch-i/living_room_oak.jpg",
+      "bedroom": "/static/products/sora-wabi-sabi-plaster-relief-arch-i/living_room_oak.jpg",
+      "studio": "/static/products/sora-wabi-sabi-plaster-relief-arch-i/detail.jpg",
+      "framed_product": "/static/products/sora-wabi-sabi-plaster-relief-arch-i/framed_oak.jpg",
+      "master_art": "/static/products/sora-wabi-sabi-plaster-relief-arch-i/print_only.jpg",
+      "living_room_frames": {
+        "natural_oak": "/static/products/sora-wabi-sabi-plaster-relief-arch-i/living_room_oak.jpg",
+        "black_wood": "/static/products/sora-wabi-sabi-plaster-relief-arch-i/living_room_oak.jpg",
+        "white_wood": "/static/products/sora-wabi-sabi-plaster-relief-arch-i/living_room_oak.jpg",
+        "canvas_wrap": "/static/products/sora-wabi-sabi-plaster-relief-arch-i/living_room_oak.jpg",
+        "unframed_poster": "/static/products/sora-wabi-sabi-plaster-relief-arch-i/print_only.jpg"
+      },
+      "framed_detail_frames": {
+        "natural_oak": "/static/products/sora-wabi-sabi-plaster-relief-arch-i/framed_oak.jpg",
+        "black_wood": "/static/products/sora-wabi-sabi-plaster-relief-arch-i/framed_oak.jpg",
+        "white_wood": "/static/products/sora-wabi-sabi-plaster-relief-arch-i/framed_oak.jpg",
+        "canvas_wrap": "/static/products/sora-wabi-sabi-plaster-relief-arch-i/framed_oak.jpg",
+        "unframed_poster": "/static/products/sora-wabi-sabi-plaster-relief-arch-i/print_only.jpg"
+      }
     },
     "specifications": {
       "paper": "Museum-grade 200–250 gsm heavyweight archival matte cotton paper",
@@ -529,10 +544,25 @@
     ],
     "images": {
       "hero": "/static/products/sora-wabi-sabi-plaster-relief-arch-ii/living_room_oak.jpg",
-      "print_only": "/static/products/sora-wabi-sabi-plaster-relief-arch-ii/print_only.jpg",
-      "framed_oak": "/static/products/sora-wabi-sabi-plaster-relief-arch-ii/framed_oak.jpg",
-      "detail": "/static/products/sora-wabi-sabi-plaster-relief-arch-ii/detail.jpg",
-      "lifestyle": "/static/products/sora-wabi-sabi-plaster-relief-arch-ii/living_room_oak.jpg"
+      "living_room": "/static/products/sora-wabi-sabi-plaster-relief-arch-ii/living_room_oak.jpg",
+      "bedroom": "/static/products/sora-wabi-sabi-plaster-relief-arch-ii/living_room_oak.jpg",
+      "studio": "/static/products/sora-wabi-sabi-plaster-relief-arch-ii/detail.jpg",
+      "framed_product": "/static/products/sora-wabi-sabi-plaster-relief-arch-ii/framed_oak.jpg",
+      "master_art": "/static/products/sora-wabi-sabi-plaster-relief-arch-ii/print_only.jpg",
+      "living_room_frames": {
+        "natural_oak": "/static/products/sora-wabi-sabi-plaster-relief-arch-ii/living_room_oak.jpg",
+        "black_wood": "/static/products/sora-wabi-sabi-plaster-relief-arch-ii/living_room_oak.jpg",
+        "white_wood": "/static/products/sora-wabi-sabi-plaster-relief-arch-ii/living_room_oak.jpg",
+        "canvas_wrap": "/static/products/sora-wabi-sabi-plaster-relief-arch-ii/living_room_oak.jpg",
+        "unframed_poster": "/static/products/sora-wabi-sabi-plaster-relief-arch-ii/print_only.jpg"
+      },
+      "framed_detail_frames": {
+        "natural_oak": "/static/products/sora-wabi-sabi-plaster-relief-arch-ii/framed_oak.jpg",
+        "black_wood": "/static/products/sora-wabi-sabi-plaster-relief-arch-ii/framed_oak.jpg",
+        "white_wood": "/static/products/sora-wabi-sabi-plaster-relief-arch-ii/framed_oak.jpg",
+        "canvas_wrap": "/static/products/sora-wabi-sabi-plaster-relief-arch-ii/framed_oak.jpg",
+        "unframed_poster": "/static/products/sora-wabi-sabi-plaster-relief-arch-ii/print_only.jpg"
+      }
     },
     "specifications": {
       "paper": "Museum-grade 200–250 gsm heavyweight archival matte cotton paper",
@@ -800,10 +830,25 @@
     ],
     "images": {
       "hero": "/static/products/tuscan-herbarium-olea-europaea-olive/living_room_oak.jpg",
-      "print_only": "/static/products/tuscan-herbarium-olea-europaea-olive/print_only.jpg",
-      "framed_oak": "/static/products/tuscan-herbarium-olea-europaea-olive/framed_oak.jpg",
-      "detail": "/static/products/tuscan-herbarium-olea-europaea-olive/detail.jpg",
-      "lifestyle": "/static/products/tuscan-herbarium-olea-europaea-olive/living_room_oak.jpg"
+      "living_room": "/static/products/tuscan-herbarium-olea-europaea-olive/living_room_oak.jpg",
+      "bedroom": "/static/products/tuscan-herbarium-olea-europaea-olive/living_room_oak.jpg",
+      "studio": "/static/products/tuscan-herbarium-olea-europaea-olive/detail.jpg",
+      "framed_product": "/static/products/tuscan-herbarium-olea-europaea-olive/framed_oak.jpg",
+      "master_art": "/static/products/tuscan-herbarium-olea-europaea-olive/print_only.jpg",
+      "living_room_frames": {
+        "natural_oak": "/static/products/tuscan-herbarium-olea-europaea-olive/living_room_oak.jpg",
+        "black_wood": "/static/products/tuscan-herbarium-olea-europaea-olive/living_room_oak.jpg",
+        "white_wood": "/static/products/tuscan-herbarium-olea-europaea-olive/living_room_oak.jpg",
+        "canvas_wrap": "/static/products/tuscan-herbarium-olea-europaea-olive/living_room_oak.jpg",
+        "unframed_poster": "/static/products/tuscan-herbarium-olea-europaea-olive/print_only.jpg"
+      },
+      "framed_detail_frames": {
+        "natural_oak": "/static/products/tuscan-herbarium-olea-europaea-olive/framed_oak.jpg",
+        "black_wood": "/static/products/tuscan-herbarium-olea-europaea-olive/framed_oak.jpg",
+        "white_wood": "/static/products/tuscan-herbarium-olea-europaea-olive/framed_oak.jpg",
+        "canvas_wrap": "/static/products/tuscan-herbarium-olea-europaea-olive/framed_oak.jpg",
+        "unframed_poster": "/static/products/tuscan-herbarium-olea-europaea-olive/print_only.jpg"
+      }
     },
     "specifications": {
       "paper": "Museum-grade 200–250 gsm heavyweight archival matte cotton paper",
@@ -1071,10 +1116,25 @@
     ],
     "images": {
       "hero": "/static/products/tuscan-herbarium-ficus-carica-wild-fig/living_room_oak.jpg",
-      "print_only": "/static/products/tuscan-herbarium-ficus-carica-wild-fig/print_only.jpg",
-      "framed_oak": "/static/products/tuscan-herbarium-ficus-carica-wild-fig/framed_oak.jpg",
-      "detail": "/static/products/tuscan-herbarium-ficus-carica-wild-fig/detail.jpg",
-      "lifestyle": "/static/products/tuscan-herbarium-ficus-carica-wild-fig/living_room_oak.jpg"
+      "living_room": "/static/products/tuscan-herbarium-ficus-carica-wild-fig/living_room_oak.jpg",
+      "bedroom": "/static/products/tuscan-herbarium-ficus-carica-wild-fig/living_room_oak.jpg",
+      "studio": "/static/products/tuscan-herbarium-ficus-carica-wild-fig/detail.jpg",
+      "framed_product": "/static/products/tuscan-herbarium-ficus-carica-wild-fig/framed_oak.jpg",
+      "master_art": "/static/products/tuscan-herbarium-ficus-carica-wild-fig/print_only.jpg",
+      "living_room_frames": {
+        "natural_oak": "/static/products/tuscan-herbarium-ficus-carica-wild-fig/living_room_oak.jpg",
+        "black_wood": "/static/products/tuscan-herbarium-ficus-carica-wild-fig/living_room_oak.jpg",
+        "white_wood": "/static/products/tuscan-herbarium-ficus-carica-wild-fig/living_room_oak.jpg",
+        "canvas_wrap": "/static/products/tuscan-herbarium-ficus-carica-wild-fig/living_room_oak.jpg",
+        "unframed_poster": "/static/products/tuscan-herbarium-ficus-carica-wild-fig/print_only.jpg"
+      },
+      "framed_detail_frames": {
+        "natural_oak": "/static/products/tuscan-herbarium-ficus-carica-wild-fig/framed_oak.jpg",
+        "black_wood": "/static/products/tuscan-herbarium-ficus-carica-wild-fig/framed_oak.jpg",
+        "white_wood": "/static/products/tuscan-herbarium-ficus-carica-wild-fig/framed_oak.jpg",
+        "canvas_wrap": "/static/products/tuscan-herbarium-ficus-carica-wild-fig/framed_oak.jpg",
+        "unframed_poster": "/static/products/tuscan-herbarium-ficus-carica-wild-fig/print_only.jpg"
+      }
     },
     "specifications": {
       "paper": "Museum-grade 200–250 gsm heavyweight archival matte cotton paper",
