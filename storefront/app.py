@@ -4,7 +4,7 @@ import uuid
 from pathlib import Path
 from typing import Dict, Any, List
 from fastapi import FastAPI, Request, HTTPException, BackgroundTasks, Header
-from fastapi.responses import HTMLResponse, JSONResponse, RedirectResponse
+from fastapi.responses import HTMLResponse, JSONResponse, RedirectResponse, Response
 from fastapi.staticfiles import StaticFiles
 from fastapi.templating import Jinja2Templates
 from pydantic import BaseModel
@@ -15,6 +15,7 @@ from suppliers.pricing_models import (
     GelatoOrderPayload, GelatoOrderLineItem, CustomerShippingAddress
 )
 from suppliers.gelato_client import gelato_client
+from agents.seo_indexer_agent import seo_indexer_agent
 
 logger = logging.getLogger("StorefrontApp")
 
@@ -59,17 +60,33 @@ async def home(request: Request):
 
 @app.get("/product/{product_id}", response_class=HTMLResponse)
 async def product_detail(request: Request, product_id: str):
-    """Product configurator page with interactive frame/size selector."""
+    """Product configurator page with interactive frame/size selector and Google JSON-LD schema."""
     products = get_catalog()
     product = next((p for p in products if p["id"] == product_id), None)
     if not product:
         raise HTTPException(status_code=404, detail="Product collection not found.")
-    return render_template("product.html", request, {"product": product})
+    
+    schema_data = seo_indexer_agent.generate_product_schema(product)
+    schema_json = json.dumps(schema_data)
+    return render_template("product.html", request, {"product": product, "product_schema_json": schema_json})
 
 @app.get("/api/catalog")
 async def api_catalog():
     """Returns active product catalog in JSON format."""
     return JSONResponse(content=get_catalog())
+
+@app.get("/sitemap.xml")
+async def sitemap():
+    """Dynamically serves standard XML sitemap for Google and search crawlers."""
+    catalog = get_catalog()
+    xml_content = seo_indexer_agent.generate_sitemap_xml(catalog)
+    return Response(content=xml_content, media_type="application/xml")
+
+@app.get("/robots.txt")
+async def robots():
+    """Serves robots.txt with sitemap directive."""
+    robots_content = seo_indexer_agent.generate_robots_txt()
+    return Response(content=robots_content, media_type="text/plain")
 
 
 # --- Stripe & Checkout Layer ---

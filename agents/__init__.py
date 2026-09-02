@@ -7,6 +7,7 @@ from agents.listing_seo_agent import ListingSEOAgent
 from agents.social_creative_agent import SocialCreativeAgent
 from agents.storefront_sync_agent import StorefrontSyncAgent
 from agents.brand_identity_agent import BrandIdentityAgent, brand_identity_agent
+from agents.seo_indexer_agent import SEOIndexerAgent, seo_indexer_agent
 
 __all__ = [
     "TrendScoutAgent",
@@ -18,6 +19,8 @@ __all__ = [
     "SocialCreativeAgent",
     "StorefrontSyncAgent",
     "BrandIdentityAgent",
-    "brand_identity_agent"
+    "brand_identity_agent",
+    "SEOIndexerAgent",
+    "seo_indexer_agent"
 ]
 

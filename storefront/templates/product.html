@@ -276,6 +276,13 @@
   </div>
 </section>
 
+<!-- Google Rich Snippet JSON-LD Product Schema -->
+{% if product_schema_json %}
+<script type="application/ld+json">
+{{ product_schema_json | safe }}
+</script>
+{% endif %}
+
 <!-- Inject product data for client JS -->
 <script>
   window.PRODUCT_DATA = {{ product | tojson }};

@@ -118,11 +118,59 @@ class BrandIdentityAgent(BaseAgent):
         logger.info(f"Generating full brand creative suite for: {brand.name}")
         out_paths = {}
 
-        # 1. Vector SVG Logos
+        # 1. Vector SVG Logos & Botanical Hand-Drawn Emblem
         svg_logo_path = self.brand_dir / "logo_primary_wordmark.svg"
         svg_seal_path = self.brand_dir / "logo_monogram_seal.svg"
+        svg_emblem_path = self.brand_dir / "logo_emblem.svg"
         
-        svg_wordmark_content = f"""<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 120" width="100%" height="100%">
+        # Check if master hand-drawn emblem exists
+        emblem_png_path = self.brand_dir / "logo_emblem.png"
+        emblem_b64 = ""
+        if emblem_png_path.exists():
+            import base64
+            with open(emblem_png_path, "rb") as f:
+                emblem_b64 = base64.b64encode(f.read()).decode("utf-8")
+
+        if emblem_b64:
+            svg_wordmark_content = f"""<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 140" width="100%" height="100%">
+  <style>
+    .brand-title {{ font-family: 'Cormorant Garamond', 'Georgia', serif; font-size: 40px; font-weight: 700; letter-spacing: 0.16em; fill: #1C1C1E; }}
+    .brand-sub {{ font-family: 'Plus Jakarta Sans', 'Inter', sans-serif; font-size: 11px; font-weight: 600; letter-spacing: 0.26em; fill: #B8834E; }}
+    .brand-line {{ stroke: #E8E3DA; stroke-width: 1.5; }}
+  </style>
+  <g transform="translate(10, 5)">
+    <image href="data:image/png;base64,{emblem_b64}" x="0" y="0" width="130" height="130" />
+  </g>
+  <text x="165" y="62" class="brand-title">{brand.name.upper()}</text>
+  <line x1="165" y1="84" x2="680" y2="84" class="brand-line" />
+  <text x="165" y="106" class="brand-sub">{brand.tagline.upper()}</text>
+</svg>"""
+            svg_seal_content = f"""<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <style>
+    .seal-text-top {{ font-family: 'Cormorant Garamond', serif; font-size: 14.5px; font-weight: 700; letter-spacing: 0.24em; fill: #1C1C1E; text-transform: uppercase; }}
+    .seal-text-bot {{ font-family: 'Plus Jakarta Sans', sans-serif; font-size: 9.5px; font-weight: 600; letter-spacing: 0.26em; fill: #B8834E; text-transform: uppercase; }}
+  </style>
+  <defs>
+    <path id="circlePathTop" d="M 60,200 A 140,140 0 0,1 340,200" fill="none" />
+    <path id="circlePathBottom" d="M 340,200 A 140,140 0 0,1 60,200" fill="none" />
+  </defs>
+  <circle cx="200" cy="200" r="186" fill="#FAF8F5" stroke="#1C1C1E" stroke-width="2.5" />
+  <circle cx="200" cy="200" r="172" fill="none" stroke="#B8834E" stroke-width="1.2" stroke-dasharray="4,3" />
+  <circle cx="200" cy="200" r="126" fill="none" stroke="#E8E3DA" stroke-width="1.2" />
+  <text class="seal-text-top">
+    <textPath href="#circlePathTop" startOffset="50%" text-anchor="middle">
+      {brand.name.upper()}
+    </textPath>
+  </text>
+  <text class="seal-text-bot">
+    <textPath href="#circlePathBottom" startOffset="50%" text-anchor="middle">
+      • ARCHIVAL FINE ART &amp; FRAMING •
+    </textPath>
+  </text>
+  <image href="data:image/png;base64,{emblem_b64}" x="105" y="105" width="190" height="190" />
+</svg>"""
+        else:
+            svg_wordmark_content = f"""<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 120" width="100%" height="100%">
   <style>
     .brand-title {{ font-family: 'Cormorant Garamond', 'Georgia', serif; font-size: 42px; font-weight: 600; letter-spacing: 0.18em; fill: {brand.palette[0]}; text-anchor: middle; }}
     .brand-sub {{ font-family: 'Inter', 'Helvetica Neue', sans-serif; font-size: 11px; font-weight: 500; letter-spacing: 0.32em; fill: {brand.palette[2]}; text-anchor: middle; }}
@@ -132,21 +180,23 @@ class BrandIdentityAgent(BaseAgent):
   <line x1="180" y1="75" x2="420" y2="75" class="brand-line" />
   <text x="300" y="96" class="brand-sub">{brand.tagline.upper()}</text>
 </svg>"""
+            initials = "".join([w[0] for w in brand.name.split() if w[0].isalpha() and w != "&"])[:3]
+            svg_seal_content = f"""<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" width="100%" height="100%">
+  <circle cx="150" cy="150" r="140" fill="{brand.palette[1]}" stroke="{brand.palette[0]}" stroke-width="3" />
+  <circle cx="150" cy="150" r="128" fill="none" stroke="{brand.palette[3]}" stroke-width="1" stroke-dasharray="4,4" />
+  <text x="150" y="145" font-family="'Cormorant Garamond', serif" font-size="54px" font-weight="700" letter-spacing="0.1em" fill="{brand.palette[0]}" text-anchor="middle">{initials}</text>
+  <text x="150" y="180" font-family="'Inter', sans-serif" font-size="10px" font-weight="600" letter-spacing="0.25em" fill="{brand.palette[2]}" text-anchor="middle">ARCHIVAL FINE ART</text>
+</svg>"""
+
         with open(svg_logo_path, "w", encoding="utf-8") as f:
             f.write(svg_wordmark_content)
         out_paths["svg_wordmark"] = svg_logo_path
 
-        # Circular Seal SVG
-        initials = "".join([w[0] for w in brand.name.split() if w[0].isalpha() and w != "&"])[:3]
-        svg_seal_content = f"""<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" width="100%" height="100%">
-  <circle cx="150" cy="150" r="140" fill="{brand.palette[1]}" stroke="{brand.palette[0]}" stroke-width="3" />
-  <circle cx="150" cy="150" r="128" fill="none" stroke="{brand.palette[3]}" stroke-width="1" stroke-dasharray="4,4" />
-  <text x="150" y="145" font-family="'Cormorant Garamond', serif" font-size="54px" font-weight="700" letter-spacing="0.1em" fill="{brand.palette[0]}" text-anchor="middle">{initials}</text>
-  <text x="150" y="180" font-family="'Inter', sans-serif" font-size="10px" font-weight="600" letter-spacing="0.25em" fill="{brand.palette[2]}" text-anchor="middle">ATELIER &bull; ARCHIVAL</text>
-</svg>"""
         with open(svg_seal_path, "w", encoding="utf-8") as f:
             f.write(svg_seal_content)
         out_paths["svg_seal"] = svg_seal_path
+        if svg_emblem_path.exists():
+            out_paths["svg_emblem"] = svg_emblem_path
 
         # 2. Raster PNG High-Res Logos & Favicons
         png_logo_path = self.brand_dir / "logo_primary_1200x400.png"

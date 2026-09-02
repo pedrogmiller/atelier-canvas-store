@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /api/checkout
+Disallow: /api/webhook
+
+Sitemap: https://www.oakprintstudio.com/sitemap.xml
