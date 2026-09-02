@@ -1,0 +1,15 @@
+{
+  "folders": [
+    {
+      "name": "Oak Print Studio",
+      "path": "."
+    }
+  ],
+  "settings": {
+    "editor.formatOnSave": true,
+    "files.exclude": {
+      "**/.git": true,
+      "**/__pycache__": true
+    }
+  }
+}
