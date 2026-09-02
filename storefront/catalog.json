@@ -1,5 +1,1089 @@
 [
   {
+    "id": "sora-wabi-sabi-plaster-relief-arch-i",
+    "title": "Sora Plaster Arch I - Wabi-Sabi Organic Limewash Study",
+    "aesthetic_id": "japandi-minimalism",
+    "aesthetic_name": "Japandi & Wabi-Sabi Minimalism",
+    "short_summary": "Sculptural organic limewash plaster arches on textured raw woven linen canvas. Museum-grade archival print in solid natural oak framing.",
+    "description": "Handcrafted fine art study inspired by architectural Japanese wabi-sabi aesthetics and Scandinavian warmth. Layered sculptural plaster relief arches with gentle raking shadows create a calming sanctuary in any living room or bedroom suite. Part of the Sora Plaster Diptych pairing.",
+    "tags": [
+      "japandi",
+      "plaster art",
+      "textured wall art",
+      "wabi-sabi",
+      "solid oak frame",
+      "neutral living room",
+      "diptych"
+    ],
+    "starting_price": 26.0,
+    "variants": [
+      {
+        "variant_id": "natural_oak_12x18_in",
+        "size": "12x18_in",
+        "size_label": "12x18 in (30x45 cm)",
+        "frame_type": "natural_oak",
+        "frame_label": "Solid Natural Oak Wood Frame",
+        "gelato_sku": "framed-poster_flat_wood_natural_12x18-in_200-gsm",
+        "base_production_cost": 16.5,
+        "shipping_cost_est": 5.2,
+        "retail_price": 52.0,
+        "net_profit": 28.49,
+        "profit_margin_pct": 54.8,
+        "is_hero_recommendation": false
+      },
+      {
+        "variant_id": "black_wood_12x18_in",
+        "size": "12x18_in",
+        "size_label": "12x18 in (30x45 cm)",
+        "frame_type": "black_wood",
+        "frame_label": "Matte Black Solid Wood Frame",
+        "gelato_sku": "framed-poster_flat_wood_black_12x18-in_200-gsm",
+        "base_production_cost": 15.5,
+        "shipping_cost_est": 5.2,
+        "retail_price": 50.0,
+        "net_profit": 27.55,
+        "profit_margin_pct": 55.1,
+        "is_hero_recommendation": false
+      },
+      {
+        "variant_id": "unframed_poster_12x18_in",
+        "size": "12x18_in",
+        "size_label": "12x18 in (30x45 cm)",
+        "frame_type": "unframed_poster",
+        "frame_label": "Museum-Grade Matte Fine Art Print (Unframed)",
+        "gelato_sku": "poster_matte_12x18-in_250-gsm",
+        "base_production_cost": 6.2,
+        "shipping_cost_est": 4.5,
+        "retail_price": 26.0,
+        "net_profit": 14.25,
+        "profit_margin_pct": 54.8,
+        "is_hero_recommendation": false
+      },
+      {
+        "variant_id": "natural_oak_18x24_in",
+        "size": "18x24_in",
+        "size_label": "18x24 in (45x60 cm)",
+        "frame_type": "natural_oak",
+        "frame_label": "Solid Natural Oak Wood Frame",
+        "gelato_sku": "framed-poster_flat_wood_natural_18x24-in_200-gsm",
+        "base_production_cost": 24.8,
+        "shipping_cost_est": 6.9,
+        "retail_price": 76.0,
+        "net_profit": 41.8,
+        "profit_margin_pct": 55.0,
+        "is_hero_recommendation": false
+      },
+      {
+        "variant_id": "black_wood_18x24_in",
+        "size": "18x24_in",
+        "size_label": "18x24 in (45x60 cm)",
+        "frame_type": "black_wood",
+        "frame_label": "Matte Black Solid Wood Frame",
+        "gelato_sku": "framed-poster_flat_wood_black_18x24-in_200-gsm",
+        "base_production_cost": 23.5,
+        "shipping_cost_est": 6.9,
+        "retail_price": 73.0,
+        "net_profit": 40.18,
+        "profit_margin_pct": 55.0,
+        "is_hero_recommendation": false
+      },
+      {
+        "variant_id": "white_wood_18x24_in",
+        "size": "18x24_in",
+        "size_label": "18x24 in (45x60 cm)",
+        "frame_type": "white_wood",
+        "frame_label": "Nordic White Wood Frame",
+        "gelato_sku": "framed-poster_flat_wood_white_18x24-in_200-gsm",
+        "base_production_cost": 23.5,
+        "shipping_cost_est": 6.9,
+        "retail_price": 73.0,
+        "net_profit": 40.18,
+        "profit_margin_pct": 55.0,
+        "is_hero_recommendation": false
+      },
+      {
+        "variant_id": "canvas_wrap_18x24_in",
+        "size": "18x24_in",
+        "size_label": "18x24 in (45x60 cm)",
+        "frame_type": "canvas_wrap",
+        "frame_label": "Gallery Stretched Fine Art Canvas",
+        "gelato_sku": "canvas_slim_18x24-in_wood-frame",
+        "base_production_cost": 21.0,
+        "shipping_cost_est": 7.5,
+        "retail_price": 68.0,
+        "net_profit": 37.23,
+        "profit_margin_pct": 54.8,
+        "is_hero_recommendation": false
+      },
+      {
+        "variant_id": "unframed_poster_18x24_in",
+        "size": "18x24_in",
+        "size_label": "18x24 in (45x60 cm)",
+        "frame_type": "unframed_poster",
+        "frame_label": "Museum-Grade Matte Fine Art Print (Unframed)",
+        "gelato_sku": "poster_matte_18x24-in_250-gsm",
+        "base_production_cost": 8.9,
+        "shipping_cost_est": 4.9,
+        "retail_price": 33.0,
+        "net_profit": 17.94,
+        "profit_margin_pct": 54.4,
+        "is_hero_recommendation": false
+      },
+      {
+        "variant_id": "natural_oak_24x36_in",
+        "size": "24x36_in",
+        "size_label": "24x36 in (60x90 cm)",
+        "frame_type": "natural_oak",
+        "frame_label": "Solid Natural Oak Wood Frame",
+        "gelato_sku": "framed-poster_flat_wood_natural_24x36-in_200-gsm",
+        "base_production_cost": 36.5,
+        "shipping_cost_est": 9.4,
+        "retail_price": 110.0,
+        "net_profit": 60.61,
+        "profit_margin_pct": 55.1,
+        "is_hero_recommendation": true
+      },
+      {
+        "variant_id": "black_wood_24x36_in",
+        "size": "24x36_in",
+        "size_label": "24x36 in (60x90 cm)",
+        "frame_type": "black_wood",
+        "frame_label": "Matte Black Solid Wood Frame",
+        "gelato_sku": "framed-poster_flat_wood_black_24x36-in_200-gsm",
+        "base_production_cost": 34.5,
+        "shipping_cost_est": 9.4,
+        "retail_price": 105.0,
+        "net_profit": 57.76,
+        "profit_margin_pct": 55.0,
+        "is_hero_recommendation": false
+      },
+      {
+        "variant_id": "white_wood_24x36_in",
+        "size": "24x36_in",
+        "size_label": "24x36 in (60x90 cm)",
+        "frame_type": "white_wood",
+        "frame_label": "Nordic White Wood Frame",
+        "gelato_sku": "framed-poster_flat_wood_white_24x36-in_200-gsm",
+        "base_production_cost": 34.5,
+        "shipping_cost_est": 9.4,
+        "retail_price": 105.0,
+        "net_profit": 57.76,
+        "profit_margin_pct": 55.0,
+        "is_hero_recommendation": false
+      },
+      {
+        "variant_id": "canvas_wrap_24x36_in",
+        "size": "24x36_in",
+        "size_label": "24x36 in (60x90 cm)",
+        "frame_type": "canvas_wrap",
+        "frame_label": "Gallery Stretched Fine Art Canvas",
+        "gelato_sku": "canvas_slim_24x36-in_wood-frame",
+        "base_production_cost": 31.0,
+        "shipping_cost_est": 9.8,
+        "retail_price": 98.0,
+        "net_profit": 54.06,
+        "profit_margin_pct": 55.2,
+        "is_hero_recommendation": false
+      },
+      {
+        "variant_id": "unframed_poster_24x36_in",
+        "size": "24x36_in",
+        "size_label": "24x36 in (60x90 cm)",
+        "frame_type": "unframed_poster",
+        "frame_label": "Museum-Grade Matte Fine Art Print (Unframed)",
+        "gelato_sku": "poster_matte_24x36-in_250-gsm",
+        "base_production_cost": 13.5,
+        "shipping_cost_est": 5.8,
+        "retail_price": 46.0,
+        "net_profit": 25.07,
+        "profit_margin_pct": 54.5,
+        "is_hero_recommendation": false
+      },
+      {
+        "variant_id": "natural_oak_30x40_in",
+        "size": "30x40_in",
+        "size_label": "30x40 in (75x100 cm)",
+        "frame_type": "natural_oak",
+        "frame_label": "Solid Natural Oak Wood Frame",
+        "gelato_sku": "framed-poster_flat_wood_natural_30x40-in_200-gsm",
+        "base_production_cost": 49.0,
+        "shipping_cost_est": 12.5,
+        "retail_price": 148.0,
+        "net_profit": 81.91,
+        "profit_margin_pct": 55.3,
+        "is_hero_recommendation": false
+      },
+      {
+        "variant_id": "black_wood_30x40_in",
+        "size": "30x40_in",
+        "size_label": "30x40 in (75x100 cm)",
+        "frame_type": "black_wood",
+        "frame_label": "Matte Black Solid Wood Frame",
+        "gelato_sku": "framed-poster_flat_wood_black_30x40-in_200-gsm",
+        "base_production_cost": 47.0,
+        "shipping_cost_est": 12.5,
+        "retail_price": 143.0,
+        "net_profit": 79.05,
+        "profit_margin_pct": 55.3,
+        "is_hero_recommendation": false
+      },
+      {
+        "variant_id": "canvas_wrap_30x40_in",
+        "size": "30x40_in",
+        "size_label": "30x40 in (75x100 cm)",
+        "frame_type": "canvas_wrap",
+        "frame_label": "Gallery Stretched Fine Art Canvas",
+        "gelato_sku": "canvas_slim_30x40-in_wood-frame",
+        "base_production_cost": 44.0,
+        "shipping_cost_est": 13.0,
+        "retail_price": 137.0,
+        "net_profit": 75.73,
+        "profit_margin_pct": 55.3,
+        "is_hero_recommendation": false
+      },
+      {
+        "variant_id": "unframed_poster_30x40_in",
+        "size": "30x40_in",
+        "size_label": "30x40 in (75x100 cm)",
+        "frame_type": "unframed_poster",
+        "frame_label": "Museum-Grade Matte Fine Art Print (Unframed)",
+        "gelato_sku": "poster_matte_30x40-in_250-gsm",
+        "base_production_cost": 18.0,
+        "shipping_cost_est": 6.5,
+        "retail_price": 59.0,
+        "net_profit": 32.49,
+        "profit_margin_pct": 55.1,
+        "is_hero_recommendation": false
+      }
+    ],
+    "images": {
+      "hero": "/static/products/sora-wabi-sabi-plaster-relief-arch-i/living_room_oak.jpg",
+      "print_only": "/static/products/sora-wabi-sabi-plaster-relief-arch-i/print_only.jpg",
+      "framed_oak": "/static/products/sora-wabi-sabi-plaster-relief-arch-i/framed_oak.jpg",
+      "detail": "/static/products/sora-wabi-sabi-plaster-relief-arch-i/detail.jpg",
+      "lifestyle": "/static/products/sora-wabi-sabi-plaster-relief-arch-i/living_room_oak.jpg"
+    },
+    "specifications": {
+      "paper": "Museum-grade 200–250 gsm heavyweight archival matte cotton paper",
+      "framing": "Sustainably sourced FSC-certified solid natural oak and pine",
+      "printing": "12-color Giclée pigment printing with 100+ year anti-fade warranty",
+      "fulfillment": "Locally printed and hand-framed across 32 regional global hubs for 48–72h fast delivery"
+    }
+  },
+  {
+    "id": "sora-wabi-sabi-plaster-relief-arch-ii",
+    "title": "Sora Plaster Arch II - Celestial Moon & Sweeping Curve",
+    "aesthetic_id": "japandi-minimalism",
+    "aesthetic_name": "Japandi & Wabi-Sabi Minimalism",
+    "short_summary": "Geometric tactile moon and sweeping curve in limewash plaster and sandstone clay. Paired diptych companion to Sora Plaster Arch I.",
+    "description": "Sculptural geometric plaster relief capturing the equilibrium of organic curves and circular forms. Mounted on heavy raw linen and encased in handcrafted FSC-certified solid oak. Designed to hang side-by-side with Arch I above modern low-profile sofas.",
+    "tags": [
+      "japandi",
+      "plaster art",
+      "wabi-sabi",
+      "geometric circle",
+      "oak framed print",
+      "minimalist bedroom",
+      "diptych"
+    ],
+    "starting_price": 26.0,
+    "variants": [
+      {
+        "variant_id": "natural_oak_12x18_in",
+        "size": "12x18_in",
+        "size_label": "12x18 in (30x45 cm)",
+        "frame_type": "natural_oak",
+        "frame_label": "Solid Natural Oak Wood Frame",
+        "gelato_sku": "framed-poster_flat_wood_natural_12x18-in_200-gsm",
+        "base_production_cost": 16.5,
+        "shipping_cost_est": 5.2,
+        "retail_price": 52.0,
+        "net_profit": 28.49,
+        "profit_margin_pct": 54.8,
+        "is_hero_recommendation": false
+      },
+      {
+        "variant_id": "black_wood_12x18_in",
+        "size": "12x18_in",
+        "size_label": "12x18 in (30x45 cm)",
+        "frame_type": "black_wood",
+        "frame_label": "Matte Black Solid Wood Frame",
+        "gelato_sku": "framed-poster_flat_wood_black_12x18-in_200-gsm",
+        "base_production_cost": 15.5,
+        "shipping_cost_est": 5.2,
+        "retail_price": 50.0,
+        "net_profit": 27.55,
+        "profit_margin_pct": 55.1,
+        "is_hero_recommendation": false
+      },
+      {
+        "variant_id": "unframed_poster_12x18_in",
+        "size": "12x18_in",
+        "size_label": "12x18 in (30x45 cm)",
+        "frame_type": "unframed_poster",
+        "frame_label": "Museum-Grade Matte Fine Art Print (Unframed)",
+        "gelato_sku": "poster_matte_12x18-in_250-gsm",
+        "base_production_cost": 6.2,
+        "shipping_cost_est": 4.5,
+        "retail_price": 26.0,
+        "net_profit": 14.25,
+        "profit_margin_pct": 54.8,
+        "is_hero_recommendation": false
+      },
+      {
+        "variant_id": "natural_oak_18x24_in",
+        "size": "18x24_in",
+        "size_label": "18x24 in (45x60 cm)",
+        "frame_type": "natural_oak",
+        "frame_label": "Solid Natural Oak Wood Frame",
+        "gelato_sku": "framed-poster_flat_wood_natural_18x24-in_200-gsm",
+        "base_production_cost": 24.8,
+        "shipping_cost_est": 6.9,
+        "retail_price": 76.0,
+        "net_profit": 41.8,
+        "profit_margin_pct": 55.0,
+        "is_hero_recommendation": false
+      },
+      {
+        "variant_id": "black_wood_18x24_in",
+        "size": "18x24_in",
+        "size_label": "18x24 in (45x60 cm)",
+        "frame_type": "black_wood",
+        "frame_label": "Matte Black Solid Wood Frame",
+        "gelato_sku": "framed-poster_flat_wood_black_18x24-in_200-gsm",
+        "base_production_cost": 23.5,
+        "shipping_cost_est": 6.9,
+        "retail_price": 73.0,
+        "net_profit": 40.18,
+        "profit_margin_pct": 55.0,
+        "is_hero_recommendation": false
+      },
+      {
+        "variant_id": "white_wood_18x24_in",
+        "size": "18x24_in",
+        "size_label": "18x24 in (45x60 cm)",
+        "frame_type": "white_wood",
+        "frame_label": "Nordic White Wood Frame",
+        "gelato_sku": "framed-poster_flat_wood_white_18x24-in_200-gsm",
+        "base_production_cost": 23.5,
+        "shipping_cost_est": 6.9,
+        "retail_price": 73.0,
+        "net_profit": 40.18,
+        "profit_margin_pct": 55.0,
+        "is_hero_recommendation": false
+      },
+      {
+        "variant_id": "canvas_wrap_18x24_in",
+        "size": "18x24_in",
+        "size_label": "18x24 in (45x60 cm)",
+        "frame_type": "canvas_wrap",
+        "frame_label": "Gallery Stretched Fine Art Canvas",
+        "gelato_sku": "canvas_slim_18x24-in_wood-frame",
+        "base_production_cost": 21.0,
+        "shipping_cost_est": 7.5,
+        "retail_price": 68.0,
+        "net_profit": 37.23,
+        "profit_margin_pct": 54.8,
+        "is_hero_recommendation": false
+      },
+      {
+        "variant_id": "unframed_poster_18x24_in",
+        "size": "18x24_in",
+        "size_label": "18x24 in (45x60 cm)",
+        "frame_type": "unframed_poster",
+        "frame_label": "Museum-Grade Matte Fine Art Print (Unframed)",
+        "gelato_sku": "poster_matte_18x24-in_250-gsm",
+        "base_production_cost": 8.9,
+        "shipping_cost_est": 4.9,
+        "retail_price": 33.0,
+        "net_profit": 17.94,
+        "profit_margin_pct": 54.4,
+        "is_hero_recommendation": false
+      },
+      {
+        "variant_id": "natural_oak_24x36_in",
+        "size": "24x36_in",
+        "size_label": "24x36 in (60x90 cm)",
+        "frame_type": "natural_oak",
+        "frame_label": "Solid Natural Oak Wood Frame",
+        "gelato_sku": "framed-poster_flat_wood_natural_24x36-in_200-gsm",
+        "base_production_cost": 36.5,
+        "shipping_cost_est": 9.4,
+        "retail_price": 110.0,
+        "net_profit": 60.61,
+        "profit_margin_pct": 55.1,
+        "is_hero_recommendation": true
+      },
+      {
+        "variant_id": "black_wood_24x36_in",
+        "size": "24x36_in",
+        "size_label": "24x36 in (60x90 cm)",
+        "frame_type": "black_wood",
+        "frame_label": "Matte Black Solid Wood Frame",
+        "gelato_sku": "framed-poster_flat_wood_black_24x36-in_200-gsm",
+        "base_production_cost": 34.5,
+        "shipping_cost_est": 9.4,
+        "retail_price": 105.0,
+        "net_profit": 57.76,
+        "profit_margin_pct": 55.0,
+        "is_hero_recommendation": false
+      },
+      {
+        "variant_id": "white_wood_24x36_in",
+        "size": "24x36_in",
+        "size_label": "24x36 in (60x90 cm)",
+        "frame_type": "white_wood",
+        "frame_label": "Nordic White Wood Frame",
+        "gelato_sku": "framed-poster_flat_wood_white_24x36-in_200-gsm",
+        "base_production_cost": 34.5,
+        "shipping_cost_est": 9.4,
+        "retail_price": 105.0,
+        "net_profit": 57.76,
+        "profit_margin_pct": 55.0,
+        "is_hero_recommendation": false
+      },
+      {
+        "variant_id": "canvas_wrap_24x36_in",
+        "size": "24x36_in",
+        "size_label": "24x36 in (60x90 cm)",
+        "frame_type": "canvas_wrap",
+        "frame_label": "Gallery Stretched Fine Art Canvas",
+        "gelato_sku": "canvas_slim_24x36-in_wood-frame",
+        "base_production_cost": 31.0,
+        "shipping_cost_est": 9.8,
+        "retail_price": 98.0,
+        "net_profit": 54.06,
+        "profit_margin_pct": 55.2,
+        "is_hero_recommendation": false
+      },
+      {
+        "variant_id": "unframed_poster_24x36_in",
+        "size": "24x36_in",
+        "size_label": "24x36 in (60x90 cm)",
+        "frame_type": "unframed_poster",
+        "frame_label": "Museum-Grade Matte Fine Art Print (Unframed)",
+        "gelato_sku": "poster_matte_24x36-in_250-gsm",
+        "base_production_cost": 13.5,
+        "shipping_cost_est": 5.8,
+        "retail_price": 46.0,
+        "net_profit": 25.07,
+        "profit_margin_pct": 54.5,
+        "is_hero_recommendation": false
+      },
+      {
+        "variant_id": "natural_oak_30x40_in",
+        "size": "30x40_in",
+        "size_label": "30x40 in (75x100 cm)",
+        "frame_type": "natural_oak",
+        "frame_label": "Solid Natural Oak Wood Frame",
+        "gelato_sku": "framed-poster_flat_wood_natural_30x40-in_200-gsm",
+        "base_production_cost": 49.0,
+        "shipping_cost_est": 12.5,
+        "retail_price": 148.0,
+        "net_profit": 81.91,
+        "profit_margin_pct": 55.3,
+        "is_hero_recommendation": false
+      },
+      {
+        "variant_id": "black_wood_30x40_in",
+        "size": "30x40_in",
+        "size_label": "30x40 in (75x100 cm)",
+        "frame_type": "black_wood",
+        "frame_label": "Matte Black Solid Wood Frame",
+        "gelato_sku": "framed-poster_flat_wood_black_30x40-in_200-gsm",
+        "base_production_cost": 47.0,
+        "shipping_cost_est": 12.5,
+        "retail_price": 143.0,
+        "net_profit": 79.05,
+        "profit_margin_pct": 55.3,
+        "is_hero_recommendation": false
+      },
+      {
+        "variant_id": "canvas_wrap_30x40_in",
+        "size": "30x40_in",
+        "size_label": "30x40 in (75x100 cm)",
+        "frame_type": "canvas_wrap",
+        "frame_label": "Gallery Stretched Fine Art Canvas",
+        "gelato_sku": "canvas_slim_30x40-in_wood-frame",
+        "base_production_cost": 44.0,
+        "shipping_cost_est": 13.0,
+        "retail_price": 137.0,
+        "net_profit": 75.73,
+        "profit_margin_pct": 55.3,
+        "is_hero_recommendation": false
+      },
+      {
+        "variant_id": "unframed_poster_30x40_in",
+        "size": "30x40_in",
+        "size_label": "30x40 in (75x100 cm)",
+        "frame_type": "unframed_poster",
+        "frame_label": "Museum-Grade Matte Fine Art Print (Unframed)",
+        "gelato_sku": "poster_matte_30x40-in_250-gsm",
+        "base_production_cost": 18.0,
+        "shipping_cost_est": 6.5,
+        "retail_price": 59.0,
+        "net_profit": 32.49,
+        "profit_margin_pct": 55.1,
+        "is_hero_recommendation": false
+      }
+    ],
+    "images": {
+      "hero": "/static/products/sora-wabi-sabi-plaster-relief-arch-ii/living_room_oak.jpg",
+      "print_only": "/static/products/sora-wabi-sabi-plaster-relief-arch-ii/print_only.jpg",
+      "framed_oak": "/static/products/sora-wabi-sabi-plaster-relief-arch-ii/framed_oak.jpg",
+      "detail": "/static/products/sora-wabi-sabi-plaster-relief-arch-ii/detail.jpg",
+      "lifestyle": "/static/products/sora-wabi-sabi-plaster-relief-arch-ii/living_room_oak.jpg"
+    },
+    "specifications": {
+      "paper": "Museum-grade 200–250 gsm heavyweight archival matte cotton paper",
+      "framing": "Sustainably sourced FSC-certified solid natural oak and pine",
+      "printing": "12-color Giclée pigment printing with 100+ year anti-fade warranty",
+      "fulfillment": "Locally printed and hand-framed across 32 regional global hubs for 48–72h fast delivery"
+    }
+  },
+  {
+    "id": "tuscan-herbarium-olea-europaea-olive",
+    "title": "Tuscan Herbarium - Olea europaea (Olive Branch No. 1)",
+    "aesthetic_id": "french-botanical",
+    "aesthetic_name": "Antique Botanical & Ferns",
+    "short_summary": "Antique Mediterranean olive branch herbarium study on aged warm ivory deckle-edge parchment in handcrafted natural oak.",
+    "description": "Archival giclée fine art print of Tuscan wild olive foliage and fruit (Olea europaea). Vintage botanical linework and soft watercolor olive greens evoke the sunlit groves of Florence and Lucca. Staged to create a timeless kitchen or dining room gallery wall.",
+    "tags": [
+      "botanical print",
+      "olive branch",
+      "tuscan decor",
+      "mediterranean wall art",
+      "kitchen art",
+      "deckle edge",
+      "framed art"
+    ],
+    "starting_price": 26.0,
+    "variants": [
+      {
+        "variant_id": "natural_oak_12x18_in",
+        "size": "12x18_in",
+        "size_label": "12x18 in (30x45 cm)",
+        "frame_type": "natural_oak",
+        "frame_label": "Solid Natural Oak Wood Frame",
+        "gelato_sku": "framed-poster_flat_wood_natural_12x18-in_200-gsm",
+        "base_production_cost": 16.5,
+        "shipping_cost_est": 5.2,
+        "retail_price": 52.0,
+        "net_profit": 28.49,
+        "profit_margin_pct": 54.8,
+        "is_hero_recommendation": false
+      },
+      {
+        "variant_id": "black_wood_12x18_in",
+        "size": "12x18_in",
+        "size_label": "12x18 in (30x45 cm)",
+        "frame_type": "black_wood",
+        "frame_label": "Matte Black Solid Wood Frame",
+        "gelato_sku": "framed-poster_flat_wood_black_12x18-in_200-gsm",
+        "base_production_cost": 15.5,
+        "shipping_cost_est": 5.2,
+        "retail_price": 50.0,
+        "net_profit": 27.55,
+        "profit_margin_pct": 55.1,
+        "is_hero_recommendation": false
+      },
+      {
+        "variant_id": "unframed_poster_12x18_in",
+        "size": "12x18_in",
+        "size_label": "12x18 in (30x45 cm)",
+        "frame_type": "unframed_poster",
+        "frame_label": "Museum-Grade Matte Fine Art Print (Unframed)",
+        "gelato_sku": "poster_matte_12x18-in_250-gsm",
+        "base_production_cost": 6.2,
+        "shipping_cost_est": 4.5,
+        "retail_price": 26.0,
+        "net_profit": 14.25,
+        "profit_margin_pct": 54.8,
+        "is_hero_recommendation": false
+      },
+      {
+        "variant_id": "natural_oak_18x24_in",
+        "size": "18x24_in",
+        "size_label": "18x24 in (45x60 cm)",
+        "frame_type": "natural_oak",
+        "frame_label": "Solid Natural Oak Wood Frame",
+        "gelato_sku": "framed-poster_flat_wood_natural_18x24-in_200-gsm",
+        "base_production_cost": 24.8,
+        "shipping_cost_est": 6.9,
+        "retail_price": 76.0,
+        "net_profit": 41.8,
+        "profit_margin_pct": 55.0,
+        "is_hero_recommendation": false
+      },
+      {
+        "variant_id": "black_wood_18x24_in",
+        "size": "18x24_in",
+        "size_label": "18x24 in (45x60 cm)",
+        "frame_type": "black_wood",
+        "frame_label": "Matte Black Solid Wood Frame",
+        "gelato_sku": "framed-poster_flat_wood_black_18x24-in_200-gsm",
+        "base_production_cost": 23.5,
+        "shipping_cost_est": 6.9,
+        "retail_price": 73.0,
+        "net_profit": 40.18,
+        "profit_margin_pct": 55.0,
+        "is_hero_recommendation": false
+      },
+      {
+        "variant_id": "white_wood_18x24_in",
+        "size": "18x24_in",
+        "size_label": "18x24 in (45x60 cm)",
+        "frame_type": "white_wood",
+        "frame_label": "Nordic White Wood Frame",
+        "gelato_sku": "framed-poster_flat_wood_white_18x24-in_200-gsm",
+        "base_production_cost": 23.5,
+        "shipping_cost_est": 6.9,
+        "retail_price": 73.0,
+        "net_profit": 40.18,
+        "profit_margin_pct": 55.0,
+        "is_hero_recommendation": false
+      },
+      {
+        "variant_id": "canvas_wrap_18x24_in",
+        "size": "18x24_in",
+        "size_label": "18x24 in (45x60 cm)",
+        "frame_type": "canvas_wrap",
+        "frame_label": "Gallery Stretched Fine Art Canvas",
+        "gelato_sku": "canvas_slim_18x24-in_wood-frame",
+        "base_production_cost": 21.0,
+        "shipping_cost_est": 7.5,
+        "retail_price": 68.0,
+        "net_profit": 37.23,
+        "profit_margin_pct": 54.8,
+        "is_hero_recommendation": false
+      },
+      {
+        "variant_id": "unframed_poster_18x24_in",
+        "size": "18x24_in",
+        "size_label": "18x24 in (45x60 cm)",
+        "frame_type": "unframed_poster",
+        "frame_label": "Museum-Grade Matte Fine Art Print (Unframed)",
+        "gelato_sku": "poster_matte_18x24-in_250-gsm",
+        "base_production_cost": 8.9,
+        "shipping_cost_est": 4.9,
+        "retail_price": 33.0,
+        "net_profit": 17.94,
+        "profit_margin_pct": 54.4,
+        "is_hero_recommendation": false
+      },
+      {
+        "variant_id": "natural_oak_24x36_in",
+        "size": "24x36_in",
+        "size_label": "24x36 in (60x90 cm)",
+        "frame_type": "natural_oak",
+        "frame_label": "Solid Natural Oak Wood Frame",
+        "gelato_sku": "framed-poster_flat_wood_natural_24x36-in_200-gsm",
+        "base_production_cost": 36.5,
+        "shipping_cost_est": 9.4,
+        "retail_price": 110.0,
+        "net_profit": 60.61,
+        "profit_margin_pct": 55.1,
+        "is_hero_recommendation": true
+      },
+      {
+        "variant_id": "black_wood_24x36_in",
+        "size": "24x36_in",
+        "size_label": "24x36 in (60x90 cm)",
+        "frame_type": "black_wood",
+        "frame_label": "Matte Black Solid Wood Frame",
+        "gelato_sku": "framed-poster_flat_wood_black_24x36-in_200-gsm",
+        "base_production_cost": 34.5,
+        "shipping_cost_est": 9.4,
+        "retail_price": 105.0,
+        "net_profit": 57.76,
+        "profit_margin_pct": 55.0,
+        "is_hero_recommendation": false
+      },
+      {
+        "variant_id": "white_wood_24x36_in",
+        "size": "24x36_in",
+        "size_label": "24x36 in (60x90 cm)",
+        "frame_type": "white_wood",
+        "frame_label": "Nordic White Wood Frame",
+        "gelato_sku": "framed-poster_flat_wood_white_24x36-in_200-gsm",
+        "base_production_cost": 34.5,
+        "shipping_cost_est": 9.4,
+        "retail_price": 105.0,
+        "net_profit": 57.76,
+        "profit_margin_pct": 55.0,
+        "is_hero_recommendation": false
+      },
+      {
+        "variant_id": "canvas_wrap_24x36_in",
+        "size": "24x36_in",
+        "size_label": "24x36 in (60x90 cm)",
+        "frame_type": "canvas_wrap",
+        "frame_label": "Gallery Stretched Fine Art Canvas",
+        "gelato_sku": "canvas_slim_24x36-in_wood-frame",
+        "base_production_cost": 31.0,
+        "shipping_cost_est": 9.8,
+        "retail_price": 98.0,
+        "net_profit": 54.06,
+        "profit_margin_pct": 55.2,
+        "is_hero_recommendation": false
+      },
+      {
+        "variant_id": "unframed_poster_24x36_in",
+        "size": "24x36_in",
+        "size_label": "24x36 in (60x90 cm)",
+        "frame_type": "unframed_poster",
+        "frame_label": "Museum-Grade Matte Fine Art Print (Unframed)",
+        "gelato_sku": "poster_matte_24x36-in_250-gsm",
+        "base_production_cost": 13.5,
+        "shipping_cost_est": 5.8,
+        "retail_price": 46.0,
+        "net_profit": 25.07,
+        "profit_margin_pct": 54.5,
+        "is_hero_recommendation": false
+      },
+      {
+        "variant_id": "natural_oak_30x40_in",
+        "size": "30x40_in",
+        "size_label": "30x40 in (75x100 cm)",
+        "frame_type": "natural_oak",
+        "frame_label": "Solid Natural Oak Wood Frame",
+        "gelato_sku": "framed-poster_flat_wood_natural_30x40-in_200-gsm",
+        "base_production_cost": 49.0,
+        "shipping_cost_est": 12.5,
+        "retail_price": 148.0,
+        "net_profit": 81.91,
+        "profit_margin_pct": 55.3,
+        "is_hero_recommendation": false
+      },
+      {
+        "variant_id": "black_wood_30x40_in",
+        "size": "30x40_in",
+        "size_label": "30x40 in (75x100 cm)",
+        "frame_type": "black_wood",
+        "frame_label": "Matte Black Solid Wood Frame",
+        "gelato_sku": "framed-poster_flat_wood_black_30x40-in_200-gsm",
+        "base_production_cost": 47.0,
+        "shipping_cost_est": 12.5,
+        "retail_price": 143.0,
+        "net_profit": 79.05,
+        "profit_margin_pct": 55.3,
+        "is_hero_recommendation": false
+      },
+      {
+        "variant_id": "canvas_wrap_30x40_in",
+        "size": "30x40_in",
+        "size_label": "30x40 in (75x100 cm)",
+        "frame_type": "canvas_wrap",
+        "frame_label": "Gallery Stretched Fine Art Canvas",
+        "gelato_sku": "canvas_slim_30x40-in_wood-frame",
+        "base_production_cost": 44.0,
+        "shipping_cost_est": 13.0,
+        "retail_price": 137.0,
+        "net_profit": 75.73,
+        "profit_margin_pct": 55.3,
+        "is_hero_recommendation": false
+      },
+      {
+        "variant_id": "unframed_poster_30x40_in",
+        "size": "30x40_in",
+        "size_label": "30x40 in (75x100 cm)",
+        "frame_type": "unframed_poster",
+        "frame_label": "Museum-Grade Matte Fine Art Print (Unframed)",
+        "gelato_sku": "poster_matte_30x40-in_250-gsm",
+        "base_production_cost": 18.0,
+        "shipping_cost_est": 6.5,
+        "retail_price": 59.0,
+        "net_profit": 32.49,
+        "profit_margin_pct": 55.1,
+        "is_hero_recommendation": false
+      }
+    ],
+    "images": {
+      "hero": "/static/products/tuscan-herbarium-olea-europaea-olive/living_room_oak.jpg",
+      "print_only": "/static/products/tuscan-herbarium-olea-europaea-olive/print_only.jpg",
+      "framed_oak": "/static/products/tuscan-herbarium-olea-europaea-olive/framed_oak.jpg",
+      "detail": "/static/products/tuscan-herbarium-olea-europaea-olive/detail.jpg",
+      "lifestyle": "/static/products/tuscan-herbarium-olea-europaea-olive/living_room_oak.jpg"
+    },
+    "specifications": {
+      "paper": "Museum-grade 200–250 gsm heavyweight archival matte cotton paper",
+      "framing": "Sustainably sourced FSC-certified solid natural oak and pine",
+      "printing": "12-color Giclée pigment printing with 100+ year anti-fade warranty",
+      "fulfillment": "Locally printed and hand-framed across 32 regional global hubs for 48–72h fast delivery"
+    }
+  },
+  {
+    "id": "tuscan-herbarium-ficus-carica-wild-fig",
+    "title": "Tuscan Herbarium - Ficus carica (Wild Fig & Fruit Study)",
+    "aesthetic_id": "french-botanical",
+    "aesthetic_name": "Antique Botanical & Ferns",
+    "short_summary": "Tuscan wild fig botanical study with lush lobed leaves and ripening fruit on vintage parchment. Companion triptych to Olea europaea.",
+    "description": "Celebration of Italian summer fruit and heirloom garden foliage. Rendered in delicate natural dyes and antique ink on 250 gsm archival cotton paper. Pairs effortlessly with olive and citrus botanicals in modern country or European coastal homes.",
+    "tags": [
+      "botanical art",
+      "fig branch",
+      "triptych",
+      "italian home decor",
+      "dining room wall art",
+      "solid natural oak",
+      "herbarium"
+    ],
+    "starting_price": 26.0,
+    "variants": [
+      {
+        "variant_id": "natural_oak_12x18_in",
+        "size": "12x18_in",
+        "size_label": "12x18 in (30x45 cm)",
+        "frame_type": "natural_oak",
+        "frame_label": "Solid Natural Oak Wood Frame",
+        "gelato_sku": "framed-poster_flat_wood_natural_12x18-in_200-gsm",
+        "base_production_cost": 16.5,
+        "shipping_cost_est": 5.2,
+        "retail_price": 52.0,
+        "net_profit": 28.49,
+        "profit_margin_pct": 54.8,
+        "is_hero_recommendation": false
+      },
+      {
+        "variant_id": "black_wood_12x18_in",
+        "size": "12x18_in",
+        "size_label": "12x18 in (30x45 cm)",
+        "frame_type": "black_wood",
+        "frame_label": "Matte Black Solid Wood Frame",
+        "gelato_sku": "framed-poster_flat_wood_black_12x18-in_200-gsm",
+        "base_production_cost": 15.5,
+        "shipping_cost_est": 5.2,
+        "retail_price": 50.0,
+        "net_profit": 27.55,
+        "profit_margin_pct": 55.1,
+        "is_hero_recommendation": false
+      },
+      {
+        "variant_id": "unframed_poster_12x18_in",
+        "size": "12x18_in",
+        "size_label": "12x18 in (30x45 cm)",
+        "frame_type": "unframed_poster",
+        "frame_label": "Museum-Grade Matte Fine Art Print (Unframed)",
+        "gelato_sku": "poster_matte_12x18-in_250-gsm",
+        "base_production_cost": 6.2,
+        "shipping_cost_est": 4.5,
+        "retail_price": 26.0,
+        "net_profit": 14.25,
+        "profit_margin_pct": 54.8,
+        "is_hero_recommendation": false
+      },
+      {
+        "variant_id": "natural_oak_18x24_in",
+        "size": "18x24_in",
+        "size_label": "18x24 in (45x60 cm)",
+        "frame_type": "natural_oak",
+        "frame_label": "Solid Natural Oak Wood Frame",
+        "gelato_sku": "framed-poster_flat_wood_natural_18x24-in_200-gsm",
+        "base_production_cost": 24.8,
+        "shipping_cost_est": 6.9,
+        "retail_price": 76.0,
+        "net_profit": 41.8,
+        "profit_margin_pct": 55.0,
+        "is_hero_recommendation": false
+      },
+      {
+        "variant_id": "black_wood_18x24_in",
+        "size": "18x24_in",
+        "size_label": "18x24 in (45x60 cm)",
+        "frame_type": "black_wood",
+        "frame_label": "Matte Black Solid Wood Frame",
+        "gelato_sku": "framed-poster_flat_wood_black_18x24-in_200-gsm",
+        "base_production_cost": 23.5,
+        "shipping_cost_est": 6.9,
+        "retail_price": 73.0,
+        "net_profit": 40.18,
+        "profit_margin_pct": 55.0,
+        "is_hero_recommendation": false
+      },
+      {
+        "variant_id": "white_wood_18x24_in",
+        "size": "18x24_in",
+        "size_label": "18x24 in (45x60 cm)",
+        "frame_type": "white_wood",
+        "frame_label": "Nordic White Wood Frame",
+        "gelato_sku": "framed-poster_flat_wood_white_18x24-in_200-gsm",
+        "base_production_cost": 23.5,
+        "shipping_cost_est": 6.9,
+        "retail_price": 73.0,
+        "net_profit": 40.18,
+        "profit_margin_pct": 55.0,
+        "is_hero_recommendation": false
+      },
+      {
+        "variant_id": "canvas_wrap_18x24_in",
+        "size": "18x24_in",
+        "size_label": "18x24 in (45x60 cm)",
+        "frame_type": "canvas_wrap",
+        "frame_label": "Gallery Stretched Fine Art Canvas",
+        "gelato_sku": "canvas_slim_18x24-in_wood-frame",
+        "base_production_cost": 21.0,
+        "shipping_cost_est": 7.5,
+        "retail_price": 68.0,
+        "net_profit": 37.23,
+        "profit_margin_pct": 54.8,
+        "is_hero_recommendation": false
+      },
+      {
+        "variant_id": "unframed_poster_18x24_in",
+        "size": "18x24_in",
+        "size_label": "18x24 in (45x60 cm)",
+        "frame_type": "unframed_poster",
+        "frame_label": "Museum-Grade Matte Fine Art Print (Unframed)",
+        "gelato_sku": "poster_matte_18x24-in_250-gsm",
+        "base_production_cost": 8.9,
+        "shipping_cost_est": 4.9,
+        "retail_price": 33.0,
+        "net_profit": 17.94,
+        "profit_margin_pct": 54.4,
+        "is_hero_recommendation": false
+      },
+      {
+        "variant_id": "natural_oak_24x36_in",
+        "size": "24x36_in",
+        "size_label": "24x36 in (60x90 cm)",
+        "frame_type": "natural_oak",
+        "frame_label": "Solid Natural Oak Wood Frame",
+        "gelato_sku": "framed-poster_flat_wood_natural_24x36-in_200-gsm",
+        "base_production_cost": 36.5,
+        "shipping_cost_est": 9.4,
+        "retail_price": 110.0,
+        "net_profit": 60.61,
+        "profit_margin_pct": 55.1,
+        "is_hero_recommendation": true
+      },
+      {
+        "variant_id": "black_wood_24x36_in",
+        "size": "24x36_in",
+        "size_label": "24x36 in (60x90 cm)",
+        "frame_type": "black_wood",
+        "frame_label": "Matte Black Solid Wood Frame",
+        "gelato_sku": "framed-poster_flat_wood_black_24x36-in_200-gsm",
+        "base_production_cost": 34.5,
+        "shipping_cost_est": 9.4,
+        "retail_price": 105.0,
+        "net_profit": 57.76,
+        "profit_margin_pct": 55.0,
+        "is_hero_recommendation": false
+      },
+      {
+        "variant_id": "white_wood_24x36_in",
+        "size": "24x36_in",
+        "size_label": "24x36 in (60x90 cm)",
+        "frame_type": "white_wood",
+        "frame_label": "Nordic White Wood Frame",
+        "gelato_sku": "framed-poster_flat_wood_white_24x36-in_200-gsm",
+        "base_production_cost": 34.5,
+        "shipping_cost_est": 9.4,
+        "retail_price": 105.0,
+        "net_profit": 57.76,
+        "profit_margin_pct": 55.0,
+        "is_hero_recommendation": false
+      },
+      {
+        "variant_id": "canvas_wrap_24x36_in",
+        "size": "24x36_in",
+        "size_label": "24x36 in (60x90 cm)",
+        "frame_type": "canvas_wrap",
+        "frame_label": "Gallery Stretched Fine Art Canvas",
+        "gelato_sku": "canvas_slim_24x36-in_wood-frame",
+        "base_production_cost": 31.0,
+        "shipping_cost_est": 9.8,
+        "retail_price": 98.0,
+        "net_profit": 54.06,
+        "profit_margin_pct": 55.2,
+        "is_hero_recommendation": false
+      },
+      {
+        "variant_id": "unframed_poster_24x36_in",
+        "size": "24x36_in",
+        "size_label": "24x36 in (60x90 cm)",
+        "frame_type": "unframed_poster",
+        "frame_label": "Museum-Grade Matte Fine Art Print (Unframed)",
+        "gelato_sku": "poster_matte_24x36-in_250-gsm",
+        "base_production_cost": 13.5,
+        "shipping_cost_est": 5.8,
+        "retail_price": 46.0,
+        "net_profit": 25.07,
+        "profit_margin_pct": 54.5,
+        "is_hero_recommendation": false
+      },
+      {
+        "variant_id": "natural_oak_30x40_in",
+        "size": "30x40_in",
+        "size_label": "30x40 in (75x100 cm)",
+        "frame_type": "natural_oak",
+        "frame_label": "Solid Natural Oak Wood Frame",
+        "gelato_sku": "framed-poster_flat_wood_natural_30x40-in_200-gsm",
+        "base_production_cost": 49.0,
+        "shipping_cost_est": 12.5,
+        "retail_price": 148.0,
+        "net_profit": 81.91,
+        "profit_margin_pct": 55.3,
+        "is_hero_recommendation": false
+      },
+      {
+        "variant_id": "black_wood_30x40_in",
+        "size": "30x40_in",
+        "size_label": "30x40 in (75x100 cm)",
+        "frame_type": "black_wood",
+        "frame_label": "Matte Black Solid Wood Frame",
+        "gelato_sku": "framed-poster_flat_wood_black_30x40-in_200-gsm",
+        "base_production_cost": 47.0,
+        "shipping_cost_est": 12.5,
+        "retail_price": 143.0,
+        "net_profit": 79.05,
+        "profit_margin_pct": 55.3,
+        "is_hero_recommendation": false
+      },
+      {
+        "variant_id": "canvas_wrap_30x40_in",
+        "size": "30x40_in",
+        "size_label": "30x40 in (75x100 cm)",
+        "frame_type": "canvas_wrap",
+        "frame_label": "Gallery Stretched Fine Art Canvas",
+        "gelato_sku": "canvas_slim_30x40-in_wood-frame",
+        "base_production_cost": 44.0,
+        "shipping_cost_est": 13.0,
+        "retail_price": 137.0,
+        "net_profit": 75.73,
+        "profit_margin_pct": 55.3,
+        "is_hero_recommendation": false
+      },
+      {
+        "variant_id": "unframed_poster_30x40_in",
+        "size": "30x40_in",
+        "size_label": "30x40 in (75x100 cm)",
+        "frame_type": "unframed_poster",
+        "frame_label": "Museum-Grade Matte Fine Art Print (Unframed)",
+        "gelato_sku": "poster_matte_30x40-in_250-gsm",
+        "base_production_cost": 18.0,
+        "shipping_cost_est": 6.5,
+        "retail_price": 59.0,
+        "net_profit": 32.49,
+        "profit_margin_pct": 55.1,
+        "is_hero_recommendation": false
+      }
+    ],
+    "images": {
+      "hero": "/static/products/tuscan-herbarium-ficus-carica-wild-fig/living_room_oak.jpg",
+      "print_only": "/static/products/tuscan-herbarium-ficus-carica-wild-fig/print_only.jpg",
+      "framed_oak": "/static/products/tuscan-herbarium-ficus-carica-wild-fig/framed_oak.jpg",
+      "detail": "/static/products/tuscan-herbarium-ficus-carica-wild-fig/detail.jpg",
+      "lifestyle": "/static/products/tuscan-herbarium-ficus-carica-wild-fig/living_room_oak.jpg"
+    },
+    "specifications": {
+      "paper": "Museum-grade 200–250 gsm heavyweight archival matte cotton paper",
+      "framing": "Sustainably sourced FSC-certified solid natural oak and pine",
+      "printing": "12-color Giclée pigment printing with 100+ year anti-fade warranty",
+      "fulfillment": "Locally printed and hand-framed across 32 regional global hubs for 48–72h fast delivery"
+    }
+  },
+  {
     "id": "amalfi-lemon-groves-terracotta-heirloom-amalfi-lemon-branch-with-leaves-no-5-3927d3",
     "title": "Amalfi Lemon Groves & Terracotta - Heirloom Amalfi lemon branch with leaves No. 5",
     "seo_title": "Amalfi Lemon Groves & Terracotta - Heirloom Amalfi lemon branch with leaves No. 5 | Framed Wall Art, Amalfi Lemon Groves & Terracotta Canvas Print, Living Room Decor",
@@ -9,10 +1093,10 @@
     "story_and_concept": "Created to reflect the calming balance of Amalfi Lemon Groves & Terracotta, combining Mustard Yellow, Forest Moss, Amalfi Ultramarine, Terracotta Clay, Sunlit Limewash tones to anchor modern interiors with refined elegance.",
     "styling_tips": "Ideal as a statement hero piece above a sofa or headboard. Harmonizes beautifully with neutral boucle fabrics, natural wood accents, and warm ambient lighting.",
     "specifications": {
-      "paper": "Museum-grade 200\u2013250 gsm heavyweight archival matte paper",
+      "paper": "Museum-grade 200–250 gsm heavyweight archival matte paper",
       "framing": "Sustainably sourced FSC-certified solid natural oak and pine",
-      "printing": "12-color Gicl\u00e9e pigment printing with 100+ year anti-fade warranty",
-      "fulfillment": "Locally printed and hand-framed across 32 regional global hubs for 48\u201372h fast delivery"
+      "printing": "12-color Giclée pigment printing with 100+ year anti-fade warranty",
+      "fulfillment": "Locally printed and hand-framed across 32 regional global hubs for 48–72h fast delivery"
     },
     "color_palette": [
       "Mustard Yellow",
@@ -34,7 +1118,7 @@
       "fine art giclee",
       "sustainable wall art"
     ],
-    "social_ad_caption": "Elevate your sanctuary with 'Amalfi Lemon Groves & Terracotta - Heirloom Amalfi lemon branch with leaves No. 5'. Museum-grade archival paper and handcrafted solid oak frames. \ud83d\ude9a Fast 72-hour domestic shipping.",
+    "social_ad_caption": "Elevate your sanctuary with 'Amalfi Lemon Groves & Terracotta - Heirloom Amalfi lemon branch with leaves No. 5'. Museum-grade archival paper and handcrafted solid oak frames. 🚚 Fast 72-hour domestic shipping.",
     "starting_price": 26.0,
     "max_price": 148.0,
     "hero_price": 110.0,
@@ -312,10 +1396,10 @@
     "story_and_concept": "Created to reflect the calming balance of Retro-Futuristic & Cyber Architecture, combining Deep Cobalt, Burnt Vermilion, Deep Obsidian, Warm Ochre, Sunlit Limewash tones to anchor modern interiors with refined elegance.",
     "styling_tips": "Ideal as a statement hero piece above a sofa or headboard. Harmonizes beautifully with neutral boucle fabrics, natural wood accents, and warm ambient lighting.",
     "specifications": {
-      "paper": "Museum-grade 200\u2013250 gsm heavyweight archival matte paper",
+      "paper": "Museum-grade 200–250 gsm heavyweight archival matte paper",
       "framing": "Sustainably sourced FSC-certified solid natural oak and pine",
-      "printing": "12-color Gicl\u00e9e pigment printing with 100+ year anti-fade warranty",
-      "fulfillment": "Locally printed and hand-framed across 32 regional global hubs for 48\u201372h fast delivery"
+      "printing": "12-color Giclée pigment printing with 100+ year anti-fade warranty",
+      "fulfillment": "Locally printed and hand-framed across 32 regional global hubs for 48–72h fast delivery"
     },
     "color_palette": [
       "Deep Cobalt",
@@ -337,7 +1421,7 @@
       "fine art giclee",
       "sustainable wall art"
     ],
-    "social_ad_caption": "Elevate your sanctuary with 'Retro-Futuristic & Cyber Architecture - Isometric sky garden elevation No. 3'. Museum-grade archival paper and handcrafted solid oak frames. \ud83d\ude9a Fast 72-hour domestic shipping.",
+    "social_ad_caption": "Elevate your sanctuary with 'Retro-Futuristic & Cyber Architecture - Isometric sky garden elevation No. 3'. Museum-grade archival paper and handcrafted solid oak frames. 🚚 Fast 72-hour domestic shipping.",
     "starting_price": 26.0,
     "max_price": 148.0,
     "hero_price": 110.0,
@@ -615,10 +1699,10 @@
     "story_and_concept": "Created to reflect the calming balance of Zen Sumi-e & Enso Brush Studies, combining Matte Black, Charcoal Slate, Old Ivory, Raw Linen, Dried Rose tones to anchor modern interiors with refined elegance.",
     "styling_tips": "Ideal as a statement hero piece above a sofa or headboard. Harmonizes beautifully with neutral boucle fabrics, natural wood accents, and warm ambient lighting.",
     "specifications": {
-      "paper": "Museum-grade 200\u2013250 gsm heavyweight archival matte paper",
+      "paper": "Museum-grade 200–250 gsm heavyweight archival matte paper",
       "framing": "Sustainably sourced FSC-certified solid natural oak and pine",
-      "printing": "12-color Gicl\u00e9e pigment printing with 100+ year anti-fade warranty",
-      "fulfillment": "Locally printed and hand-framed across 32 regional global hubs for 48\u201372h fast delivery"
+      "printing": "12-color Giclée pigment printing with 100+ year anti-fade warranty",
+      "fulfillment": "Locally printed and hand-framed across 32 regional global hubs for 48–72h fast delivery"
     },
     "color_palette": [
       "Matte Black",
@@ -640,7 +1724,7 @@
       "fine art giclee",
       "sustainable wall art"
     ],
-    "social_ad_caption": "Elevate your sanctuary with 'Zen Sumi-e & Enso Brush Studies - Flowing bamboo reed wash No. 3'. Museum-grade archival paper and handcrafted solid oak frames. \ud83d\ude9a Fast 72-hour domestic shipping.",
+    "social_ad_caption": "Elevate your sanctuary with 'Zen Sumi-e & Enso Brush Studies - Flowing bamboo reed wash No. 3'. Museum-grade archival paper and handcrafted solid oak frames. 🚚 Fast 72-hour domestic shipping.",
     "starting_price": 26.0,
     "max_price": 148.0,
     "hero_price": 110.0,
@@ -918,10 +2002,10 @@
     "story_and_concept": "Created to reflect the calming balance of Textured Abstract Expressionist Impasto, combining Charcoal Slate, Warm Ochre, Terracotta, Muted Sage, Raw Linen tones to anchor modern interiors with refined elegance.",
     "styling_tips": "Ideal as a statement hero piece above a sofa or headboard. Harmonizes beautifully with neutral boucle fabrics, natural wood accents, and warm ambient lighting.",
     "specifications": {
-      "paper": "Museum-grade 200\u2013250 gsm heavyweight archival matte paper",
+      "paper": "Museum-grade 200–250 gsm heavyweight archival matte paper",
       "framing": "Sustainably sourced FSC-certified solid natural oak and pine",
-      "printing": "12-color Gicl\u00e9e pigment printing with 100+ year anti-fade warranty",
-      "fulfillment": "Locally printed and hand-framed across 32 regional global hubs for 48\u201372h fast delivery"
+      "printing": "12-color Giclée pigment printing with 100+ year anti-fade warranty",
+      "fulfillment": "Locally printed and hand-framed across 32 regional global hubs for 48–72h fast delivery"
     },
     "color_palette": [
       "Charcoal Slate",
@@ -943,7 +2027,7 @@
       "fine art giclee",
       "sustainable wall art"
     ],
-    "social_ad_caption": "Elevate your sanctuary with 'Textured Abstract Expressionist Impasto - Layered charcoal and ochre impasto No. 10'. Museum-grade archival paper and handcrafted solid oak frames. \ud83d\ude9a Fast 72-hour domestic shipping.",
+    "social_ad_caption": "Elevate your sanctuary with 'Textured Abstract Expressionist Impasto - Layered charcoal and ochre impasto No. 10'. Museum-grade archival paper and handcrafted solid oak frames. 🚚 Fast 72-hour domestic shipping.",
     "starting_price": 26.0,
     "max_price": 148.0,
     "hero_price": 110.0,
@@ -1221,10 +2305,10 @@
     "story_and_concept": "Created to reflect the calming balance of Continuous Minimalist Line Art, combining Matte Black, Warm Ochre, Terracotta, Raw Linen, Sandstone tones to anchor modern interiors with refined elegance.",
     "styling_tips": "Ideal as a statement hero piece above a sofa or headboard. Harmonizes beautifully with neutral boucle fabrics, natural wood accents, and warm ambient lighting.",
     "specifications": {
-      "paper": "Museum-grade 200\u2013250 gsm heavyweight archival matte paper",
+      "paper": "Museum-grade 200–250 gsm heavyweight archival matte paper",
       "framing": "Sustainably sourced FSC-certified solid natural oak and pine",
-      "printing": "12-color Gicl\u00e9e pigment printing with 100+ year anti-fade warranty",
-      "fulfillment": "Locally printed and hand-framed across 32 regional global hubs for 48\u201372h fast delivery"
+      "printing": "12-color Giclée pigment printing with 100+ year anti-fade warranty",
+      "fulfillment": "Locally printed and hand-framed across 32 regional global hubs for 48–72h fast delivery"
     },
     "color_palette": [
       "Matte Black",
@@ -1246,7 +2330,7 @@
       "fine art giclee",
       "sustainable wall art"
     ],
-    "social_ad_caption": "Elevate your sanctuary with 'Continuous Minimalist Line Art - Seated figure minimalist line study No. 11'. Museum-grade archival paper and handcrafted solid oak frames. \ud83d\ude9a Fast 72-hour domestic shipping.",
+    "social_ad_caption": "Elevate your sanctuary with 'Continuous Minimalist Line Art - Seated figure minimalist line study No. 11'. Museum-grade archival paper and handcrafted solid oak frames. 🚚 Fast 72-hour domestic shipping.",
     "starting_price": 26.0,
     "max_price": 148.0,
     "hero_price": 110.0,
@@ -1524,10 +2608,10 @@
     "story_and_concept": "Created to reflect the calming balance of French Herbarium & Pressed Botanicals, combining Forest Moss, Antique Sepia, Old Ivory, Eucalyptus Green, Raw Linen tones to anchor modern interiors with refined elegance.",
     "styling_tips": "Ideal as a statement hero piece above a sofa or headboard. Harmonizes beautifully with neutral boucle fabrics, natural wood accents, and warm ambient lighting.",
     "specifications": {
-      "paper": "Museum-grade 200\u2013250 gsm heavyweight archival matte paper",
+      "paper": "Museum-grade 200–250 gsm heavyweight archival matte paper",
       "framing": "Sustainably sourced FSC-certified solid natural oak and pine",
-      "printing": "12-color Gicl\u00e9e pigment printing with 100+ year anti-fade warranty",
-      "fulfillment": "Locally printed and hand-framed across 32 regional global hubs for 48\u201372h fast delivery"
+      "printing": "12-color Giclée pigment printing with 100+ year anti-fade warranty",
+      "fulfillment": "Locally printed and hand-framed across 32 regional global hubs for 48–72h fast delivery"
     },
     "color_palette": [
       "Forest Moss",
@@ -1549,7 +2633,7 @@
       "fine art giclee",
       "sustainable wall art"
     ],
-    "social_ad_caption": "Elevate your sanctuary with 'French Herbarium & Pressed Botanicals - Eucalyptus cinerea leaf branch No. 2'. Museum-grade archival paper and handcrafted solid oak frames. \ud83d\ude9a Fast 72-hour domestic shipping.",
+    "social_ad_caption": "Elevate your sanctuary with 'French Herbarium & Pressed Botanicals - Eucalyptus cinerea leaf branch No. 2'. Museum-grade archival paper and handcrafted solid oak frames. 🚚 Fast 72-hour domestic shipping.",
     "starting_price": 26.0,
     "max_price": 148.0,
     "hero_price": 110.0,
@@ -1827,10 +2911,10 @@
     "story_and_concept": "Created to reflect the calming balance of Abstract Ethereal Watercolor Horizons, combining Amalfi Ultramarine, Muted Sage, Terracotta, Burnished Gold, Raw Linen tones to anchor modern interiors with refined elegance.",
     "styling_tips": "Ideal as a statement hero piece above a sofa or headboard. Harmonizes beautifully with neutral boucle fabrics, natural wood accents, and warm ambient lighting.",
     "specifications": {
-      "paper": "Museum-grade 200\u2013250 gsm heavyweight archival matte paper",
+      "paper": "Museum-grade 200–250 gsm heavyweight archival matte paper",
       "framing": "Sustainably sourced FSC-certified solid natural oak and pine",
-      "printing": "12-color Gicl\u00e9e pigment printing with 100+ year anti-fade warranty",
-      "fulfillment": "Locally printed and hand-framed across 32 regional global hubs for 48\u201372h fast delivery"
+      "printing": "12-color Giclée pigment printing with 100+ year anti-fade warranty",
+      "fulfillment": "Locally printed and hand-framed across 32 regional global hubs for 48–72h fast delivery"
     },
     "color_palette": [
       "Amalfi Ultramarine",
@@ -1852,7 +2936,7 @@
       "fine art giclee",
       "sustainable wall art"
     ],
-    "social_ad_caption": "Elevate your sanctuary with 'Abstract Ethereal Watercolor Horizons - Sunset cloudbank gradient study No. 10'. Museum-grade archival paper and handcrafted solid oak frames. \ud83d\ude9a Fast 72-hour domestic shipping.",
+    "social_ad_caption": "Elevate your sanctuary with 'Abstract Ethereal Watercolor Horizons - Sunset cloudbank gradient study No. 10'. Museum-grade archival paper and handcrafted solid oak frames. 🚚 Fast 72-hour domestic shipping.",
     "starting_price": 26.0,
     "max_price": 148.0,
     "hero_price": 110.0,
@@ -2130,10 +3214,10 @@
     "story_and_concept": "Created to reflect the calming balance of Art Deco Gatsby & Gilded Geometry, combining Deep Obsidian, Burnished Gold, Charcoal Slate, Burgundy Wine, Old Ivory tones to anchor modern interiors with refined elegance.",
     "styling_tips": "Ideal as a statement hero piece above a sofa or headboard. Harmonizes beautifully with neutral boucle fabrics, natural wood accents, and warm ambient lighting.",
     "specifications": {
-      "paper": "Museum-grade 200\u2013250 gsm heavyweight archival matte paper",
+      "paper": "Museum-grade 200–250 gsm heavyweight archival matte paper",
       "framing": "Sustainably sourced FSC-certified solid natural oak and pine",
-      "printing": "12-color Gicl\u00e9e pigment printing with 100+ year anti-fade warranty",
-      "fulfillment": "Locally printed and hand-framed across 32 regional global hubs for 48\u201372h fast delivery"
+      "printing": "12-color Giclée pigment printing with 100+ year anti-fade warranty",
+      "fulfillment": "Locally printed and hand-framed across 32 regional global hubs for 48–72h fast delivery"
     },
     "color_palette": [
       "Deep Obsidian",
@@ -2155,7 +3239,7 @@
       "fine art giclee",
       "sustainable wall art"
     ],
-    "social_ad_caption": "Elevate your sanctuary with 'Art Deco Gatsby & Gilded Geometry - Metropolitan skyscraper spire elevation No. 5'. Museum-grade archival paper and handcrafted solid oak frames. \ud83d\ude9a Fast 72-hour domestic shipping.",
+    "social_ad_caption": "Elevate your sanctuary with 'Art Deco Gatsby & Gilded Geometry - Metropolitan skyscraper spire elevation No. 5'. Museum-grade archival paper and handcrafted solid oak frames. 🚚 Fast 72-hour domestic shipping.",
     "starting_price": 26.0,
     "max_price": 148.0,
     "hero_price": 110.0,
@@ -2433,10 +3517,10 @@
     "story_and_concept": "Created to reflect the calming balance of Vintage Alpine & Mountain Solitude, combining Deep Cobalt, Forest Moss, Burnt Vermilion, Old Ivory, Charcoal Slate tones to anchor modern interiors with refined elegance.",
     "styling_tips": "Ideal as a statement hero piece above a sofa or headboard. Harmonizes beautifully with neutral boucle fabrics, natural wood accents, and warm ambient lighting.",
     "specifications": {
-      "paper": "Museum-grade 200\u2013250 gsm heavyweight archival matte paper",
+      "paper": "Museum-grade 200–250 gsm heavyweight archival matte paper",
       "framing": "Sustainably sourced FSC-certified solid natural oak and pine",
-      "printing": "12-color Gicl\u00e9e pigment printing with 100+ year anti-fade warranty",
-      "fulfillment": "Locally printed and hand-framed across 32 regional global hubs for 48\u201372h fast delivery"
+      "printing": "12-color Giclée pigment printing with 100+ year anti-fade warranty",
+      "fulfillment": "Locally printed and hand-framed across 32 regional global hubs for 48–72h fast delivery"
     },
     "color_palette": [
       "Deep Cobalt",
@@ -2458,7 +3542,7 @@
       "fine art giclee",
       "sustainable wall art"
     ],
-    "social_ad_caption": "Elevate your sanctuary with 'Vintage Alpine & Mountain Solitude - Vintage cable car over snowy ridge No. 7'. Museum-grade archival paper and handcrafted solid oak frames. \ud83d\ude9a Fast 72-hour domestic shipping.",
+    "social_ad_caption": "Elevate your sanctuary with 'Vintage Alpine & Mountain Solitude - Vintage cable car over snowy ridge No. 7'. Museum-grade archival paper and handcrafted solid oak frames. 🚚 Fast 72-hour domestic shipping.",
     "starting_price": 26.0,
     "max_price": 148.0,
     "hero_price": 110.0,
@@ -2736,10 +3820,10 @@
     "story_and_concept": "Created to reflect the calming balance of Moroccan Riad Architecture & Zellige, combining Terracotta Clay, Amalfi Ultramarine, Warm Ochre, Forest Moss, Sunlit Limewash tones to anchor modern interiors with refined elegance.",
     "styling_tips": "Ideal as a statement hero piece above a sofa or headboard. Harmonizes beautifully with neutral boucle fabrics, natural wood accents, and warm ambient lighting.",
     "specifications": {
-      "paper": "Museum-grade 200\u2013250 gsm heavyweight archival matte paper",
+      "paper": "Museum-grade 200–250 gsm heavyweight archival matte paper",
       "framing": "Sustainably sourced FSC-certified solid natural oak and pine",
-      "printing": "12-color Gicl\u00e9e pigment printing with 100+ year anti-fade warranty",
-      "fulfillment": "Locally printed and hand-framed across 32 regional global hubs for 48\u201372h fast delivery"
+      "printing": "12-color Giclée pigment printing with 100+ year anti-fade warranty",
+      "fulfillment": "Locally printed and hand-framed across 32 regional global hubs for 48–72h fast delivery"
     },
     "color_palette": [
       "Terracotta Clay",
@@ -2761,7 +3845,7 @@
       "fine art giclee",
       "sustainable wall art"
     ],
-    "social_ad_caption": "Elevate your sanctuary with 'Moroccan Riad Architecture & Zellige - Sun-bleached Marrakech arcade No. 10'. Museum-grade archival paper and handcrafted solid oak frames. \ud83d\ude9a Fast 72-hour domestic shipping.",
+    "social_ad_caption": "Elevate your sanctuary with 'Moroccan Riad Architecture & Zellige - Sun-bleached Marrakech arcade No. 10'. Museum-grade archival paper and handcrafted solid oak frames. 🚚 Fast 72-hour domestic shipping.",
     "starting_price": 26.0,
     "max_price": 148.0,
     "hero_price": 110.0,
@@ -3039,10 +4123,10 @@
     "story_and_concept": "Created to reflect the calming balance of Minimalist Textured Plaster & Clay, combining Raw Linen, Sandstone, Old Ivory, Charcoal Slate, Warm Ochre tones to anchor modern interiors with refined elegance.",
     "styling_tips": "Ideal as a statement hero piece above a sofa or headboard. Harmonizes beautifully with neutral boucle fabrics, natural wood accents, and warm ambient lighting.",
     "specifications": {
-      "paper": "Museum-grade 200\u2013250 gsm heavyweight archival matte paper",
+      "paper": "Museum-grade 200–250 gsm heavyweight archival matte paper",
       "framing": "Sustainably sourced FSC-certified solid natural oak and pine",
-      "printing": "12-color Gicl\u00e9e pigment printing with 100+ year anti-fade warranty",
-      "fulfillment": "Locally printed and hand-framed across 32 regional global hubs for 48\u201372h fast delivery"
+      "printing": "12-color Giclée pigment printing with 100+ year anti-fade warranty",
+      "fulfillment": "Locally printed and hand-framed across 32 regional global hubs for 48–72h fast delivery"
     },
     "color_palette": [
       "Raw Linen",
@@ -3064,7 +4148,7 @@
       "fine art giclee",
       "sustainable wall art"
     ],
-    "social_ad_caption": "Elevate your sanctuary with 'Minimalist Textured Plaster & Clay - Minimalist layered plaster wave No. 3'. Museum-grade archival paper and handcrafted solid oak frames. \ud83d\ude9a Fast 72-hour domestic shipping.",
+    "social_ad_caption": "Elevate your sanctuary with 'Minimalist Textured Plaster & Clay - Minimalist layered plaster wave No. 3'. Museum-grade archival paper and handcrafted solid oak frames. 🚚 Fast 72-hour domestic shipping.",
     "starting_price": 26.0,
     "max_price": 148.0,
     "hero_price": 110.0,
@@ -3342,10 +4426,10 @@
     "story_and_concept": "Created to reflect the calming balance of Antique Celestial & Astrolabe Charts, combining Deep Obsidian, Burnished Gold, Old Ivory, Charcoal Slate, Antique Sepia tones to anchor modern interiors with refined elegance.",
     "styling_tips": "Ideal as a statement hero piece above a sofa or headboard. Harmonizes beautifully with neutral boucle fabrics, natural wood accents, and warm ambient lighting.",
     "specifications": {
-      "paper": "Museum-grade 200\u2013250 gsm heavyweight archival matte paper",
+      "paper": "Museum-grade 200–250 gsm heavyweight archival matte paper",
       "framing": "Sustainably sourced FSC-certified solid natural oak and pine",
-      "printing": "12-color Gicl\u00e9e pigment printing with 100+ year anti-fade warranty",
-      "fulfillment": "Locally printed and hand-framed across 32 regional global hubs for 48\u201372h fast delivery"
+      "printing": "12-color Giclée pigment printing with 100+ year anti-fade warranty",
+      "fulfillment": "Locally printed and hand-framed across 32 regional global hubs for 48–72h fast delivery"
     },
     "color_palette": [
       "Deep Obsidian",
@@ -3367,7 +4451,7 @@
       "fine art giclee",
       "sustainable wall art"
     ],
-    "social_ad_caption": "Elevate your sanctuary with 'Antique Celestial & Astrolabe Charts - Vintage northern hemisphere star chart No. 11'. Museum-grade archival paper and handcrafted solid oak frames. \ud83d\ude9a Fast 72-hour domestic shipping.",
+    "social_ad_caption": "Elevate your sanctuary with 'Antique Celestial & Astrolabe Charts - Vintage northern hemisphere star chart No. 11'. Museum-grade archival paper and handcrafted solid oak frames. 🚚 Fast 72-hour domestic shipping.",
     "starting_price": 26.0,
     "max_price": 148.0,
     "hero_price": 110.0,
@@ -3645,10 +4729,10 @@
     "story_and_concept": "Created to reflect the calming balance of Palm Springs & Desert Modernism, combining Warm Ochre, Terracotta, Muted Sage, Sunlit Limewash, Warm Parchment tones to anchor modern interiors with refined elegance.",
     "styling_tips": "Ideal as a statement hero piece above a sofa or headboard. Harmonizes beautifully with neutral boucle fabrics, natural wood accents, and warm ambient lighting.",
     "specifications": {
-      "paper": "Museum-grade 200\u2013250 gsm heavyweight archival matte paper",
+      "paper": "Museum-grade 200–250 gsm heavyweight archival matte paper",
       "framing": "Sustainably sourced FSC-certified solid natural oak and pine",
-      "printing": "12-color Gicl\u00e9e pigment printing with 100+ year anti-fade warranty",
-      "fulfillment": "Locally printed and hand-framed across 32 regional global hubs for 48\u201372h fast delivery"
+      "printing": "12-color Giclée pigment printing with 100+ year anti-fade warranty",
+      "fulfillment": "Locally printed and hand-framed across 32 regional global hubs for 48–72h fast delivery"
     },
     "color_palette": [
       "Warm Ochre",
@@ -3670,7 +4754,7 @@
       "fine art giclee",
       "sustainable wall art"
     ],
-    "social_ad_caption": "Elevate your sanctuary with 'Palm Springs & Desert Modernism - Desert agave against terracotta plaster No. 4'. Museum-grade archival paper and handcrafted solid oak frames. \ud83d\ude9a Fast 72-hour domestic shipping.",
+    "social_ad_caption": "Elevate your sanctuary with 'Palm Springs & Desert Modernism - Desert agave against terracotta plaster No. 4'. Museum-grade archival paper and handcrafted solid oak frames. 🚚 Fast 72-hour domestic shipping.",
     "starting_price": 26.0,
     "max_price": 148.0,
     "hero_price": 110.0,
@@ -3948,10 +5032,10 @@
     "story_and_concept": "Created to reflect the calming balance of Nordic Abstract Flora & Foliage, combining Muted Sage, Warm Ochre, Raw Linen, Charcoal Slate, Sandstone tones to anchor modern interiors with refined elegance.",
     "styling_tips": "Ideal as a statement hero piece above a sofa or headboard. Harmonizes beautifully with neutral boucle fabrics, natural wood accents, and warm ambient lighting.",
     "specifications": {
-      "paper": "Museum-grade 200\u2013250 gsm heavyweight archival matte paper",
+      "paper": "Museum-grade 200–250 gsm heavyweight archival matte paper",
       "framing": "Sustainably sourced FSC-certified solid natural oak and pine",
-      "printing": "12-color Gicl\u00e9e pigment printing with 100+ year anti-fade warranty",
-      "fulfillment": "Locally printed and hand-framed across 32 regional global hubs for 48\u201372h fast delivery"
+      "printing": "12-color Giclée pigment printing with 100+ year anti-fade warranty",
+      "fulfillment": "Locally printed and hand-framed across 32 regional global hubs for 48–72h fast delivery"
     },
     "color_palette": [
       "Muted Sage",
@@ -3973,7 +5057,7 @@
       "fine art giclee",
       "sustainable wall art"
     ],
-    "social_ad_caption": "Elevate your sanctuary with 'Nordic Abstract Flora & Foliage - Monstera leaf negative space abstraction No. 6'. Museum-grade archival paper and handcrafted solid oak frames. \ud83d\ude9a Fast 72-hour domestic shipping.",
+    "social_ad_caption": "Elevate your sanctuary with 'Nordic Abstract Flora & Foliage - Monstera leaf negative space abstraction No. 6'. Museum-grade archival paper and handcrafted solid oak frames. 🚚 Fast 72-hour domestic shipping.",
     "starting_price": 26.0,
     "max_price": 148.0,
     "hero_price": 110.0,
@@ -4251,10 +5335,10 @@
     "story_and_concept": "Created to reflect the calming balance of Modern Architectural & Geometry Schematics, combining Charcoal Slate, Raw Linen, Deep Cobalt, Warm Ochre, Sandstone tones to anchor modern interiors with refined elegance.",
     "styling_tips": "Ideal as a statement hero piece above a sofa or headboard. Harmonizes beautifully with neutral boucle fabrics, natural wood accents, and warm ambient lighting.",
     "specifications": {
-      "paper": "Museum-grade 200\u2013250 gsm heavyweight archival matte paper",
+      "paper": "Museum-grade 200–250 gsm heavyweight archival matte paper",
       "framing": "Sustainably sourced FSC-certified solid natural oak and pine",
-      "printing": "12-color Gicl\u00e9e pigment printing with 100+ year anti-fade warranty",
-      "fulfillment": "Locally printed and hand-framed across 32 regional global hubs for 48\u201372h fast delivery"
+      "printing": "12-color Giclée pigment printing with 100+ year anti-fade warranty",
+      "fulfillment": "Locally printed and hand-framed across 32 regional global hubs for 48–72h fast delivery"
     },
     "color_palette": [
       "Charcoal Slate",
@@ -4276,7 +5360,7 @@
       "fine art giclee",
       "sustainable wall art"
     ],
-    "social_ad_caption": "Elevate your sanctuary with 'Modern Architectural & Geometry Schematics - Spiral staircase elevation study No. 10'. Museum-grade archival paper and handcrafted solid oak frames. \ud83d\ude9a Fast 72-hour domestic shipping.",
+    "social_ad_caption": "Elevate your sanctuary with 'Modern Architectural & Geometry Schematics - Spiral staircase elevation study No. 10'. Museum-grade archival paper and handcrafted solid oak frames. 🚚 Fast 72-hour domestic shipping.",
     "starting_price": 26.0,
     "max_price": 148.0,
     "hero_price": 110.0,
@@ -4554,10 +5638,10 @@
     "story_and_concept": "Created to reflect the calming balance of Japanese Ukiyo-e & Modern Mokuhanga, combining Deep Cobalt, Eucalyptus Green, Dried Rose, Raw Linen, Matte Black tones to anchor modern interiors with refined elegance.",
     "styling_tips": "Ideal as a statement hero piece above a sofa or headboard. Harmonizes beautifully with neutral boucle fabrics, natural wood accents, and warm ambient lighting.",
     "specifications": {
-      "paper": "Museum-grade 200\u2013250 gsm heavyweight archival matte paper",
+      "paper": "Museum-grade 200–250 gsm heavyweight archival matte paper",
       "framing": "Sustainably sourced FSC-certified solid natural oak and pine",
-      "printing": "12-color Gicl\u00e9e pigment printing with 100+ year anti-fade warranty",
-      "fulfillment": "Locally printed and hand-framed across 32 regional global hubs for 48\u201372h fast delivery"
+      "printing": "12-color Giclée pigment printing with 100+ year anti-fade warranty",
+      "fulfillment": "Locally printed and hand-framed across 32 regional global hubs for 48–72h fast delivery"
     },
     "color_palette": [
       "Deep Cobalt",
@@ -4579,7 +5663,7 @@
       "fine art giclee",
       "sustainable wall art"
     ],
-    "social_ad_caption": "Elevate your sanctuary with 'Japanese Ukiyo-e & Modern Mokuhanga - Tranquil koi pond water ripple No. 8'. Museum-grade archival paper and handcrafted solid oak frames. \ud83d\ude9a Fast 72-hour domestic shipping.",
+    "social_ad_caption": "Elevate your sanctuary with 'Japanese Ukiyo-e & Modern Mokuhanga - Tranquil koi pond water ripple No. 8'. Museum-grade archival paper and handcrafted solid oak frames. 🚚 Fast 72-hour domestic shipping.",
     "starting_price": 26.0,
     "max_price": 148.0,
     "hero_price": 110.0,
@@ -4857,10 +5941,10 @@
     "story_and_concept": "Created to reflect the calming balance of Vintage French Riviera & Mid-Century Travel, combining Amalfi Ultramarine, Sunlit Limewash, Warm Ochre, Terracotta Clay, Charcoal Slate tones to anchor modern interiors with refined elegance.",
     "styling_tips": "Ideal as a statement hero piece above a sofa or headboard. Harmonizes beautifully with neutral boucle fabrics, natural wood accents, and warm ambient lighting.",
     "specifications": {
-      "paper": "Museum-grade 200\u2013250 gsm heavyweight archival matte paper",
+      "paper": "Museum-grade 200–250 gsm heavyweight archival matte paper",
       "framing": "Sustainably sourced FSC-certified solid natural oak and pine",
-      "printing": "12-color Gicl\u00e9e pigment printing with 100+ year anti-fade warranty",
-      "fulfillment": "Locally printed and hand-framed across 32 regional global hubs for 48\u201372h fast delivery"
+      "printing": "12-color Giclée pigment printing with 100+ year anti-fade warranty",
+      "fulfillment": "Locally printed and hand-framed across 32 regional global hubs for 48–72h fast delivery"
     },
     "color_palette": [
       "Amalfi Ultramarine",
@@ -4882,7 +5966,7 @@
       "fine art giclee",
       "sustainable wall art"
     ],
-    "social_ad_caption": "Elevate your sanctuary with 'Vintage French Riviera & Mid-Century Travel - Monaco coastal serpentine road No. 12'. Museum-grade archival paper and handcrafted solid oak frames. \ud83d\ude9a Fast 72-hour domestic shipping.",
+    "social_ad_caption": "Elevate your sanctuary with 'Vintage French Riviera & Mid-Century Travel - Monaco coastal serpentine road No. 12'. Museum-grade archival paper and handcrafted solid oak frames. 🚚 Fast 72-hour domestic shipping.",
     "starting_price": 26.0,
     "max_price": 148.0,
     "hero_price": 110.0,
@@ -5160,10 +6244,10 @@
     "story_and_concept": "Created to reflect the calming balance of Dark Academia & Textured Renaissance, combining Deep Obsidian, Burnished Gold, Burgundy Wine, Espresso Umber, Smoky Indigo tones to anchor modern interiors with refined elegance.",
     "styling_tips": "Ideal as a statement hero piece above a sofa or headboard. Harmonizes beautifully with neutral boucle fabrics, natural wood accents, and warm ambient lighting.",
     "specifications": {
-      "paper": "Museum-grade 200\u2013250 gsm heavyweight archival matte paper",
+      "paper": "Museum-grade 200–250 gsm heavyweight archival matte paper",
       "framing": "Sustainably sourced FSC-certified solid natural oak and pine",
-      "printing": "12-color Gicl\u00e9e pigment printing with 100+ year anti-fade warranty",
-      "fulfillment": "Locally printed and hand-framed across 32 regional global hubs for 48\u201372h fast delivery"
+      "printing": "12-color Giclée pigment printing with 100+ year anti-fade warranty",
+      "fulfillment": "Locally printed and hand-framed across 32 regional global hubs for 48–72h fast delivery"
     },
     "color_palette": [
       "Deep Obsidian",
@@ -5185,7 +6269,7 @@
       "fine art giclee",
       "sustainable wall art"
     ],
-    "social_ad_caption": "Elevate your sanctuary with 'Dark Academia & Textured Renaissance - Textured vintage oil study No. 2'. Museum-grade archival paper and handcrafted solid oak frames. \ud83d\ude9a Fast 72-hour domestic shipping.",
+    "social_ad_caption": "Elevate your sanctuary with 'Dark Academia & Textured Renaissance - Textured vintage oil study No. 2'. Museum-grade archival paper and handcrafted solid oak frames. 🚚 Fast 72-hour domestic shipping.",
     "starting_price": 26.0,
     "max_price": 148.0,
     "hero_price": 110.0,
@@ -5463,10 +6547,10 @@
     "story_and_concept": "Created to reflect the calming balance of Mediterranean Terracotta & Coastal Ease, combining Amalfi Ultramarine, Terracotta Clay, Olive Green, Sunlit Limewash, Warm Sand tones to anchor modern interiors with refined elegance.",
     "styling_tips": "Ideal as a statement hero piece above a sofa or headboard. Harmonizes beautifully with neutral boucle fabrics, natural wood accents, and warm ambient lighting.",
     "specifications": {
-      "paper": "Museum-grade 200\u2013250 gsm heavyweight archival matte paper",
+      "paper": "Museum-grade 200–250 gsm heavyweight archival matte paper",
       "framing": "Sustainably sourced FSC-certified solid natural oak and pine",
-      "printing": "12-color Gicl\u00e9e pigment printing with 100+ year anti-fade warranty",
-      "fulfillment": "Locally printed and hand-framed across 32 regional global hubs for 48\u201372h fast delivery"
+      "printing": "12-color Giclée pigment printing with 100+ year anti-fade warranty",
+      "fulfillment": "Locally printed and hand-framed across 32 regional global hubs for 48–72h fast delivery"
     },
     "color_palette": [
       "Amalfi Ultramarine",
@@ -5488,7 +6572,7 @@
       "fine art giclee",
       "sustainable wall art"
     ],
-    "social_ad_caption": "Elevate your sanctuary with 'Mediterranean Terracotta & Coastal Ease - Sun-bleached linen balconies No. 1'. Museum-grade archival paper and handcrafted solid oak frames. \ud83d\ude9a Fast 72-hour domestic shipping.",
+    "social_ad_caption": "Elevate your sanctuary with 'Mediterranean Terracotta & Coastal Ease - Sun-bleached linen balconies No. 1'. Museum-grade archival paper and handcrafted solid oak frames. 🚚 Fast 72-hour domestic shipping.",
     "starting_price": 26.0,
     "max_price": 148.0,
     "hero_price": 110.0,
@@ -5766,10 +6850,10 @@
     "story_and_concept": "Created to reflect the calming balance of Antique Botanical & Herbarium, combining Forest Moss, Eucalyptus Green, Antique Sepia, Old Ivory, Dried Rose tones to anchor modern interiors with refined elegance.",
     "styling_tips": "Ideal as a statement hero piece above a sofa or headboard. Harmonizes beautifully with neutral boucle fabrics, natural wood accents, and warm ambient lighting.",
     "specifications": {
-      "paper": "Museum-grade 200\u2013250 gsm heavyweight archival matte paper",
+      "paper": "Museum-grade 200–250 gsm heavyweight archival matte paper",
       "framing": "Sustainably sourced FSC-certified solid natural oak and pine",
-      "printing": "12-color Gicl\u00e9e pigment printing with 100+ year anti-fade warranty",
-      "fulfillment": "Locally printed and hand-framed across 32 regional global hubs for 48\u201372h fast delivery"
+      "printing": "12-color Giclée pigment printing with 100+ year anti-fade warranty",
+      "fulfillment": "Locally printed and hand-framed across 32 regional global hubs for 48–72h fast delivery"
     },
     "color_palette": [
       "Forest Moss",
@@ -5791,7 +6875,7 @@
       "fine art giclee",
       "sustainable wall art"
     ],
-    "social_ad_caption": "Elevate your sanctuary with 'Antique Botanical & Herbarium - Medicinal alpine flora No. 6'. Museum-grade archival paper and handcrafted solid oak frames. \ud83d\ude9a Fast 72-hour domestic shipping.",
+    "social_ad_caption": "Elevate your sanctuary with 'Antique Botanical & Herbarium - Medicinal alpine flora No. 6'. Museum-grade archival paper and handcrafted solid oak frames. 🚚 Fast 72-hour domestic shipping.",
     "starting_price": 26.0,
     "max_price": 148.0,
     "hero_price": 110.0,
@@ -6069,10 +7153,10 @@
     "story_and_concept": "Created to reflect the calming balance of Mid-Century Bauhaus & Modernism, combining Deep Cobalt, Burnt Vermilion, Mustard Yellow, Matte Black, Warm Parchment tones to anchor modern interiors with refined elegance.",
     "styling_tips": "Ideal as a statement hero piece above a sofa or headboard. Harmonizes beautifully with neutral boucle fabrics, natural wood accents, and warm ambient lighting.",
     "specifications": {
-      "paper": "Museum-grade 200\u2013250 gsm heavyweight archival matte paper",
+      "paper": "Museum-grade 200–250 gsm heavyweight archival matte paper",
       "framing": "Sustainably sourced FSC-certified solid natural oak and pine",
-      "printing": "12-color Gicl\u00e9e pigment printing with 100+ year anti-fade warranty",
-      "fulfillment": "Locally printed and hand-framed across 32 regional global hubs for 48\u201372h fast delivery"
+      "printing": "12-color Giclée pigment printing with 100+ year anti-fade warranty",
+      "fulfillment": "Locally printed and hand-framed across 32 regional global hubs for 48–72h fast delivery"
     },
     "color_palette": [
       "Deep Cobalt",
@@ -6094,7 +7178,7 @@
       "fine art giclee",
       "sustainable wall art"
     ],
-    "social_ad_caption": "Elevate your sanctuary with 'Mid-Century Bauhaus & Modernism - Abstract architectural elevations No. 9'. Museum-grade archival paper and handcrafted solid oak frames. \ud83d\ude9a Fast 72-hour domestic shipping.",
+    "social_ad_caption": "Elevate your sanctuary with 'Mid-Century Bauhaus & Modernism - Abstract architectural elevations No. 9'. Museum-grade archival paper and handcrafted solid oak frames. 🚚 Fast 72-hour domestic shipping.",
     "starting_price": 26.0,
     "max_price": 148.0,
     "hero_price": 110.0,
@@ -6372,10 +7456,10 @@
     "story_and_concept": "Created to reflect the calming balance of Japandi & Wabi-Sabi Minimalism, combining Terracotta, Warm Ochre, Charcoal Slate, Muted Sage, Raw Linen, Sandstone tones to anchor modern interiors with refined elegance.",
     "styling_tips": "Ideal as a statement hero piece above a sofa or headboard. Harmonizes beautifully with neutral boucle fabrics, natural wood accents, and warm ambient lighting.",
     "specifications": {
-      "paper": "Museum-grade 200\u2013250 gsm heavyweight archival matte paper",
+      "paper": "Museum-grade 200–250 gsm heavyweight archival matte paper",
       "framing": "Sustainably sourced FSC-certified solid natural oak and pine",
-      "printing": "12-color Gicl\u00e9e pigment printing with 100+ year anti-fade warranty",
-      "fulfillment": "Locally printed and hand-framed across 32 regional global hubs for 48\u201372h fast delivery"
+      "printing": "12-color Giclée pigment printing with 100+ year anti-fade warranty",
+      "fulfillment": "Locally printed and hand-framed across 32 regional global hubs for 48–72h fast delivery"
     },
     "color_palette": [
       "Terracotta",
@@ -6398,7 +7482,7 @@
       "fine art giclee",
       "sustainable wall art"
     ],
-    "social_ad_caption": "Elevate your sanctuary with 'Japandi & Wabi-Sabi Minimalism - Organic textured stone arches No. 6'. Museum-grade archival paper and handcrafted solid oak frames. \ud83d\ude9a Fast 72-hour domestic shipping.",
+    "social_ad_caption": "Elevate your sanctuary with 'Japandi & Wabi-Sabi Minimalism - Organic textured stone arches No. 6'. Museum-grade archival paper and handcrafted solid oak frames. 🚚 Fast 72-hour domestic shipping.",
     "starting_price": 26.0,
     "max_price": 148.0,
     "hero_price": 110.0,
@@ -6676,10 +7760,10 @@
     "story_and_concept": "Created to reflect the calming balance of Amalfi Lemon Groves & Terracotta, combining Mustard Yellow, Forest Moss, Amalfi Ultramarine, Terracotta Clay, Sunlit Limewash tones to anchor modern interiors with refined elegance.",
     "styling_tips": "Ideal as a statement hero piece above a sofa or headboard. Harmonizes beautifully with neutral boucle fabrics, natural wood accents, and warm ambient lighting.",
     "specifications": {
-      "paper": "Museum-grade 200\u2013250 gsm heavyweight archival matte paper",
+      "paper": "Museum-grade 200–250 gsm heavyweight archival matte paper",
       "framing": "Sustainably sourced FSC-certified solid natural oak and pine",
-      "printing": "12-color Gicl\u00e9e pigment printing with 100+ year anti-fade warranty",
-      "fulfillment": "Locally printed and hand-framed across 32 regional global hubs for 48\u201372h fast delivery"
+      "printing": "12-color Giclée pigment printing with 100+ year anti-fade warranty",
+      "fulfillment": "Locally printed and hand-framed across 32 regional global hubs for 48–72h fast delivery"
     },
     "color_palette": [
       "Mustard Yellow",
@@ -6701,7 +7785,7 @@
       "fine art giclee",
       "sustainable wall art"
     ],
-    "social_ad_caption": "Elevate your sanctuary with 'Amalfi Lemon Groves & Terracotta - Terracotta terrace overlooking Capri No. 1'. Museum-grade archival paper and handcrafted solid oak frames. \ud83d\ude9a Fast 72-hour domestic shipping.",
+    "social_ad_caption": "Elevate your sanctuary with 'Amalfi Lemon Groves & Terracotta - Terracotta terrace overlooking Capri No. 1'. Museum-grade archival paper and handcrafted solid oak frames. 🚚 Fast 72-hour domestic shipping.",
     "starting_price": 26.0,
     "max_price": 148.0,
     "hero_price": 110.0,
@@ -6979,10 +8063,10 @@
     "story_and_concept": "Created to reflect the calming balance of Retro-Futuristic & Cyber Architecture, combining Deep Cobalt, Burnt Vermilion, Deep Obsidian, Warm Ochre, Sunlit Limewash tones to anchor modern interiors with refined elegance.",
     "styling_tips": "Ideal as a statement hero piece above a sofa or headboard. Harmonizes beautifully with neutral boucle fabrics, natural wood accents, and warm ambient lighting.",
     "specifications": {
-      "paper": "Museum-grade 200\u2013250 gsm heavyweight archival matte paper",
+      "paper": "Museum-grade 200–250 gsm heavyweight archival matte paper",
       "framing": "Sustainably sourced FSC-certified solid natural oak and pine",
-      "printing": "12-color Gicl\u00e9e pigment printing with 100+ year anti-fade warranty",
-      "fulfillment": "Locally printed and hand-framed across 32 regional global hubs for 48\u201372h fast delivery"
+      "printing": "12-color Giclée pigment printing with 100+ year anti-fade warranty",
+      "fulfillment": "Locally printed and hand-framed across 32 regional global hubs for 48–72h fast delivery"
     },
     "color_palette": [
       "Deep Cobalt",
@@ -7004,7 +8088,7 @@
       "fine art giclee",
       "sustainable wall art"
     ],
-    "social_ad_caption": "Elevate your sanctuary with 'Retro-Futuristic & Cyber Architecture - Futuristic metropolis transit arch No. 5'. Museum-grade archival paper and handcrafted solid oak frames. \ud83d\ude9a Fast 72-hour domestic shipping.",
+    "social_ad_caption": "Elevate your sanctuary with 'Retro-Futuristic & Cyber Architecture - Futuristic metropolis transit arch No. 5'. Museum-grade archival paper and handcrafted solid oak frames. 🚚 Fast 72-hour domestic shipping.",
     "starting_price": 26.0,
     "max_price": 148.0,
     "hero_price": 110.0,
@@ -7282,10 +8366,10 @@
     "story_and_concept": "Created to reflect the calming balance of Zen Sumi-e & Enso Brush Studies, combining Matte Black, Charcoal Slate, Old Ivory, Raw Linen, Dried Rose tones to anchor modern interiors with refined elegance.",
     "styling_tips": "Ideal as a statement hero piece above a sofa or headboard. Harmonizes beautifully with neutral boucle fabrics, natural wood accents, and warm ambient lighting.",
     "specifications": {
-      "paper": "Museum-grade 200\u2013250 gsm heavyweight archival matte paper",
+      "paper": "Museum-grade 200–250 gsm heavyweight archival matte paper",
       "framing": "Sustainably sourced FSC-certified solid natural oak and pine",
-      "printing": "12-color Gicl\u00e9e pigment printing with 100+ year anti-fade warranty",
-      "fulfillment": "Locally printed and hand-framed across 32 regional global hubs for 48\u201372h fast delivery"
+      "printing": "12-color Giclée pigment printing with 100+ year anti-fade warranty",
+      "fulfillment": "Locally printed and hand-framed across 32 regional global hubs for 48–72h fast delivery"
     },
     "color_palette": [
       "Matte Black",
@@ -7307,7 +8391,7 @@
       "fine art giclee",
       "sustainable wall art"
     ],
-    "social_ad_caption": "Elevate your sanctuary with 'Zen Sumi-e & Enso Brush Studies - Misty mountain single pine brushstroke No. 2'. Museum-grade archival paper and handcrafted solid oak frames. \ud83d\ude9a Fast 72-hour domestic shipping.",
+    "social_ad_caption": "Elevate your sanctuary with 'Zen Sumi-e & Enso Brush Studies - Misty mountain single pine brushstroke No. 2'. Museum-grade archival paper and handcrafted solid oak frames. 🚚 Fast 72-hour domestic shipping.",
     "starting_price": 26.0,
     "max_price": 148.0,
     "hero_price": 110.0,
@@ -7585,10 +8669,10 @@
     "story_and_concept": "Created to reflect the calming balance of Textured Abstract Expressionist Impasto, combining Charcoal Slate, Warm Ochre, Terracotta, Muted Sage, Raw Linen tones to anchor modern interiors with refined elegance.",
     "styling_tips": "Ideal as a statement hero piece above a sofa or headboard. Harmonizes beautifully with neutral boucle fabrics, natural wood accents, and warm ambient lighting.",
     "specifications": {
-      "paper": "Museum-grade 200\u2013250 gsm heavyweight archival matte paper",
+      "paper": "Museum-grade 200–250 gsm heavyweight archival matte paper",
       "framing": "Sustainably sourced FSC-certified solid natural oak and pine",
-      "printing": "12-color Gicl\u00e9e pigment printing with 100+ year anti-fade warranty",
-      "fulfillment": "Locally printed and hand-framed across 32 regional global hubs for 48\u201372h fast delivery"
+      "printing": "12-color Giclée pigment printing with 100+ year anti-fade warranty",
+      "fulfillment": "Locally printed and hand-framed across 32 regional global hubs for 48–72h fast delivery"
     },
     "color_palette": [
       "Charcoal Slate",
@@ -7610,7 +8694,7 @@
       "fine art giclee",
       "sustainable wall art"
     ],
-    "social_ad_caption": "Elevate your sanctuary with 'Textured Abstract Expressionist Impasto - Balanced gestural brush mark study No. 2'. Museum-grade archival paper and handcrafted solid oak frames. \ud83d\ude9a Fast 72-hour domestic shipping.",
+    "social_ad_caption": "Elevate your sanctuary with 'Textured Abstract Expressionist Impasto - Balanced gestural brush mark study No. 2'. Museum-grade archival paper and handcrafted solid oak frames. 🚚 Fast 72-hour domestic shipping.",
     "starting_price": 26.0,
     "max_price": 148.0,
     "hero_price": 110.0,
@@ -7888,10 +8972,10 @@
     "story_and_concept": "Created to reflect the calming balance of Continuous Minimalist Line Art, combining Matte Black, Warm Ochre, Terracotta, Raw Linen, Sandstone tones to anchor modern interiors with refined elegance.",
     "styling_tips": "Ideal as a statement hero piece above a sofa or headboard. Harmonizes beautifully with neutral boucle fabrics, natural wood accents, and warm ambient lighting.",
     "specifications": {
-      "paper": "Museum-grade 200\u2013250 gsm heavyweight archival matte paper",
+      "paper": "Museum-grade 200–250 gsm heavyweight archival matte paper",
       "framing": "Sustainably sourced FSC-certified solid natural oak and pine",
-      "printing": "12-color Gicl\u00e9e pigment printing with 100+ year anti-fade warranty",
-      "fulfillment": "Locally printed and hand-framed across 32 regional global hubs for 48\u201372h fast delivery"
+      "printing": "12-color Giclée pigment printing with 100+ year anti-fade warranty",
+      "fulfillment": "Locally printed and hand-framed across 32 regional global hubs for 48–72h fast delivery"
     },
     "color_palette": [
       "Matte Black",
@@ -7913,7 +8997,7 @@
       "fine art giclee",
       "sustainable wall art"
     ],
-    "social_ad_caption": "Elevate your sanctuary with 'Continuous Minimalist Line Art - Botanical vase continuous brushstroke No. 8'. Museum-grade archival paper and handcrafted solid oak frames. \ud83d\ude9a Fast 72-hour domestic shipping.",
+    "social_ad_caption": "Elevate your sanctuary with 'Continuous Minimalist Line Art - Botanical vase continuous brushstroke No. 8'. Museum-grade archival paper and handcrafted solid oak frames. 🚚 Fast 72-hour domestic shipping.",
     "starting_price": 26.0,
     "max_price": 148.0,
     "hero_price": 110.0,
@@ -8191,10 +9275,10 @@
     "story_and_concept": "Created to reflect the calming balance of French Herbarium & Pressed Botanicals, combining Forest Moss, Antique Sepia, Old Ivory, Eucalyptus Green, Raw Linen tones to anchor modern interiors with refined elegance.",
     "styling_tips": "Ideal as a statement hero piece above a sofa or headboard. Harmonizes beautifully with neutral boucle fabrics, natural wood accents, and warm ambient lighting.",
     "specifications": {
-      "paper": "Museum-grade 200\u2013250 gsm heavyweight archival matte paper",
+      "paper": "Museum-grade 200–250 gsm heavyweight archival matte paper",
       "framing": "Sustainably sourced FSC-certified solid natural oak and pine",
-      "printing": "12-color Gicl\u00e9e pigment printing with 100+ year anti-fade warranty",
-      "fulfillment": "Locally printed and hand-framed across 32 regional global hubs for 48\u201372h fast delivery"
+      "printing": "12-color Giclée pigment printing with 100+ year anti-fade warranty",
+      "fulfillment": "Locally printed and hand-framed across 32 regional global hubs for 48–72h fast delivery"
     },
     "color_palette": [
       "Forest Moss",
@@ -8216,7 +9300,7 @@
       "fine art giclee",
       "sustainable wall art"
     ],
-    "social_ad_caption": "Elevate your sanctuary with 'French Herbarium & Pressed Botanicals - Pressed woodland fern specimen plate No. 6'. Museum-grade archival paper and handcrafted solid oak frames. \ud83d\ude9a Fast 72-hour domestic shipping.",
+    "social_ad_caption": "Elevate your sanctuary with 'French Herbarium & Pressed Botanicals - Pressed woodland fern specimen plate No. 6'. Museum-grade archival paper and handcrafted solid oak frames. 🚚 Fast 72-hour domestic shipping.",
     "starting_price": 26.0,
     "max_price": 148.0,
     "hero_price": 110.0,
@@ -8494,10 +9578,10 @@
     "story_and_concept": "Created to reflect the calming balance of Abstract Ethereal Watercolor Horizons, combining Amalfi Ultramarine, Muted Sage, Terracotta, Burnished Gold, Raw Linen tones to anchor modern interiors with refined elegance.",
     "styling_tips": "Ideal as a statement hero piece above a sofa or headboard. Harmonizes beautifully with neutral boucle fabrics, natural wood accents, and warm ambient lighting.",
     "specifications": {
-      "paper": "Museum-grade 200\u2013250 gsm heavyweight archival matte paper",
+      "paper": "Museum-grade 200–250 gsm heavyweight archival matte paper",
       "framing": "Sustainably sourced FSC-certified solid natural oak and pine",
-      "printing": "12-color Gicl\u00e9e pigment printing with 100+ year anti-fade warranty",
-      "fulfillment": "Locally printed and hand-framed across 32 regional global hubs for 48\u201372h fast delivery"
+      "printing": "12-color Giclée pigment printing with 100+ year anti-fade warranty",
+      "fulfillment": "Locally printed and hand-framed across 32 regional global hubs for 48–72h fast delivery"
     },
     "color_palette": [
       "Amalfi Ultramarine",
@@ -8519,7 +9603,7 @@
       "fine art giclee",
       "sustainable wall art"
     ],
-    "social_ad_caption": "Elevate your sanctuary with 'Abstract Ethereal Watercolor Horizons - Abstract rolling fog foothills No. 8'. Museum-grade archival paper and handcrafted solid oak frames. \ud83d\ude9a Fast 72-hour domestic shipping.",
+    "social_ad_caption": "Elevate your sanctuary with 'Abstract Ethereal Watercolor Horizons - Abstract rolling fog foothills No. 8'. Museum-grade archival paper and handcrafted solid oak frames. 🚚 Fast 72-hour domestic shipping.",
     "starting_price": 26.0,
     "max_price": 148.0,
     "hero_price": 110.0,
@@ -8797,10 +9881,10 @@
     "story_and_concept": "Created to reflect the calming balance of Art Deco Gatsby & Gilded Geometry, combining Deep Obsidian, Burnished Gold, Charcoal Slate, Burgundy Wine, Old Ivory tones to anchor modern interiors with refined elegance.",
     "styling_tips": "Ideal as a statement hero piece above a sofa or headboard. Harmonizes beautifully with neutral boucle fabrics, natural wood accents, and warm ambient lighting.",
     "specifications": {
-      "paper": "Museum-grade 200\u2013250 gsm heavyweight archival matte paper",
+      "paper": "Museum-grade 200–250 gsm heavyweight archival matte paper",
       "framing": "Sustainably sourced FSC-certified solid natural oak and pine",
-      "printing": "12-color Gicl\u00e9e pigment printing with 100+ year anti-fade warranty",
-      "fulfillment": "Locally printed and hand-framed across 32 regional global hubs for 48\u201372h fast delivery"
+      "printing": "12-color Giclée pigment printing with 100+ year anti-fade warranty",
+      "fulfillment": "Locally printed and hand-framed across 32 regional global hubs for 48–72h fast delivery"
     },
     "color_palette": [
       "Deep Obsidian",
@@ -8822,7 +9906,7 @@
       "fine art giclee",
       "sustainable wall art"
     ],
-    "social_ad_caption": "Elevate your sanctuary with 'Art Deco Gatsby & Gilded Geometry - Art deco lotus fountain motif No. 8'. Museum-grade archival paper and handcrafted solid oak frames. \ud83d\ude9a Fast 72-hour domestic shipping.",
+    "social_ad_caption": "Elevate your sanctuary with 'Art Deco Gatsby & Gilded Geometry - Art deco lotus fountain motif No. 8'. Museum-grade archival paper and handcrafted solid oak frames. 🚚 Fast 72-hour domestic shipping.",
     "starting_price": 26.0,
     "max_price": 148.0,
     "hero_price": 110.0,
@@ -9100,10 +10184,10 @@
     "story_and_concept": "Created to reflect the calming balance of Vintage Alpine & Mountain Solitude, combining Deep Cobalt, Forest Moss, Burnt Vermilion, Old Ivory, Charcoal Slate tones to anchor modern interiors with refined elegance.",
     "styling_tips": "Ideal as a statement hero piece above a sofa or headboard. Harmonizes beautifully with neutral boucle fabrics, natural wood accents, and warm ambient lighting.",
     "specifications": {
-      "paper": "Museum-grade 200\u2013250 gsm heavyweight archival matte paper",
+      "paper": "Museum-grade 200–250 gsm heavyweight archival matte paper",
       "framing": "Sustainably sourced FSC-certified solid natural oak and pine",
-      "printing": "12-color Gicl\u00e9e pigment printing with 100+ year anti-fade warranty",
-      "fulfillment": "Locally printed and hand-framed across 32 regional global hubs for 48\u201372h fast delivery"
+      "printing": "12-color Giclée pigment printing with 100+ year anti-fade warranty",
+      "fulfillment": "Locally printed and hand-framed across 32 regional global hubs for 48–72h fast delivery"
     },
     "color_palette": [
       "Deep Cobalt",
@@ -9125,7 +10209,7 @@
       "fine art giclee",
       "sustainable wall art"
     ],
-    "social_ad_caption": "Elevate your sanctuary with 'Vintage Alpine & Mountain Solitude - Matterhorn peak morning glow No. 8'. Museum-grade archival paper and handcrafted solid oak frames. \ud83d\ude9a Fast 72-hour domestic shipping.",
+    "social_ad_caption": "Elevate your sanctuary with 'Vintage Alpine & Mountain Solitude - Matterhorn peak morning glow No. 8'. Museum-grade archival paper and handcrafted solid oak frames. 🚚 Fast 72-hour domestic shipping.",
     "starting_price": 26.0,
     "max_price": 148.0,
     "hero_price": 110.0,
@@ -9403,10 +10487,10 @@
     "story_and_concept": "Created to reflect the calming balance of Moroccan Riad Architecture & Zellige, combining Terracotta Clay, Amalfi Ultramarine, Warm Ochre, Forest Moss, Sunlit Limewash tones to anchor modern interiors with refined elegance.",
     "styling_tips": "Ideal as a statement hero piece above a sofa or headboard. Harmonizes beautifully with neutral boucle fabrics, natural wood accents, and warm ambient lighting.",
     "specifications": {
-      "paper": "Museum-grade 200\u2013250 gsm heavyweight archival matte paper",
+      "paper": "Museum-grade 200–250 gsm heavyweight archival matte paper",
       "framing": "Sustainably sourced FSC-certified solid natural oak and pine",
-      "printing": "12-color Gicl\u00e9e pigment printing with 100+ year anti-fade warranty",
-      "fulfillment": "Locally printed and hand-framed across 32 regional global hubs for 48\u201372h fast delivery"
+      "printing": "12-color Giclée pigment printing with 100+ year anti-fade warranty",
+      "fulfillment": "Locally printed and hand-framed across 32 regional global hubs for 48–72h fast delivery"
     },
     "color_palette": [
       "Terracotta Clay",
@@ -9428,7 +10512,7 @@
       "fine art giclee",
       "sustainable wall art"
     ],
-    "social_ad_caption": "Elevate your sanctuary with 'Moroccan Riad Architecture & Zellige - Keyhole archway with mosaic shadow No. 7'. Museum-grade archival paper and handcrafted solid oak frames. \ud83d\ude9a Fast 72-hour domestic shipping.",
+    "social_ad_caption": "Elevate your sanctuary with 'Moroccan Riad Architecture & Zellige - Keyhole archway with mosaic shadow No. 7'. Museum-grade archival paper and handcrafted solid oak frames. 🚚 Fast 72-hour domestic shipping.",
     "starting_price": 26.0,
     "max_price": 148.0,
     "hero_price": 110.0,
@@ -9706,10 +10790,10 @@
     "story_and_concept": "Created to reflect the calming balance of Minimalist Textured Plaster & Clay, combining Raw Linen, Sandstone, Old Ivory, Charcoal Slate, Warm Ochre tones to anchor modern interiors with refined elegance.",
     "styling_tips": "Ideal as a statement hero piece above a sofa or headboard. Harmonizes beautifully with neutral boucle fabrics, natural wood accents, and warm ambient lighting.",
     "specifications": {
-      "paper": "Museum-grade 200\u2013250 gsm heavyweight archival matte paper",
+      "paper": "Museum-grade 200–250 gsm heavyweight archival matte paper",
       "framing": "Sustainably sourced FSC-certified solid natural oak and pine",
-      "printing": "12-color Gicl\u00e9e pigment printing with 100+ year anti-fade warranty",
-      "fulfillment": "Locally printed and hand-framed across 32 regional global hubs for 48\u201372h fast delivery"
+      "printing": "12-color Giclée pigment printing with 100+ year anti-fade warranty",
+      "fulfillment": "Locally printed and hand-framed across 32 regional global hubs for 48–72h fast delivery"
     },
     "color_palette": [
       "Raw Linen",
@@ -9731,7 +10815,7 @@
       "fine art giclee",
       "sustainable wall art"
     ],
-    "social_ad_caption": "Elevate your sanctuary with 'Minimalist Textured Plaster & Clay - Monochromatic sand dune ripples No. 3'. Museum-grade archival paper and handcrafted solid oak frames. \ud83d\ude9a Fast 72-hour domestic shipping.",
+    "social_ad_caption": "Elevate your sanctuary with 'Minimalist Textured Plaster & Clay - Monochromatic sand dune ripples No. 3'. Museum-grade archival paper and handcrafted solid oak frames. 🚚 Fast 72-hour domestic shipping.",
     "starting_price": 26.0,
     "max_price": 148.0,
     "hero_price": 110.0,
@@ -10009,10 +11093,10 @@
     "story_and_concept": "Created to reflect the calming balance of Antique Celestial & Astrolabe Charts, combining Deep Obsidian, Burnished Gold, Old Ivory, Charcoal Slate, Antique Sepia tones to anchor modern interiors with refined elegance.",
     "styling_tips": "Ideal as a statement hero piece above a sofa or headboard. Harmonizes beautifully with neutral boucle fabrics, natural wood accents, and warm ambient lighting.",
     "specifications": {
-      "paper": "Museum-grade 200\u2013250 gsm heavyweight archival matte paper",
+      "paper": "Museum-grade 200–250 gsm heavyweight archival matte paper",
       "framing": "Sustainably sourced FSC-certified solid natural oak and pine",
-      "printing": "12-color Gicl\u00e9e pigment printing with 100+ year anti-fade warranty",
-      "fulfillment": "Locally printed and hand-framed across 32 regional global hubs for 48\u201372h fast delivery"
+      "printing": "12-color Giclée pigment printing with 100+ year anti-fade warranty",
+      "fulfillment": "Locally printed and hand-framed across 32 regional global hubs for 48–72h fast delivery"
     },
     "color_palette": [
       "Deep Obsidian",
@@ -10034,7 +11118,7 @@
       "fine art giclee",
       "sustainable wall art"
     ],
-    "social_ad_caption": "Elevate your sanctuary with 'Antique Celestial & Astrolabe Charts - Orrery planetary orbit schematic No. 4'. Museum-grade archival paper and handcrafted solid oak frames. \ud83d\ude9a Fast 72-hour domestic shipping.",
+    "social_ad_caption": "Elevate your sanctuary with 'Antique Celestial & Astrolabe Charts - Orrery planetary orbit schematic No. 4'. Museum-grade archival paper and handcrafted solid oak frames. 🚚 Fast 72-hour domestic shipping.",
     "starting_price": 26.0,
     "max_price": 148.0,
     "hero_price": 110.0,
@@ -10312,10 +11396,10 @@
     "story_and_concept": "Created to reflect the calming balance of Palm Springs & Desert Modernism, combining Warm Ochre, Terracotta, Muted Sage, Sunlit Limewash, Warm Parchment tones to anchor modern interiors with refined elegance.",
     "styling_tips": "Ideal as a statement hero piece above a sofa or headboard. Harmonizes beautifully with neutral boucle fabrics, natural wood accents, and warm ambient lighting.",
     "specifications": {
-      "paper": "Museum-grade 200\u2013250 gsm heavyweight archival matte paper",
+      "paper": "Museum-grade 200–250 gsm heavyweight archival matte paper",
       "framing": "Sustainably sourced FSC-certified solid natural oak and pine",
-      "printing": "12-color Gicl\u00e9e pigment printing with 100+ year anti-fade warranty",
-      "fulfillment": "Locally printed and hand-framed across 32 regional global hubs for 48\u201372h fast delivery"
+      "printing": "12-color Giclée pigment printing with 100+ year anti-fade warranty",
+      "fulfillment": "Locally printed and hand-framed across 32 regional global hubs for 48–72h fast delivery"
     },
     "color_palette": [
       "Warm Ochre",
@@ -10337,7 +11421,7 @@
       "fine art giclee",
       "sustainable wall art"
     ],
-    "social_ad_caption": "Elevate your sanctuary with 'Palm Springs & Desert Modernism - Geometric pool terrace horizon No. 11'. Museum-grade archival paper and handcrafted solid oak frames. \ud83d\ude9a Fast 72-hour domestic shipping.",
+    "social_ad_caption": "Elevate your sanctuary with 'Palm Springs & Desert Modernism - Geometric pool terrace horizon No. 11'. Museum-grade archival paper and handcrafted solid oak frames. 🚚 Fast 72-hour domestic shipping.",
     "starting_price": 26.0,
     "max_price": 148.0,
     "hero_price": 110.0,
@@ -10615,10 +11699,10 @@
     "story_and_concept": "Created to reflect the calming balance of Nordic Abstract Flora & Foliage, combining Muted Sage, Warm Ochre, Raw Linen, Charcoal Slate, Sandstone tones to anchor modern interiors with refined elegance.",
     "styling_tips": "Ideal as a statement hero piece above a sofa or headboard. Harmonizes beautifully with neutral boucle fabrics, natural wood accents, and warm ambient lighting.",
     "specifications": {
-      "paper": "Museum-grade 200\u2013250 gsm heavyweight archival matte paper",
+      "paper": "Museum-grade 200–250 gsm heavyweight archival matte paper",
       "framing": "Sustainably sourced FSC-certified solid natural oak and pine",
-      "printing": "12-color Gicl\u00e9e pigment printing with 100+ year anti-fade warranty",
-      "fulfillment": "Locally printed and hand-framed across 32 regional global hubs for 48\u201372h fast delivery"
+      "printing": "12-color Giclée pigment printing with 100+ year anti-fade warranty",
+      "fulfillment": "Locally printed and hand-framed across 32 regional global hubs for 48–72h fast delivery"
     },
     "color_palette": [
       "Muted Sage",
@@ -10640,7 +11724,7 @@
       "fine art giclee",
       "sustainable wall art"
     ],
-    "social_ad_caption": "Elevate your sanctuary with 'Nordic Abstract Flora & Foliage - Wild Nordic thistle silhouette No. 11'. Museum-grade archival paper and handcrafted solid oak frames. \ud83d\ude9a Fast 72-hour domestic shipping.",
+    "social_ad_caption": "Elevate your sanctuary with 'Nordic Abstract Flora & Foliage - Wild Nordic thistle silhouette No. 11'. Museum-grade archival paper and handcrafted solid oak frames. 🚚 Fast 72-hour domestic shipping.",
     "starting_price": 26.0,
     "max_price": 148.0,
     "hero_price": 110.0,
@@ -10918,10 +12002,10 @@
     "story_and_concept": "Created to reflect the calming balance of Modern Architectural & Geometry Schematics, combining Charcoal Slate, Raw Linen, Deep Cobalt, Warm Ochre, Sandstone tones to anchor modern interiors with refined elegance.",
     "styling_tips": "Ideal as a statement hero piece above a sofa or headboard. Harmonizes beautifully with neutral boucle fabrics, natural wood accents, and warm ambient lighting.",
     "specifications": {
-      "paper": "Museum-grade 200\u2013250 gsm heavyweight archival matte paper",
+      "paper": "Museum-grade 200–250 gsm heavyweight archival matte paper",
       "framing": "Sustainably sourced FSC-certified solid natural oak and pine",
-      "printing": "12-color Gicl\u00e9e pigment printing with 100+ year anti-fade warranty",
-      "fulfillment": "Locally printed and hand-framed across 32 regional global hubs for 48\u201372h fast delivery"
+      "printing": "12-color Giclée pigment printing with 100+ year anti-fade warranty",
+      "fulfillment": "Locally printed and hand-framed across 32 regional global hubs for 48–72h fast delivery"
     },
     "color_palette": [
       "Charcoal Slate",
@@ -10943,7 +12027,7 @@
       "fine art giclee",
       "sustainable wall art"
     ],
-    "social_ad_caption": "Elevate your sanctuary with 'Modern Architectural & Geometry Schematics - Brutalist concrete arch geometry No. 11'. Museum-grade archival paper and handcrafted solid oak frames. \ud83d\ude9a Fast 72-hour domestic shipping.",
+    "social_ad_caption": "Elevate your sanctuary with 'Modern Architectural & Geometry Schematics - Brutalist concrete arch geometry No. 11'. Museum-grade archival paper and handcrafted solid oak frames. 🚚 Fast 72-hour domestic shipping.",
     "starting_price": 26.0,
     "max_price": 148.0,
     "hero_price": 110.0,
@@ -11221,10 +12305,10 @@
     "story_and_concept": "Created to reflect the calming balance of Japanese Ukiyo-e & Modern Mokuhanga, combining Deep Cobalt, Eucalyptus Green, Dried Rose, Raw Linen, Matte Black tones to anchor modern interiors with refined elegance.",
     "styling_tips": "Ideal as a statement hero piece above a sofa or headboard. Harmonizes beautifully with neutral boucle fabrics, natural wood accents, and warm ambient lighting.",
     "specifications": {
-      "paper": "Museum-grade 200\u2013250 gsm heavyweight archival matte paper",
+      "paper": "Museum-grade 200–250 gsm heavyweight archival matte paper",
       "framing": "Sustainably sourced FSC-certified solid natural oak and pine",
-      "printing": "12-color Gicl\u00e9e pigment printing with 100+ year anti-fade warranty",
-      "fulfillment": "Locally printed and hand-framed across 32 regional global hubs for 48\u201372h fast delivery"
+      "printing": "12-color Giclée pigment printing with 100+ year anti-fade warranty",
+      "fulfillment": "Locally printed and hand-framed across 32 regional global hubs for 48–72h fast delivery"
     },
     "color_palette": [
       "Deep Cobalt",
@@ -11246,7 +12330,7 @@
       "fine art giclee",
       "sustainable wall art"
     ],
-    "social_ad_caption": "Elevate your sanctuary with 'Japanese Ukiyo-e & Modern Mokuhanga - Tranquil koi pond water ripple No. 6'. Museum-grade archival paper and handcrafted solid oak frames. \ud83d\ude9a Fast 72-hour domestic shipping.",
+    "social_ad_caption": "Elevate your sanctuary with 'Japanese Ukiyo-e & Modern Mokuhanga - Tranquil koi pond water ripple No. 6'. Museum-grade archival paper and handcrafted solid oak frames. 🚚 Fast 72-hour domestic shipping.",
     "starting_price": 26.0,
     "max_price": 148.0,
     "hero_price": 110.0,
@@ -11524,10 +12608,10 @@
     "story_and_concept": "Created to reflect the calming balance of Vintage French Riviera & Mid-Century Travel, combining Amalfi Ultramarine, Sunlit Limewash, Warm Ochre, Terracotta Clay, Charcoal Slate tones to anchor modern interiors with refined elegance.",
     "styling_tips": "Ideal as a statement hero piece above a sofa or headboard. Harmonizes beautifully with neutral boucle fabrics, natural wood accents, and warm ambient lighting.",
     "specifications": {
-      "paper": "Museum-grade 200\u2013250 gsm heavyweight archival matte paper",
+      "paper": "Museum-grade 200–250 gsm heavyweight archival matte paper",
       "framing": "Sustainably sourced FSC-certified solid natural oak and pine",
-      "printing": "12-color Gicl\u00e9e pigment printing with 100+ year anti-fade warranty",
-      "fulfillment": "Locally printed and hand-framed across 32 regional global hubs for 48\u201372h fast delivery"
+      "printing": "12-color Giclée pigment printing with 100+ year anti-fade warranty",
+      "fulfillment": "Locally printed and hand-framed across 32 regional global hubs for 48–72h fast delivery"
     },
     "color_palette": [
       "Amalfi Ultramarine",
@@ -11549,7 +12633,7 @@
       "fine art giclee",
       "sustainable wall art"
     ],
-    "social_ad_caption": "Elevate your sanctuary with 'Vintage French Riviera & Mid-Century Travel - Sunbathers under parasols No. 7'. Museum-grade archival paper and handcrafted solid oak frames. \ud83d\ude9a Fast 72-hour domestic shipping.",
+    "social_ad_caption": "Elevate your sanctuary with 'Vintage French Riviera & Mid-Century Travel - Sunbathers under parasols No. 7'. Museum-grade archival paper and handcrafted solid oak frames. 🚚 Fast 72-hour domestic shipping.",
     "starting_price": 26.0,
     "max_price": 148.0,
     "hero_price": 110.0,
@@ -11827,10 +12911,10 @@
     "story_and_concept": "Created to reflect the calming balance of Dark Academia & Textured Renaissance, combining Deep Obsidian, Burnished Gold, Burgundy Wine, Espresso Umber, Smoky Indigo tones to anchor modern interiors with refined elegance.",
     "styling_tips": "Ideal as a statement hero piece above a sofa or headboard. Harmonizes beautifully with neutral boucle fabrics, natural wood accents, and warm ambient lighting.",
     "specifications": {
-      "paper": "Museum-grade 200\u2013250 gsm heavyweight archival matte paper",
+      "paper": "Museum-grade 200–250 gsm heavyweight archival matte paper",
       "framing": "Sustainably sourced FSC-certified solid natural oak and pine",
-      "printing": "12-color Gicl\u00e9e pigment printing with 100+ year anti-fade warranty",
-      "fulfillment": "Locally printed and hand-framed across 32 regional global hubs for 48\u201372h fast delivery"
+      "printing": "12-color Giclée pigment printing with 100+ year anti-fade warranty",
+      "fulfillment": "Locally printed and hand-framed across 32 regional global hubs for 48–72h fast delivery"
     },
     "color_palette": [
       "Deep Obsidian",
@@ -11852,7 +12936,7 @@
       "fine art giclee",
       "sustainable wall art"
     ],
-    "social_ad_caption": "Elevate your sanctuary with 'Dark Academia & Textured Renaissance - Moody architectural ruin No. 10'. Museum-grade archival paper and handcrafted solid oak frames. \ud83d\ude9a Fast 72-hour domestic shipping.",
+    "social_ad_caption": "Elevate your sanctuary with 'Dark Academia & Textured Renaissance - Moody architectural ruin No. 10'. Museum-grade archival paper and handcrafted solid oak frames. 🚚 Fast 72-hour domestic shipping.",
     "starting_price": 26.0,
     "max_price": 148.0,
     "hero_price": 110.0,
@@ -12130,10 +13214,10 @@
     "story_and_concept": "Created to reflect the calming balance of Mediterranean Terracotta & Coastal Ease, combining Amalfi Ultramarine, Terracotta Clay, Olive Green, Sunlit Limewash, Warm Sand tones to anchor modern interiors with refined elegance.",
     "styling_tips": "Ideal as a statement hero piece above a sofa or headboard. Harmonizes beautifully with neutral boucle fabrics, natural wood accents, and warm ambient lighting.",
     "specifications": {
-      "paper": "Museum-grade 200\u2013250 gsm heavyweight archival matte paper",
+      "paper": "Museum-grade 200–250 gsm heavyweight archival matte paper",
       "framing": "Sustainably sourced FSC-certified solid natural oak and pine",
-      "printing": "12-color Gicl\u00e9e pigment printing with 100+ year anti-fade warranty",
-      "fulfillment": "Locally printed and hand-framed across 32 regional global hubs for 48\u201372h fast delivery"
+      "printing": "12-color Giclée pigment printing with 100+ year anti-fade warranty",
+      "fulfillment": "Locally printed and hand-framed across 32 regional global hubs for 48–72h fast delivery"
     },
     "color_palette": [
       "Amalfi Ultramarine",
@@ -12155,7 +13239,7 @@
       "fine art giclee",
       "sustainable wall art"
     ],
-    "social_ad_caption": "Elevate your sanctuary with 'Mediterranean Terracotta & Coastal Ease - Abstract coastal cliff lines No. 10'. Museum-grade archival paper and handcrafted solid oak frames. \ud83d\ude9a Fast 72-hour domestic shipping.",
+    "social_ad_caption": "Elevate your sanctuary with 'Mediterranean Terracotta & Coastal Ease - Abstract coastal cliff lines No. 10'. Museum-grade archival paper and handcrafted solid oak frames. 🚚 Fast 72-hour domestic shipping.",
     "starting_price": 26.0,
     "max_price": 148.0,
     "hero_price": 110.0,
@@ -12433,10 +13517,10 @@
     "story_and_concept": "Created to reflect the calming balance of Antique Botanical & Herbarium, combining Forest Moss, Eucalyptus Green, Antique Sepia, Old Ivory, Dried Rose tones to anchor modern interiors with refined elegance.",
     "styling_tips": "Ideal as a statement hero piece above a sofa or headboard. Harmonizes beautifully with neutral boucle fabrics, natural wood accents, and warm ambient lighting.",
     "specifications": {
-      "paper": "Museum-grade 200\u2013250 gsm heavyweight archival matte paper",
+      "paper": "Museum-grade 200–250 gsm heavyweight archival matte paper",
       "framing": "Sustainably sourced FSC-certified solid natural oak and pine",
-      "printing": "12-color Gicl\u00e9e pigment printing with 100+ year anti-fade warranty",
-      "fulfillment": "Locally printed and hand-framed across 32 regional global hubs for 48\u201372h fast delivery"
+      "printing": "12-color Giclée pigment printing with 100+ year anti-fade warranty",
+      "fulfillment": "Locally printed and hand-framed across 32 regional global hubs for 48–72h fast delivery"
     },
     "color_palette": [
       "Forest Moss",
@@ -12458,7 +13542,7 @@
       "fine art giclee",
       "sustainable wall art"
     ],
-    "social_ad_caption": "Elevate your sanctuary with 'Antique Botanical & Herbarium - Heirloom citrus branches No. 7'. Museum-grade archival paper and handcrafted solid oak frames. \ud83d\ude9a Fast 72-hour domestic shipping.",
+    "social_ad_caption": "Elevate your sanctuary with 'Antique Botanical & Herbarium - Heirloom citrus branches No. 7'. Museum-grade archival paper and handcrafted solid oak frames. 🚚 Fast 72-hour domestic shipping.",
     "starting_price": 26.0,
     "max_price": 148.0,
     "hero_price": 110.0,
@@ -12736,10 +13820,10 @@
     "story_and_concept": "Created to reflect the calming balance of Mid-Century Bauhaus & Modernism, combining Deep Cobalt, Burnt Vermilion, Mustard Yellow, Matte Black, Warm Parchment tones to anchor modern interiors with refined elegance.",
     "styling_tips": "Ideal as a statement hero piece above a sofa or headboard. Harmonizes beautifully with neutral boucle fabrics, natural wood accents, and warm ambient lighting.",
     "specifications": {
-      "paper": "Museum-grade 200\u2013250 gsm heavyweight archival matte paper",
+      "paper": "Museum-grade 200–250 gsm heavyweight archival matte paper",
       "framing": "Sustainably sourced FSC-certified solid natural oak and pine",
-      "printing": "12-color Gicl\u00e9e pigment printing with 100+ year anti-fade warranty",
-      "fulfillment": "Locally printed and hand-framed across 32 regional global hubs for 48\u201372h fast delivery"
+      "printing": "12-color Giclée pigment printing with 100+ year anti-fade warranty",
+      "fulfillment": "Locally printed and hand-framed across 32 regional global hubs for 48–72h fast delivery"
     },
     "color_palette": [
       "Deep Cobalt",
@@ -12761,7 +13845,7 @@
       "fine art giclee",
       "sustainable wall art"
     ],
-    "social_ad_caption": "Elevate your sanctuary with 'Mid-Century Bauhaus & Modernism - Intersecting geometric quadrants No. 7'. Museum-grade archival paper and handcrafted solid oak frames. \ud83d\ude9a Fast 72-hour domestic shipping.",
+    "social_ad_caption": "Elevate your sanctuary with 'Mid-Century Bauhaus & Modernism - Intersecting geometric quadrants No. 7'. Museum-grade archival paper and handcrafted solid oak frames. 🚚 Fast 72-hour domestic shipping.",
     "starting_price": 26.0,
     "max_price": 148.0,
     "hero_price": 110.0,
@@ -13039,10 +14123,10 @@
     "story_and_concept": "Created to reflect the calming balance of Japandi & Wabi-Sabi Minimalism, combining Terracotta, Warm Ochre, Charcoal Slate, Muted Sage, Raw Linen, Sandstone tones to anchor modern interiors with refined elegance.",
     "styling_tips": "Ideal as a statement hero piece above a sofa or headboard. Harmonizes beautifully with neutral boucle fabrics, natural wood accents, and warm ambient lighting.",
     "specifications": {
-      "paper": "Museum-grade 200\u2013250 gsm heavyweight archival matte paper",
+      "paper": "Museum-grade 200–250 gsm heavyweight archival matte paper",
       "framing": "Sustainably sourced FSC-certified solid natural oak and pine",
-      "printing": "12-color Gicl\u00e9e pigment printing with 100+ year anti-fade warranty",
-      "fulfillment": "Locally printed and hand-framed across 32 regional global hubs for 48\u201372h fast delivery"
+      "printing": "12-color Giclée pigment printing with 100+ year anti-fade warranty",
+      "fulfillment": "Locally printed and hand-framed across 32 regional global hubs for 48–72h fast delivery"
     },
     "color_palette": [
       "Terracotta",
@@ -13065,7 +14149,7 @@
       "fine art giclee",
       "sustainable wall art"
     ],
-    "social_ad_caption": "Elevate your sanctuary with 'Japandi & Wabi-Sabi Minimalism - Abstract Zen brushwork No. 10'. Museum-grade archival paper and handcrafted solid oak frames. \ud83d\ude9a Fast 72-hour domestic shipping.",
+    "social_ad_caption": "Elevate your sanctuary with 'Japandi & Wabi-Sabi Minimalism - Abstract Zen brushwork No. 10'. Museum-grade archival paper and handcrafted solid oak frames. 🚚 Fast 72-hour domestic shipping.",
     "starting_price": 26.0,
     "max_price": 148.0,
     "hero_price": 110.0,
@@ -13343,10 +14427,10 @@
     "story_and_concept": "Created to reflect the calming balance of Japandi & Wabi-Sabi Minimalism, combining Terracotta, Warm Ochre, Charcoal Slate, Muted Sage, Raw Linen, Sandstone tones to anchor modern interiors with refined elegance.",
     "styling_tips": "Ideal as a statement hero piece above a sofa or headboard. Harmonizes beautifully with neutral boucle fabrics, natural wood accents, and warm ambient lighting.",
     "specifications": {
-      "paper": "Museum-grade 200\u2013250 gsm heavyweight archival matte paper",
+      "paper": "Museum-grade 200–250 gsm heavyweight archival matte paper",
       "framing": "Sustainably sourced FSC-certified solid natural oak and pine",
-      "printing": "12-color Gicl\u00e9e pigment printing with 100+ year anti-fade warranty",
-      "fulfillment": "Locally printed and hand-framed across 32 regional global hubs for 48\u201372h fast delivery"
+      "printing": "12-color Giclée pigment printing with 100+ year anti-fade warranty",
+      "fulfillment": "Locally printed and hand-framed across 32 regional global hubs for 48–72h fast delivery"
     },
     "color_palette": [
       "Terracotta",
@@ -13369,7 +14453,7 @@
       "fine art giclee",
       "sustainable wall art"
     ],
-    "social_ad_caption": "Elevate your sanctuary with 'Japandi & Wabi-Sabi Minimalism - Abstract Zen brushwork No. 11'. Museum-grade archival paper and handcrafted solid oak frames. \ud83d\ude9a Fast 72-hour domestic shipping.",
+    "social_ad_caption": "Elevate your sanctuary with 'Japandi & Wabi-Sabi Minimalism - Abstract Zen brushwork No. 11'. Museum-grade archival paper and handcrafted solid oak frames. 🚚 Fast 72-hour domestic shipping.",
     "starting_price": 26.0,
     "max_price": 148.0,
     "hero_price": 110.0,
@@ -13647,10 +14731,10 @@
     "story_and_concept": "Created to reflect the calming balance of Mid-Century Bauhaus & Modernism, combining Deep Cobalt, Burnt Vermilion, Mustard Yellow, Matte Black, Warm Parchment tones to anchor modern interiors with refined elegance.",
     "styling_tips": "Ideal as a statement hero piece above a sofa or headboard. Harmonizes beautifully with neutral boucle fabrics, natural wood accents, and warm ambient lighting.",
     "specifications": {
-      "paper": "Museum-grade 200\u2013250 gsm heavyweight archival matte paper",
+      "paper": "Museum-grade 200–250 gsm heavyweight archival matte paper",
       "framing": "Sustainably sourced FSC-certified solid natural oak and pine",
-      "printing": "12-color Gicl\u00e9e pigment printing with 100+ year anti-fade warranty",
-      "fulfillment": "Locally printed and hand-framed across 32 regional global hubs for 48\u201372h fast delivery"
+      "printing": "12-color Giclée pigment printing with 100+ year anti-fade warranty",
+      "fulfillment": "Locally printed and hand-framed across 32 regional global hubs for 48–72h fast delivery"
     },
     "color_palette": [
       "Deep Cobalt",
@@ -13672,7 +14756,7 @@
       "fine art giclee",
       "sustainable wall art"
     ],
-    "social_ad_caption": "Elevate your sanctuary with 'Mid-Century Bauhaus & Modernism - Curved constructivist arches No. 11'. Museum-grade archival paper and handcrafted solid oak frames. \ud83d\ude9a Fast 72-hour domestic shipping.",
+    "social_ad_caption": "Elevate your sanctuary with 'Mid-Century Bauhaus & Modernism - Curved constructivist arches No. 11'. Museum-grade archival paper and handcrafted solid oak frames. 🚚 Fast 72-hour domestic shipping.",
     "starting_price": 26.0,
     "max_price": 148.0,
     "hero_price": 110.0,
@@ -13950,10 +15034,10 @@
     "story_and_concept": "Created to reflect the calming balance of Japandi & Wabi-Sabi Minimalism, combining Terracotta, Warm Ochre, Charcoal Slate, Muted Sage, Raw Linen, Sandstone tones to anchor modern interiors with refined elegance.",
     "styling_tips": "Ideal as a statement hero piece above a sofa or headboard. Harmonizes beautifully with neutral boucle fabrics, natural wood accents, and warm ambient lighting.",
     "specifications": {
-      "paper": "Museum-grade 200\u2013250 gsm heavyweight archival matte paper",
+      "paper": "Museum-grade 200–250 gsm heavyweight archival matte paper",
       "framing": "Sustainably sourced FSC-certified solid natural oak and pine",
-      "printing": "12-color Gicl\u00e9e pigment printing with 100+ year anti-fade warranty",
-      "fulfillment": "Locally printed and hand-framed across 32 regional global hubs for 48\u201372h fast delivery"
+      "printing": "12-color Giclée pigment printing with 100+ year anti-fade warranty",
+      "fulfillment": "Locally printed and hand-framed across 32 regional global hubs for 48–72h fast delivery"
     },
     "color_palette": [
       "Terracotta",
@@ -13976,7 +15060,7 @@
       "fine art giclee",
       "sustainable wall art"
     ],
-    "social_ad_caption": "Elevate your sanctuary with 'Japandi & Wabi-Sabi Minimalism - Botanical branch shadows No. 5'. Museum-grade archival paper and handcrafted solid oak frames. \ud83d\ude9a Fast 72-hour domestic shipping.",
+    "social_ad_caption": "Elevate your sanctuary with 'Japandi & Wabi-Sabi Minimalism - Botanical branch shadows No. 5'. Museum-grade archival paper and handcrafted solid oak frames. 🚚 Fast 72-hour domestic shipping.",
     "starting_price": 26.0,
     "max_price": 148.0,
     "hero_price": 110.0,
@@ -14254,10 +15338,10 @@
     "story_and_concept": "Created to reflect the calming balance of Dark Academia & Textured Renaissance, combining Deep Obsidian, Burnished Gold, Burgundy Wine, Espresso Umber, Smoky Indigo tones to anchor modern interiors with refined elegance.",
     "styling_tips": "Ideal as a statement hero piece above a sofa or headboard. Harmonizes beautifully with neutral boucle fabrics, natural wood accents, and warm ambient lighting.",
     "specifications": {
-      "paper": "Museum-grade 200\u2013250 gsm heavyweight archival matte paper",
+      "paper": "Museum-grade 200–250 gsm heavyweight archival matte paper",
       "framing": "Sustainably sourced FSC-certified solid natural oak and pine",
-      "printing": "12-color Gicl\u00e9e pigment printing with 100+ year anti-fade warranty",
-      "fulfillment": "Locally printed and hand-framed across 32 regional global hubs for 48\u201372h fast delivery"
+      "printing": "12-color Giclée pigment printing with 100+ year anti-fade warranty",
+      "fulfillment": "Locally printed and hand-framed across 32 regional global hubs for 48–72h fast delivery"
     },
     "color_palette": [
       "Deep Obsidian",
@@ -14279,7 +15363,7 @@
       "fine art giclee",
       "sustainable wall art"
     ],
-    "social_ad_caption": "Elevate your sanctuary with 'Dark Academia & Textured Renaissance - Atmospheric misty mountain pines No. 5'. Museum-grade archival paper and handcrafted solid oak frames. \ud83d\ude9a Fast 72-hour domestic shipping.",
+    "social_ad_caption": "Elevate your sanctuary with 'Dark Academia & Textured Renaissance - Atmospheric misty mountain pines No. 5'. Museum-grade archival paper and handcrafted solid oak frames. 🚚 Fast 72-hour domestic shipping.",
     "starting_price": 26.0,
     "max_price": 148.0,
     "hero_price": 110.0,
@@ -14557,10 +15641,10 @@
     "story_and_concept": "Created to reflect the calming balance of Mediterranean Terracotta & Coastal Ease, combining Amalfi Ultramarine, Terracotta Clay, Olive Green, Sunlit Limewash, Warm Sand tones to anchor modern interiors with refined elegance.",
     "styling_tips": "Ideal as a statement hero piece above a sofa or headboard. Harmonizes beautifully with neutral boucle fabrics, natural wood accents, and warm ambient lighting.",
     "specifications": {
-      "paper": "Museum-grade 200\u2013250 gsm heavyweight archival matte paper",
+      "paper": "Museum-grade 200–250 gsm heavyweight archival matte paper",
       "framing": "Sustainably sourced FSC-certified solid natural oak and pine",
-      "printing": "12-color Gicl\u00e9e pigment printing with 100+ year anti-fade warranty",
-      "fulfillment": "Locally printed and hand-framed across 32 regional global hubs for 48\u201372h fast delivery"
+      "printing": "12-color Giclée pigment printing with 100+ year anti-fade warranty",
+      "fulfillment": "Locally printed and hand-framed across 32 regional global hubs for 48–72h fast delivery"
     },
     "color_palette": [
       "Amalfi Ultramarine",
@@ -14582,7 +15666,7 @@
       "fine art giclee",
       "sustainable wall art"
     ],
-    "social_ad_caption": "Elevate your sanctuary with 'Mediterranean Terracotta & Coastal Ease - Terracotta pottery with olive twigs No. 7'. Museum-grade archival paper and handcrafted solid oak frames. \ud83d\ude9a Fast 72-hour domestic shipping.",
+    "social_ad_caption": "Elevate your sanctuary with 'Mediterranean Terracotta & Coastal Ease - Terracotta pottery with olive twigs No. 7'. Museum-grade archival paper and handcrafted solid oak frames. 🚚 Fast 72-hour domestic shipping.",
     "starting_price": 26.0,
     "max_price": 148.0,
     "hero_price": 110.0,
@@ -14860,10 +15944,10 @@
     "story_and_concept": "Created to reflect the calming balance of Antique Botanical & Herbarium, combining Forest Moss, Eucalyptus Green, Antique Sepia, Old Ivory, Dried Rose tones to anchor modern interiors with refined elegance.",
     "styling_tips": "Ideal as a statement hero piece above a sofa or headboard. Harmonizes beautifully with neutral boucle fabrics, natural wood accents, and warm ambient lighting.",
     "specifications": {
-      "paper": "Museum-grade 200\u2013250 gsm heavyweight archival matte paper",
+      "paper": "Museum-grade 200–250 gsm heavyweight archival matte paper",
       "framing": "Sustainably sourced FSC-certified solid natural oak and pine",
-      "printing": "12-color Gicl\u00e9e pigment printing with 100+ year anti-fade warranty",
-      "fulfillment": "Locally printed and hand-framed across 32 regional global hubs for 48\u201372h fast delivery"
+      "printing": "12-color Giclée pigment printing with 100+ year anti-fade warranty",
+      "fulfillment": "Locally printed and hand-framed across 32 regional global hubs for 48–72h fast delivery"
     },
     "color_palette": [
       "Forest Moss",
@@ -14885,7 +15969,7 @@
       "fine art giclee",
       "sustainable wall art"
     ],
-    "social_ad_caption": "Elevate your sanctuary with 'Antique Botanical & Herbarium - Heirloom citrus branches No. 1'. Museum-grade archival paper and handcrafted solid oak frames. \ud83d\ude9a Fast 72-hour domestic shipping.",
+    "social_ad_caption": "Elevate your sanctuary with 'Antique Botanical & Herbarium - Heirloom citrus branches No. 1'. Museum-grade archival paper and handcrafted solid oak frames. 🚚 Fast 72-hour domestic shipping.",
     "starting_price": 26.0,
     "max_price": 148.0,
     "hero_price": 110.0,
@@ -15163,10 +16247,10 @@
     "story_and_concept": "Created to reflect the calming balance of Mid-Century Bauhaus & Modernism, combining Deep Cobalt, Burnt Vermilion, Mustard Yellow, Matte Black, Warm Parchment tones to anchor modern interiors with refined elegance.",
     "styling_tips": "Ideal as a statement hero piece above a sofa or headboard. Harmonizes beautifully with neutral boucle fabrics, natural wood accents, and warm ambient lighting.",
     "specifications": {
-      "paper": "Museum-grade 200\u2013250 gsm heavyweight archival matte paper",
+      "paper": "Museum-grade 200–250 gsm heavyweight archival matte paper",
       "framing": "Sustainably sourced FSC-certified solid natural oak and pine",
-      "printing": "12-color Gicl\u00e9e pigment printing with 100+ year anti-fade warranty",
-      "fulfillment": "Locally printed and hand-framed across 32 regional global hubs for 48\u201372h fast delivery"
+      "printing": "12-color Giclée pigment printing with 100+ year anti-fade warranty",
+      "fulfillment": "Locally printed and hand-framed across 32 regional global hubs for 48–72h fast delivery"
     },
     "color_palette": [
       "Deep Cobalt",
@@ -15188,7 +16272,7 @@
       "fine art giclee",
       "sustainable wall art"
     ],
-    "social_ad_caption": "Elevate your sanctuary with 'Mid-Century Bauhaus & Modernism - Intersecting geometric quadrants No. 2'. Museum-grade archival paper and handcrafted solid oak frames. \ud83d\ude9a Fast 72-hour domestic shipping.",
+    "social_ad_caption": "Elevate your sanctuary with 'Mid-Century Bauhaus & Modernism - Intersecting geometric quadrants No. 2'. Museum-grade archival paper and handcrafted solid oak frames. 🚚 Fast 72-hour domestic shipping.",
     "starting_price": 26.0,
     "max_price": 148.0,
     "hero_price": 110.0,
@@ -15466,10 +16550,10 @@
     "story_and_concept": "Created to reflect the calming balance of Japandi & Wabi-Sabi Minimalism, combining Terracotta, Warm Ochre, Charcoal Slate, Muted Sage, Raw Linen, Sandstone tones to anchor modern interiors with refined elegance.",
     "styling_tips": "Ideal as a statement hero piece above a sofa or headboard. Harmonizes beautifully with neutral boucle fabrics, natural wood accents, and warm ambient lighting.",
     "specifications": {
-      "paper": "Museum-grade 200\u2013250 gsm heavyweight archival matte paper",
+      "paper": "Museum-grade 200–250 gsm heavyweight archival matte paper",
       "framing": "Sustainably sourced FSC-certified solid natural oak and pine",
-      "printing": "12-color Gicl\u00e9e pigment printing with 100+ year anti-fade warranty",
-      "fulfillment": "Locally printed and hand-framed across 32 regional global hubs for 48\u201372h fast delivery"
+      "printing": "12-color Giclée pigment printing with 100+ year anti-fade warranty",
+      "fulfillment": "Locally printed and hand-framed across 32 regional global hubs for 48–72h fast delivery"
     },
     "color_palette": [
       "Terracotta",
@@ -15492,7 +16576,7 @@
       "fine art giclee",
       "sustainable wall art"
     ],
-    "social_ad_caption": "Elevate your sanctuary with 'Japandi & Wabi-Sabi Minimalism - Organic textured stone arches No. 5'. Museum-grade archival paper and handcrafted solid oak frames. \ud83d\ude9a Fast 72-hour domestic shipping.",
+    "social_ad_caption": "Elevate your sanctuary with 'Japandi & Wabi-Sabi Minimalism - Organic textured stone arches No. 5'. Museum-grade archival paper and handcrafted solid oak frames. 🚚 Fast 72-hour domestic shipping.",
     "starting_price": 26.0,
     "max_price": 148.0,
     "hero_price": 110.0,

@@ -94,7 +94,7 @@ async def google_verification():
     return Response(content="google-site-verification: googleedeef9195d589a72.html", media_type="text/html")
 
 @app.get("/pinterest-catalog.csv")
-async def pinterest_catalog():
+async def pinterest_catalog(currency: str = "EUR"):
     """Dynamically serves Pinterest Merchant Product Catalog CSV for 100% automated pin creation."""
     import csv, io
     catalog = get_catalog()
@@ -102,6 +102,7 @@ async def pinterest_catalog():
     writer = csv.writer(output)
     writer.writerow(["id", "title", "description", "link", "image_link", "price", "availability", "condition", "brand", "google_product_category", "product_type"])
     base_url = "https://www.oakprintstudio.com"
+    curr = currency.upper()
     for p in catalog:
         pid = p.get("id")
         title = p.get("title", "")
@@ -110,7 +111,7 @@ async def pinterest_catalog():
         hero_img = p.get("images", {}).get("hero", "")
         img_link = f"{base_url}{hero_img}" if hero_img.startswith("/") else hero_img
         st_price = float(p.get("starting_price", 26.0))
-        price = f"{st_price:.2f} USD"
+        price = f"{st_price:.2f} {curr}"
         category = "Home & Garden > Decor > Artwork > Posters, Prints, & Visual Artwork"
         ptype = p.get("aesthetic_name", "Fine Art")
         writer.writerow([pid, title, desc, link, img_link, price, "in stock", "new", "Oak Print Studio", category, ptype])
