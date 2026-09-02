@@ -1,6 +1,6 @@
 {% extends "base.html" %}
 
-{% block title %}Order Confirmed | ATELIER & CANVAS{% endblock %}
+{% block title %}Order Confirmed | OAK PRINT STUDIO{% endblock %}
 
 {% block content %}
 <div class="max-w-3xl mx-auto px-6 py-20">
@@ -11,7 +11,7 @@
     </div>
 
     <div class="space-y-2">
-      <span class="text-xs uppercase tracking-[0.2em] font-bold text-[#C66B4D]">Payment Received</span>
+      <span class="text-xs uppercase tracking-[0.2em] font-bold text-[#B8834E]">Payment Received</span>
       <h1 class="font-['Cormorant_Garamond'] text-4xl sm:text-5xl font-bold text-[#1C1C1E]">
         Your Fine Art Print is in Production
       </h1>
@@ -40,18 +40,18 @@
           <span><strong>Fulfillment Webhook Triggered:</strong> Sent print-ready 300 DPI master file to Gelato.</span>
         </div>
         <div class="flex items-center gap-3">
-          <i data-lucide="printer" class="w-4 h-4 text-[#C66B4D]"></i>
-          <span><strong>Local Production:</strong> 12-color archival Giclée print & handcrafted framing in progress.</span>
+          <i data-lucide="printer" class="w-4 h-4 text-[#B8834E]"></i>
+          <span><strong>Local Production:</strong> 12-color archival Giclée print &amp; handcrafted solid wood framing in progress.</span>
         </div>
         <div class="flex items-center gap-3">
           <i data-lucide="truck" class="w-4 h-4 text-[#7A756D]"></i>
-          <span><strong>Estimated Delivery:</strong> 2–3 business days with trackable courier.</span>
+          <span><strong>Estimated Delivery:</strong> 2–3 business days with trackable local courier.</span>
         </div>
       </div>
     </div>
 
     <div class="pt-4 flex flex-col sm:flex-row items-center justify-center gap-4">
-      <a href="/" class="w-full sm:w-auto bg-[#1C1C1E] hover:bg-[#C66B4D] text-white px-8 py-3.5 rounded-lg font-semibold tracking-wide transition">
+      <a href="/" class="w-full sm:w-auto bg-[#1C1C1E] hover:bg-[#B8834E] text-white px-8 py-3.5 rounded-lg font-semibold tracking-wide transition shadow-sm hover:shadow-md">
         Return to Gallery
       </a>
       <a href="https://tracking.gelato.com/view/{{ order_ref }}" target="_blank" class="w-full sm:w-auto border border-[#1C1C1E] hover:bg-[#FAF8F5] text-[#1C1C1E] px-8 py-3.5 rounded-lg font-semibold tracking-wide transition inline-flex items-center justify-center gap-2">

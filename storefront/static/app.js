@@ -1,4 +1,4 @@
-// Atelier & Canvas - Interactive Storefront Logic
+// OAK PRINT STUDIO - Interactive Storefront Logic
 
 document.addEventListener('DOMContentLoaded', () => {
   initLucideIcons();
@@ -259,10 +259,10 @@ function initProductConfigurator() {
 // 3. Slide-Out Shopping Bag Drawer & State Management
 const Cart = {
   get items() {
-    return JSON.parse(localStorage.getItem('atelier_cart') || '[]');
+    return JSON.parse(localStorage.getItem('oakprintstudio_cart') || localStorage.getItem('atelier_cart') || '[]');
   },
   set items(val) {
-    localStorage.setItem('atelier_cart', JSON.stringify(val));
+    localStorage.setItem('oakprintstudio_cart', JSON.stringify(val));
     updateCartUI();
   },
   addItem(newItem) {

@@ -1,4 +1,4 @@
-/* Custom Luxury Styles for Atelier & Canvas */
+/* Custom Luxury Styles for OAK PRINT STUDIO */
 
 html {
   scroll-behavior: smooth;
@@ -21,20 +21,21 @@ body {
   border-radius: 3px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #C66B4D;
+  background: #B8834E;
 }
 
 /* Thumbnail Button Selection */
 .thumb-btn.active {
   border-color: #1C1C1E !important;
-  box-shadow: 0 0 0 2px rgba(28, 28, 30, 0.2);
+  box-shadow: 0 0 0 2px rgba(184, 131, 78, 0.35);
 }
 
 /* Frame Button Selection */
 .frame-opt-btn.active {
   border-color: #1C1C1E !important;
   border-width: 2px !important;
-  background-color: #F3ECE2 !important;
+  background-color: #F7F1E8 !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
 }
 
 /* Category Filter Active State */
@@ -44,11 +45,22 @@ body {
   border-color: #1C1C1E !important;
 }
 
+/* Product Card Tactile Hover */
+.product-card {
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.3s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-4px);
+  border-color: #D8CEBE;
+  box-shadow: 0 16px 32px -8px rgba(28, 27, 24, 0.08);
+}
+
 /* Subtle image transitions */
 #main-view-image {
   transition: transform 0.4s ease, opacity 0.3s ease;
 }
 
 #main-view-image:hover {
-  transform: scale(1.02);
+  transform: scale(1.015);
 }
