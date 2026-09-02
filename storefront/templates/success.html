@@ -62,4 +62,13 @@
 
   </div>
 </div>
+
+<script>
+  if (window.pintrk) {
+    pintrk('track', 'checkout', {
+      order_id: '{{ order_ref }}',
+      currency: 'USD'
+    });
+  }
+</script>
 {% endblock %}
