@@ -88,6 +88,19 @@ async def robots():
     robots_content = seo_indexer_agent.generate_robots_txt()
     return Response(content=robots_content, media_type="text/plain")
 
+@app.get("/api/health")
+async def health_check():
+    """Diagnostic health check to verify Gelato and Stripe integration status."""
+    is_gelato_active = bool(gelato_client.api_key and not gelato_client.is_mock_mode)
+    return JSONResponse(content={
+        "status": "healthy",
+        "store": "OAK PRINT STUDIO",
+        "domain": "oakprintstudio.com",
+        "gelato_connected": is_gelato_active,
+        "gelato_mode": "LIVE" if is_gelato_active else "MOCK_FALLBACK",
+        "stripe_mode": "LIVE" if is_stripe_live else "TEST_MODE"
+    })
+
 
 # --- Stripe & Checkout Layer ---
 
