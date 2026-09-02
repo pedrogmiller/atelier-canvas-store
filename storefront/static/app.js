@@ -274,6 +274,14 @@ const Cart = {
       list.push(newItem);
     }
     this.items = list;
+    if (window.pintrk) {
+      window.pintrk('track', 'addtocart', {
+        value: newItem.price,
+        order_quantity: 1,
+        currency: 'USD',
+        product_id: newItem.product_id
+      });
+    }
   },
   removeItem(index) {
     const list = this.items;
