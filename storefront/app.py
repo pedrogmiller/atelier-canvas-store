@@ -88,6 +88,11 @@ async def robots():
     robots_content = seo_indexer_agent.generate_robots_txt()
     return Response(content=robots_content, media_type="text/plain")
 
+@app.get("/googleedeef9195d589a72.html")
+async def google_verification():
+    """Serves Google Search Console ownership verification file."""
+    return Response(content="google-site-verification: googleedeef9195d589a72.html", media_type="text/html")
+
 recent_pings: List[Dict[str, str]] = []
 
 @app.get("/api/health")
