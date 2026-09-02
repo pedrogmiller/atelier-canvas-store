@@ -28,7 +28,7 @@ templates = Jinja2Templates(directory=str(settings.storefront_dir / "templates")
 
 # Setup Stripe
 stripe.api_key = settings.stripe_secret_key
-is_stripe_live = bool(settings.stripe_secret_key and not settings.stripe_secret_key.startswith("sk_test_mock"))
+is_stripe_live = bool(settings.stripe_secret_key and settings.stripe_secret_key.startswith("sk_live_"))
 
 def get_catalog() -> List[Dict[str, Any]]:
     """Loads current live product catalog from catalog.json."""
@@ -108,13 +108,14 @@ async def health_check(request: Request):
         recent_pings.pop(0)
 
     is_gelato_active = bool(gelato_client.api_key and not gelato_client.is_mock_mode)
+    stripe_key_type = "LIVE" if is_stripe_live else ("TEST_SANDBOX" if settings.stripe_secret_key.startswith("sk_test_") else "MOCK")
     return JSONResponse(content={
         "status": "healthy",
         "store": "OAK PRINT STUDIO",
         "domain": "oakprintstudio.com",
         "gelato_connected": is_gelato_active,
         "gelato_mode": "LIVE" if is_gelato_active else "MOCK_FALLBACK",
-        "stripe_mode": "LIVE" if is_stripe_live else "TEST_MODE",
+        "stripe_mode": stripe_key_type,
         "recent_pings": recent_pings
     })
 
