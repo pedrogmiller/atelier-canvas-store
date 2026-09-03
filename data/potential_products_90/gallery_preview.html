@@ -1,0 +1,2276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Oak Print Studio — 90 Candidate Art Products Vault</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Plus Jakarta Sans', sans-serif; background: #FAF8F5; }
+  </style>
+</head>
+<body class="p-4 sm:p-8 md:p-12 text-[#1C1C1E]">
+
+  <!-- Header -->
+  <header class="max-w-7xl mx-auto mb-8 pb-6 border-b border-[#E8E3DA] flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
+    <div>
+      <div class="flex items-center gap-2 mb-2">
+        <span class="text-[10px] font-bold uppercase tracking-widest bg-[#1C1C1E] text-white px-2.5 py-0.5 rounded-full">Concept Vault</span>
+        <span class="text-xs text-[#7A756D] font-medium">Authentic 2D Fine Art Prints</span>
+      </div>
+      <h1 class="text-3xl sm:text-4xl font-bold text-[#1C1C1E]">90 Candidate Art Products</h1>
+      <p class="text-xs sm:text-sm text-[#7A756D] mt-1 max-w-2xl">
+        All 90 fine art designs grounded in our Trend Scout Intelligence Report. Click any image to view full size. Check the items you love and click <strong>Copy Selected List</strong> to send them to me!
+      </p>
+    </div>
+
+    <!-- Sticky Counter & Batch Copy -->
+    <div class="bg-white p-3 sm:p-4 rounded-xl shadow border border-[#E8E3DA] flex items-center gap-4">
+      <div>
+        <span class="text-[10px] text-[#7A756D] block uppercase font-bold tracking-wider">Bookmarked</span>
+        <span id="selected-count" class="text-xl sm:text-2xl font-bold text-[#B8834E]">0 / 90</span>
+      </div>
+      <button onclick="copySelectedList()" class="bg-[#1C1C1E] hover:bg-[#B8834E] text-white text-xs font-bold px-4 py-2.5 rounded-lg transition shadow cursor-pointer">
+        Copy Selected List
+      </button>
+    </div>
+  </header>
+
+  <!-- Filter Tabs -->
+  <div class="max-w-7xl mx-auto mb-8 flex flex-wrap gap-2">
+    <button onclick="filterCategory('all', this)" class="filter-btn active bg-[#1C1C1E] text-white px-3.5 py-1.5 rounded-lg text-xs font-bold transition">All (90)</button>
+    <button onclick="filterCategory('japandi', this)" class="filter-btn bg-white hover:bg-[#E8E3DA] text-[#1C1C1E] border border-[#E8E3DA] px-3.5 py-1.5 rounded-lg text-xs font-bold transition">Japandi & Wabi-Sabi (18)</button>
+    <button onclick="filterCategory('botanical', this)" class="filter-btn bg-white hover:bg-[#E8E3DA] text-[#1C1C1E] border border-[#E8E3DA] px-3.5 py-1.5 rounded-lg text-xs font-bold transition">Mediterranean Botanicals (18)</button>
+    <button onclick="filterCategory('riviera', this)" class="filter-btn bg-white hover:bg-[#E8E3DA] text-[#1C1C1E] border border-[#E8E3DA] px-3.5 py-1.5 rounded-lg text-xs font-bold transition">French Riviera & Salon (18)</button>
+    <button onclick="filterCategory('bauhaus', this)" class="filter-btn bg-white hover:bg-[#E8E3DA] text-[#1C1C1E] border border-[#E8E3DA] px-3.5 py-1.5 rounded-lg text-xs font-bold transition">Bauhaus Constructivism (18)</button>
+    <button onclick="filterCategory('landscape', this)" class="filter-btn bg-white hover:bg-[#E8E3DA] text-[#1C1C1E] border border-[#E8E3DA] px-3.5 py-1.5 rounded-lg text-xs font-bold transition">Atmospheric Landscapes (18)</button>
+  </div>
+
+  <!-- Grid of 90 Products -->
+  <main class="max-w-7xl mx-auto grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4 sm:gap-5">
+    
+    <div class="product-card bg-white rounded-xl overflow-hidden border border-[#E8E3DA] shadow-sm hover:shadow-md transition flex flex-col justify-between" data-cat="japandi" data-file="01_japandi_sora_enso_charcoal_meditation.png">
+      <div class="relative aspect-[3/4] bg-[#FAF8F5] overflow-hidden group cursor-pointer" onclick="openModal('01_japandi_sora_enso_charcoal_meditation.png', 'Sora Enso Charcoal Meditation')">
+        <img src="01_japandi_sora_enso_charcoal_meditation.png" alt="Sora Enso Charcoal Meditation" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+        <span class="absolute top-2 left-2 bg-black/75 text-white text-[10px] font-bold px-2 py-0.5 rounded shadow">#01</span>
+        <span class="absolute top-2 right-2 text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded shadow-sm bg-[#EFE8DE] text-[#8C6D4F]">japandi</span>
+      </div>
+      <div class="p-3.5 flex flex-col justify-between flex-grow gap-2">
+        <div>
+          <h3 class="font-bold text-sm sm:text-base text-[#1C1C1E] leading-tight">Sora Enso Charcoal Meditation</h3>
+          <p class="text-[10px] text-[#7A756D] font-mono mt-1 break-all select-all">01_japandi_sora_enso_charcoal_meditation.png</p>
+        </div>
+        <div class="flex items-center justify-between pt-2 border-t border-[#F0EBE3]">
+          <label class="flex items-center gap-1.5 text-xs text-[#1C1C1E] cursor-pointer font-semibold">
+            <input type="checkbox" class="product-checkbox rounded text-[#B8834E] focus:ring-0 w-4 h-4 cursor-pointer" value="01_japandi_sora_enso_charcoal_meditation.png" onchange="updateCount()">
+            <span>Select</span>
+          </label>
+          <button onclick="copyName('01_japandi_sora_enso_charcoal_meditation.png', this)" class="text-[11px] font-bold text-[#B8834E] hover:underline cursor-pointer">
+            Copy File
+          </button>
+        </div>
+      </div>
+    </div>
+    
+
+    <div class="product-card bg-white rounded-xl overflow-hidden border border-[#E8E3DA] shadow-sm hover:shadow-md transition flex flex-col justify-between" data-cat="japandi" data-file="02_japandi_komorebi_plaster_arch_no_1.png">
+      <div class="relative aspect-[3/4] bg-[#FAF8F5] overflow-hidden group cursor-pointer" onclick="openModal('02_japandi_komorebi_plaster_arch_no_1.png', 'Komorebi Plaster Arch No 1')">
+        <img src="02_japandi_komorebi_plaster_arch_no_1.png" alt="Komorebi Plaster Arch No 1" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+        <span class="absolute top-2 left-2 bg-black/75 text-white text-[10px] font-bold px-2 py-0.5 rounded shadow">#02</span>
+        <span class="absolute top-2 right-2 text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded shadow-sm bg-[#EFE8DE] text-[#8C6D4F]">japandi</span>
+      </div>
+      <div class="p-3.5 flex flex-col justify-between flex-grow gap-2">
+        <div>
+          <h3 class="font-bold text-sm sm:text-base text-[#1C1C1E] leading-tight">Komorebi Plaster Arch No 1</h3>
+          <p class="text-[10px] text-[#7A756D] font-mono mt-1 break-all select-all">02_japandi_komorebi_plaster_arch_no_1.png</p>
+        </div>
+        <div class="flex items-center justify-between pt-2 border-t border-[#F0EBE3]">
+          <label class="flex items-center gap-1.5 text-xs text-[#1C1C1E] cursor-pointer font-semibold">
+            <input type="checkbox" class="product-checkbox rounded text-[#B8834E] focus:ring-0 w-4 h-4 cursor-pointer" value="02_japandi_komorebi_plaster_arch_no_1.png" onchange="updateCount()">
+            <span>Select</span>
+          </label>
+          <button onclick="copyName('02_japandi_komorebi_plaster_arch_no_1.png', this)" class="text-[11px] font-bold text-[#B8834E] hover:underline cursor-pointer">
+            Copy File
+          </button>
+        </div>
+      </div>
+    </div>
+    
+
+    <div class="product-card bg-white rounded-xl overflow-hidden border border-[#E8E3DA] shadow-sm hover:shadow-md transition flex flex-col justify-between" data-cat="japandi" data-file="03_japandi_wabi_river_stone_equilibrium.png">
+      <div class="relative aspect-[3/4] bg-[#FAF8F5] overflow-hidden group cursor-pointer" onclick="openModal('03_japandi_wabi_river_stone_equilibrium.png', 'Wabi River Stone Equilibrium')">
+        <img src="03_japandi_wabi_river_stone_equilibrium.png" alt="Wabi River Stone Equilibrium" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+        <span class="absolute top-2 left-2 bg-black/75 text-white text-[10px] font-bold px-2 py-0.5 rounded shadow">#03</span>
+        <span class="absolute top-2 right-2 text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded shadow-sm bg-[#EFE8DE] text-[#8C6D4F]">japandi</span>
+      </div>
+      <div class="p-3.5 flex flex-col justify-between flex-grow gap-2">
+        <div>
+          <h3 class="font-bold text-sm sm:text-base text-[#1C1C1E] leading-tight">Wabi River Stone Equilibrium</h3>
+          <p class="text-[10px] text-[#7A756D] font-mono mt-1 break-all select-all">03_japandi_wabi_river_stone_equilibrium.png</p>
+        </div>
+        <div class="flex items-center justify-between pt-2 border-t border-[#F0EBE3]">
+          <label class="flex items-center gap-1.5 text-xs text-[#1C1C1E] cursor-pointer font-semibold">
+            <input type="checkbox" class="product-checkbox rounded text-[#B8834E] focus:ring-0 w-4 h-4 cursor-pointer" value="03_japandi_wabi_river_stone_equilibrium.png" onchange="updateCount()">
+            <span>Select</span>
+          </label>
+          <button onclick="copyName('03_japandi_wabi_river_stone_equilibrium.png', this)" class="text-[11px] font-bold text-[#B8834E] hover:underline cursor-pointer">
+            Copy File
+          </button>
+        </div>
+      </div>
+    </div>
+    
+
+    <div class="product-card bg-white rounded-xl overflow-hidden border border-[#E8E3DA] shadow-sm hover:shadow-md transition flex flex-col justify-between" data-cat="japandi" data-file="04_japandi_kyoto_bamboo_wash_study.png">
+      <div class="relative aspect-[3/4] bg-[#FAF8F5] overflow-hidden group cursor-pointer" onclick="openModal('04_japandi_kyoto_bamboo_wash_study.png', 'Kyoto Bamboo Wash Study')">
+        <img src="04_japandi_kyoto_bamboo_wash_study.png" alt="Kyoto Bamboo Wash Study" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+        <span class="absolute top-2 left-2 bg-black/75 text-white text-[10px] font-bold px-2 py-0.5 rounded shadow">#04</span>
+        <span class="absolute top-2 right-2 text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded shadow-sm bg-[#EFE8DE] text-[#8C6D4F]">japandi</span>
+      </div>
+      <div class="p-3.5 flex flex-col justify-between flex-grow gap-2">
+        <div>
+          <h3 class="font-bold text-sm sm:text-base text-[#1C1C1E] leading-tight">Kyoto Bamboo Wash Study</h3>
+          <p class="text-[10px] text-[#7A756D] font-mono mt-1 break-all select-all">04_japandi_kyoto_bamboo_wash_study.png</p>
+        </div>
+        <div class="flex items-center justify-between pt-2 border-t border-[#F0EBE3]">
+          <label class="flex items-center gap-1.5 text-xs text-[#1C1C1E] cursor-pointer font-semibold">
+            <input type="checkbox" class="product-checkbox rounded text-[#B8834E] focus:ring-0 w-4 h-4 cursor-pointer" value="04_japandi_kyoto_bamboo_wash_study.png" onchange="updateCount()">
+            <span>Select</span>
+          </label>
+          <button onclick="copyName('04_japandi_kyoto_bamboo_wash_study.png', this)" class="text-[11px] font-bold text-[#B8834E] hover:underline cursor-pointer">
+            Copy File
+          </button>
+        </div>
+      </div>
+    </div>
+    
+
+    <div class="product-card bg-white rounded-xl overflow-hidden border border-[#E8E3DA] shadow-sm hover:shadow-md transition flex flex-col justify-between" data-cat="japandi" data-file="05_japandi_sandstone_crescent_and_full_moon.png">
+      <div class="relative aspect-[3/4] bg-[#FAF8F5] overflow-hidden group cursor-pointer" onclick="openModal('05_japandi_sandstone_crescent_and_full_moon.png', 'Sandstone Crescent And Full Moon')">
+        <img src="05_japandi_sandstone_crescent_and_full_moon.png" alt="Sandstone Crescent And Full Moon" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+        <span class="absolute top-2 left-2 bg-black/75 text-white text-[10px] font-bold px-2 py-0.5 rounded shadow">#05</span>
+        <span class="absolute top-2 right-2 text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded shadow-sm bg-[#EFE8DE] text-[#8C6D4F]">japandi</span>
+      </div>
+      <div class="p-3.5 flex flex-col justify-between flex-grow gap-2">
+        <div>
+          <h3 class="font-bold text-sm sm:text-base text-[#1C1C1E] leading-tight">Sandstone Crescent And Full Moon</h3>
+          <p class="text-[10px] text-[#7A756D] font-mono mt-1 break-all select-all">05_japandi_sandstone_crescent_and_full_moon.png</p>
+        </div>
+        <div class="flex items-center justify-between pt-2 border-t border-[#F0EBE3]">
+          <label class="flex items-center gap-1.5 text-xs text-[#1C1C1E] cursor-pointer font-semibold">
+            <input type="checkbox" class="product-checkbox rounded text-[#B8834E] focus:ring-0 w-4 h-4 cursor-pointer" value="05_japandi_sandstone_crescent_and_full_moon.png" onchange="updateCount()">
+            <span>Select</span>
+          </label>
+          <button onclick="copyName('05_japandi_sandstone_crescent_and_full_moon.png', this)" class="text-[11px] font-bold text-[#B8834E] hover:underline cursor-pointer">
+            Copy File
+          </button>
+        </div>
+      </div>
+    </div>
+    
+
+    <div class="product-card bg-white rounded-xl overflow-hidden border border-[#E8E3DA] shadow-sm hover:shadow-md transition flex flex-col justify-between" data-cat="japandi" data-file="06_japandi_asymmetrical_limewash_horizon.png">
+      <div class="relative aspect-[3/4] bg-[#FAF8F5] overflow-hidden group cursor-pointer" onclick="openModal('06_japandi_asymmetrical_limewash_horizon.png', 'Asymmetrical Limewash Horizon')">
+        <img src="06_japandi_asymmetrical_limewash_horizon.png" alt="Asymmetrical Limewash Horizon" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+        <span class="absolute top-2 left-2 bg-black/75 text-white text-[10px] font-bold px-2 py-0.5 rounded shadow">#06</span>
+        <span class="absolute top-2 right-2 text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded shadow-sm bg-[#EFE8DE] text-[#8C6D4F]">japandi</span>
+      </div>
+      <div class="p-3.5 flex flex-col justify-between flex-grow gap-2">
+        <div>
+          <h3 class="font-bold text-sm sm:text-base text-[#1C1C1E] leading-tight">Asymmetrical Limewash Horizon</h3>
+          <p class="text-[10px] text-[#7A756D] font-mono mt-1 break-all select-all">06_japandi_asymmetrical_limewash_horizon.png</p>
+        </div>
+        <div class="flex items-center justify-between pt-2 border-t border-[#F0EBE3]">
+          <label class="flex items-center gap-1.5 text-xs text-[#1C1C1E] cursor-pointer font-semibold">
+            <input type="checkbox" class="product-checkbox rounded text-[#B8834E] focus:ring-0 w-4 h-4 cursor-pointer" value="06_japandi_asymmetrical_limewash_horizon.png" onchange="updateCount()">
+            <span>Select</span>
+          </label>
+          <button onclick="copyName('06_japandi_asymmetrical_limewash_horizon.png', this)" class="text-[11px] font-bold text-[#B8834E] hover:underline cursor-pointer">
+            Copy File
+          </button>
+        </div>
+      </div>
+    </div>
+    
+
+    <div class="product-card bg-white rounded-xl overflow-hidden border border-[#E8E3DA] shadow-sm hover:shadow-md transition flex flex-col justify-between" data-cat="japandi" data-file="07_japandi_natsukashii_ochre_arc_study.png">
+      <div class="relative aspect-[3/4] bg-[#FAF8F5] overflow-hidden group cursor-pointer" onclick="openModal('07_japandi_natsukashii_ochre_arc_study.png', 'Natsukashii Ochre Arc Study')">
+        <img src="07_japandi_natsukashii_ochre_arc_study.png" alt="Natsukashii Ochre Arc Study" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+        <span class="absolute top-2 left-2 bg-black/75 text-white text-[10px] font-bold px-2 py-0.5 rounded shadow">#07</span>
+        <span class="absolute top-2 right-2 text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded shadow-sm bg-[#EFE8DE] text-[#8C6D4F]">japandi</span>
+      </div>
+      <div class="p-3.5 flex flex-col justify-between flex-grow gap-2">
+        <div>
+          <h3 class="font-bold text-sm sm:text-base text-[#1C1C1E] leading-tight">Natsukashii Ochre Arc Study</h3>
+          <p class="text-[10px] text-[#7A756D] font-mono mt-1 break-all select-all">07_japandi_natsukashii_ochre_arc_study.png</p>
+        </div>
+        <div class="flex items-center justify-between pt-2 border-t border-[#F0EBE3]">
+          <label class="flex items-center gap-1.5 text-xs text-[#1C1C1E] cursor-pointer font-semibold">
+            <input type="checkbox" class="product-checkbox rounded text-[#B8834E] focus:ring-0 w-4 h-4 cursor-pointer" value="07_japandi_natsukashii_ochre_arc_study.png" onchange="updateCount()">
+            <span>Select</span>
+          </label>
+          <button onclick="copyName('07_japandi_natsukashii_ochre_arc_study.png', this)" class="text-[11px] font-bold text-[#B8834E] hover:underline cursor-pointer">
+            Copy File
+          </button>
+        </div>
+      </div>
+    </div>
+    
+
+    <div class="product-card bg-white rounded-xl overflow-hidden border border-[#E8E3DA] shadow-sm hover:shadow-md transition flex flex-col justify-between" data-cat="japandi" data-file="08_japandi_zen_garden_raked_sand_no_3.png">
+      <div class="relative aspect-[3/4] bg-[#FAF8F5] overflow-hidden group cursor-pointer" onclick="openModal('08_japandi_zen_garden_raked_sand_no_3.png', 'Zen Garden Raked Sand No 3')">
+        <img src="08_japandi_zen_garden_raked_sand_no_3.png" alt="Zen Garden Raked Sand No 3" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+        <span class="absolute top-2 left-2 bg-black/75 text-white text-[10px] font-bold px-2 py-0.5 rounded shadow">#08</span>
+        <span class="absolute top-2 right-2 text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded shadow-sm bg-[#EFE8DE] text-[#8C6D4F]">japandi</span>
+      </div>
+      <div class="p-3.5 flex flex-col justify-between flex-grow gap-2">
+        <div>
+          <h3 class="font-bold text-sm sm:text-base text-[#1C1C1E] leading-tight">Zen Garden Raked Sand No 3</h3>
+          <p class="text-[10px] text-[#7A756D] font-mono mt-1 break-all select-all">08_japandi_zen_garden_raked_sand_no_3.png</p>
+        </div>
+        <div class="flex items-center justify-between pt-2 border-t border-[#F0EBE3]">
+          <label class="flex items-center gap-1.5 text-xs text-[#1C1C1E] cursor-pointer font-semibold">
+            <input type="checkbox" class="product-checkbox rounded text-[#B8834E] focus:ring-0 w-4 h-4 cursor-pointer" value="08_japandi_zen_garden_raked_sand_no_3.png" onchange="updateCount()">
+            <span>Select</span>
+          </label>
+          <button onclick="copyName('08_japandi_zen_garden_raked_sand_no_3.png', this)" class="text-[11px] font-bold text-[#B8834E] hover:underline cursor-pointer">
+            Copy File
+          </button>
+        </div>
+      </div>
+    </div>
+    
+
+    <div class="product-card bg-white rounded-xl overflow-hidden border border-[#E8E3DA] shadow-sm hover:shadow-md transition flex flex-col justify-between" data-cat="japandi" data-file="09_japandi_shibui_raw_linen_color_field.png">
+      <div class="relative aspect-[3/4] bg-[#FAF8F5] overflow-hidden group cursor-pointer" onclick="openModal('09_japandi_shibui_raw_linen_color_field.png', 'Shibui Raw Linen Color Field')">
+        <img src="09_japandi_shibui_raw_linen_color_field.png" alt="Shibui Raw Linen Color Field" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+        <span class="absolute top-2 left-2 bg-black/75 text-white text-[10px] font-bold px-2 py-0.5 rounded shadow">#09</span>
+        <span class="absolute top-2 right-2 text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded shadow-sm bg-[#EFE8DE] text-[#8C6D4F]">japandi</span>
+      </div>
+      <div class="p-3.5 flex flex-col justify-between flex-grow gap-2">
+        <div>
+          <h3 class="font-bold text-sm sm:text-base text-[#1C1C1E] leading-tight">Shibui Raw Linen Color Field</h3>
+          <p class="text-[10px] text-[#7A756D] font-mono mt-1 break-all select-all">09_japandi_shibui_raw_linen_color_field.png</p>
+        </div>
+        <div class="flex items-center justify-between pt-2 border-t border-[#F0EBE3]">
+          <label class="flex items-center gap-1.5 text-xs text-[#1C1C1E] cursor-pointer font-semibold">
+            <input type="checkbox" class="product-checkbox rounded text-[#B8834E] focus:ring-0 w-4 h-4 cursor-pointer" value="09_japandi_shibui_raw_linen_color_field.png" onchange="updateCount()">
+            <span>Select</span>
+          </label>
+          <button onclick="copyName('09_japandi_shibui_raw_linen_color_field.png', this)" class="text-[11px] font-bold text-[#B8834E] hover:underline cursor-pointer">
+            Copy File
+          </button>
+        </div>
+      </div>
+    </div>
+    
+
+    <div class="product-card bg-white rounded-xl overflow-hidden border border-[#E8E3DA] shadow-sm hover:shadow-md transition flex flex-col justify-between" data-cat="japandi" data-file="10_japandi_engawa_sunlit_paper_wall.png">
+      <div class="relative aspect-[3/4] bg-[#FAF8F5] overflow-hidden group cursor-pointer" onclick="openModal('10_japandi_engawa_sunlit_paper_wall.png', 'Engawa Sunlit Paper Wall')">
+        <img src="10_japandi_engawa_sunlit_paper_wall.png" alt="Engawa Sunlit Paper Wall" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+        <span class="absolute top-2 left-2 bg-black/75 text-white text-[10px] font-bold px-2 py-0.5 rounded shadow">#10</span>
+        <span class="absolute top-2 right-2 text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded shadow-sm bg-[#EFE8DE] text-[#8C6D4F]">japandi</span>
+      </div>
+      <div class="p-3.5 flex flex-col justify-between flex-grow gap-2">
+        <div>
+          <h3 class="font-bold text-sm sm:text-base text-[#1C1C1E] leading-tight">Engawa Sunlit Paper Wall</h3>
+          <p class="text-[10px] text-[#7A756D] font-mono mt-1 break-all select-all">10_japandi_engawa_sunlit_paper_wall.png</p>
+        </div>
+        <div class="flex items-center justify-between pt-2 border-t border-[#F0EBE3]">
+          <label class="flex items-center gap-1.5 text-xs text-[#1C1C1E] cursor-pointer font-semibold">
+            <input type="checkbox" class="product-checkbox rounded text-[#B8834E] focus:ring-0 w-4 h-4 cursor-pointer" value="10_japandi_engawa_sunlit_paper_wall.png" onchange="updateCount()">
+            <span>Select</span>
+          </label>
+          <button onclick="copyName('10_japandi_engawa_sunlit_paper_wall.png', this)" class="text-[11px] font-bold text-[#B8834E] hover:underline cursor-pointer">
+            Copy File
+          </button>
+        </div>
+      </div>
+    </div>
+    
+
+    <div class="product-card bg-white rounded-xl overflow-hidden border border-[#E8E3DA] shadow-sm hover:shadow-md transition flex flex-col justify-between" data-cat="japandi" data-file="11_japandi_kintsugi_gold_fracture_study.png">
+      <div class="relative aspect-[3/4] bg-[#FAF8F5] overflow-hidden group cursor-pointer" onclick="openModal('11_japandi_kintsugi_gold_fracture_study.png', 'Kintsugi Gold Fracture Study')">
+        <img src="11_japandi_kintsugi_gold_fracture_study.png" alt="Kintsugi Gold Fracture Study" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+        <span class="absolute top-2 left-2 bg-black/75 text-white text-[10px] font-bold px-2 py-0.5 rounded shadow">#11</span>
+        <span class="absolute top-2 right-2 text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded shadow-sm bg-[#EFE8DE] text-[#8C6D4F]">japandi</span>
+      </div>
+      <div class="p-3.5 flex flex-col justify-between flex-grow gap-2">
+        <div>
+          <h3 class="font-bold text-sm sm:text-base text-[#1C1C1E] leading-tight">Kintsugi Gold Fracture Study</h3>
+          <p class="text-[10px] text-[#7A756D] font-mono mt-1 break-all select-all">11_japandi_kintsugi_gold_fracture_study.png</p>
+        </div>
+        <div class="flex items-center justify-between pt-2 border-t border-[#F0EBE3]">
+          <label class="flex items-center gap-1.5 text-xs text-[#1C1C1E] cursor-pointer font-semibold">
+            <input type="checkbox" class="product-checkbox rounded text-[#B8834E] focus:ring-0 w-4 h-4 cursor-pointer" value="11_japandi_kintsugi_gold_fracture_study.png" onchange="updateCount()">
+            <span>Select</span>
+          </label>
+          <button onclick="copyName('11_japandi_kintsugi_gold_fracture_study.png', this)" class="text-[11px] font-bold text-[#B8834E] hover:underline cursor-pointer">
+            Copy File
+          </button>
+        </div>
+      </div>
+    </div>
+    
+
+    <div class="product-card bg-white rounded-xl overflow-hidden border border-[#E8E3DA] shadow-sm hover:shadow-md transition flex flex-col justify-between" data-cat="japandi" data-file="12_japandi_bonsai_pine_silhouette_no_2.png">
+      <div class="relative aspect-[3/4] bg-[#FAF8F5] overflow-hidden group cursor-pointer" onclick="openModal('12_japandi_bonsai_pine_silhouette_no_2.png', 'Bonsai Pine Silhouette No 2')">
+        <img src="12_japandi_bonsai_pine_silhouette_no_2.png" alt="Bonsai Pine Silhouette No 2" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+        <span class="absolute top-2 left-2 bg-black/75 text-white text-[10px] font-bold px-2 py-0.5 rounded shadow">#12</span>
+        <span class="absolute top-2 right-2 text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded shadow-sm bg-[#EFE8DE] text-[#8C6D4F]">japandi</span>
+      </div>
+      <div class="p-3.5 flex flex-col justify-between flex-grow gap-2">
+        <div>
+          <h3 class="font-bold text-sm sm:text-base text-[#1C1C1E] leading-tight">Bonsai Pine Silhouette No 2</h3>
+          <p class="text-[10px] text-[#7A756D] font-mono mt-1 break-all select-all">12_japandi_bonsai_pine_silhouette_no_2.png</p>
+        </div>
+        <div class="flex items-center justify-between pt-2 border-t border-[#F0EBE3]">
+          <label class="flex items-center gap-1.5 text-xs text-[#1C1C1E] cursor-pointer font-semibold">
+            <input type="checkbox" class="product-checkbox rounded text-[#B8834E] focus:ring-0 w-4 h-4 cursor-pointer" value="12_japandi_bonsai_pine_silhouette_no_2.png" onchange="updateCount()">
+            <span>Select</span>
+          </label>
+          <button onclick="copyName('12_japandi_bonsai_pine_silhouette_no_2.png', this)" class="text-[11px] font-bold text-[#B8834E] hover:underline cursor-pointer">
+            Copy File
+          </button>
+        </div>
+      </div>
+    </div>
+    
+
+    <div class="product-card bg-white rounded-xl overflow-hidden border border-[#E8E3DA] shadow-sm hover:shadow-md transition flex flex-col justify-between" data-cat="japandi" data-file="13_japandi_sumi_e_ink_flow_reflection.png">
+      <div class="relative aspect-[3/4] bg-[#FAF8F5] overflow-hidden group cursor-pointer" onclick="openModal('13_japandi_sumi_e_ink_flow_reflection.png', 'Sumi E Ink Flow Reflection')">
+        <img src="13_japandi_sumi_e_ink_flow_reflection.png" alt="Sumi E Ink Flow Reflection" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+        <span class="absolute top-2 left-2 bg-black/75 text-white text-[10px] font-bold px-2 py-0.5 rounded shadow">#13</span>
+        <span class="absolute top-2 right-2 text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded shadow-sm bg-[#EFE8DE] text-[#8C6D4F]">japandi</span>
+      </div>
+      <div class="p-3.5 flex flex-col justify-between flex-grow gap-2">
+        <div>
+          <h3 class="font-bold text-sm sm:text-base text-[#1C1C1E] leading-tight">Sumi E Ink Flow Reflection</h3>
+          <p class="text-[10px] text-[#7A756D] font-mono mt-1 break-all select-all">13_japandi_sumi_e_ink_flow_reflection.png</p>
+        </div>
+        <div class="flex items-center justify-between pt-2 border-t border-[#F0EBE3]">
+          <label class="flex items-center gap-1.5 text-xs text-[#1C1C1E] cursor-pointer font-semibold">
+            <input type="checkbox" class="product-checkbox rounded text-[#B8834E] focus:ring-0 w-4 h-4 cursor-pointer" value="13_japandi_sumi_e_ink_flow_reflection.png" onchange="updateCount()">
+            <span>Select</span>
+          </label>
+          <button onclick="copyName('13_japandi_sumi_e_ink_flow_reflection.png', this)" class="text-[11px] font-bold text-[#B8834E] hover:underline cursor-pointer">
+            Copy File
+          </button>
+        </div>
+      </div>
+    </div>
+    
+
+    <div class="product-card bg-white rounded-xl overflow-hidden border border-[#E8E3DA] shadow-sm hover:shadow-md transition flex flex-col justify-between" data-cat="japandi" data-file="14_japandi_ukiyo_floating_pebble_balance.png">
+      <div class="relative aspect-[3/4] bg-[#FAF8F5] overflow-hidden group cursor-pointer" onclick="openModal('14_japandi_ukiyo_floating_pebble_balance.png', 'Ukiyo Floating Pebble Balance')">
+        <img src="14_japandi_ukiyo_floating_pebble_balance.png" alt="Ukiyo Floating Pebble Balance" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+        <span class="absolute top-2 left-2 bg-black/75 text-white text-[10px] font-bold px-2 py-0.5 rounded shadow">#14</span>
+        <span class="absolute top-2 right-2 text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded shadow-sm bg-[#EFE8DE] text-[#8C6D4F]">japandi</span>
+      </div>
+      <div class="p-3.5 flex flex-col justify-between flex-grow gap-2">
+        <div>
+          <h3 class="font-bold text-sm sm:text-base text-[#1C1C1E] leading-tight">Ukiyo Floating Pebble Balance</h3>
+          <p class="text-[10px] text-[#7A756D] font-mono mt-1 break-all select-all">14_japandi_ukiyo_floating_pebble_balance.png</p>
+        </div>
+        <div class="flex items-center justify-between pt-2 border-t border-[#F0EBE3]">
+          <label class="flex items-center gap-1.5 text-xs text-[#1C1C1E] cursor-pointer font-semibold">
+            <input type="checkbox" class="product-checkbox rounded text-[#B8834E] focus:ring-0 w-4 h-4 cursor-pointer" value="14_japandi_ukiyo_floating_pebble_balance.png" onchange="updateCount()">
+            <span>Select</span>
+          </label>
+          <button onclick="copyName('14_japandi_ukiyo_floating_pebble_balance.png', this)" class="text-[11px] font-bold text-[#B8834E] hover:underline cursor-pointer">
+            Copy File
+          </button>
+        </div>
+      </div>
+    </div>
+    
+
+    <div class="product-card bg-white rounded-xl overflow-hidden border border-[#E8E3DA] shadow-sm hover:shadow-md transition flex flex-col justify-between" data-cat="japandi" data-file="15_japandi_yugen_deep_charcoal_arch.png">
+      <div class="relative aspect-[3/4] bg-[#FAF8F5] overflow-hidden group cursor-pointer" onclick="openModal('15_japandi_yugen_deep_charcoal_arch.png', 'Yugen Deep Charcoal Arch')">
+        <img src="15_japandi_yugen_deep_charcoal_arch.png" alt="Yugen Deep Charcoal Arch" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+        <span class="absolute top-2 left-2 bg-black/75 text-white text-[10px] font-bold px-2 py-0.5 rounded shadow">#15</span>
+        <span class="absolute top-2 right-2 text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded shadow-sm bg-[#EFE8DE] text-[#8C6D4F]">japandi</span>
+      </div>
+      <div class="p-3.5 flex flex-col justify-between flex-grow gap-2">
+        <div>
+          <h3 class="font-bold text-sm sm:text-base text-[#1C1C1E] leading-tight">Yugen Deep Charcoal Arch</h3>
+          <p class="text-[10px] text-[#7A756D] font-mono mt-1 break-all select-all">15_japandi_yugen_deep_charcoal_arch.png</p>
+        </div>
+        <div class="flex items-center justify-between pt-2 border-t border-[#F0EBE3]">
+          <label class="flex items-center gap-1.5 text-xs text-[#1C1C1E] cursor-pointer font-semibold">
+            <input type="checkbox" class="product-checkbox rounded text-[#B8834E] focus:ring-0 w-4 h-4 cursor-pointer" value="15_japandi_yugen_deep_charcoal_arch.png" onchange="updateCount()">
+            <span>Select</span>
+          </label>
+          <button onclick="copyName('15_japandi_yugen_deep_charcoal_arch.png', this)" class="text-[11px] font-bold text-[#B8834E] hover:underline cursor-pointer">
+            Copy File
+          </button>
+        </div>
+      </div>
+    </div>
+    
+
+    <div class="product-card bg-white rounded-xl overflow-hidden border border-[#E8E3DA] shadow-sm hover:shadow-md transition flex flex-col justify-between" data-cat="japandi" data-file="16_japandi_wabi_terracotta_temple_tile.png">
+      <div class="relative aspect-[3/4] bg-[#FAF8F5] overflow-hidden group cursor-pointer" onclick="openModal('16_japandi_wabi_terracotta_temple_tile.png', 'Wabi Terracotta Temple Tile')">
+        <img src="16_japandi_wabi_terracotta_temple_tile.png" alt="Wabi Terracotta Temple Tile" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+        <span class="absolute top-2 left-2 bg-black/75 text-white text-[10px] font-bold px-2 py-0.5 rounded shadow">#16</span>
+        <span class="absolute top-2 right-2 text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded shadow-sm bg-[#EFE8DE] text-[#8C6D4F]">japandi</span>
+      </div>
+      <div class="p-3.5 flex flex-col justify-between flex-grow gap-2">
+        <div>
+          <h3 class="font-bold text-sm sm:text-base text-[#1C1C1E] leading-tight">Wabi Terracotta Temple Tile</h3>
+          <p class="text-[10px] text-[#7A756D] font-mono mt-1 break-all select-all">16_japandi_wabi_terracotta_temple_tile.png</p>
+        </div>
+        <div class="flex items-center justify-between pt-2 border-t border-[#F0EBE3]">
+          <label class="flex items-center gap-1.5 text-xs text-[#1C1C1E] cursor-pointer font-semibold">
+            <input type="checkbox" class="product-checkbox rounded text-[#B8834E] focus:ring-0 w-4 h-4 cursor-pointer" value="16_japandi_wabi_terracotta_temple_tile.png" onchange="updateCount()">
+            <span>Select</span>
+          </label>
+          <button onclick="copyName('16_japandi_wabi_terracotta_temple_tile.png', this)" class="text-[11px] font-bold text-[#B8834E] hover:underline cursor-pointer">
+            Copy File
+          </button>
+        </div>
+      </div>
+    </div>
+    
+
+    <div class="product-card bg-white rounded-xl overflow-hidden border border-[#E8E3DA] shadow-sm hover:shadow-md transition flex flex-col justify-between" data-cat="japandi" data-file="17_japandi_tatami_straw_minimal_geometry.png">
+      <div class="relative aspect-[3/4] bg-[#FAF8F5] overflow-hidden group cursor-pointer" onclick="openModal('17_japandi_tatami_straw_minimal_geometry.png', 'Tatami Straw Minimal Geometry')">
+        <img src="17_japandi_tatami_straw_minimal_geometry.png" alt="Tatami Straw Minimal Geometry" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+        <span class="absolute top-2 left-2 bg-black/75 text-white text-[10px] font-bold px-2 py-0.5 rounded shadow">#17</span>
+        <span class="absolute top-2 right-2 text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded shadow-sm bg-[#EFE8DE] text-[#8C6D4F]">japandi</span>
+      </div>
+      <div class="p-3.5 flex flex-col justify-between flex-grow gap-2">
+        <div>
+          <h3 class="font-bold text-sm sm:text-base text-[#1C1C1E] leading-tight">Tatami Straw Minimal Geometry</h3>
+          <p class="text-[10px] text-[#7A756D] font-mono mt-1 break-all select-all">17_japandi_tatami_straw_minimal_geometry.png</p>
+        </div>
+        <div class="flex items-center justify-between pt-2 border-t border-[#F0EBE3]">
+          <label class="flex items-center gap-1.5 text-xs text-[#1C1C1E] cursor-pointer font-semibold">
+            <input type="checkbox" class="product-checkbox rounded text-[#B8834E] focus:ring-0 w-4 h-4 cursor-pointer" value="17_japandi_tatami_straw_minimal_geometry.png" onchange="updateCount()">
+            <span>Select</span>
+          </label>
+          <button onclick="copyName('17_japandi_tatami_straw_minimal_geometry.png', this)" class="text-[11px] font-bold text-[#B8834E] hover:underline cursor-pointer">
+            Copy File
+          </button>
+        </div>
+      </div>
+    </div>
+    
+
+    <div class="product-card bg-white rounded-xl overflow-hidden border border-[#E8E3DA] shadow-sm hover:shadow-md transition flex flex-col justify-between" data-cat="japandi" data-file="18_japandi_kanso_serenity_in_ochre.png">
+      <div class="relative aspect-[3/4] bg-[#FAF8F5] overflow-hidden group cursor-pointer" onclick="openModal('18_japandi_kanso_serenity_in_ochre.png', 'Kanso Serenity In Ochre')">
+        <img src="18_japandi_kanso_serenity_in_ochre.png" alt="Kanso Serenity In Ochre" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+        <span class="absolute top-2 left-2 bg-black/75 text-white text-[10px] font-bold px-2 py-0.5 rounded shadow">#18</span>
+        <span class="absolute top-2 right-2 text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded shadow-sm bg-[#EFE8DE] text-[#8C6D4F]">japandi</span>
+      </div>
+      <div class="p-3.5 flex flex-col justify-between flex-grow gap-2">
+        <div>
+          <h3 class="font-bold text-sm sm:text-base text-[#1C1C1E] leading-tight">Kanso Serenity In Ochre</h3>
+          <p class="text-[10px] text-[#7A756D] font-mono mt-1 break-all select-all">18_japandi_kanso_serenity_in_ochre.png</p>
+        </div>
+        <div class="flex items-center justify-between pt-2 border-t border-[#F0EBE3]">
+          <label class="flex items-center gap-1.5 text-xs text-[#1C1C1E] cursor-pointer font-semibold">
+            <input type="checkbox" class="product-checkbox rounded text-[#B8834E] focus:ring-0 w-4 h-4 cursor-pointer" value="18_japandi_kanso_serenity_in_ochre.png" onchange="updateCount()">
+            <span>Select</span>
+          </label>
+          <button onclick="copyName('18_japandi_kanso_serenity_in_ochre.png', this)" class="text-[11px] font-bold text-[#B8834E] hover:underline cursor-pointer">
+            Copy File
+          </button>
+        </div>
+      </div>
+    </div>
+    
+
+    <div class="product-card bg-white rounded-xl overflow-hidden border border-[#E8E3DA] shadow-sm hover:shadow-md transition flex flex-col justify-between" data-cat="botanical" data-file="19_botanical_amalfi_heirloom_lemon_branch.png">
+      <div class="relative aspect-[3/4] bg-[#FAF8F5] overflow-hidden group cursor-pointer" onclick="openModal('19_botanical_amalfi_heirloom_lemon_branch.png', 'Amalfi Heirloom Lemon Branch')">
+        <img src="19_botanical_amalfi_heirloom_lemon_branch.png" alt="Amalfi Heirloom Lemon Branch" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+        <span class="absolute top-2 left-2 bg-black/75 text-white text-[10px] font-bold px-2 py-0.5 rounded shadow">#19</span>
+        <span class="absolute top-2 right-2 text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded shadow-sm bg-[#E6EFE8] text-[#3D6947]">botanical</span>
+      </div>
+      <div class="p-3.5 flex flex-col justify-between flex-grow gap-2">
+        <div>
+          <h3 class="font-bold text-sm sm:text-base text-[#1C1C1E] leading-tight">Amalfi Heirloom Lemon Branch</h3>
+          <p class="text-[10px] text-[#7A756D] font-mono mt-1 break-all select-all">19_botanical_amalfi_heirloom_lemon_branch.png</p>
+        </div>
+        <div class="flex items-center justify-between pt-2 border-t border-[#F0EBE3]">
+          <label class="flex items-center gap-1.5 text-xs text-[#1C1C1E] cursor-pointer font-semibold">
+            <input type="checkbox" class="product-checkbox rounded text-[#B8834E] focus:ring-0 w-4 h-4 cursor-pointer" value="19_botanical_amalfi_heirloom_lemon_branch.png" onchange="updateCount()">
+            <span>Select</span>
+          </label>
+          <button onclick="copyName('19_botanical_amalfi_heirloom_lemon_branch.png', this)" class="text-[11px] font-bold text-[#B8834E] hover:underline cursor-pointer">
+            Copy File
+          </button>
+        </div>
+      </div>
+    </div>
+    
+
+    <div class="product-card bg-white rounded-xl overflow-hidden border border-[#E8E3DA] shadow-sm hover:shadow-md transition flex flex-col justify-between" data-cat="botanical" data-file="20_botanical_tuscan_olive_grove_olea_no_1.png">
+      <div class="relative aspect-[3/4] bg-[#FAF8F5] overflow-hidden group cursor-pointer" onclick="openModal('20_botanical_tuscan_olive_grove_olea_no_1.png', 'Tuscan Olive Grove Olea No 1')">
+        <img src="20_botanical_tuscan_olive_grove_olea_no_1.png" alt="Tuscan Olive Grove Olea No 1" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+        <span class="absolute top-2 left-2 bg-black/75 text-white text-[10px] font-bold px-2 py-0.5 rounded shadow">#20</span>
+        <span class="absolute top-2 right-2 text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded shadow-sm bg-[#E6EFE8] text-[#3D6947]">botanical</span>
+      </div>
+      <div class="p-3.5 flex flex-col justify-between flex-grow gap-2">
+        <div>
+          <h3 class="font-bold text-sm sm:text-base text-[#1C1C1E] leading-tight">Tuscan Olive Grove Olea No 1</h3>
+          <p class="text-[10px] text-[#7A756D] font-mono mt-1 break-all select-all">20_botanical_tuscan_olive_grove_olea_no_1.png</p>
+        </div>
+        <div class="flex items-center justify-between pt-2 border-t border-[#F0EBE3]">
+          <label class="flex items-center gap-1.5 text-xs text-[#1C1C1E] cursor-pointer font-semibold">
+            <input type="checkbox" class="product-checkbox rounded text-[#B8834E] focus:ring-0 w-4 h-4 cursor-pointer" value="20_botanical_tuscan_olive_grove_olea_no_1.png" onchange="updateCount()">
+            <span>Select</span>
+          </label>
+          <button onclick="copyName('20_botanical_tuscan_olive_grove_olea_no_1.png', this)" class="text-[11px] font-bold text-[#B8834E] hover:underline cursor-pointer">
+            Copy File
+          </button>
+        </div>
+      </div>
+    </div>
+    
+
+    <div class="product-card bg-white rounded-xl overflow-hidden border border-[#E8E3DA] shadow-sm hover:shadow-md transition flex flex-col justify-between" data-cat="botanical" data-file="21_botanical_lucca_wild_fern_frond_study.png">
+      <div class="relative aspect-[3/4] bg-[#FAF8F5] overflow-hidden group cursor-pointer" onclick="openModal('21_botanical_lucca_wild_fern_frond_study.png', 'Lucca Wild Fern Frond Study')">
+        <img src="21_botanical_lucca_wild_fern_frond_study.png" alt="Lucca Wild Fern Frond Study" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+        <span class="absolute top-2 left-2 bg-black/75 text-white text-[10px] font-bold px-2 py-0.5 rounded shadow">#21</span>
+        <span class="absolute top-2 right-2 text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded shadow-sm bg-[#E6EFE8] text-[#3D6947]">botanical</span>
+      </div>
+      <div class="p-3.5 flex flex-col justify-between flex-grow gap-2">
+        <div>
+          <h3 class="font-bold text-sm sm:text-base text-[#1C1C1E] leading-tight">Lucca Wild Fern Frond Study</h3>
+          <p class="text-[10px] text-[#7A756D] font-mono mt-1 break-all select-all">21_botanical_lucca_wild_fern_frond_study.png</p>
+        </div>
+        <div class="flex items-center justify-between pt-2 border-t border-[#F0EBE3]">
+          <label class="flex items-center gap-1.5 text-xs text-[#1C1C1E] cursor-pointer font-semibold">
+            <input type="checkbox" class="product-checkbox rounded text-[#B8834E] focus:ring-0 w-4 h-4 cursor-pointer" value="21_botanical_lucca_wild_fern_frond_study.png" onchange="updateCount()">
+            <span>Select</span>
+          </label>
+          <button onclick="copyName('21_botanical_lucca_wild_fern_frond_study.png', this)" class="text-[11px] font-bold text-[#B8834E] hover:underline cursor-pointer">
+            Copy File
+          </button>
+        </div>
+      </div>
+    </div>
+    
+
+    <div class="product-card bg-white rounded-xl overflow-hidden border border-[#E8E3DA] shadow-sm hover:shadow-md transition flex flex-col justify-between" data-cat="botanical" data-file="22_botanical_ficus_carica_heirloom_fig.png">
+      <div class="relative aspect-[3/4] bg-[#FAF8F5] overflow-hidden group cursor-pointer" onclick="openModal('22_botanical_ficus_carica_heirloom_fig.png', 'Ficus Carica Heirloom Fig')">
+        <img src="22_botanical_ficus_carica_heirloom_fig.png" alt="Ficus Carica Heirloom Fig" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+        <span class="absolute top-2 left-2 bg-black/75 text-white text-[10px] font-bold px-2 py-0.5 rounded shadow">#22</span>
+        <span class="absolute top-2 right-2 text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded shadow-sm bg-[#E6EFE8] text-[#3D6947]">botanical</span>
+      </div>
+      <div class="p-3.5 flex flex-col justify-between flex-grow gap-2">
+        <div>
+          <h3 class="font-bold text-sm sm:text-base text-[#1C1C1E] leading-tight">Ficus Carica Heirloom Fig</h3>
+          <p class="text-[10px] text-[#7A756D] font-mono mt-1 break-all select-all">22_botanical_ficus_carica_heirloom_fig.png</p>
+        </div>
+        <div class="flex items-center justify-between pt-2 border-t border-[#F0EBE3]">
+          <label class="flex items-center gap-1.5 text-xs text-[#1C1C1E] cursor-pointer font-semibold">
+            <input type="checkbox" class="product-checkbox rounded text-[#B8834E] focus:ring-0 w-4 h-4 cursor-pointer" value="22_botanical_ficus_carica_heirloom_fig.png" onchange="updateCount()">
+            <span>Select</span>
+          </label>
+          <button onclick="copyName('22_botanical_ficus_carica_heirloom_fig.png', this)" class="text-[11px] font-bold text-[#B8834E] hover:underline cursor-pointer">
+            Copy File
+          </button>
+        </div>
+      </div>
+    </div>
+    
+
+    <div class="product-card bg-white rounded-xl overflow-hidden border border-[#E8E3DA] shadow-sm hover:shadow-md transition flex flex-col justify-between" data-cat="botanical" data-file="23_botanical_sorrento_citrus_bloom_no_3.png">
+      <div class="relative aspect-[3/4] bg-[#FAF8F5] overflow-hidden group cursor-pointer" onclick="openModal('23_botanical_sorrento_citrus_bloom_no_3.png', 'Sorrento Citrus Bloom No 3')">
+        <img src="23_botanical_sorrento_citrus_bloom_no_3.png" alt="Sorrento Citrus Bloom No 3" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+        <span class="absolute top-2 left-2 bg-black/75 text-white text-[10px] font-bold px-2 py-0.5 rounded shadow">#23</span>
+        <span class="absolute top-2 right-2 text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded shadow-sm bg-[#E6EFE8] text-[#3D6947]">botanical</span>
+      </div>
+      <div class="p-3.5 flex flex-col justify-between flex-grow gap-2">
+        <div>
+          <h3 class="font-bold text-sm sm:text-base text-[#1C1C1E] leading-tight">Sorrento Citrus Bloom No 3</h3>
+          <p class="text-[10px] text-[#7A756D] font-mono mt-1 break-all select-all">23_botanical_sorrento_citrus_bloom_no_3.png</p>
+        </div>
+        <div class="flex items-center justify-between pt-2 border-t border-[#F0EBE3]">
+          <label class="flex items-center gap-1.5 text-xs text-[#1C1C1E] cursor-pointer font-semibold">
+            <input type="checkbox" class="product-checkbox rounded text-[#B8834E] focus:ring-0 w-4 h-4 cursor-pointer" value="23_botanical_sorrento_citrus_bloom_no_3.png" onchange="updateCount()">
+            <span>Select</span>
+          </label>
+          <button onclick="copyName('23_botanical_sorrento_citrus_bloom_no_3.png', this)" class="text-[11px] font-bold text-[#B8834E] hover:underline cursor-pointer">
+            Copy File
+          </button>
+        </div>
+      </div>
+    </div>
+    
+
+    <div class="product-card bg-white rounded-xl overflow-hidden border border-[#E8E3DA] shadow-sm hover:shadow-md transition flex flex-col justify-between" data-cat="botanical" data-file="24_botanical_capri_terracotta_cypress_path.png">
+      <div class="relative aspect-[3/4] bg-[#FAF8F5] overflow-hidden group cursor-pointer" onclick="openModal('24_botanical_capri_terracotta_cypress_path.png', 'Capri Terracotta Cypress Path')">
+        <img src="24_botanical_capri_terracotta_cypress_path.png" alt="Capri Terracotta Cypress Path" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+        <span class="absolute top-2 left-2 bg-black/75 text-white text-[10px] font-bold px-2 py-0.5 rounded shadow">#24</span>
+        <span class="absolute top-2 right-2 text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded shadow-sm bg-[#E6EFE8] text-[#3D6947]">botanical</span>
+      </div>
+      <div class="p-3.5 flex flex-col justify-between flex-grow gap-2">
+        <div>
+          <h3 class="font-bold text-sm sm:text-base text-[#1C1C1E] leading-tight">Capri Terracotta Cypress Path</h3>
+          <p class="text-[10px] text-[#7A756D] font-mono mt-1 break-all select-all">24_botanical_capri_terracotta_cypress_path.png</p>
+        </div>
+        <div class="flex items-center justify-between pt-2 border-t border-[#F0EBE3]">
+          <label class="flex items-center gap-1.5 text-xs text-[#1C1C1E] cursor-pointer font-semibold">
+            <input type="checkbox" class="product-checkbox rounded text-[#B8834E] focus:ring-0 w-4 h-4 cursor-pointer" value="24_botanical_capri_terracotta_cypress_path.png" onchange="updateCount()">
+            <span>Select</span>
+          </label>
+          <button onclick="copyName('24_botanical_capri_terracotta_cypress_path.png', this)" class="text-[11px] font-bold text-[#B8834E] hover:underline cursor-pointer">
+            Copy File
+          </button>
+        </div>
+      </div>
+    </div>
+    
+
+    <div class="product-card bg-white rounded-xl overflow-hidden border border-[#E8E3DA] shadow-sm hover:shadow-md transition flex flex-col justify-between" data-cat="botanical" data-file="25_botanical_eucalyptus_silver_dollar_study.png">
+      <div class="relative aspect-[3/4] bg-[#FAF8F5] overflow-hidden group cursor-pointer" onclick="openModal('25_botanical_eucalyptus_silver_dollar_study.png', 'Eucalyptus Silver Dollar Study')">
+        <img src="25_botanical_eucalyptus_silver_dollar_study.png" alt="Eucalyptus Silver Dollar Study" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+        <span class="absolute top-2 left-2 bg-black/75 text-white text-[10px] font-bold px-2 py-0.5 rounded shadow">#25</span>
+        <span class="absolute top-2 right-2 text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded shadow-sm bg-[#E6EFE8] text-[#3D6947]">botanical</span>
+      </div>
+      <div class="p-3.5 flex flex-col justify-between flex-grow gap-2">
+        <div>
+          <h3 class="font-bold text-sm sm:text-base text-[#1C1C1E] leading-tight">Eucalyptus Silver Dollar Study</h3>
+          <p class="text-[10px] text-[#7A756D] font-mono mt-1 break-all select-all">25_botanical_eucalyptus_silver_dollar_study.png</p>
+        </div>
+        <div class="flex items-center justify-between pt-2 border-t border-[#F0EBE3]">
+          <label class="flex items-center gap-1.5 text-xs text-[#1C1C1E] cursor-pointer font-semibold">
+            <input type="checkbox" class="product-checkbox rounded text-[#B8834E] focus:ring-0 w-4 h-4 cursor-pointer" value="25_botanical_eucalyptus_silver_dollar_study.png" onchange="updateCount()">
+            <span>Select</span>
+          </label>
+          <button onclick="copyName('25_botanical_eucalyptus_silver_dollar_study.png', this)" class="text-[11px] font-bold text-[#B8834E] hover:underline cursor-pointer">
+            Copy File
+          </button>
+        </div>
+      </div>
+    </div>
+    
+
+    <div class="product-card bg-white rounded-xl overflow-hidden border border-[#E8E3DA] shadow-sm hover:shadow-md transition flex flex-col justify-between" data-cat="botanical" data-file="26_botanical_ravello_terraced_garden_sage.png">
+      <div class="relative aspect-[3/4] bg-[#FAF8F5] overflow-hidden group cursor-pointer" onclick="openModal('26_botanical_ravello_terraced_garden_sage.png', 'Ravello Terraced Garden Sage')">
+        <img src="26_botanical_ravello_terraced_garden_sage.png" alt="Ravello Terraced Garden Sage" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+        <span class="absolute top-2 left-2 bg-black/75 text-white text-[10px] font-bold px-2 py-0.5 rounded shadow">#26</span>
+        <span class="absolute top-2 right-2 text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded shadow-sm bg-[#E6EFE8] text-[#3D6947]">botanical</span>
+      </div>
+      <div class="p-3.5 flex flex-col justify-between flex-grow gap-2">
+        <div>
+          <h3 class="font-bold text-sm sm:text-base text-[#1C1C1E] leading-tight">Ravello Terraced Garden Sage</h3>
+          <p class="text-[10px] text-[#7A756D] font-mono mt-1 break-all select-all">26_botanical_ravello_terraced_garden_sage.png</p>
+        </div>
+        <div class="flex items-center justify-between pt-2 border-t border-[#F0EBE3]">
+          <label class="flex items-center gap-1.5 text-xs text-[#1C1C1E] cursor-pointer font-semibold">
+            <input type="checkbox" class="product-checkbox rounded text-[#B8834E] focus:ring-0 w-4 h-4 cursor-pointer" value="26_botanical_ravello_terraced_garden_sage.png" onchange="updateCount()">
+            <span>Select</span>
+          </label>
+          <button onclick="copyName('26_botanical_ravello_terraced_garden_sage.png', this)" class="text-[11px] font-bold text-[#B8834E] hover:underline cursor-pointer">
+            Copy File
+          </button>
+        </div>
+      </div>
+    </div>
+    
+
+    <div class="product-card bg-white rounded-xl overflow-hidden border border-[#E8E3DA] shadow-sm hover:shadow-md transition flex flex-col justify-between" data-cat="botanical" data-file="27_botanical_provence_lavender_herbarium.png">
+      <div class="relative aspect-[3/4] bg-[#FAF8F5] overflow-hidden group cursor-pointer" onclick="openModal('27_botanical_provence_lavender_herbarium.png', 'Provence Lavender Herbarium')">
+        <img src="27_botanical_provence_lavender_herbarium.png" alt="Provence Lavender Herbarium" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+        <span class="absolute top-2 left-2 bg-black/75 text-white text-[10px] font-bold px-2 py-0.5 rounded shadow">#27</span>
+        <span class="absolute top-2 right-2 text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded shadow-sm bg-[#E6EFE8] text-[#3D6947]">botanical</span>
+      </div>
+      <div class="p-3.5 flex flex-col justify-between flex-grow gap-2">
+        <div>
+          <h3 class="font-bold text-sm sm:text-base text-[#1C1C1E] leading-tight">Provence Lavender Herbarium</h3>
+          <p class="text-[10px] text-[#7A756D] font-mono mt-1 break-all select-all">27_botanical_provence_lavender_herbarium.png</p>
+        </div>
+        <div class="flex items-center justify-between pt-2 border-t border-[#F0EBE3]">
+          <label class="flex items-center gap-1.5 text-xs text-[#1C1C1E] cursor-pointer font-semibold">
+            <input type="checkbox" class="product-checkbox rounded text-[#B8834E] focus:ring-0 w-4 h-4 cursor-pointer" value="27_botanical_provence_lavender_herbarium.png" onchange="updateCount()">
+            <span>Select</span>
+          </label>
+          <button onclick="copyName('27_botanical_provence_lavender_herbarium.png', this)" class="text-[11px] font-bold text-[#B8834E] hover:underline cursor-pointer">
+            Copy File
+          </button>
+        </div>
+      </div>
+    </div>
+    
+
+    <div class="product-card bg-white rounded-xl overflow-hidden border border-[#E8E3DA] shadow-sm hover:shadow-md transition flex flex-col justify-between" data-cat="botanical" data-file="28_botanical_positano_lemon_harvest_no_5.png">
+      <div class="relative aspect-[3/4] bg-[#FAF8F5] overflow-hidden group cursor-pointer" onclick="openModal('28_botanical_positano_lemon_harvest_no_5.png', 'Positano Lemon Harvest No 5')">
+        <img src="28_botanical_positano_lemon_harvest_no_5.png" alt="Positano Lemon Harvest No 5" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+        <span class="absolute top-2 left-2 bg-black/75 text-white text-[10px] font-bold px-2 py-0.5 rounded shadow">#28</span>
+        <span class="absolute top-2 right-2 text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded shadow-sm bg-[#E6EFE8] text-[#3D6947]">botanical</span>
+      </div>
+      <div class="p-3.5 flex flex-col justify-between flex-grow gap-2">
+        <div>
+          <h3 class="font-bold text-sm sm:text-base text-[#1C1C1E] leading-tight">Positano Lemon Harvest No 5</h3>
+          <p class="text-[10px] text-[#7A756D] font-mono mt-1 break-all select-all">28_botanical_positano_lemon_harvest_no_5.png</p>
+        </div>
+        <div class="flex items-center justify-between pt-2 border-t border-[#F0EBE3]">
+          <label class="flex items-center gap-1.5 text-xs text-[#1C1C1E] cursor-pointer font-semibold">
+            <input type="checkbox" class="product-checkbox rounded text-[#B8834E] focus:ring-0 w-4 h-4 cursor-pointer" value="28_botanical_positano_lemon_harvest_no_5.png" onchange="updateCount()">
+            <span>Select</span>
+          </label>
+          <button onclick="copyName('28_botanical_positano_lemon_harvest_no_5.png', this)" class="text-[11px] font-bold text-[#B8834E] hover:underline cursor-pointer">
+            Copy File
+          </button>
+        </div>
+      </div>
+    </div>
+    
+
+    <div class="product-card bg-white rounded-xl overflow-hidden border border-[#E8E3DA] shadow-sm hover:shadow-md transition flex flex-col justify-between" data-cat="botanical" data-file="29_botanical_chianti_wild_vine_and_tendril.png">
+      <div class="relative aspect-[3/4] bg-[#FAF8F5] overflow-hidden group cursor-pointer" onclick="openModal('29_botanical_chianti_wild_vine_and_tendril.png', 'Chianti Wild Vine And Tendril')">
+        <img src="29_botanical_chianti_wild_vine_and_tendril.png" alt="Chianti Wild Vine And Tendril" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+        <span class="absolute top-2 left-2 bg-black/75 text-white text-[10px] font-bold px-2 py-0.5 rounded shadow">#29</span>
+        <span class="absolute top-2 right-2 text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded shadow-sm bg-[#E6EFE8] text-[#3D6947]">botanical</span>
+      </div>
+      <div class="p-3.5 flex flex-col justify-between flex-grow gap-2">
+        <div>
+          <h3 class="font-bold text-sm sm:text-base text-[#1C1C1E] leading-tight">Chianti Wild Vine And Tendril</h3>
+          <p class="text-[10px] text-[#7A756D] font-mono mt-1 break-all select-all">29_botanical_chianti_wild_vine_and_tendril.png</p>
+        </div>
+        <div class="flex items-center justify-between pt-2 border-t border-[#F0EBE3]">
+          <label class="flex items-center gap-1.5 text-xs text-[#1C1C1E] cursor-pointer font-semibold">
+            <input type="checkbox" class="product-checkbox rounded text-[#B8834E] focus:ring-0 w-4 h-4 cursor-pointer" value="29_botanical_chianti_wild_vine_and_tendril.png" onchange="updateCount()">
+            <span>Select</span>
+          </label>
+          <button onclick="copyName('29_botanical_chianti_wild_vine_and_tendril.png', this)" class="text-[11px] font-bold text-[#B8834E] hover:underline cursor-pointer">
+            Copy File
+          </button>
+        </div>
+      </div>
+    </div>
+    
+
+    <div class="product-card bg-white rounded-xl overflow-hidden border border-[#E8E3DA] shadow-sm hover:shadow-md transition flex flex-col justify-between" data-cat="botanical" data-file="30_botanical_sienna_pressed_olive_foliage.png">
+      <div class="relative aspect-[3/4] bg-[#FAF8F5] overflow-hidden group cursor-pointer" onclick="openModal('30_botanical_sienna_pressed_olive_foliage.png', 'Sienna Pressed Olive Foliage')">
+        <img src="30_botanical_sienna_pressed_olive_foliage.png" alt="Sienna Pressed Olive Foliage" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+        <span class="absolute top-2 left-2 bg-black/75 text-white text-[10px] font-bold px-2 py-0.5 rounded shadow">#30</span>
+        <span class="absolute top-2 right-2 text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded shadow-sm bg-[#E6EFE8] text-[#3D6947]">botanical</span>
+      </div>
+      <div class="p-3.5 flex flex-col justify-between flex-grow gap-2">
+        <div>
+          <h3 class="font-bold text-sm sm:text-base text-[#1C1C1E] leading-tight">Sienna Pressed Olive Foliage</h3>
+          <p class="text-[10px] text-[#7A756D] font-mono mt-1 break-all select-all">30_botanical_sienna_pressed_olive_foliage.png</p>
+        </div>
+        <div class="flex items-center justify-between pt-2 border-t border-[#F0EBE3]">
+          <label class="flex items-center gap-1.5 text-xs text-[#1C1C1E] cursor-pointer font-semibold">
+            <input type="checkbox" class="product-checkbox rounded text-[#B8834E] focus:ring-0 w-4 h-4 cursor-pointer" value="30_botanical_sienna_pressed_olive_foliage.png" onchange="updateCount()">
+            <span>Select</span>
+          </label>
+          <button onclick="copyName('30_botanical_sienna_pressed_olive_foliage.png', this)" class="text-[11px] font-bold text-[#B8834E] hover:underline cursor-pointer">
+            Copy File
+          </button>
+        </div>
+      </div>
+    </div>
+    
+
+    <div class="product-card bg-white rounded-xl overflow-hidden border border-[#E8E3DA] shadow-sm hover:shadow-md transition flex flex-col justify-between" data-cat="botanical" data-file="31_botanical_sicilia_blood_orange_botanical.png">
+      <div class="relative aspect-[3/4] bg-[#FAF8F5] overflow-hidden group cursor-pointer" onclick="openModal('31_botanical_sicilia_blood_orange_botanical.png', 'Sicilia Blood Orange Botanical')">
+        <img src="31_botanical_sicilia_blood_orange_botanical.png" alt="Sicilia Blood Orange Botanical" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+        <span class="absolute top-2 left-2 bg-black/75 text-white text-[10px] font-bold px-2 py-0.5 rounded shadow">#31</span>
+        <span class="absolute top-2 right-2 text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded shadow-sm bg-[#E6EFE8] text-[#3D6947]">botanical</span>
+      </div>
+      <div class="p-3.5 flex flex-col justify-between flex-grow gap-2">
+        <div>
+          <h3 class="font-bold text-sm sm:text-base text-[#1C1C1E] leading-tight">Sicilia Blood Orange Botanical</h3>
+          <p class="text-[10px] text-[#7A756D] font-mono mt-1 break-all select-all">31_botanical_sicilia_blood_orange_botanical.png</p>
+        </div>
+        <div class="flex items-center justify-between pt-2 border-t border-[#F0EBE3]">
+          <label class="flex items-center gap-1.5 text-xs text-[#1C1C1E] cursor-pointer font-semibold">
+            <input type="checkbox" class="product-checkbox rounded text-[#B8834E] focus:ring-0 w-4 h-4 cursor-pointer" value="31_botanical_sicilia_blood_orange_botanical.png" onchange="updateCount()">
+            <span>Select</span>
+          </label>
+          <button onclick="copyName('31_botanical_sicilia_blood_orange_botanical.png', this)" class="text-[11px] font-bold text-[#B8834E] hover:underline cursor-pointer">
+            Copy File
+          </button>
+        </div>
+      </div>
+    </div>
+    
+
+    <div class="product-card bg-white rounded-xl overflow-hidden border border-[#E8E3DA] shadow-sm hover:shadow-md transition flex flex-col justify-between" data-cat="botanical" data-file="32_botanical_garda_lake_cypress_silhouette.png">
+      <div class="relative aspect-[3/4] bg-[#FAF8F5] overflow-hidden group cursor-pointer" onclick="openModal('32_botanical_garda_lake_cypress_silhouette.png', 'Garda Lake Cypress Silhouette')">
+        <img src="32_botanical_garda_lake_cypress_silhouette.png" alt="Garda Lake Cypress Silhouette" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+        <span class="absolute top-2 left-2 bg-black/75 text-white text-[10px] font-bold px-2 py-0.5 rounded shadow">#32</span>
+        <span class="absolute top-2 right-2 text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded shadow-sm bg-[#E6EFE8] text-[#3D6947]">botanical</span>
+      </div>
+      <div class="p-3.5 flex flex-col justify-between flex-grow gap-2">
+        <div>
+          <h3 class="font-bold text-sm sm:text-base text-[#1C1C1E] leading-tight">Garda Lake Cypress Silhouette</h3>
+          <p class="text-[10px] text-[#7A756D] font-mono mt-1 break-all select-all">32_botanical_garda_lake_cypress_silhouette.png</p>
+        </div>
+        <div class="flex items-center justify-between pt-2 border-t border-[#F0EBE3]">
+          <label class="flex items-center gap-1.5 text-xs text-[#1C1C1E] cursor-pointer font-semibold">
+            <input type="checkbox" class="product-checkbox rounded text-[#B8834E] focus:ring-0 w-4 h-4 cursor-pointer" value="32_botanical_garda_lake_cypress_silhouette.png" onchange="updateCount()">
+            <span>Select</span>
+          </label>
+          <button onclick="copyName('32_botanical_garda_lake_cypress_silhouette.png', this)" class="text-[11px] font-bold text-[#B8834E] hover:underline cursor-pointer">
+            Copy File
+          </button>
+        </div>
+      </div>
+    </div>
+    
+
+    <div class="product-card bg-white rounded-xl overflow-hidden border border-[#E8E3DA] shadow-sm hover:shadow-md transition flex flex-col justify-between" data-cat="botanical" data-file="33_botanical_tuscan_rosemary_and_thyme.png">
+      <div class="relative aspect-[3/4] bg-[#FAF8F5] overflow-hidden group cursor-pointer" onclick="openModal('33_botanical_tuscan_rosemary_and_thyme.png', 'Tuscan Rosemary And Thyme')">
+        <img src="33_botanical_tuscan_rosemary_and_thyme.png" alt="Tuscan Rosemary And Thyme" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+        <span class="absolute top-2 left-2 bg-black/75 text-white text-[10px] font-bold px-2 py-0.5 rounded shadow">#33</span>
+        <span class="absolute top-2 right-2 text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded shadow-sm bg-[#E6EFE8] text-[#3D6947]">botanical</span>
+      </div>
+      <div class="p-3.5 flex flex-col justify-between flex-grow gap-2">
+        <div>
+          <h3 class="font-bold text-sm sm:text-base text-[#1C1C1E] leading-tight">Tuscan Rosemary And Thyme</h3>
+          <p class="text-[10px] text-[#7A756D] font-mono mt-1 break-all select-all">33_botanical_tuscan_rosemary_and_thyme.png</p>
+        </div>
+        <div class="flex items-center justify-between pt-2 border-t border-[#F0EBE3]">
+          <label class="flex items-center gap-1.5 text-xs text-[#1C1C1E] cursor-pointer font-semibold">
+            <input type="checkbox" class="product-checkbox rounded text-[#B8834E] focus:ring-0 w-4 h-4 cursor-pointer" value="33_botanical_tuscan_rosemary_and_thyme.png" onchange="updateCount()">
+            <span>Select</span>
+          </label>
+          <button onclick="copyName('33_botanical_tuscan_rosemary_and_thyme.png', this)" class="text-[11px] font-bold text-[#B8834E] hover:underline cursor-pointer">
+            Copy File
+          </button>
+        </div>
+      </div>
+    </div>
+    
+
+    <div class="product-card bg-white rounded-xl overflow-hidden border border-[#E8E3DA] shadow-sm hover:shadow-md transition flex flex-col justify-between" data-cat="botanical" data-file="34_botanical_salento_fig_and_pomegranate.png">
+      <div class="relative aspect-[3/4] bg-[#FAF8F5] overflow-hidden group cursor-pointer" onclick="openModal('34_botanical_salento_fig_and_pomegranate.png', 'Salento Fig And Pomegranate')">
+        <img src="34_botanical_salento_fig_and_pomegranate.png" alt="Salento Fig And Pomegranate" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+        <span class="absolute top-2 left-2 bg-black/75 text-white text-[10px] font-bold px-2 py-0.5 rounded shadow">#34</span>
+        <span class="absolute top-2 right-2 text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded shadow-sm bg-[#E6EFE8] text-[#3D6947]">botanical</span>
+      </div>
+      <div class="p-3.5 flex flex-col justify-between flex-grow gap-2">
+        <div>
+          <h3 class="font-bold text-sm sm:text-base text-[#1C1C1E] leading-tight">Salento Fig And Pomegranate</h3>
+          <p class="text-[10px] text-[#7A756D] font-mono mt-1 break-all select-all">34_botanical_salento_fig_and_pomegranate.png</p>
+        </div>
+        <div class="flex items-center justify-between pt-2 border-t border-[#F0EBE3]">
+          <label class="flex items-center gap-1.5 text-xs text-[#1C1C1E] cursor-pointer font-semibold">
+            <input type="checkbox" class="product-checkbox rounded text-[#B8834E] focus:ring-0 w-4 h-4 cursor-pointer" value="34_botanical_salento_fig_and_pomegranate.png" onchange="updateCount()">
+            <span>Select</span>
+          </label>
+          <button onclick="copyName('34_botanical_salento_fig_and_pomegranate.png', this)" class="text-[11px] font-bold text-[#B8834E] hover:underline cursor-pointer">
+            Copy File
+          </button>
+        </div>
+      </div>
+    </div>
+    
+
+    <div class="product-card bg-white rounded-xl overflow-hidden border border-[#E8E3DA] shadow-sm hover:shadow-md transition flex flex-col justify-between" data-cat="botanical" data-file="35_botanical_amalfi_coast_sunlit_lemon_grove.png">
+      <div class="relative aspect-[3/4] bg-[#FAF8F5] overflow-hidden group cursor-pointer" onclick="openModal('35_botanical_amalfi_coast_sunlit_lemon_grove.png', 'Amalfi Coast Sunlit Lemon Grove')">
+        <img src="35_botanical_amalfi_coast_sunlit_lemon_grove.png" alt="Amalfi Coast Sunlit Lemon Grove" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+        <span class="absolute top-2 left-2 bg-black/75 text-white text-[10px] font-bold px-2 py-0.5 rounded shadow">#35</span>
+        <span class="absolute top-2 right-2 text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded shadow-sm bg-[#E6EFE8] text-[#3D6947]">botanical</span>
+      </div>
+      <div class="p-3.5 flex flex-col justify-between flex-grow gap-2">
+        <div>
+          <h3 class="font-bold text-sm sm:text-base text-[#1C1C1E] leading-tight">Amalfi Coast Sunlit Lemon Grove</h3>
+          <p class="text-[10px] text-[#7A756D] font-mono mt-1 break-all select-all">35_botanical_amalfi_coast_sunlit_lemon_grove.png</p>
+        </div>
+        <div class="flex items-center justify-between pt-2 border-t border-[#F0EBE3]">
+          <label class="flex items-center gap-1.5 text-xs text-[#1C1C1E] cursor-pointer font-semibold">
+            <input type="checkbox" class="product-checkbox rounded text-[#B8834E] focus:ring-0 w-4 h-4 cursor-pointer" value="35_botanical_amalfi_coast_sunlit_lemon_grove.png" onchange="updateCount()">
+            <span>Select</span>
+          </label>
+          <button onclick="copyName('35_botanical_amalfi_coast_sunlit_lemon_grove.png', this)" class="text-[11px] font-bold text-[#B8834E] hover:underline cursor-pointer">
+            Copy File
+          </button>
+        </div>
+      </div>
+    </div>
+    
+
+    <div class="product-card bg-white rounded-xl overflow-hidden border border-[#E8E3DA] shadow-sm hover:shadow-md transition flex flex-col justify-between" data-cat="botanical" data-file="36_botanical_mediterranean_herbarium_triptych_i.png">
+      <div class="relative aspect-[3/4] bg-[#FAF8F5] overflow-hidden group cursor-pointer" onclick="openModal('36_botanical_mediterranean_herbarium_triptych_i.png', 'Mediterranean Herbarium Triptych I')">
+        <img src="36_botanical_mediterranean_herbarium_triptych_i.png" alt="Mediterranean Herbarium Triptych I" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+        <span class="absolute top-2 left-2 bg-black/75 text-white text-[10px] font-bold px-2 py-0.5 rounded shadow">#36</span>
+        <span class="absolute top-2 right-2 text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded shadow-sm bg-[#E6EFE8] text-[#3D6947]">botanical</span>
+      </div>
+      <div class="p-3.5 flex flex-col justify-between flex-grow gap-2">
+        <div>
+          <h3 class="font-bold text-sm sm:text-base text-[#1C1C1E] leading-tight">Mediterranean Herbarium Triptych I</h3>
+          <p class="text-[10px] text-[#7A756D] font-mono mt-1 break-all select-all">36_botanical_mediterranean_herbarium_triptych_i.png</p>
+        </div>
+        <div class="flex items-center justify-between pt-2 border-t border-[#F0EBE3]">
+          <label class="flex items-center gap-1.5 text-xs text-[#1C1C1E] cursor-pointer font-semibold">
+            <input type="checkbox" class="product-checkbox rounded text-[#B8834E] focus:ring-0 w-4 h-4 cursor-pointer" value="36_botanical_mediterranean_herbarium_triptych_i.png" onchange="updateCount()">
+            <span>Select</span>
+          </label>
+          <button onclick="copyName('36_botanical_mediterranean_herbarium_triptych_i.png', this)" class="text-[11px] font-bold text-[#B8834E] hover:underline cursor-pointer">
+            Copy File
+          </button>
+        </div>
+      </div>
+    </div>
+    
+
+    <div class="product-card bg-white rounded-xl overflow-hidden border border-[#E8E3DA] shadow-sm hover:shadow-md transition flex flex-col justify-between" data-cat="riviera" data-file="37_riviera_matisse_organic_gouache_cutout_i.png">
+      <div class="relative aspect-[3/4] bg-[#FAF8F5] overflow-hidden group cursor-pointer" onclick="openModal('37_riviera_matisse_organic_gouache_cutout_i.png', 'Matisse Organic Gouache Cutout I')">
+        <img src="37_riviera_matisse_organic_gouache_cutout_i.png" alt="Matisse Organic Gouache Cutout I" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+        <span class="absolute top-2 left-2 bg-black/75 text-white text-[10px] font-bold px-2 py-0.5 rounded shadow">#37</span>
+        <span class="absolute top-2 right-2 text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded shadow-sm bg-[#E5EFF8] text-[#2F6196]">riviera</span>
+      </div>
+      <div class="p-3.5 flex flex-col justify-between flex-grow gap-2">
+        <div>
+          <h3 class="font-bold text-sm sm:text-base text-[#1C1C1E] leading-tight">Matisse Organic Gouache Cutout I</h3>
+          <p class="text-[10px] text-[#7A756D] font-mono mt-1 break-all select-all">37_riviera_matisse_organic_gouache_cutout_i.png</p>
+        </div>
+        <div class="flex items-center justify-between pt-2 border-t border-[#F0EBE3]">
+          <label class="flex items-center gap-1.5 text-xs text-[#1C1C1E] cursor-pointer font-semibold">
+            <input type="checkbox" class="product-checkbox rounded text-[#B8834E] focus:ring-0 w-4 h-4 cursor-pointer" value="37_riviera_matisse_organic_gouache_cutout_i.png" onchange="updateCount()">
+            <span>Select</span>
+          </label>
+          <button onclick="copyName('37_riviera_matisse_organic_gouache_cutout_i.png', this)" class="text-[11px] font-bold text-[#B8834E] hover:underline cursor-pointer">
+            Copy File
+          </button>
+        </div>
+      </div>
+    </div>
+    
+
+    <div class="product-card bg-white rounded-xl overflow-hidden border border-[#E8E3DA] shadow-sm hover:shadow-md transition flex flex-col justify-between" data-cat="riviera" data-file="38_riviera_cote_d_azur_sun_and_cobalt_horizon.png">
+      <div class="relative aspect-[3/4] bg-[#FAF8F5] overflow-hidden group cursor-pointer" onclick="openModal('38_riviera_cote_d_azur_sun_and_cobalt_horizon.png', 'Cote D Azur Sun And Cobalt Horizon')">
+        <img src="38_riviera_cote_d_azur_sun_and_cobalt_horizon.png" alt="Cote D Azur Sun And Cobalt Horizon" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+        <span class="absolute top-2 left-2 bg-black/75 text-white text-[10px] font-bold px-2 py-0.5 rounded shadow">#38</span>
+        <span class="absolute top-2 right-2 text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded shadow-sm bg-[#E5EFF8] text-[#2F6196]">riviera</span>
+      </div>
+      <div class="p-3.5 flex flex-col justify-between flex-grow gap-2">
+        <div>
+          <h3 class="font-bold text-sm sm:text-base text-[#1C1C1E] leading-tight">Cote D Azur Sun And Cobalt Horizon</h3>
+          <p class="text-[10px] text-[#7A756D] font-mono mt-1 break-all select-all">38_riviera_cote_d_azur_sun_and_cobalt_horizon.png</p>
+        </div>
+        <div class="flex items-center justify-between pt-2 border-t border-[#F0EBE3]">
+          <label class="flex items-center gap-1.5 text-xs text-[#1C1C1E] cursor-pointer font-semibold">
+            <input type="checkbox" class="product-checkbox rounded text-[#B8834E] focus:ring-0 w-4 h-4 cursor-pointer" value="38_riviera_cote_d_azur_sun_and_cobalt_horizon.png" onchange="updateCount()">
+            <span>Select</span>
+          </label>
+          <button onclick="copyName('38_riviera_cote_d_azur_sun_and_cobalt_horizon.png', this)" class="text-[11px] font-bold text-[#B8834E] hover:underline cursor-pointer">
+            Copy File
+          </button>
+        </div>
+      </div>
+    </div>
+    
+
+    <div class="product-card bg-white rounded-xl overflow-hidden border border-[#E8E3DA] shadow-sm hover:shadow-md transition flex flex-col justify-between" data-cat="riviera" data-file="39_riviera_antibes_terracotta_archway_view.png">
+      <div class="relative aspect-[3/4] bg-[#FAF8F5] overflow-hidden group cursor-pointer" onclick="openModal('39_riviera_antibes_terracotta_archway_view.png', 'Antibes Terracotta Archway View')">
+        <img src="39_riviera_antibes_terracotta_archway_view.png" alt="Antibes Terracotta Archway View" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+        <span class="absolute top-2 left-2 bg-black/75 text-white text-[10px] font-bold px-2 py-0.5 rounded shadow">#39</span>
+        <span class="absolute top-2 right-2 text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded shadow-sm bg-[#E5EFF8] text-[#2F6196]">riviera</span>
+      </div>
+      <div class="p-3.5 flex flex-col justify-between flex-grow gap-2">
+        <div>
+          <h3 class="font-bold text-sm sm:text-base text-[#1C1C1E] leading-tight">Antibes Terracotta Archway View</h3>
+          <p class="text-[10px] text-[#7A756D] font-mono mt-1 break-all select-all">39_riviera_antibes_terracotta_archway_view.png</p>
+        </div>
+        <div class="flex items-center justify-between pt-2 border-t border-[#F0EBE3]">
+          <label class="flex items-center gap-1.5 text-xs text-[#1C1C1E] cursor-pointer font-semibold">
+            <input type="checkbox" class="product-checkbox rounded text-[#B8834E] focus:ring-0 w-4 h-4 cursor-pointer" value="39_riviera_antibes_terracotta_archway_view.png" onchange="updateCount()">
+            <span>Select</span>
+          </label>
+          <button onclick="copyName('39_riviera_antibes_terracotta_archway_view.png', this)" class="text-[11px] font-bold text-[#B8834E] hover:underline cursor-pointer">
+            Copy File
+          </button>
+        </div>
+      </div>
+    </div>
+    
+
+    <div class="product-card bg-white rounded-xl overflow-hidden border border-[#E8E3DA] shadow-sm hover:shadow-md transition flex flex-col justify-between" data-cat="riviera" data-file="40_riviera_nice_mediterranean_flora_study.png">
+      <div class="relative aspect-[3/4] bg-[#FAF8F5] overflow-hidden group cursor-pointer" onclick="openModal('40_riviera_nice_mediterranean_flora_study.png', 'Nice Mediterranean Flora Study')">
+        <img src="40_riviera_nice_mediterranean_flora_study.png" alt="Nice Mediterranean Flora Study" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+        <span class="absolute top-2 left-2 bg-black/75 text-white text-[10px] font-bold px-2 py-0.5 rounded shadow">#40</span>
+        <span class="absolute top-2 right-2 text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded shadow-sm bg-[#E5EFF8] text-[#2F6196]">riviera</span>
+      </div>
+      <div class="p-3.5 flex flex-col justify-between flex-grow gap-2">
+        <div>
+          <h3 class="font-bold text-sm sm:text-base text-[#1C1C1E] leading-tight">Nice Mediterranean Flora Study</h3>
+          <p class="text-[10px] text-[#7A756D] font-mono mt-1 break-all select-all">40_riviera_nice_mediterranean_flora_study.png</p>
+        </div>
+        <div class="flex items-center justify-between pt-2 border-t border-[#F0EBE3]">
+          <label class="flex items-center gap-1.5 text-xs text-[#1C1C1E] cursor-pointer font-semibold">
+            <input type="checkbox" class="product-checkbox rounded text-[#B8834E] focus:ring-0 w-4 h-4 cursor-pointer" value="40_riviera_nice_mediterranean_flora_study.png" onchange="updateCount()">
+            <span>Select</span>
+          </label>
+          <button onclick="copyName('40_riviera_nice_mediterranean_flora_study.png', this)" class="text-[11px] font-bold text-[#B8834E] hover:underline cursor-pointer">
+            Copy File
+          </button>
+        </div>
+      </div>
+    </div>
+    
+
+    <div class="product-card bg-white rounded-xl overflow-hidden border border-[#E8E3DA] shadow-sm hover:shadow-md transition flex flex-col justify-between" data-cat="riviera" data-file="41_riviera_saint_tropez_golden_hour_sail.png">
+      <div class="relative aspect-[3/4] bg-[#FAF8F5] overflow-hidden group cursor-pointer" onclick="openModal('41_riviera_saint_tropez_golden_hour_sail.png', 'Saint Tropez Golden Hour Sail')">
+        <img src="41_riviera_saint_tropez_golden_hour_sail.png" alt="Saint Tropez Golden Hour Sail" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+        <span class="absolute top-2 left-2 bg-black/75 text-white text-[10px] font-bold px-2 py-0.5 rounded shadow">#41</span>
+        <span class="absolute top-2 right-2 text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded shadow-sm bg-[#E5EFF8] text-[#2F6196]">riviera</span>
+      </div>
+      <div class="p-3.5 flex flex-col justify-between flex-grow gap-2">
+        <div>
+          <h3 class="font-bold text-sm sm:text-base text-[#1C1C1E] leading-tight">Saint Tropez Golden Hour Sail</h3>
+          <p class="text-[10px] text-[#7A756D] font-mono mt-1 break-all select-all">41_riviera_saint_tropez_golden_hour_sail.png</p>
+        </div>
+        <div class="flex items-center justify-between pt-2 border-t border-[#F0EBE3]">
+          <label class="flex items-center gap-1.5 text-xs text-[#1C1C1E] cursor-pointer font-semibold">
+            <input type="checkbox" class="product-checkbox rounded text-[#B8834E] focus:ring-0 w-4 h-4 cursor-pointer" value="41_riviera_saint_tropez_golden_hour_sail.png" onchange="updateCount()">
+            <span>Select</span>
+          </label>
+          <button onclick="copyName('41_riviera_saint_tropez_golden_hour_sail.png', this)" class="text-[11px] font-bold text-[#B8834E] hover:underline cursor-pointer">
+            Copy File
+          </button>
+        </div>
+      </div>
+    </div>
+    
+
+    <div class="product-card bg-white rounded-xl overflow-hidden border border-[#E8E3DA] shadow-sm hover:shadow-md transition flex flex-col justify-between" data-cat="riviera" data-file="42_riviera_cannes_croisette_palm_silhouette.png">
+      <div class="relative aspect-[3/4] bg-[#FAF8F5] overflow-hidden group cursor-pointer" onclick="openModal('42_riviera_cannes_croisette_palm_silhouette.png', 'Cannes Croisette Palm Silhouette')">
+        <img src="42_riviera_cannes_croisette_palm_silhouette.png" alt="Cannes Croisette Palm Silhouette" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+        <span class="absolute top-2 left-2 bg-black/75 text-white text-[10px] font-bold px-2 py-0.5 rounded shadow">#42</span>
+        <span class="absolute top-2 right-2 text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded shadow-sm bg-[#E5EFF8] text-[#2F6196]">riviera</span>
+      </div>
+      <div class="p-3.5 flex flex-col justify-between flex-grow gap-2">
+        <div>
+          <h3 class="font-bold text-sm sm:text-base text-[#1C1C1E] leading-tight">Cannes Croisette Palm Silhouette</h3>
+          <p class="text-[10px] text-[#7A756D] font-mono mt-1 break-all select-all">42_riviera_cannes_croisette_palm_silhouette.png</p>
+        </div>
+        <div class="flex items-center justify-between pt-2 border-t border-[#F0EBE3]">
+          <label class="flex items-center gap-1.5 text-xs text-[#1C1C1E] cursor-pointer font-semibold">
+            <input type="checkbox" class="product-checkbox rounded text-[#B8834E] focus:ring-0 w-4 h-4 cursor-pointer" value="42_riviera_cannes_croisette_palm_silhouette.png" onchange="updateCount()">
+            <span>Select</span>
+          </label>
+          <button onclick="copyName('42_riviera_cannes_croisette_palm_silhouette.png', this)" class="text-[11px] font-bold text-[#B8834E] hover:underline cursor-pointer">
+            Copy File
+          </button>
+        </div>
+      </div>
+    </div>
+    
+
+    <div class="product-card bg-white rounded-xl overflow-hidden border border-[#E8E3DA] shadow-sm hover:shadow-md transition flex flex-col justify-between" data-cat="riviera" data-file="43_riviera_menton_seaside_lemon_balcony.png">
+      <div class="relative aspect-[3/4] bg-[#FAF8F5] overflow-hidden group cursor-pointer" onclick="openModal('43_riviera_menton_seaside_lemon_balcony.png', 'Menton Seaside Lemon Balcony')">
+        <img src="43_riviera_menton_seaside_lemon_balcony.png" alt="Menton Seaside Lemon Balcony" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+        <span class="absolute top-2 left-2 bg-black/75 text-white text-[10px] font-bold px-2 py-0.5 rounded shadow">#43</span>
+        <span class="absolute top-2 right-2 text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded shadow-sm bg-[#E5EFF8] text-[#2F6196]">riviera</span>
+      </div>
+      <div class="p-3.5 flex flex-col justify-between flex-grow gap-2">
+        <div>
+          <h3 class="font-bold text-sm sm:text-base text-[#1C1C1E] leading-tight">Menton Seaside Lemon Balcony</h3>
+          <p class="text-[10px] text-[#7A756D] font-mono mt-1 break-all select-all">43_riviera_menton_seaside_lemon_balcony.png</p>
+        </div>
+        <div class="flex items-center justify-between pt-2 border-t border-[#F0EBE3]">
+          <label class="flex items-center gap-1.5 text-xs text-[#1C1C1E] cursor-pointer font-semibold">
+            <input type="checkbox" class="product-checkbox rounded text-[#B8834E] focus:ring-0 w-4 h-4 cursor-pointer" value="43_riviera_menton_seaside_lemon_balcony.png" onchange="updateCount()">
+            <span>Select</span>
+          </label>
+          <button onclick="copyName('43_riviera_menton_seaside_lemon_balcony.png', this)" class="text-[11px] font-bold text-[#B8834E] hover:underline cursor-pointer">
+            Copy File
+          </button>
+        </div>
+      </div>
+    </div>
+    
+
+    <div class="product-card bg-white rounded-xl overflow-hidden border border-[#E8E3DA] shadow-sm hover:shadow-md transition flex flex-col justify-between" data-cat="riviera" data-file="44_riviera_villefranche_cobalt_blue_bay.png">
+      <div class="relative aspect-[3/4] bg-[#FAF8F5] overflow-hidden group cursor-pointer" onclick="openModal('44_riviera_villefranche_cobalt_blue_bay.png', 'Villefranche Cobalt Blue Bay')">
+        <img src="44_riviera_villefranche_cobalt_blue_bay.png" alt="Villefranche Cobalt Blue Bay" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+        <span class="absolute top-2 left-2 bg-black/75 text-white text-[10px] font-bold px-2 py-0.5 rounded shadow">#44</span>
+        <span class="absolute top-2 right-2 text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded shadow-sm bg-[#E5EFF8] text-[#2F6196]">riviera</span>
+      </div>
+      <div class="p-3.5 flex flex-col justify-between flex-grow gap-2">
+        <div>
+          <h3 class="font-bold text-sm sm:text-base text-[#1C1C1E] leading-tight">Villefranche Cobalt Blue Bay</h3>
+          <p class="text-[10px] text-[#7A756D] font-mono mt-1 break-all select-all">44_riviera_villefranche_cobalt_blue_bay.png</p>
+        </div>
+        <div class="flex items-center justify-between pt-2 border-t border-[#F0EBE3]">
+          <label class="flex items-center gap-1.5 text-xs text-[#1C1C1E] cursor-pointer font-semibold">
+            <input type="checkbox" class="product-checkbox rounded text-[#B8834E] focus:ring-0 w-4 h-4 cursor-pointer" value="44_riviera_villefranche_cobalt_blue_bay.png" onchange="updateCount()">
+            <span>Select</span>
+          </label>
+          <button onclick="copyName('44_riviera_villefranche_cobalt_blue_bay.png', this)" class="text-[11px] font-bold text-[#B8834E] hover:underline cursor-pointer">
+            Copy File
+          </button>
+        </div>
+      </div>
+    </div>
+    
+
+    <div class="product-card bg-white rounded-xl overflow-hidden border border-[#E8E3DA] shadow-sm hover:shadow-md transition flex flex-col justify-between" data-cat="riviera" data-file="45_riviera_monaco_grand_prix_retro_geometry.png">
+      <div class="relative aspect-[3/4] bg-[#FAF8F5] overflow-hidden group cursor-pointer" onclick="openModal('45_riviera_monaco_grand_prix_retro_geometry.png', 'Monaco Grand Prix Retro Geometry')">
+        <img src="45_riviera_monaco_grand_prix_retro_geometry.png" alt="Monaco Grand Prix Retro Geometry" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+        <span class="absolute top-2 left-2 bg-black/75 text-white text-[10px] font-bold px-2 py-0.5 rounded shadow">#45</span>
+        <span class="absolute top-2 right-2 text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded shadow-sm bg-[#E5EFF8] text-[#2F6196]">riviera</span>
+      </div>
+      <div class="p-3.5 flex flex-col justify-between flex-grow gap-2">
+        <div>
+          <h3 class="font-bold text-sm sm:text-base text-[#1C1C1E] leading-tight">Monaco Grand Prix Retro Geometry</h3>
+          <p class="text-[10px] text-[#7A756D] font-mono mt-1 break-all select-all">45_riviera_monaco_grand_prix_retro_geometry.png</p>
+        </div>
+        <div class="flex items-center justify-between pt-2 border-t border-[#F0EBE3]">
+          <label class="flex items-center gap-1.5 text-xs text-[#1C1C1E] cursor-pointer font-semibold">
+            <input type="checkbox" class="product-checkbox rounded text-[#B8834E] focus:ring-0 w-4 h-4 cursor-pointer" value="45_riviera_monaco_grand_prix_retro_geometry.png" onchange="updateCount()">
+            <span>Select</span>
+          </label>
+          <button onclick="copyName('45_riviera_monaco_grand_prix_retro_geometry.png', this)" class="text-[11px] font-bold text-[#B8834E] hover:underline cursor-pointer">
+            Copy File
+          </button>
+        </div>
+      </div>
+    </div>
+    
+
+    <div class="product-card bg-white rounded-xl overflow-hidden border border-[#E8E3DA] shadow-sm hover:shadow-md transition flex flex-col justify-between" data-cat="riviera" data-file="46_riviera_eze_village_clifftop_horizon.png">
+      <div class="relative aspect-[3/4] bg-[#FAF8F5] overflow-hidden group cursor-pointer" onclick="openModal('46_riviera_eze_village_clifftop_horizon.png', 'Eze Village Clifftop Horizon')">
+        <img src="46_riviera_eze_village_clifftop_horizon.png" alt="Eze Village Clifftop Horizon" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+        <span class="absolute top-2 left-2 bg-black/75 text-white text-[10px] font-bold px-2 py-0.5 rounded shadow">#46</span>
+        <span class="absolute top-2 right-2 text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded shadow-sm bg-[#E5EFF8] text-[#2F6196]">riviera</span>
+      </div>
+      <div class="p-3.5 flex flex-col justify-between flex-grow gap-2">
+        <div>
+          <h3 class="font-bold text-sm sm:text-base text-[#1C1C1E] leading-tight">Eze Village Clifftop Horizon</h3>
+          <p class="text-[10px] text-[#7A756D] font-mono mt-1 break-all select-all">46_riviera_eze_village_clifftop_horizon.png</p>
+        </div>
+        <div class="flex items-center justify-between pt-2 border-t border-[#F0EBE3]">
+          <label class="flex items-center gap-1.5 text-xs text-[#1C1C1E] cursor-pointer font-semibold">
+            <input type="checkbox" class="product-checkbox rounded text-[#B8834E] focus:ring-0 w-4 h-4 cursor-pointer" value="46_riviera_eze_village_clifftop_horizon.png" onchange="updateCount()">
+            <span>Select</span>
+          </label>
+          <button onclick="copyName('46_riviera_eze_village_clifftop_horizon.png', this)" class="text-[11px] font-bold text-[#B8834E] hover:underline cursor-pointer">
+            Copy File
+          </button>
+        </div>
+      </div>
+    </div>
+    
+
+    <div class="product-card bg-white rounded-xl overflow-hidden border border-[#E8E3DA] shadow-sm hover:shadow-md transition flex flex-col justify-between" data-cat="riviera" data-file="47_riviera_cap_ferrat_pine_grove_and_sea.png">
+      <div class="relative aspect-[3/4] bg-[#FAF8F5] overflow-hidden group cursor-pointer" onclick="openModal('47_riviera_cap_ferrat_pine_grove_and_sea.png', 'Cap Ferrat Pine Grove And Sea')">
+        <img src="47_riviera_cap_ferrat_pine_grove_and_sea.png" alt="Cap Ferrat Pine Grove And Sea" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+        <span class="absolute top-2 left-2 bg-black/75 text-white text-[10px] font-bold px-2 py-0.5 rounded shadow">#47</span>
+        <span class="absolute top-2 right-2 text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded shadow-sm bg-[#E5EFF8] text-[#2F6196]">riviera</span>
+      </div>
+      <div class="p-3.5 flex flex-col justify-between flex-grow gap-2">
+        <div>
+          <h3 class="font-bold text-sm sm:text-base text-[#1C1C1E] leading-tight">Cap Ferrat Pine Grove And Sea</h3>
+          <p class="text-[10px] text-[#7A756D] font-mono mt-1 break-all select-all">47_riviera_cap_ferrat_pine_grove_and_sea.png</p>
+        </div>
+        <div class="flex items-center justify-between pt-2 border-t border-[#F0EBE3]">
+          <label class="flex items-center gap-1.5 text-xs text-[#1C1C1E] cursor-pointer font-semibold">
+            <input type="checkbox" class="product-checkbox rounded text-[#B8834E] focus:ring-0 w-4 h-4 cursor-pointer" value="47_riviera_cap_ferrat_pine_grove_and_sea.png" onchange="updateCount()">
+            <span>Select</span>
+          </label>
+          <button onclick="copyName('47_riviera_cap_ferrat_pine_grove_and_sea.png', this)" class="text-[11px] font-bold text-[#B8834E] hover:underline cursor-pointer">
+            Copy File
+          </button>
+        </div>
+      </div>
+    </div>
+    
+
+    <div class="product-card bg-white rounded-xl overflow-hidden border border-[#E8E3DA] shadow-sm hover:shadow-md transition flex flex-col justify-between" data-cat="riviera" data-file="48_riviera_salon_d_automne_exhibition_no_4.png">
+      <div class="relative aspect-[3/4] bg-[#FAF8F5] overflow-hidden group cursor-pointer" onclick="openModal('48_riviera_salon_d_automne_exhibition_no_4.png', 'Salon D Automne Exhibition No 4')">
+        <img src="48_riviera_salon_d_automne_exhibition_no_4.png" alt="Salon D Automne Exhibition No 4" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+        <span class="absolute top-2 left-2 bg-black/75 text-white text-[10px] font-bold px-2 py-0.5 rounded shadow">#48</span>
+        <span class="absolute top-2 right-2 text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded shadow-sm bg-[#E5EFF8] text-[#2F6196]">riviera</span>
+      </div>
+      <div class="p-3.5 flex flex-col justify-between flex-grow gap-2">
+        <div>
+          <h3 class="font-bold text-sm sm:text-base text-[#1C1C1E] leading-tight">Salon D Automne Exhibition No 4</h3>
+          <p class="text-[10px] text-[#7A756D] font-mono mt-1 break-all select-all">48_riviera_salon_d_automne_exhibition_no_4.png</p>
+        </div>
+        <div class="flex items-center justify-between pt-2 border-t border-[#F0EBE3]">
+          <label class="flex items-center gap-1.5 text-xs text-[#1C1C1E] cursor-pointer font-semibold">
+            <input type="checkbox" class="product-checkbox rounded text-[#B8834E] focus:ring-0 w-4 h-4 cursor-pointer" value="48_riviera_salon_d_automne_exhibition_no_4.png" onchange="updateCount()">
+            <span>Select</span>
+          </label>
+          <button onclick="copyName('48_riviera_salon_d_automne_exhibition_no_4.png', this)" class="text-[11px] font-bold text-[#B8834E] hover:underline cursor-pointer">
+            Copy File
+          </button>
+        </div>
+      </div>
+    </div>
+    
+
+    <div class="product-card bg-white rounded-xl overflow-hidden border border-[#E8E3DA] shadow-sm hover:shadow-md transition flex flex-col justify-between" data-cat="riviera" data-file="49_riviera_galerie_d_art_parisien_cutout_ii.png">
+      <div class="relative aspect-[3/4] bg-[#FAF8F5] overflow-hidden group cursor-pointer" onclick="openModal('49_riviera_galerie_d_art_parisien_cutout_ii.png', 'Galerie D Art Parisien Cutout Ii')">
+        <img src="49_riviera_galerie_d_art_parisien_cutout_ii.png" alt="Galerie D Art Parisien Cutout Ii" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+        <span class="absolute top-2 left-2 bg-black/75 text-white text-[10px] font-bold px-2 py-0.5 rounded shadow">#49</span>
+        <span class="absolute top-2 right-2 text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded shadow-sm bg-[#E5EFF8] text-[#2F6196]">riviera</span>
+      </div>
+      <div class="p-3.5 flex flex-col justify-between flex-grow gap-2">
+        <div>
+          <h3 class="font-bold text-sm sm:text-base text-[#1C1C1E] leading-tight">Galerie D Art Parisien Cutout Ii</h3>
+          <p class="text-[10px] text-[#7A756D] font-mono mt-1 break-all select-all">49_riviera_galerie_d_art_parisien_cutout_ii.png</p>
+        </div>
+        <div class="flex items-center justify-between pt-2 border-t border-[#F0EBE3]">
+          <label class="flex items-center gap-1.5 text-xs text-[#1C1C1E] cursor-pointer font-semibold">
+            <input type="checkbox" class="product-checkbox rounded text-[#B8834E] focus:ring-0 w-4 h-4 cursor-pointer" value="49_riviera_galerie_d_art_parisien_cutout_ii.png" onchange="updateCount()">
+            <span>Select</span>
+          </label>
+          <button onclick="copyName('49_riviera_galerie_d_art_parisien_cutout_ii.png', this)" class="text-[11px] font-bold text-[#B8834E] hover:underline cursor-pointer">
+            Copy File
+          </button>
+        </div>
+      </div>
+    </div>
+    
+
+    <div class="product-card bg-white rounded-xl overflow-hidden border border-[#E8E3DA] shadow-sm hover:shadow-md transition flex flex-col justify-between" data-cat="riviera" data-file="50_riviera_french_riviera_striped_parasol.png">
+      <div class="relative aspect-[3/4] bg-[#FAF8F5] overflow-hidden group cursor-pointer" onclick="openModal('50_riviera_french_riviera_striped_parasol.png', 'French Riviera Striped Parasol')">
+        <img src="50_riviera_french_riviera_striped_parasol.png" alt="French Riviera Striped Parasol" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+        <span class="absolute top-2 left-2 bg-black/75 text-white text-[10px] font-bold px-2 py-0.5 rounded shadow">#50</span>
+        <span class="absolute top-2 right-2 text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded shadow-sm bg-[#E5EFF8] text-[#2F6196]">riviera</span>
+      </div>
+      <div class="p-3.5 flex flex-col justify-between flex-grow gap-2">
+        <div>
+          <h3 class="font-bold text-sm sm:text-base text-[#1C1C1E] leading-tight">French Riviera Striped Parasol</h3>
+          <p class="text-[10px] text-[#7A756D] font-mono mt-1 break-all select-all">50_riviera_french_riviera_striped_parasol.png</p>
+        </div>
+        <div class="flex items-center justify-between pt-2 border-t border-[#F0EBE3]">
+          <label class="flex items-center gap-1.5 text-xs text-[#1C1C1E] cursor-pointer font-semibold">
+            <input type="checkbox" class="product-checkbox rounded text-[#B8834E] focus:ring-0 w-4 h-4 cursor-pointer" value="50_riviera_french_riviera_striped_parasol.png" onchange="updateCount()">
+            <span>Select</span>
+          </label>
+          <button onclick="copyName('50_riviera_french_riviera_striped_parasol.png', this)" class="text-[11px] font-bold text-[#B8834E] hover:underline cursor-pointer">
+            Copy File
+          </button>
+        </div>
+      </div>
+    </div>
+    
+
+    <div class="product-card bg-white rounded-xl overflow-hidden border border-[#E8E3DA] shadow-sm hover:shadow-md transition flex flex-col justify-between" data-cat="riviera" data-file="51_riviera_biarritz_atlantic_ocean_wave.png">
+      <div class="relative aspect-[3/4] bg-[#FAF8F5] overflow-hidden group cursor-pointer" onclick="openModal('51_riviera_biarritz_atlantic_ocean_wave.png', 'Biarritz Atlantic Ocean Wave')">
+        <img src="51_riviera_biarritz_atlantic_ocean_wave.png" alt="Biarritz Atlantic Ocean Wave" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+        <span class="absolute top-2 left-2 bg-black/75 text-white text-[10px] font-bold px-2 py-0.5 rounded shadow">#51</span>
+        <span class="absolute top-2 right-2 text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded shadow-sm bg-[#E5EFF8] text-[#2F6196]">riviera</span>
+      </div>
+      <div class="p-3.5 flex flex-col justify-between flex-grow gap-2">
+        <div>
+          <h3 class="font-bold text-sm sm:text-base text-[#1C1C1E] leading-tight">Biarritz Atlantic Ocean Wave</h3>
+          <p class="text-[10px] text-[#7A756D] font-mono mt-1 break-all select-all">51_riviera_biarritz_atlantic_ocean_wave.png</p>
+        </div>
+        <div class="flex items-center justify-between pt-2 border-t border-[#F0EBE3]">
+          <label class="flex items-center gap-1.5 text-xs text-[#1C1C1E] cursor-pointer font-semibold">
+            <input type="checkbox" class="product-checkbox rounded text-[#B8834E] focus:ring-0 w-4 h-4 cursor-pointer" value="51_riviera_biarritz_atlantic_ocean_wave.png" onchange="updateCount()">
+            <span>Select</span>
+          </label>
+          <button onclick="copyName('51_riviera_biarritz_atlantic_ocean_wave.png', this)" class="text-[11px] font-bold text-[#B8834E] hover:underline cursor-pointer">
+            Copy File
+          </button>
+        </div>
+      </div>
+    </div>
+    
+
+    <div class="product-card bg-white rounded-xl overflow-hidden border border-[#E8E3DA] shadow-sm hover:shadow-md transition flex flex-col justify-between" data-cat="riviera" data-file="52_riviera_matisse_marine_coral_balance.png">
+      <div class="relative aspect-[3/4] bg-[#FAF8F5] overflow-hidden group cursor-pointer" onclick="openModal('52_riviera_matisse_marine_coral_balance.png', 'Matisse Marine Coral Balance')">
+        <img src="52_riviera_matisse_marine_coral_balance.png" alt="Matisse Marine Coral Balance" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+        <span class="absolute top-2 left-2 bg-black/75 text-white text-[10px] font-bold px-2 py-0.5 rounded shadow">#52</span>
+        <span class="absolute top-2 right-2 text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded shadow-sm bg-[#E5EFF8] text-[#2F6196]">riviera</span>
+      </div>
+      <div class="p-3.5 flex flex-col justify-between flex-grow gap-2">
+        <div>
+          <h3 class="font-bold text-sm sm:text-base text-[#1C1C1E] leading-tight">Matisse Marine Coral Balance</h3>
+          <p class="text-[10px] text-[#7A756D] font-mono mt-1 break-all select-all">52_riviera_matisse_marine_coral_balance.png</p>
+        </div>
+        <div class="flex items-center justify-between pt-2 border-t border-[#F0EBE3]">
+          <label class="flex items-center gap-1.5 text-xs text-[#1C1C1E] cursor-pointer font-semibold">
+            <input type="checkbox" class="product-checkbox rounded text-[#B8834E] focus:ring-0 w-4 h-4 cursor-pointer" value="52_riviera_matisse_marine_coral_balance.png" onchange="updateCount()">
+            <span>Select</span>
+          </label>
+          <button onclick="copyName('52_riviera_matisse_marine_coral_balance.png', this)" class="text-[11px] font-bold text-[#B8834E] hover:underline cursor-pointer">
+            Copy File
+          </button>
+        </div>
+      </div>
+    </div>
+    
+
+    <div class="product-card bg-white rounded-xl overflow-hidden border border-[#E8E3DA] shadow-sm hover:shadow-md transition flex flex-col justify-between" data-cat="riviera" data-file="53_riviera_saint_paul_de_vence_olive_wall.png">
+      <div class="relative aspect-[3/4] bg-[#FAF8F5] overflow-hidden group cursor-pointer" onclick="openModal('53_riviera_saint_paul_de_vence_olive_wall.png', 'Saint Paul De Vence Olive Wall')">
+        <img src="53_riviera_saint_paul_de_vence_olive_wall.png" alt="Saint Paul De Vence Olive Wall" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+        <span class="absolute top-2 left-2 bg-black/75 text-white text-[10px] font-bold px-2 py-0.5 rounded shadow">#53</span>
+        <span class="absolute top-2 right-2 text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded shadow-sm bg-[#E5EFF8] text-[#2F6196]">riviera</span>
+      </div>
+      <div class="p-3.5 flex flex-col justify-between flex-grow gap-2">
+        <div>
+          <h3 class="font-bold text-sm sm:text-base text-[#1C1C1E] leading-tight">Saint Paul De Vence Olive Wall</h3>
+          <p class="text-[10px] text-[#7A756D] font-mono mt-1 break-all select-all">53_riviera_saint_paul_de_vence_olive_wall.png</p>
+        </div>
+        <div class="flex items-center justify-between pt-2 border-t border-[#F0EBE3]">
+          <label class="flex items-center gap-1.5 text-xs text-[#1C1C1E] cursor-pointer font-semibold">
+            <input type="checkbox" class="product-checkbox rounded text-[#B8834E] focus:ring-0 w-4 h-4 cursor-pointer" value="53_riviera_saint_paul_de_vence_olive_wall.png" onchange="updateCount()">
+            <span>Select</span>
+          </label>
+          <button onclick="copyName('53_riviera_saint_paul_de_vence_olive_wall.png', this)" class="text-[11px] font-bold text-[#B8834E] hover:underline cursor-pointer">
+            Copy File
+          </button>
+        </div>
+      </div>
+    </div>
+    
+
+    <div class="product-card bg-white rounded-xl overflow-hidden border border-[#E8E3DA] shadow-sm hover:shadow-md transition flex flex-col justify-between" data-cat="riviera" data-file="54_riviera_provence_ochre_sunburst_abstract.png">
+      <div class="relative aspect-[3/4] bg-[#FAF8F5] overflow-hidden group cursor-pointer" onclick="openModal('54_riviera_provence_ochre_sunburst_abstract.png', 'Provence Ochre Sunburst Abstract')">
+        <img src="54_riviera_provence_ochre_sunburst_abstract.png" alt="Provence Ochre Sunburst Abstract" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+        <span class="absolute top-2 left-2 bg-black/75 text-white text-[10px] font-bold px-2 py-0.5 rounded shadow">#54</span>
+        <span class="absolute top-2 right-2 text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded shadow-sm bg-[#E5EFF8] text-[#2F6196]">riviera</span>
+      </div>
+      <div class="p-3.5 flex flex-col justify-between flex-grow gap-2">
+        <div>
+          <h3 class="font-bold text-sm sm:text-base text-[#1C1C1E] leading-tight">Provence Ochre Sunburst Abstract</h3>
+          <p class="text-[10px] text-[#7A756D] font-mono mt-1 break-all select-all">54_riviera_provence_ochre_sunburst_abstract.png</p>
+        </div>
+        <div class="flex items-center justify-between pt-2 border-t border-[#F0EBE3]">
+          <label class="flex items-center gap-1.5 text-xs text-[#1C1C1E] cursor-pointer font-semibold">
+            <input type="checkbox" class="product-checkbox rounded text-[#B8834E] focus:ring-0 w-4 h-4 cursor-pointer" value="54_riviera_provence_ochre_sunburst_abstract.png" onchange="updateCount()">
+            <span>Select</span>
+          </label>
+          <button onclick="copyName('54_riviera_provence_ochre_sunburst_abstract.png', this)" class="text-[11px] font-bold text-[#B8834E] hover:underline cursor-pointer">
+            Copy File
+          </button>
+        </div>
+      </div>
+    </div>
+    
+
+    <div class="product-card bg-white rounded-xl overflow-hidden border border-[#E8E3DA] shadow-sm hover:shadow-md transition flex flex-col justify-between" data-cat="bauhaus" data-file="55_bauhaus_dessau_constructivist_quadrant_i.png">
+      <div class="relative aspect-[3/4] bg-[#FAF8F5] overflow-hidden group cursor-pointer" onclick="openModal('55_bauhaus_dessau_constructivist_quadrant_i.png', 'Dessau Constructivist Quadrant I')">
+        <img src="55_bauhaus_dessau_constructivist_quadrant_i.png" alt="Dessau Constructivist Quadrant I" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+        <span class="absolute top-2 left-2 bg-black/75 text-white text-[10px] font-bold px-2 py-0.5 rounded shadow">#55</span>
+        <span class="absolute top-2 right-2 text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded shadow-sm bg-[#F7EBE8] text-[#A63C2B]">bauhaus</span>
+      </div>
+      <div class="p-3.5 flex flex-col justify-between flex-grow gap-2">
+        <div>
+          <h3 class="font-bold text-sm sm:text-base text-[#1C1C1E] leading-tight">Dessau Constructivist Quadrant I</h3>
+          <p class="text-[10px] text-[#7A756D] font-mono mt-1 break-all select-all">55_bauhaus_dessau_constructivist_quadrant_i.png</p>
+        </div>
+        <div class="flex items-center justify-between pt-2 border-t border-[#F0EBE3]">
+          <label class="flex items-center gap-1.5 text-xs text-[#1C1C1E] cursor-pointer font-semibold">
+            <input type="checkbox" class="product-checkbox rounded text-[#B8834E] focus:ring-0 w-4 h-4 cursor-pointer" value="55_bauhaus_dessau_constructivist_quadrant_i.png" onchange="updateCount()">
+            <span>Select</span>
+          </label>
+          <button onclick="copyName('55_bauhaus_dessau_constructivist_quadrant_i.png', this)" class="text-[11px] font-bold text-[#B8834E] hover:underline cursor-pointer">
+            Copy File
+          </button>
+        </div>
+      </div>
+    </div>
+    
+
+    <div class="product-card bg-white rounded-xl overflow-hidden border border-[#E8E3DA] shadow-sm hover:shadow-md transition flex flex-col justify-between" data-cat="bauhaus" data-file="56_bauhaus_bauhaus_kinetic_balance_disc.png">
+      <div class="relative aspect-[3/4] bg-[#FAF8F5] overflow-hidden group cursor-pointer" onclick="openModal('56_bauhaus_bauhaus_kinetic_balance_disc.png', 'Bauhaus Kinetic Balance Disc')">
+        <img src="56_bauhaus_bauhaus_kinetic_balance_disc.png" alt="Bauhaus Kinetic Balance Disc" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+        <span class="absolute top-2 left-2 bg-black/75 text-white text-[10px] font-bold px-2 py-0.5 rounded shadow">#56</span>
+        <span class="absolute top-2 right-2 text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded shadow-sm bg-[#F7EBE8] text-[#A63C2B]">bauhaus</span>
+      </div>
+      <div class="p-3.5 flex flex-col justify-between flex-grow gap-2">
+        <div>
+          <h3 class="font-bold text-sm sm:text-base text-[#1C1C1E] leading-tight">Bauhaus Kinetic Balance Disc</h3>
+          <p class="text-[10px] text-[#7A756D] font-mono mt-1 break-all select-all">56_bauhaus_bauhaus_kinetic_balance_disc.png</p>
+        </div>
+        <div class="flex items-center justify-between pt-2 border-t border-[#F0EBE3]">
+          <label class="flex items-center gap-1.5 text-xs text-[#1C1C1E] cursor-pointer font-semibold">
+            <input type="checkbox" class="product-checkbox rounded text-[#B8834E] focus:ring-0 w-4 h-4 cursor-pointer" value="56_bauhaus_bauhaus_kinetic_balance_disc.png" onchange="updateCount()">
+            <span>Select</span>
+          </label>
+          <button onclick="copyName('56_bauhaus_bauhaus_kinetic_balance_disc.png', this)" class="text-[11px] font-bold text-[#B8834E] hover:underline cursor-pointer">
+            Copy File
+          </button>
+        </div>
+      </div>
+    </div>
+    
+
+    <div class="product-card bg-white rounded-xl overflow-hidden border border-[#E8E3DA] shadow-sm hover:shadow-md transition flex flex-col justify-between" data-cat="bauhaus" data-file="57_bauhaus_weimar_geometric_divide_in_red.png">
+      <div class="relative aspect-[3/4] bg-[#FAF8F5] overflow-hidden group cursor-pointer" onclick="openModal('57_bauhaus_weimar_geometric_divide_in_red.png', 'Weimar Geometric Divide In Red')">
+        <img src="57_bauhaus_weimar_geometric_divide_in_red.png" alt="Weimar Geometric Divide In Red" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+        <span class="absolute top-2 left-2 bg-black/75 text-white text-[10px] font-bold px-2 py-0.5 rounded shadow">#57</span>
+        <span class="absolute top-2 right-2 text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded shadow-sm bg-[#F7EBE8] text-[#A63C2B]">bauhaus</span>
+      </div>
+      <div class="p-3.5 flex flex-col justify-between flex-grow gap-2">
+        <div>
+          <h3 class="font-bold text-sm sm:text-base text-[#1C1C1E] leading-tight">Weimar Geometric Divide In Red</h3>
+          <p class="text-[10px] text-[#7A756D] font-mono mt-1 break-all select-all">57_bauhaus_weimar_geometric_divide_in_red.png</p>
+        </div>
+        <div class="flex items-center justify-between pt-2 border-t border-[#F0EBE3]">
+          <label class="flex items-center gap-1.5 text-xs text-[#1C1C1E] cursor-pointer font-semibold">
+            <input type="checkbox" class="product-checkbox rounded text-[#B8834E] focus:ring-0 w-4 h-4 cursor-pointer" value="57_bauhaus_weimar_geometric_divide_in_red.png" onchange="updateCount()">
+            <span>Select</span>
+          </label>
+          <button onclick="copyName('57_bauhaus_weimar_geometric_divide_in_red.png', this)" class="text-[11px] font-bold text-[#B8834E] hover:underline cursor-pointer">
+            Copy File
+          </button>
+        </div>
+      </div>
+    </div>
+    
+
+    <div class="product-card bg-white rounded-xl overflow-hidden border border-[#E8E3DA] shadow-sm hover:shadow-md transition flex flex-col justify-between" data-cat="bauhaus" data-file="58_bauhaus_swiss_modernist_color_balance.png">
+      <div class="relative aspect-[3/4] bg-[#FAF8F5] overflow-hidden group cursor-pointer" onclick="openModal('58_bauhaus_swiss_modernist_color_balance.png', 'Swiss Modernist Color Balance')">
+        <img src="58_bauhaus_swiss_modernist_color_balance.png" alt="Swiss Modernist Color Balance" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+        <span class="absolute top-2 left-2 bg-black/75 text-white text-[10px] font-bold px-2 py-0.5 rounded shadow">#58</span>
+        <span class="absolute top-2 right-2 text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded shadow-sm bg-[#F7EBE8] text-[#A63C2B]">bauhaus</span>
+      </div>
+      <div class="p-3.5 flex flex-col justify-between flex-grow gap-2">
+        <div>
+          <h3 class="font-bold text-sm sm:text-base text-[#1C1C1E] leading-tight">Swiss Modernist Color Balance</h3>
+          <p class="text-[10px] text-[#7A756D] font-mono mt-1 break-all select-all">58_bauhaus_swiss_modernist_color_balance.png</p>
+        </div>
+        <div class="flex items-center justify-between pt-2 border-t border-[#F0EBE3]">
+          <label class="flex items-center gap-1.5 text-xs text-[#1C1C1E] cursor-pointer font-semibold">
+            <input type="checkbox" class="product-checkbox rounded text-[#B8834E] focus:ring-0 w-4 h-4 cursor-pointer" value="58_bauhaus_swiss_modernist_color_balance.png" onchange="updateCount()">
+            <span>Select</span>
+          </label>
+          <button onclick="copyName('58_bauhaus_swiss_modernist_color_balance.png', this)" class="text-[11px] font-bold text-[#B8834E] hover:underline cursor-pointer">
+            Copy File
+          </button>
+        </div>
+      </div>
+    </div>
+    
+
+    <div class="product-card bg-white rounded-xl overflow-hidden border border-[#E8E3DA] shadow-sm hover:shadow-md transition flex flex-col justify-between" data-cat="bauhaus" data-file="59_bauhaus_kandinsky_kinetic_composition.png">
+      <div class="relative aspect-[3/4] bg-[#FAF8F5] overflow-hidden group cursor-pointer" onclick="openModal('59_bauhaus_kandinsky_kinetic_composition.png', 'Kandinsky Kinetic Composition')">
+        <img src="59_bauhaus_kandinsky_kinetic_composition.png" alt="Kandinsky Kinetic Composition" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+        <span class="absolute top-2 left-2 bg-black/75 text-white text-[10px] font-bold px-2 py-0.5 rounded shadow">#59</span>
+        <span class="absolute top-2 right-2 text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded shadow-sm bg-[#F7EBE8] text-[#A63C2B]">bauhaus</span>
+      </div>
+      <div class="p-3.5 flex flex-col justify-between flex-grow gap-2">
+        <div>
+          <h3 class="font-bold text-sm sm:text-base text-[#1C1C1E] leading-tight">Kandinsky Kinetic Composition</h3>
+          <p class="text-[10px] text-[#7A756D] font-mono mt-1 break-all select-all">59_bauhaus_kandinsky_kinetic_composition.png</p>
+        </div>
+        <div class="flex items-center justify-between pt-2 border-t border-[#F0EBE3]">
+          <label class="flex items-center gap-1.5 text-xs text-[#1C1C1E] cursor-pointer font-semibold">
+            <input type="checkbox" class="product-checkbox rounded text-[#B8834E] focus:ring-0 w-4 h-4 cursor-pointer" value="59_bauhaus_kandinsky_kinetic_composition.png" onchange="updateCount()">
+            <span>Select</span>
+          </label>
+          <button onclick="copyName('59_bauhaus_kandinsky_kinetic_composition.png', this)" class="text-[11px] font-bold text-[#B8834E] hover:underline cursor-pointer">
+            Copy File
+          </button>
+        </div>
+      </div>
+    </div>
+    
+
+    <div class="product-card bg-white rounded-xl overflow-hidden border border-[#E8E3DA] shadow-sm hover:shadow-md transition flex flex-col justify-between" data-cat="bauhaus" data-file="60_bauhaus_paul_klee_modern_rhythm_study.png">
+      <div class="relative aspect-[3/4] bg-[#FAF8F5] overflow-hidden group cursor-pointer" onclick="openModal('60_bauhaus_paul_klee_modern_rhythm_study.png', 'Paul Klee Modern Rhythm Study')">
+        <img src="60_bauhaus_paul_klee_modern_rhythm_study.png" alt="Paul Klee Modern Rhythm Study" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+        <span class="absolute top-2 left-2 bg-black/75 text-white text-[10px] font-bold px-2 py-0.5 rounded shadow">#60</span>
+        <span class="absolute top-2 right-2 text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded shadow-sm bg-[#F7EBE8] text-[#A63C2B]">bauhaus</span>
+      </div>
+      <div class="p-3.5 flex flex-col justify-between flex-grow gap-2">
+        <div>
+          <h3 class="font-bold text-sm sm:text-base text-[#1C1C1E] leading-tight">Paul Klee Modern Rhythm Study</h3>
+          <p class="text-[10px] text-[#7A756D] font-mono mt-1 break-all select-all">60_bauhaus_paul_klee_modern_rhythm_study.png</p>
+        </div>
+        <div class="flex items-center justify-between pt-2 border-t border-[#F0EBE3]">
+          <label class="flex items-center gap-1.5 text-xs text-[#1C1C1E] cursor-pointer font-semibold">
+            <input type="checkbox" class="product-checkbox rounded text-[#B8834E] focus:ring-0 w-4 h-4 cursor-pointer" value="60_bauhaus_paul_klee_modern_rhythm_study.png" onchange="updateCount()">
+            <span>Select</span>
+          </label>
+          <button onclick="copyName('60_bauhaus_paul_klee_modern_rhythm_study.png', this)" class="text-[11px] font-bold text-[#B8834E] hover:underline cursor-pointer">
+            Copy File
+          </button>
+        </div>
+      </div>
+    </div>
+    
+
+    <div class="product-card bg-white rounded-xl overflow-hidden border border-[#E8E3DA] shadow-sm hover:shadow-md transition flex flex-col justify-between" data-cat="bauhaus" data-file="61_bauhaus_berlin_architectural_elevation_no_2.png">
+      <div class="relative aspect-[3/4] bg-[#FAF8F5] overflow-hidden group cursor-pointer" onclick="openModal('61_bauhaus_berlin_architectural_elevation_no_2.png', 'Berlin Architectural Elevation No 2')">
+        <img src="61_bauhaus_berlin_architectural_elevation_no_2.png" alt="Berlin Architectural Elevation No 2" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+        <span class="absolute top-2 left-2 bg-black/75 text-white text-[10px] font-bold px-2 py-0.5 rounded shadow">#61</span>
+        <span class="absolute top-2 right-2 text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded shadow-sm bg-[#F7EBE8] text-[#A63C2B]">bauhaus</span>
+      </div>
+      <div class="p-3.5 flex flex-col justify-between flex-grow gap-2">
+        <div>
+          <h3 class="font-bold text-sm sm:text-base text-[#1C1C1E] leading-tight">Berlin Architectural Elevation No 2</h3>
+          <p class="text-[10px] text-[#7A756D] font-mono mt-1 break-all select-all">61_bauhaus_berlin_architectural_elevation_no_2.png</p>
+        </div>
+        <div class="flex items-center justify-between pt-2 border-t border-[#F0EBE3]">
+          <label class="flex items-center gap-1.5 text-xs text-[#1C1C1E] cursor-pointer font-semibold">
+            <input type="checkbox" class="product-checkbox rounded text-[#B8834E] focus:ring-0 w-4 h-4 cursor-pointer" value="61_bauhaus_berlin_architectural_elevation_no_2.png" onchange="updateCount()">
+            <span>Select</span>
+          </label>
+          <button onclick="copyName('61_bauhaus_berlin_architectural_elevation_no_2.png', this)" class="text-[11px] font-bold text-[#B8834E] hover:underline cursor-pointer">
+            Copy File
+          </button>
+        </div>
+      </div>
+    </div>
+    
+
+    <div class="product-card bg-white rounded-xl overflow-hidden border border-[#E8E3DA] shadow-sm hover:shadow-md transition flex flex-col justify-between" data-cat="bauhaus" data-file="62_bauhaus_primary_theory_equilibrium.png">
+      <div class="relative aspect-[3/4] bg-[#FAF8F5] overflow-hidden group cursor-pointer" onclick="openModal('62_bauhaus_primary_theory_equilibrium.png', 'Primary Theory Equilibrium')">
+        <img src="62_bauhaus_primary_theory_equilibrium.png" alt="Primary Theory Equilibrium" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+        <span class="absolute top-2 left-2 bg-black/75 text-white text-[10px] font-bold px-2 py-0.5 rounded shadow">#62</span>
+        <span class="absolute top-2 right-2 text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded shadow-sm bg-[#F7EBE8] text-[#A63C2B]">bauhaus</span>
+      </div>
+      <div class="p-3.5 flex flex-col justify-between flex-grow gap-2">
+        <div>
+          <h3 class="font-bold text-sm sm:text-base text-[#1C1C1E] leading-tight">Primary Theory Equilibrium</h3>
+          <p class="text-[10px] text-[#7A756D] font-mono mt-1 break-all select-all">62_bauhaus_primary_theory_equilibrium.png</p>
+        </div>
+        <div class="flex items-center justify-between pt-2 border-t border-[#F0EBE3]">
+          <label class="flex items-center gap-1.5 text-xs text-[#1C1C1E] cursor-pointer font-semibold">
+            <input type="checkbox" class="product-checkbox rounded text-[#B8834E] focus:ring-0 w-4 h-4 cursor-pointer" value="62_bauhaus_primary_theory_equilibrium.png" onchange="updateCount()">
+            <span>Select</span>
+          </label>
+          <button onclick="copyName('62_bauhaus_primary_theory_equilibrium.png', this)" class="text-[11px] font-bold text-[#B8834E] hover:underline cursor-pointer">
+            Copy File
+          </button>
+        </div>
+      </div>
+    </div>
+    
+
+    <div class="product-card bg-white rounded-xl overflow-hidden border border-[#E8E3DA] shadow-sm hover:shadow-md transition flex flex-col justify-between" data-cat="bauhaus" data-file="63_bauhaus_moholy_nagy_light_grid_study.png">
+      <div class="relative aspect-[3/4] bg-[#FAF8F5] overflow-hidden group cursor-pointer" onclick="openModal('63_bauhaus_moholy_nagy_light_grid_study.png', 'Moholy Nagy Light Grid Study')">
+        <img src="63_bauhaus_moholy_nagy_light_grid_study.png" alt="Moholy Nagy Light Grid Study" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+        <span class="absolute top-2 left-2 bg-black/75 text-white text-[10px] font-bold px-2 py-0.5 rounded shadow">#63</span>
+        <span class="absolute top-2 right-2 text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded shadow-sm bg-[#F7EBE8] text-[#A63C2B]">bauhaus</span>
+      </div>
+      <div class="p-3.5 flex flex-col justify-between flex-grow gap-2">
+        <div>
+          <h3 class="font-bold text-sm sm:text-base text-[#1C1C1E] leading-tight">Moholy Nagy Light Grid Study</h3>
+          <p class="text-[10px] text-[#7A756D] font-mono mt-1 break-all select-all">63_bauhaus_moholy_nagy_light_grid_study.png</p>
+        </div>
+        <div class="flex items-center justify-between pt-2 border-t border-[#F0EBE3]">
+          <label class="flex items-center gap-1.5 text-xs text-[#1C1C1E] cursor-pointer font-semibold">
+            <input type="checkbox" class="product-checkbox rounded text-[#B8834E] focus:ring-0 w-4 h-4 cursor-pointer" value="63_bauhaus_moholy_nagy_light_grid_study.png" onchange="updateCount()">
+            <span>Select</span>
+          </label>
+          <button onclick="copyName('63_bauhaus_moholy_nagy_light_grid_study.png', this)" class="text-[11px] font-bold text-[#B8834E] hover:underline cursor-pointer">
+            Copy File
+          </button>
+        </div>
+      </div>
+    </div>
+    
+
+    <div class="product-card bg-white rounded-xl overflow-hidden border border-[#E8E3DA] shadow-sm hover:shadow-md transition flex flex-col justify-between" data-cat="bauhaus" data-file="64_bauhaus_constructivist_diagonal_beam.png">
+      <div class="relative aspect-[3/4] bg-[#FAF8F5] overflow-hidden group cursor-pointer" onclick="openModal('64_bauhaus_constructivist_diagonal_beam.png', 'Constructivist Diagonal Beam')">
+        <img src="64_bauhaus_constructivist_diagonal_beam.png" alt="Constructivist Diagonal Beam" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+        <span class="absolute top-2 left-2 bg-black/75 text-white text-[10px] font-bold px-2 py-0.5 rounded shadow">#64</span>
+        <span class="absolute top-2 right-2 text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded shadow-sm bg-[#F7EBE8] text-[#A63C2B]">bauhaus</span>
+      </div>
+      <div class="p-3.5 flex flex-col justify-between flex-grow gap-2">
+        <div>
+          <h3 class="font-bold text-sm sm:text-base text-[#1C1C1E] leading-tight">Constructivist Diagonal Beam</h3>
+          <p class="text-[10px] text-[#7A756D] font-mono mt-1 break-all select-all">64_bauhaus_constructivist_diagonal_beam.png</p>
+        </div>
+        <div class="flex items-center justify-between pt-2 border-t border-[#F0EBE3]">
+          <label class="flex items-center gap-1.5 text-xs text-[#1C1C1E] cursor-pointer font-semibold">
+            <input type="checkbox" class="product-checkbox rounded text-[#B8834E] focus:ring-0 w-4 h-4 cursor-pointer" value="64_bauhaus_constructivist_diagonal_beam.png" onchange="updateCount()">
+            <span>Select</span>
+          </label>
+          <button onclick="copyName('64_bauhaus_constructivist_diagonal_beam.png', this)" class="text-[11px] font-bold text-[#B8834E] hover:underline cursor-pointer">
+            Copy File
+          </button>
+        </div>
+      </div>
+    </div>
+    
+
+    <div class="product-card bg-white rounded-xl overflow-hidden border border-[#E8E3DA] shadow-sm hover:shadow-md transition flex flex-col justify-between" data-cat="bauhaus" data-file="65_bauhaus_bauhaus_1923_exhibition_plate.png">
+      <div class="relative aspect-[3/4] bg-[#FAF8F5] overflow-hidden group cursor-pointer" onclick="openModal('65_bauhaus_bauhaus_1923_exhibition_plate.png', 'Bauhaus 1923 Exhibition Plate')">
+        <img src="65_bauhaus_bauhaus_1923_exhibition_plate.png" alt="Bauhaus 1923 Exhibition Plate" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+        <span class="absolute top-2 left-2 bg-black/75 text-white text-[10px] font-bold px-2 py-0.5 rounded shadow">#65</span>
+        <span class="absolute top-2 right-2 text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded shadow-sm bg-[#F7EBE8] text-[#A63C2B]">bauhaus</span>
+      </div>
+      <div class="p-3.5 flex flex-col justify-between flex-grow gap-2">
+        <div>
+          <h3 class="font-bold text-sm sm:text-base text-[#1C1C1E] leading-tight">Bauhaus 1923 Exhibition Plate</h3>
+          <p class="text-[10px] text-[#7A756D] font-mono mt-1 break-all select-all">65_bauhaus_bauhaus_1923_exhibition_plate.png</p>
+        </div>
+        <div class="flex items-center justify-between pt-2 border-t border-[#F0EBE3]">
+          <label class="flex items-center gap-1.5 text-xs text-[#1C1C1E] cursor-pointer font-semibold">
+            <input type="checkbox" class="product-checkbox rounded text-[#B8834E] focus:ring-0 w-4 h-4 cursor-pointer" value="65_bauhaus_bauhaus_1923_exhibition_plate.png" onchange="updateCount()">
+            <span>Select</span>
+          </label>
+          <button onclick="copyName('65_bauhaus_bauhaus_1923_exhibition_plate.png', this)" class="text-[11px] font-bold text-[#B8834E] hover:underline cursor-pointer">
+            Copy File
+          </button>
+        </div>
+      </div>
+    </div>
+    
+
+    <div class="product-card bg-white rounded-xl overflow-hidden border border-[#E8E3DA] shadow-sm hover:shadow-md transition flex flex-col justify-between" data-cat="bauhaus" data-file="66_bauhaus_staatliches_bauhaus_sphere_arch.png">
+      <div class="relative aspect-[3/4] bg-[#FAF8F5] overflow-hidden group cursor-pointer" onclick="openModal('66_bauhaus_staatliches_bauhaus_sphere_arch.png', 'Staatliches Bauhaus Sphere Arch')">
+        <img src="66_bauhaus_staatliches_bauhaus_sphere_arch.png" alt="Staatliches Bauhaus Sphere Arch" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+        <span class="absolute top-2 left-2 bg-black/75 text-white text-[10px] font-bold px-2 py-0.5 rounded shadow">#66</span>
+        <span class="absolute top-2 right-2 text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded shadow-sm bg-[#F7EBE8] text-[#A63C2B]">bauhaus</span>
+      </div>
+      <div class="p-3.5 flex flex-col justify-between flex-grow gap-2">
+        <div>
+          <h3 class="font-bold text-sm sm:text-base text-[#1C1C1E] leading-tight">Staatliches Bauhaus Sphere Arch</h3>
+          <p class="text-[10px] text-[#7A756D] font-mono mt-1 break-all select-all">66_bauhaus_staatliches_bauhaus_sphere_arch.png</p>
+        </div>
+        <div class="flex items-center justify-between pt-2 border-t border-[#F0EBE3]">
+          <label class="flex items-center gap-1.5 text-xs text-[#1C1C1E] cursor-pointer font-semibold">
+            <input type="checkbox" class="product-checkbox rounded text-[#B8834E] focus:ring-0 w-4 h-4 cursor-pointer" value="66_bauhaus_staatliches_bauhaus_sphere_arch.png" onchange="updateCount()">
+            <span>Select</span>
+          </label>
+          <button onclick="copyName('66_bauhaus_staatliches_bauhaus_sphere_arch.png', this)" class="text-[11px] font-bold text-[#B8834E] hover:underline cursor-pointer">
+            Copy File
+          </button>
+        </div>
+      </div>
+    </div>
+    
+
+    <div class="product-card bg-white rounded-xl overflow-hidden border border-[#E8E3DA] shadow-sm hover:shadow-md transition flex flex-col justify-between" data-cat="bauhaus" data-file="67_bauhaus_minimalist_arch_and_circle_balance.png">
+      <div class="relative aspect-[3/4] bg-[#FAF8F5] overflow-hidden group cursor-pointer" onclick="openModal('67_bauhaus_minimalist_arch_and_circle_balance.png', 'Minimalist Arch And Circle Balance')">
+        <img src="67_bauhaus_minimalist_arch_and_circle_balance.png" alt="Minimalist Arch And Circle Balance" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+        <span class="absolute top-2 left-2 bg-black/75 text-white text-[10px] font-bold px-2 py-0.5 rounded shadow">#67</span>
+        <span class="absolute top-2 right-2 text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded shadow-sm bg-[#F7EBE8] text-[#A63C2B]">bauhaus</span>
+      </div>
+      <div class="p-3.5 flex flex-col justify-between flex-grow gap-2">
+        <div>
+          <h3 class="font-bold text-sm sm:text-base text-[#1C1C1E] leading-tight">Minimalist Arch And Circle Balance</h3>
+          <p class="text-[10px] text-[#7A756D] font-mono mt-1 break-all select-all">67_bauhaus_minimalist_arch_and_circle_balance.png</p>
+        </div>
+        <div class="flex items-center justify-between pt-2 border-t border-[#F0EBE3]">
+          <label class="flex items-center gap-1.5 text-xs text-[#1C1C1E] cursor-pointer font-semibold">
+            <input type="checkbox" class="product-checkbox rounded text-[#B8834E] focus:ring-0 w-4 h-4 cursor-pointer" value="67_bauhaus_minimalist_arch_and_circle_balance.png" onchange="updateCount()">
+            <span>Select</span>
+          </label>
+          <button onclick="copyName('67_bauhaus_minimalist_arch_and_circle_balance.png', this)" class="text-[11px] font-bold text-[#B8834E] hover:underline cursor-pointer">
+            Copy File
+          </button>
+        </div>
+      </div>
+    </div>
+    
+
+    <div class="product-card bg-white rounded-xl overflow-hidden border border-[#E8E3DA] shadow-sm hover:shadow-md transition flex flex-col justify-between" data-cat="bauhaus" data-file="68_bauhaus_rot_und_blau_kinetic_geometry.png">
+      <div class="relative aspect-[3/4] bg-[#FAF8F5] overflow-hidden group cursor-pointer" onclick="openModal('68_bauhaus_rot_und_blau_kinetic_geometry.png', 'Rot Und Blau Kinetic Geometry')">
+        <img src="68_bauhaus_rot_und_blau_kinetic_geometry.png" alt="Rot Und Blau Kinetic Geometry" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+        <span class="absolute top-2 left-2 bg-black/75 text-white text-[10px] font-bold px-2 py-0.5 rounded shadow">#68</span>
+        <span class="absolute top-2 right-2 text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded shadow-sm bg-[#F7EBE8] text-[#A63C2B]">bauhaus</span>
+      </div>
+      <div class="p-3.5 flex flex-col justify-between flex-grow gap-2">
+        <div>
+          <h3 class="font-bold text-sm sm:text-base text-[#1C1C1E] leading-tight">Rot Und Blau Kinetic Geometry</h3>
+          <p class="text-[10px] text-[#7A756D] font-mono mt-1 break-all select-all">68_bauhaus_rot_und_blau_kinetic_geometry.png</p>
+        </div>
+        <div class="flex items-center justify-between pt-2 border-t border-[#F0EBE3]">
+          <label class="flex items-center gap-1.5 text-xs text-[#1C1C1E] cursor-pointer font-semibold">
+            <input type="checkbox" class="product-checkbox rounded text-[#B8834E] focus:ring-0 w-4 h-4 cursor-pointer" value="68_bauhaus_rot_und_blau_kinetic_geometry.png" onchange="updateCount()">
+            <span>Select</span>
+          </label>
+          <button onclick="copyName('68_bauhaus_rot_und_blau_kinetic_geometry.png', this)" class="text-[11px] font-bold text-[#B8834E] hover:underline cursor-pointer">
+            Copy File
+          </button>
+        </div>
+      </div>
+    </div>
+    
+
+    <div class="product-card bg-white rounded-xl overflow-hidden border border-[#E8E3DA] shadow-sm hover:shadow-md transition flex flex-col justify-between" data-cat="bauhaus" data-file="69_bauhaus_swiss_typography_spatial_study.png">
+      <div class="relative aspect-[3/4] bg-[#FAF8F5] overflow-hidden group cursor-pointer" onclick="openModal('69_bauhaus_swiss_typography_spatial_study.png', 'Swiss Typography Spatial Study')">
+        <img src="69_bauhaus_swiss_typography_spatial_study.png" alt="Swiss Typography Spatial Study" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+        <span class="absolute top-2 left-2 bg-black/75 text-white text-[10px] font-bold px-2 py-0.5 rounded shadow">#69</span>
+        <span class="absolute top-2 right-2 text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded shadow-sm bg-[#F7EBE8] text-[#A63C2B]">bauhaus</span>
+      </div>
+      <div class="p-3.5 flex flex-col justify-between flex-grow gap-2">
+        <div>
+          <h3 class="font-bold text-sm sm:text-base text-[#1C1C1E] leading-tight">Swiss Typography Spatial Study</h3>
+          <p class="text-[10px] text-[#7A756D] font-mono mt-1 break-all select-all">69_bauhaus_swiss_typography_spatial_study.png</p>
+        </div>
+        <div class="flex items-center justify-between pt-2 border-t border-[#F0EBE3]">
+          <label class="flex items-center gap-1.5 text-xs text-[#1C1C1E] cursor-pointer font-semibold">
+            <input type="checkbox" class="product-checkbox rounded text-[#B8834E] focus:ring-0 w-4 h-4 cursor-pointer" value="69_bauhaus_swiss_typography_spatial_study.png" onchange="updateCount()">
+            <span>Select</span>
+          </label>
+          <button onclick="copyName('69_bauhaus_swiss_typography_spatial_study.png', this)" class="text-[11px] font-bold text-[#B8834E] hover:underline cursor-pointer">
+            Copy File
+          </button>
+        </div>
+      </div>
+    </div>
+    
+
+    <div class="product-card bg-white rounded-xl overflow-hidden border border-[#E8E3DA] shadow-sm hover:shadow-md transition flex flex-col justify-between" data-cat="bauhaus" data-file="70_bauhaus_de_stijl_asymmetric_grid_study.png">
+      <div class="relative aspect-[3/4] bg-[#FAF8F5] overflow-hidden group cursor-pointer" onclick="openModal('70_bauhaus_de_stijl_asymmetric_grid_study.png', 'De Stijl Asymmetric Grid Study')">
+        <img src="70_bauhaus_de_stijl_asymmetric_grid_study.png" alt="De Stijl Asymmetric Grid Study" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+        <span class="absolute top-2 left-2 bg-black/75 text-white text-[10px] font-bold px-2 py-0.5 rounded shadow">#70</span>
+        <span class="absolute top-2 right-2 text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded shadow-sm bg-[#F7EBE8] text-[#A63C2B]">bauhaus</span>
+      </div>
+      <div class="p-3.5 flex flex-col justify-between flex-grow gap-2">
+        <div>
+          <h3 class="font-bold text-sm sm:text-base text-[#1C1C1E] leading-tight">De Stijl Asymmetric Grid Study</h3>
+          <p class="text-[10px] text-[#7A756D] font-mono mt-1 break-all select-all">70_bauhaus_de_stijl_asymmetric_grid_study.png</p>
+        </div>
+        <div class="flex items-center justify-between pt-2 border-t border-[#F0EBE3]">
+          <label class="flex items-center gap-1.5 text-xs text-[#1C1C1E] cursor-pointer font-semibold">
+            <input type="checkbox" class="product-checkbox rounded text-[#B8834E] focus:ring-0 w-4 h-4 cursor-pointer" value="70_bauhaus_de_stijl_asymmetric_grid_study.png" onchange="updateCount()">
+            <span>Select</span>
+          </label>
+          <button onclick="copyName('70_bauhaus_de_stijl_asymmetric_grid_study.png', this)" class="text-[11px] font-bold text-[#B8834E] hover:underline cursor-pointer">
+            Copy File
+          </button>
+        </div>
+      </div>
+    </div>
+    
+
+    <div class="product-card bg-white rounded-xl overflow-hidden border border-[#E8E3DA] shadow-sm hover:shadow-md transition flex flex-col justify-between" data-cat="bauhaus" data-file="71_bauhaus_modernist_cantilever_schematic.png">
+      <div class="relative aspect-[3/4] bg-[#FAF8F5] overflow-hidden group cursor-pointer" onclick="openModal('71_bauhaus_modernist_cantilever_schematic.png', 'Modernist Cantilever Schematic')">
+        <img src="71_bauhaus_modernist_cantilever_schematic.png" alt="Modernist Cantilever Schematic" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+        <span class="absolute top-2 left-2 bg-black/75 text-white text-[10px] font-bold px-2 py-0.5 rounded shadow">#71</span>
+        <span class="absolute top-2 right-2 text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded shadow-sm bg-[#F7EBE8] text-[#A63C2B]">bauhaus</span>
+      </div>
+      <div class="p-3.5 flex flex-col justify-between flex-grow gap-2">
+        <div>
+          <h3 class="font-bold text-sm sm:text-base text-[#1C1C1E] leading-tight">Modernist Cantilever Schematic</h3>
+          <p class="text-[10px] text-[#7A756D] font-mono mt-1 break-all select-all">71_bauhaus_modernist_cantilever_schematic.png</p>
+        </div>
+        <div class="flex items-center justify-between pt-2 border-t border-[#F0EBE3]">
+          <label class="flex items-center gap-1.5 text-xs text-[#1C1C1E] cursor-pointer font-semibold">
+            <input type="checkbox" class="product-checkbox rounded text-[#B8834E] focus:ring-0 w-4 h-4 cursor-pointer" value="71_bauhaus_modernist_cantilever_schematic.png" onchange="updateCount()">
+            <span>Select</span>
+          </label>
+          <button onclick="copyName('71_bauhaus_modernist_cantilever_schematic.png', this)" class="text-[11px] font-bold text-[#B8834E] hover:underline cursor-pointer">
+            Copy File
+          </button>
+        </div>
+      </div>
+    </div>
+    
+
+    <div class="product-card bg-white rounded-xl overflow-hidden border border-[#E8E3DA] shadow-sm hover:shadow-md transition flex flex-col justify-between" data-cat="bauhaus" data-file="72_bauhaus_bauhaus_masterhouse_study_no_7.png">
+      <div class="relative aspect-[3/4] bg-[#FAF8F5] overflow-hidden group cursor-pointer" onclick="openModal('72_bauhaus_bauhaus_masterhouse_study_no_7.png', 'Bauhaus Masterhouse Study No 7')">
+        <img src="72_bauhaus_bauhaus_masterhouse_study_no_7.png" alt="Bauhaus Masterhouse Study No 7" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+        <span class="absolute top-2 left-2 bg-black/75 text-white text-[10px] font-bold px-2 py-0.5 rounded shadow">#72</span>
+        <span class="absolute top-2 right-2 text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded shadow-sm bg-[#F7EBE8] text-[#A63C2B]">bauhaus</span>
+      </div>
+      <div class="p-3.5 flex flex-col justify-between flex-grow gap-2">
+        <div>
+          <h3 class="font-bold text-sm sm:text-base text-[#1C1C1E] leading-tight">Bauhaus Masterhouse Study No 7</h3>
+          <p class="text-[10px] text-[#7A756D] font-mono mt-1 break-all select-all">72_bauhaus_bauhaus_masterhouse_study_no_7.png</p>
+        </div>
+        <div class="flex items-center justify-between pt-2 border-t border-[#F0EBE3]">
+          <label class="flex items-center gap-1.5 text-xs text-[#1C1C1E] cursor-pointer font-semibold">
+            <input type="checkbox" class="product-checkbox rounded text-[#B8834E] focus:ring-0 w-4 h-4 cursor-pointer" value="72_bauhaus_bauhaus_masterhouse_study_no_7.png" onchange="updateCount()">
+            <span>Select</span>
+          </label>
+          <button onclick="copyName('72_bauhaus_bauhaus_masterhouse_study_no_7.png', this)" class="text-[11px] font-bold text-[#B8834E] hover:underline cursor-pointer">
+            Copy File
+          </button>
+        </div>
+      </div>
+    </div>
+    
+
+    <div class="product-card bg-white rounded-xl overflow-hidden border border-[#E8E3DA] shadow-sm hover:shadow-md transition flex flex-col justify-between" data-cat="landscape" data-file="73_landscape_nordic_morning_mist_and_alpine_peak.png">
+      <div class="relative aspect-[3/4] bg-[#FAF8F5] overflow-hidden group cursor-pointer" onclick="openModal('73_landscape_nordic_morning_mist_and_alpine_peak.png', 'Nordic Morning Mist And Alpine Peak')">
+        <img src="73_landscape_nordic_morning_mist_and_alpine_peak.png" alt="Nordic Morning Mist And Alpine Peak" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+        <span class="absolute top-2 left-2 bg-black/75 text-white text-[10px] font-bold px-2 py-0.5 rounded shadow">#73</span>
+        <span class="absolute top-2 right-2 text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded shadow-sm bg-[#EAEAEA] text-[#555555]">landscape</span>
+      </div>
+      <div class="p-3.5 flex flex-col justify-between flex-grow gap-2">
+        <div>
+          <h3 class="font-bold text-sm sm:text-base text-[#1C1C1E] leading-tight">Nordic Morning Mist And Alpine Peak</h3>
+          <p class="text-[10px] text-[#7A756D] font-mono mt-1 break-all select-all">73_landscape_nordic_morning_mist_and_alpine_peak.png</p>
+        </div>
+        <div class="flex items-center justify-between pt-2 border-t border-[#F0EBE3]">
+          <label class="flex items-center gap-1.5 text-xs text-[#1C1C1E] cursor-pointer font-semibold">
+            <input type="checkbox" class="product-checkbox rounded text-[#B8834E] focus:ring-0 w-4 h-4 cursor-pointer" value="73_landscape_nordic_morning_mist_and_alpine_peak.png" onchange="updateCount()">
+            <span>Select</span>
+          </label>
+          <button onclick="copyName('73_landscape_nordic_morning_mist_and_alpine_peak.png', this)" class="text-[11px] font-bold text-[#B8834E] hover:underline cursor-pointer">
+            Copy File
+          </button>
+        </div>
+      </div>
+    </div>
+    
+
+    <div class="product-card bg-white rounded-xl overflow-hidden border border-[#E8E3DA] shadow-sm hover:shadow-md transition flex flex-col justify-between" data-cat="landscape" data-file="74_landscape_sahara_desert_dune_contours.png">
+      <div class="relative aspect-[3/4] bg-[#FAF8F5] overflow-hidden group cursor-pointer" onclick="openModal('74_landscape_sahara_desert_dune_contours.png', 'Sahara Desert Dune Contours')">
+        <img src="74_landscape_sahara_desert_dune_contours.png" alt="Sahara Desert Dune Contours" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+        <span class="absolute top-2 left-2 bg-black/75 text-white text-[10px] font-bold px-2 py-0.5 rounded shadow">#74</span>
+        <span class="absolute top-2 right-2 text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded shadow-sm bg-[#EAEAEA] text-[#555555]">landscape</span>
+      </div>
+      <div class="p-3.5 flex flex-col justify-between flex-grow gap-2">
+        <div>
+          <h3 class="font-bold text-sm sm:text-base text-[#1C1C1E] leading-tight">Sahara Desert Dune Contours</h3>
+          <p class="text-[10px] text-[#7A756D] font-mono mt-1 break-all select-all">74_landscape_sahara_desert_dune_contours.png</p>
+        </div>
+        <div class="flex items-center justify-between pt-2 border-t border-[#F0EBE3]">
+          <label class="flex items-center gap-1.5 text-xs text-[#1C1C1E] cursor-pointer font-semibold">
+            <input type="checkbox" class="product-checkbox rounded text-[#B8834E] focus:ring-0 w-4 h-4 cursor-pointer" value="74_landscape_sahara_desert_dune_contours.png" onchange="updateCount()">
+            <span>Select</span>
+          </label>
+          <button onclick="copyName('74_landscape_sahara_desert_dune_contours.png', this)" class="text-[11px] font-bold text-[#B8834E] hover:underline cursor-pointer">
+            Copy File
+          </button>
+        </div>
+      </div>
+    </div>
+    
+
+    <div class="product-card bg-white rounded-xl overflow-hidden border border-[#E8E3DA] shadow-sm hover:shadow-md transition flex flex-col justify-between" data-cat="landscape" data-file="75_landscape_norwegian_fjord_and_solitary_pine.png">
+      <div class="relative aspect-[3/4] bg-[#FAF8F5] overflow-hidden group cursor-pointer" onclick="openModal('75_landscape_norwegian_fjord_and_solitary_pine.png', 'Norwegian Fjord And Solitary Pine')">
+        <img src="75_landscape_norwegian_fjord_and_solitary_pine.png" alt="Norwegian Fjord And Solitary Pine" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+        <span class="absolute top-2 left-2 bg-black/75 text-white text-[10px] font-bold px-2 py-0.5 rounded shadow">#75</span>
+        <span class="absolute top-2 right-2 text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded shadow-sm bg-[#EAEAEA] text-[#555555]">landscape</span>
+      </div>
+      <div class="p-3.5 flex flex-col justify-between flex-grow gap-2">
+        <div>
+          <h3 class="font-bold text-sm sm:text-base text-[#1C1C1E] leading-tight">Norwegian Fjord And Solitary Pine</h3>
+          <p class="text-[10px] text-[#7A756D] font-mono mt-1 break-all select-all">75_landscape_norwegian_fjord_and_solitary_pine.png</p>
+        </div>
+        <div class="flex items-center justify-between pt-2 border-t border-[#F0EBE3]">
+          <label class="flex items-center gap-1.5 text-xs text-[#1C1C1E] cursor-pointer font-semibold">
+            <input type="checkbox" class="product-checkbox rounded text-[#B8834E] focus:ring-0 w-4 h-4 cursor-pointer" value="75_landscape_norwegian_fjord_and_solitary_pine.png" onchange="updateCount()">
+            <span>Select</span>
+          </label>
+          <button onclick="copyName('75_landscape_norwegian_fjord_and_solitary_pine.png', this)" class="text-[11px] font-bold text-[#B8834E] hover:underline cursor-pointer">
+            Copy File
+          </button>
+        </div>
+      </div>
+    </div>
+    
+
+    <div class="product-card bg-white rounded-xl overflow-hidden border border-[#E8E3DA] shadow-sm hover:shadow-md transition flex flex-col justify-between" data-cat="landscape" data-file="76_landscape_rothko_atmospheric_horizon_field.png">
+      <div class="relative aspect-[3/4] bg-[#FAF8F5] overflow-hidden group cursor-pointer" onclick="openModal('76_landscape_rothko_atmospheric_horizon_field.png', 'Rothko Atmospheric Horizon Field')">
+        <img src="76_landscape_rothko_atmospheric_horizon_field.png" alt="Rothko Atmospheric Horizon Field" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+        <span class="absolute top-2 left-2 bg-black/75 text-white text-[10px] font-bold px-2 py-0.5 rounded shadow">#76</span>
+        <span class="absolute top-2 right-2 text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded shadow-sm bg-[#EAEAEA] text-[#555555]">landscape</span>
+      </div>
+      <div class="p-3.5 flex flex-col justify-between flex-grow gap-2">
+        <div>
+          <h3 class="font-bold text-sm sm:text-base text-[#1C1C1E] leading-tight">Rothko Atmospheric Horizon Field</h3>
+          <p class="text-[10px] text-[#7A756D] font-mono mt-1 break-all select-all">76_landscape_rothko_atmospheric_horizon_field.png</p>
+        </div>
+        <div class="flex items-center justify-between pt-2 border-t border-[#F0EBE3]">
+          <label class="flex items-center gap-1.5 text-xs text-[#1C1C1E] cursor-pointer font-semibold">
+            <input type="checkbox" class="product-checkbox rounded text-[#B8834E] focus:ring-0 w-4 h-4 cursor-pointer" value="76_landscape_rothko_atmospheric_horizon_field.png" onchange="updateCount()">
+            <span>Select</span>
+          </label>
+          <button onclick="copyName('76_landscape_rothko_atmospheric_horizon_field.png', this)" class="text-[11px] font-bold text-[#B8834E] hover:underline cursor-pointer">
+            Copy File
+          </button>
+        </div>
+      </div>
+    </div>
+    
+
+    <div class="product-card bg-white rounded-xl overflow-hidden border border-[#E8E3DA] shadow-sm hover:shadow-md transition flex flex-col justify-between" data-cat="landscape" data-file="77_landscape_lofoten_islands_midnight_sun.png">
+      <div class="relative aspect-[3/4] bg-[#FAF8F5] overflow-hidden group cursor-pointer" onclick="openModal('77_landscape_lofoten_islands_midnight_sun.png', 'Lofoten Islands Midnight Sun')">
+        <img src="77_landscape_lofoten_islands_midnight_sun.png" alt="Lofoten Islands Midnight Sun" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+        <span class="absolute top-2 left-2 bg-black/75 text-white text-[10px] font-bold px-2 py-0.5 rounded shadow">#77</span>
+        <span class="absolute top-2 right-2 text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded shadow-sm bg-[#EAEAEA] text-[#555555]">landscape</span>
+      </div>
+      <div class="p-3.5 flex flex-col justify-between flex-grow gap-2">
+        <div>
+          <h3 class="font-bold text-sm sm:text-base text-[#1C1C1E] leading-tight">Lofoten Islands Midnight Sun</h3>
+          <p class="text-[10px] text-[#7A756D] font-mono mt-1 break-all select-all">77_landscape_lofoten_islands_midnight_sun.png</p>
+        </div>
+        <div class="flex items-center justify-between pt-2 border-t border-[#F0EBE3]">
+          <label class="flex items-center gap-1.5 text-xs text-[#1C1C1E] cursor-pointer font-semibold">
+            <input type="checkbox" class="product-checkbox rounded text-[#B8834E] focus:ring-0 w-4 h-4 cursor-pointer" value="77_landscape_lofoten_islands_midnight_sun.png" onchange="updateCount()">
+            <span>Select</span>
+          </label>
+          <button onclick="copyName('77_landscape_lofoten_islands_midnight_sun.png', this)" class="text-[11px] font-bold text-[#B8834E] hover:underline cursor-pointer">
+            Copy File
+          </button>
+        </div>
+      </div>
+    </div>
+    
+
+    <div class="product-card bg-white rounded-xl overflow-hidden border border-[#E8E3DA] shadow-sm hover:shadow-md transition flex flex-col justify-between" data-cat="landscape" data-file="78_landscape_icelandic_black_sand_and_glacier.png">
+      <div class="relative aspect-[3/4] bg-[#FAF8F5] overflow-hidden group cursor-pointer" onclick="openModal('78_landscape_icelandic_black_sand_and_glacier.png', 'Icelandic Black Sand And Glacier')">
+        <img src="78_landscape_icelandic_black_sand_and_glacier.png" alt="Icelandic Black Sand And Glacier" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+        <span class="absolute top-2 left-2 bg-black/75 text-white text-[10px] font-bold px-2 py-0.5 rounded shadow">#78</span>
+        <span class="absolute top-2 right-2 text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded shadow-sm bg-[#EAEAEA] text-[#555555]">landscape</span>
+      </div>
+      <div class="p-3.5 flex flex-col justify-between flex-grow gap-2">
+        <div>
+          <h3 class="font-bold text-sm sm:text-base text-[#1C1C1E] leading-tight">Icelandic Black Sand And Glacier</h3>
+          <p class="text-[10px] text-[#7A756D] font-mono mt-1 break-all select-all">78_landscape_icelandic_black_sand_and_glacier.png</p>
+        </div>
+        <div class="flex items-center justify-between pt-2 border-t border-[#F0EBE3]">
+          <label class="flex items-center gap-1.5 text-xs text-[#1C1C1E] cursor-pointer font-semibold">
+            <input type="checkbox" class="product-checkbox rounded text-[#B8834E] focus:ring-0 w-4 h-4 cursor-pointer" value="78_landscape_icelandic_black_sand_and_glacier.png" onchange="updateCount()">
+            <span>Select</span>
+          </label>
+          <button onclick="copyName('78_landscape_icelandic_black_sand_and_glacier.png', this)" class="text-[11px] font-bold text-[#B8834E] hover:underline cursor-pointer">
+            Copy File
+          </button>
+        </div>
+      </div>
+    </div>
+    
+
+    <div class="product-card bg-white rounded-xl overflow-hidden border border-[#E8E3DA] shadow-sm hover:shadow-md transition flex flex-col justify-between" data-cat="landscape" data-file="79_landscape_dolomites_pale_mountain_ridge.png">
+      <div class="relative aspect-[3/4] bg-[#FAF8F5] overflow-hidden group cursor-pointer" onclick="openModal('79_landscape_dolomites_pale_mountain_ridge.png', 'Dolomites Pale Mountain Ridge')">
+        <img src="79_landscape_dolomites_pale_mountain_ridge.png" alt="Dolomites Pale Mountain Ridge" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+        <span class="absolute top-2 left-2 bg-black/75 text-white text-[10px] font-bold px-2 py-0.5 rounded shadow">#79</span>
+        <span class="absolute top-2 right-2 text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded shadow-sm bg-[#EAEAEA] text-[#555555]">landscape</span>
+      </div>
+      <div class="p-3.5 flex flex-col justify-between flex-grow gap-2">
+        <div>
+          <h3 class="font-bold text-sm sm:text-base text-[#1C1C1E] leading-tight">Dolomites Pale Mountain Ridge</h3>
+          <p class="text-[10px] text-[#7A756D] font-mono mt-1 break-all select-all">79_landscape_dolomites_pale_mountain_ridge.png</p>
+        </div>
+        <div class="flex items-center justify-between pt-2 border-t border-[#F0EBE3]">
+          <label class="flex items-center gap-1.5 text-xs text-[#1C1C1E] cursor-pointer font-semibold">
+            <input type="checkbox" class="product-checkbox rounded text-[#B8834E] focus:ring-0 w-4 h-4 cursor-pointer" value="79_landscape_dolomites_pale_mountain_ridge.png" onchange="updateCount()">
+            <span>Select</span>
+          </label>
+          <button onclick="copyName('79_landscape_dolomites_pale_mountain_ridge.png', this)" class="text-[11px] font-bold text-[#B8834E] hover:underline cursor-pointer">
+            Copy File
+          </button>
+        </div>
+      </div>
+    </div>
+    
+
+    <div class="product-card bg-white rounded-xl overflow-hidden border border-[#E8E3DA] shadow-sm hover:shadow-md transition flex flex-col justify-between" data-cat="landscape" data-file="80_landscape_atacama_desert_mineral_salt_flat.png">
+      <div class="relative aspect-[3/4] bg-[#FAF8F5] overflow-hidden group cursor-pointer" onclick="openModal('80_landscape_atacama_desert_mineral_salt_flat.png', 'Atacama Desert Mineral Salt Flat')">
+        <img src="80_landscape_atacama_desert_mineral_salt_flat.png" alt="Atacama Desert Mineral Salt Flat" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+        <span class="absolute top-2 left-2 bg-black/75 text-white text-[10px] font-bold px-2 py-0.5 rounded shadow">#80</span>
+        <span class="absolute top-2 right-2 text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded shadow-sm bg-[#EAEAEA] text-[#555555]">landscape</span>
+      </div>
+      <div class="p-3.5 flex flex-col justify-between flex-grow gap-2">
+        <div>
+          <h3 class="font-bold text-sm sm:text-base text-[#1C1C1E] leading-tight">Atacama Desert Mineral Salt Flat</h3>
+          <p class="text-[10px] text-[#7A756D] font-mono mt-1 break-all select-all">80_landscape_atacama_desert_mineral_salt_flat.png</p>
+        </div>
+        <div class="flex items-center justify-between pt-2 border-t border-[#F0EBE3]">
+          <label class="flex items-center gap-1.5 text-xs text-[#1C1C1E] cursor-pointer font-semibold">
+            <input type="checkbox" class="product-checkbox rounded text-[#B8834E] focus:ring-0 w-4 h-4 cursor-pointer" value="80_landscape_atacama_desert_mineral_salt_flat.png" onchange="updateCount()">
+            <span>Select</span>
+          </label>
+          <button onclick="copyName('80_landscape_atacama_desert_mineral_salt_flat.png', this)" class="text-[11px] font-bold text-[#B8834E] hover:underline cursor-pointer">
+            Copy File
+          </button>
+        </div>
+      </div>
+    </div>
+    
+
+    <div class="product-card bg-white rounded-xl overflow-hidden border border-[#E8E3DA] shadow-sm hover:shadow-md transition flex flex-col justify-between" data-cat="landscape" data-file="81_landscape_pacific_ocean_minimalist_swell.png">
+      <div class="relative aspect-[3/4] bg-[#FAF8F5] overflow-hidden group cursor-pointer" onclick="openModal('81_landscape_pacific_ocean_minimalist_swell.png', 'Pacific Ocean Minimalist Swell')">
+        <img src="81_landscape_pacific_ocean_minimalist_swell.png" alt="Pacific Ocean Minimalist Swell" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+        <span class="absolute top-2 left-2 bg-black/75 text-white text-[10px] font-bold px-2 py-0.5 rounded shadow">#81</span>
+        <span class="absolute top-2 right-2 text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded shadow-sm bg-[#EAEAEA] text-[#555555]">landscape</span>
+      </div>
+      <div class="p-3.5 flex flex-col justify-between flex-grow gap-2">
+        <div>
+          <h3 class="font-bold text-sm sm:text-base text-[#1C1C1E] leading-tight">Pacific Ocean Minimalist Swell</h3>
+          <p class="text-[10px] text-[#7A756D] font-mono mt-1 break-all select-all">81_landscape_pacific_ocean_minimalist_swell.png</p>
+        </div>
+        <div class="flex items-center justify-between pt-2 border-t border-[#F0EBE3]">
+          <label class="flex items-center gap-1.5 text-xs text-[#1C1C1E] cursor-pointer font-semibold">
+            <input type="checkbox" class="product-checkbox rounded text-[#B8834E] focus:ring-0 w-4 h-4 cursor-pointer" value="81_landscape_pacific_ocean_minimalist_swell.png" onchange="updateCount()">
+            <span>Select</span>
+          </label>
+          <button onclick="copyName('81_landscape_pacific_ocean_minimalist_swell.png', this)" class="text-[11px] font-bold text-[#B8834E] hover:underline cursor-pointer">
+            Copy File
+          </button>
+        </div>
+      </div>
+    </div>
+    
+
+    <div class="product-card bg-white rounded-xl overflow-hidden border border-[#E8E3DA] shadow-sm hover:shadow-md transition flex flex-col justify-between" data-cat="landscape" data-file="82_landscape_scottish_highlands_misty_glen.png">
+      <div class="relative aspect-[3/4] bg-[#FAF8F5] overflow-hidden group cursor-pointer" onclick="openModal('82_landscape_scottish_highlands_misty_glen.png', 'Scottish Highlands Misty Glen')">
+        <img src="82_landscape_scottish_highlands_misty_glen.png" alt="Scottish Highlands Misty Glen" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+        <span class="absolute top-2 left-2 bg-black/75 text-white text-[10px] font-bold px-2 py-0.5 rounded shadow">#82</span>
+        <span class="absolute top-2 right-2 text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded shadow-sm bg-[#EAEAEA] text-[#555555]">landscape</span>
+      </div>
+      <div class="p-3.5 flex flex-col justify-between flex-grow gap-2">
+        <div>
+          <h3 class="font-bold text-sm sm:text-base text-[#1C1C1E] leading-tight">Scottish Highlands Misty Glen</h3>
+          <p class="text-[10px] text-[#7A756D] font-mono mt-1 break-all select-all">82_landscape_scottish_highlands_misty_glen.png</p>
+        </div>
+        <div class="flex items-center justify-between pt-2 border-t border-[#F0EBE3]">
+          <label class="flex items-center gap-1.5 text-xs text-[#1C1C1E] cursor-pointer font-semibold">
+            <input type="checkbox" class="product-checkbox rounded text-[#B8834E] focus:ring-0 w-4 h-4 cursor-pointer" value="82_landscape_scottish_highlands_misty_glen.png" onchange="updateCount()">
+            <span>Select</span>
+          </label>
+          <button onclick="copyName('82_landscape_scottish_highlands_misty_glen.png', this)" class="text-[11px] font-bold text-[#B8834E] hover:underline cursor-pointer">
+            Copy File
+          </button>
+        </div>
+      </div>
+    </div>
+    
+
+    <div class="product-card bg-white rounded-xl overflow-hidden border border-[#E8E3DA] shadow-sm hover:shadow-md transition flex flex-col justify-between" data-cat="landscape" data-file="83_landscape_faroe_islands_coastal_cliff_no_1.png">
+      <div class="relative aspect-[3/4] bg-[#FAF8F5] overflow-hidden group cursor-pointer" onclick="openModal('83_landscape_faroe_islands_coastal_cliff_no_1.png', 'Faroe Islands Coastal Cliff No 1')">
+        <img src="83_landscape_faroe_islands_coastal_cliff_no_1.png" alt="Faroe Islands Coastal Cliff No 1" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+        <span class="absolute top-2 left-2 bg-black/75 text-white text-[10px] font-bold px-2 py-0.5 rounded shadow">#83</span>
+        <span class="absolute top-2 right-2 text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded shadow-sm bg-[#EAEAEA] text-[#555555]">landscape</span>
+      </div>
+      <div class="p-3.5 flex flex-col justify-between flex-grow gap-2">
+        <div>
+          <h3 class="font-bold text-sm sm:text-base text-[#1C1C1E] leading-tight">Faroe Islands Coastal Cliff No 1</h3>
+          <p class="text-[10px] text-[#7A756D] font-mono mt-1 break-all select-all">83_landscape_faroe_islands_coastal_cliff_no_1.png</p>
+        </div>
+        <div class="flex items-center justify-between pt-2 border-t border-[#F0EBE3]">
+          <label class="flex items-center gap-1.5 text-xs text-[#1C1C1E] cursor-pointer font-semibold">
+            <input type="checkbox" class="product-checkbox rounded text-[#B8834E] focus:ring-0 w-4 h-4 cursor-pointer" value="83_landscape_faroe_islands_coastal_cliff_no_1.png" onchange="updateCount()">
+            <span>Select</span>
+          </label>
+          <button onclick="copyName('83_landscape_faroe_islands_coastal_cliff_no_1.png', this)" class="text-[11px] font-bold text-[#B8834E] hover:underline cursor-pointer">
+            Copy File
+          </button>
+        </div>
+      </div>
+    </div>
+    
+
+    <div class="product-card bg-white rounded-xl overflow-hidden border border-[#E8E3DA] shadow-sm hover:shadow-md transition flex flex-col justify-between" data-cat="landscape" data-file="84_landscape_japanese_alpine_snow_horizon.png">
+      <div class="relative aspect-[3/4] bg-[#FAF8F5] overflow-hidden group cursor-pointer" onclick="openModal('84_landscape_japanese_alpine_snow_horizon.png', 'Japanese Alpine Snow Horizon')">
+        <img src="84_landscape_japanese_alpine_snow_horizon.png" alt="Japanese Alpine Snow Horizon" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+        <span class="absolute top-2 left-2 bg-black/75 text-white text-[10px] font-bold px-2 py-0.5 rounded shadow">#84</span>
+        <span class="absolute top-2 right-2 text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded shadow-sm bg-[#EAEAEA] text-[#555555]">landscape</span>
+      </div>
+      <div class="p-3.5 flex flex-col justify-between flex-grow gap-2">
+        <div>
+          <h3 class="font-bold text-sm sm:text-base text-[#1C1C1E] leading-tight">Japanese Alpine Snow Horizon</h3>
+          <p class="text-[10px] text-[#7A756D] font-mono mt-1 break-all select-all">84_landscape_japanese_alpine_snow_horizon.png</p>
+        </div>
+        <div class="flex items-center justify-between pt-2 border-t border-[#F0EBE3]">
+          <label class="flex items-center gap-1.5 text-xs text-[#1C1C1E] cursor-pointer font-semibold">
+            <input type="checkbox" class="product-checkbox rounded text-[#B8834E] focus:ring-0 w-4 h-4 cursor-pointer" value="84_landscape_japanese_alpine_snow_horizon.png" onchange="updateCount()">
+            <span>Select</span>
+          </label>
+          <button onclick="copyName('84_landscape_japanese_alpine_snow_horizon.png', this)" class="text-[11px] font-bold text-[#B8834E] hover:underline cursor-pointer">
+            Copy File
+          </button>
+        </div>
+      </div>
+    </div>
+    
+
+    <div class="product-card bg-white rounded-xl overflow-hidden border border-[#E8E3DA] shadow-sm hover:shadow-md transition flex flex-col justify-between" data-cat="landscape" data-file="85_landscape_quiet_nordic_dawn_solitude.png">
+      <div class="relative aspect-[3/4] bg-[#FAF8F5] overflow-hidden group cursor-pointer" onclick="openModal('85_landscape_quiet_nordic_dawn_solitude.png', 'Quiet Nordic Dawn Solitude')">
+        <img src="85_landscape_quiet_nordic_dawn_solitude.png" alt="Quiet Nordic Dawn Solitude" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+        <span class="absolute top-2 left-2 bg-black/75 text-white text-[10px] font-bold px-2 py-0.5 rounded shadow">#85</span>
+        <span class="absolute top-2 right-2 text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded shadow-sm bg-[#EAEAEA] text-[#555555]">landscape</span>
+      </div>
+      <div class="p-3.5 flex flex-col justify-between flex-grow gap-2">
+        <div>
+          <h3 class="font-bold text-sm sm:text-base text-[#1C1C1E] leading-tight">Quiet Nordic Dawn Solitude</h3>
+          <p class="text-[10px] text-[#7A756D] font-mono mt-1 break-all select-all">85_landscape_quiet_nordic_dawn_solitude.png</p>
+        </div>
+        <div class="flex items-center justify-between pt-2 border-t border-[#F0EBE3]">
+          <label class="flex items-center gap-1.5 text-xs text-[#1C1C1E] cursor-pointer font-semibold">
+            <input type="checkbox" class="product-checkbox rounded text-[#B8834E] focus:ring-0 w-4 h-4 cursor-pointer" value="85_landscape_quiet_nordic_dawn_solitude.png" onchange="updateCount()">
+            <span>Select</span>
+          </label>
+          <button onclick="copyName('85_landscape_quiet_nordic_dawn_solitude.png', this)" class="text-[11px] font-bold text-[#B8834E] hover:underline cursor-pointer">
+            Copy File
+          </button>
+        </div>
+      </div>
+    </div>
+    
+
+    <div class="product-card bg-white rounded-xl overflow-hidden border border-[#E8E3DA] shadow-sm hover:shadow-md transition flex flex-col justify-between" data-cat="landscape" data-file="86_landscape_namib_desert_red_dune_no_4.png">
+      <div class="relative aspect-[3/4] bg-[#FAF8F5] overflow-hidden group cursor-pointer" onclick="openModal('86_landscape_namib_desert_red_dune_no_4.png', 'Namib Desert Red Dune No 4')">
+        <img src="86_landscape_namib_desert_red_dune_no_4.png" alt="Namib Desert Red Dune No 4" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+        <span class="absolute top-2 left-2 bg-black/75 text-white text-[10px] font-bold px-2 py-0.5 rounded shadow">#86</span>
+        <span class="absolute top-2 right-2 text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded shadow-sm bg-[#EAEAEA] text-[#555555]">landscape</span>
+      </div>
+      <div class="p-3.5 flex flex-col justify-between flex-grow gap-2">
+        <div>
+          <h3 class="font-bold text-sm sm:text-base text-[#1C1C1E] leading-tight">Namib Desert Red Dune No 4</h3>
+          <p class="text-[10px] text-[#7A756D] font-mono mt-1 break-all select-all">86_landscape_namib_desert_red_dune_no_4.png</p>
+        </div>
+        <div class="flex items-center justify-between pt-2 border-t border-[#F0EBE3]">
+          <label class="flex items-center gap-1.5 text-xs text-[#1C1C1E] cursor-pointer font-semibold">
+            <input type="checkbox" class="product-checkbox rounded text-[#B8834E] focus:ring-0 w-4 h-4 cursor-pointer" value="86_landscape_namib_desert_red_dune_no_4.png" onchange="updateCount()">
+            <span>Select</span>
+          </label>
+          <button onclick="copyName('86_landscape_namib_desert_red_dune_no_4.png', this)" class="text-[11px] font-bold text-[#B8834E] hover:underline cursor-pointer">
+            Copy File
+          </button>
+        </div>
+      </div>
+    </div>
+    
+
+    <div class="product-card bg-white rounded-xl overflow-hidden border border-[#E8E3DA] shadow-sm hover:shadow-md transition flex flex-col justify-between" data-cat="landscape" data-file="87_landscape_swiss_alps_winter_twilight.png">
+      <div class="relative aspect-[3/4] bg-[#FAF8F5] overflow-hidden group cursor-pointer" onclick="openModal('87_landscape_swiss_alps_winter_twilight.png', 'Swiss Alps Winter Twilight')">
+        <img src="87_landscape_swiss_alps_winter_twilight.png" alt="Swiss Alps Winter Twilight" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+        <span class="absolute top-2 left-2 bg-black/75 text-white text-[10px] font-bold px-2 py-0.5 rounded shadow">#87</span>
+        <span class="absolute top-2 right-2 text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded shadow-sm bg-[#EAEAEA] text-[#555555]">landscape</span>
+      </div>
+      <div class="p-3.5 flex flex-col justify-between flex-grow gap-2">
+        <div>
+          <h3 class="font-bold text-sm sm:text-base text-[#1C1C1E] leading-tight">Swiss Alps Winter Twilight</h3>
+          <p class="text-[10px] text-[#7A756D] font-mono mt-1 break-all select-all">87_landscape_swiss_alps_winter_twilight.png</p>
+        </div>
+        <div class="flex items-center justify-between pt-2 border-t border-[#F0EBE3]">
+          <label class="flex items-center gap-1.5 text-xs text-[#1C1C1E] cursor-pointer font-semibold">
+            <input type="checkbox" class="product-checkbox rounded text-[#B8834E] focus:ring-0 w-4 h-4 cursor-pointer" value="87_landscape_swiss_alps_winter_twilight.png" onchange="updateCount()">
+            <span>Select</span>
+          </label>
+          <button onclick="copyName('87_landscape_swiss_alps_winter_twilight.png', this)" class="text-[11px] font-bold text-[#B8834E] hover:underline cursor-pointer">
+            Copy File
+          </button>
+        </div>
+      </div>
+    </div>
+    
+
+    <div class="product-card bg-white rounded-xl overflow-hidden border border-[#E8E3DA] shadow-sm hover:shadow-md transition flex flex-col justify-between" data-cat="landscape" data-file="88_landscape_oregon_coastal_pine_fog_study.png">
+      <div class="relative aspect-[3/4] bg-[#FAF8F5] overflow-hidden group cursor-pointer" onclick="openModal('88_landscape_oregon_coastal_pine_fog_study.png', 'Oregon Coastal Pine Fog Study')">
+        <img src="88_landscape_oregon_coastal_pine_fog_study.png" alt="Oregon Coastal Pine Fog Study" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+        <span class="absolute top-2 left-2 bg-black/75 text-white text-[10px] font-bold px-2 py-0.5 rounded shadow">#88</span>
+        <span class="absolute top-2 right-2 text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded shadow-sm bg-[#EAEAEA] text-[#555555]">landscape</span>
+      </div>
+      <div class="p-3.5 flex flex-col justify-between flex-grow gap-2">
+        <div>
+          <h3 class="font-bold text-sm sm:text-base text-[#1C1C1E] leading-tight">Oregon Coastal Pine Fog Study</h3>
+          <p class="text-[10px] text-[#7A756D] font-mono mt-1 break-all select-all">88_landscape_oregon_coastal_pine_fog_study.png</p>
+        </div>
+        <div class="flex items-center justify-between pt-2 border-t border-[#F0EBE3]">
+          <label class="flex items-center gap-1.5 text-xs text-[#1C1C1E] cursor-pointer font-semibold">
+            <input type="checkbox" class="product-checkbox rounded text-[#B8834E] focus:ring-0 w-4 h-4 cursor-pointer" value="88_landscape_oregon_coastal_pine_fog_study.png" onchange="updateCount()">
+            <span>Select</span>
+          </label>
+          <button onclick="copyName('88_landscape_oregon_coastal_pine_fog_study.png', this)" class="text-[11px] font-bold text-[#B8834E] hover:underline cursor-pointer">
+            Copy File
+          </button>
+        </div>
+      </div>
+    </div>
+    
+
+    <div class="product-card bg-white rounded-xl overflow-hidden border border-[#E8E3DA] shadow-sm hover:shadow-md transition flex flex-col justify-between" data-cat="landscape" data-file="89_landscape_patagonia_glacier_peak_silence.png">
+      <div class="relative aspect-[3/4] bg-[#FAF8F5] overflow-hidden group cursor-pointer" onclick="openModal('89_landscape_patagonia_glacier_peak_silence.png', 'Patagonia Glacier Peak Silence')">
+        <img src="89_landscape_patagonia_glacier_peak_silence.png" alt="Patagonia Glacier Peak Silence" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+        <span class="absolute top-2 left-2 bg-black/75 text-white text-[10px] font-bold px-2 py-0.5 rounded shadow">#89</span>
+        <span class="absolute top-2 right-2 text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded shadow-sm bg-[#EAEAEA] text-[#555555]">landscape</span>
+      </div>
+      <div class="p-3.5 flex flex-col justify-between flex-grow gap-2">
+        <div>
+          <h3 class="font-bold text-sm sm:text-base text-[#1C1C1E] leading-tight">Patagonia Glacier Peak Silence</h3>
+          <p class="text-[10px] text-[#7A756D] font-mono mt-1 break-all select-all">89_landscape_patagonia_glacier_peak_silence.png</p>
+        </div>
+        <div class="flex items-center justify-between pt-2 border-t border-[#F0EBE3]">
+          <label class="flex items-center gap-1.5 text-xs text-[#1C1C1E] cursor-pointer font-semibold">
+            <input type="checkbox" class="product-checkbox rounded text-[#B8834E] focus:ring-0 w-4 h-4 cursor-pointer" value="89_landscape_patagonia_glacier_peak_silence.png" onchange="updateCount()">
+            <span>Select</span>
+          </label>
+          <button onclick="copyName('89_landscape_patagonia_glacier_peak_silence.png', this)" class="text-[11px] font-bold text-[#B8834E] hover:underline cursor-pointer">
+            Copy File
+          </button>
+        </div>
+      </div>
+    </div>
+    
+
+    <div class="product-card bg-white rounded-xl overflow-hidden border border-[#E8E3DA] shadow-sm hover:shadow-md transition flex flex-col justify-between" data-cat="landscape" data-file="90_landscape_kyoto_bamboo_grove_dawn_light.png">
+      <div class="relative aspect-[3/4] bg-[#FAF8F5] overflow-hidden group cursor-pointer" onclick="openModal('90_landscape_kyoto_bamboo_grove_dawn_light.png', 'Kyoto Bamboo Grove Dawn Light')">
+        <img src="90_landscape_kyoto_bamboo_grove_dawn_light.png" alt="Kyoto Bamboo Grove Dawn Light" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+        <span class="absolute top-2 left-2 bg-black/75 text-white text-[10px] font-bold px-2 py-0.5 rounded shadow">#90</span>
+        <span class="absolute top-2 right-2 text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded shadow-sm bg-[#EAEAEA] text-[#555555]">landscape</span>
+      </div>
+      <div class="p-3.5 flex flex-col justify-between flex-grow gap-2">
+        <div>
+          <h3 class="font-bold text-sm sm:text-base text-[#1C1C1E] leading-tight">Kyoto Bamboo Grove Dawn Light</h3>
+          <p class="text-[10px] text-[#7A756D] font-mono mt-1 break-all select-all">90_landscape_kyoto_bamboo_grove_dawn_light.png</p>
+        </div>
+        <div class="flex items-center justify-between pt-2 border-t border-[#F0EBE3]">
+          <label class="flex items-center gap-1.5 text-xs text-[#1C1C1E] cursor-pointer font-semibold">
+            <input type="checkbox" class="product-checkbox rounded text-[#B8834E] focus:ring-0 w-4 h-4 cursor-pointer" value="90_landscape_kyoto_bamboo_grove_dawn_light.png" onchange="updateCount()">
+            <span>Select</span>
+          </label>
+          <button onclick="copyName('90_landscape_kyoto_bamboo_grove_dawn_light.png', this)" class="text-[11px] font-bold text-[#B8834E] hover:underline cursor-pointer">
+            Copy File
+          </button>
+        </div>
+      </div>
+    </div>
+    
+  </main>
+
+  <!-- Full Size Modal -->
+  <div id="modal" class="fixed inset-0 bg-black/85 z-50 hidden flex items-center justify-center p-4" onclick="closeModal()">
+    <div class="max-w-xl max-h-[92vh] bg-white rounded-2xl overflow-hidden p-4 flex flex-col items-center gap-3 shadow-2xl" onclick="event.stopPropagation()">
+      <img id="modal-img" src="" class="max-h-[75vh] object-contain rounded-lg border border-[#E8E3DA]">
+      <h3 id="modal-title" class="text-lg font-bold text-center text-[#1C1C1E]"></h3>
+      <button onclick="closeModal()" class="bg-[#1C1C1E] text-white text-xs font-bold px-5 py-2 rounded-lg">Close Preview</button>
+    </div>
+  </div>
+
+  <script>
+    function updateCount() {
+      const checked = document.querySelectorAll('.product-checkbox:checked');
+      document.getElementById('selected-count').innerText = checked.length + ' / 90';
+    }
+
+    function copyName(filename, btn) {
+      navigator.clipboard.writeText(filename);
+      const orig = btn.innerText;
+      btn.innerText = 'Copied!';
+      btn.style.color = '#3B7A57';
+      setTimeout(() => { btn.innerText = orig; btn.style.color = '#B8834E'; }, 1500);
+    }
+
+    function copySelectedList() {
+      const checked = Array.from(document.querySelectorAll('.product-checkbox:checked')).map(c => c.value);
+      if (checked.length === 0) {
+        alert('Please check at least one product first!');
+        return;
+      }
+      navigator.clipboard.writeText(checked.join('\n'));
+      alert('Copied ' + checked.length + ' product filenames to your clipboard! You can now paste them directly in the chat.');
+    }
+
+    function filterCategory(cat, btn) {
+      document.querySelectorAll('.filter-btn').forEach(b => {
+        b.classList.remove('bg-[#1C1C1E]', 'text-white');
+        b.classList.add('bg-white', 'text-[#1C1C1E]');
+      });
+      btn.classList.remove('bg-white', 'text-[#1C1C1E]');
+      btn.classList.add('bg-[#1C1C1E]', 'text-white');
+
+      document.querySelectorAll('.product-card').forEach(card => {
+        if (cat === 'all' || card.getAttribute('data-cat') === cat) {
+          card.style.display = 'flex';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    }
+
+    function openModal(src, title) {
+      document.getElementById('modal-img').src = src;
+      document.getElementById('modal-title').innerText = title;
+      document.getElementById('modal').classList.remove('hidden');
+    }
+
+    function closeModal() {
+      document.getElementById('modal').classList.add('hidden');
+    }
+  </script>
+</body>
+</html>

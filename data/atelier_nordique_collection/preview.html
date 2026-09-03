@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Atelier Nordique — 5-Piece High-Fashion Editorial Gallery Wall</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Plus Jakarta Sans', sans-serif; background: #FAF8F5; }
+    .font-serif { font-family: 'Cormorant Garamond', serif; }
+  </style>
+</head>
+<body class="p-6 md:p-14 text-[#1C1C1E]">
+
+  <!-- Header -->
+  <header class="max-w-6xl mx-auto mb-12 text-center">
+    <span class="text-[10px] font-bold uppercase tracking-widest bg-[#1C1C1E] text-white px-3.5 py-1 rounded-full inline-block mb-3">
+      Curated Gallery Wall Collection
+    </span>
+    <h1 class="font-serif text-4xl sm:text-6xl font-bold text-[#1C1C1E] tracking-tight">
+      Atelier Nordique Series
+    </h1>
+    <p class="text-sm sm:text-base text-[#7A756D] mt-3 max-w-2xl mx-auto leading-relaxed">
+      A 5-piece high-fashion editorial gallery wall in the Scandinavian painterly tradition. Heavy impasto gouache on deckle-edge 250 gsm archival cotton paper, celebrating bold graphic knitwear, architectural interior design, and quiet human gesture.
+    </p>
+  </header>
+
+  <!-- Gallery Wall Grid -->
+  <main class="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+    
+    <div class="bg-white rounded-2xl overflow-hidden border border-[#E8E3DA] shadow-sm hover:shadow-xl transition duration-300 flex flex-col justify-between">
+      <div class="relative aspect-[3/4] bg-[#FAF8F5] overflow-hidden group cursor-pointer" onclick="openModal('01_hero_portrait_editorial.jpg', 'L'Éditorial No. 1')">
+        <img src="01_hero_portrait_editorial.jpg" alt="L'Éditorial No. 1" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+        <span class="absolute top-3 left-3 bg-black/80 backdrop-blur-md text-white text-[11px] font-bold px-2.5 py-1 rounded-md shadow">Plate 01</span>
+      </div>
+      <div class="p-5 flex flex-col justify-between flex-grow gap-3">
+        <div>
+          <h3 class="font-bold text-xl text-[#1C1C1E] leading-tight font-serif">L'Éditorial No. 1</h3>
+          <p class="text-xs text-[#7A756D] mt-1.5 leading-relaxed">Original female fashion portrait with sculptural cheekbones in an architectural high-neck wool knit.</p>
+        </div>
+        <div class="pt-3 border-t border-[#F0EBE3] flex items-center justify-between">
+          <span class="text-[11px] font-mono text-[#7A756D]">01_hero_portrait_editorial.jpg</span>
+          <button onclick="openModal('01_hero_portrait_editorial.jpg', 'L'Éditorial No. 1')" class="text-xs font-bold text-[#B8834E] hover:underline cursor-pointer">
+            Inspect Full Artwork →
+          </button>
+        </div>
+      </div>
+    </div>
+    
+
+    <div class="bg-white rounded-2xl overflow-hidden border border-[#E8E3DA] shadow-sm hover:shadow-xl transition duration-300 flex flex-col justify-between">
+      <div class="relative aspect-[3/4] bg-[#FAF8F5] overflow-hidden group cursor-pointer" onclick="openModal('02_studio_armchair_drape.jpg', 'The Studio Chair & Drape')">
+        <img src="02_studio_armchair_drape.jpg" alt="The Studio Chair & Drape" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+        <span class="absolute top-3 left-3 bg-black/80 backdrop-blur-md text-white text-[11px] font-bold px-2.5 py-1 rounded-md shadow">Plate 02</span>
+      </div>
+      <div class="p-5 flex flex-col justify-between flex-grow gap-3">
+        <div>
+          <h3 class="font-bold text-xl text-[#1C1C1E] leading-tight font-serif">The Studio Chair & Drape</h3>
+          <p class="text-xs text-[#7A756D] mt-1.5 leading-relaxed">Minimalist Bauhaus oak/tubular armchair draped with an optical checkerboard wool blanket and Chelsea boots.</p>
+        </div>
+        <div class="pt-3 border-t border-[#F0EBE3] flex items-center justify-between">
+          <span class="text-[11px] font-mono text-[#7A756D]">02_studio_armchair_drape.jpg</span>
+          <button onclick="openModal('02_studio_armchair_drape.jpg', 'The Studio Chair & Drape')" class="text-xs font-bold text-[#B8834E] hover:underline cursor-pointer">
+            Inspect Full Artwork →
+          </button>
+        </div>
+      </div>
+    </div>
+    
+
+    <div class="bg-white rounded-2xl overflow-hidden border border-[#E8E3DA] shadow-sm hover:shadow-xl transition duration-300 flex flex-col justify-between">
+      <div class="relative aspect-[3/4] bg-[#FAF8F5] overflow-hidden group cursor-pointer" onclick="openModal('03_still_life_vessel_textile.jpg', 'Vase, Citrus & Textile')">
+        <img src="03_still_life_vessel_textile.jpg" alt="Vase, Citrus & Textile" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+        <span class="absolute top-3 left-3 bg-black/80 backdrop-blur-md text-white text-[11px] font-bold px-2.5 py-1 rounded-md shadow">Plate 03</span>
+      </div>
+      <div class="p-5 flex flex-col justify-between flex-grow gap-3">
+        <div>
+          <h3 class="font-bold text-xl text-[#1C1C1E] leading-tight font-serif">Vase, Citrus & Textile</h3>
+          <p class="text-xs text-[#7A756D] mt-1.5 leading-relaxed">Asymmetric raw terracotta jug holding an olive sprig, beside a folded optical-striped knit and espresso cup.</p>
+        </div>
+        <div class="pt-3 border-t border-[#F0EBE3] flex items-center justify-between">
+          <span class="text-[11px] font-mono text-[#7A756D]">03_still_life_vessel_textile.jpg</span>
+          <button onclick="openModal('03_still_life_vessel_textile.jpg', 'Vase, Citrus & Textile')" class="text-xs font-bold text-[#B8834E] hover:underline cursor-pointer">
+            Inspect Full Artwork →
+          </button>
+        </div>
+      </div>
+    </div>
+    
+
+    <div class="bg-white rounded-2xl overflow-hidden border border-[#E8E3DA] shadow-sm hover:shadow-xl transition duration-300 flex flex-col justify-between">
+      <div class="relative aspect-[3/4] bg-[#FAF8F5] overflow-hidden group cursor-pointer" onclick="openModal('04_gesture_cuffed_hand.jpg', 'The Cuffed Hand & Ring')">
+        <img src="04_gesture_cuffed_hand.jpg" alt="The Cuffed Hand & Ring" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+        <span class="absolute top-3 left-3 bg-black/80 backdrop-blur-md text-white text-[11px] font-bold px-2.5 py-1 rounded-md shadow">Plate 04</span>
+      </div>
+      <div class="p-5 flex flex-col justify-between flex-grow gap-3">
+        <div>
+          <h3 class="font-bold text-xl text-[#1C1C1E] leading-tight font-serif">The Cuffed Hand & Ring</h3>
+          <p class="text-xs text-[#7A756D] mt-1.5 leading-relaxed">Intimate editorial detail of dark-skinned hands adorned with gold and onyx signet rings adjusting a chunky knit cuff.</p>
+        </div>
+        <div class="pt-3 border-t border-[#F0EBE3] flex items-center justify-between">
+          <span class="text-[11px] font-mono text-[#7A756D]">04_gesture_cuffed_hand.jpg</span>
+          <button onclick="openModal('04_gesture_cuffed_hand.jpg', 'The Cuffed Hand & Ring')" class="text-xs font-bold text-[#B8834E] hover:underline cursor-pointer">
+            Inspect Full Artwork →
+          </button>
+        </div>
+      </div>
+    </div>
+    
+
+    <div class="bg-white rounded-2xl overflow-hidden border border-[#E8E3DA] shadow-sm hover:shadow-xl transition duration-300 flex flex-col justify-between">
+      <div class="relative aspect-[3/4] bg-[#FAF8F5] overflow-hidden group cursor-pointer" onclick="openModal('05_abstract_form_weave.jpg', 'Form & Weave No. 5')">
+        <img src="05_abstract_form_weave.jpg" alt="Form & Weave No. 5" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+        <span class="absolute top-3 left-3 bg-black/80 backdrop-blur-md text-white text-[11px] font-bold px-2.5 py-1 rounded-md shadow">Plate 05</span>
+      </div>
+      <div class="p-5 flex flex-col justify-between flex-grow gap-3">
+        <div>
+          <h3 class="font-bold text-xl text-[#1C1C1E] leading-tight font-serif">Form & Weave No. 5</h3>
+          <p class="text-xs text-[#7A756D] mt-1.5 leading-relaxed">Graphic textile abstraction with sweeping optical monochrome waves, a midnight-blue orb, and warm terracotta arch.</p>
+        </div>
+        <div class="pt-3 border-t border-[#F0EBE3] flex items-center justify-between">
+          <span class="text-[11px] font-mono text-[#7A756D]">05_abstract_form_weave.jpg</span>
+          <button onclick="openModal('05_abstract_form_weave.jpg', 'Form & Weave No. 5')" class="text-xs font-bold text-[#B8834E] hover:underline cursor-pointer">
+            Inspect Full Artwork →
+          </button>
+        </div>
+      </div>
+    </div>
+    
+  </main>
+
+  <!-- Fullscreen Modal -->
+  <div id="modal" class="fixed inset-0 bg-black/85 z-50 hidden flex items-center justify-center p-4" onclick="closeModal()">
+    <div class="max-w-2xl max-h-[92vh] bg-white rounded-2xl overflow-hidden p-5 flex flex-col items-center gap-3 shadow-2xl" onclick="event.stopPropagation()">
+      <img id="modal-img" src="" class="max-h-[75vh] object-contain rounded-lg">
+      <h3 id="modal-title" class="font-serif text-2xl font-bold text-center text-[#1C1C1E]"></h3>
+      <button onclick="closeModal()" class="bg-[#1C1C1E] text-white text-xs font-bold px-6 py-2 rounded-lg cursor-pointer">Close</button>
+    </div>
+  </div>
+
+  <script>
+    function openModal(src, title) {
+      document.getElementById('modal-img').src = src;
+      document.getElementById('modal-title').innerText = title;
+      document.getElementById('modal').classList.remove('hidden');
+    }
+    function closeModal() {
+      document.getElementById('modal').classList.add('hidden');
+    }
+  </script>
+</body>
+</html>
