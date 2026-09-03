@@ -1,0 +1,174 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="max-w-4xl mx-auto px-6 py-12 md:py-20">
+  
+  <!-- Breadcrumb & Badge -->
+  <div class="mb-6">
+    <div class="flex items-center gap-2 text-xs text-[#7A756D] mb-3">
+      <a href="/" class="hover:text-[#1C1C1E] transition">Home</a>
+      <span>/</span>
+      <span class="text-[#1C1C1E] font-medium">Return & Refund Policy</span>
+    </div>
+    <span class="text-[11px] font-bold uppercase tracking-widest bg-[#E8F3ED] text-[#3B7A57] border border-[#C2E2CF] px-3 py-1 rounded-full">
+      30-Day Archival Guarantee
+    </span>
+  </div>
+
+  <!-- Header -->
+  <h1 class="font-['Cormorant_Garamond'] text-3xl sm:text-5xl font-bold text-[#1C1C1E] leading-tight mb-4">
+    Return & Refund Policy
+  </h1>
+  <p class="text-sm sm:text-base text-[#7A756D] leading-relaxed mb-10 max-w-2xl">
+    At Oak Print Studio, we hold our fine art craftsmanship to museum standards. Every artwork is printed on 250 gsm archival cotton paper and custom-framed in FSC-certified solid natural wood. If your order is anything less than perfect, we guarantee a straightforward, transparent return, exchange, or refund.
+  </p>
+
+  <!-- Key Guarantees Grid -->
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+    <div class="bg-white p-6 rounded-2xl border border-[#E8E3DA] shadow-sm">
+      <div class="w-10 h-10 rounded-full bg-[#FAF4EC] flex items-center justify-center text-[#B8834E] mb-4">
+        <i data-lucide="shield-check" class="w-5 h-5"></i>
+      </div>
+      <h3 class="font-bold text-base text-[#1C1C1E] mb-1">30-Day Return Window</h3>
+      <p class="text-xs text-[#7A756D] leading-relaxed">
+        You have 30 calendar days from the date your package arrives to request a return, exchange, or refund for any reason.
+      </p>
+    </div>
+
+    <div class="bg-white p-6 rounded-2xl border border-[#E8E3DA] shadow-sm">
+      <div class="w-10 h-10 rounded-full bg-[#E8F3ED] flex items-center justify-center text-[#3B7A57] mb-4">
+        <i data-lucide="rotate-ccw" class="w-5 h-5"></i>
+      </div>
+      <h3 class="font-bold text-base text-[#1C1C1E] mb-1">100% Free Replacements</h3>
+      <p class="text-xs text-[#7A756D] leading-relaxed">
+        If your frame or print arrives damaged or defective in transit, we express-ship a fresh replacement immediately at zero cost.
+      </p>
+    </div>
+
+    <div class="bg-white p-6 rounded-2xl border border-[#E8E3DA] shadow-sm">
+      <div class="w-10 h-10 rounded-full bg-[#F0EBE3] flex items-center justify-center text-[#705844] mb-4">
+        <i data-lucide="clock" class="w-5 h-5"></i>
+      </div>
+      <h3 class="font-bold text-base text-[#1C1C1E] mb-1">3–5 Day Processing</h3>
+      <p class="text-xs text-[#7A756D] leading-relaxed">
+        Approved refunds are credited directly back to your original payment card, Apple Pay, or Google Pay within 3 to 5 business days.
+      </p>
+    </div>
+  </div>
+
+  <!-- Detailed Policy Sections -->
+  <div class="space-y-10 bg-white p-8 sm:p-12 rounded-2xl border border-[#E8E3DA] shadow-sm text-sm text-[#444448] leading-relaxed">
+    
+    <!-- Section 1 -->
+    <section class="space-y-3">
+      <h2 class="font-['Cormorant_Garamond'] text-2xl font-bold text-[#1C1C1E]">
+        1. Damaged, Defective, or Incorrect Deliveries
+      </h2>
+      <p>
+        While every order is reinforced with heavy-duty eco-archival packaging, carrier handling errors can occasionally occur. If your artwork arrives damaged, misprinted, or with broken acrylic glass:
+      </p>
+      <ul class="list-disc pl-5 space-y-1 text-xs text-[#555558]">
+        <li><strong>We cover 100% of all costs:</strong> You do not need to return the damaged item.</li>
+        <li><strong>Immediate priority reprint:</strong> We will immediately dispatch a replacement with priority routing from your nearest local production hub.</li>
+        <li><strong>Full refund option:</strong> If you prefer not to receive a replacement, we will issue an immediate 100% full refund to your original payment method.</li>
+      </ul>
+    </section>
+
+    <hr class="border-[#F0EBE3]">
+
+    <!-- Section 2 -->
+    <section class="space-y-3">
+      <h2 class="font-['Cormorant_Garamond'] text-2xl font-bold text-[#1C1C1E]">
+        2. Change of Mind Returns (30-Day Window)
+      </h2>
+      <p>
+        We want you to love your art in your space. If you decide that an artwork does not suit your interior or you simply change your mind:
+      </p>
+      <ul class="list-disc pl-5 space-y-1 text-xs text-[#555558]">
+        <li>You may request a return within <strong>30 calendar days</strong> of delivery.</li>
+        <li>Items must be in original, undamaged condition, ideally in the original protective packaging.</li>
+        <li>For standard change-of-mind returns, the customer is responsible for the return shipping postage to our nearest regional intake hub.</li>
+      </ul>
+    </section>
+
+    <hr class="border-[#F0EBE3]">
+
+    <!-- Section 3 -->
+    <section class="space-y-3">
+      <h2 class="font-['Cormorant_Garamond'] text-2xl font-bold text-[#1C1C1E]">
+        3. Step-by-Step Instructions to Request a Return
+      </h2>
+      <p>Returning an item or requesting a replacement is simple and handled directly by our concierge team:</p>
+      
+      <div class="space-y-4 pt-2">
+        <div class="flex items-start gap-4 p-4 rounded-xl bg-[#FAF8F5] border border-[#E8E3DA]">
+          <span class="w-6 h-6 rounded-full bg-[#1C1C1E] text-white flex items-center justify-center font-bold text-xs shrink-0">1</span>
+          <div>
+            <h4 class="font-bold text-[#1C1C1E] text-xs uppercase tracking-wide">Contact Client Support</h4>
+            <p class="text-xs text-[#7A756D] mt-0.5">
+              Send an email to <a href="mailto:hello@oakprintstudio.com" class="text-[#B8834E] font-semibold hover:underline">hello@oakprintstudio.com</a> with your <strong>Order ID</strong> (found in your order confirmation email) and state whether you prefer a replacement or refund.
+            </p>
+          </div>
+        </div>
+
+        <div class="flex items-start gap-4 p-4 rounded-xl bg-[#FAF8F5] border border-[#E8E3DA]">
+          <span class="w-6 h-6 rounded-full bg-[#1C1C1E] text-white flex items-center justify-center font-bold text-xs shrink-0">2</span>
+          <div>
+            <h4 class="font-bold text-[#1C1C1E] text-xs uppercase tracking-wide">Attach Photos (If Damaged)</h4>
+            <p class="text-xs text-[#7A756D] mt-0.5">
+              If your claim is due to transit damage or defects, simply attach 1–2 photos of the damaged frame or packaging. No physical return shipment is required for transit damage claims.
+            </p>
+          </div>
+        </div>
+
+        <div class="flex items-start gap-4 p-4 rounded-xl bg-[#FAF8F5] border border-[#E8E3DA]">
+          <span class="w-6 h-6 rounded-full bg-[#1C1C1E] text-white flex items-center justify-center font-bold text-xs shrink-0">3</span>
+          <div>
+            <h4 class="font-bold text-[#1C1C1E] text-xs uppercase tracking-wide">Receive Confirmation & RMA</h4>
+            <p class="text-xs text-[#7A756D] mt-0.5">
+              Our support studio will reply within <strong>24 hours</strong> with your Return Merchandise Authorization (RMA) number and local return instructions.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr class="border-[#F0EBE3]">
+
+    <!-- Section 4 -->
+    <section class="space-y-3">
+      <h2 class="font-['Cormorant_Garamond'] text-2xl font-bold text-[#1C1C1E]">
+        4. Expected Refund Processing Times
+      </h2>
+      <p>
+        Once your return is received and inspected (or immediately upon confirmation of transit damage claims):
+      </p>
+      <ul class="list-disc pl-5 space-y-1 text-xs text-[#555558]">
+        <li>You will receive an automated refund notification email from Oak Print Studio.</li>
+        <li>The refund is processed via Stripe back to your original payment method.</li>
+        <li>Funds typically post to your bank or card account within <strong>3 to 5 business days</strong>, depending on your bank's clearance schedule.</li>
+      </ul>
+    </section>
+
+    <hr class="border-[#F0EBE3]">
+
+    <!-- Section 5 -->
+    <section class="space-y-3">
+      <h2 class="font-['Cormorant_Garamond'] text-2xl font-bold text-[#1C1C1E]">
+        5. Contact Us
+      </h2>
+      <p>
+        If you have any questions regarding your order or our policies, please contact our studio:
+      </p>
+      <div class="bg-[#FAF8F5] p-5 rounded-xl border border-[#E8E3DA] space-y-1 text-xs">
+        <p><strong>Studio Concierge Email:</strong> <a href="mailto:hello@oakprintstudio.com" class="text-[#B8834E] hover:underline font-medium">hello@oakprintstudio.com</a></p>
+        <p><strong>Website:</strong> <a href="https://www.oakprintstudio.com" class="text-[#B8834E] hover:underline font-medium">https://www.oakprintstudio.com</a></p>
+        <p><strong>Response Time:</strong> Within 24 hours guaranteed</p>
+        <p><strong>Support Availability:</strong> Monday – Saturday, 8:00 AM – 8:00 PM WET</p>
+      </div>
+    </section>
+
+  </div>
+
+</div>
+{% endblock %}

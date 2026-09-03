@@ -1,0 +1,55 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="max-w-4xl mx-auto px-6 py-12 md:py-20">
+  <div class="mb-6">
+    <div class="flex items-center gap-2 text-xs text-[#7A756D] mb-3">
+      <a href="/" class="hover:text-[#1C1C1E] transition">Home</a>
+      <span>/</span>
+      <span class="text-[#1C1C1E] font-medium">Terms of Service</span>
+    </div>
+  </div>
+
+  <h1 class="font-['Cormorant_Garamond'] text-3xl sm:text-5xl font-bold text-[#1C1C1E] leading-tight mb-4">
+    Terms of Service
+  </h1>
+  <p class="text-xs text-[#7A756D] mb-10">Last Updated: September 2026</p>
+
+  <div class="space-y-8 bg-white p-8 sm:p-12 rounded-2xl border border-[#E8E3DA] shadow-sm text-sm text-[#444448] leading-relaxed">
+    <section class="space-y-2">
+      <h2 class="font-['Cormorant_Garamond'] text-xl font-bold text-[#1C1C1E]">1. Agreement to Terms</h2>
+      <p class="text-xs text-[#555558]">
+        By browsing oakprintstudio.com or placing an order, you agree to be bound by these Terms of Service. If you do not agree with any part of these terms, you may not use our website.
+      </p>
+    </section>
+
+    <section class="space-y-2">
+      <h2 class="font-['Cormorant_Garamond'] text-xl font-bold text-[#1C1C1E]">2. Products & Fulfillment</h2>
+      <p class="text-xs text-[#555558]">
+        All art prints are produced to order on 250 gsm archival fine art matte paper with FSC-certified wooden framing. Colors may exhibit subtle variation depending on screen calibration.
+      </p>
+    </section>
+
+    <section class="space-y-2">
+      <h2 class="font-['Cormorant_Garamond'] text-xl font-bold text-[#1C1C1E]">3. Pricing & Currency</h2>
+      <p class="text-xs text-[#555558]">
+        Prices are displayed in EUR or USD. Orders are processed securely via Stripe. We reserve the right to correct any inadvertent pricing errors prior to order fulfillment.
+      </p>
+    </section>
+
+    <section class="space-y-2">
+      <h2 class="font-['Cormorant_Garamond'] text-xl font-bold text-[#1C1C1E]">4. Returns & Guarantee</h2>
+      <p class="text-xs text-[#555558]">
+        Our products are backed by our 30-Day Archival Guarantee as detailed in our <a href="/returns" class="text-[#B8834E] hover:underline font-semibold">Return & Refund Policy</a>.
+      </p>
+    </section>
+
+    <section class="space-y-2">
+      <h2 class="font-['Cormorant_Garamond'] text-xl font-bold text-[#1C1C1E]">5. Contact Information</h2>
+      <p class="text-xs text-[#555558]">
+        For legal or operational inquiries, email <a href="mailto:hello@oakprintstudio.com" class="text-[#B8834E] hover:underline font-semibold">hello@oakprintstudio.com</a>.
+      </p>
+    </section>
+  </div>
+</div>
+{% endblock %}

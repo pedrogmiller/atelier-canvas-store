@@ -48,7 +48,21 @@ class SEOIndexerAgent(BaseAgent):
         ET.SubElement(home_url, "changefreq").text = "daily"
         ET.SubElement(home_url, "priority").text = "1.0"
 
-        # 2. Product Pages
+        # 2. Key Policy & Guarantee Pages (Required for Merchant Verification)
+        policy_routes = [
+            ("/returns", "0.9"),
+            ("/shipping", "0.8"),
+            ("/privacy", "0.5"),
+            ("/terms", "0.5"),
+        ]
+        for route, prio in policy_routes:
+            pol_url = ET.SubElement(urlset, "url")
+            ET.SubElement(pol_url, "loc").text = f"{domain}{route}"
+            ET.SubElement(pol_url, "lastmod").text = today
+            ET.SubElement(pol_url, "changefreq").text = "monthly"
+            ET.SubElement(pol_url, "priority").text = prio
+
+        # 3. Product Pages
         for item in catalog:
             p_id = item.get("id")
             if not p_id:

@@ -1,0 +1,88 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="max-w-4xl mx-auto px-6 py-12 md:py-20">
+  
+  <div class="mb-6">
+    <div class="flex items-center gap-2 text-xs text-[#7A756D] mb-3">
+      <a href="/" class="hover:text-[#1C1C1E] transition">Home</a>
+      <span>/</span>
+      <span class="text-[#1C1C1E] font-medium">Shipping & Delivery</span>
+    </div>
+    <span class="text-[11px] font-bold uppercase tracking-widest bg-[#FAF4EC] text-[#B8834E] border border-[#E8E3DA] px-3 py-1 rounded-full">
+      Localized Production in 32 Countries
+    </span>
+  </div>
+
+  <h1 class="font-['Cormorant_Garamond'] text-3xl sm:text-5xl font-bold text-[#1C1C1E] leading-tight mb-4">
+    Shipping & Delivery Policy
+  </h1>
+  <p class="text-sm sm:text-base text-[#7A756D] leading-relaxed mb-10 max-w-2xl">
+    We operate a sustainable, decentralized printing network. When you place an order on Oak Print Studio, your artwork is produced and hand-framed at the professional fulfillment facility closest to your delivery address.
+  </p>
+
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+    <div class="bg-white p-6 rounded-2xl border border-[#E8E3DA] shadow-sm">
+      <div class="w-10 h-10 rounded-full bg-[#FAF4EC] flex items-center justify-center text-[#B8834E] mb-4">
+        <i data-lucide="clock" class="w-5 h-5"></i>
+      </div>
+      <h3 class="font-bold text-base text-[#1C1C1E] mb-1">24–48h Production</h3>
+      <p class="text-xs text-[#7A756D] leading-relaxed">
+        Fine art giclée printing, custom framing, and quality inspection take 1 to 2 business days.
+      </p>
+    </div>
+
+    <div class="bg-white p-6 rounded-2xl border border-[#E8E3DA] shadow-sm">
+      <div class="w-10 h-10 rounded-full bg-[#E8F3ED] flex items-center justify-center text-[#3B7A57] mb-4">
+        <i data-lucide="truck" class="w-5 h-5"></i>
+      </div>
+      <h3 class="font-bold text-base text-[#1C1C1E] mb-1">48–72h Delivery</h3>
+      <p class="text-xs text-[#7A756D] leading-relaxed">
+        Local priority courier delivery across Europe, the United States, Canada, and the United Kingdom.
+      </p>
+    </div>
+
+    <div class="bg-white p-6 rounded-2xl border border-[#E8E3DA] shadow-sm">
+      <div class="w-10 h-10 rounded-full bg-[#F0EBE3] flex items-center justify-center text-[#705844] mb-4">
+        <i data-lucide="map-pin" class="w-5 h-5"></i>
+      </div>
+      <h3 class="font-bold text-base text-[#1C1C1E] mb-1">Zero Customs Duties</h3>
+      <p class="text-xs text-[#7A756D] leading-relaxed">
+        Because items are printed locally inside your trade zone (US, EU, UK, CA, AU), you pay zero import fees.
+      </p>
+    </div>
+  </div>
+
+  <div class="space-y-8 bg-white p-8 sm:p-12 rounded-2xl border border-[#E8E3DA] shadow-sm text-sm text-[#444448] leading-relaxed">
+    <section class="space-y-3">
+      <h2 class="font-['Cormorant_Garamond'] text-2xl font-bold text-[#1C1C1E]">Delivery Timeframes by Region</h2>
+      <ul class="list-disc pl-5 space-y-1 text-xs text-[#555558]">
+        <li><strong>United States & Canada:</strong> 2–4 business days via FedEx / UPS</li>
+        <li><strong>United Kingdom:</strong> 2–3 business days via Royal Mail / DPD</li>
+        <li><strong>European Union (Portugal, Spain, France, Germany, etc.):</strong> 2–4 business days via DHL / DPD</li>
+        <li><strong>Australia & New Zealand:</strong> 3–5 business days via Australia Post</li>
+        <li><strong>Rest of the World:</strong> 5–8 business days via Priority Global Courier</li>
+      </ul>
+    </section>
+
+    <hr class="border-[#F0EBE3]">
+
+    <section class="space-y-3">
+      <h2 class="font-['Cormorant_Garamond'] text-2xl font-bold text-[#1C1C1E]">Eco-Archival Protective Packaging</h2>
+      <p class="text-xs text-[#555558]">
+        Unframed prints are wrapped in acid-free glassine paper and shipped in reinforced corrugated triangular tubes. Framed prints are cushioned with corner edge-protectors, shrink-wrapped against dust, and sealed inside puncture-resistant corrugated cartons.
+      </p>
+    </section>
+
+    <hr class="border-[#F0EBE3]">
+
+    <section class="space-y-3">
+      <h2 class="font-['Cormorant_Garamond'] text-2xl font-bold text-[#1C1C1E]">Order Tracking</h2>
+      <p class="text-xs text-[#555558]">
+        The moment your order leaves our local workshop, you will receive an automated dispatch email with a tracking link to follow your package to your doorstep. If you have questions, email <a href="mailto:hello@oakprintstudio.com" class="text-[#B8834E] hover:underline font-semibold">hello@oakprintstudio.com</a>.
+      </p>
+    </section>
+  </div>
+
+</div>
+{% endblock %}

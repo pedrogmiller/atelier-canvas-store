@@ -93,6 +93,31 @@ async def google_verification():
     """Serves Google Search Console ownership verification file."""
     return Response(content="google-site-verification: googleedeef9195d589a72.html", media_type="text/html")
 
+@app.get("/returns", response_class=HTMLResponse)
+@app.get("/return-policy", response_class=HTMLResponse)
+@app.get("/refund-policy", response_class=HTMLResponse)
+async def returns_policy(request: Request):
+    """Clear 30-day return, exchange, and refund policy required for Pinterest and Google Merchant status."""
+    return render_template("returns.html", request, {"title": "Return & Refund Policy — Oak Print Studio"})
+
+@app.get("/shipping", response_class=HTMLResponse)
+@app.get("/shipping-policy", response_class=HTMLResponse)
+async def shipping_policy(request: Request):
+    """Global localized shipping and delivery policy in 32 countries."""
+    return render_template("shipping.html", request, {"title": "Shipping & Delivery Policy — Oak Print Studio"})
+
+@app.get("/privacy", response_class=HTMLResponse)
+@app.get("/privacy-policy", response_class=HTMLResponse)
+async def privacy_policy(request: Request):
+    """GDPR & CCPA compliant privacy policy."""
+    return render_template("privacy.html", request, {"title": "Privacy Policy — Oak Print Studio"})
+
+@app.get("/terms", response_class=HTMLResponse)
+@app.get("/terms-of-service", response_class=HTMLResponse)
+async def terms_policy(request: Request):
+    """Terms of Service."""
+    return render_template("terms.html", request, {"title": "Terms of Service — Oak Print Studio"})
+
 @app.get("/pinterest-catalog.csv")
 async def pinterest_catalog(currency: str = "EUR"):
     """Dynamically serves Pinterest Merchant Product Catalog CSV for 100% automated pin creation."""

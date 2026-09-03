@@ -1,0 +1,50 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="max-w-4xl mx-auto px-6 py-12 md:py-20">
+  <div class="mb-6">
+    <div class="flex items-center gap-2 text-xs text-[#7A756D] mb-3">
+      <a href="/" class="hover:text-[#1C1C1E] transition">Home</a>
+      <span>/</span>
+      <span class="text-[#1C1C1E] font-medium">Privacy Policy</span>
+    </div>
+  </div>
+
+  <h1 class="font-['Cormorant_Garamond'] text-3xl sm:text-5xl font-bold text-[#1C1C1E] leading-tight mb-4">
+    Privacy Policy
+  </h1>
+  <p class="text-xs text-[#7A756D] mb-10">Last Updated: September 2026 • Compliant with GDPR, CCPA, and Global Privacy Standards</p>
+
+  <div class="space-y-8 bg-white p-8 sm:p-12 rounded-2xl border border-[#E8E3DA] shadow-sm text-sm text-[#444448] leading-relaxed">
+    <section class="space-y-2">
+      <h2 class="font-['Cormorant_Garamond'] text-xl font-bold text-[#1C1C1E]">1. Overview</h2>
+      <p class="text-xs text-[#555558]">
+        Oak Print Studio (oakprintstudio.com) values your privacy. We collect only the personal information required to process your orders, provide customer support, and improve your browsing experience. We never sell your personal data.
+      </p>
+    </section>
+
+    <section class="space-y-2">
+      <h2 class="font-['Cormorant_Garamond'] text-xl font-bold text-[#1C1C1E]">2. Information We Collect</h2>
+      <ul class="list-disc pl-5 space-y-1 text-xs text-[#555558]">
+        <li><strong>Order Information:</strong> Name, shipping address, email address, and order details when you complete a purchase.</li>
+        <li><strong>Payment Processing:</strong> Payments are processed securely via Stripe. We do not store or have access to your full credit card numbers.</li>
+        <li><strong>Analytics & Cookies:</strong> We use privacy-compliant cookies and tags (including Pinterest conversion tags) to measure shopping behavior and site performance.</li>
+      </ul>
+    </section>
+
+    <section class="space-y-2">
+      <h2 class="font-['Cormorant_Garamond'] text-xl font-bold text-[#1C1C1E]">3. How We Use Your Data</h2>
+      <p class="text-xs text-[#555558]">
+        Your shipping details are transmitted securely to our fulfillment partner (Gelato) solely for the purpose of printing, framing, and delivering your order. We do not share your information with third-party advertisers.
+      </p>
+    </section>
+
+    <section class="space-y-2">
+      <h2 class="font-['Cormorant_Garamond'] text-xl font-bold text-[#1C1C1E]">4. Your Rights (GDPR & CCPA)</h2>
+      <p class="text-xs text-[#555558]">
+        You have the right to request access to, correction of, or complete deletion of your personal data at any time by contacting us at <a href="mailto:hello@oakprintstudio.com" class="text-[#B8834E] hover:underline font-semibold">hello@oakprintstudio.com</a>.
+      </p>
+    </section>
+  </div>
+</div>
+{% endblock %}
