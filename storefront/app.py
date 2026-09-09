@@ -120,26 +120,93 @@ async def terms_policy(request: Request):
 
 @app.get("/pinterest-catalog.csv")
 async def pinterest_catalog(currency: str = "EUR"):
-    """Dynamically serves Pinterest Merchant Product Catalog CSV for 100% automated pin creation."""
+    """Dynamically serves Pinterest Merchant Product Catalog CSV with dedicated pins for Canvas Wrap, Framed Detail, and Living Room Lifestyle."""
     import csv, io
     catalog = get_catalog()
     output = io.StringIO()
     writer = csv.writer(output)
-    writer.writerow(["id", "title", "description", "link", "image_link", "price", "availability", "condition", "brand", "google_product_category", "product_type"])
+    writer.writerow(["id", "item_group_id", "title", "description", "link", "image_link", "additional_image_link", "price", "availability", "condition", "brand", "google_product_category", "product_type"])
     base_url = "https://www.oakprintstudio.com"
     curr = currency.upper()
+
+    def full_url(path):
+        if not path:
+            return ""
+        return f"{base_url}{path}" if path.startswith("/") else path
+
     for p in catalog:
         pid = p.get("id")
         title = p.get("title", "")
         desc = p.get("short_summary", "")
         link = f"{base_url}/product/{pid}"
-        hero_img = p.get("images", {}).get("hero", "")
-        img_link = f"{base_url}{hero_img}" if hero_img.startswith("/") else hero_img
-        st_price = float(p.get("starting_price", 26.0))
-        price = f"{st_price:.2f} {curr}"
         category = "Home & Garden > Decor > Artwork > Posters, Prints, & Visual Artwork"
-        ptype = p.get("aesthetic_name", "Fine Art")
-        writer.writerow([pid, title, desc, link, img_link, price, "in stock", "new", "Oak Print Studio", category, ptype])
+        
+        imgs = p.get("images", {})
+        detail_frames = imgs.get("framed_detail_frames", {})
+        
+        canvas_img = detail_frames.get("canvas_wrap") or imgs.get("framed_product")
+        oak_img = detail_frames.get("natural_oak") or imgs.get("framed_product")
+        living_img = imgs.get("living_room") or imgs.get("hero")
+        bedroom_img = imgs.get("bedroom")
+        master_art = imgs.get("master_art")
+
+        # 1. Gallery Stretched Fine Art Canvas Detail Pin
+        if canvas_img:
+            add_imgs = [full_url(x) for x in [living_img, oak_img, bedroom_img, master_art] if x and x != canvas_img]
+            writer.writerow([
+                f"{pid}-canvas",
+                pid,
+                f"{title} — Gallery Stretched Fine Art Canvas",
+                desc,
+                link,
+                full_url(canvas_img),
+                ",".join(add_imgs),
+                f"65.00 {curr}",
+                "in stock",
+                "new",
+                "Oak Print Studio",
+                category,
+                "Wall Art > Canvas Prints"
+            ])
+
+        # 2. Solid Natural Oak Frame Detail Pin
+        if oak_img:
+            add_imgs = [full_url(x) for x in [living_img, canvas_img, bedroom_img, master_art] if x and x != oak_img]
+            writer.writerow([
+                f"{pid}-oak",
+                pid,
+                f"{title} — Solid Natural Oak Framed Art",
+                desc,
+                link,
+                full_url(oak_img),
+                ",".join(add_imgs),
+                f"52.00 {curr}",
+                "in stock",
+                "new",
+                "Oak Print Studio",
+                category,
+                "Wall Art > Framed Prints"
+            ])
+
+        # 3. Living Room Staged Lifestyle Pin
+        if living_img:
+            add_imgs = [full_url(x) for x in [canvas_img, oak_img, bedroom_img, master_art] if x and x != living_img]
+            writer.writerow([
+                pid,
+                pid,
+                f"{title} — Modern Living Room Wall Decor",
+                desc,
+                link,
+                full_url(living_img),
+                ",".join(add_imgs),
+                f"26.00 {curr}",
+                "in stock",
+                "new",
+                "Oak Print Studio",
+                category,
+                "Wall Art > Living Room Art"
+            ])
+
     return Response(content=output.getvalue(), media_type="text/csv")
 
 recent_pings: List[Dict[str, str]] = []
