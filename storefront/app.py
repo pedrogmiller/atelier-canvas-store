@@ -156,7 +156,7 @@ async def pinterest_catalog(currency: str = "EUR"):
             writer.writerow([
                 f"{pid}-canvas",
                 pid,
-                f"{title} — Gallery Stretched Fine Art Canvas",
+                f"{title} - Gallery Stretched Fine Art Canvas",
                 desc,
                 link,
                 full_url(canvas_img),
@@ -175,7 +175,7 @@ async def pinterest_catalog(currency: str = "EUR"):
             writer.writerow([
                 f"{pid}-oak",
                 pid,
-                f"{title} — Solid Natural Oak Framed Art",
+                f"{title} - Solid Natural Oak Framed Art",
                 desc,
                 link,
                 full_url(oak_img),
@@ -194,7 +194,7 @@ async def pinterest_catalog(currency: str = "EUR"):
             writer.writerow([
                 pid,
                 pid,
-                f"{title} — Modern Living Room Wall Decor",
+                f"{title} - Modern Living Room Wall Decor",
                 desc,
                 link,
                 full_url(living_img),
