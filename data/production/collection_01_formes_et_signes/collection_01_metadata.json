@@ -1,0 +1,87 @@
+﻿{
+  "collection": {
+    "id": "collection_01",
+    "slug": "formes-et-signes",
+    "title": "Formes & Signes",
+    "subtitle": "Lyrical Biomorphic Abstraction",
+    "curatorial_statement": "Inspired by the poetic surrealism of Joan Miró, Alexander Calder, and mid-century European master lithographers. Characterized by raw sumi ink gestures, deep smoked indigo silhouettes, warm Tuscan ochres, and celestial glyphs on warm archival paper.",
+    "paper_spec": "200-250 gsm Museum-Quality Archival Matte Paper (FSC-certified Giclée printing)",
+    "frame_options": [
+      { "name": "Unframed", "sku_suffix": "UNF" },
+      { "name": "Solid Natural Oak", "sku_suffix": "OAK" },
+      { "name": "Matte Black Wood", "sku_suffix": "BLK" },
+      { "name": "Crisp White Wood", "sku_suffix": "WHT" }
+    ],
+    "standard_sizes": [
+      { "label": "30x40 cm (12x16 in)", "sku_code": "30X40", "recommended_price_unframed": 35.00, "recommended_price_framed": 85.00 },
+      { "label": "50x70 cm (20x28 in)", "sku_code": "50X70", "recommended_price_unframed": 55.00, "recommended_price_framed": 135.00 },
+      { "label": "70x100 cm (28x40 in)", "sku_code": "70X100", "recommended_price_unframed": 85.00, "recommended_price_framed": 210.00 }
+    ]
+  },
+  "products": [
+    {
+      "item_number": 1,
+      "sku": "OPS-FS-01",
+      "title": "L'Envol Indigo",
+      "subtitle": "Hero Focal Print",
+      "filename": "01_lenvol_indigo.jpg",
+      "relative_path": "data/production/collection_01_formes_et_signes/01_lenvol_indigo.jpg",
+      "aspect_ratio": "3:4",
+      "description": "A dynamic ascending avian silhouette in deep smoked midnight indigo, grounded by warm terracotta and Tuscan mustard discs, cut through by an expressive raw black sumi-ink sweep. Printed edge-to-edge on warm archival cotton paper.",
+      "palette": ["Smoked Midnight Indigo", "Warm Terracotta", "Tuscan Mustard", "Sumi Black", "Archival Ivory"],
+      "tags": ["Modernist", "Biomorphic", "Abstract", "Scandinavian", "Indigo", "Miro-inspired", "Hero Piece"]
+    },
+    {
+      "item_number": 2,
+      "sku": "OPS-FS-02",
+      "title": "Bleu Lunaire",
+      "subtitle": "Lyrical Companion",
+      "filename": "02_bleu_lunaire.jpg",
+      "relative_path": "data/production/collection_01_formes_et_signes/02_bleu_lunaire.jpg",
+      "aspect_ratio": "3:4",
+      "description": "An organic ultramarine cobalt pebble shape accompanied by lyrical calligraphic wire contours, a whimsical crescent moon glyph, and subtle ochre and cadmium dot accents.",
+      "palette": ["Ultramarine Cobalt", "Lunar Black", "Tuscan Ochre", "Cadmium Red", "Archival Ivory"],
+      "tags": ["Lyrical Abstraction", "Cobalt", "Crescent Moon", "Celestial", "Scandinavian Wall Art"]
+    },
+    {
+      "item_number": 3,
+      "sku": "OPS-FS-03",
+      "title": "Ocre Cosmique",
+      "subtitle": "Warmth Anchor",
+      "filename": "03_ocre_cosmique.jpg",
+      "relative_path": "data/production/collection_01_formes_et_signes/03_ocre_cosmique.jpg",
+      "aspect_ratio": "3:4",
+      "description": "A grounding composition featuring warm earthy Tuscan mustard and terracotta gouache forms, intersected by delicate looping gestures, a graphic eye motif, and a celestial starburst.",
+      "palette": ["Tuscan Mustard", "Terracotta Ochre", "Cobalt Accent", "Charcoal Sumi", "Archival Ivory"],
+      "tags": ["Earthy Tones", "Warm Minimalist", "Ochre", "Eye Motif", "Mid-Century Modern"]
+    },
+    {
+      "item_number": 4,
+      "sku": "OPS-FS-04",
+      "title": "Polyptyque Lithographique",
+      "subtitle": "Master Folio Study",
+      "filename": "04_polyptyque_litho.jpg",
+      "relative_path": "data/production/collection_01_formes_et_signes/04_polyptyque_litho.jpg",
+      "aspect_ratio": "3:4",
+      "description": "A continuous 3-panel lithographic folio study celebrating primitive handprints, constellation rhythms, and masterly printmaker marks on textured archival paper.",
+      "palette": ["Litho Ochre", "Raw Umber", "Cobalt Wash", "Terracotta", "Archival Cotton"],
+      "tags": ["Lithography", "Folio Study", "Triptych", "Statement Print", "Museum Quality"]
+    }
+  ],
+  "bundles": [
+    {
+      "bundle_id": "OPS-BUNDLE-FS-DIPTYCH",
+      "title": "The Signature Diptych (Set of 2)",
+      "items": ["OPS-FS-01", "OPS-FS-02"],
+      "recommended_discount": "15% off regular price",
+      "description": "The perfect dialogue of blues: pair L'Envol Indigo and Bleu Lunaire side-by-side in natural oak frames."
+    },
+    {
+      "bundle_id": "OPS-BUNDLE-FS-TRIPTYCH",
+      "title": "The Collector's Triptych (Set of 3)",
+      "items": ["OPS-FS-01", "OPS-FS-02", "OPS-FS-03"],
+      "recommended_discount": "20% off regular price",
+      "description": "The complete 3-piece gallery wall balance spanning midnight indigo, vibrant cobalt, and warm Tuscan ochre."
+    }
+  ]
+}

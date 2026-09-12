@@ -43,15 +43,43 @@ class StorefrontSyncAgent(BaseAgent):
         web_image_urls["master_art"] = f"/static/products/{product_id}/master_art.jpg"
 
         # Copy mockups
-        for key, src_path in mockup_paths.items():
-            dest_mockup = dest_product_dir / f"{key}.jpg"
-            shutil.copyfile(src_path, dest_mockup)
-            web_image_urls[key] = f"/static/products/{product_id}/{key}.jpg"
+        for key, val in mockup_paths.items():
+            if isinstance(val, dict):
+                web_image_urls[key] = {}
+                for f_key, src_path in val.items():
+                    dest_mockup = dest_product_dir / f"{key.replace('_frames', '')}_{f_key}.jpg"
+                    shutil.copyfile(src_path, dest_mockup)
+                    web_image_urls[key][f_key] = f"/static/products/{product_id}/{dest_mockup.name}"
+            elif isinstance(val, (str, Path)):
+                dest_mockup = dest_product_dir / f"{key}.jpg"
+                shutil.copyfile(val, dest_mockup)
+                web_image_urls[key] = f"/static/products/{product_id}/{key}.jpg"
 
         # 2. Build product document for web store
         hero_variant = next((v for v in variants if v.is_hero_recommendation), variants[0])
         min_price = min(v.retail_price for v in variants)
         max_price = max(v.retail_price for v in variants)
+
+        # Build images dictionary
+        images_dict = {
+            "hero": web_image_urls.get("living_room_oak", web_image_urls.get("framed_product", f"/static/products/{product_id}/living_room_natural_oak.jpg")),
+            "living_room": web_image_urls.get("living_room_oak", f"/static/products/{product_id}/living_room_natural_oak.jpg"),
+            "corner": web_image_urls.get("corner_detail", f"/static/products/{product_id}/corner_natural_oak.jpg"),
+            "corner_detail": web_image_urls.get("corner_detail", f"/static/products/{product_id}/corner_natural_oak.jpg"),
+            "gallery_wall": web_image_urls.get("gallery_wall", f"/static/products/{product_id}/gallery_wall_natural_oak.jpg"),
+            "framed_product": web_image_urls.get("framed_product", f"/static/products/{product_id}/framed_natural_oak.jpg"),
+            "bedroom": web_image_urls.get("bedroom_black", f"/static/products/{product_id}/bedroom_black.jpg"),
+            "studio": web_image_urls.get("studio_white", f"/static/products/{product_id}/studio_white.jpg"),
+            "master_art": web_image_urls.get("master_art", f"/static/products/{product_id}/master_art.jpg")
+        }
+        if "living_room_frames" in web_image_urls:
+            images_dict["living_room_frames"] = web_image_urls["living_room_frames"]
+        if "corner_detail_frames" in web_image_urls:
+            images_dict["corner_detail_frames"] = web_image_urls["corner_detail_frames"]
+        if "gallery_wall_frames" in web_image_urls:
+            images_dict["gallery_wall_frames"] = web_image_urls["gallery_wall_frames"]
+        if "framed_detail_frames" in web_image_urls:
+            images_dict["framed_detail_frames"] = web_image_urls["framed_detail_frames"]
 
         product_record = {
             "id": product_id,
@@ -70,14 +98,7 @@ class StorefrontSyncAgent(BaseAgent):
             "max_price": max_price,
             "hero_price": hero_variant.retail_price,
             "hero_variant_id": hero_variant.variant_id,
-            "images": {
-                "hero": web_image_urls.get("living_room_oak", web_image_urls.get("framed_product")),
-                "framed_product": web_image_urls.get("framed_product"),
-                "living_room": web_image_urls.get("living_room_oak"),
-                "bedroom": web_image_urls.get("bedroom_black"),
-                "studio": web_image_urls.get("studio_white"),
-                "master_art": web_image_urls.get("master_art")
-            },
+            "images": images_dict,
             "variants": [v.model_dump() for v in variants]
         }
 

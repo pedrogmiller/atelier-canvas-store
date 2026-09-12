@@ -1,0 +1,535 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Oak Print Studio — Interior Staging & Marketing Visualizer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #181716;
+      --panel-bg: #22201E;
+      --text-main: #FAF8F5;
+      --text-muted: #A39E98;
+      --border: #383430;
+      --accent: #C78D20;
+      
+      /* Wall Paint Colors */
+      --wall-plaster: #E6E1D8;
+      --wall-chalk: #F4F1EA;
+      --wall-greige: #D9D2C7;
+      --wall-sage: #D2D7CD;
+      --wall-clay: #DAC9BF;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background-color: var(--bg);
+      color: var(--text-main);
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      padding: 24px 32px;
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: var(--panel-bg);
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+
+    .brand h1 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 2rem;
+      font-weight: 400;
+      letter-spacing: -0.01em;
+    }
+
+    .brand p {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+    }
+
+    .main-layout {
+      display: grid;
+      grid-template-columns: 1fr 340px;
+      flex: 1;
+      height: calc(100vh - 90px);
+    }
+
+    @media (max-width: 960px) {
+      .main-layout {
+        grid-template-columns: 1fr;
+        height: auto;
+      }
+    }
+
+    /* Stage Area */
+    .stage-container {
+      position: relative;
+      background-color: var(--wall-plaster);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+      transition: background-color 0.4s ease;
+      padding: 40px 20px 100px;
+    }
+
+    /* Sun Shadow Effect */
+    .stage-container::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(circle at 20% 15%, rgba(255,255,255,0.45) 0%, transparent 60%),
+                  linear-gradient(135deg, rgba(255,255,255,0.15) 0%, transparent 40%, rgba(0,0,0,0.06) 100%);
+      pointer-events: none;
+    }
+
+    /* Architectural Wall Texture */
+    .stage-container::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background-image: radial-gradient(#000 0.4px, transparent 0.4px);
+      background-size: 16px 16px;
+      opacity: 0.04;
+      pointer-events: none;
+    }
+
+    /* Gallery Wall Group */
+    .gallery-wall {
+      position: relative;
+      z-index: 2;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 36px;
+      transition: all 0.4s ease;
+      margin-bottom: 20px;
+    }
+
+    /* Art Frame Component */
+    .framed-print {
+      position: relative;
+      transition: all 0.3s ease;
+      transform-origin: center;
+      box-shadow: 0 24px 48px rgba(0, 0, 0, 0.16), 0 8px 16px rgba(0, 0, 0, 0.08);
+      display: flex;
+      background: #FFFFFF;
+      overflow: hidden;
+    }
+
+    /* Frame Styles */
+    .frame-oak {
+      border: 14px solid #C4A47C;
+      outline: 1px solid rgba(0,0,0,0.15);
+      box-shadow: 
+        inset 0 0 6px rgba(0,0,0,0.25),
+        0 24px 50px rgba(40,30,20,0.22),
+        0 8px 16px rgba(0,0,0,0.1);
+    }
+
+    .frame-black {
+      border: 14px solid #161514;
+      outline: 1px solid rgba(255,255,255,0.08);
+      box-shadow: 
+        inset 0 0 4px rgba(255,255,255,0.1),
+        0 26px 54px rgba(0,0,0,0.28),
+        0 8px 18px rgba(0,0,0,0.15);
+    }
+
+    .frame-white {
+      border: 14px solid #FDFDFD;
+      outline: 1px solid rgba(0,0,0,0.08);
+      box-shadow: 
+        inset 0 0 4px rgba(0,0,0,0.1),
+        0 20px 45px rgba(0,0,0,0.12),
+        0 6px 14px rgba(0,0,0,0.06);
+    }
+
+    .frame-unframed {
+      border: none;
+      box-shadow: 0 16px 36px rgba(0,0,0,0.14);
+    }
+
+    /* Matboard / Passe-Partout */
+    .passe-partout {
+      background: #FCFAF6;
+      padding: 24px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      box-shadow: inset 0 0 4px rgba(0,0,0,0.08);
+    }
+
+    .passe-partout.none {
+      padding: 0;
+    }
+
+    .print-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    /* Glass Glare Reflection Overlay */
+    .glass-reflection {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(125deg, rgba(255,255,255,0.22) 0%, rgba(255,255,255,0.02) 45%, transparent 60%);
+      pointer-events: none;
+    }
+
+    /* Scale Presets */
+    .size-50x70 {
+      width: 240px;
+      height: 336px;
+    }
+
+    .size-70x100 {
+      width: 320px;
+      height: 448px;
+    }
+
+    .size-30x40 {
+      width: 180px;
+      height: 240px;
+    }
+
+    /* Scandinavian Furniture Decor Silhouette */
+    .furniture-silhouettes {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 160px;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      padding: 0 60px;
+      pointer-events: none;
+      z-index: 1;
+    }
+
+    .credenza {
+      width: 480px;
+      height: 75px;
+      background: #B39B82;
+      border-radius: 4px 4px 0 0;
+      box-shadow: 0 -4px 18px rgba(0,0,0,0.12), inset 0 2px 4px rgba(255,255,255,0.2);
+      margin: 0 auto;
+      position: relative;
+    }
+
+    .credenza::before {
+      content: "";
+      position: absolute;
+      top: -42px;
+      left: 60px;
+      width: 36px;
+      height: 42px;
+      background: #D8D2C5;
+      border-radius: 12px 12px 4px 4px;
+      box-shadow: -4px 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .credenza::after {
+      content: "";
+      position: absolute;
+      top: -30px;
+      left: 104px;
+      width: 20px;
+      height: 30px;
+      background: #C4B9A5;
+      border-radius: 50% 50% 4px 4px;
+    }
+
+    /* Control Sidebar */
+    .sidebar {
+      background: var(--panel-bg);
+      border-left: 1px solid var(--border);
+      padding: 32px 24px;
+      overflow-y: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 28px;
+    }
+
+    .control-group h3 {
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--text-muted);
+      margin-bottom: 12px;
+    }
+
+    .button-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 8px;
+    }
+
+    .control-btn {
+      background: #2D2B28;
+      border: 1px solid var(--border);
+      color: var(--text-main);
+      padding: 10px 14px;
+      border-radius: 8px;
+      font-size: 0.85rem;
+      cursor: pointer;
+      text-align: left;
+      transition: all 0.2s;
+    }
+
+    .control-btn:hover {
+      background: #3B3834;
+      border-color: #555;
+    }
+
+    .control-btn.active {
+      background: var(--text-main);
+      color: #181716;
+      font-weight: 600;
+      border-color: var(--text-main);
+    }
+
+    /* Color Swatch Picker */
+    .color-picker {
+      display: flex;
+      gap: 10px;
+    }
+
+    .wall-swatch {
+      width: 36px;
+      height: 36px;
+      border-radius: 8px;
+      border: 2px solid transparent;
+      cursor: pointer;
+      transition: transform 0.2s, border-color 0.2s;
+    }
+
+    .wall-swatch:hover {
+      transform: scale(1.1);
+    }
+
+    .wall-swatch.active {
+      border-color: var(--accent);
+      transform: scale(1.05);
+    }
+
+    .info-card {
+      background: #292724;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 16px;
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      line-height: 1.6;
+    }
+
+    .info-card strong {
+      color: var(--text-main);
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="brand">
+      <h1>Oak Print Studio</h1>
+      <p>Lifestyle Staging & Marketing Visualizer — Collection N° 01</p>
+    </div>
+    <div>
+      <a href="preview.html" style="color: var(--accent); text-decoration: none; font-size: 0.85rem; font-weight: 500;">
+        ← Back to Art Preview
+      </a>
+    </div>
+  </header>
+
+  <div class="main-layout">
+    
+    <!-- Staging Viewport -->
+    <main class="stage-container" id="stage">
+      
+      <div class="gallery-wall" id="galleryWall">
+        <!-- Frame 1 -->
+        <div class="framed-print frame-oak size-50x70" id="slot1">
+          <div class="passe-partout" id="mat1">
+            <img src="01_lenvol_indigo.jpg" alt="L'Envol Indigo" class="print-img" id="img1" />
+            <div class="glass-reflection"></div>
+          </div>
+        </div>
+
+        <!-- Frame 2 -->
+        <div class="framed-print frame-oak size-50x70" id="slot2">
+          <div class="passe-partout" id="mat2">
+            <img src="02_bleu_lunaire.jpg" alt="Bleu Lunaire" class="print-img" id="img2" />
+            <div class="glass-reflection"></div>
+          </div>
+        </div>
+
+        <!-- Frame 3 (Optional for Triptych) -->
+        <div class="framed-print frame-oak size-50x70" id="slot3" style="display: none;">
+          <div class="passe-partout" id="mat3">
+            <img src="03_ocre_cosmique.jpg" alt="Ocre Cosmique" class="print-img" id="img3" />
+            <div class="glass-reflection"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Scandinavian Furniture Silhouettes -->
+      <div class="furniture-silhouettes">
+        <div class="credenza"></div>
+      </div>
+
+    </main>
+
+    <!-- Sidebar Controls -->
+    <aside class="sidebar">
+      
+      <!-- Layout Mode -->
+      <div class="control-group">
+        <h3>1. Gallery Layout</h3>
+        <div class="button-grid">
+          <button class="control-btn active" onclick="setLayout('diptych')">The Diptych (01 + 02)</button>
+          <button class="control-btn" onclick="setLayout('triptych')">The Triptych (01 + 02 + 03)</button>
+          <button class="control-btn" onclick="setLayout('statement')">Statement Solo (04)</button>
+          <button class="control-btn" onclick="setLayout('hero')">Hero Solo (01)</button>
+        </div>
+      </div>
+
+      <!-- Frame Material -->
+      <div class="control-group">
+        <h3>2. Frame Material</h3>
+        <div class="button-grid">
+          <button class="control-btn active" onclick="setFrame('frame-oak')">Natural Solid Oak</button>
+          <button class="control-btn" onclick="setFrame('frame-black')">Matte Black Wood</button>
+          <button class="control-btn" onclick="setFrame('frame-white')">Crisp White Wood</button>
+          <button class="control-btn" onclick="setFrame('frame-unframed')">Unframed Poster</button>
+        </div>
+      </div>
+
+      <!-- Matboard / Passe-Partout -->
+      <div class="control-group">
+        <h3>3. Passe-Partout Matting</h3>
+        <div class="button-grid">
+          <button class="control-btn active" onclick="setMatting(true)">Archival White Mat</button>
+          <button class="control-btn" onclick="setMatting(false)">Full-Bleed to Frame</button>
+        </div>
+      </div>
+
+      <!-- Wall Color Atmosphere -->
+      <div class="control-group">
+        <h3>4. Wall Paint Atmosphere</h3>
+        <div class="color-picker">
+          <div class="wall-swatch active" style="background: #E6E1D8;" onclick="setWallColor('#E6E1D8', this)" title="Copenhagen Plaster"></div>
+          <div class="wall-swatch" style="background: #F4F1EA;" onclick="setWallColor('#F4F1EA', this)" title="Chalk White"></div>
+          <div class="wall-swatch" style="background: #D9D2C7;" onclick="setWallColor('#D9D2C7', this)" title="Warm Greige"></div>
+          <div class="wall-swatch" style="background: #D2D7CD;" onclick="setWallColor('#D2D7CD', this)" title="Nordic Sage"></div>
+          <div class="wall-swatch" style="background: #DAC9BF;" onclick="setWallColor('#DAC9BF', this)" title="Muted Clay"></div>
+        </div>
+      </div>
+
+      <!-- Marketing & Gelato Specs -->
+      <div class="info-card">
+        <strong>Gelato Production Note:</strong><br />
+        • Rendered at 50×70 cm gallery scale.<br />
+        • FSC-certified solid oak / ash frames.<br />
+        • Shatterproof UV-filtering optical plexiglass.
+      </div>
+
+    </aside>
+
+  </div>
+
+  <script>
+    let currentFrame = 'frame-oak';
+    let hasMatting = true;
+
+    function setFrame(frameClass) {
+      document.querySelectorAll('.framed-print').forEach(el => {
+        el.className = el.className.replace(/frame-\w+/, frameClass);
+      });
+      currentFrame = frameClass;
+      updateActiveBtn(event.target);
+    }
+
+    function setMatting(enable) {
+      hasMatting = enable;
+      document.querySelectorAll('.passe-partout').forEach(el => {
+        if (enable) {
+          el.classList.remove('none');
+        } else {
+          el.classList.add('none');
+        }
+      });
+      updateActiveBtn(event.target);
+    }
+
+    function setWallColor(color, swatchEl) {
+      document.getElementById('stage').style.backgroundColor = color;
+      document.querySelectorAll('.wall-swatch').forEach(el => el.classList.remove('active'));
+      swatchEl.classList.add('active');
+    }
+
+    function setLayout(layout) {
+      const slot1 = document.getElementById('slot1');
+      const slot2 = document.getElementById('slot2');
+      const slot3 = document.getElementById('slot3');
+      const img1 = document.getElementById('img1');
+
+      // Reset sizes
+      slot1.className = `framed-print ${currentFrame} size-50x70`;
+      slot2.className = `framed-print ${currentFrame} size-50x70`;
+      slot3.className = `framed-print ${currentFrame} size-50x70`;
+
+      if (layout === 'diptych') {
+        slot1.style.display = 'flex';
+        slot2.style.display = 'flex';
+        slot3.style.display = 'none';
+        img1.src = '01_lenvol_indigo.jpg';
+      } else if (layout === 'triptych') {
+        slot1.style.display = 'flex';
+        slot2.style.display = 'flex';
+        slot3.style.display = 'flex';
+        slot1.className = `framed-print ${currentFrame} size-30x40`;
+        slot2.className = `framed-print ${currentFrame} size-30x40`;
+        slot3.className = `framed-print ${currentFrame} size-30x40`;
+        img1.src = '01_lenvol_indigo.jpg';
+      } else if (layout === 'statement') {
+        slot1.style.display = 'flex';
+        slot2.style.display = 'none';
+        slot3.style.display = 'none';
+        slot1.className = `framed-print ${currentFrame} size-70x100`;
+        img1.src = '04_triptyque_litho.jpg';
+      } else if (layout === 'hero') {
+        slot1.style.display = 'flex';
+        slot2.style.display = 'none';
+        slot3.style.display = 'none';
+        slot1.className = `framed-print ${currentFrame} size-70x100`;
+        img1.src = '01_lenvol_indigo.jpg';
+      }
+      updateActiveBtn(event.target);
+    }
+
+    function updateActiveBtn(clickedBtn) {
+      clickedBtn.parentElement.querySelectorAll('.control-btn').forEach(btn => btn.classList.remove('active'));
+      clickedBtn.classList.add('active');
+    }
+  </script>
+</body>
+</html>

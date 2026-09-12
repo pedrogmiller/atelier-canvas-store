@@ -21,34 +21,29 @@
       
       <!-- Main Featured Preview Viewport -->
       <div class="relative rounded-2xl overflow-hidden bg-white border border-[#E8E3DA] shadow-md aspect-[4/3] flex items-center justify-center">
-        <img id="main-view-image" src="{{ product.images.hero }}" alt="{{ product.title }}" class="w-full h-full object-cover transition-opacity duration-300">
+        <img id="main-view-image" src="{{ product.images.framed_product }}" alt="{{ product.title }}" class="w-full h-full object-cover transition-opacity duration-300">
         
         <div id="view-mode-pill" class="absolute bottom-3 left-3 sm:bottom-4 sm:left-4 bg-black/75 backdrop-blur-md text-white text-[10px] sm:text-[11px] font-semibold px-2.5 sm:px-3 py-1 sm:py-1.5 rounded-full flex items-center gap-1.5">
-          <i data-lucide="home" class="w-3.5 h-3.5 text-[#B8834E]"></i>
-          <span id="view-mode-text">Living Room Staged View</span>
+          <i data-lucide="sparkles" class="w-3.5 h-3.5 text-[#B8834E]"></i>
+          <span id="view-mode-text">Framed Studio Close-up</span>
         </div>
       </div>
 
-      <!-- Thumbnail Carousel Switcher -->
-      <div class="grid grid-cols-5 gap-2 sm:gap-3">
-        <button id="thumb-living-room" class="thumb-btn active rounded-lg overflow-hidden border-2 border-[#1C1C1E] aspect-square relative bg-white transition shadow-sm cursor-pointer" data-view="living_room" data-src="{{ product.images.hero }}" data-label="Living Room Staged View">
-          <img src="{{ product.images.hero }}" class="w-full h-full object-cover">
-        </button>
-
-        <button id="thumb-bedroom" class="thumb-btn rounded-lg overflow-hidden border border-[#E8E3DA] hover:border-[#1C1C1E] aspect-square relative bg-white transition shadow-sm cursor-pointer" data-view="bedroom" data-src="{{ product.images.bedroom }}" data-label="Master Bedroom Staged View">
-          <img src="{{ product.images.bedroom }}" class="w-full h-full object-cover">
-        </button>
-
-        <button id="thumb-studio" class="thumb-btn rounded-lg overflow-hidden border border-[#E8E3DA] hover:border-[#1C1C1E] aspect-square relative bg-white transition shadow-sm cursor-pointer" data-view="studio" data-src="{{ product.images.studio }}" data-label="Nordic Studio Staged View">
-          <img src="{{ product.images.studio }}" class="w-full h-full object-cover">
-        </button>
-
-        <button id="thumb-framed-product" class="thumb-btn rounded-lg overflow-hidden border border-[#E8E3DA] hover:border-[#1C1C1E] aspect-square relative bg-white transition shadow-sm cursor-pointer" data-view="framed" data-src="{{ product.images.framed_product }}" data-label="Framed Studio Close-up">
+      <!-- 3 Staged Views Switcher -->
+      <div class="grid grid-cols-3 gap-3 sm:gap-4">
+        <button id="thumb-framed-product" class="thumb-btn active rounded-xl overflow-hidden border-2 border-[#1C1C1E] aspect-[4/3] relative bg-white transition shadow-sm cursor-pointer group" data-view="framed" data-src="{{ product.images.framed_product }}" data-label="Framed Studio Close-up">
           <img src="{{ product.images.framed_product }}" class="w-full h-full object-cover">
+          <span class="absolute bottom-1.5 left-1.5 bg-black/75 backdrop-blur-xs text-[10px] text-white px-2 py-0.5 rounded-md font-medium">Framed Studio</span>
         </button>
 
-        <button id="thumb-master-art" class="thumb-btn rounded-lg overflow-hidden border border-[#E8E3DA] hover:border-[#1C1C1E] aspect-square relative bg-white transition shadow-sm cursor-pointer" data-view="master_art" data-src="{{ product.images.master_art }}" data-label="Original High-Res Print Artwork">
-          <img src="{{ product.images.master_art }}" class="w-full h-full object-cover">
+        <button id="thumb-corner" class="thumb-btn rounded-xl overflow-hidden border border-[#E8E3DA] hover:border-[#1C1C1E] aspect-[4/3] relative bg-white transition shadow-sm cursor-pointer group" data-view="corner" data-src="{{ product.images.corner }}" data-label="45º Perspective Detail">
+          <img src="{{ product.images.corner }}" class="w-full h-full object-cover">
+          <span class="absolute bottom-1.5 left-1.5 bg-black/75 backdrop-blur-xs text-[10px] text-white px-2 py-0.5 rounded-md font-medium">45º Perspective</span>
+        </button>
+
+        <button id="thumb-living-room" class="thumb-btn rounded-xl overflow-hidden border border-[#E8E3DA] hover:border-[#1C1C1E] aspect-[4/3] relative bg-white transition shadow-sm cursor-pointer group" data-view="living_room" data-src="{{ product.images.living_room }}" data-label="Custom Staged Living Room">
+          <img src="{{ product.images.living_room }}" class="w-full h-full object-cover">
+          <span class="absolute bottom-1.5 left-1.5 bg-black/75 backdrop-blur-xs text-[10px] text-white px-2 py-0.5 rounded-md font-medium">Custom Staged Scene</span>
         </button>
       </div>
 

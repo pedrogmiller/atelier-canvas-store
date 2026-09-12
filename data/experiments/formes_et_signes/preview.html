@@ -1,0 +1,487 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Oak Print Studio — « Formes & Signes » Official Collection</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #F7F5F0;
+      --card-bg: #FFFFFF;
+      --paper: #FAF8F4;
+      --text-main: #1C1B1A;
+      --text-muted: #736F6A;
+      --border: #E5E0D8;
+      --accent-indigo: #1C2D42;
+      --accent-terracotta: #B35E44;
+      --accent-ochre: #C78D20;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background-color: var(--bg);
+      color: var(--text-main);
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      padding: 40px 24px 80px;
+      line-height: 1.5;
+    }
+
+    header {
+      max-width: 1280px;
+      margin: 0 auto 48px;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 24px;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .brand-title h1 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 2.8rem;
+      font-weight: 400;
+      letter-spacing: -0.02em;
+      line-height: 1.1;
+    }
+
+    .brand-title p {
+      font-size: 0.95rem;
+      color: var(--text-muted);
+      margin-top: 6px;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+    }
+
+    .header-actions {
+      display: flex;
+      gap: 12px;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      color: var(--text-main);
+      padding: 10px 18px;
+      border-radius: 99px;
+      font-size: 0.85rem;
+      font-weight: 500;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      text-decoration: none;
+    }
+
+    .btn:hover {
+      border-color: var(--text-main);
+      background: #f0ede6;
+    }
+
+    .btn.active {
+      background: var(--text-main);
+      color: white;
+      border-color: var(--text-main);
+    }
+
+    .btn.primary {
+      background: #1C1B1A;
+      color: white;
+      border-color: #1C1B1A;
+    }
+
+    .container {
+      max-width: 1280px;
+      margin: 0 auto;
+    }
+
+    .collection-info {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      gap: 40px;
+      margin-bottom: 40px;
+      background: white;
+      padding: 28px;
+      border-radius: 12px;
+      border: 1px solid var(--border);
+    }
+
+    @media (max-width: 768px) {
+      .collection-info {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .collection-info h2 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.8rem;
+      margin-bottom: 8px;
+    }
+
+    .collection-info p {
+      color: var(--text-muted);
+      font-size: 0.95rem;
+    }
+
+    .palette-swatches {
+      display: flex;
+      gap: 12px;
+      align-items: center;
+      margin-top: 14px;
+    }
+
+    .swatch {
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      border: 1px solid rgba(0,0,0,0.1);
+      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+      position: relative;
+    }
+
+    .swatch::after {
+      content: attr(data-name);
+      position: absolute;
+      bottom: -22px;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 10px;
+      color: var(--text-muted);
+      white-space: nowrap;
+      opacity: 0;
+      transition: opacity 0.2s;
+    }
+
+    .swatch:hover::after {
+      opacity: 1;
+    }
+
+    /* Grid Layout */
+    .art-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 32px;
+      transition: all 0.3s ease;
+    }
+
+    .art-grid.wall-mode {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #ECE8E1;
+      padding: 60px 40px;
+      border-radius: 16px;
+      gap: 24px;
+      overflow-x: auto;
+      box-shadow: inset 0 2px 8px rgba(0,0,0,0.04);
+    }
+
+    .art-card {
+      background: var(--card-bg);
+      border-radius: 12px;
+      overflow: hidden;
+      border: 1px solid var(--border);
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .art-grid.wall-mode .art-card {
+      max-width: 280px;
+      flex: 1 0 260px;
+      box-shadow: 0 16px 36px rgba(0,0,0,0.12);
+      border: none;
+    }
+
+    .art-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 28px rgba(0,0,0,0.06);
+    }
+
+    .image-wrapper {
+      position: relative;
+      background: var(--paper);
+      padding: 16px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: zoom-in;
+    }
+
+    .art-grid.wall-mode .image-wrapper {
+      padding: 8px;
+    }
+
+    .image-wrapper img {
+      width: 100%;
+      height: auto;
+      aspect-ratio: 3/4;
+      object-fit: cover;
+      box-shadow: 0 4px 14px rgba(0,0,0,0.05);
+      transition: transform 0.3s ease;
+    }
+
+    .card-meta {
+      padding: 18px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-top: 1px solid var(--border);
+    }
+
+    .card-meta h3 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.25rem;
+      font-weight: 600;
+    }
+
+    .card-meta p {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      margin-top: 2px;
+    }
+
+    .fav-btn {
+      background: transparent;
+      border: 1px solid var(--border);
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      font-size: 1.1rem;
+      color: var(--text-muted);
+      transition: all 0.2s ease;
+    }
+
+    .fav-btn.selected {
+      background: #1C1B1A;
+      color: white;
+      border-color: #1C1B1A;
+    }
+
+    /* Zoom Modal */
+    .modal {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(20, 19, 18, 0.85);
+      backdrop-filter: blur(8px);
+      z-index: 999;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
+
+    .modal.active {
+      display: flex;
+    }
+
+    .modal-content {
+      position: relative;
+      max-width: 90vw;
+      max-height: 90vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .modal-img {
+      max-height: 82vh;
+      width: auto;
+      border-radius: 4px;
+      box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+    }
+
+    .modal-caption {
+      color: white;
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.4rem;
+      margin-top: 14px;
+      text-align: center;
+    }
+
+    .close-btn {
+      position: absolute;
+      top: -40px;
+      right: 0;
+      color: white;
+      font-size: 2rem;
+      background: none;
+      border: none;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="brand-title">
+      <h1>Oak Print Studio</h1>
+      <p>Fine Art Generative Lab — Collection Series N° 01 (Flat 2D Giclée Masters)</p>
+    </div>
+    <div class="header-actions">
+      <a href="staging.html" class="btn primary">
+        <span>🛋️</span> Interior Staging Studio
+      </a>
+      <button class="btn" id="toggleWallMode" onclick="toggleWallMode()">
+        <span>🖼️</span> Gallery Wall Mode
+      </button>
+      <button class="btn" id="filterFavorites" onclick="filterFavorites()">
+        <span>⭐</span> Shortlist (<span id="favCount">0</span>)
+      </button>
+    </div>
+  </header>
+
+  <div class="container">
+    <section class="collection-info">
+      <div>
+        <h2>« Formes & Signes » (Lyrical Biomorphic Abstraction)</h2>
+        <p>A contemporary dialogue with Joan Miró, Alexander Calder, and European master lithography. Features lyrical sumi ink sweeps, deep smoked indigo silhouettes, warm Tuscan ochres, and celestial glyphs calibrated for pure flat 2D museum Giclée printing on Gelato archival paper.</p>
+      </div>
+      <div>
+        <span style="font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--text-muted); font-weight: 600;">Signature Palette</span>
+        <div class="palette-swatches">
+          <div class="swatch" style="background: #1C2D42;" data-name="Smoked Indigo"></div>
+          <div class="swatch" style="background: #1D4E89;" data-name="Ultramarine Cobalt"></div>
+          <div class="swatch" style="background: #C78D20;" data-name="Tuscan Mustard"></div>
+          <div class="swatch" style="background: #B35E44;" data-name="Warm Terracotta"></div>
+          <div class="swatch" style="background: #FAF8F4;" data-name="Archival Ivory"></div>
+        </div>
+      </div>
+    </section>
+
+    <div class="art-grid" id="artGrid">
+      
+      <!-- Piece 1 -->
+      <div class="art-card" data-id="1">
+        <div class="image-wrapper" onclick="openZoom('01_lenvol_indigo.jpg', 'N° 01 — L\'Envol Indigo (Pure 2D Flat Giclée Master)')">
+          <img src="01_lenvol_indigo.jpg" alt="L'Envol Indigo" loading="lazy" />
+        </div>
+        <div class="card-meta">
+          <div>
+            <h3>N° 01 — L'Envol Indigo</h3>
+            <p>Hero Focal Print • Flat 2D Giclée Master</p>
+          </div>
+          <button class="fav-btn" onclick="toggleFav(this, 1)">★</button>
+        </div>
+      </div>
+
+      <!-- Piece 2 -->
+      <div class="art-card" data-id="2">
+        <div class="image-wrapper" onclick="openZoom('02_bleu_lunaire.jpg', 'N° 02 — Bleu Lunaire (Pure 2D Flat Giclée Master)')">
+          <img src="02_bleu_lunaire.jpg" alt="Bleu Lunaire" loading="lazy" />
+        </div>
+        <div class="card-meta">
+          <div>
+            <h3>N° 02 — Bleu Lunaire</h3>
+            <p>Companion Balance • Flat 2D Giclée Master</p>
+          </div>
+          <button class="fav-btn" onclick="toggleFav(this, 2)">★</button>
+        </div>
+      </div>
+
+      <!-- Piece 3 -->
+      <div class="art-card" data-id="3">
+        <div class="image-wrapper" onclick="openZoom('03_ocre_cosmique.jpg', 'N° 03 — Ocre Cosmique (Pure 2D Flat Giclée Master)')">
+          <img src="03_ocre_cosmique.jpg" alt="Ocre Cosmique" loading="lazy" />
+        </div>
+        <div class="card-meta">
+          <div>
+            <h3>N° 03 — Ocre Cosmique</h3>
+            <p>Warmth Anchor • Flat 2D Giclée Master</p>
+          </div>
+          <button class="fav-btn" onclick="toggleFav(this, 3)">★</button>
+        </div>
+      </div>
+
+      <!-- Piece 4 -->
+      <div class="art-card" data-id="4">
+        <div class="image-wrapper" onclick="openZoom('04_triptyque_litho.jpg', 'N° 04 — Polyptyque Lithographique (Master Folio Paper Study)')">
+          <img src="04_triptyque_litho.jpg" alt="Polyptyque Lithographique" loading="lazy" />
+        </div>
+        <div class="card-meta">
+          <div>
+            <h3>N° 04 — Polyptyque Lithographique</h3>
+            <p>Master Folio Study • 3-Panel Litho Character</p>
+          </div>
+          <button class="fav-btn" onclick="toggleFav(this, 4)">★</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Zoom Modal -->
+  <div class="modal" id="zoomModal" onclick="closeZoom(event)">
+    <div class="modal-content" onclick="event.stopPropagation()">
+      <button class="close-btn" onclick="closeZoom()">×</button>
+      <img id="modalImg" class="modal-img" src="" alt="Full view" />
+      <div id="modalCaption" class="modal-caption"></div>
+    </div>
+  </div>
+
+  <script>
+    const favorites = new Set();
+
+    function toggleFav(btn, id) {
+      if (favorites.has(id)) {
+        favorites.delete(id);
+        btn.classList.remove('selected');
+      } else {
+        favorites.add(id);
+        btn.classList.add('selected');
+      }
+      document.getElementById('favCount').textContent = favorites.size;
+    }
+
+    function toggleWallMode() {
+      const grid = document.getElementById('artGrid');
+      const btn = document.getElementById('toggleWallMode');
+      grid.classList.toggle('wall-mode');
+      btn.classList.toggle('active');
+    }
+
+    let showingOnlyFavs = false;
+    function filterFavorites() {
+      const btn = document.getElementById('filterFavorites');
+      const cards = document.querySelectorAll('.art-card');
+      showingOnlyFavs = !showingOnlyFavs;
+      btn.classList.toggle('active', showingOnlyFavs);
+
+      cards.forEach(card => {
+        const id = parseInt(card.dataset.id);
+        if (showingOnlyFavs && !favorites.has(id)) {
+          card.style.display = 'none';
+        } else {
+          card.style.display = 'flex';
+        }
+      });
+    }
+
+    function openZoom(src, caption) {
+      document.getElementById('modalImg').src = src;
+      document.getElementById('modalCaption').textContent = caption;
+      document.getElementById('zoomModal').classList.add('active');
+    }
+
+    function closeZoom() {
+      document.getElementById('zoomModal').classList.remove('active');
+    }
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') closeZoom();
+    });
+  </script>
+</body>
+</html>

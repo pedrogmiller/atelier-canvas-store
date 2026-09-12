@@ -55,20 +55,27 @@ function initProductConfigurator() {
 
   let currentFrame = 'natural_oak';
   let currentSize = sizeSelector ? sizeSelector.value : '24x36_in';
-  let currentViewMode = 'living_room'; // 'living_room', 'bedroom', 'studio', 'framed', 'master_art'
-
-  function getLivingRoomSrc(frameKey) {
-    if (product.images.living_room_frames && product.images.living_room_frames[frameKey]) {
-      return product.images.living_room_frames[frameKey];
-    }
-    return product.images.hero || product.images.living_room;
-  }
+  let currentViewMode = 'framed'; // 'framed', 'corner', 'living_room'
 
   function getFramedDetailSrc(frameKey) {
     if (product.images.framed_detail_frames && product.images.framed_detail_frames[frameKey]) {
       return product.images.framed_detail_frames[frameKey];
     }
     return product.images.framed_product;
+  }
+
+  function getCornerDetailSrc(frameKey) {
+    if (product.images.corner_detail_frames && product.images.corner_detail_frames[frameKey]) {
+      return product.images.corner_detail_frames[frameKey];
+    }
+    return product.images.corner || product.images.hero;
+  }
+
+  function getLivingRoomSrc(frameKey) {
+    if (product.images.living_room_frames && product.images.living_room_frames[frameKey]) {
+      return product.images.living_room_frames[frameKey];
+    }
+    return product.images.living_room || product.images.hero;
   }
 
   function updateMainImageSrc(newSrc, label) {
@@ -94,21 +101,23 @@ function initProductConfigurator() {
       btn.classList.remove('border', 'border-[#E8E3DA]');
       btn.classList.add('border-2', 'border-[#1C1C1E]');
 
-      currentViewMode = btn.getAttribute('data-view') || 'living_room';
+      currentViewMode = btn.getAttribute('data-view') || 'framed';
       const label = btn.getAttribute('data-label');
       let src = btn.getAttribute('data-src');
 
-      if (currentViewMode === 'living_room') {
-        src = getLivingRoomSrc(currentFrame);
-      } else if (currentViewMode === 'framed') {
+      if (currentViewMode === 'framed') {
         src = getFramedDetailSrc(currentFrame);
+      } else if (currentViewMode === 'corner') {
+        src = getCornerDetailSrc(currentFrame);
+      } else if (currentViewMode === 'living_room') {
+        src = getLivingRoomSrc(currentFrame);
       }
 
       updateMainImageSrc(src, label);
     });
   });
 
-  // Frame Style Picker (Dynamically updates the frame color on the living room and framed detail shots)
+  // Frame Style Picker (Dynamically updates the frame color on all 3 views)
   frameBtns.forEach(btn => {
     btn.addEventListener('click', () => {
       frameBtns.forEach(b => b.classList.remove('active'));
@@ -118,22 +127,29 @@ function initProductConfigurator() {
       if (frameLabelSpan) frameLabelSpan.textContent = label;
 
       // Update thumbnail preview images
-      const thumbLr = document.getElementById('thumb-living-room');
-      if (thumbLr) {
-        const lrImg = thumbLr.querySelector('img');
-        if (lrImg) lrImg.src = getLivingRoomSrc(currentFrame);
-      }
       const thumbFd = document.getElementById('thumb-framed-product');
       if (thumbFd) {
         const fdImg = thumbFd.querySelector('img');
         if (fdImg) fdImg.src = getFramedDetailSrc(currentFrame);
       }
+      const thumbCorner = document.getElementById('thumb-corner');
+      if (thumbCorner) {
+        const cornerImg = thumbCorner.querySelector('img');
+        if (cornerImg) cornerImg.src = getCornerDetailSrc(currentFrame);
+      }
+      const thumbLr = document.getElementById('thumb-living-room');
+      if (thumbLr) {
+        const lrImg = thumbLr.querySelector('img');
+        if (lrImg) lrImg.src = getLivingRoomSrc(currentFrame);
+      }
 
-      // If user is currently looking at Living Room or Framed Detail, change the frame color live!
-      if (currentViewMode === 'living_room') {
-        updateMainImageSrc(getLivingRoomSrc(currentFrame), `Living Room (${label})`);
-      } else if (currentViewMode === 'framed') {
-        updateMainImageSrc(getFramedDetailSrc(currentFrame), `Framed Detail (${label})`);
+      // If user is currently looking at any of the 3 views, change the image live!
+      if (currentViewMode === 'framed') {
+        updateMainImageSrc(getFramedDetailSrc(currentFrame), `Framed Studio Close-up (${label})`);
+      } else if (currentViewMode === 'corner') {
+        updateMainImageSrc(getCornerDetailSrc(currentFrame), `45º Perspective (${label})`);
+      } else if (currentViewMode === 'living_room') {
+        updateMainImageSrc(getLivingRoomSrc(currentFrame), `Custom Staged Scene (${label})`);
       }
 
       updatePricingAndSku();

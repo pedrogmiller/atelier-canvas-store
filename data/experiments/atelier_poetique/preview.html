@@ -1,0 +1,297 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Oak Print Studio — « L'Atelier Poétique » Collection Preview</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #F7F5F0;
+      --card-bg: #FFFFFF;
+      --paper: #FAF8F4;
+      --text-main: #1C1B1A;
+      --text-muted: #736F6A;
+      --border: #E5E0D8;
+      --accent-blue: #5B8BA3;
+      --accent-ochre: #B88B4A;
+      --accent-terracotta: #B35E44;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background-color: var(--bg);
+      color: var(--text-main);
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      padding: 40px 24px 80px;
+      line-height: 1.5;
+    }
+
+    header {
+      max-width: 1280px;
+      margin: 0 auto 48px;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 24px;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .brand-title h1 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 2.8rem;
+      font-weight: 400;
+      letter-spacing: -0.02em;
+      line-height: 1.1;
+    }
+
+    .brand-title p {
+      font-size: 0.95rem;
+      color: var(--text-muted);
+      margin-top: 6px;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+    }
+
+    .container {
+      max-width: 1280px;
+      margin: 0 auto;
+    }
+
+    .collection-info {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      gap: 40px;
+      margin-bottom: 40px;
+      background: white;
+      padding: 28px;
+      border-radius: 12px;
+      border: 1px solid var(--border);
+    }
+
+    @media (max-width: 768px) {
+      .collection-info { grid-template-columns: 1fr; }
+    }
+
+    .collection-info h2 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.8rem;
+      margin-bottom: 8px;
+    }
+
+    .collection-info p {
+      color: var(--text-muted);
+      font-size: 0.95rem;
+    }
+
+    .palette-swatches {
+      display: flex;
+      gap: 12px;
+      align-items: center;
+      margin-top: 14px;
+    }
+
+    .swatch {
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      border: 1px solid rgba(0,0,0,0.1);
+      position: relative;
+    }
+
+    .art-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 32px;
+    }
+
+    .art-card {
+      background: var(--card-bg);
+      border-radius: 12px;
+      overflow: hidden;
+      border: 1px solid var(--border);
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .art-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 28px rgba(0,0,0,0.06);
+    }
+
+    .image-wrapper {
+      position: relative;
+      background: var(--paper);
+      padding: 24px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: zoom-in;
+    }
+
+    .image-wrapper img {
+      width: 100%;
+      height: auto;
+      aspect-ratio: 3/4;
+      object-fit: cover;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+    }
+
+    .card-meta {
+      padding: 20px;
+      border-top: 1px solid var(--border);
+    }
+
+    .card-meta h3 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.35rem;
+      font-weight: 600;
+    }
+
+    .card-meta p {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      margin-top: 4px;
+    }
+
+    /* Zoom Modal */
+    .modal {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(20, 19, 18, 0.85);
+      backdrop-filter: blur(8px);
+      z-index: 999;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
+
+    .modal.active { display: flex; }
+
+    .modal-content {
+      position: relative;
+      max-width: 90vw;
+      max-height: 90vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .modal-img {
+      max-height: 82vh;
+      width: auto;
+      border-radius: 4px;
+      box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+    }
+
+    .modal-caption {
+      color: white;
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.4rem;
+      margin-top: 14px;
+    }
+
+    .close-btn {
+      position: absolute;
+      top: -40px;
+      right: 0;
+      color: white;
+      font-size: 2rem;
+      background: none;
+      border: none;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="brand-title">
+      <h1>Oak Print Studio</h1>
+      <p>Fine Art Generative Lab — Collection Series N° 02</p>
+    </div>
+    <div>
+      <a href="../formes_et_signes/preview.html" style="color: var(--text-main); text-decoration: none; font-size: 0.85rem; font-weight: 500;">
+        ← Back to Collection N° 01
+      </a>
+    </div>
+  </header>
+
+  <div class="container">
+    <section class="collection-info">
+      <div>
+        <h2>« L'Atelier Poétique » (Mid-Century Lithographic Poetics)</h2>
+        <p>A direct homage to Marc Chagall, Henri Matisse, and Parisian printmaker studios. Embraces intentional raw crayon scrawls, dry-brush bristle drag, unblended chalky gouache washes, and soulful folklore poetics.</p>
+      </div>
+      <div>
+        <span style="font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--text-muted); font-weight: 600;">Signature Palette</span>
+        <div class="palette-swatches">
+          <div class="swatch" style="background: #5B8BA3;" title="Cerulean Wash"></div>
+          <div class="swatch" style="background: #B88B4A;" title="Tuscan Ochre"></div>
+          <div class="swatch" style="background: #B35E44;" title="Terracotta Glaze"></div>
+          <div class="swatch" style="background: #1C1B1A;" title="Lithographic Crayon"></div>
+          <div class="swatch" style="background: #FAF8F4;" title="Archival Cotton"></div>
+        </div>
+      </div>
+    </section>
+
+    <div class="art-grid">
+      
+      <!-- Piece 1 -->
+      <div class="art-card">
+        <div class="image-wrapper" onclick="openZoom('01_le_poete_litho.jpg', 'N° 01 — Le Visage du Poète (Hero Lithograph)')">
+          <img src="01_le_poete_litho.jpg" alt="Le Visage du Poète" loading="lazy" />
+        </div>
+        <div class="card-meta">
+          <h3>N° 01 — Le Visage du Poète</h3>
+          <p>Hero Piece • Raw Lithographic Crayon, Dry-Brush Cerulean & Ochre Wash, Floating Figure</p>
+        </div>
+      </div>
+
+      <!-- Piece 2 -->
+      <div class="art-card">
+        <div class="image-wrapper" onclick="openZoom('02_latelier_fenetre.jpg', 'N° 02 — L\'Atelier Ouvert (Still Life Companion)')">
+          <img src="02_latelier_fenetre.jpg" alt="L'Atelier Ouvert" loading="lazy" />
+        </div>
+        <div class="card-meta">
+          <h3>N° 02 — L'Atelier Ouvert</h3>
+          <p>Companion Still Life • Ceramic Pitcher, Figs, French Window & Dove</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Zoom Modal -->
+  <div class="modal" id="zoomModal" onclick="closeZoom(event)">
+    <div class="modal-content" onclick="event.stopPropagation()">
+      <button class="close-btn" onclick="closeZoom()">×</button>
+      <img id="modalImg" class="modal-img" src="" alt="Full view" />
+      <div id="modalCaption" class="modal-caption"></div>
+    </div>
+  </div>
+
+  <script>
+    function openZoom(src, caption) {
+      document.getElementById('modalImg').src = src;
+      document.getElementById('modalCaption').textContent = caption;
+      document.getElementById('zoomModal').classList.add('active');
+    }
+
+    function closeZoom() {
+      document.getElementById('zoomModal').classList.remove('active');
+    }
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') closeZoom();
+    });
+  </script>
+</body>
+</html>
