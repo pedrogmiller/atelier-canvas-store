@@ -242,9 +242,9 @@ def create_multi_piece_framed_shot(arts: list, frame_type: str, cfg: dict) -> Im
     scene = Image.new("RGB", (canvas_w, canvas_h), (246, 244, 240))
     n = len(arts)
     
-    target_art_h = 780 if n == 2 else 680
-    scale_ratio = 1.0 if n == 2 else 0.85
-    gap = 48 if n == 2 else 36
+    target_art_h = 620 if n == 2 else 450
+    scale_ratio = 0.85 if n == 2 else 0.62
+    gap = 40 if n == 2 else 28
 
     framed_pieces = []
     for art in arts:
@@ -256,6 +256,13 @@ def create_multi_piece_framed_shot(arts: list, frame_type: str, cfg: dict) -> Im
 
     piece_w, piece_h = framed_pieces[0].size
     total_w = (piece_w * n) + (gap * (n - 1))
+
+    if total_w > 1380:
+        fit = 1380.0 / total_w
+        framed_pieces = [p.resize((int(piece_w * fit), int(piece_h * fit)), Image.Resampling.LANCZOS) for p in framed_pieces]
+        piece_w, piece_h = framed_pieces[0].size
+        total_w = (piece_w * n) + (gap * (n - 1))
+
     start_x = (canvas_w - total_w) // 2
     start_y = (canvas_h - piece_h) // 2
 
@@ -264,9 +271,9 @@ def create_multi_piece_framed_shot(arts: list, frame_type: str, cfg: dict) -> Im
     for i in range(n):
         px = start_x + i * (piece_w + gap)
         py = start_y
-        s_draw.rectangle([px + 12, py + 18, px + piece_w + 18, py + piece_h + 24], fill=(20, 20, 25, 105))
+        s_draw.rectangle([px + 10, py + 14, px + piece_w + 14, py + piece_h + 18], fill=(20, 20, 25, 105))
     
-    shadow = shadow.filter(ImageFilter.GaussianBlur(20))
+    shadow = shadow.filter(ImageFilter.GaussianBlur(16))
     scene.paste(shadow, (0, 0), shadow)
 
     for i, piece in enumerate(framed_pieces):
