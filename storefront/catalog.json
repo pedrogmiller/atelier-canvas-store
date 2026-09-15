@@ -46,6 +46,8 @@
     "images": {
       "hero": "/static/products/formes-et-signes-lenvol-indigo-ops-fs-01/framed_natural_oak.jpg",
       "framed_product": "/static/products/formes-et-signes-lenvol-indigo-ops-fs-01/framed_natural_oak.jpg",
+      "corner": "/static/products/formes-et-signes-lenvol-indigo-ops-fs-01/corner_natural_oak.jpg",
+      "corner_detail": "/static/products/formes-et-signes-lenvol-indigo-ops-fs-01/corner_natural_oak.jpg",
       "living_room": "/static/products/formes-et-signes-lenvol-indigo-ops-fs-01/living_room_natural_oak.jpg",
       "bedroom": "/static/products/formes-et-signes-lenvol-indigo-ops-fs-01/bedroom_black.jpg",
       "studio": "/static/products/formes-et-signes-lenvol-indigo-ops-fs-01/studio_white.jpg",
@@ -56,6 +58,13 @@
         "white_wood": "/static/products/formes-et-signes-lenvol-indigo-ops-fs-01/living_room_white_wood.jpg",
         "canvas_wrap": "/static/products/formes-et-signes-lenvol-indigo-ops-fs-01/living_room_canvas_wrap.jpg",
         "unframed_poster": "/static/products/formes-et-signes-lenvol-indigo-ops-fs-01/living_room_unframed_poster.jpg"
+      },
+      "corner_detail_frames": {
+        "natural_oak": "/static/products/formes-et-signes-lenvol-indigo-ops-fs-01/corner_natural_oak.jpg",
+        "black_wood": "/static/products/formes-et-signes-lenvol-indigo-ops-fs-01/corner_black_wood.jpg",
+        "white_wood": "/static/products/formes-et-signes-lenvol-indigo-ops-fs-01/corner_white_wood.jpg",
+        "canvas_wrap": "/static/products/formes-et-signes-lenvol-indigo-ops-fs-01/corner_canvas_wrap.jpg",
+        "unframed_poster": "/static/products/formes-et-signes-lenvol-indigo-ops-fs-01/corner_unframed_poster.jpg"
       },
       "framed_detail_frames": {
         "natural_oak": "/static/products/formes-et-signes-lenvol-indigo-ops-fs-01/framed_natural_oak.jpg",
@@ -281,6 +290,8 @@
     "images": {
       "hero": "/static/products/formes-et-signes-bleu-lunaire-ops-fs-02/framed_natural_oak.jpg",
       "framed_product": "/static/products/formes-et-signes-bleu-lunaire-ops-fs-02/framed_natural_oak.jpg",
+      "corner": "/static/products/formes-et-signes-bleu-lunaire-ops-fs-02/corner_natural_oak.jpg",
+      "corner_detail": "/static/products/formes-et-signes-bleu-lunaire-ops-fs-02/corner_natural_oak.jpg",
       "living_room": "/static/products/formes-et-signes-bleu-lunaire-ops-fs-02/living_room_natural_oak.jpg",
       "bedroom": "/static/products/formes-et-signes-bleu-lunaire-ops-fs-02/bedroom_black.jpg",
       "studio": "/static/products/formes-et-signes-bleu-lunaire-ops-fs-02/studio_white.jpg",
@@ -291,6 +302,13 @@
         "white_wood": "/static/products/formes-et-signes-bleu-lunaire-ops-fs-02/living_room_white_wood.jpg",
         "canvas_wrap": "/static/products/formes-et-signes-bleu-lunaire-ops-fs-02/living_room_canvas_wrap.jpg",
         "unframed_poster": "/static/products/formes-et-signes-bleu-lunaire-ops-fs-02/living_room_unframed_poster.jpg"
+      },
+      "corner_detail_frames": {
+        "natural_oak": "/static/products/formes-et-signes-bleu-lunaire-ops-fs-02/corner_natural_oak.jpg",
+        "black_wood": "/static/products/formes-et-signes-bleu-lunaire-ops-fs-02/corner_black_wood.jpg",
+        "white_wood": "/static/products/formes-et-signes-bleu-lunaire-ops-fs-02/corner_white_wood.jpg",
+        "canvas_wrap": "/static/products/formes-et-signes-bleu-lunaire-ops-fs-02/corner_canvas_wrap.jpg",
+        "unframed_poster": "/static/products/formes-et-signes-bleu-lunaire-ops-fs-02/corner_unframed_poster.jpg"
       },
       "framed_detail_frames": {
         "natural_oak": "/static/products/formes-et-signes-bleu-lunaire-ops-fs-02/framed_natural_oak.jpg",
@@ -516,6 +534,8 @@
     "images": {
       "hero": "/static/products/formes-et-signes-ocre-cosmique-ops-fs-03/framed_natural_oak.jpg",
       "framed_product": "/static/products/formes-et-signes-ocre-cosmique-ops-fs-03/framed_natural_oak.jpg",
+      "corner": "/static/products/formes-et-signes-ocre-cosmique-ops-fs-03/corner_natural_oak.jpg",
+      "corner_detail": "/static/products/formes-et-signes-ocre-cosmique-ops-fs-03/corner_natural_oak.jpg",
       "living_room": "/static/products/formes-et-signes-ocre-cosmique-ops-fs-03/living_room_natural_oak.jpg",
       "bedroom": "/static/products/formes-et-signes-ocre-cosmique-ops-fs-03/bedroom_black.jpg",
       "studio": "/static/products/formes-et-signes-ocre-cosmique-ops-fs-03/studio_white.jpg",
@@ -526,6 +546,13 @@
         "white_wood": "/static/products/formes-et-signes-ocre-cosmique-ops-fs-03/living_room_white_wood.jpg",
         "canvas_wrap": "/static/products/formes-et-signes-ocre-cosmique-ops-fs-03/living_room_canvas_wrap.jpg",
         "unframed_poster": "/static/products/formes-et-signes-ocre-cosmique-ops-fs-03/living_room_unframed_poster.jpg"
+      },
+      "corner_detail_frames": {
+        "natural_oak": "/static/products/formes-et-signes-ocre-cosmique-ops-fs-03/corner_natural_oak.jpg",
+        "black_wood": "/static/products/formes-et-signes-ocre-cosmique-ops-fs-03/corner_black_wood.jpg",
+        "white_wood": "/static/products/formes-et-signes-ocre-cosmique-ops-fs-03/corner_white_wood.jpg",
+        "canvas_wrap": "/static/products/formes-et-signes-ocre-cosmique-ops-fs-03/corner_canvas_wrap.jpg",
+        "unframed_poster": "/static/products/formes-et-signes-ocre-cosmique-ops-fs-03/corner_unframed_poster.jpg"
       },
       "framed_detail_frames": {
         "natural_oak": "/static/products/formes-et-signes-ocre-cosmique-ops-fs-03/framed_natural_oak.jpg",
@@ -751,6 +778,8 @@
     "images": {
       "hero": "/static/products/formes-et-signes-polyptyque-lithographique-ops-fs-04/framed_natural_oak.jpg",
       "framed_product": "/static/products/formes-et-signes-polyptyque-lithographique-ops-fs-04/framed_natural_oak.jpg",
+      "corner": "/static/products/formes-et-signes-polyptyque-lithographique-ops-fs-04/corner_natural_oak.jpg",
+      "corner_detail": "/static/products/formes-et-signes-polyptyque-lithographique-ops-fs-04/corner_natural_oak.jpg",
       "living_room": "/static/products/formes-et-signes-polyptyque-lithographique-ops-fs-04/living_room_natural_oak.jpg",
       "bedroom": "/static/products/formes-et-signes-polyptyque-lithographique-ops-fs-04/bedroom_black.jpg",
       "studio": "/static/products/formes-et-signes-polyptyque-lithographique-ops-fs-04/studio_white.jpg",
@@ -761,6 +790,13 @@
         "white_wood": "/static/products/formes-et-signes-polyptyque-lithographique-ops-fs-04/living_room_white_wood.jpg",
         "canvas_wrap": "/static/products/formes-et-signes-polyptyque-lithographique-ops-fs-04/living_room_canvas_wrap.jpg",
         "unframed_poster": "/static/products/formes-et-signes-polyptyque-lithographique-ops-fs-04/living_room_unframed_poster.jpg"
+      },
+      "corner_detail_frames": {
+        "natural_oak": "/static/products/formes-et-signes-polyptyque-lithographique-ops-fs-04/corner_natural_oak.jpg",
+        "black_wood": "/static/products/formes-et-signes-polyptyque-lithographique-ops-fs-04/corner_black_wood.jpg",
+        "white_wood": "/static/products/formes-et-signes-polyptyque-lithographique-ops-fs-04/corner_white_wood.jpg",
+        "canvas_wrap": "/static/products/formes-et-signes-polyptyque-lithographique-ops-fs-04/corner_canvas_wrap.jpg",
+        "unframed_poster": "/static/products/formes-et-signes-polyptyque-lithographique-ops-fs-04/corner_unframed_poster.jpg"
       },
       "framed_detail_frames": {
         "natural_oak": "/static/products/formes-et-signes-polyptyque-lithographique-ops-fs-04/framed_natural_oak.jpg",
@@ -986,6 +1022,8 @@
     "images": {
       "hero": "/static/products/formes-et-signes-signature-diptych-set-of-2/framed_natural_oak.jpg",
       "framed_product": "/static/products/formes-et-signes-signature-diptych-set-of-2/framed_natural_oak.jpg",
+      "corner": "/static/products/formes-et-signes-signature-diptych-set-of-2/corner_natural_oak.jpg",
+      "corner_detail": "/static/products/formes-et-signes-signature-diptych-set-of-2/corner_natural_oak.jpg",
       "living_room": "/static/products/formes-et-signes-signature-diptych-set-of-2/living_room_natural_oak.jpg",
       "bedroom": "/static/products/formes-et-signes-signature-diptych-set-of-2/bedroom_black.jpg",
       "studio": "/static/products/formes-et-signes-signature-diptych-set-of-2/studio_white.jpg",
@@ -996,6 +1034,13 @@
         "white_wood": "/static/products/formes-et-signes-signature-diptych-set-of-2/living_room_white_wood.jpg",
         "canvas_wrap": "/static/products/formes-et-signes-signature-diptych-set-of-2/living_room_canvas_wrap.jpg",
         "unframed_poster": "/static/products/formes-et-signes-signature-diptych-set-of-2/living_room_unframed_poster.jpg"
+      },
+      "corner_detail_frames": {
+        "natural_oak": "/static/products/formes-et-signes-signature-diptych-set-of-2/corner_natural_oak.jpg",
+        "black_wood": "/static/products/formes-et-signes-signature-diptych-set-of-2/corner_black_wood.jpg",
+        "white_wood": "/static/products/formes-et-signes-signature-diptych-set-of-2/corner_white_wood.jpg",
+        "canvas_wrap": "/static/products/formes-et-signes-signature-diptych-set-of-2/corner_canvas_wrap.jpg",
+        "unframed_poster": "/static/products/formes-et-signes-signature-diptych-set-of-2/corner_unframed_poster.jpg"
       },
       "framed_detail_frames": {
         "natural_oak": "/static/products/formes-et-signes-signature-diptych-set-of-2/framed_natural_oak.jpg",
@@ -1222,6 +1267,8 @@
     "images": {
       "hero": "/static/products/formes-et-signes-collectors-triptych-set-of-3/framed_natural_oak.jpg",
       "framed_product": "/static/products/formes-et-signes-collectors-triptych-set-of-3/framed_natural_oak.jpg",
+      "corner": "/static/products/formes-et-signes-collectors-triptych-set-of-3/corner_natural_oak.jpg",
+      "corner_detail": "/static/products/formes-et-signes-collectors-triptych-set-of-3/corner_natural_oak.jpg",
       "living_room": "/static/products/formes-et-signes-collectors-triptych-set-of-3/living_room_natural_oak.jpg",
       "bedroom": "/static/products/formes-et-signes-collectors-triptych-set-of-3/bedroom_black.jpg",
       "studio": "/static/products/formes-et-signes-collectors-triptych-set-of-3/studio_white.jpg",
@@ -1232,6 +1279,13 @@
         "white_wood": "/static/products/formes-et-signes-collectors-triptych-set-of-3/living_room_white_wood.jpg",
         "canvas_wrap": "/static/products/formes-et-signes-collectors-triptych-set-of-3/living_room_canvas_wrap.jpg",
         "unframed_poster": "/static/products/formes-et-signes-collectors-triptych-set-of-3/living_room_unframed_poster.jpg"
+      },
+      "corner_detail_frames": {
+        "natural_oak": "/static/products/formes-et-signes-collectors-triptych-set-of-3/corner_natural_oak.jpg",
+        "black_wood": "/static/products/formes-et-signes-collectors-triptych-set-of-3/corner_black_wood.jpg",
+        "white_wood": "/static/products/formes-et-signes-collectors-triptych-set-of-3/corner_white_wood.jpg",
+        "canvas_wrap": "/static/products/formes-et-signes-collectors-triptych-set-of-3/corner_canvas_wrap.jpg",
+        "unframed_poster": "/static/products/formes-et-signes-collectors-triptych-set-of-3/corner_unframed_poster.jpg"
       },
       "framed_detail_frames": {
         "natural_oak": "/static/products/formes-et-signes-collectors-triptych-set-of-3/framed_natural_oak.jpg",

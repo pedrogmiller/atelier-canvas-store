@@ -143,7 +143,43 @@ class MockupAgent(BaseAgent):
     # SHOT 1: THE MODERNIST CREDENZA LIVING ROOM SCENE
     # -------------------------------------------------------------
     def _create_credenza_living_room_mockup(self, art: Image.Image, frame_type: str, cfg: Dict[str, Any]) -> Image.Image:
-        """Composites framed artwork into the custom photographic Scandinavian credenza living room scene."""
+        """Composites framed artwork into the Scandinavian credenza scene, adapting dynamically to portrait or landscape."""
+        aspect = art.width / art.height
+        
+        # If artwork is landscape (width > height), frame horizontally on clean wall
+        if aspect > 1.05:
+            clean_bg = self.templates_dir / "custom_credenza_clean_wall.jpg"
+            if not clean_bg.exists():
+                clean_bg = self.templates_dir / "custom_credenza_living_room_base.jpg"
+            scene = Image.open(clean_bg).convert("RGB")
+            sw, sh = scene.size
+
+            target_w = int(380 * (sw / 1024.0))
+            target_h = int(target_w / aspect)
+            resized_art = art.resize((target_w, target_h), RESAMPLE_FILTER)
+            framed = self._apply_frame(resized_art, frame_type=frame_type, cfg=cfg, scale_ratio=0.7)
+
+            fw, fh = framed.size
+            center_x = int(615 * (sw / 1024.0))
+            start_x = center_x - (fw // 2)
+            start_y = int(145 * (sh / 1024.0))
+
+            shadow = Image.new("RGBA", (sw, sh), (0, 0, 0, 0))
+            s_draw = ImageDraw.Draw(shadow)
+            s_draw.rectangle([start_x + 8, start_y + 10, start_x + fw + 14, start_y + fh + 16], fill=(20, 18, 15, 110))
+            shadow = shadow.filter(ImageFilter.GaussianBlur(12))
+            scene.paste(shadow, (0, 0), shadow)
+
+            scene.paste(framed, (start_x, start_y))
+
+            light = Image.new("RGBA", (sw, sh), (0, 0, 0, 0))
+            l_draw = ImageDraw.Draw(light)
+            l_draw.polygon([(0, 0), (int(600 * (sw / 1024.0)), 0), (int(900 * (sw / 1024.0)), int(600 * (sh / 1024.0))), (0, int(600 * (sh / 1024.0)))], fill=(255, 252, 240, 15))
+            scene.paste(light, (0, 0), light)
+
+            return scene.resize((1600, 1600), RESAMPLE_FILTER)
+
+        # Standard portrait artwork: use portrait credenza scene
         bg_template = self.templates_dir / "custom_credenza_living_room_base.jpg"
         if not bg_template.exists():
             return self._create_clean_framed_shot(art, frame_type, cfg)
@@ -175,6 +211,52 @@ class MockupAgent(BaseAgent):
         
         s_img = Image.fromarray(s_np).filter(ImageFilter.GaussianBlur(1.2 * scale))
         scene.paste(s_img, (0, 0), s_img)
+
+        return scene.resize((1600, 1600), RESAMPLE_FILTER)
+
+    def _create_credenza_multi_piece_mockup(self, arts: List[Image.Image], frame_type: str, cfg: Dict[str, Any]) -> Image.Image:
+        """Composites 2 or 3 separate framed artworks hung across the wall in a horizontal linear diptych or triptych."""
+        clean_bg = self.templates_dir / "custom_credenza_clean_wall.jpg"
+        if not clean_bg.exists():
+            clean_bg = self.templates_dir / "custom_credenza_living_room_base.jpg"
+        scene = Image.open(clean_bg).convert("RGB")
+        sw, sh = scene.size
+        n = len(arts)
+
+        target_art_h = int((310 if n == 2 else 260) * (sh / 1024.0))
+        gap = int((24 if n == 2 else 16) * (sw / 1024.0))
+        scale_ratio = 0.6 if n == 2 else 0.5
+
+        framed_pieces = []
+        for art in arts:
+            aspect = art.width / art.height
+            target_art_w = int(target_art_h * aspect)
+            resized = art.resize((target_art_w, target_art_h), RESAMPLE_FILTER)
+            framed = self._apply_frame(resized, frame_type=frame_type, cfg=cfg, scale_ratio=scale_ratio)
+            framed_pieces.append(framed)
+
+        piece_w, piece_h = framed_pieces[0].size
+        total_w = (piece_w * n) + (gap * (n - 1))
+        center_x = int(615 * (sw / 1024.0))
+        start_x = center_x - (total_w // 2)
+        start_y = int(110 * (sh / 1024.0))
+
+        shadow = Image.new("RGBA", (sw, sh), (0, 0, 0, 0))
+        s_draw = ImageDraw.Draw(shadow)
+        for i in range(n):
+            px = start_x + i * (piece_w + gap)
+            s_draw.rectangle([px + 6, start_y + 8, px + piece_w + 10, start_y + piece_h + 12], fill=(20, 18, 15, 110))
+        shadow = shadow.filter(ImageFilter.GaussianBlur(10))
+        scene.paste(shadow, (0, 0), shadow)
+
+        for i, piece in enumerate(framed_pieces):
+            px = start_x + i * (piece_w + gap)
+            scene.paste(piece, (px, start_y))
+
+        light = Image.new("RGBA", (sw, sh), (0, 0, 0, 0))
+        l_draw = ImageDraw.Draw(light)
+        l_draw.polygon([(0, 0), (int(600 * (sw / 1024.0)), 0), (int(900 * (sw / 1024.0)), int(600 * (sh / 1024.0))), (0, int(600 * (sh / 1024.0)))], fill=(255, 252, 240, 15))
+        scene.paste(light, (0, 0), light)
 
         return scene.resize((1600, 1600), RESAMPLE_FILTER)
 

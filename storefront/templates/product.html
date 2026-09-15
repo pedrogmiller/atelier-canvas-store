@@ -42,8 +42,8 @@
           <span class="absolute bottom-1.5 left-1.5 bg-black/75 backdrop-blur-xs text-[10px] text-white px-2 py-0.5 rounded-md font-medium">Framed Studio</span>
         </button>
 
-        <button id="thumb-corner" class="thumb-btn rounded-xl overflow-hidden border border-[#E8E3DA] hover:border-[#1C1C1E] aspect-[4/3] relative bg-white transition shadow-sm cursor-pointer group" data-view="corner" data-src="{{ product.images.corner }}" data-label="45º Perspective Detail">
-          <img src="{{ product.images.corner }}" class="w-full h-full object-cover">
+        <button id="thumb-corner" class="thumb-btn rounded-xl overflow-hidden border border-[#E8E3DA] hover:border-[#1C1C1E] aspect-[4/3] relative bg-white transition shadow-sm cursor-pointer group" data-view="corner" data-src="{{ product.images.corner or product.images.framed_product }}" data-label="45º Perspective Detail">
+          <img src="{{ product.images.corner or product.images.framed_product }}" class="w-full h-full object-cover">
           <span class="absolute bottom-1.5 left-1.5 bg-black/75 backdrop-blur-xs text-[10px] text-white px-2 py-0.5 rounded-md font-medium">45º Perspective</span>
         </button>
 
@@ -317,7 +317,7 @@
       <img id="modal-thumb-framed" src="{{ product.images.framed_product }}" class="w-full h-full object-cover">
     </button>
     <button class="modal-thumb-btn border border-white/30 hover:border-white rounded-lg overflow-hidden w-16 sm:w-20 aspect-[4/3] relative transition shadow-md cursor-pointer" data-view="corner" data-label="45º Perspective Detail">
-      <img id="modal-thumb-corner" src="{{ product.images.corner }}" class="w-full h-full object-cover">
+      <img id="modal-thumb-corner" src="{{ product.images.corner or product.images.framed_product }}" class="w-full h-full object-cover">
     </button>
     <button class="modal-thumb-btn border border-white/30 hover:border-white rounded-lg overflow-hidden w-16 sm:w-20 aspect-[4/3] relative transition shadow-md cursor-pointer" data-view="living_room" data-label="Custom Staged Scene">
       <img id="modal-thumb-living" src="{{ product.images.living_room }}" class="w-full h-full object-cover">

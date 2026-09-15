@@ -139,17 +139,21 @@ for p in products_info:
     # Generate mockups
     art_img = Image.open(master_art_dest).convert("RGB")
     
-    # Living room frames
+    # Living room, framed shots, and corner perspective frames
     for f_key, cfg in MockupAgent.FRAME_CONFIGS.items():
         lr_img = mockup_agent._create_credenza_living_room_mockup(art_img, frame_type=f_key, cfg=cfg)
         lr_img.save(prod_static_dir / f"living_room_{f_key}.jpg", "JPEG", quality=92)
         
         fd_img = mockup_agent._create_clean_framed_shot(art_img, frame_type=f_key, cfg=cfg)
         fd_img.save(prod_static_dir / f"framed_{f_key}.jpg", "JPEG", quality=92)
+
+        cd_img = mockup_agent._create_corner_detail_mockup(art_img, frame_type=f_key, cfg=cfg)
+        cd_img.save(prod_static_dir / f"corner_{f_key}.jpg", "JPEG", quality=92)
     
     # Legacy fallbacks
     shutil.copy(prod_static_dir / "living_room_natural_oak.jpg", prod_static_dir / "living_room_oak.jpg")
     shutil.copy(prod_static_dir / "framed_natural_oak.jpg", prod_static_dir / "framed_product.jpg")
+    shutil.copy(prod_static_dir / "corner_natural_oak.jpg", prod_static_dir / "corner_detail.jpg")
     
     # Bedroom & Studio
     bed_img = mockup_agent._create_bedroom_mockup(art_img, frame_color=(28, 28, 30), mat_border=30)
@@ -188,23 +192,23 @@ for p in products_info:
         "images": {
             "hero": f"/static/products/{p_id}/framed_natural_oak.jpg",
             "framed_product": f"/static/products/{p_id}/framed_natural_oak.jpg",
+            "corner": f"/static/products/{p_id}/corner_natural_oak.jpg",
+            "corner_detail": f"/static/products/{p_id}/corner_natural_oak.jpg",
             "living_room": f"/static/products/{p_id}/living_room_natural_oak.jpg",
             "bedroom": f"/static/products/{p_id}/bedroom_black.jpg",
             "studio": f"/static/products/{p_id}/studio_white.jpg",
             "master_art": f"/static/products/{p_id}/master_art.jpg",
             "living_room_frames": {
-                "natural_oak": f"/static/products/{p_id}/living_room_natural_oak.jpg",
-                "black_wood": f"/static/products/{p_id}/living_room_black_wood.jpg",
-                "white_wood": f"/static/products/{p_id}/living_room_white_wood.jpg",
-                "canvas_wrap": f"/static/products/{p_id}/living_room_canvas_wrap.jpg",
-                "unframed_poster": f"/static/products/{p_id}/living_room_unframed_poster.jpg"
+                f_key: f"/static/products/{p_id}/living_room_{f_key}.jpg"
+                for f_key in MockupAgent.FRAME_CONFIGS.keys()
+            },
+            "corner_detail_frames": {
+                f_key: f"/static/products/{p_id}/corner_{f_key}.jpg"
+                for f_key in MockupAgent.FRAME_CONFIGS.keys()
             },
             "framed_detail_frames": {
-                "natural_oak": f"/static/products/{p_id}/framed_natural_oak.jpg",
-                "black_wood": f"/static/products/{p_id}/framed_black_wood.jpg",
-                "white_wood": f"/static/products/{p_id}/framed_white_wood.jpg",
-                "canvas_wrap": f"/static/products/{p_id}/framed_canvas_wrap.jpg",
-                "unframed_poster": f"/static/products/{p_id}/framed_unframed_poster.jpg"
+                f_key: f"/static/products/{p_id}/framed_{f_key}.jpg"
+                for f_key in MockupAgent.FRAME_CONFIGS.keys()
             }
         },
         "variants": variants
@@ -435,10 +439,14 @@ for f_key, cfg in MockupAgent.FRAME_CONFIGS.items():
     fd_img = create_multi_piece_framed_shot([art1, art2], frame_type=f_key, cfg=cfg)
     fd_img.save(diptych_dir / f"framed_{f_key}.jpg", "JPEG", quality=95)
     
-    gw_img = create_multi_piece_gallery_wall([art1, art2], frame_type=f_key, cfg=cfg)
-    gw_img.save(diptych_dir / f"living_room_{f_key}.jpg", "JPEG", quality=94)
+    cd_img = mockup_agent._create_corner_detail_mockup(art1, frame_type=f_key, cfg=cfg)
+    cd_img.save(diptych_dir / f"corner_{f_key}.jpg", "JPEG", quality=92)
+    
+    lr_img = mockup_agent._create_credenza_multi_piece_mockup([art1, art2], frame_type=f_key, cfg=cfg)
+    lr_img.save(diptych_dir / f"living_room_{f_key}.jpg", "JPEG", quality=94)
 
 shutil.copy(diptych_dir / "framed_natural_oak.jpg", diptych_dir / "framed_product.jpg")
+shutil.copy(diptych_dir / "corner_natural_oak.jpg", diptych_dir / "corner_detail.jpg")
 shutil.copy(diptych_dir / "living_room_natural_oak.jpg", diptych_dir / "living_room_oak.jpg")
 
 bed_img = create_multi_piece_bedroom([art1, art2])
@@ -478,23 +486,23 @@ diptych_entry = {
     "images": {
         "hero": f"/static/products/{diptych_id}/framed_natural_oak.jpg",
         "framed_product": f"/static/products/{diptych_id}/framed_natural_oak.jpg",
+        "corner": f"/static/products/{diptych_id}/corner_natural_oak.jpg",
+        "corner_detail": f"/static/products/{diptych_id}/corner_natural_oak.jpg",
         "living_room": f"/static/products/{diptych_id}/living_room_natural_oak.jpg",
         "bedroom": f"/static/products/{diptych_id}/bedroom_black.jpg",
         "studio": f"/static/products/{diptych_id}/studio_white.jpg",
         "master_art": f"/static/products/{diptych_id}/master_art.jpg",
         "living_room_frames": {
-            "natural_oak": f"/static/products/{diptych_id}/living_room_natural_oak.jpg",
-            "black_wood": f"/static/products/{diptych_id}/living_room_black_wood.jpg",
-            "white_wood": f"/static/products/{diptych_id}/living_room_white_wood.jpg",
-            "canvas_wrap": f"/static/products/{diptych_id}/living_room_canvas_wrap.jpg",
-            "unframed_poster": f"/static/products/{diptych_id}/living_room_unframed_poster.jpg"
+            f_key: f"/static/products/{diptych_id}/living_room_{f_key}.jpg"
+            for f_key in MockupAgent.FRAME_CONFIGS.keys()
+        },
+        "corner_detail_frames": {
+            f_key: f"/static/products/{diptych_id}/corner_{f_key}.jpg"
+            for f_key in MockupAgent.FRAME_CONFIGS.keys()
         },
         "framed_detail_frames": {
-            "natural_oak": f"/static/products/{diptych_id}/framed_natural_oak.jpg",
-            "black_wood": f"/static/products/{diptych_id}/framed_black_wood.jpg",
-            "white_wood": f"/static/products/{diptych_id}/framed_white_wood.jpg",
-            "canvas_wrap": f"/static/products/{diptych_id}/framed_canvas_wrap.jpg",
-            "unframed_poster": f"/static/products/{diptych_id}/framed_unframed_poster.jpg"
+            f_key: f"/static/products/{diptych_id}/framed_{f_key}.jpg"
+            for f_key in MockupAgent.FRAME_CONFIGS.keys()
         }
     },
     "variants": diptych_variants
@@ -519,10 +527,14 @@ for f_key, cfg in MockupAgent.FRAME_CONFIGS.items():
     fd_img = create_multi_piece_framed_shot([art1, art2, art3], frame_type=f_key, cfg=cfg)
     fd_img.save(triptych_dir / f"framed_{f_key}.jpg", "JPEG", quality=95)
     
-    gw_img = create_multi_piece_gallery_wall([art1, art2, art3], frame_type=f_key, cfg=cfg)
-    gw_img.save(triptych_dir / f"living_room_{f_key}.jpg", "JPEG", quality=94)
+    cd_img = mockup_agent._create_corner_detail_mockup(art1, frame_type=f_key, cfg=cfg)
+    cd_img.save(triptych_dir / f"corner_{f_key}.jpg", "JPEG", quality=92)
+    
+    lr_img = mockup_agent._create_credenza_multi_piece_mockup([art1, art2, art3], frame_type=f_key, cfg=cfg)
+    lr_img.save(triptych_dir / f"living_room_{f_key}.jpg", "JPEG", quality=94)
 
 shutil.copy(triptych_dir / "framed_natural_oak.jpg", triptych_dir / "framed_product.jpg")
+shutil.copy(triptych_dir / "corner_natural_oak.jpg", triptych_dir / "corner_detail.jpg")
 shutil.copy(triptych_dir / "living_room_natural_oak.jpg", triptych_dir / "living_room_oak.jpg")
 
 bed_img = create_multi_piece_bedroom([art1, art2, art3])
@@ -562,23 +574,23 @@ triptych_entry = {
     "images": {
         "hero": f"/static/products/{triptych_id}/framed_natural_oak.jpg",
         "framed_product": f"/static/products/{triptych_id}/framed_natural_oak.jpg",
+        "corner": f"/static/products/{triptych_id}/corner_natural_oak.jpg",
+        "corner_detail": f"/static/products/{triptych_id}/corner_natural_oak.jpg",
         "living_room": f"/static/products/{triptych_id}/living_room_natural_oak.jpg",
         "bedroom": f"/static/products/{triptych_id}/bedroom_black.jpg",
         "studio": f"/static/products/{triptych_id}/studio_white.jpg",
         "master_art": f"/static/products/{triptych_id}/master_art.jpg",
         "living_room_frames": {
-            "natural_oak": f"/static/products/{triptych_id}/living_room_natural_oak.jpg",
-            "black_wood": f"/static/products/{triptych_id}/living_room_black_wood.jpg",
-            "white_wood": f"/static/products/{triptych_id}/living_room_white_wood.jpg",
-            "canvas_wrap": f"/static/products/{triptych_id}/living_room_canvas_wrap.jpg",
-            "unframed_poster": f"/static/products/{triptych_id}/living_room_unframed_poster.jpg"
+            f_key: f"/static/products/{triptych_id}/living_room_{f_key}.jpg"
+            for f_key in MockupAgent.FRAME_CONFIGS.keys()
+        },
+        "corner_detail_frames": {
+            f_key: f"/static/products/{triptych_id}/corner_{f_key}.jpg"
+            for f_key in MockupAgent.FRAME_CONFIGS.keys()
         },
         "framed_detail_frames": {
-            "natural_oak": f"/static/products/{triptych_id}/framed_natural_oak.jpg",
-            "black_wood": f"/static/products/{triptych_id}/framed_black_wood.jpg",
-            "white_wood": f"/static/products/{triptych_id}/framed_white_wood.jpg",
-            "canvas_wrap": f"/static/products/{triptych_id}/framed_canvas_wrap.jpg",
-            "unframed_poster": f"/static/products/{triptych_id}/framed_unframed_poster.jpg"
+            f_key: f"/static/products/{triptych_id}/framed_{f_key}.jpg"
+            for f_key in MockupAgent.FRAME_CONFIGS.keys()
         }
     },
     "variants": triptych_variants
