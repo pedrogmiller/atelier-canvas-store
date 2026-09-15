@@ -63,23 +63,6 @@
         "white_wood": "/static/products/formes-et-signes-lenvol-indigo-ops-fs-01/framed_white_wood.jpg",
         "canvas_wrap": "/static/products/formes-et-signes-lenvol-indigo-ops-fs-01/framed_canvas_wrap.jpg",
         "unframed_poster": "/static/products/formes-et-signes-lenvol-indigo-ops-fs-01/framed_unframed_poster.jpg"
-      },
-      "corner": "/static/products/formes-et-signes-lenvol-indigo-ops-fs-01/corner_natural_oak.jpg",
-      "corner_detail": "/static/products/formes-et-signes-lenvol-indigo-ops-fs-01/corner_natural_oak.jpg",
-      "gallery_wall": "/static/products/formes-et-signes-lenvol-indigo-ops-fs-01/gallery_wall_natural_oak.jpg",
-      "corner_detail_frames": {
-        "natural_oak": "/static/products/formes-et-signes-lenvol-indigo-ops-fs-01/corner_natural_oak.jpg",
-        "black_wood": "/static/products/formes-et-signes-lenvol-indigo-ops-fs-01/corner_black_wood.jpg",
-        "white_wood": "/static/products/formes-et-signes-lenvol-indigo-ops-fs-01/corner_white_wood.jpg",
-        "canvas_wrap": "/static/products/formes-et-signes-lenvol-indigo-ops-fs-01/corner_canvas_wrap.jpg",
-        "unframed_poster": "/static/products/formes-et-signes-lenvol-indigo-ops-fs-01/corner_unframed_poster.jpg"
-      },
-      "gallery_wall_frames": {
-        "natural_oak": "/static/products/formes-et-signes-lenvol-indigo-ops-fs-01/gallery_wall_natural_oak.jpg",
-        "black_wood": "/static/products/formes-et-signes-lenvol-indigo-ops-fs-01/gallery_wall_black_wood.jpg",
-        "white_wood": "/static/products/formes-et-signes-lenvol-indigo-ops-fs-01/gallery_wall_white_wood.jpg",
-        "canvas_wrap": "/static/products/formes-et-signes-lenvol-indigo-ops-fs-01/gallery_wall_canvas_wrap.jpg",
-        "unframed_poster": "/static/products/formes-et-signes-lenvol-indigo-ops-fs-01/gallery_wall_unframed_poster.jpg"
       }
     },
     "variants": [
@@ -315,23 +298,6 @@
         "white_wood": "/static/products/formes-et-signes-bleu-lunaire-ops-fs-02/framed_white_wood.jpg",
         "canvas_wrap": "/static/products/formes-et-signes-bleu-lunaire-ops-fs-02/framed_canvas_wrap.jpg",
         "unframed_poster": "/static/products/formes-et-signes-bleu-lunaire-ops-fs-02/framed_unframed_poster.jpg"
-      },
-      "corner": "/static/products/formes-et-signes-bleu-lunaire-ops-fs-02/corner_natural_oak.jpg",
-      "corner_detail": "/static/products/formes-et-signes-bleu-lunaire-ops-fs-02/corner_natural_oak.jpg",
-      "gallery_wall": "/static/products/formes-et-signes-bleu-lunaire-ops-fs-02/gallery_wall_natural_oak.jpg",
-      "corner_detail_frames": {
-        "natural_oak": "/static/products/formes-et-signes-bleu-lunaire-ops-fs-02/corner_natural_oak.jpg",
-        "black_wood": "/static/products/formes-et-signes-bleu-lunaire-ops-fs-02/corner_black_wood.jpg",
-        "white_wood": "/static/products/formes-et-signes-bleu-lunaire-ops-fs-02/corner_white_wood.jpg",
-        "canvas_wrap": "/static/products/formes-et-signes-bleu-lunaire-ops-fs-02/corner_canvas_wrap.jpg",
-        "unframed_poster": "/static/products/formes-et-signes-bleu-lunaire-ops-fs-02/corner_unframed_poster.jpg"
-      },
-      "gallery_wall_frames": {
-        "natural_oak": "/static/products/formes-et-signes-bleu-lunaire-ops-fs-02/gallery_wall_natural_oak.jpg",
-        "black_wood": "/static/products/formes-et-signes-bleu-lunaire-ops-fs-02/gallery_wall_black_wood.jpg",
-        "white_wood": "/static/products/formes-et-signes-bleu-lunaire-ops-fs-02/gallery_wall_white_wood.jpg",
-        "canvas_wrap": "/static/products/formes-et-signes-bleu-lunaire-ops-fs-02/gallery_wall_canvas_wrap.jpg",
-        "unframed_poster": "/static/products/formes-et-signes-bleu-lunaire-ops-fs-02/gallery_wall_unframed_poster.jpg"
       }
     },
     "variants": [
@@ -567,23 +533,6 @@
         "white_wood": "/static/products/formes-et-signes-ocre-cosmique-ops-fs-03/framed_white_wood.jpg",
         "canvas_wrap": "/static/products/formes-et-signes-ocre-cosmique-ops-fs-03/framed_canvas_wrap.jpg",
         "unframed_poster": "/static/products/formes-et-signes-ocre-cosmique-ops-fs-03/framed_unframed_poster.jpg"
-      },
-      "corner": "/static/products/formes-et-signes-ocre-cosmique-ops-fs-03/corner_natural_oak.jpg",
-      "corner_detail": "/static/products/formes-et-signes-ocre-cosmique-ops-fs-03/corner_natural_oak.jpg",
-      "gallery_wall": "/static/products/formes-et-signes-ocre-cosmique-ops-fs-03/gallery_wall_natural_oak.jpg",
-      "corner_detail_frames": {
-        "natural_oak": "/static/products/formes-et-signes-ocre-cosmique-ops-fs-03/corner_natural_oak.jpg",
-        "black_wood": "/static/products/formes-et-signes-ocre-cosmique-ops-fs-03/corner_black_wood.jpg",
-        "white_wood": "/static/products/formes-et-signes-ocre-cosmique-ops-fs-03/corner_white_wood.jpg",
-        "canvas_wrap": "/static/products/formes-et-signes-ocre-cosmique-ops-fs-03/corner_canvas_wrap.jpg",
-        "unframed_poster": "/static/products/formes-et-signes-ocre-cosmique-ops-fs-03/corner_unframed_poster.jpg"
-      },
-      "gallery_wall_frames": {
-        "natural_oak": "/static/products/formes-et-signes-ocre-cosmique-ops-fs-03/gallery_wall_natural_oak.jpg",
-        "black_wood": "/static/products/formes-et-signes-ocre-cosmique-ops-fs-03/gallery_wall_black_wood.jpg",
-        "white_wood": "/static/products/formes-et-signes-ocre-cosmique-ops-fs-03/gallery_wall_white_wood.jpg",
-        "canvas_wrap": "/static/products/formes-et-signes-ocre-cosmique-ops-fs-03/gallery_wall_canvas_wrap.jpg",
-        "unframed_poster": "/static/products/formes-et-signes-ocre-cosmique-ops-fs-03/gallery_wall_unframed_poster.jpg"
       }
     },
     "variants": [
@@ -819,23 +768,6 @@
         "white_wood": "/static/products/formes-et-signes-polyptyque-lithographique-ops-fs-04/framed_white_wood.jpg",
         "canvas_wrap": "/static/products/formes-et-signes-polyptyque-lithographique-ops-fs-04/framed_canvas_wrap.jpg",
         "unframed_poster": "/static/products/formes-et-signes-polyptyque-lithographique-ops-fs-04/framed_unframed_poster.jpg"
-      },
-      "corner": "/static/products/formes-et-signes-polyptyque-lithographique-ops-fs-04/corner_natural_oak.jpg",
-      "corner_detail": "/static/products/formes-et-signes-polyptyque-lithographique-ops-fs-04/corner_natural_oak.jpg",
-      "gallery_wall": "/static/products/formes-et-signes-polyptyque-lithographique-ops-fs-04/gallery_wall_natural_oak.jpg",
-      "corner_detail_frames": {
-        "natural_oak": "/static/products/formes-et-signes-polyptyque-lithographique-ops-fs-04/corner_natural_oak.jpg",
-        "black_wood": "/static/products/formes-et-signes-polyptyque-lithographique-ops-fs-04/corner_black_wood.jpg",
-        "white_wood": "/static/products/formes-et-signes-polyptyque-lithographique-ops-fs-04/corner_white_wood.jpg",
-        "canvas_wrap": "/static/products/formes-et-signes-polyptyque-lithographique-ops-fs-04/corner_canvas_wrap.jpg",
-        "unframed_poster": "/static/products/formes-et-signes-polyptyque-lithographique-ops-fs-04/corner_unframed_poster.jpg"
-      },
-      "gallery_wall_frames": {
-        "natural_oak": "/static/products/formes-et-signes-polyptyque-lithographique-ops-fs-04/gallery_wall_natural_oak.jpg",
-        "black_wood": "/static/products/formes-et-signes-polyptyque-lithographique-ops-fs-04/gallery_wall_black_wood.jpg",
-        "white_wood": "/static/products/formes-et-signes-polyptyque-lithographique-ops-fs-04/gallery_wall_white_wood.jpg",
-        "canvas_wrap": "/static/products/formes-et-signes-polyptyque-lithographique-ops-fs-04/gallery_wall_canvas_wrap.jpg",
-        "unframed_poster": "/static/products/formes-et-signes-polyptyque-lithographique-ops-fs-04/gallery_wall_unframed_poster.jpg"
       }
     },
     "variants": [
@@ -1071,30 +1003,13 @@
         "white_wood": "/static/products/formes-et-signes-signature-diptych-set-of-2/framed_white_wood.jpg",
         "canvas_wrap": "/static/products/formes-et-signes-signature-diptych-set-of-2/framed_canvas_wrap.jpg",
         "unframed_poster": "/static/products/formes-et-signes-signature-diptych-set-of-2/framed_unframed_poster.jpg"
-      },
-      "corner": "/static/products/formes-et-signes-signature-diptych-set-of-2/corner_natural_oak.jpg",
-      "corner_detail": "/static/products/formes-et-signes-signature-diptych-set-of-2/corner_natural_oak.jpg",
-      "gallery_wall": "/static/products/formes-et-signes-signature-diptych-set-of-2/gallery_wall_natural_oak.jpg",
-      "corner_detail_frames": {
-        "natural_oak": "/static/products/formes-et-signes-signature-diptych-set-of-2/corner_natural_oak.jpg",
-        "black_wood": "/static/products/formes-et-signes-signature-diptych-set-of-2/corner_black_wood.jpg",
-        "white_wood": "/static/products/formes-et-signes-signature-diptych-set-of-2/corner_white_wood.jpg",
-        "canvas_wrap": "/static/products/formes-et-signes-signature-diptych-set-of-2/corner_canvas_wrap.jpg",
-        "unframed_poster": "/static/products/formes-et-signes-signature-diptych-set-of-2/corner_unframed_poster.jpg"
-      },
-      "gallery_wall_frames": {
-        "natural_oak": "/static/products/formes-et-signes-signature-diptych-set-of-2/gallery_wall_natural_oak.jpg",
-        "black_wood": "/static/products/formes-et-signes-signature-diptych-set-of-2/gallery_wall_black_wood.jpg",
-        "white_wood": "/static/products/formes-et-signes-signature-diptych-set-of-2/gallery_wall_white_wood.jpg",
-        "canvas_wrap": "/static/products/formes-et-signes-signature-diptych-set-of-2/gallery_wall_canvas_wrap.jpg",
-        "unframed_poster": "/static/products/formes-et-signes-signature-diptych-set-of-2/gallery_wall_unframed_poster.jpg"
       }
     },
     "variants": [
       {
         "variant_id": "unframed_poster_30x40_cm",
         "size": "30x40_cm",
-        "size_label": "30x40 cm (12x16 in)",
+        "size_label": "2x 30x40 cm (12x16 in)",
         "frame_type": "unframed_poster",
         "frame_label": "Museum-Grade Matte Fine Art Print (Unframed)",
         "gelato_sku": "poster_matte_30x40-cm_250-gsm",
@@ -1108,7 +1023,7 @@
       {
         "variant_id": "natural_oak_30x40_cm",
         "size": "30x40_cm",
-        "size_label": "30x40 cm (12x16 in)",
+        "size_label": "2x 30x40 cm (12x16 in)",
         "frame_type": "natural_oak",
         "frame_label": "Solid Natural Oak Wood Frame",
         "gelato_sku": "framed-poster_flat_wood_natural_30x40-cm_200-gsm",
@@ -1122,7 +1037,7 @@
       {
         "variant_id": "black_wood_30x40_cm",
         "size": "30x40_cm",
-        "size_label": "30x40 cm (12x16 in)",
+        "size_label": "2x 30x40 cm (12x16 in)",
         "frame_type": "black_wood",
         "frame_label": "Matte Black Solid Wood Frame",
         "gelato_sku": "framed-poster_flat_wood_black_30x40-cm_200-gsm",
@@ -1136,7 +1051,7 @@
       {
         "variant_id": "white_wood_30x40_cm",
         "size": "30x40_cm",
-        "size_label": "30x40 cm (12x16 in)",
+        "size_label": "2x 30x40 cm (12x16 in)",
         "frame_type": "white_wood",
         "frame_label": "Crisp White Solid Wood Frame",
         "gelato_sku": "framed-poster_flat_wood_white_30x40-cm_200-gsm",
@@ -1150,7 +1065,7 @@
       {
         "variant_id": "unframed_poster_50x70_cm",
         "size": "50x70_cm",
-        "size_label": "50x70 cm (20x28 in)",
+        "size_label": "2x 50x70 cm (20x28 in)",
         "frame_type": "unframed_poster",
         "frame_label": "Museum-Grade Matte Fine Art Print (Unframed)",
         "gelato_sku": "poster_matte_50x70-cm_250-gsm",
@@ -1164,7 +1079,7 @@
       {
         "variant_id": "natural_oak_50x70_cm",
         "size": "50x70_cm",
-        "size_label": "50x70 cm (20x28 in)",
+        "size_label": "2x 50x70 cm (20x28 in)",
         "frame_type": "natural_oak",
         "frame_label": "Solid Natural Oak Wood Frame",
         "gelato_sku": "framed-poster_flat_wood_natural_50x70-cm_200-gsm",
@@ -1178,7 +1093,7 @@
       {
         "variant_id": "black_wood_50x70_cm",
         "size": "50x70_cm",
-        "size_label": "50x70 cm (20x28 in)",
+        "size_label": "2x 50x70 cm (20x28 in)",
         "frame_type": "black_wood",
         "frame_label": "Matte Black Solid Wood Frame",
         "gelato_sku": "framed-poster_flat_wood_black_50x70-cm_200-gsm",
@@ -1192,7 +1107,7 @@
       {
         "variant_id": "white_wood_50x70_cm",
         "size": "50x70_cm",
-        "size_label": "50x70 cm (20x28 in)",
+        "size_label": "2x 50x70 cm (20x28 in)",
         "frame_type": "white_wood",
         "frame_label": "Crisp White Solid Wood Frame",
         "gelato_sku": "framed-poster_flat_wood_white_50x70-cm_200-gsm",
@@ -1206,7 +1121,7 @@
       {
         "variant_id": "unframed_poster_70x100_cm",
         "size": "70x100_cm",
-        "size_label": "70x100 cm (28x40 in)",
+        "size_label": "2x 70x100 cm (28x40 in)",
         "frame_type": "unframed_poster",
         "frame_label": "Museum-Grade Matte Fine Art Print (Unframed)",
         "gelato_sku": "poster_matte_70x100-cm_250-gsm",
@@ -1220,7 +1135,7 @@
       {
         "variant_id": "natural_oak_70x100_cm",
         "size": "70x100_cm",
-        "size_label": "70x100 cm (28x40 in)",
+        "size_label": "2x 70x100 cm (28x40 in)",
         "frame_type": "natural_oak",
         "frame_label": "Solid Natural Oak Wood Frame",
         "gelato_sku": "framed-poster_flat_wood_natural_70x100-cm_200-gsm",
@@ -1234,7 +1149,7 @@
       {
         "variant_id": "black_wood_70x100_cm",
         "size": "70x100_cm",
-        "size_label": "70x100 cm (28x40 in)",
+        "size_label": "2x 70x100 cm (28x40 in)",
         "frame_type": "black_wood",
         "frame_label": "Matte Black Solid Wood Frame",
         "gelato_sku": "framed-poster_flat_wood_black_70x100-cm_200-gsm",
@@ -1248,7 +1163,7 @@
       {
         "variant_id": "white_wood_70x100_cm",
         "size": "70x100_cm",
-        "size_label": "70x100 cm (28x40 in)",
+        "size_label": "2x 70x100 cm (28x40 in)",
         "frame_type": "white_wood",
         "frame_label": "Crisp White Solid Wood Frame",
         "gelato_sku": "framed-poster_flat_wood_white_70x100-cm_200-gsm",
@@ -1324,30 +1239,13 @@
         "white_wood": "/static/products/formes-et-signes-collectors-triptych-set-of-3/framed_white_wood.jpg",
         "canvas_wrap": "/static/products/formes-et-signes-collectors-triptych-set-of-3/framed_canvas_wrap.jpg",
         "unframed_poster": "/static/products/formes-et-signes-collectors-triptych-set-of-3/framed_unframed_poster.jpg"
-      },
-      "corner": "/static/products/formes-et-signes-collectors-triptych-set-of-3/corner_natural_oak.jpg",
-      "corner_detail": "/static/products/formes-et-signes-collectors-triptych-set-of-3/corner_natural_oak.jpg",
-      "gallery_wall": "/static/products/formes-et-signes-collectors-triptych-set-of-3/gallery_wall_natural_oak.jpg",
-      "corner_detail_frames": {
-        "natural_oak": "/static/products/formes-et-signes-collectors-triptych-set-of-3/corner_natural_oak.jpg",
-        "black_wood": "/static/products/formes-et-signes-collectors-triptych-set-of-3/corner_black_wood.jpg",
-        "white_wood": "/static/products/formes-et-signes-collectors-triptych-set-of-3/corner_white_wood.jpg",
-        "canvas_wrap": "/static/products/formes-et-signes-collectors-triptych-set-of-3/corner_canvas_wrap.jpg",
-        "unframed_poster": "/static/products/formes-et-signes-collectors-triptych-set-of-3/corner_unframed_poster.jpg"
-      },
-      "gallery_wall_frames": {
-        "natural_oak": "/static/products/formes-et-signes-collectors-triptych-set-of-3/gallery_wall_natural_oak.jpg",
-        "black_wood": "/static/products/formes-et-signes-collectors-triptych-set-of-3/gallery_wall_black_wood.jpg",
-        "white_wood": "/static/products/formes-et-signes-collectors-triptych-set-of-3/gallery_wall_white_wood.jpg",
-        "canvas_wrap": "/static/products/formes-et-signes-collectors-triptych-set-of-3/gallery_wall_canvas_wrap.jpg",
-        "unframed_poster": "/static/products/formes-et-signes-collectors-triptych-set-of-3/gallery_wall_unframed_poster.jpg"
       }
     },
     "variants": [
       {
         "variant_id": "unframed_poster_30x40_cm",
         "size": "30x40_cm",
-        "size_label": "30x40 cm (12x16 in)",
+        "size_label": "3x 30x40 cm (12x16 in)",
         "frame_type": "unframed_poster",
         "frame_label": "Museum-Grade Matte Fine Art Print (Unframed)",
         "gelato_sku": "poster_matte_30x40-cm_250-gsm",
@@ -1361,7 +1259,7 @@
       {
         "variant_id": "natural_oak_30x40_cm",
         "size": "30x40_cm",
-        "size_label": "30x40 cm (12x16 in)",
+        "size_label": "3x 30x40 cm (12x16 in)",
         "frame_type": "natural_oak",
         "frame_label": "Solid Natural Oak Wood Frame",
         "gelato_sku": "framed-poster_flat_wood_natural_30x40-cm_200-gsm",
@@ -1375,7 +1273,7 @@
       {
         "variant_id": "black_wood_30x40_cm",
         "size": "30x40_cm",
-        "size_label": "30x40 cm (12x16 in)",
+        "size_label": "3x 30x40 cm (12x16 in)",
         "frame_type": "black_wood",
         "frame_label": "Matte Black Solid Wood Frame",
         "gelato_sku": "framed-poster_flat_wood_black_30x40-cm_200-gsm",
@@ -1389,7 +1287,7 @@
       {
         "variant_id": "white_wood_30x40_cm",
         "size": "30x40_cm",
-        "size_label": "30x40 cm (12x16 in)",
+        "size_label": "3x 30x40 cm (12x16 in)",
         "frame_type": "white_wood",
         "frame_label": "Crisp White Solid Wood Frame",
         "gelato_sku": "framed-poster_flat_wood_white_30x40-cm_200-gsm",
@@ -1403,7 +1301,7 @@
       {
         "variant_id": "unframed_poster_50x70_cm",
         "size": "50x70_cm",
-        "size_label": "50x70 cm (20x28 in)",
+        "size_label": "3x 50x70 cm (20x28 in)",
         "frame_type": "unframed_poster",
         "frame_label": "Museum-Grade Matte Fine Art Print (Unframed)",
         "gelato_sku": "poster_matte_50x70-cm_250-gsm",
@@ -1417,7 +1315,7 @@
       {
         "variant_id": "natural_oak_50x70_cm",
         "size": "50x70_cm",
-        "size_label": "50x70 cm (20x28 in)",
+        "size_label": "3x 50x70 cm (20x28 in)",
         "frame_type": "natural_oak",
         "frame_label": "Solid Natural Oak Wood Frame",
         "gelato_sku": "framed-poster_flat_wood_natural_50x70-cm_200-gsm",
@@ -1431,7 +1329,7 @@
       {
         "variant_id": "black_wood_50x70_cm",
         "size": "50x70_cm",
-        "size_label": "50x70 cm (20x28 in)",
+        "size_label": "3x 50x70 cm (20x28 in)",
         "frame_type": "black_wood",
         "frame_label": "Matte Black Solid Wood Frame",
         "gelato_sku": "framed-poster_flat_wood_black_50x70-cm_200-gsm",
@@ -1445,7 +1343,7 @@
       {
         "variant_id": "white_wood_50x70_cm",
         "size": "50x70_cm",
-        "size_label": "50x70 cm (20x28 in)",
+        "size_label": "3x 50x70 cm (20x28 in)",
         "frame_type": "white_wood",
         "frame_label": "Crisp White Solid Wood Frame",
         "gelato_sku": "framed-poster_flat_wood_white_50x70-cm_200-gsm",
@@ -1459,7 +1357,7 @@
       {
         "variant_id": "unframed_poster_70x100_cm",
         "size": "70x100_cm",
-        "size_label": "70x100 cm (28x40 in)",
+        "size_label": "3x 70x100 cm (28x40 in)",
         "frame_type": "unframed_poster",
         "frame_label": "Museum-Grade Matte Fine Art Print (Unframed)",
         "gelato_sku": "poster_matte_70x100-cm_250-gsm",
@@ -1473,7 +1371,7 @@
       {
         "variant_id": "natural_oak_70x100_cm",
         "size": "70x100_cm",
-        "size_label": "70x100 cm (28x40 in)",
+        "size_label": "3x 70x100 cm (28x40 in)",
         "frame_type": "natural_oak",
         "frame_label": "Solid Natural Oak Wood Frame",
         "gelato_sku": "framed-poster_flat_wood_natural_70x100-cm_200-gsm",
@@ -1487,7 +1385,7 @@
       {
         "variant_id": "black_wood_70x100_cm",
         "size": "70x100_cm",
-        "size_label": "70x100 cm (28x40 in)",
+        "size_label": "3x 70x100 cm (28x40 in)",
         "frame_type": "black_wood",
         "frame_label": "Matte Black Solid Wood Frame",
         "gelato_sku": "framed-poster_flat_wood_black_70x100-cm_200-gsm",
@@ -1501,7 +1399,7 @@
       {
         "variant_id": "white_wood_70x100_cm",
         "size": "70x100_cm",
-        "size_label": "70x100 cm (28x40 in)",
+        "size_label": "3x 70x100 cm (28x40 in)",
         "frame_type": "white_wood",
         "frame_label": "Crisp White Solid Wood Frame",
         "gelato_sku": "framed-poster_flat_wood_white_70x100-cm_200-gsm",

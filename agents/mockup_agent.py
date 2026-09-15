@@ -344,23 +344,39 @@ class MockupAgent(BaseAgent):
         return framed
 
     def _create_clean_framed_shot(self, art: Image.Image, frame_type: str, cfg: Dict[str, Any]) -> Image.Image:
-        """High-resolution gallery studio product shot for the specific frame."""
+        """High-resolution gallery studio product shot with adaptive portrait/landscape orientation handling."""
         canvas_w, canvas_h = 1600, 1600
         scene = Image.new("RGB", (canvas_w, canvas_h), (246, 244, 240))
 
-        target_art_h = 980
         aspect = art.width / art.height
-        target_art_w = int(target_art_h * aspect)
-        resized_art = art.resize((target_art_w, target_art_h), RESAMPLE_FILTER)
-        framed = self._apply_frame(resized_art, frame_type=frame_type, cfg=cfg, scale_ratio=1.5)
+        if aspect > 1.05:
+            # Landscape orientation: scale relative to max width
+            target_art_w = 1150
+            target_art_h = int(target_art_w / aspect)
+            scale_ratio = 1.25
+        else:
+            # Portrait or square orientation: scale relative to max height
+            target_art_h = 980
+            target_art_w = int(target_art_h * aspect)
+            scale_ratio = 1.45
 
+        resized_art = art.resize((target_art_w, target_art_h), RESAMPLE_FILTER)
+        framed = self._apply_frame(resized_art, frame_type=frame_type, cfg=cfg, scale_ratio=scale_ratio)
+
+        # Ensure framed artwork never overflows the canvas bounds
         fw, fh = framed.size
+        max_dim = 1360
+        if fw > max_dim or fh > max_dim:
+            fit_scale = max_dim / float(max(fw, fh))
+            framed = framed.resize((int(fw * fit_scale), int(fh * fit_scale)), RESAMPLE_FILTER)
+            fw, fh = framed.size
+
         fx = (canvas_w - fw) // 2
         fy = (canvas_h - fh) // 2
 
         shadow = Image.new("RGBA", (canvas_w, canvas_h), (0, 0, 0, 0))
         s_draw = ImageDraw.Draw(shadow)
-        s_draw.rectangle([fx + 16, fy + 24, fx + fw + 24, fy + fh + 32], fill=(20, 20, 25, 110))
+        s_draw.rectangle([fx + 16, fy + 22, fx + fw + 22, fy + fh + 28], fill=(20, 20, 25, 110))
         shadow = shadow.filter(ImageFilter.GaussianBlur(24))
         scene.paste(shadow, (0, 0), shadow)
 

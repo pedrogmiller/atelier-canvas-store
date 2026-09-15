@@ -96,10 +96,12 @@ def build_variants(base_sku, discount=0.0, is_bundle=False, bundle_count=1):
             var_id = f"{f_type}_{s['size']}"
             is_hero = (s["size"] == "50x70_cm" and f_type == "natural_oak")
             
+            size_label = f"{bundle_count}x {s['size_label']}" if is_bundle and bundle_count > 1 else s["size_label"]
+            
             variants.append({
                 "variant_id": var_id,
                 "size": s["size"],
-                "size_label": s["size_label"],
+                "size_label": size_label,
                 "frame_type": f_type,
                 "frame_label": f_label,
                 "gelato_sku": g_sku,
@@ -139,7 +141,7 @@ for p in products_info:
     
     # Living room frames
     for f_key, cfg in MockupAgent.FRAME_CONFIGS.items():
-        lr_img = mockup_agent._create_living_room_mockup(art_img, frame_type=f_key, cfg=cfg)
+        lr_img = mockup_agent._create_credenza_living_room_mockup(art_img, frame_type=f_key, cfg=cfg)
         lr_img.save(prod_static_dir / f"living_room_{f_key}.jpg", "JPEG", quality=92)
         
         fd_img = mockup_agent._create_clean_framed_shot(art_img, frame_type=f_key, cfg=cfg)
@@ -184,9 +186,9 @@ for p in products_info:
         "hero_price": 135.0,
         "hero_variant_id": "natural_oak_50x70_cm",
         "images": {
-            "hero": f"/static/products/{p_id}/living_room_oak.jpg",
-            "framed_product": f"/static/products/{p_id}/framed_product.jpg",
-            "living_room": f"/static/products/{p_id}/living_room_oak.jpg",
+            "hero": f"/static/products/{p_id}/framed_natural_oak.jpg",
+            "framed_product": f"/static/products/{p_id}/framed_natural_oak.jpg",
+            "living_room": f"/static/products/{p_id}/living_room_natural_oak.jpg",
             "bedroom": f"/static/products/{p_id}/bedroom_black.jpg",
             "studio": f"/static/products/{p_id}/studio_white.jpg",
             "master_art": f"/static/products/{p_id}/master_art.jpg",
@@ -228,18 +230,220 @@ diptych_dir.mkdir(parents=True, exist_ok=True)
 diptych_master_path = diptych_dir / "master_art.jpg"
 diptych_master.save(diptych_master_path, "JPEG", quality=92)
 
-# Generate Diptych mockups
-for f_key, cfg in MockupAgent.FRAME_CONFIGS.items():
-    lr_img = mockup_agent._create_living_room_mockup(diptych_master, frame_type=f_key, cfg=cfg)
-    lr_img.save(diptych_dir / f"living_room_{f_key}.jpg", "JPEG", quality=92)
-    fd_img = mockup_agent._create_clean_framed_shot(diptych_master, frame_type=f_key, cfg=cfg)
-    fd_img.save(diptych_dir / f"framed_{f_key}.jpg", "JPEG", quality=92)
+def apply_frame(art: Image.Image, frame_type: str, cfg: dict, scale_ratio: float = 1.0) -> Image.Image:
+    return mockup_agent._apply_frame(art, frame_type=frame_type, cfg=cfg, scale_ratio=scale_ratio)
 
-shutil.copy(diptych_dir / "living_room_natural_oak.jpg", diptych_dir / "living_room_oak.jpg")
+def create_multi_piece_framed_shot(arts: list, frame_type: str, cfg: dict) -> Image.Image:
+    canvas_w, canvas_h = 1600, 1600
+    scene = Image.new("RGB", (canvas_w, canvas_h), (246, 244, 240))
+    n = len(arts)
+    
+    target_art_h = 780 if n == 2 else 680
+    scale_ratio = 1.0 if n == 2 else 0.85
+    gap = 48 if n == 2 else 36
+
+    framed_pieces = []
+    for art in arts:
+        aspect = art.width / art.height
+        target_art_w = int(target_art_h * aspect)
+        resized = art.resize((target_art_w, target_art_h), Image.Resampling.LANCZOS)
+        framed = apply_frame(resized, frame_type, cfg, scale_ratio=scale_ratio)
+        framed_pieces.append(framed)
+
+    piece_w, piece_h = framed_pieces[0].size
+    total_w = (piece_w * n) + (gap * (n - 1))
+    start_x = (canvas_w - total_w) // 2
+    start_y = (canvas_h - piece_h) // 2
+
+    shadow = Image.new("RGBA", (canvas_w, canvas_h), (0, 0, 0, 0))
+    s_draw = ImageDraw.Draw(shadow)
+    for i in range(n):
+        px = start_x + i * (piece_w + gap)
+        py = start_y
+        s_draw.rectangle([px + 12, py + 18, px + piece_w + 18, py + piece_h + 24], fill=(20, 20, 25, 105))
+    
+    shadow = shadow.filter(ImageFilter.GaussianBlur(20))
+    scene.paste(shadow, (0, 0), shadow)
+
+    for i, piece in enumerate(framed_pieces):
+        px = start_x + i * (piece_w + gap)
+        py = start_y
+        scene.paste(piece, (px, py))
+
+    return scene
+
+def create_multi_piece_gallery_wall(arts: list, frame_type: str, cfg: dict) -> Image.Image:
+    canvas_w, canvas_h = 1600, 1200
+    scene = Image.new("RGB", (canvas_w, canvas_h), (239, 235, 227))
+
+    draw = ImageDraw.Draw(scene)
+    floor_y = 1000
+    draw.rectangle([0, floor_y, canvas_w, canvas_h], fill=(185, 150, 115))
+    draw.rectangle([0, floor_y - 20, canvas_w, floor_y], fill=(245, 242, 236))
+    draw.line([(0, floor_y - 20), (canvas_w, floor_y - 20)], fill=(215, 210, 202), width=1)
+
+    bench_w = 1360
+    bench_h = 42
+    bench_x = (canvas_w - bench_w) // 2
+    bench_y = 865
+    
+    b_shadow = Image.new("RGBA", (canvas_w, canvas_h), (0, 0, 0, 0))
+    bs_draw = ImageDraw.Draw(b_shadow)
+    bs_draw.rectangle([bench_x + 8, bench_y + 16, bench_x + bench_w + 8, bench_y + bench_h + 16], fill=(20, 18, 15, 85))
+    b_shadow = b_shadow.filter(ImageFilter.GaussianBlur(16))
+    scene.paste(b_shadow, (0, 0), b_shadow)
+
+    draw.rectangle([bench_x, bench_y, bench_x + bench_w, bench_y + bench_h], fill=(215, 180, 140))
+    for blx in [bench_x + 90, bench_x + bench_w - 105]:
+        draw.rectangle([blx, bench_y + bench_h, blx + 16, floor_y], fill=(30, 28, 26))
+
+    vx = bench_x + bench_w - 190
+    vy = bench_y - 85
+    draw.ellipse([vx, vy, vx + 75, vy + 90], fill=(188, 112, 85))
+    draw.rectangle([vx + 24, vy - 16, vx + 52, vy + 12], fill=(188, 112, 85))
+
+    n = len(arts)
+    target_art_h = 460 if n == 2 else 400
+    scale_ratio = 0.75 if n == 2 else 0.65
+    gap = 48 if n == 2 else 32
+
+    framed_pieces = []
+    for art in arts:
+        aspect = art.width / art.height
+        target_art_w = int(target_art_h * aspect)
+        resized = art.resize((target_art_w, target_art_h), Image.Resampling.LANCZOS)
+        framed = apply_frame(resized, frame_type, cfg, scale_ratio=scale_ratio)
+        framed_pieces.append(framed)
+
+    piece_w, piece_h = framed_pieces[0].size
+    total_w = (piece_w * n) + (gap * (n - 1))
+    start_x = (canvas_w - total_w) // 2
+    art_y = 230 if n == 2 else 260
+
+    shadow = Image.new("RGBA", (canvas_w, canvas_h), (0, 0, 0, 0))
+    s_draw = ImageDraw.Draw(shadow)
+    for i in range(n):
+        px = start_x + i * (piece_w + gap)
+        s_draw.rectangle([px + 12, art_y + 16, px + piece_w + 12, art_y + piece_h + 16], fill=(20, 18, 15, 95))
+    shadow = shadow.filter(ImageFilter.GaussianBlur(18))
+    scene.paste(shadow, (0, 0), shadow)
+
+    for i, piece in enumerate(framed_pieces):
+        px = start_x + i * (piece_w + gap)
+        scene.paste(piece, (px, art_y))
+
+    sunlight = Image.new("RGBA", (canvas_w, canvas_h), (0, 0, 0, 0))
+    sl_draw = ImageDraw.Draw(sunlight)
+    sl_draw.polygon([(0, 0), (1000, 0), (1600, floor_y), (0, floor_y)], fill=(255, 252, 240, 20))
+    scene.paste(sunlight, (0, 0), sunlight)
+
+    return scene
+
+def create_multi_piece_bedroom(arts: list) -> Image.Image:
+    canvas_w, canvas_h = 1600, 1200
+    scene = Image.new("RGB", (canvas_w, canvas_h), (228, 226, 222))
+    draw = ImageDraw.Draw(scene)
+
+    hb_top = 720
+    if hasattr(draw, "rounded_rectangle"):
+        draw.rounded_rectangle([200, hb_top, 1400, 1200], radius=25, fill=(78, 85, 92))
+        draw.rounded_rectangle([260, hb_top - 60, 720, hb_top + 100], radius=20, fill=(240, 238, 232))
+        draw.rounded_rectangle([880, hb_top - 60, 1340, hb_top + 100], radius=20, fill=(240, 238, 232))
+    draw.rectangle([150, hb_top + 60, 1450, 1200], fill=(235, 230, 222))
+
+    n = len(arts)
+    target_art_h = 380 if n == 2 else 340
+    scale_ratio = 0.6 if n == 2 else 0.5
+    gap = 40 if n == 2 else 28
+    cfg = {"color": (28, 28, 30), "mat": 26, "frame_w": 14}
+
+    framed_pieces = []
+    for art in arts:
+        aspect = art.width / art.height
+        target_art_w = int(target_art_h * aspect)
+        resized = art.resize((target_art_w, target_art_h), Image.Resampling.LANCZOS)
+        framed = apply_frame(resized, "black_wood", cfg, scale_ratio=scale_ratio)
+        framed_pieces.append(framed)
+
+    piece_w, piece_h = framed_pieces[0].size
+    total_w = (piece_w * n) + (gap * (n - 1))
+    start_x = (canvas_w - total_w) // 2
+    art_y = 190
+
+    shadow = Image.new("RGBA", (canvas_w, canvas_h), (0, 0, 0, 0))
+    s_draw = ImageDraw.Draw(shadow)
+    for i in range(n):
+        px = start_x + i * (piece_w + gap)
+        s_draw.rectangle([px + 8, art_y + 12, px + piece_w + 12, art_y + piece_h + 14], fill=(20, 20, 25, 95))
+    shadow = shadow.filter(ImageFilter.GaussianBlur(10))
+    scene.paste(shadow, (0, 0), shadow)
+
+    for i, piece in enumerate(framed_pieces):
+        px = start_x + i * (piece_w + gap)
+        scene.paste(piece, (px, art_y))
+
+    return scene
+
+def create_multi_piece_studio(arts: list) -> Image.Image:
+    canvas_w, canvas_h = 1600, 1200
+    scene = Image.new("RGB", (canvas_w, canvas_h), (242, 240, 236))
+    draw = ImageDraw.Draw(scene)
+
+    draw.rectangle([0, 950, canvas_w, canvas_h], fill=(210, 208, 204))
+    draw.rectangle([200, 820, 1400, 950], fill=(160, 130, 100))
+    draw.line([(260, 950), (260, 1020)], fill=(40, 40, 40), width=6)
+    draw.line([(1340, 950), (1340, 1020)], fill=(40, 40, 40), width=6)
+
+    draw.ellipse([280, 750, 350, 830], fill=(245, 240, 235))
+    draw.rectangle([305, 710, 325, 755], fill=(245, 240, 235))
+
+    n = len(arts)
+    target_art_h = 390 if n == 2 else 350
+    scale_ratio = 0.6 if n == 2 else 0.5
+    gap = 40 if n == 2 else 28
+    cfg = {"color": (242, 240, 236), "mat": 28, "frame_w": 16}
+
+    framed_pieces = []
+    for art in arts:
+        aspect = art.width / art.height
+        target_art_w = int(target_art_h * aspect)
+        resized = art.resize((target_art_w, target_art_h), Image.Resampling.LANCZOS)
+        framed = apply_frame(resized, "white_wood", cfg, scale_ratio=scale_ratio)
+        framed_pieces.append(framed)
+
+    piece_w, piece_h = framed_pieces[0].size
+    total_w = (piece_w * n) + (gap * (n - 1))
+    start_x = (canvas_w - total_w) // 2
+    art_y = 230
+
+    shadow = Image.new("RGBA", (canvas_w, canvas_h), (0, 0, 0, 0))
+    s_draw = ImageDraw.Draw(shadow)
+    for i in range(n):
+        px = start_x + i * (piece_w + gap)
+        s_draw.rectangle([px + 10, art_y + 14, px + piece_w + 14, art_y + piece_h + 16], fill=(30, 30, 35, 80))
+    shadow = shadow.filter(ImageFilter.GaussianBlur(12))
+    scene.paste(shadow, (0, 0), shadow)
+
+    for i, piece in enumerate(framed_pieces):
+        px = start_x + i * (piece_w + gap)
+        scene.paste(piece, (px, art_y))
+
+    return scene
+
+# Generate Diptych mockups with separate frames
+for f_key, cfg in MockupAgent.FRAME_CONFIGS.items():
+    fd_img = create_multi_piece_framed_shot([art1, art2], frame_type=f_key, cfg=cfg)
+    fd_img.save(diptych_dir / f"framed_{f_key}.jpg", "JPEG", quality=95)
+    
+    gw_img = create_multi_piece_gallery_wall([art1, art2], frame_type=f_key, cfg=cfg)
+    gw_img.save(diptych_dir / f"living_room_{f_key}.jpg", "JPEG", quality=94)
+
 shutil.copy(diptych_dir / "framed_natural_oak.jpg", diptych_dir / "framed_product.jpg")
-bed_img = mockup_agent._create_bedroom_mockup(diptych_master, frame_color=(28, 28, 30), mat_border=30)
+shutil.copy(diptych_dir / "living_room_natural_oak.jpg", diptych_dir / "living_room_oak.jpg")
+
+bed_img = create_multi_piece_bedroom([art1, art2])
 bed_img.save(diptych_dir / "bedroom_black.jpg", "JPEG", quality=92)
-stu_img = mockup_agent._create_studio_mockup(diptych_master, frame_color=(242, 240, 236), mat_border=40)
+stu_img = create_multi_piece_studio([art1, art2])
 stu_img.save(diptych_dir / "studio_white.jpg", "JPEG", quality=92)
 
 diptych_variants = build_variants("OPS-BUNDLE-FS-DIPTYCH", discount=0.15, is_bundle=True, bundle_count=2)
@@ -272,9 +476,9 @@ diptych_entry = {
     "hero_price": 229.50,
     "hero_variant_id": "natural_oak_50x70_cm",
     "images": {
-        "hero": f"/static/products/{diptych_id}/living_room_oak.jpg",
-        "framed_product": f"/static/products/{diptych_id}/framed_product.jpg",
-        "living_room": f"/static/products/{diptych_id}/living_room_oak.jpg",
+        "hero": f"/static/products/{diptych_id}/framed_natural_oak.jpg",
+        "framed_product": f"/static/products/{diptych_id}/framed_natural_oak.jpg",
+        "living_room": f"/static/products/{diptych_id}/living_room_natural_oak.jpg",
         "bedroom": f"/static/products/{diptych_id}/bedroom_black.jpg",
         "studio": f"/static/products/{diptych_id}/studio_white.jpg",
         "master_art": f"/static/products/{diptych_id}/master_art.jpg",
@@ -310,18 +514,20 @@ triptych_dir.mkdir(parents=True, exist_ok=True)
 triptych_master_path = triptych_dir / "master_art.jpg"
 triptych_master.save(triptych_master_path, "JPEG", quality=92)
 
-# Generate Triptych mockups
+# Generate Triptych mockups with separate frames
 for f_key, cfg in MockupAgent.FRAME_CONFIGS.items():
-    lr_img = mockup_agent._create_living_room_mockup(triptych_master, frame_type=f_key, cfg=cfg)
-    lr_img.save(triptych_dir / f"living_room_{f_key}.jpg", "JPEG", quality=92)
-    fd_img = mockup_agent._create_clean_framed_shot(triptych_master, frame_type=f_key, cfg=cfg)
-    fd_img.save(triptych_dir / f"framed_{f_key}.jpg", "JPEG", quality=92)
+    fd_img = create_multi_piece_framed_shot([art1, art2, art3], frame_type=f_key, cfg=cfg)
+    fd_img.save(triptych_dir / f"framed_{f_key}.jpg", "JPEG", quality=95)
+    
+    gw_img = create_multi_piece_gallery_wall([art1, art2, art3], frame_type=f_key, cfg=cfg)
+    gw_img.save(triptych_dir / f"living_room_{f_key}.jpg", "JPEG", quality=94)
 
-shutil.copy(triptych_dir / "living_room_natural_oak.jpg", triptych_dir / "living_room_oak.jpg")
 shutil.copy(triptych_dir / "framed_natural_oak.jpg", triptych_dir / "framed_product.jpg")
-bed_img = mockup_agent._create_bedroom_mockup(triptych_master, frame_color=(28, 28, 30), mat_border=30)
+shutil.copy(triptych_dir / "living_room_natural_oak.jpg", triptych_dir / "living_room_oak.jpg")
+
+bed_img = create_multi_piece_bedroom([art1, art2, art3])
 bed_img.save(triptych_dir / "bedroom_black.jpg", "JPEG", quality=92)
-stu_img = mockup_agent._create_studio_mockup(triptych_master, frame_color=(242, 240, 236), mat_border=40)
+stu_img = create_multi_piece_studio([art1, art2, art3])
 stu_img.save(triptych_dir / "studio_white.jpg", "JPEG", quality=92)
 
 triptych_variants = build_variants("OPS-BUNDLE-FS-TRIPTYCH", discount=0.20, is_bundle=True, bundle_count=3)
@@ -354,9 +560,9 @@ triptych_entry = {
     "hero_price": 324.00,
     "hero_variant_id": "natural_oak_50x70_cm",
     "images": {
-        "hero": f"/static/products/{triptych_id}/living_room_oak.jpg",
-        "framed_product": f"/static/products/{triptych_id}/framed_product.jpg",
-        "living_room": f"/static/products/{triptych_id}/living_room_oak.jpg",
+        "hero": f"/static/products/{triptych_id}/framed_natural_oak.jpg",
+        "framed_product": f"/static/products/{triptych_id}/framed_natural_oak.jpg",
+        "living_room": f"/static/products/{triptych_id}/living_room_natural_oak.jpg",
         "bedroom": f"/static/products/{triptych_id}/bedroom_black.jpg",
         "studio": f"/static/products/{triptych_id}/studio_white.jpg",
         "master_art": f"/static/products/{triptych_id}/master_art.jpg",
