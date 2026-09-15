@@ -36,7 +36,7 @@
     }
 
     header {
-      padding: 24px 32px;
+      padding: 18px 32px;
       border-bottom: 1px solid var(--border);
       display: flex;
       justify-content: space-between;
@@ -46,25 +46,32 @@
       gap: 16px;
     }
 
-    .brand h1 {
-      font-family: 'Cormorant Garamond', serif;
-      font-size: 2rem;
-      font-weight: 400;
-      letter-spacing: -0.01em;
+    .brand-container {
+      display: flex;
+      align-items: center;
+      gap: 16px;
     }
 
-    .brand p {
-      font-size: 0.8rem;
+    .brand-logo {
+      height: 42px;
+      width: auto;
+      display: block;
+    }
+
+    .brand-tag {
+      font-size: 0.75rem;
       color: var(--text-muted);
-      letter-spacing: 0.06em;
+      letter-spacing: 0.08em;
       text-transform: uppercase;
+      border-left: 1px solid var(--border);
+      padding-left: 16px;
     }
 
     .main-layout {
       display: grid;
       grid-template-columns: 1fr 340px;
       flex: 1;
-      height: calc(100vh - 90px);
+      height: calc(100vh - 80px);
     }
 
     @media (max-width: 960px) {
@@ -349,9 +356,9 @@
 <body>
 
   <header>
-    <div class="brand">
-      <h1>Oak Print Studio</h1>
-      <p>Lifestyle Staging & Marketing Visualizer — Collection N° 01</p>
+    <div class="brand-container">
+      <img src="logo_white.png" alt="Oak Print Studio" class="brand-logo" />
+      <span class="brand-tag">Staging Studio</span>
     </div>
     <div>
       <a href="preview.html" style="color: var(--accent); text-decoration: none; font-size: 0.85rem; font-weight: 500;">

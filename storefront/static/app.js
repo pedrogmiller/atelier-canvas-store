@@ -4,6 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initLucideIcons();
   initCategoryFilters();
   initProductConfigurator();
+  initProductZoomLightbox();
   initCartDrawer();
 });
 
@@ -444,5 +445,168 @@ function updateCartUI() {
       `).join('');
     }
   }
+}
+
+// 5. High-Resolution Interactive Zoom & Lightbox
+function initProductZoomLightbox() {
+  const mainContainer = document.getElementById('main-view-container');
+  const mainImg = document.getElementById('main-view-image');
+  const modal = document.getElementById('zoom-lightbox-modal');
+  const modalImg = document.getElementById('modal-zoom-image');
+  const modalStage = document.getElementById('modal-zoom-stage');
+  const modalViewport = document.getElementById('modal-zoom-viewport');
+  const modalCloseBtn = document.getElementById('modal-close-btn');
+  const modalZoomToggleBtn = document.getElementById('modal-zoom-toggle-btn');
+  const modalZoomText = document.getElementById('modal-zoom-text');
+  const modalZoomIcon = document.getElementById('modal-zoom-icon');
+  const modalViewLabel = document.getElementById('modal-view-label');
+  const modalThumbBtns = document.querySelectorAll('.modal-thumb-btn');
+
+  if (!mainContainer || !modal || !modalImg || !modalStage || !modalViewport) return;
+
+  let isZoomed = false;
+  const ZOOM_SCALE = 2.4;
+
+  function openModal() {
+    modal.classList.remove('hidden');
+    modal.classList.add('flex');
+    setTimeout(() => {
+      modal.classList.remove('opacity-0');
+      modal.classList.add('opacity-100');
+    }, 10);
+
+    // Sync modal image with current main image
+    if (mainImg) {
+      modalImg.src = mainImg.src;
+    }
+    const viewText = document.getElementById('view-mode-text');
+    if (viewText && modalViewLabel) {
+      modalViewLabel.textContent = viewText.textContent;
+    }
+
+    // Sync active modal thumbnail with page thumbnail
+    const activePageThumb = document.querySelector('.thumb-btn.active');
+    const activeView = activePageThumb ? activePageThumb.getAttribute('data-view') : 'framed';
+    modalThumbBtns.forEach(btn => {
+      if (btn.getAttribute('data-view') === activeView) {
+        btn.classList.add('active', 'border-2', 'border-[#B8834E]');
+        btn.classList.remove('border-white/30');
+      } else {
+        btn.classList.remove('active', 'border-2', 'border-[#B8834E]');
+        btn.classList.add('border', 'border-white/30');
+      }
+    });
+
+    resetZoom();
+    document.body.style.overflow = 'hidden';
+    if (window.lucide) window.lucide.createIcons();
+  }
+
+  function closeModal() {
+    modal.classList.remove('opacity-100');
+    modal.classList.add('opacity-0');
+    setTimeout(() => {
+      modal.classList.remove('flex');
+      modal.classList.add('hidden');
+      resetZoom();
+      document.body.style.overflow = '';
+    }, 250);
+  }
+
+  function setZoom(zoomed) {
+    isZoomed = zoomed;
+    if (isZoomed) {
+      modalViewport.classList.remove('cursor-zoom-in');
+      modalViewport.classList.add('cursor-zoom-out');
+      if (modalZoomText) modalZoomText.textContent = 'Reset (1.0x)';
+      if (modalZoomIcon) modalZoomIcon.setAttribute('data-lucide', 'zoom-out');
+    } else {
+      resetZoom();
+    }
+    if (window.lucide) window.lucide.createIcons();
+  }
+
+  function resetZoom() {
+    isZoomed = false;
+    modalViewport.classList.remove('cursor-zoom-out');
+    modalViewport.classList.add('cursor-zoom-in');
+    modalStage.style.transform = 'translate(0px, 0px) scale(1)';
+    if (modalZoomText) modalZoomText.textContent = 'Zoom In (2.5x)';
+    if (modalZoomIcon) modalZoomIcon.setAttribute('data-lucide', 'zoom-in');
+  }
+
+  // Mouse pan when zoomed
+  modalViewport.addEventListener('mousemove', (e) => {
+    if (!isZoomed) return;
+    const rect = modalViewport.getBoundingClientRect();
+    const x = (e.clientX - rect.left) / rect.width; // 0 to 1
+    const y = (e.clientY - rect.top) / rect.height; // 0 to 1
+
+    const panX = (0.5 - x) * (rect.width * 0.95);
+    const panY = (0.5 - y) * (rect.height * 0.95);
+
+    modalStage.style.transform = `translate(${panX}px, ${panY}px) scale(${ZOOM_SCALE})`;
+  });
+
+  // Toggle zoom on image click
+  modalViewport.addEventListener('click', (e) => {
+    if (e.target.closest('#modal-zoom-toggle-btn') || e.target.closest('#modal-close-btn') || e.target.closest('.modal-thumb-btn')) {
+      return;
+    }
+    setZoom(!isZoomed);
+  });
+
+  // Zoom button click
+  if (modalZoomToggleBtn) {
+    modalZoomToggleBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      setZoom(!isZoomed);
+    });
+  }
+
+  // Open modal trigger on main container
+  mainContainer.addEventListener('click', openModal);
+
+  // Close modal button
+  if (modalCloseBtn) modalCloseBtn.addEventListener('click', closeModal);
+
+  // Keyboard navigation
+  document.addEventListener('keydown', (e) => {
+    if (modal.classList.contains('hidden')) return;
+    if (e.key === 'Escape') closeModal();
+    if (e.key === ' ' || e.key === 'Enter') {
+      e.preventDefault();
+      setZoom(!isZoomed);
+    }
+  });
+
+  // Modal thumbnail switching
+  modalThumbBtns.forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      modalThumbBtns.forEach(b => {
+        b.classList.remove('active', 'border-2', 'border-[#B8834E]');
+        b.classList.add('border', 'border-white/30');
+      });
+      btn.classList.add('active', 'border-2', 'border-[#B8834E]');
+      btn.classList.remove('border-white/30');
+
+      const view = btn.getAttribute('data-view');
+      const label = btn.getAttribute('data-label');
+      
+      const targetPageThumb = document.querySelector(`.thumb-btn[data-view="${view}"]`);
+      if (targetPageThumb) {
+        targetPageThumb.click();
+        setTimeout(() => {
+          if (mainImg) modalImg.src = mainImg.src;
+        }, 130);
+      } else if (btn.getAttribute('data-src')) {
+        modalImg.src = btn.getAttribute('data-src');
+      }
+
+      if (modalViewLabel && label) modalViewLabel.textContent = label;
+      resetZoom();
+    });
+  });
 }
 

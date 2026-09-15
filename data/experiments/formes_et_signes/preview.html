@@ -26,36 +26,43 @@
       background-color: var(--bg);
       color: var(--text-main);
       font-family: 'Plus Jakarta Sans', sans-serif;
-      padding: 40px 24px 80px;
+      padding: 32px 24px 80px;
       line-height: 1.5;
     }
 
     header {
       max-width: 1280px;
-      margin: 0 auto 48px;
+      margin: 0 auto 40px;
       display: flex;
       justify-content: space-between;
-      align-items: flex-end;
+      align-items: center;
       border-bottom: 1px solid var(--border);
       padding-bottom: 24px;
       flex-wrap: wrap;
       gap: 20px;
     }
 
-    .brand-title h1 {
-      font-family: 'Cormorant Garamond', serif;
-      font-size: 2.8rem;
-      font-weight: 400;
-      letter-spacing: -0.02em;
-      line-height: 1.1;
+    .brand-container {
+      display: flex;
+      align-items: center;
+      gap: 16px;
     }
 
-    .brand-title p {
-      font-size: 0.95rem;
-      color: var(--text-muted);
-      margin-top: 6px;
-      letter-spacing: 0.05em;
+    .brand-logo {
+      height: 46px;
+      width: auto;
+      display: block;
+      transition: opacity 0.2s ease;
+    }
+
+    .brand-badge {
+      font-size: 0.75rem;
+      letter-spacing: 0.08em;
       text-transform: uppercase;
+      color: var(--text-muted);
+      border-left: 1px solid var(--border);
+      padding-left: 16px;
+      font-weight: 500;
     }
 
     .header-actions {
@@ -326,9 +333,9 @@
 <body>
 
   <header>
-    <div class="brand-title">
-      <h1>Oak Print Studio</h1>
-      <p>Fine Art Generative Lab — Collection Series N° 01 (Flat 2D Giclée Masters)</p>
+    <div class="brand-container">
+      <img src="logo.png" alt="Oak Print Studio" class="brand-logo" />
+      <span class="brand-badge">Collection N° 01</span>
     </div>
     <div class="header-actions">
       <a href="staging.html" class="btn primary">

@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Oak Print Studio | Black & White Gallery with Blue Micro-Accents</title>
+  <script src="https://www.gstatic.com/antigravity/web/dev/tailwindcss.min.js"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
+
+    body {
+      font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'SF Pro Display', sans-serif;
+      -webkit-font-smoothing: antialiased;
+      background-color: #FFFFFF;
+      color: #000000;
+    }
+
+    /* Tactile Smooth Transitions */
+    .btn-tactile {
+      transition: all 0.18s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .btn-tactile:active {
+      transform: scale(0.98);
+    }
+
+    /* Frosted Sticky Navigation */
+    .glass-nav {
+      background: rgba(255, 255, 255, 0.92);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+    }
+
+    /* Frame Swatch Active Ring */
+    .swatch-btn.active {
+      border-color: #000000 !important;
+      background-color: #FAFAFA !important;
+      box-shadow: 0 0 0 1px #000000, 0 4px 12px rgba(0, 0, 0, 0.08) !important;
+    }
+
+    /* Size Pill Active State (High Contrast Black) */
+    .size-pill.active {
+      background-color: #000000 !important;
+      color: #FFFFFF !important;
+      border-color: #000000 !important;
+    }
+
+    /* View Switcher Active State */
+    .view-tab.active {
+      background-color: #000000 !important;
+      color: #FFFFFF !important;
+      border-color: #000000 !important;
+    }
+
+    /* Minimalist Card */
+    .mono-card {
+      background: #FFFFFF;
+      border: 1px solid rgba(0, 0, 0, 0.08);
+      transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .mono-card:hover {
+      border-color: #000000;
+      box-shadow: 0 16px 32px -8px rgba(0, 0, 0, 0.08);
+      transform: translateY(-2px);
+    }
+
+    /* Subtle Blue Micro-Glow */
+    .blue-dot {
+      background-color: #0066FF;
+      box-shadow: 0 0 8px rgba(0, 102, 255, 0.6);
+    }
+  </style>
+</head>
+<body class="bg-white text-black min-h-screen flex flex-col antialiased selection:bg-black selection:text-white">
+
+  <!-- Top View Switcher (Interactive Prototype Helper) -->
+  <div class="bg-neutral-900 text-white px-4 py-2 flex items-center justify-between text-xs">
+    <div class="flex items-center gap-2">
+      <span class="w-1.5 h-1.5 rounded-full blue-dot animate-pulse"></span>
+      <span class="font-bold tracking-wider uppercase text-neutral-300">Aesthetic: High-Contrast Black & White with Blue Micro-Accents</span>
+    </div>
+    <div class="flex items-center gap-2">
+      <button id="nav-show-product" class="px-3 py-1 rounded-full bg-white text-black font-bold transition btn-tactile">
+        Product Page
+      </button>
+      <button id="nav-show-home" class="px-3 py-1 rounded-full bg-neutral-800 text-neutral-300 hover:text-white font-medium transition btn-tactile">
+        Homepage Gallery
+      </button>
+    </div>
+  </div>
+
+  <!-- Minimal Announcement Bar -->
+  <div class="bg-white border-b border-black/[0.06] text-black text-[11px] py-2 px-4 text-center font-medium tracking-wide flex items-center justify-center gap-3">
+    <span>Free Worldwide Tracked Delivery Over $100</span>
+    <span class="text-neutral-300">•</span>
+    <span>30-Day Archival Guarantee</span>
+    <span class="text-neutral-300">•</span>
+    <span class="flex items-center gap-1.5">
+      <span class="w-1.5 h-1.5 rounded-full blue-dot"></span>
+      <span>72h Regional Framing</span>
+    </span>
+  </div>
+
+  <!-- High-Contrast Clean Header -->
+  <header class="sticky top-0 z-40 glass-nav">
+    <div class="max-w-7xl mx-auto px-6 h-18 flex items-center justify-between">
+      
+      <!-- Brand Wordmark with Enso Mark -->
+      <a href="#" class="flex items-center gap-3 group">
+        <div class="w-10 h-10 flex items-center justify-center shrink-0">
+          <img src="/static/images/oak_enso_logo.png" alt="Oak Print Studio Logo" class="w-full h-full object-contain mix-blend-multiply">
+        </div>
+        <div>
+          <span class="font-extrabold text-base sm:text-lg tracking-tight uppercase block leading-none text-black">Oak Print Studio</span>
+          <span class="text-[9px] tracking-[0.24em] text-neutral-400 uppercase block mt-1 font-bold">Museum Art & Solid Wood</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav class="hidden md:flex items-center gap-8 text-[13px] font-bold tracking-tight text-neutral-600">
+        <a href="#" class="text-black">Catalog</a>
+        <a href="#" class="hover:text-black transition">Collections</a>
+        <a href="#" class="hover:text-black transition">Wood Framing</a>
+        <a href="#" class="hover:text-black transition">32 Global Studios</a>
+        <a href="#" class="hover:text-black transition flex items-center gap-1.5">
+          <span>Guarantee</span>
+          <span class="w-1 h-1 rounded-full blue-dot"></span>
+        </a>
+      </nav>
+
+      <!-- Right Header Actions -->
+      <div class="flex items-center gap-4">
+        <span class="text-xs font-bold text-neutral-400 hidden sm:inline-block">USD ($)</span>
+        
+        <!-- Cart Bag Trigger -->
+        <button id="open-cart-btn" class="relative p-2.5 rounded-full hover:bg-neutral-100 text-black transition btn-tactile">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"/>
+          </svg>
+          <!-- Blue Micro-Badge Dot -->
+          <span id="cart-counter" class="absolute top-1 right-1 w-2.5 h-2.5 bg-[#0066FF] rounded-full ring-2 ring-white"></span>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- ================================================================================== -->
+  <!-- 1. PRODUCT PAGE (Black & White Luxury with Blue Micro-Accents) -->
+  <!-- ================================================================================== -->
+  <section id="view-product-container" class="max-w-7xl mx-auto px-6 py-8 pb-24 flex-grow w-full">
+    
+    <!-- Breadcrumb -->
+    <div class="text-xs text-neutral-400 flex items-center gap-2 mb-6 font-medium">
+      <a href="#" class="hover:text-black transition">Gallery</a>
+      <span>/</span>
+      <a href="#" class="hover:text-black transition">Monochrome Series</a>
+      <span>/</span>
+      <span class="text-black font-semibold">Abstract Brushstroke No. 04</span>
+    </div>
+
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-start">
+      
+      <!-- Left Column: Gallery Stage -->
+      <div class="lg:col-span-7 space-y-4 lg:sticky lg:top-24">
+        
+        <!-- Main Artwork Viewport -->
+        <div class="relative rounded-2xl overflow-hidden bg-white border border-black/[0.08] aspect-[4/3] flex items-center justify-center group shadow-sm">
+          
+          <!-- Pure White Wall Background -->
+          <div id="art-stage" class="w-full h-full relative overflow-hidden flex items-center justify-center p-8 bg-[#FBFBFB]">
+            
+            <!-- Framed Art Canvas Container -->
+            <div id="framed-art-container" class="relative transition-all duration-300 max-h-full aspect-[3/4] flex items-center justify-center p-4 bg-white border-[12px] border-black shadow-2xl rounded-xs">
+              
+              <div class="w-full h-full bg-white flex flex-col items-center justify-center p-4 border border-black/[0.06] shadow-inner relative overflow-hidden">
+                <!-- Art Vector Graphic: High-Contrast Abstract Brushstroke -->
+                <svg viewBox="0 0 200 280" class="w-full h-full object-contain">
+                  <path d="M45 230 C 65 160, 50 80, 95 40 C 130 10, 165 40, 155 100 C 145 160, 70 170, 160 230" fill="none" stroke="#000000" stroke-width="28" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M75 140 C 95 120, 130 110, 140 160" fill="none" stroke="#000000" stroke-width="14" stroke-linecap="round"/>
+                  <circle cx="100" cy="245" r="2.5" fill="#0066FF"/>
+                  <text x="100" y="258" font-family="'Plus Jakarta Sans'" font-size="4.5" tracking="3" fill="#888" text-anchor="middle" font-weight="700">OAK PRINT STUDIO • ARCHIVAL 04</text>
+                </svg>
+              </div>
+
+            </div>
+
+            <!-- Staged Living Room Overlay -->
+            <div id="room-decor-overlay" class="absolute inset-0 pointer-events-none hidden transition-opacity duration-300">
+              <div class="absolute bottom-0 inset-x-0 h-28 bg-gradient-to-t from-white to-transparent"></div>
+              <div class="absolute -bottom-6 left-12 right-12 h-20 bg-neutral-100 rounded-t-xl border-t border-black/10 flex items-center justify-around px-8">
+                <div class="w-16 h-8 bg-neutral-200 rounded -mt-4 shadow-sm"></div>
+                <div class="w-12 h-10 bg-neutral-300 rounded -mt-6 shadow-sm"></div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Active View Badge Pill -->
+          <div class="absolute top-4 left-4 bg-white/95 backdrop-blur-md border border-black/[0.08] shadow-sm px-3 py-1.5 rounded-full flex items-center gap-2 text-xs font-bold text-black">
+            <span class="w-1.5 h-1.5 rounded-full blue-dot"></span>
+            <span id="active-view-label">Studio Stage</span>
+          </div>
+
+          <!-- Zoom Icon -->
+          <div class="absolute top-4 right-4 bg-white/95 backdrop-blur-md border border-black/[0.08] hover:border-black w-8 h-8 rounded-full flex items-center justify-center text-black transition cursor-pointer btn-tactile">
+            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v6m3-3H7"/></svg>
+          </div>
+
+        </div>
+
+        <!-- 3 Perspective Switcher Tabs (Segmented High-Contrast) -->
+        <div class="bg-neutral-50 p-1.5 rounded-xl border border-black/[0.08] grid grid-cols-3 gap-2">
+          <button id="tab-view-studio" class="view-tab active py-2.5 px-3 rounded-lg text-xs font-bold text-center transition flex items-center justify-center gap-2 btn-tactile border border-transparent">
+            <span>Studio Stage</span>
+          </button>
+          
+          <button id="tab-view-room" class="view-tab py-2.5 px-3 rounded-lg text-xs font-semibold text-neutral-500 hover:text-black text-center transition flex items-center justify-center gap-2 btn-tactile border border-transparent">
+            <span>Architectural Room</span>
+          </button>
+
+          <button id="tab-view-corner" class="view-tab py-2.5 px-3 rounded-lg text-xs font-semibold text-neutral-500 hover:text-black text-center transition flex items-center justify-center gap-2 btn-tactile border border-transparent">
+            <span>Detail View</span>
+          </button>
+        </div>
+
+        <!-- Minimalist Quality Pillars -->
+        <div class="grid grid-cols-3 gap-3 pt-2 text-center text-xs">
+          <div class="p-3 bg-neutral-50 rounded-xl border border-black/[0.06]">
+            <span class="font-bold block text-black">250 GSM</span>
+            <span class="text-[10px] text-neutral-500">Archival Cotton Rag</span>
+          </div>
+          <div class="p-3 bg-neutral-50 rounded-xl border border-black/[0.06]">
+            <span class="font-bold block text-black">Solid Wood</span>
+            <span class="text-[10px] text-neutral-500">FSC-Certified Timber</span>
+          </div>
+          <div class="p-3 bg-neutral-50 rounded-xl border border-black/[0.06]">
+            <span class="font-bold block text-black">72h Delivery</span>
+            <span class="text-[10px] text-neutral-500">32 Global Hubs</span>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Right Column: High-Contrast Configurator -->
+      <div class="lg:col-span-5 space-y-6 bg-white p-6 sm:p-8 rounded-2xl border border-black/[0.08] shadow-sm">
+        
+        <!-- Header & Price -->
+        <div class="space-y-2 pb-5 border-b border-black/[0.08]">
+          <h1 class="text-3xl sm:text-4xl font-extrabold text-black tracking-tight leading-tight">
+            Abstract Brushstroke<br>No. 04
+          </h1>
+
+          <!-- Price & Live Stock Indicator -->
+          <div class="flex items-center gap-3 pt-1">
+            <span id="price-display" class="text-3xl sm:text-4xl font-extrabold text-black tracking-tight">
+              $120.00
+            </span>
+            <div class="flex items-center gap-1.5 text-xs font-bold uppercase tracking-wider text-black pl-2">
+              <span class="w-2 h-2 rounded-full blue-dot"></span>
+              <span>In Stock — Ready to Ship</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 1. Select Frame (High-Contrast Swatches) -->
+        <div class="space-y-2.5">
+          <div class="flex items-center justify-between text-xs">
+            <span class="font-extrabold uppercase tracking-wider text-black">Select Frame</span>
+            <span id="current-frame-label" class="font-bold text-neutral-600">Matte Black</span>
+          </div>
+
+          <div class="grid grid-cols-4 gap-2">
+            
+            <!-- Matte Black -->
+            <button type="button" data-frame="black_wood" data-label="Matte Black" data-color="#000000" class="swatch-btn active p-2.5 rounded-xl border border-black/[0.1] bg-white text-center transition flex flex-col items-center justify-between h-20 btn-tactile">
+              <div class="w-7 h-7 rounded bg-black border border-black shadow-inner"></div>
+              <span class="text-[11px] font-bold block text-black mt-1">Matte Black</span>
+            </button>
+
+            <!-- Natural Oak -->
+            <button type="button" data-frame="natural_oak" data-label="Natural Oak" data-color="#C69B70" class="swatch-btn p-2.5 rounded-xl border border-black/[0.1] bg-white text-center transition flex flex-col items-center justify-between h-20 btn-tactile">
+              <div class="w-7 h-7 rounded bg-[#C69B70] border border-black/10 shadow-inner"></div>
+              <span class="text-[11px] font-bold block text-black mt-1">Natural Oak</span>
+            </button>
+
+            <!-- Slim White -->
+            <button type="button" data-frame="white_wood" data-label="Slim White" data-color="#FFFFFF" class="swatch-btn p-2.5 rounded-xl border border-black/[0.1] bg-white text-center transition flex flex-col items-center justify-between h-20 btn-tactile">
+              <div class="w-7 h-7 rounded bg-white border border-neutral-300 shadow-inner"></div>
+              <span class="text-[11px] font-bold block text-black mt-1">Slim White</span>
+            </button>
+
+            <!-- Walnut -->
+            <button type="button" data-frame="walnut" data-label="Dark Walnut" data-color="#5C4033" class="swatch-btn p-2.5 rounded-xl border border-black/[0.1] bg-white text-center transition flex flex-col items-center justify-between h-20 btn-tactile">
+              <div class="w-7 h-7 rounded bg-[#5C4033] border border-black/10 shadow-inner"></div>
+              <span class="text-[11px] font-bold block text-black mt-1">Walnut</span>
+            </button>
+
+          </div>
+        </div>
+
+        <!-- 2. Select Size (Pills) -->
+        <div class="space-y-2.5">
+          <div class="flex items-center justify-between text-xs">
+            <span class="font-extrabold uppercase tracking-wider text-black">Select Size</span>
+            <span class="text-neutral-400 font-medium">Inches</span>
+          </div>
+
+          <div class="grid grid-cols-4 gap-2">
+            <button type="button" data-size="12x18" data-price="65" class="size-pill py-3 px-2 rounded-full border border-black/[0.15] bg-white text-center transition btn-tactile text-xs font-bold">
+              12×18
+            </button>
+
+            <button type="button" data-size="18x24" data-price="95" class="size-pill py-3 px-2 rounded-full border border-black/[0.15] bg-white text-center transition btn-tactile text-xs font-bold">
+              18×24
+            </button>
+
+            <button type="button" data-size="24x36" data-price="120" class="size-pill active py-3 px-2 rounded-full border border-black bg-black text-white text-center transition btn-tactile text-xs font-bold">
+              24×36
+            </button>
+
+            <button type="button" data-size="30x40" data-price="165" class="size-pill py-3 px-2 rounded-full border border-black/[0.15] bg-white text-center transition btn-tactile text-xs font-bold">
+              30×40
+            </button>
+          </div>
+        </div>
+
+        <!-- 3. Frictionless Buy Actions (Apple Pay & Pitch Black Add to Bag) -->
+        <div class="space-y-3 pt-2">
+          <!-- Apple Pay Button -->
+          <button id="apple-pay-btn" class="w-full bg-black hover:bg-neutral-900 text-white py-3.5 rounded-full font-bold tracking-tight shadow-md transition flex items-center justify-center gap-2 btn-tactile cursor-pointer">
+            <svg class="w-4 h-4 fill-current inline" viewBox="0 0 170 170"><path d="M150.37 130.25c-2.45 5.66-5.35 10.87-8.71 15.66-4.58 6.53-8.33 11.05-11.22 13.56-4.48 4.12-9.28 6.23-14.42 6.35-3.69 0-8.14-1.05-13.32-3.18-5.19-2.12-9.97-3.17-14.34-3.17-4.58 0-9.49 1.05-14.75 3.17-5.26 2.13-9.5 3.24-12.74 3.35-4.35.13-9.16-1.9-14.42-6.08-3.69-3.04-7.67-7.81-11.96-14.34-5.77-8.91-10.27-18.89-13.5-29.93-3.23-11.04-4.85-21.78-4.85-32.22 0-14.43 3.69-26.65 11.07-36.66s16.73-15.11 28.05-15.34c5.19 0 10.66 1.33 16.42 3.99 5.76 2.66 9.77 4.05 12.03 4.17 1.81-.12 6.01-1.63 12.6-4.52 6.6-2.9 12.02-4.14 16.28-3.73 12.07.97 21.6 5.37 28.6 13.2-10.74 6.52-16.01 15.48-15.8 26.88.22 8.92 3.68 16.32 10.38 22.21 6.7 5.89 14.58 9.38 23.63 10.47-2.22 6.74-4.94 13.37-8.15 19.89zM119.22 31.84c0-7.39 2.66-14.37 7.97-20.95 5.31-6.57 11.83-10.69 19.57-12.35.45 1.15.68 2.37.68 3.66 0 7.39-2.73 14.37-8.18 20.95-5.46 6.58-12.03 10.75-19.72 12.51-.23-1.27-.32-2.54-.32-3.82z"/></svg>
+            <span>Pay</span>
+          </button>
+
+          <!-- Add to Bag with Subtle Blue Discount Tag -->
+          <div class="relative">
+            <button id="add-to-bag-btn" class="w-full bg-black hover:bg-neutral-800 text-white py-3.5 rounded-full font-bold uppercase tracking-wider text-xs shadow-md transition flex items-center justify-center gap-2 btn-tactile cursor-pointer">
+              <span>Add to Bag</span>
+            </button>
+            <!-- Blue Micro Discount Badge -->
+            <span class="absolute -top-2 -right-2 bg-[#0066FF] text-white text-[9px] font-extrabold px-2 py-0.5 rounded-full shadow-sm">
+              -15% BUNDLE
+            </span>
+          </div>
+        </div>
+
+        <!-- Specifications Links -->
+        <div class="border-t border-black/[0.08] pt-4 space-y-2 text-xs font-bold text-neutral-800">
+          <details class="group cursor-pointer">
+            <summary class="flex items-center justify-between list-none py-1 hover:text-black">
+              <span>Shipping & 72h Delivery</span>
+              <span class="text-neutral-400 group-open:rotate-180 transition">↓</span>
+            </summary>
+            <p class="pt-2 text-neutral-500 font-normal leading-relaxed text-[11px]">
+              Shipped locally across 32 countries. Arrives in 2–3 business days with full online tracking.
+            </p>
+          </details>
+
+          <details class="group cursor-pointer">
+            <summary class="flex items-center justify-between list-none py-1 hover:text-black">
+              <span>Archival Materials</span>
+              <span class="text-neutral-400 group-open:rotate-180 transition">↓</span>
+            </summary>
+            <p class="pt-2 text-neutral-500 font-normal leading-relaxed text-[11px]">
+              250 gsm pure cotton paper, 12-color archival pigment inks, FSC solid timber frame with anti-reflective glazing.
+            </p>
+          </details>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================================================================================== -->
+  <!-- 2. HOMEPAGE GALLERY (Black & White Luxury with Blue Micro-Accents) -->
+  <!-- ================================================================================== -->
+  <section id="view-home-container" class="max-w-7xl mx-auto px-6 py-12 pb-24 flex-grow w-full hidden">
+    
+    <!-- Hero Headline -->
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center pb-16 border-b border-black/[0.08]">
+      <div class="lg:col-span-7 space-y-5">
+        <div class="inline-flex items-center gap-2 bg-neutral-100 text-black border border-black/[0.08] px-3.5 py-1 rounded-full text-xs font-extrabold tracking-wider uppercase">
+          <span class="w-1.5 h-1.5 rounded-full blue-dot"></span>
+          <span>Oak Print Studio Archive</span>
+        </div>
+        <h1 class="text-5xl sm:text-7xl font-extrabold tracking-tight text-black leading-[1.02]">
+          Pure Form.<br>
+          Museum Art.
+        </h1>
+        <p class="text-sm sm:text-base text-neutral-600 max-w-xl leading-relaxed font-medium">
+          Curated 250 gsm archival prints framed in solid European oak. Crafted to order across 32 regional workshops and delivered in 72 hours.
+        </p>
+        <div class="flex items-center gap-3 pt-2">
+          <a href="#" class="bg-black hover:bg-neutral-800 text-white px-7 py-3.5 rounded-full font-bold text-xs uppercase tracking-wider transition btn-tactile">
+            Shop Catalog →
+          </a>
+          <a href="#" class="border border-black hover:bg-neutral-50 text-black px-6 py-3.5 rounded-full font-bold text-xs uppercase tracking-wider transition btn-tactile">
+            The Atelier Craft
+          </a>
+        </div>
+      </div>
+
+      <div class="lg:col-span-5">
+        <div class="rounded-2xl overflow-hidden bg-white border border-black/[0.1] shadow-xl p-8 aspect-[4/5] flex items-center justify-center relative">
+          <div class="w-4/5 h-4/5 border-[12px] border-black shadow-2xl p-4 bg-white flex flex-col items-center justify-center">
+            <svg viewBox="0 0 100 100" class="w-20 h-20">
+              <path d="M20 80 C 40 40, 60 20, 80 80" stroke="#000" stroke-width="8" fill="none" stroke-linecap="round"/>
+              <circle cx="50" cy="35" r="5" fill="#0066FF"/>
+            </svg>
+            <span class="text-[9px] font-extrabold uppercase tracking-widest text-black mt-4">Curated Statement Piece</span>
+          </div>
+          <span class="absolute bottom-4 left-4 bg-black text-white text-[10px] font-bold px-3 py-1 rounded-full">
+            From $65.00
+          </span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Category Filter Pills -->
+    <div class="py-12">
+      <div class="text-center space-y-2 mb-8">
+        <h2 class="text-2xl font-extrabold text-black uppercase tracking-tight">Fine Art Collections</h2>
+      </div>
+
+      <div class="flex items-center justify-center flex-wrap gap-2 mb-10">
+        <button class="px-5 py-2 rounded-full text-xs font-bold uppercase tracking-wider bg-black text-white transition btn-tactile">All</button>
+        <button class="px-5 py-2 rounded-full text-xs font-bold uppercase tracking-wider border border-black/[0.15] bg-white text-neutral-600 hover:border-black hover:text-black transition btn-tactile">Japandi</button>
+        <button class="px-5 py-2 rounded-full text-xs font-bold uppercase tracking-wider border border-black/[0.15] bg-white text-neutral-600 hover:border-black hover:text-black transition btn-tactile">Bauhaus</button>
+        <button class="px-5 py-2 rounded-full text-xs font-bold uppercase tracking-wider border border-black/[0.15] bg-white text-neutral-600 hover:border-black hover:text-black transition btn-tactile">Minimalism</button>
+      </div>
+
+      <!-- Product Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="mono-card rounded-2xl overflow-hidden p-5 flex flex-col justify-between">
+          <div class="aspect-[4/3] bg-neutral-50 rounded-xl flex items-center justify-center p-4 border border-black/[0.06] mb-4">
+            <div class="w-24 h-32 border-4 border-black bg-white shadow-md flex items-center justify-center">
+              <span class="text-xs font-extrabold text-black">NO. 01</span>
+            </div>
+          </div>
+          <div class="space-y-2">
+            <h3 class="font-extrabold text-base text-black">Abstract Linear Study No. 1</h3>
+            <p class="text-xs text-neutral-500">Solid oak frame & 250 gsm cotton</p>
+            <div class="flex items-center justify-between pt-3 border-t border-black/[0.06]">
+              <span class="text-sm font-extrabold text-black">$65.00</span>
+              <span class="text-xs font-bold text-black group-hover:underline">Configure →</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="mono-card rounded-2xl overflow-hidden p-5 flex flex-col justify-between">
+          <div class="aspect-[4/3] bg-neutral-50 rounded-xl flex items-center justify-center p-4 border border-black/[0.06] mb-4">
+            <div class="w-24 h-32 border-4 border-[#C69B70] bg-white shadow-md flex items-center justify-center">
+              <span class="text-xs font-extrabold text-black">NO. 02</span>
+            </div>
+          </div>
+          <div class="space-y-2">
+            <h3 class="font-extrabold text-base text-black">Bauhaus Geometric Quadrant</h3>
+            <p class="text-xs text-neutral-500">Solid wood frame & 12-color giclée</p>
+            <div class="flex items-center justify-between pt-3 border-t border-black/[0.06]">
+              <span class="text-sm font-extrabold text-black">$95.00</span>
+              <span class="text-xs font-bold text-black group-hover:underline">Configure →</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="mono-card rounded-2xl overflow-hidden p-5 flex flex-col justify-between">
+          <div class="aspect-[4/3] bg-neutral-50 rounded-xl flex items-center justify-center p-4 border border-black/[0.06] mb-4">
+            <div class="w-24 h-32 border-4 border-black bg-white shadow-md flex items-center justify-center">
+              <span class="text-xs font-extrabold text-[#0066FF]">NO. 04</span>
+            </div>
+          </div>
+          <div class="space-y-2">
+            <h3 class="font-extrabold text-base text-black">Abstract Brushstroke No. 04</h3>
+            <p class="text-xs text-neutral-500">Museum cotton rag & mitered timber</p>
+            <div class="flex items-center justify-between pt-3 border-t border-black/[0.06]">
+              <span class="text-sm font-extrabold text-black">$120.00</span>
+              <span class="text-xs font-bold text-black group-hover:underline">Configure →</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- Slide-out Shopping Bag Drawer -->
+  <div id="cart-drawer" class="fixed inset-0 z-50 overflow-hidden hidden">
+    <div id="cart-backdrop" class="absolute inset-0 bg-black/40 backdrop-blur-xs transition-opacity"></div>
+    <div class="fixed inset-y-0 right-0 max-w-full flex pl-10">
+      <div class="w-screen max-w-md bg-white shadow-2xl flex flex-col border-l border-black/[0.08]">
+        
+        <!-- Drawer Header -->
+        <div class="p-6 border-b border-black/[0.08] flex items-center justify-between">
+          <div>
+            <h2 class="text-xl font-extrabold text-black">Shopping Bag</h2>
+            <span class="text-[10px] uppercase font-bold tracking-wider text-black bg-neutral-100 px-2.5 py-0.5 rounded-full inline-block mt-1">
+              ✨ Free Worldwide Delivery Included
+            </span>
+          </div>
+          <button id="cart-close-btn" class="p-2 rounded-full hover:bg-neutral-100 text-neutral-400 hover:text-black transition">
+            ✕
+          </button>
+        </div>
+
+        <!-- Bundle Progress Bar with Subtle Blue Indicator -->
+        <div class="bg-neutral-50 px-6 py-3.5 border-b border-black/[0.08] text-xs">
+          <div class="flex items-center justify-between font-bold text-black mb-2">
+            <span>Add 1 more print to unlock <strong>15% bundle savings</strong>!</span>
+            <span class="bg-[#0066FF] text-white px-2 py-0.5 rounded-full text-[10px] font-extrabold">15% Tier</span>
+          </div>
+          <div class="w-full bg-neutral-200 h-1.5 rounded-full overflow-hidden">
+            <div class="bg-[#0066FF] h-full rounded-full transition-all duration-500" style="width: 50%"></div>
+          </div>
+        </div>
+
+        <!-- Items Container -->
+        <div class="flex-grow overflow-y-auto p-6 space-y-4">
+          <div class="flex items-center gap-4 bg-neutral-50 p-4 rounded-xl border border-black/[0.06]">
+            <div class="w-16 h-20 bg-white rounded-lg flex items-center justify-center p-1 border border-black/[0.1] shrink-0">
+              <span class="text-[9px] font-bold text-black">NO. 04</span>
+            </div>
+            <div class="flex-grow text-xs space-y-0.5">
+              <h4 class="font-bold text-black text-sm leading-tight">Abstract Brushstroke No. 04</h4>
+              <p class="text-neutral-500">Matte Black Frame</p>
+              <p class="text-neutral-500">24 × 36 in (60×90 cm)</p>
+              <span class="font-extrabold text-black block pt-1">$120.00</span>
+            </div>
+            <button class="text-neutral-400 hover:text-red-600 text-xs p-1 font-bold">Remove</button>
+          </div>
+        </div>
+
+        <!-- Checkout Summary -->
+        <div class="p-6 border-t border-black/[0.08] bg-white space-y-4">
+          <div class="space-y-2 text-xs">
+            <div class="flex items-center justify-between text-neutral-600">
+              <span>Subtotal</span>
+              <span class="font-bold text-black">$120.00</span>
+            </div>
+            <div class="flex items-center justify-between text-neutral-600 font-medium">
+              <span>Tracked 72h Shipping</span>
+              <span class="font-bold text-black">FREE ($0.00)</span>
+            </div>
+            <div class="flex items-center justify-between text-base font-extrabold text-black pt-2 border-t border-black/[0.08]">
+              <span>Estimated Total</span>
+              <span class="text-lg">$120.00</span>
+            </div>
+          </div>
+
+          <button class="w-full bg-black hover:bg-neutral-800 text-white py-4 rounded-full font-bold uppercase tracking-wider text-xs transition shadow-md flex items-center justify-center gap-2 btn-tactile">
+            <span>Proceed to Stripe Checkout</span>
+            <span>→</span>
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Interactive JavaScript Logic -->
+  <script>
+    // View Switcher (Product Page vs Homepage)
+    const btnShowProduct = document.getElementById('nav-show-product');
+    const btnShowHome = document.getElementById('nav-show-home');
+    const viewProduct = document.getElementById('view-product-container');
+    const viewHome = document.getElementById('view-home-container');
+
+    btnShowProduct.addEventListener('click', () => {
+      viewProduct.classList.remove('hidden');
+      viewHome.classList.add('hidden');
+      btnShowProduct.className = "px-3 py-1 rounded-full bg-white text-black font-bold transition btn-tactile";
+      btnShowHome.className = "px-3 py-1 rounded-full bg-neutral-800 text-neutral-300 hover:text-white font-medium transition btn-tactile";
+    });
+
+    btnShowHome.addEventListener('click', () => {
+      viewProduct.classList.add('hidden');
+      viewHome.classList.remove('hidden');
+      btnShowHome.className = "px-3 py-1 rounded-full bg-white text-black font-bold transition btn-tactile";
+      btnShowProduct.className = "px-3 py-1 rounded-full bg-neutral-800 text-neutral-300 hover:text-white font-medium transition btn-tactile";
+    });
+
+    // Swatch Picker Logic
+    const swatchBtns = document.querySelectorAll('.swatch-btn');
+    const currentFrameLabel = document.getElementById('current-frame-label');
+    const framedArtContainer = document.getElementById('framed-art-container');
+
+    swatchBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        swatchBtns.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+
+        const label = btn.getAttribute('data-label');
+        const color = btn.getAttribute('data-color');
+
+        if (currentFrameLabel) currentFrameLabel.textContent = label;
+
+        if (framedArtContainer) {
+          framedArtContainer.style.border = '12px solid ' + color;
+        }
+      });
+    });
+
+    // Size Selection Logic
+    const sizePills = document.querySelectorAll('.size-pill');
+    const priceDisplay = document.getElementById('price-display');
+
+    sizePills.forEach(pill => {
+      pill.addEventListener('click', () => {
+        sizePills.forEach(p => p.classList.remove('active'));
+        pill.classList.add('active');
+
+        const price = pill.getAttribute('data-price');
+        if (priceDisplay) priceDisplay.textContent = '$' + price + '.00';
+      });
+    });
+
+    // Perspective Views Logic
+    const tabStudio = document.getElementById('tab-view-studio');
+    const tabRoom = document.getElementById('tab-view-room');
+    const tabCorner = document.getElementById('tab-view-corner');
+    const roomDecor = document.getElementById('room-decor-overlay');
+    const activeViewLabel = document.getElementById('active-view-label');
+
+    function switchView(tabEl, label, showRoom, transformStyle) {
+      [tabStudio, tabRoom, tabCorner].forEach(t => t.classList.remove('active'));
+      tabEl.classList.add('active');
+      if (activeViewLabel) activeViewLabel.textContent = label;
+
+      if (roomDecor) {
+        if (showRoom) roomDecor.classList.remove('hidden');
+        else roomDecor.classList.add('hidden');
+      }
+
+      if (framedArtContainer) {
+        framedArtContainer.style.transform = transformStyle || 'scale(1)';
+      }
+    }
+
+    tabStudio.addEventListener('click', () => switchView(tabStudio, 'Studio Stage', false, 'scale(1)'));
+    tabRoom.addEventListener('click', () => switchView(tabRoom, 'Architectural Room', true, 'scale(0.85) translateY(-15px)'));
+    tabCorner.addEventListener('click', () => switchView(tabCorner, 'Detail View', false, 'scale(1.12) rotate(2deg)'));
+
+    // Cart Drawer Logic
+    const cartDrawer = document.getElementById('cart-drawer');
+    const openCartBtn = document.getElementById('open-cart-btn');
+    const closeCartBtn = document.getElementById('cart-close-btn');
+    const backdrop = document.getElementById('cart-backdrop');
+    const addToBagBtn = document.getElementById('add-to-bag-btn');
+
+    function openCart() { cartDrawer.classList.remove('hidden'); }
+    function closeCart() { cartDrawer.classList.add('hidden'); }
+
+    openCartBtn.addEventListener('click', openCart);
+    closeCartBtn.addEventListener('click', closeCart);
+    backdrop.addEventListener('click', closeCart);
+    addToBagBtn.addEventListener('click', openCart);
+  </script>
+</body>
+</html>
